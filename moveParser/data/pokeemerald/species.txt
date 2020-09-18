@@ -1,0 +1,5 @@
+{
+	missingno:"SPECIES_NONE",
+	bulbasaur:"SPECIES_BULBASAUR",
+	ivysaur:"SPECIES_IVYSAUR"
+}

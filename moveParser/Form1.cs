@@ -15,11 +15,27 @@ namespace moveParser
 {
     public partial class Form1 : Form
     {
+        public class LevelUpMove
+        {
+            public int Level;
+            public string Move;
+        }
+        public class MonData
+        {
+            public string PSName;
+            public string DefName;
+            public List<LevelUpMove> LevelMoves;
+            public List<string> ExtraMoves;
+        }
+
         public Form1()
         {
             InitializeComponent();
             JObject pkmn_ps_data = JObject.Parse(File.ReadAllText("data/PS/learnsets.js"));
             JObject species_defines = JObject.Parse(File.ReadAllText("data/pokeemerald/species.txt"));
+            JObject move_defines = JObject.Parse(File.ReadAllText("data/pokeemerald/moves.txt"));
+
+            List<MonData> Database = new List<MonData>();
 
             bool expandedTMs = true;
             bool expandedLevelUpMoves = true;
@@ -67,29 +83,6 @@ namespace moveParser
                 {
                     mon_define = species_defines[mon.Key].ToString();
                     exists = true;
-
-                    foreach (KeyValuePair<string, JToken> movedata in JObject.Parse(JObject.Parse(mon.Value.ToString())["learnset"].ToString()))
-                    {
-                        string nombre = movedata.Key;
-                        string[] arra = JsonConvert.DeserializeObject<string[]>(movedata.Value.ToString());
-                        foreach (string movedatapoint in arra)
-                        {
-                            if (movedatapoint.Contains("L"))
-                            {
-
-                            }
-                            else if (movedatapoint.Contains("M"))
-                            {
-
-                            }
-                        }
-                    }
-
-                    //foreach (KeyValuePair<string, JToken> movedata in )
-                    //{
-
-                    //    string uuuuu = movedata.ToString();
-                    //}
                 }
                 catch (NullReferenceException)
                 {
@@ -97,34 +90,60 @@ namespace moveParser
                 }
                 if (exists)
                 {
-                    
+                    MonData md = new MonData();
+                    md.PSName = mon.Key;
+                    md.DefName = mon_define;
+                    md.LevelMoves = new List<LevelUpMove>();
+                    md.ExtraMoves = new List<string>();
+
+                    foreach (KeyValuePair<string, JToken> movedata in JObject.Parse(JObject.Parse(mon.Value.ToString())["learnset"].ToString()))
+                    {
+                        string movedef = "MOVE_NONE";
+                        bool move_exists;
+                        string[] arra = JsonConvert.DeserializeObject<string[]>(movedata.Value.ToString());
+
+
+                        try
+                        {
+                            movedef = move_defines[movedata.Key].ToString();
+                            move_exists = true;
+                        }
+                        catch (NullReferenceException)
+                        {
+                            move_exists = false;
+                        }
+                        if (move_exists)
+                        {
+                            foreach (string movedatapoint in arra)
+                            {
+                                if (movedatapoint.Contains("7L"))
+                                {
+                                    LevelUpMove lvl = new LevelUpMove();
+                                    lvl.Level = int.Parse(movedatapoint.Replace("7L", ""));
+                                    lvl.Move = movedef;
+                                    md.LevelMoves.Add(lvl);
+                                }
+                                else if (movedatapoint.Contains("M"))
+                                {
+
+                                }
+                            }
+                        }
+                    }
+                    md.LevelMoves.Sort((p, q) => p.Level.CompareTo(q.Level));
+
+                    Database.Add(md);
+
                     if (expandedTMs)
                     {
 
                     }
                 }
-
-                /*
-                JToken mon = pkmn_ps_data[0];
-                JObject eeee = JObject.Parse(mon.ch.learnset);
-                */
             }
 
-            JObject a = JObject.Parse(pkmn_ps_data["bulbasaur"].ToString());
-            foreach(JProperty jp in a.Properties())
-            {
-                string lalala = jp.Name;
-            }
-               
-            //object b = a.learnset;
+            File.WriteAllText("output/aaa..json", JsonConvert.SerializeObject(Database, Formatting.Indented));
 
-            //string[] propertyNames = b.GetType().GetProperties().Select(p => p.Name).ToArray();
-            //foreach (var prop in propertyNames)
-            //{
-            //    object propValue = b.GetType().GetProperty(prop).GetValue(b, null);
-            //}
 
-            
         }
     }
 }
