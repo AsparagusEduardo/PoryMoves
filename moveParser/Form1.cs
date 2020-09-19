@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using hap = HtmlAgilityPack;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Threading;
 
 namespace moveParser
 {
@@ -64,36 +65,39 @@ namespace moveParser
             hap.HtmlDocument htmlDoc = web.Load(html);
             hap.HtmlNodeCollection nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr/td/h3");
 
-            for (int i = 0; i < nodes.Count; i++)
+            if (nodes != null)
             {
-                hap.HtmlNodeCollection moves;
-                hap.HtmlNode nodo = nodes[i];
-                if (nodo.InnerText.Equals("Standard Level Up"))
+                for (int i = 0; i < nodes.Count; i++)
                 {
-                    moves = nodo.ParentNode.ParentNode.ParentNode.ChildNodes;
-                    int move_num = 0;
-                    string move_lvl;
-                    foreach (hap.HtmlNode move in moves)
+                    hap.HtmlNodeCollection moves;
+                    hap.HtmlNode nodo = nodes[i];
+                    if (nodo.InnerText.Equals("Standard Level Up"))
                     {
-                        LevelUpMove lmove = new LevelUpMove();
-                        if (move_num % 3 == 2)
+                        moves = nodo.ParentNode.ParentNode.ParentNode.ChildNodes;
+                        int move_num = 0;
+                        string move_lvl;
+                        foreach (hap.HtmlNode move in moves)
                         {
-                            move_lvl = move.ChildNodes[1].InnerText;
-                            if (move_lvl.Equals("&#8212;"))
-                                lmove.Level = 1;
-                            else if (move_lvl.Equals("Evolve"))
-                                lmove.Level = 0;
-                            else
-                                lmove.Level = int.Parse(move_lvl);
-                            lmove.Move = "MOVE_" + move.ChildNodes[3].ChildNodes[0].InnerText.ToUpper().Replace(" ", "_");
+                            LevelUpMove lmove = new LevelUpMove();
+                            if (move_num % 3 == 2)
+                            {
+                                move_lvl = move.ChildNodes[1].InnerText;
+                                if (move_lvl.Equals("&#8212;"))
+                                    lmove.Level = 1;
+                                else if (move_lvl.Equals("Evolve"))
+                                    lmove.Level = 0;
+                                else
+                                    lmove.Level = int.Parse(move_lvl);
+                                lmove.Move = "MOVE_" + move.ChildNodes[3].ChildNodes[0].InnerText.ToUpper().Replace(" ", "_");
 
-                            lvlMoves.Add(lmove);
-                        }
-                            
+                                lvlMoves.Add(lmove);
+                            }
+
                             //name = move.InnerText;
-                        move_num++;
-                    }
+                            move_num++;
+                        }
 
+                    }
                 }
             }
             return lvlMoves;
@@ -101,12 +105,21 @@ namespace moveParser
 
         private void btnLoadFromSerebii_Click(object sender, EventArgs e)
         {
+            backgroundWorker1.RunWorkerAsync();
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
             List<MonData> Database = new List<MonData>();
             Dictionary<string, string> nameList = LoadPkmnNameListFromSerebii();
+
+            int namecount = nameList.Count;
+            //Dictionary<string, string> nameList = new Dictionary<string, string>();
+            //nameList.Add("#001", "Bulbasaur");
             int i = 1;
-            foreach(KeyValuePair<string, string> item in nameList)
+            foreach (KeyValuePair<string, string> item in nameList)
             {
-                if (i < 3)
+                //if (i < 100)
                 {
                     MonData mon = new MonData();
                     mon.VarName = item.Value;
@@ -115,10 +128,29 @@ namespace moveParser
 
                     Database.Add(mon);
                 }
+                backgroundWorker1.ReportProgress(i * 100 / namecount);
                 i++;
             }
 
-            File.WriteAllText("output/aaa.json", JsonConvert.SerializeObject(Database, Formatting.Indented));
+            File.WriteAllText("output/db.json", JsonConvert.SerializeObject(Database, Formatting.Indented));
+            /*
+            for (int i = 1; i <= 100; i++)
+            {
+                // Wait 100 milliseconds.
+                Thread.Sleep(100);
+                // Report progress.
+                backgroundWorker1.ReportProgress(i);
+            }
+            */
+        }
+
+        private void backgroundWorker1_ProgressChanged(object sender,
+            ProgressChangedEventArgs e)
+        {
+            // Change the value of the ProgressBar to the BackgroundWorker progress.
+            pbar1.Value = e.ProgressPercentage;
+            // Set the text.
+            this.Text = e.ProgressPercentage.ToString();
         }
     }
 }
