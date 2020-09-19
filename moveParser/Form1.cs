@@ -55,7 +55,7 @@ namespace moveParser
             return pkmnList;
         }
 
-        protected MonData LoadMonData(string number, string name, bool gen8)
+        protected MonData LoadMonData(int number, string name, bool gen8)
         {
             MonData mon = new MonData();
             mon.DefName = "SPECIES_" + NameToDefineFormat(name);
@@ -77,7 +77,7 @@ namespace moveParser
             else
             {
                 pokedex = "-sm";
-                identifier = number;
+                identifier = number.ToString("000");
                 lvlUpTitle = "Generation VII Level Up";
                 lvlUpTitle2 = "Ultra Sun/Ultra Moon Level Up";
                 lvlUpTitle3 = "Standard Level Up";
@@ -88,7 +88,16 @@ namespace moveParser
 
             hap.HtmlWeb web = new hap.HtmlWeb();
             hap.HtmlDocument htmlDoc = web.Load(html);
-            hap.HtmlNodeCollection nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr/td/h3");
+            hap.HtmlNodeCollection nodes;
+            if (gen8)
+                nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr/td/h3");
+            else
+            {
+                if (number <= 151 || number == 808 || number == 809)
+                    nodes = htmlDoc.DocumentNode.SelectNodes("//li[@title='Sun/Moon/Ultra Sun/Ultra Moon']/table[@class='dextable']/tr/td/h3");
+                else
+                    nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr/td/h3");
+            }
 
             if (nodes != null)
             {
@@ -143,18 +152,18 @@ namespace moveParser
 
         private string NameToDefineFormat(string oldname)
         {
-            if (oldname.Equals("Nidoran&#9792;"))
-                return "NIDORAN_F";
+            if (oldname.Equals("Farfetch'd"))
+                return "FARFETCHD";
 
-            return oldname.ToUpper().Replace(" ", "_").Replace("-", "_");
+            return oldname.ToUpper().Replace(" ", "_").Replace("-", "_").Replace(".", "").Replace("&#9792;", "_F").Replace("&#9794;", "_M");
         }
 
         private string NameToVarFormat(string oldname)
         {
-            if (oldname.Equals("Nidoran&#9792;"))
-                return "NidoranF";
+            if (oldname.Equals("Farfetch'd"))
+                return "FarfetchD";
 
-            string[] str = oldname.Replace(" ", "_").Replace("-", "_").Split('_');
+            string[] str = oldname.Replace(" ", "_").Replace("-", "_").Replace(".", "").Replace("&#9792;", "F").Replace("&#9794;", "M").Split('_');
             string final = "";
             foreach (string s in str)
                 final += s;
@@ -174,14 +183,17 @@ namespace moveParser
             UpdateLoadingMessage("Loading species...");
             Dictionary<string, string> nameList = LoadPkmnNameListFromSerebii();
 
+            //Dictionary<string, string> nameList = new Dictionary<string, string>();
+            //nameList.Add("019", "Rattata");
+
             int namecount = nameList.Count;
 
             int i = 1;
             foreach (KeyValuePair<string, string> item in nameList)
             {
-                //if (i < 10)
+                //if (i < 21)
                 {
-                    Database.Add(LoadMonData(item.Key, item.Value, checkBox1.Checked));
+                    Database.Add(LoadMonData(int.Parse(item.Key), item.Value, checkBox1.Checked));
                 }
                 backgroundWorker1.ReportProgress(i * 100 / namecount);
                 // Set the text.
