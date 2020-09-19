@@ -168,7 +168,17 @@ namespace moveParser
             if (oldname.Equals("Farfetch'd"))
                 return "FARFETCHD";
 
-            return oldname.ToUpper().Replace(" ", "_").Replace("-", "_").Replace(".", "").Replace("&#9792;", "_F").Replace("&#9794;", "_M");
+            oldname = oldname.ToUpper();
+            oldname = oldname.Replace(" ", "_");
+            oldname = oldname.Replace("-O", "_O");
+            oldname = oldname.Replace("-", "_");
+            oldname = oldname.Replace(".", "");
+            oldname = oldname.Replace("&#9792;", "_F");
+            oldname = oldname.Replace("&#9794;", "_M");
+            oldname = oldname.Replace("&eacute;", "E");
+            oldname = oldname.Replace(".", ":");
+
+            return oldname;
         }
 
         private string NameToVarFormat(string oldname)
@@ -176,7 +186,17 @@ namespace moveParser
             if (oldname.Equals("Farfetch'd"))
                 return "FarfetchD";
 
-            string[] str = oldname.Replace(" ", "_").Replace("-", "_").Replace(".", "").Replace("&#9792;", "F").Replace("&#9794;", "M").Split('_');
+            oldname = oldname.ToUpper();
+            oldname = oldname.Replace(" ", "_");
+            oldname = oldname.Replace("-O", "O");
+            oldname = oldname.Replace("-", "_");
+            oldname = oldname.Replace(".", "");
+            oldname = oldname.Replace("&#9792;", "F");
+            oldname = oldname.Replace("&#9794;", "M");
+            oldname = oldname.Replace("&eacute;", "e");
+            oldname = oldname.Replace(".", ":");
+
+            string[] str = oldname.Split('_');
             string final = "";
             foreach (string s in str)
                 final += s;
@@ -237,9 +257,9 @@ namespace moveParser
 
         public void FinishMoveDataLoading()
         {
-            pbar1.Value = 0;
             this.Invoke((MethodInvoker)delegate {
                 this.btnLoadFromSerebii.Enabled = true;
+                this.pbar1.Value = 0;
             });
         }
     }
