@@ -47,7 +47,7 @@ namespace moveParser
             for(int i = 2; i < nodes.Count; i++)
             {
                 hap.HtmlNode nodo = nodes[i];
-                string number = nodo.ChildNodes[1].InnerHtml.Trim();
+                string number = nodo.ChildNodes[1].InnerHtml.Trim().Replace("#", "");
                 string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim();
                 pkmnList.Add(number, species);
             }
@@ -55,11 +55,27 @@ namespace moveParser
             return pkmnList;
         }
 
-        protected List<LevelUpMove> LoadLevelUpMoves(string pkmnName)
+        protected List<LevelUpMove> LoadLevelUpMoves(string number, string name, bool gen8)
         {
             List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
 
-            string html = "https://serebii.net/pokedex-swsh/" + pkmnName.ToLower() + "/index.shtml";
+            string pokedex, identifier, lvlUpTitle, lvlUpTitle2;
+            if (gen8)
+            {
+                pokedex = "-swsh";
+                identifier = name.ToLower() + "/index";
+                lvlUpTitle = "Standard Level Up";
+                lvlUpTitle2 = "Standard Level Up";
+            }
+            else
+            {
+                pokedex = "-sm";
+                identifier = number;
+                lvlUpTitle = "Generation VII Level Up";
+                lvlUpTitle2 = "Ultra Sun/Ultra Moon Level Up";
+            }
+
+            string html = "https://serebii.net/pokedex" + pokedex + "/" + identifier + ".shtml";
 
             hap.HtmlWeb web = new hap.HtmlWeb();
             hap.HtmlDocument htmlDoc = web.Load(html);
@@ -71,7 +87,7 @@ namespace moveParser
                 {
                     hap.HtmlNodeCollection moves;
                     hap.HtmlNode nodo = nodes[i];
-                    if (nodo.InnerText.Equals("Standard Level Up"))
+                    if (nodo.InnerText.Equals(lvlUpTitle) || nodo.InnerText.Equals(lvlUpTitle2))
                     {
                         moves = nodo.ParentNode.ParentNode.ParentNode.ChildNodes;
                         int move_num = 0;
@@ -116,17 +132,16 @@ namespace moveParser
             Dictionary<string, string> nameList = LoadPkmnNameListFromSerebii();
 
             int namecount = nameList.Count;
-            //Dictionary<string, string> nameList = new Dictionary<string, string>();
-            //nameList.Add("#001", "Bulbasaur");
+
             int i = 1;
             foreach (KeyValuePair<string, string> item in nameList)
             {
-                if (i < 100)
+                //if (i < 10)
                 {
                     MonData mon = new MonData();
                     mon.VarName = item.Value;
                     mon.DefName = "SPECIES_" + item.Value.ToUpper();
-                    mon.LevelMoves = LoadLevelUpMoves(item.Value);
+                    mon.LevelMoves = LoadLevelUpMoves(item.Key, item.Value, checkBox1.Checked);
 
                     Database.Add(mon);
                 }
@@ -137,15 +152,6 @@ namespace moveParser
             }
 
             File.WriteAllText("output/db.json", JsonConvert.SerializeObject(Database, Formatting.Indented));
-            /*
-            for (int i = 1; i <= 100; i++)
-            {
-                // Wait 100 milliseconds.
-                Thread.Sleep(100);
-                // Report progress.
-                backgroundWorker1.ReportProgress(i);
-            }
-            */
         }
 
         private void backgroundWorker1_ProgressChanged(object sender,

@@ -32,6 +32,8 @@
             this.pbar1 = new System.Windows.Forms.ProgressBar();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.lblLoading = new System.Windows.Forms.Label();
+            this.lblOptions = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnLoadFromSerebii
@@ -66,17 +68,40 @@
             this.lblLoading.Text = "Welcome!";
             this.lblLoading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // lblOptions
+            // 
+            this.lblOptions.AutoSize = true;
+            this.lblOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOptions.Location = new System.Drawing.Point(12, 95);
+            this.lblOptions.Name = "lblOptions";
+            this.lblOptions.Size = new System.Drawing.Size(64, 17);
+            this.lblOptions.TabIndex = 3;
+            this.lblOptions.Text = "Options";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(70, 149);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(69, 21);
+            this.checkBox1.TabIndex = 4;
+            this.checkBox1.Text = "Gen 8";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.lblOptions);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.pbar1);
             this.Controls.Add(this.btnLoadFromSerebii);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -86,6 +111,8 @@
         private System.Windows.Forms.ProgressBar pbar1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label lblLoading;
+        private System.Windows.Forms.Label lblOptions;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
