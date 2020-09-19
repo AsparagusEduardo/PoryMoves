@@ -55,17 +55,24 @@ namespace moveParser
             return pkmnList;
         }
 
-        protected List<LevelUpMove> LoadLevelUpMoves(string number, string name, bool gen8)
+        protected MonData LoadMonData(string number, string name, bool gen8)
         {
-            List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
+            MonData mon = new MonData();
+            mon.DefName = "SPECIES_" + NameToDefineFormat(name);
+            mon.VarName = NameToVarFormat(name);
 
-            string pokedex, identifier, lvlUpTitle, lvlUpTitle2;
+            List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
+            List<string> ExtraMoves = new List<string>();
+
+            string pokedex, identifier, lvlUpTitle, lvlUpTitle2, lvlUpTitle3, tmHmTrTitle;
             if (gen8)
             {
                 pokedex = "-swsh";
                 identifier = name.ToLower() + "/index";
                 lvlUpTitle = "Standard Level Up";
                 lvlUpTitle2 = "Standard Level Up";
+                lvlUpTitle3 = "Standard Level Up";
+                tmHmTrTitle = "TM & HM Attacks";
             }
             else
             {
@@ -73,6 +80,8 @@ namespace moveParser
                 identifier = number;
                 lvlUpTitle = "Generation VII Level Up";
                 lvlUpTitle2 = "Ultra Sun/Ultra Moon Level Up";
+                lvlUpTitle3 = "Standard Level Up";
+                tmHmTrTitle = "TM & HM Attacks";
             }
 
             string html = "https://serebii.net/pokedex" + pokedex + "/" + identifier + ".shtml";
@@ -87,7 +96,7 @@ namespace moveParser
                 {
                     hap.HtmlNodeCollection moves;
                     hap.HtmlNode nodo = nodes[i];
-                    if (nodo.InnerText.Equals(lvlUpTitle) || nodo.InnerText.Equals(lvlUpTitle2))
+                    if (nodo.InnerText.Equals(lvlUpTitle) || nodo.InnerText.Equals(lvlUpTitle2) || nodo.InnerText.Equals(lvlUpTitle3))
                     {
                         moves = nodo.ParentNode.ParentNode.ParentNode.ChildNodes;
                         int move_num = 0;
@@ -104,19 +113,53 @@ namespace moveParser
                                     lmove.Level = 0;
                                 else
                                     lmove.Level = int.Parse(move_lvl);
-                                lmove.Move = "MOVE_" + move.ChildNodes[3].ChildNodes[0].InnerText.ToUpper().Replace(" ", "_");
+                                lmove.Move = "MOVE_" + NameToDefineFormat(move.ChildNodes[3].ChildNodes[0].InnerText);
 
                                 lvlMoves.Add(lmove);
                             }
-
-                            //name = move.InnerText;
                             move_num++;
                         }
-
+                    }
+                    else if (nodo.InnerText.Equals(tmHmTrTitle))
+                    {
+                        moves = nodo.ParentNode.ParentNode.ParentNode.ChildNodes;
+                        int move_num = 0;
+                        foreach (hap.HtmlNode move in moves)
+                        {
+                            if (move_num % 3 == 2)
+                            {
+                                //ExtraMoves.Add("MOVE_" + NameToDefineFormat(move.ChildNodes[2].ChildNodes[0].InnerText));
+                            }
+                            move_num++;
+                        }
                     }
                 }
             }
-            return lvlMoves;
+            mon.LevelMoves = lvlMoves;
+            mon.ExtraMoves = ExtraMoves;
+
+            return mon;
+        }
+
+        private string NameToDefineFormat(string oldname)
+        {
+            if (oldname.Equals("Nidoran&#9792;"))
+                return "NIDORAN_F";
+
+            return oldname.ToUpper().Replace(" ", "_").Replace("-", "_");
+        }
+
+        private string NameToVarFormat(string oldname)
+        {
+            if (oldname.Equals("Nidoran&#9792;"))
+                return "NidoranF";
+
+            string[] str = oldname.Replace(" ", "_").Replace("-", "_").Split('_');
+            string final = "";
+            foreach (string s in str)
+                final += s;
+
+            return final;
         }
 
         private void btnLoadFromSerebii_Click(object sender, EventArgs e)
@@ -138,12 +181,7 @@ namespace moveParser
             {
                 //if (i < 10)
                 {
-                    MonData mon = new MonData();
-                    mon.VarName = item.Value;
-                    mon.DefName = "SPECIES_" + item.Value.ToUpper();
-                    mon.LevelMoves = LoadLevelUpMoves(item.Key, item.Value, checkBox1.Checked);
-
-                    Database.Add(mon);
+                    Database.Add(LoadMonData(item.Key, item.Value, checkBox1.Checked));
                 }
                 backgroundWorker1.ReportProgress(i * 100 / namecount);
                 // Set the text.
