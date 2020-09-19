@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using hap = HtmlAgilityPack;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -22,7 +23,7 @@ namespace moveParser
         }
         public class MonData
         {
-            public string PSName;
+            public string VarName;
             public string DefName;
             public List<LevelUpMove> LevelMoves;
             public List<string> ExtraMoves;
@@ -31,119 +32,93 @@ namespace moveParser
         public Form1()
         {
             InitializeComponent();
-            JObject pkmn_ps_data = JObject.Parse(File.ReadAllText("data/PS/learnsets.js"));
-            JObject species_defines = JObject.Parse(File.ReadAllText("data/pokeemerald/species.txt"));
-            JObject move_defines = JObject.Parse(File.ReadAllText("data/pokeemerald/moves.txt"));
+        }
 
+        protected Dictionary<string, string> LoadPkmnNameListFromSerebii()
+        {
+            Dictionary<string, string> pkmnList = new Dictionary<string, string>();
+            string html = "https://www.serebii.net/pokemon/nationalpokedex.shtml";
+
+            hap.HtmlWeb web = new hap.HtmlWeb();
+            hap.HtmlDocument htmlDoc = web.Load(html);
+            hap.HtmlNodeCollection nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr");
+
+            for(int i = 2; i < nodes.Count; i++)
+            {
+                hap.HtmlNode nodo = nodes[i];
+                string number = nodo.ChildNodes[1].InnerHtml.Trim();
+                string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim();
+                pkmnList.Add(number, species);
+            }
+
+            return pkmnList;
+        }
+
+        protected List<LevelUpMove> LoadLevelUpMoves(string pkmnName)
+        {
+            List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
+
+            string html = "https://serebii.net/pokedex-swsh/" + pkmnName.ToLower() + "/index.shtml";
+
+            hap.HtmlWeb web = new hap.HtmlWeb();
+            hap.HtmlDocument htmlDoc = web.Load(html);
+            hap.HtmlNodeCollection nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr/td/h3");
+
+            for (int i = 0; i < nodes.Count; i++)
+            {
+                hap.HtmlNodeCollection moves;
+                hap.HtmlNode nodo = nodes[i];
+                if (nodo.InnerText.Equals("Standard Level Up"))
+                {
+                    moves = nodo.ParentNode.ParentNode.ParentNode.ChildNodes;
+                    int move_num = 0;
+                    string move_lvl;
+                    foreach (hap.HtmlNode move in moves)
+                    {
+                        LevelUpMove lmove = new LevelUpMove();
+                        if (move_num % 3 == 2)
+                        {
+                            move_lvl = move.ChildNodes[1].InnerText;
+                            if (move_lvl.Equals("&#8212;"))
+                                lmove.Level = 1;
+                            else if (move_lvl.Equals("Evolve"))
+                                lmove.Level = 0;
+                            else
+                                lmove.Level = int.Parse(move_lvl);
+                            lmove.Move = "MOVE_" + move.ChildNodes[3].ChildNodes[0].InnerText.ToUpper().Replace(" ", "_");
+
+                            lvlMoves.Add(lmove);
+                        }
+                            
+                            //name = move.InnerText;
+                        move_num++;
+                    }
+
+                }
+            }
+            return lvlMoves;
+        }
+
+        private void btnLoadFromSerebii_Click(object sender, EventArgs e)
+        {
             List<MonData> Database = new List<MonData>();
-
-            bool expandedTMs = true;
-            bool expandedLevelUpMoves = true;
-
-            string tmhm_learnsets_text;
-            string levelup_learnsets_text;
-
-            if (expandedTMs)
+            Dictionary<string, string> nameList = LoadPkmnNameListFromSerebii();
+            int i = 1;
+            foreach(KeyValuePair<string, string> item in nameList)
             {
-                tmhm_learnsets_text = "#define TMHM(tmhm) ((u8) ((ITEM_##tmhm) - ITEM_TM01_FOCUS_PUNCH))\n";
-            }
-            else
-            {
-                tmhm_learnsets_text = "#define TMHM_LEARNSET(moves) {(u32)(moves), ((u64)(moves) >> 32)}\n"
-                    + "#define TMHM(tmhm) ((u64)1 << (ITEM_##tmhm - ITEM_TM01_FOCUS_PUNCH))\n\n"
-                    + "// This table determines which TMs and HMs a species is capable of learning.\n"
-                    + "// Each entry is a 64-bit bit array spread across two 32-bit values, with\n"
-                    + "// each bit corresponding to a TM or HM.\n"
-                    + "const u32 gTMHMLearnsets[][2] =\n"
-                    + "{\n";
-            }
-
-            if (expandedLevelUpMoves)
-            {
-                levelup_learnsets_text = "#define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}\n";
-            }
-            else
-            {
-                levelup_learnsets_text = "#define TMHM_LEARNSET(moves) {(u32)(moves), ((u64)(moves) >> 32)}\n"
-                    + "#define TMHM(tmhm) ((u64)1 << (ITEM_##tmhm - ITEM_TM01_FOCUS_PUNCH))\n\n"
-                    + "// This table determines which TMs and HMs a species is capable of learning.\n"
-                    + "// Each entry is a 64-bit bit array spread across two 32-bit values, with\n"
-                    + "// each bit corresponding to a TM or HM.\n"
-                    + "const u32 gTMHMLearnsets[][2] =\n"
-                    + "{\n";
-            }
-
-            File.WriteAllText("output/tmhm_learnsets.h", tmhm_learnsets_text);
-
-            foreach (KeyValuePair<string, JToken> mon in pkmn_ps_data)
-            {
-                string mon_define = "SPECIES_NONE";
-                bool exists;
-                try
+                if (i < 3)
                 {
-                    mon_define = species_defines[mon.Key].ToString();
-                    exists = true;
+                    MonData mon = new MonData();
+                    mon.VarName = item.Value;
+                    mon.DefName = "SPECIES_" + item.Value.ToUpper();
+                    mon.LevelMoves = LoadLevelUpMoves(item.Value);
+
+                    Database.Add(mon);
                 }
-                catch (NullReferenceException)
-                {
-                    exists = false;
-                }
-                if (exists)
-                {
-                    MonData md = new MonData();
-                    md.PSName = mon.Key;
-                    md.DefName = mon_define;
-                    md.LevelMoves = new List<LevelUpMove>();
-                    md.ExtraMoves = new List<string>();
-
-                    foreach (KeyValuePair<string, JToken> movedata in JObject.Parse(JObject.Parse(mon.Value.ToString())["learnset"].ToString()))
-                    {
-                        string movedef = "MOVE_NONE";
-                        bool move_exists;
-                        string[] arra = JsonConvert.DeserializeObject<string[]>(movedata.Value.ToString());
-
-
-                        try
-                        {
-                            movedef = move_defines[movedata.Key].ToString();
-                            move_exists = true;
-                        }
-                        catch (NullReferenceException)
-                        {
-                            move_exists = false;
-                        }
-                        if (move_exists)
-                        {
-                            foreach (string movedatapoint in arra)
-                            {
-                                if (movedatapoint.Contains("7L"))
-                                {
-                                    LevelUpMove lvl = new LevelUpMove();
-                                    lvl.Level = int.Parse(movedatapoint.Replace("7L", ""));
-                                    lvl.Move = movedef;
-                                    md.LevelMoves.Add(lvl);
-                                }
-                                else if (movedatapoint.Contains("M"))
-                                {
-
-                                }
-                            }
-                        }
-                    }
-                    md.LevelMoves.Sort((p, q) => p.Level.CompareTo(q.Level));
-
-                    Database.Add(md);
-
-                    if (expandedTMs)
-                    {
-
-                    }
-                }
+                i++;
             }
 
-            File.WriteAllText("output/aaa..json", JsonConvert.SerializeObject(Database, Formatting.Indented));
-
-
+            File.WriteAllText("output/aaa.json", JsonConvert.SerializeObject(Database, Formatting.Indented));
         }
     }
 }
