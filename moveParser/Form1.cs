@@ -111,6 +111,8 @@ namespace moveParser
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             List<MonData> Database = new List<MonData>();
+
+            UpdateLoadingMessage("Loading species...");
             Dictionary<string, string> nameList = LoadPkmnNameListFromSerebii();
 
             int namecount = nameList.Count;
@@ -119,7 +121,7 @@ namespace moveParser
             int i = 1;
             foreach (KeyValuePair<string, string> item in nameList)
             {
-                //if (i < 100)
+                if (i < 100)
                 {
                     MonData mon = new MonData();
                     mon.VarName = item.Value;
@@ -129,6 +131,8 @@ namespace moveParser
                     Database.Add(mon);
                 }
                 backgroundWorker1.ReportProgress(i * 100 / namecount);
+                // Set the text.
+                UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Pokémon loaded.");
                 i++;
             }
 
@@ -150,7 +154,14 @@ namespace moveParser
             // Change the value of the ProgressBar to the BackgroundWorker progress.
             pbar1.Value = e.ProgressPercentage;
             // Set the text.
-            this.Text = e.ProgressPercentage.ToString();
+            //this.Text = e.ProgressPercentage.ToString();
+        }
+
+        public void UpdateLoadingMessage(string newMessage)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                this.lblLoading.Text = newMessage;
+            });
         }
     }
 }
