@@ -119,6 +119,9 @@ namespace moveParser
                         moves = nodo.ParentNode.ParentNode.ParentNode.ChildNodes;
                         int move_num = 0;
                         string move_lvl;
+
+                        List<string> evoMoves = new List<string>();
+
                         foreach (hap.HtmlNode move in moves)
                         {
                             LevelUpMove lmove = new LevelUpMove();
@@ -132,12 +135,21 @@ namespace moveParser
                                 else if (move_lvl.Equals("Evolve"))
                                 {
                                     lmove.Level = 0;
+                                    evoMoves.Add(lmove.Move);
                                 }
                                 else
                                     lmove.Level = int.Parse(move_lvl);
-                                lvlMoves.Add(lmove);
-                                if (lmove.Level == 0)
-                                    lvlMoves.Add(new LevelUpMove(1, lmove.Move));
+
+
+                                if (lmove.Level > 0 && evoMoves.Count > 0)
+                                {
+                                    foreach (string evo in evoMoves)
+                                        if (!lvlMoves.Contains(new LevelUpMove(1, evo)))
+                                            lvlMoves.Add(new LevelUpMove(1, evo));
+                                    evoMoves.Clear();
+                                }
+                                if (!InList(lvlMoves,lmove))
+                                    lvlMoves.Add(lmove);
                             }
                             move_num++;
                         }
@@ -165,36 +177,31 @@ namespace moveParser
 
         private string NameToDefineFormat(string oldname)
         {
-            if (oldname.Equals("Farfetch'd"))
-                return "FARFETCHD";
-
+            oldname = oldname.Replace("&eacute;", "E");
+            oldname = oldname.Replace("-o", "_O");
             oldname = oldname.ToUpper();
             oldname = oldname.Replace(" ", "_");
-            oldname = oldname.Replace("-O", "_O");
+            oldname = oldname.Replace("'", "");
             oldname = oldname.Replace("-", "_");
             oldname = oldname.Replace(".", "");
             oldname = oldname.Replace("&#9792;", "_F");
             oldname = oldname.Replace("&#9794;", "_M");
-            oldname = oldname.Replace("&eacute;", "E");
-            oldname = oldname.Replace(".", ":");
+            oldname = oldname.Replace(":", "");
 
             return oldname;
         }
 
         private string NameToVarFormat(string oldname)
         {
-            if (oldname.Equals("Farfetch'd"))
-                return "FarfetchD";
-
-            oldname = oldname.ToUpper();
+            oldname = oldname.Replace("&eacute;", "e");
+            oldname = oldname.Replace("-o", "O");
             oldname = oldname.Replace(" ", "_");
-            oldname = oldname.Replace("-O", "O");
             oldname = oldname.Replace("-", "_");
+            oldname = oldname.Replace("'", "");
             oldname = oldname.Replace(".", "");
             oldname = oldname.Replace("&#9792;", "F");
             oldname = oldname.Replace("&#9794;", "M");
-            oldname = oldname.Replace("&eacute;", "e");
-            oldname = oldname.Replace(".", ":");
+            oldname = oldname.Replace(":", "");
 
             string[] str = oldname.Split('_');
             string final = "";
@@ -202,6 +209,13 @@ namespace moveParser
                 final += s;
 
             return final;
+        }
+        bool InList(List<LevelUpMove> list, LevelUpMove element)
+        {
+            foreach (LevelUpMove entry in list)
+                if (entry.Level == element.Level && entry.Move == element.Move)
+                    return true;
+            return false;
         }
 
         private void btnLoadFromSerebii_Click(object sender, EventArgs e)
@@ -225,7 +239,7 @@ namespace moveParser
             int i = 1;
             foreach (KeyValuePair<string, string> item in nameList)
             {
-                //if (i < 21)
+                //if (i < 11)
                 {
                     Database.Add(LoadMonData(int.Parse(item.Key), item.Value, checkBox1.Checked));
                 }
