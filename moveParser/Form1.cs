@@ -21,6 +21,15 @@ namespace moveParser
         {
             public int Level;
             public string Move;
+            public LevelUpMove()
+            {
+
+            }
+            public LevelUpMove(int lvl, string mv)
+            {
+                Level = lvl;
+                Move = mv;
+            }
         }
         public class MonData
         {
@@ -115,16 +124,20 @@ namespace moveParser
                             LevelUpMove lmove = new LevelUpMove();
                             if (move_num % 3 == 2)
                             {
+                                lmove.Move = "MOVE_" + NameToDefineFormat(move.ChildNodes[3].ChildNodes[0].InnerText);
+
                                 move_lvl = move.ChildNodes[1].InnerText;
                                 if (move_lvl.Equals("&#8212;"))
                                     lmove.Level = 1;
                                 else if (move_lvl.Equals("Evolve"))
+                                {
                                     lmove.Level = 0;
+                                }
                                 else
                                     lmove.Level = int.Parse(move_lvl);
-                                lmove.Move = "MOVE_" + NameToDefineFormat(move.ChildNodes[3].ChildNodes[0].InnerText);
-
                                 lvlMoves.Add(lmove);
+                                if (lmove.Level == 0)
+                                    lvlMoves.Add(new LevelUpMove(1, lmove.Move));
                             }
                             move_num++;
                         }
@@ -173,6 +186,7 @@ namespace moveParser
 
         private void btnLoadFromSerebii_Click(object sender, EventArgs e)
         {
+            btnLoadFromSerebii.Enabled = false;
             backgroundWorker1.RunWorkerAsync();
         }
 
@@ -202,6 +216,7 @@ namespace moveParser
             }
 
             File.WriteAllText("output/db.json", JsonConvert.SerializeObject(Database, Formatting.Indented));
+            FinishMoveDataLoading();
         }
 
         private void backgroundWorker1_ProgressChanged(object sender,
@@ -217,6 +232,14 @@ namespace moveParser
         {
             this.Invoke((MethodInvoker)delegate {
                 this.lblLoading.Text = newMessage;
+            });
+        }
+
+        public void FinishMoveDataLoading()
+        {
+            pbar1.Value = 0;
+            this.Invoke((MethodInvoker)delegate {
+                this.btnLoadFromSerebii.Enabled = true;
             });
         }
     }
