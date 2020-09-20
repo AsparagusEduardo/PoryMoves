@@ -12,6 +12,7 @@ using hap = HtmlAgilityPack;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Threading;
+using moveParser.data;
 
 namespace moveParser
 {
@@ -71,6 +72,7 @@ namespace moveParser
             mon.VarName = NameToVarFormat(name);
 
             List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
+            List<int> ExtraMovesIds = new List<int>();
             List<string> ExtraMoves = new List<string>();
 
             string pokedex, identifier, lvlUpTitle, lvlUpTitle2, lvlUpTitle3, tmHmTrTitle;
@@ -88,7 +90,10 @@ namespace moveParser
                 pokedex = "-sm";
                 identifier = number.ToString("000");
                 lvlUpTitle = "Generation VII Level Up";
-                lvlUpTitle2 = "Ultra Sun/Ultra Moon Level Up";
+                if (number == 808 || number == 809)
+                    lvlUpTitle2 = "Let's Go Level Up";
+                else
+                    lvlUpTitle2 = "Ultra Sun/Ultra Moon Level Up";
                 lvlUpTitle3 = "Standard Level Up";
                 tmHmTrTitle = "TM & HM Attacks";
             }
@@ -102,7 +107,7 @@ namespace moveParser
                 nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr/td/h3");
             else
             {
-                if (number <= 151 || number == 808 || number == 809)
+                if (number <= 151)
                     nodes = htmlDoc.DocumentNode.SelectNodes("//li[@title='Sun/Moon/Ultra Sun/Ultra Moon']/table[@class='dextable']/tr/td/h3");
                 else
                     nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr/td/h3");
@@ -127,7 +132,9 @@ namespace moveParser
                             LevelUpMove lmove = new LevelUpMove();
                             if (move_num % 3 == 2)
                             {
-                                lmove.Move = "MOVE_" + NameToDefineFormat(move.ChildNodes[3].ChildNodes[0].InnerText);
+                                int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[3].ChildNodes[0].InnerText];
+                                ExtraMovesIds.Add(exMoveId);
+                                lmove.Move = "MOVE_" + MoveData.MoveDefNames[exMoveId];
 
                                 move_lvl = move.ChildNodes[1].InnerText;
                                 if (move_lvl.Equals("&#8212;"))
@@ -162,11 +169,19 @@ namespace moveParser
                         {
                             if (move_num % 3 == 2)
                             {
+                                int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[2].ChildNodes[0].InnerText];
+                                ExtraMovesIds.Add(exMoveId);
                                 //ExtraMoves.Add("MOVE_" + NameToDefineFormat(move.ChildNodes[2].ChildNodes[0].InnerText));
                             }
                             move_num++;
                         }
                     }
+                }
+                ExtraMovesIds = ExtraMovesIds.Distinct().ToList();
+                ExtraMovesIds.Sort();
+                foreach(int exMoveId in ExtraMovesIds)
+                {
+                    ExtraMoves.Add("MOVE_" + MoveData.MoveDefNames[exMoveId]);
                 }
             }
             mon.LevelMoves = lvlMoves;
@@ -177,6 +192,7 @@ namespace moveParser
 
         private string NameToDefineFormat(string oldname)
         {
+
             oldname = oldname.Replace("&eacute;", "E");
             oldname = oldname.Replace("-o", "_O");
             oldname = oldname.ToUpper();
