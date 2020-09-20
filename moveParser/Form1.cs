@@ -130,6 +130,7 @@ namespace moveParser
                 {
                     hap.HtmlNodeCollection moves;
                     hap.HtmlNode nodo = nodes[i];
+                    //Checks for Level Up Moves
                     if (nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle2) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle3))
                     {
                         moves = nodo.ChildNodes;
@@ -172,6 +173,7 @@ namespace moveParser
                             move_num++;
                         }
                     }
+                    //Checks for TM/HM/TR
                     else if (nodo.ChildNodes[0].InnerText.Equals(tmHmTrTitle))
                     {
                         moves = nodo.ChildNodes;
@@ -180,19 +182,25 @@ namespace moveParser
                         {
                             if (move_num % 3 == 2)
                             {
-                                int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[2].ChildNodes[0].InnerText];
+                                bool addMove = false;
                                 if (move.ChildNodes.Count >= 17)
                                 {
                                     foreach (hap.HtmlNode form in move.ChildNodes[16].ChildNodes[0].ChildNodes[0].ChildNodes)
                                         if (form.ChildNodes[0].Attributes["alt"].Value.Equals("Normal"))
-                                            ExtraMovesIds.Add(exMoveId);
+                                            addMove = true;
                                 }
                                 else
+                                    addMove = true;
+                                if (addMove)
+                                {
+                                    int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[2].ChildNodes[0].InnerText];
                                     ExtraMovesIds.Add(exMoveId);
+                                }
                             }
                             move_num++;
                         }
                     }
+                    //Checks for move tutors.
                     else if ((nodo.ChildNodes[0].ChildNodes.Count > 0) && (nodo.ChildNodes[0].ChildNodes[0].InnerText.Equals(moveTutorTitle1))
                         || (nodo.ChildNodes[0].ChildNodes.Count > 0) && (nodo.ChildNodes[0].ChildNodes[0].InnerText.Equals(moveTutorTitle2)))
                     {
@@ -202,12 +210,26 @@ namespace moveParser
                         {
                             if (move_num != 0 && move_num % 2 == 0)
                             {
-                                int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText];
-                                ExtraMovesIds.Add(exMoveId);
+                                bool addMove = false;
+                                if (move.ChildNodes.Count >= 8)
+                                {
+                                    foreach (hap.HtmlNode form in move.ChildNodes[8].ChildNodes[0].ChildNodes[0].ChildNodes)
+                                        if (form.ChildNodes[0].Attributes["alt"].Value.Equals(name))
+                                            addMove = true;
+                                }
+                                else
+                                    addMove = true;
+                                if (addMove)
+                                {
+                                    int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText];
+                                    ExtraMovesIds.Add(exMoveId);
+                                }
+
                             }
                             move_num++;
                         }
                     }
+                    //Checks for Egg Moves
                     else if ((nodo.ChildNodes[0].ChildNodes.Count > 0) && (nodo.ChildNodes[0].ChildNodes[0].InnerText.Equals(eggMoveTitle)))
                     {
                         moves = nodo.ChildNodes;
@@ -216,15 +238,20 @@ namespace moveParser
                         {
                             if (move_num % 3 == 2)
                             {
-                                int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText.Replace("USUM Only", "")];
+                                bool addMove = false;
                                 if (move.ChildNodes[14].ChildNodes.Count > 1)
                                 {
                                     foreach (hap.HtmlNode form in move.ChildNodes[14].ChildNodes)
                                         if ((form.Attributes["alt"] != null) && (form.Attributes["alt"].Value.Equals("Normal")))
-                                            ExtraMovesIds.Add(exMoveId);
+                                            addMove = true;
                                 }
                                 else
+                                    addMove = true;
+                                if (addMove)
+                                {
+                                    int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText.Replace("USUM Only", "")];
                                     ExtraMovesIds.Add(exMoveId);
+                                }
                             }
                             move_num++;
                         }
