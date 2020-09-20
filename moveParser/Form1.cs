@@ -181,7 +181,14 @@ namespace moveParser
                             if (move_num % 3 == 2)
                             {
                                 int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[2].ChildNodes[0].InnerText];
-                                ExtraMovesIds.Add(exMoveId);
+                                if (move.ChildNodes.Count >= 17)
+                                {
+                                    foreach (hap.HtmlNode form in move.ChildNodes[16].ChildNodes[0].ChildNodes[0].ChildNodes)
+                                        if (form.ChildNodes[0].Attributes["alt"].Value.Equals("Normal"))
+                                            ExtraMovesIds.Add(exMoveId);
+                                }
+                                else
+                                    ExtraMovesIds.Add(exMoveId);
                             }
                             move_num++;
                         }
