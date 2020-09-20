@@ -58,12 +58,15 @@ namespace moveParser
             public string moveTutorTitle1;
             public string moveTutorTitle2;
             public string eggMoveTitle;
-            public GenerationData(int num, string dxpage, string idxformat, string tabnode,
+
+            public string dbFilename;
+            public GenerationData(int num, string dbfile, string dxpage, string idxformat, string tabnode,
                                     string lvltitle1, string lvltitle2, string lvltitle3,
                                     string tmtitle, string tutortitle1, string tutortitle2,
                                     string eggtitle)
             {
                 genNumber = num;
+                dbFilename = dbfile;
                 dexPage = dxpage;
                 indexFormat = idxformat;
                 tableNodes = tabnode;
@@ -79,11 +82,11 @@ namespace moveParser
 
         protected Dictionary<string, GenerationData> GenData = new Dictionary<string, GenerationData>()
         {
-            {"Gen VIII", new GenerationData(8, "-swsh", "{1}/index", "//table[@class='dextable']",
+            {"Gen VIII", new GenerationData(8, "swsh", "-swsh", "{1}/index", "//table[@class='dextable']",
                                             "Standard Level Up", "Standard Level Up", "Standard Level Up",
                                             "TM & HM Attacks", "Move Tutor Attacks", "Isle of Armor Move Tutor Attacks",
                                             "Egg Moves (Details)") },
-            {"Gen VII", new GenerationData(7, "-sm", "{0}", "//table[@class='dextable']",
+            {"Gen VII", new GenerationData(7, "usum", "-sm", "{0}", "//table[@class='dextable']",
                                             "Generation VII Level Up", "Standard Level Up", "Standard Level Up",
                                             "TM & HM Attacks", "Move Tutor Attacks", "Ultra Sun/Ultra Moon Move Tutor Attacks",
                                             "Egg Moves (Details)") },
@@ -356,8 +359,7 @@ namespace moveParser
             UpdateLoadingMessage("Loading species...");
             Dictionary<string, string> nameList = LoadPkmnNameListFromSerebii();
 
-            //Dictionary<string, string> nameList = new Dictionary<string, string>();
-            //nameList.Add("019", "Rattata");
+            GenerationData generation = GenData[(string)e.Argument];
 
             int namecount = nameList.Count;
 
@@ -366,15 +368,17 @@ namespace moveParser
             {
                 if (i < 31)
                 {
-                    Database.Add(LoadMonData(int.Parse(item.Key), item.Value, GenData[(string)e.Argument]));
+                    Database.Add(LoadMonData(int.Parse(item.Key), item.Value, generation));
                 }
                 backgroundWorker1.ReportProgress(i * 100 / namecount);
                 // Set the text.
                 UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Pokémon loaded.");
                 i++;
             }
+            if (!Directory.Exists("db"))
+                Directory.CreateDirectory("db");
 
-            File.WriteAllText("output/db.json", JsonConvert.SerializeObject(Database, Formatting.Indented));
+            File.WriteAllText("db/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
             FinishMoveDataLoading();
         }
 
