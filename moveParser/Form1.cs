@@ -75,7 +75,12 @@ namespace moveParser
             List<int> ExtraMovesIds = new List<int>();
             List<string> ExtraMoves = new List<string>();
 
-            string pokedex, identifier, lvlUpTitle, lvlUpTitle2, lvlUpTitle3, tmHmTrTitle;
+            string pokedex, identifier;
+            string lvlUpTitle, lvlUpTitle2, lvlUpTitle3;
+            string tmHmTrTitle;
+            string moveTutorTitle1, moveTutorTitle2;
+            string eggMoveTitle;
+
             if (gen8)
             {
                 pokedex = "-swsh";
@@ -84,6 +89,9 @@ namespace moveParser
                 lvlUpTitle2 = "Standard Level Up";
                 lvlUpTitle3 = "Standard Level Up";
                 tmHmTrTitle = "TM & HM Attacks";
+                moveTutorTitle1 = "Move Tutor Attacks";
+                moveTutorTitle2 = "Isle of Armor Move Tutor Attacks";
+                eggMoveTitle = "Egg Moves (Details)";
             }
             else
             {
@@ -96,6 +104,9 @@ namespace moveParser
                     lvlUpTitle2 = "Ultra Sun/Ultra Moon Level Up";
                 lvlUpTitle3 = "Standard Level Up";
                 tmHmTrTitle = "TM & HM Attacks";
+                moveTutorTitle1 = "Move Tutor Attacks";
+                moveTutorTitle2 = "Ultra Sun/Ultra Moon Move Tutor Attacks";
+                eggMoveTitle = "Egg Moves (Details)";
             }
 
             string html = "https://serebii.net/pokedex" + pokedex + "/" + identifier + ".shtml";
@@ -104,13 +115,13 @@ namespace moveParser
             hap.HtmlDocument htmlDoc = web.Load(html);
             hap.HtmlNodeCollection nodes;
             if (gen8)
-                nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr/td/h3");
+                nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']");
             else
             {
                 if (number <= 151)
-                    nodes = htmlDoc.DocumentNode.SelectNodes("//li[@title='Sun/Moon/Ultra Sun/Ultra Moon']/table[@class='dextable']/tr/td/h3");
+                    nodes = htmlDoc.DocumentNode.SelectNodes("//li[@title='Sun/Moon/Ultra Sun/Ultra Moon']/table[@class='dextable']");
                 else
-                    nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr/td/h3");
+                    nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']");
             }
 
             if (nodes != null)
@@ -119,9 +130,9 @@ namespace moveParser
                 {
                     hap.HtmlNodeCollection moves;
                     hap.HtmlNode nodo = nodes[i];
-                    if (nodo.InnerText.Equals(lvlUpTitle) || nodo.InnerText.Equals(lvlUpTitle2) || nodo.InnerText.Equals(lvlUpTitle3))
+                    if (nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle2) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle3))
                     {
-                        moves = nodo.ParentNode.ParentNode.ParentNode.ChildNodes;
+                        moves = nodo.ChildNodes;
                         int move_num = 0;
                         string move_lvl;
 
@@ -161,9 +172,9 @@ namespace moveParser
                             move_num++;
                         }
                     }
-                    else if (nodo.InnerText.Equals(tmHmTrTitle))
+                    else if (nodo.ChildNodes[0].InnerText.Equals(tmHmTrTitle))
                     {
-                        moves = nodo.ParentNode.ParentNode.ParentNode.ChildNodes;
+                        moves = nodo.ChildNodes;
                         int move_num = 0;
                         foreach (hap.HtmlNode move in moves)
                         {
@@ -171,7 +182,35 @@ namespace moveParser
                             {
                                 int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[2].ChildNodes[0].InnerText];
                                 ExtraMovesIds.Add(exMoveId);
-                                //ExtraMoves.Add("MOVE_" + NameToDefineFormat(move.ChildNodes[2].ChildNodes[0].InnerText));
+                            }
+                            move_num++;
+                        }
+                    }
+                    else if ((nodo.ChildNodes[0].ChildNodes.Count > 0) && (nodo.ChildNodes[0].ChildNodes[0].InnerText.Equals(moveTutorTitle1))
+                        || (nodo.ChildNodes[0].ChildNodes.Count > 0) && (nodo.ChildNodes[0].ChildNodes[0].InnerText.Equals(moveTutorTitle2)))
+                    {
+                        moves = nodo.ChildNodes[0].ChildNodes;
+                        int move_num = 0;
+                        foreach (hap.HtmlNode move in moves)
+                        {
+                            if (move_num != 0 && move_num % 2 == 0)
+                            {
+                                int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText];
+                                ExtraMovesIds.Add(exMoveId);
+                            }
+                            move_num++;
+                        }
+                    }
+                    else if ((nodo.ChildNodes[0].ChildNodes.Count > 0) && (nodo.ChildNodes[0].ChildNodes[0].InnerText.Equals(eggMoveTitle)))
+                    {
+                        moves = nodo.ChildNodes;
+                        int move_num = 0;
+                        foreach (hap.HtmlNode move in moves)
+                        {
+                            if (move_num % 3 == 2)
+                            {
+                                int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText.Replace("USUM Only", "")];
+                                ExtraMovesIds.Add(exMoveId);
                             }
                             move_num++;
                         }
@@ -255,7 +294,7 @@ namespace moveParser
             int i = 1;
             foreach (KeyValuePair<string, string> item in nameList)
             {
-                //if (i < 11)
+                if (i < 31)
                 {
                     Database.Add(LoadMonData(int.Parse(item.Key), item.Value, checkBox1.Checked));
                 }
