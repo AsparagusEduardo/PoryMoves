@@ -1486,6 +1486,7 @@ namespace moveParser.data
             { 754, "BOLT_BEAK" },
             { 755, "FISHIOUS_REND" },
             { 756, "COURT_CHANGE" },
+
             { 775, "CLANGOROUS_SOUL" },
             { 776, "BODY_PRESS" },
             { 777, "DECORATE" },
@@ -1507,7 +1508,29 @@ namespace moveParser.data
             { 793, "FALSE_SURRENDER" },
             { 794, "METEOR_ASSAULT" },
             { 795, "ETERNA_BEAM" },
-            { 796, "STEEL_BEAM" }
+            { 796, "STEEL_BEAM" },
+            { 797, "EXPANDING_FORCE"},
+            { 798, "STEEL_ROLLER"},
+            { 799, "SCALE_SHOT"},
+            { 800, "METEOR_BEAM"},
+            { 801, "SHELL_SIDE_ARM"},
+            { 802, "MISTY_EXPLOSION"},
+            { 803, "GRASSY_GLIDE"},
+            { 804, "RISING_VOLTAGE"},
+            { 805, "TERRAIN_PULSE"},
+            { 806, "SKITTER_SMACK"},
+            { 807, "BURNING_JEALOUSY"},
+            { 808, "LASH_OUT"},
+            { 809, "POLTERGEIST"},
+            { 810, "CORROSIVE_GAS"},
+            { 811, "COACHING"},
+            { 812, "FLIP_TURN"},
+            { 813, "TRIPLE_AXEL"},
+            { 814, "DUAL_WINGBEAT"},
+            { 815, "SCORCHING_SANDS"},
+            { 816, "JUNGLE_HEALING"},
+            { 817, "WICKED_BLOW"},
+            { 818, "SURGING_STRIKES"},
         };
     }
 }
