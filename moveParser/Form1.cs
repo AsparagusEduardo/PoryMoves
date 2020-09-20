@@ -296,6 +296,10 @@ namespace moveParser
                     ExtraMoves.Add("MOVE_" + MoveData.MoveDefNames[exMoveId]);
                 }
             }
+            else
+            {
+                return null;
+            }
             mon.LevelMoves = lvlMoves;
             mon.ExtraMoves = ExtraMoves;
 
@@ -368,7 +372,9 @@ namespace moveParser
             {
                 if (i < 31)
                 {
-                    Database.Add(LoadMonData(int.Parse(item.Key), item.Value, generation));
+                    MonData mon = LoadMonData(int.Parse(item.Key), item.Value, generation);
+                    if (mon != null)
+                        Database.Add(mon);
                 }
                 backgroundWorker1.ReportProgress(i * 100 / namecount);
                 // Set the text.
