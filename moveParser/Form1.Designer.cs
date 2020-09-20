@@ -33,12 +33,13 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.lblLoading = new System.Windows.Forms.Label();
             this.lblOptions = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cmbGeneration = new System.Windows.Forms.ComboBox();
+            this.lblBaseMovesets = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLoadFromSerebii
             // 
-            this.btnLoadFromSerebii.Location = new System.Drawing.Point(12, 12);
+            this.btnLoadFromSerebii.Location = new System.Drawing.Point(644, 10);
             this.btnLoadFromSerebii.Name = "btnLoadFromSerebii";
             this.btnLoadFromSerebii.Size = new System.Drawing.Size(144, 34);
             this.btnLoadFromSerebii.TabIndex = 0;
@@ -61,9 +62,9 @@
             // 
             // lblLoading
             // 
-            this.lblLoading.Location = new System.Drawing.Point(162, 12);
+            this.lblLoading.Location = new System.Drawing.Point(260, 11);
             this.lblLoading.Name = "lblLoading";
-            this.lblLoading.Size = new System.Drawing.Size(626, 32);
+            this.lblLoading.Size = new System.Drawing.Size(378, 32);
             this.lblLoading.TabIndex = 2;
             this.lblLoading.Text = "Welcome!";
             this.lblLoading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -78,22 +79,34 @@
             this.lblOptions.TabIndex = 3;
             this.lblOptions.Text = "Options";
             // 
-            // checkBox1
+            // cmbGeneration
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(70, 149);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(69, 21);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Gen 8";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cmbGeneration.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGeneration.FormattingEnabled = true;
+            this.cmbGeneration.Items.AddRange(new object[] {
+            "Gen VIII",
+            "Gen VII"});
+            this.cmbGeneration.Location = new System.Drawing.Point(162, 16);
+            this.cmbGeneration.Name = "cmbGeneration";
+            this.cmbGeneration.Size = new System.Drawing.Size(92, 24);
+            this.cmbGeneration.TabIndex = 5;
+            // 
+            // lblBaseMovesets
+            // 
+            this.lblBaseMovesets.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBaseMovesets.Location = new System.Drawing.Point(12, 19);
+            this.lblBaseMovesets.Name = "lblBaseMovesets";
+            this.lblBaseMovesets.Size = new System.Drawing.Size(144, 23);
+            this.lblBaseMovesets.TabIndex = 6;
+            this.lblBaseMovesets.Text = "Load moves from:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.lblBaseMovesets);
+            this.Controls.Add(this.cmbGeneration);
             this.Controls.Add(this.lblOptions);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.pbar1);
@@ -112,7 +125,8 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label lblLoading;
         private System.Windows.Forms.Label lblOptions;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox cmbGeneration;
+        private System.Windows.Forms.Label lblBaseMovesets;
     }
 }
 

@@ -43,7 +43,52 @@ namespace moveParser
         public Form1()
         {
             InitializeComponent();
+            cmbGeneration.SelectedIndex = 0;
         }
+        public class GenerationData
+        {
+            public int genNumber;
+            public string dexPage;
+            public string indexFormat;
+            public string tableNodes;
+            public string lvlUpTitle1;
+            public string lvlUpTitle2;
+            public string lvlUpTitle3;
+            public string tmHmTrTitle;
+            public string moveTutorTitle1;
+            public string moveTutorTitle2;
+            public string eggMoveTitle;
+            public GenerationData(int num, string dxpage, string idxformat, string tabnode,
+                                    string lvltitle1, string lvltitle2, string lvltitle3,
+                                    string tmtitle, string tutortitle1, string tutortitle2,
+                                    string eggtitle)
+            {
+                genNumber = num;
+                dexPage = dxpage;
+                indexFormat = idxformat;
+                tableNodes = tabnode;
+                lvlUpTitle1 = lvltitle1;
+                lvlUpTitle2 = lvltitle2;
+                lvlUpTitle3 = lvltitle3;
+                tmHmTrTitle = tmtitle;
+                moveTutorTitle1 = tutortitle1;
+                moveTutorTitle1 = tutortitle2;
+                eggMoveTitle = eggtitle;
+            }
+        }
+
+        protected Dictionary<string, GenerationData> GenData = new Dictionary<string, GenerationData>()
+        {
+            {"Gen VIII", new GenerationData(8, "-swsh", "{1}/index", "//table[@class='dextable']",
+                                            "Standard Level Up", "Standard Level Up", "Standard Level Up",
+                                            "TM & HM Attacks", "Move Tutor Attacks", "Isle of Armor Move Tutor Attacks",
+                                            "Egg Moves (Details)") },
+            {"Gen VII", new GenerationData(7, "-sm", "{0}", "//table[@class='dextable']",
+                                            "Generation VII Level Up", "Standard Level Up", "Standard Level Up",
+                                            "TM & HM Attacks", "Move Tutor Attacks", "Ultra Sun/Ultra Moon Move Tutor Attacks",
+                                            "Egg Moves (Details)") },
+        };
+
 
         protected Dictionary<string, string> LoadPkmnNameListFromSerebii()
         {
@@ -65,7 +110,7 @@ namespace moveParser
             return pkmnList;
         }
 
-        protected MonData LoadMonData(int number, string name, bool gen8)
+        protected MonData LoadMonData(int number, string name, GenerationData gen8)
         {
             MonData mon = new MonData();
             mon.DefName = "SPECIES_" + NameToDefineFormat(name);
@@ -81,48 +126,31 @@ namespace moveParser
             string moveTutorTitle1, moveTutorTitle2;
             string eggMoveTitle;
 
-            if (gen8)
-            {
-                pokedex = "-swsh";
-                identifier = name.ToLower() + "/index";
-                lvlUpTitle = "Standard Level Up";
-                lvlUpTitle2 = "Standard Level Up";
-                lvlUpTitle3 = "Standard Level Up";
-                tmHmTrTitle = "TM & HM Attacks";
-                moveTutorTitle1 = "Move Tutor Attacks";
-                moveTutorTitle2 = "Isle of Armor Move Tutor Attacks";
-                eggMoveTitle = "Egg Moves (Details)";
-            }
+            pokedex = gen8.dexPage;
+            identifier = String.Format(gen8.indexFormat, number.ToString("000"), name.ToLower());
+            lvlUpTitle = gen8.lvlUpTitle1;
+
+            if (gen8.genNumber == 7 && (number == 808 || number == 809))
+                lvlUpTitle2 = "Let's Go Level Up";
             else
-            {
-                pokedex = "-sm";
-                identifier = number.ToString("000");
-                lvlUpTitle = "Generation VII Level Up";
-                if (number == 808 || number == 809)
-                    lvlUpTitle2 = "Let's Go Level Up";
-                else
-                    lvlUpTitle2 = "Ultra Sun/Ultra Moon Level Up";
-                lvlUpTitle3 = "Standard Level Up";
-                tmHmTrTitle = "TM & HM Attacks";
-                moveTutorTitle1 = "Move Tutor Attacks";
-                moveTutorTitle2 = "Ultra Sun/Ultra Moon Move Tutor Attacks";
-                eggMoveTitle = "Egg Moves (Details)";
-            }
+                lvlUpTitle2 = "Ultra Sun/Ultra Moon Level Up";
+
+            lvlUpTitle3 = gen8.lvlUpTitle3;
+            tmHmTrTitle = gen8.tmHmTrTitle;
+            moveTutorTitle1 = gen8.moveTutorTitle1;
+            moveTutorTitle2 = gen8.moveTutorTitle2;
+            eggMoveTitle = gen8.eggMoveTitle;
 
             string html = "https://serebii.net/pokedex" + pokedex + "/" + identifier + ".shtml";
 
             hap.HtmlWeb web = new hap.HtmlWeb();
             hap.HtmlDocument htmlDoc = web.Load(html);
             hap.HtmlNodeCollection nodes;
-            if (gen8)
-                nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']");
+
+            if (gen8.genNumber == 7 && number <= 151)
+                nodes = htmlDoc.DocumentNode.SelectNodes("//li[@title='Sun/Moon/Ultra Sun/Ultra Moon']/table[@class='dextable']");
             else
-            {
-                if (number <= 151)
-                    nodes = htmlDoc.DocumentNode.SelectNodes("//li[@title='Sun/Moon/Ultra Sun/Ultra Moon']/table[@class='dextable']");
-                else
-                    nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']");
-            }
+                nodes = htmlDoc.DocumentNode.SelectNodes(gen8.tableNodes);
 
             if (nodes != null)
             {
@@ -130,6 +158,7 @@ namespace moveParser
                 {
                     hap.HtmlNodeCollection moves;
                     hap.HtmlNode nodo = nodes[i];
+
                     //Checks for Level Up Moves
                     if (nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle2) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle3))
                     {
@@ -317,7 +346,7 @@ namespace moveParser
         private void btnLoadFromSerebii_Click(object sender, EventArgs e)
         {
             btnLoadFromSerebii.Enabled = false;
-            backgroundWorker1.RunWorkerAsync();
+            backgroundWorker1.RunWorkerAsync(cmbGeneration.SelectedItem.ToString());
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
@@ -337,7 +366,7 @@ namespace moveParser
             {
                 if (i < 31)
                 {
-                    Database.Add(LoadMonData(int.Parse(item.Key), item.Value, checkBox1.Checked));
+                    Database.Add(LoadMonData(int.Parse(item.Key), item.Value, GenData[(string)e.Argument]));
                 }
                 backgroundWorker1.ReportProgress(i * 100 / namecount);
                 // Set the text.
