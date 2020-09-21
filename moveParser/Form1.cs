@@ -90,7 +90,7 @@ namespace moveParser
             int number = int.Parse(name.NatDexNum);
             string pokedex, identifier;
             string lvlUpTitle_Gen, lvlUpTitle_Game, lvlUpTitle_Form, lvlUpTitle_RegionalForm;
-            string tmHmTrTitle;
+            string tmHmTrTitle, tmHmTrTitle2;
             string moveTutorTitle1, moveTutorTitle2;
             string eggMoveTitle;
 
@@ -116,6 +116,7 @@ namespace moveParser
             }
 
             tmHmTrTitle = gen.tmHmTrTitle;
+            tmHmTrTitle2 = gen.tmHmTrTitle2;
             moveTutorTitle1 = gen.moveTutorTitle1;
             moveTutorTitle2 = gen.moveTutorTitle2;
             eggMoveTitle = gen.eggMoveTitle;
@@ -191,7 +192,7 @@ namespace moveParser
                         }
                     }
                     //Checks for TM/HM/TR
-                    else if (nodo.ChildNodes[0].InnerText.Equals(tmHmTrTitle))
+                    else if (nodo.ChildNodes[0].InnerText.Equals(tmHmTrTitle) || nodo.ChildNodes[0].InnerText.Equals(tmHmTrTitle2))
                     {
                         moves = nodo.ChildNodes;
                         int move_num = 0;
