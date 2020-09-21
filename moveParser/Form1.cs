@@ -271,8 +271,14 @@ namespace moveParser
                                 if (move.ChildNodes[14].ChildNodes.Count > 1)
                                 {
                                     foreach (hap.HtmlNode form in move.ChildNodes[14].ChildNodes)
-                                        if ((form.Attributes["alt"] != null) && (form.Attributes["alt"].Value.Equals("Normal")))
-                                            addMove = true;
+                                    {
+                                        if (form.Attributes["alt"] != null)
+                                        {
+                                            string formname = form.Attributes["alt"].Value;
+                                            if (formname.Equals(name.FormName_EggTutor) || (name.FormName_EggTutor == null && formname.Equals("Normal")))
+                                                addMove = true;
+                                        }
+                                    }
                                 }
                                 else
                                     addMove = true;
