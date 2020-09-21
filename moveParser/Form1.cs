@@ -55,7 +55,7 @@ namespace moveParser
                 lvlUpTitle3 = lvltitle3;
                 tmHmTrTitle = tmtitle;
                 moveTutorTitle1 = tutortitle1;
-                moveTutorTitle1 = tutortitle2;
+                moveTutorTitle2 = tutortitle2;
                 eggMoveTitle = eggtitle;
             }
         }
