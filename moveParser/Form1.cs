@@ -71,7 +71,7 @@ namespace moveParser
             //return pkmnList;
         }
 
-        protected MonData LoadMonData(MonName name, GenerationData gen8)
+        protected MonData LoadMonData(MonName name, GenerationData gen)
         {
             MonData mon = new MonData();
             mon.DefName = "SPECIES_" + name.DefName;
@@ -88,11 +88,11 @@ namespace moveParser
             string moveTutorTitle1, moveTutorTitle2;
             string eggMoveTitle;
 
-            pokedex = gen8.dexPage;
-            identifier = String.Format(gen8.indexFormat, name.NatDexNum, name.OriginalName.ToLower());
-            lvlUpTitle_Gen = gen8.lvlUpTitle_Generation;
+            pokedex = gen.dexPage;
+            identifier = String.Format(gen.indexFormat, name.NatDexNum, name.SpeciesName.ToLower());
+            lvlUpTitle_Gen = gen.lvlUpTitle_Generation;
 
-            if (gen8.genNumber == 7 && (number == 808 || number == 809))
+            if (gen.genNumber == 7 && (number == 808 || number == 809))
                 lvlUpTitle_Game = "Let's Go Level Up";
             else
                 lvlUpTitle_Game = "Ultra Sun/Ultra Moon Level Up";
@@ -100,19 +100,19 @@ namespace moveParser
             //Checks if it's a form.
             if (name.IsBaseForm)
             {
-                lvlUpTitle_Form = String.Format(gen8.lvlUpTitle_Forms, "Standard");
-                lvlUpTitle_RegionalForm = String.Format(gen8.lvlUpTitle_RegionalForms, "Standard");
+                lvlUpTitle_Form = String.Format(gen.lvlUpTitle_Forms, "Standard");
+                lvlUpTitle_RegionalForm = String.Format(gen.lvlUpTitle_RegionalForms, "Standard");
             }
             else
             {
-                lvlUpTitle_Form = String.Format(gen8.lvlUpTitle_Forms, name.FormName_EggTutor);
-                lvlUpTitle_RegionalForm = String.Format(gen8.lvlUpTitle_RegionalForms, name.FormName_EggTutor);
+                lvlUpTitle_Form = String.Format(gen.lvlUpTitle_Forms, name.FormName_EggTutor);
+                lvlUpTitle_RegionalForm = String.Format(gen.lvlUpTitle_RegionalForms, name.FormName_EggTutor);
             }
 
-            tmHmTrTitle = gen8.tmHmTrTitle;
-            moveTutorTitle1 = gen8.moveTutorTitle1;
-            moveTutorTitle2 = gen8.moveTutorTitle2;
-            eggMoveTitle = gen8.eggMoveTitle;
+            tmHmTrTitle = gen.tmHmTrTitle;
+            moveTutorTitle1 = gen.moveTutorTitle1;
+            moveTutorTitle2 = gen.moveTutorTitle2;
+            eggMoveTitle = gen.eggMoveTitle;
 
             string html = "https://serebii.net/pokedex" + pokedex + "/" + identifier + ".shtml";
 
@@ -120,10 +120,10 @@ namespace moveParser
             hap.HtmlDocument htmlDoc = web.Load(html);
             hap.HtmlNodeCollection nodes;
 
-            if (gen8.genNumber == 7 && number <= 151)
+            if (gen.genNumber == 7 && number <= 151)
                 nodes = htmlDoc.DocumentNode.SelectNodes("//li[@title='Sun/Moon/Ultra Sun/Ultra Moon']/table[@class='dextable']");
             else
-                nodes = htmlDoc.DocumentNode.SelectNodes(gen8.tableNodes);
+                nodes = htmlDoc.DocumentNode.SelectNodes(gen.tableNodes);
 
             if (nodes != null)
             {
@@ -147,6 +147,8 @@ namespace moveParser
                         foreach (hap.HtmlNode move in moves)
                         {
                             LevelUpMove lmove = new LevelUpMove();
+
+                            //Skips rows without relevant data.
                             if (move_num % 3 == 2)
                             {
                                 int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[3].ChildNodes[0].InnerText];
@@ -154,8 +156,11 @@ namespace moveParser
                                 lmove.Move = "MOVE_" + MoveData.MoveDefNames[exMoveId];
 
                                 move_lvl = move.ChildNodes[1].InnerText;
+
+                                //Dashes ("—") interpreted as level 1 moves.
                                 if (move_lvl.Equals("&#8212;"))
                                     lmove.Level = 1;
+                                //Adds evolution moves from a separate list.
                                 else if (move_lvl.Equals("Evolve"))
                                 {
                                     lmove.Level = 0;
@@ -164,7 +169,7 @@ namespace moveParser
                                 else
                                     lmove.Level = int.Parse(move_lvl);
 
-
+                                //Reads evo moves from separate list and adds them as level 1 moves before proper level 1 moves.
                                 if (lmove.Level > 0 && evoMoves.Count > 0)
                                 {
                                     foreach (string evo in evoMoves)
@@ -172,6 +177,7 @@ namespace moveParser
                                             lvlMoves.Add(new LevelUpMove(1, evo));
                                     evoMoves.Clear();
                                 }
+                                //Don't add move if it's already on the list.
                                 if (!InList(lvlMoves,lmove))
                                     lvlMoves.Add(lmove);
                             }
@@ -185,20 +191,27 @@ namespace moveParser
                         int move_num = 0;
                         foreach (hap.HtmlNode move in moves)
                         {
+                            //Skips rows without relevant data.
                             if (move_num % 3 == 2)
                             {
                                 bool addMove = false;
+                                //Checks if it has an extra column for forms.
                                 if (move.ChildNodes.Count >= 17)
                                 {
+                                    //Looks at all the forms listed in this row.
                                     foreach (hap.HtmlNode form in move.ChildNodes[16].ChildNodes[0].ChildNodes[0].ChildNodes)
                                     {
                                         string formname = form.ChildNodes[0].Attributes["alt"].Value;
+                                        //It first checks if the current form has the same name as the Pokémon being checked.
+                                        //If not, checks if it's a base form and if the form checked is tagged as "Normal" (useful for species with regional forms)
                                         if (formname.Equals(name.FormName_TMs) || (name.IsBaseForm && formname.Equals("Normal")))
                                             addMove = true;
                                     }
                                 }
+                                //Adds move if it doesn't have a form column.
                                 else
                                     addMove = true;
+
                                 if (addMove)
                                 {
                                     int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[2].ChildNodes[0].InnerText];
@@ -216,20 +229,26 @@ namespace moveParser
                         int move_num = 0;
                         foreach (hap.HtmlNode move in moves)
                         {
+                            //Skips rows without relevant data.
                             if (move_num != 0 && move_num % 2 == 0)
                             {
                                 bool addMove = false;
+                                //Checks if it has an extra column for forms.
                                 if (move.ChildNodes.Count >= 8)
                                 {
                                     foreach (hap.HtmlNode form in move.ChildNodes[8].ChildNodes[0].ChildNodes[0].ChildNodes)
                                     {
                                         string formname = form.ChildNodes[0].Attributes["alt"].Value;
-                                        if (formname.Equals(name.FormName_EggTutor) || (name.IsBaseForm && formname.Equals(name.OriginalName)))
+                                        //It first checks if the current form has the same name as the Pokémon being checked.
+                                        //If not, checks if it's a base form and if the form checked is tagged with the original name (useful for species with regional forms)
+                                        if (formname.Equals(name.FormName_EggTutor) || (name.IsBaseForm && formname.Equals(name.SpeciesName)))
                                             addMove = true;
                                     }
                                 }
+                                //Adds move if it doesn't have a form column.
                                 else
                                     addMove = true;
+
                                 if (addMove)
                                 {
                                     int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText];
@@ -247,9 +266,11 @@ namespace moveParser
                         int move_num = 0;
                         foreach (hap.HtmlNode move in moves)
                         {
+                            //Skips rows without relevant data.
                             if (move_num % 3 == 2)
                             {
                                 bool addMove = false;
+                                //Checks if it has an extra column for forms.
                                 if (move.ChildNodes[14].ChildNodes.Count > 1)
                                 {
                                     foreach (hap.HtmlNode form in move.ChildNodes[14].ChildNodes)
@@ -257,13 +278,17 @@ namespace moveParser
                                         if (form.Attributes["alt"] != null)
                                         {
                                             string formname = form.Attributes["alt"].Value;
+                                            //It first checks if the current form has the same name as the Pokémon being checked.
+                                            //If not, checks if it's a base form and if the form checked is tagged as "Normal" (useful for species with regional forms)
                                             if (formname.Equals(name.FormName_EggTutor) || (name.IsBaseForm && formname.Equals("Normal")))
                                                 addMove = true;
                                         }
                                     }
                                 }
+                                //Adds move if it doesn't have a form column.
                                 else
                                     addMove = true;
+
                                 if (addMove)
                                 {
                                     int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText.Replace("USUM Only", "")];

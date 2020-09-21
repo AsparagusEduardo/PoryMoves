@@ -19,16 +19,16 @@ namespace moveParser.data
     public class MonName
     {
         public string NatDexNum;
-        public string OriginalName;
-        public bool IsBaseForm;
-        public string FormName_TMs;
-        public string FormName_EggTutor;
+        public string SpeciesName;
+        public bool IsBaseForm;             //Alolan Forms were previously called "Alola Form", and some stuff on Serebii still have the previous name.
+        public string FormName_TMs;         //- Used for "Alola Form".
+        public string FormName_EggTutor;    //- Used for all other forms.
         public string VarName;
         public string DefName;
         public MonName(string nat, string og, bool isfrm, string formtm, string formegg, string var, string def)
         {
             NatDexNum = nat;
-            OriginalName = og;
+            SpeciesName = og;
             IsBaseForm = isfrm;
             FormName_TMs = formtm;
             FormName_EggTutor = formegg;
