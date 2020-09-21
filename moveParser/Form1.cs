@@ -73,11 +73,12 @@ namespace moveParser
         };
 
 
-        protected Dictionary<string, string> LoadPkmnNameListFromSerebii()
+        protected void LoadPkmnNameListFromSerebii()
         {
+            List<MonName> lista = new List<MonName>();
             //string texto = "";
 
-            Dictionary<string, string> pkmnList = new Dictionary<string, string>();
+            //Dictionary<string, string> pkmnList = new Dictionary<string, string>();
             string html = "https://www.serebii.net/pokemon/nationalpokedex.shtml";
 
             hap.HtmlWeb web = new hap.HtmlWeb();
@@ -89,24 +90,30 @@ namespace moveParser
                 hap.HtmlNode nodo = nodes[i];
                 string number = nodo.ChildNodes[1].InnerHtml.Trim().Replace("#", "");
                 string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim();
-                pkmnList.Add(number, species);
+                //pkmnList.Add(number, species);
+
+                lista.Add(new MonName(number, species, NameToVarFormat(species), NameToDefineFormat(species)));
                 //texto += "{new MonData(\"" + NameToDefineFormat(species) + "\", \"" + NameToVarFormat(species) + "\") },\n";
             }
 
+            if (!Directory.Exists("db"))
+                Directory.CreateDirectory("db");
+            File.WriteAllText("db/monNames.json", JsonConvert.SerializeObject(lista, Formatting.Indented));
             //File.WriteAllText("db/monNames.json", texto);
-            return pkmnList;
+            //return pkmnList;
         }
 
-        protected MonData LoadMonData(int number, string name, GenerationData gen8)
+        protected MonData LoadMonData(MonName name, GenerationData gen8)
         {
             MonData mon = new MonData();
-            mon.DefName = "SPECIES_" + NameToDefineFormat(name);
-            mon.VarName = NameToVarFormat(name);
+            mon.DefName = "SPECIES_" + name.DefName;
+            mon.VarName = name.VarName;
 
             List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
             List<int> ExtraMovesIds = new List<int>();
             List<string> ExtraMoves = new List<string>();
 
+            int number = int.Parse(name.NatDexNum);
             string pokedex, identifier;
             string lvlUpTitle, lvlUpTitle2, lvlUpTitle3;
             string tmHmTrTitle;
@@ -114,7 +121,7 @@ namespace moveParser
             string eggMoveTitle;
 
             pokedex = gen8.dexPage;
-            identifier = String.Format(gen8.indexFormat, number.ToString("000"), name.ToLower());
+            identifier = String.Format(gen8.indexFormat, name.NatDexNum, name.OriginalName.ToLower());
             lvlUpTitle = gen8.lvlUpTitle1;
 
             if (gen8.genNumber == 7 && (number == 808 || number == 809))
@@ -230,7 +237,7 @@ namespace moveParser
                                 if (move.ChildNodes.Count >= 8)
                                 {
                                     foreach (hap.HtmlNode form in move.ChildNodes[8].ChildNodes[0].ChildNodes[0].ChildNodes)
-                                        if (form.ChildNodes[0].Attributes["alt"].Value.Equals(name))
+                                        if (form.ChildNodes[0].Attributes["alt"].Value.Equals(name.OriginalName))
                                             addMove = true;
                                 }
                                 else
@@ -342,21 +349,26 @@ namespace moveParser
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
+            List<MonName> nameList = new List<MonName>();
             List<MonData> Database = new List<MonData>();
+            string namesFile = "db/monNames.json";
 
             UpdateLoadingMessage("Loading species...");
-            Dictionary<string, string> nameList = LoadPkmnNameListFromSerebii();
+
+            if (!File.Exists(namesFile))
+                LoadPkmnNameListFromSerebii();
+            nameList = PokemonData.GetMonNamesFromFile(namesFile);
 
             GenerationData generation = GenData[(string)e.Argument];
 
             int namecount = nameList.Count;
 
             int i = 1;
-            foreach (KeyValuePair<string, string> item in nameList)
+            foreach (MonName item in nameList)
             {
                 if (i < 31)
                 {
-                    MonData mon = LoadMonData(int.Parse(item.Key), item.Value, generation);
+                    MonData mon = LoadMonData(item, generation);
                     if (mon != null)
                         Database.Add(mon);
                 }
