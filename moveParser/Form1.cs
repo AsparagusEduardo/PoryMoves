@@ -31,9 +31,9 @@ namespace moveParser
             public string dexPage;
             public string indexFormat;
             public string tableNodes;
-            public string lvlUpTitle1;
-            public string lvlUpTitle2;
-            public string lvlUpTitle3;
+            public string lvlUpTitle_Generation;
+            public string lvlUpTitle_Game;
+            public string lvlUpTitle_Forms;
             public string tmHmTrTitle;
             public string moveTutorTitle1;
             public string moveTutorTitle2;
@@ -41,7 +41,7 @@ namespace moveParser
 
             public string dbFilename;
             public GenerationData(int num, string dbfile, string dxpage, string idxformat, string tabnode,
-                                    string lvltitle1, string lvltitle2, string lvltitle3,
+                                    string lvlgen, string lvlgame, string lvlforms,
                                     string tmtitle, string tutortitle1, string tutortitle2,
                                     string eggtitle)
             {
@@ -50,9 +50,9 @@ namespace moveParser
                 dexPage = dxpage;
                 indexFormat = idxformat;
                 tableNodes = tabnode;
-                lvlUpTitle1 = lvltitle1;
-                lvlUpTitle2 = lvltitle2;
-                lvlUpTitle3 = lvltitle3;
+                lvlUpTitle_Generation = lvlgen;
+                lvlUpTitle_Game = lvlgame;
+                lvlUpTitle_Forms = lvlforms;
                 tmHmTrTitle = tmtitle;
                 moveTutorTitle1 = tutortitle1;
                 moveTutorTitle2 = tutortitle2;
@@ -63,11 +63,11 @@ namespace moveParser
         protected Dictionary<string, GenerationData> GenData = new Dictionary<string, GenerationData>()
         {
             {"Gen VIII", new GenerationData(8, "swsh", "-swsh", "{1}/index", "//table[@class='dextable']",
-                                            "Standard Level Up", "Standard Level Up", "Standard Level Up",
+                                            "Standard Level Up", "Standard Level Up", "Level Up",
                                             "TM & HM Attacks", "Move Tutor Attacks", "Isle of Armor Move Tutor Attacks",
                                             "Egg Moves (Details)") },
             {"Gen VII", new GenerationData(7, "usum", "-sm", "{0}", "//table[@class='dextable']",
-                                            "Generation VII Level Up", "Standard Level Up", "Standard Level Up",
+                                            "Generation VII Level Up", "Standard Level Up", "Level Up",
                                             "TM & HM Attacks", "Move Tutor Attacks", "Ultra Sun/Ultra Moon Move Tutor Attacks",
                                             "Egg Moves (Details)") },
         };
@@ -115,21 +115,25 @@ namespace moveParser
 
             int number = int.Parse(name.NatDexNum);
             string pokedex, identifier;
-            string lvlUpTitle, lvlUpTitle2, lvlUpTitle3;
+            string lvlUpTitle_Gen, lvlUpTitle_Game, lvlUpTitle_Form;
             string tmHmTrTitle;
             string moveTutorTitle1, moveTutorTitle2;
             string eggMoveTitle;
 
             pokedex = gen8.dexPage;
             identifier = String.Format(gen8.indexFormat, name.NatDexNum, name.OriginalName.ToLower());
-            lvlUpTitle = gen8.lvlUpTitle1;
+            lvlUpTitle_Gen = gen8.lvlUpTitle_Generation;
 
             if (gen8.genNumber == 7 && (number == 808 || number == 809))
-                lvlUpTitle2 = "Let's Go Level Up";
+                lvlUpTitle_Game = "Let's Go Level Up";
             else
-                lvlUpTitle2 = "Ultra Sun/Ultra Moon Level Up";
+                lvlUpTitle_Game = "Ultra Sun/Ultra Moon Level Up";
 
-            lvlUpTitle3 = gen8.lvlUpTitle3;
+            if (name.FormName_TMs == null)
+                lvlUpTitle_Form = "Standard " + gen8.lvlUpTitle_Forms;
+            else
+                lvlUpTitle_Form = name.FormName_EggTutor + " " + gen8.lvlUpTitle_Forms;
+
             tmHmTrTitle = gen8.tmHmTrTitle;
             moveTutorTitle1 = gen8.moveTutorTitle1;
             moveTutorTitle2 = gen8.moveTutorTitle2;
@@ -154,7 +158,7 @@ namespace moveParser
                     hap.HtmlNode nodo = nodes[i];
 
                     //Checks for Level Up Moves
-                    if (nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle2) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle3))
+                    if (nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Gen) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Game) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Form))
                     {
                         moves = nodo.ChildNodes;
                         int move_num = 0;
