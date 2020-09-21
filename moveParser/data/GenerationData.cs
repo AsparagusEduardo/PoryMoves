@@ -15,6 +15,7 @@ namespace moveParser.data
         public string lvlUpTitle_Generation;
         public string lvlUpTitle_Game;
         public string lvlUpTitle_Forms;
+        public string lvlUpTitle_RegionalForms;
         public string tmHmTrTitle;
         public string tmHmTrTitle2;
         public string moveTutorTitle1;
@@ -23,7 +24,7 @@ namespace moveParser.data
 
         public string dbFilename;
         public GenerationData(int num, string dbfile, string dxpage, string idxformat, string tabnode,
-                                string lvlgen, string lvlgame, string lvlforms,
+                                string lvlgen, string lvlgame, string lvlforms, string lvlregforms,
                                 string tmtitle, string tmtitle2, string tutortitle1, string tutortitle2,
                                 string eggtitle)
         {
@@ -35,6 +36,7 @@ namespace moveParser.data
             lvlUpTitle_Generation = lvlgen;
             lvlUpTitle_Game = lvlgame;
             lvlUpTitle_Forms = lvlforms;
+            lvlUpTitle_RegionalForms = lvlregforms;
             tmHmTrTitle = tmtitle;
             tmHmTrTitle2 = tmtitle2;
             moveTutorTitle1 = tutortitle1;

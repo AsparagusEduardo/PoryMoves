@@ -29,12 +29,12 @@ namespace moveParser
         protected Dictionary<string, GenerationData> GenData = new Dictionary<string, GenerationData>()
         {
             {"Gen VIII", new GenerationData(8, "swsh", "-swsh", "{1}/index", "//table[@class='dextable']",
-                                            "Standard Level Up", "Standard Level Up", "Level Up",
+                                            "Standard Level Up", "Standard Level Up", "Level Up - {0}", "{0} Level Up",
                                             "Technical Machine Attacks", "Technical Record Attacks",
                                             "Move Tutor Attacks", "Isle of Armor Move Tutor Attacks",
                                             "Egg Moves (Details)") },
             {"Gen VII", new GenerationData(7, "usum", "-sm", "{0}", "//table[@class='dextable']",
-                                            "Generation VII Level Up", "Standard Level Up", "Level Up",
+                                            "Generation VII Level Up", "Standard Level Up", "Sun / Moon Level Up - {0}", "{0} Level Up",
                                             "TM & HM Attacks", "TM & HM Attacks",
                                             "Move Tutor Attacks", "Ultra Sun/Ultra Moon Move Tutor Attacks",
                                             "Egg Moves (Details)") },
@@ -60,7 +60,7 @@ namespace moveParser
                 string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim();
                 //pkmnList.Add(number, species);
 
-                lista.Add(new MonName(number, species, null, null, NameToVarFormat(species), NameToDefineFormat(species)));
+                lista.Add(new MonName(number, species, true, null, null, NameToVarFormat(species), NameToDefineFormat(species)));
                 //texto += "{new MonData(\"" + NameToDefineFormat(species) + "\", \"" + NameToVarFormat(species) + "\") },\n";
             }
 
@@ -83,7 +83,7 @@ namespace moveParser
 
             int number = int.Parse(name.NatDexNum);
             string pokedex, identifier;
-            string lvlUpTitle_Gen, lvlUpTitle_Game, lvlUpTitle_Form;
+            string lvlUpTitle_Gen, lvlUpTitle_Game, lvlUpTitle_Form, lvlUpTitle_RegionalForm;
             string tmHmTrTitle;
             string moveTutorTitle1, moveTutorTitle2;
             string eggMoveTitle;
@@ -97,10 +97,17 @@ namespace moveParser
             else
                 lvlUpTitle_Game = "Ultra Sun/Ultra Moon Level Up";
 
-            if (name.FormName_TMs == null)
-                lvlUpTitle_Form = "Standard " + gen8.lvlUpTitle_Forms;
+            //Checks if it's a form.
+            if (name.IsBaseForm)
+            {
+                lvlUpTitle_Form = String.Format(gen8.lvlUpTitle_Forms, "Standard");
+                lvlUpTitle_RegionalForm = String.Format(gen8.lvlUpTitle_RegionalForms, "Standard");
+            }
             else
-                lvlUpTitle_Form = name.FormName_EggTutor + " " + gen8.lvlUpTitle_Forms;
+            {
+                lvlUpTitle_Form = String.Format(gen8.lvlUpTitle_Forms, name.FormName_EggTutor);
+                lvlUpTitle_RegionalForm = String.Format(gen8.lvlUpTitle_RegionalForms, name.FormName_EggTutor);
+            }
 
             tmHmTrTitle = gen8.tmHmTrTitle;
             moveTutorTitle1 = gen8.moveTutorTitle1;
@@ -126,7 +133,10 @@ namespace moveParser
                     hap.HtmlNode nodo = nodes[i];
 
                     //Checks for Level Up Moves
-                    if (nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Gen) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Game) || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Form))
+                    if ((nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Gen) && name.IsBaseForm)
+                        || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Game)
+                        || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Form)
+                        || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_RegionalForm))
                     {
                         moves = nodo.ChildNodes;
                         int move_num = 0;
@@ -183,7 +193,7 @@ namespace moveParser
                                     foreach (hap.HtmlNode form in move.ChildNodes[16].ChildNodes[0].ChildNodes[0].ChildNodes)
                                     {
                                         string formname = form.ChildNodes[0].Attributes["alt"].Value;
-                                        if (formname.Equals(name.FormName_TMs) || (name.FormName_TMs == null && formname.Equals("Normal")))
+                                        if (formname.Equals(name.FormName_TMs) || (name.IsBaseForm && formname.Equals("Normal")))
                                             addMove = true;
                                     }
                                 }
@@ -214,7 +224,7 @@ namespace moveParser
                                     foreach (hap.HtmlNode form in move.ChildNodes[8].ChildNodes[0].ChildNodes[0].ChildNodes)
                                     {
                                         string formname = form.ChildNodes[0].Attributes["alt"].Value;
-                                        if (formname.Equals(name.FormName_EggTutor) || (name.FormName_EggTutor == null && formname.Equals(name.OriginalName)))
+                                        if (formname.Equals(name.FormName_EggTutor) || (name.IsBaseForm && formname.Equals(name.OriginalName)))
                                             addMove = true;
                                     }
                                 }
@@ -247,7 +257,7 @@ namespace moveParser
                                         if (form.Attributes["alt"] != null)
                                         {
                                             string formname = form.Attributes["alt"].Value;
-                                            if (formname.Equals(name.FormName_EggTutor) || (name.FormName_EggTutor == null && formname.Equals("Normal")))
+                                            if (formname.Equals(name.FormName_EggTutor) || (name.IsBaseForm && formname.Equals("Normal")))
                                                 addMove = true;
                                         }
                                     }
@@ -350,7 +360,7 @@ namespace moveParser
             int i = 1;
             foreach (MonName item in nameList)
             {
-                //if (i < 31)
+                if (i < 31)
                 {
                     MonData mon = LoadMonData(item, generation);
                     if (mon != null)
