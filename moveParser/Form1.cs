@@ -13,37 +13,17 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Threading;
 using moveParser.data;
+using static moveParser.data.MoveData;
 
 namespace moveParser
 {
     public partial class Form1 : Form
     {
-        public class LevelUpMove
-        {
-            public int Level;
-            public string Move;
-            public LevelUpMove()
-            {
-
-            }
-            public LevelUpMove(int lvl, string mv)
-            {
-                Level = lvl;
-                Move = mv;
-            }
-        }
-        public class MonData
-        {
-            public string VarName;
-            public string DefName;
-            public List<LevelUpMove> LevelMoves;
-            public List<string> ExtraMoves;
-        }
-
         public Form1()
         {
             InitializeComponent();
             cmbGeneration.SelectedIndex = 0;
+            //LoadPkmnNameListFromSerebii();
         }
         public class GenerationData
         {
@@ -95,6 +75,8 @@ namespace moveParser
 
         protected Dictionary<string, string> LoadPkmnNameListFromSerebii()
         {
+            //string texto = "";
+
             Dictionary<string, string> pkmnList = new Dictionary<string, string>();
             string html = "https://www.serebii.net/pokemon/nationalpokedex.shtml";
 
@@ -108,8 +90,10 @@ namespace moveParser
                 string number = nodo.ChildNodes[1].InnerHtml.Trim().Replace("#", "");
                 string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim();
                 pkmnList.Add(number, species);
+                //texto += "{new MonData(\"" + NameToDefineFormat(species) + "\", \"" + NameToVarFormat(species) + "\") },\n";
             }
 
+            //File.WriteAllText("db/monNames.json", texto);
             return pkmnList;
         }
 

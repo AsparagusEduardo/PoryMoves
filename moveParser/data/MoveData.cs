@@ -8,6 +8,20 @@ namespace moveParser.data
 {
     public class MoveData
     {
+        public class LevelUpMove
+        {
+            public int Level;
+            public string Move;
+            public LevelUpMove()
+            {
+
+            }
+            public LevelUpMove(int lvl, string mv)
+            {
+                Level = lvl;
+                Move = mv;
+            }
+        }
         public static Dictionary<string, int> SerebiiNameToID = new Dictionary<string, int>()
         {
             { "Pound", 1},
