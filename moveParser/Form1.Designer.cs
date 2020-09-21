@@ -85,7 +85,8 @@
             this.cmbGeneration.FormattingEnabled = true;
             this.cmbGeneration.Items.AddRange(new object[] {
             "Gen VIII",
-            "Gen VII"});
+            "Gen VII",
+            "Gen VI"});
             this.cmbGeneration.Location = new System.Drawing.Point(162, 16);
             this.cmbGeneration.Name = "cmbGeneration";
             this.cmbGeneration.Size = new System.Drawing.Size(92, 24);

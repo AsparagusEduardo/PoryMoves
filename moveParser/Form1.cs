@@ -343,38 +343,47 @@ namespace moveParser
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            List<MonName> nameList = new List<MonName>();
-            List<MonData> Database = new List<MonData>();
-            string namesFile = "db/monNames.json";
-
-            UpdateLoadingMessage("Loading species...");
-
-            if (!File.Exists(namesFile))
-                LoadPkmnNameListFromSerebii();
-            nameList = PokemonData.GetMonNamesFromFile(namesFile);
-
-            GenerationData generation = GenData[(string)e.Argument];
-
-            int namecount = nameList.Count;
-
-            int i = 1;
-            foreach (MonName item in nameList)
+            try
             {
-                //if (i < 31)
-                {
-                    MonData mon = LoadMonData(item, generation);
-                    if (mon != null)
-                        Database.Add(mon);
-                }
-                backgroundWorker1.ReportProgress(i * 100 / namecount);
-                // Set the text.
-                UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Pokémon loaded.");
-                i++;
-            }
-            if (!Directory.Exists("db"))
-                Directory.CreateDirectory("db");
+                List<MonName> nameList = new List<MonName>();
+                List<MonData> Database = new List<MonData>();
+                string namesFile = "db/monNames.json";
 
-            File.WriteAllText("db/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
+                UpdateLoadingMessage("Loading species...");
+
+                if (!File.Exists(namesFile))
+                    LoadPkmnNameListFromSerebii();
+                nameList = PokemonData.GetMonNamesFromFile(namesFile);
+
+                GenerationData generation = GenData[(string)e.Argument];
+
+                int namecount = nameList.Count;
+
+                int i = 1;
+                foreach (MonName item in nameList)
+                {
+                    //if (i < 31)
+                    {
+                        MonData mon = LoadMonData(item, generation);
+                        if (mon != null)
+                            Database.Add(mon);
+                    }
+                    backgroundWorker1.ReportProgress(i * 100 / namecount);
+                    // Set the text.
+                    UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Pokémon loaded.");
+                    i++;
+                }
+                if (!Directory.Exists("db"))
+                    Directory.CreateDirectory("db");
+
+                File.WriteAllText("db/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
+                UpdateLoadingMessage("Pokémon data loaded.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                UpdateLoadingMessage("Couldn't load Pokémon data.");
+            }
             FinishMoveDataLoading();
         }
 
