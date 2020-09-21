@@ -25,50 +25,18 @@ namespace moveParser
             cmbGeneration.SelectedIndex = 0;
             //LoadPkmnNameListFromSerebii();
         }
-        public class GenerationData
-        {
-            public int genNumber;
-            public string dexPage;
-            public string indexFormat;
-            public string tableNodes;
-            public string lvlUpTitle_Generation;
-            public string lvlUpTitle_Game;
-            public string lvlUpTitle_Forms;
-            public string tmHmTrTitle;
-            public string moveTutorTitle1;
-            public string moveTutorTitle2;
-            public string eggMoveTitle;
-
-            public string dbFilename;
-            public GenerationData(int num, string dbfile, string dxpage, string idxformat, string tabnode,
-                                    string lvlgen, string lvlgame, string lvlforms,
-                                    string tmtitle, string tutortitle1, string tutortitle2,
-                                    string eggtitle)
-            {
-                genNumber = num;
-                dbFilename = dbfile;
-                dexPage = dxpage;
-                indexFormat = idxformat;
-                tableNodes = tabnode;
-                lvlUpTitle_Generation = lvlgen;
-                lvlUpTitle_Game = lvlgame;
-                lvlUpTitle_Forms = lvlforms;
-                tmHmTrTitle = tmtitle;
-                moveTutorTitle1 = tutortitle1;
-                moveTutorTitle2 = tutortitle2;
-                eggMoveTitle = eggtitle;
-            }
-        }
 
         protected Dictionary<string, GenerationData> GenData = new Dictionary<string, GenerationData>()
         {
             {"Gen VIII", new GenerationData(8, "swsh", "-swsh", "{1}/index", "//table[@class='dextable']",
                                             "Standard Level Up", "Standard Level Up", "Level Up",
-                                            "TM & HM Attacks", "Move Tutor Attacks", "Isle of Armor Move Tutor Attacks",
+                                            "Technical Machine Attacks", "Technical Record Attacks",
+                                            "Move Tutor Attacks", "Isle of Armor Move Tutor Attacks",
                                             "Egg Moves (Details)") },
             {"Gen VII", new GenerationData(7, "usum", "-sm", "{0}", "//table[@class='dextable']",
                                             "Generation VII Level Up", "Standard Level Up", "Level Up",
-                                            "TM & HM Attacks", "Move Tutor Attacks", "Ultra Sun/Ultra Moon Move Tutor Attacks",
+                                            "TM & HM Attacks", "TM & HM Attacks",
+                                            "Move Tutor Attacks", "Ultra Sun/Ultra Moon Move Tutor Attacks",
                                             "Egg Moves (Details)") },
         };
 
@@ -382,7 +350,7 @@ namespace moveParser
             int i = 1;
             foreach (MonName item in nameList)
             {
-                if (i < 31)
+                //if (i < 31)
                 {
                     MonData mon = LoadMonData(item, generation);
                     if (mon != null)

@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="data\GenerationData.cs" />
     <Compile Include="data\PokemonData.cs" />
     <Compile Include="data\MoveData.cs" />
     <Compile Include="Form1.cs">
