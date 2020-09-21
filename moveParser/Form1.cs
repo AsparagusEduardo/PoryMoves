@@ -92,7 +92,7 @@ namespace moveParser
                 string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim();
                 //pkmnList.Add(number, species);
 
-                lista.Add(new MonName(number, species, null, NameToVarFormat(species), NameToDefineFormat(species)));
+                lista.Add(new MonName(number, species, null, null, NameToVarFormat(species), NameToDefineFormat(species)));
                 //texto += "{new MonData(\"" + NameToDefineFormat(species) + "\", \"" + NameToVarFormat(species) + "\") },\n";
             }
 
@@ -211,7 +211,7 @@ namespace moveParser
                                     foreach (hap.HtmlNode form in move.ChildNodes[16].ChildNodes[0].ChildNodes[0].ChildNodes)
                                     {
                                         string formname = form.ChildNodes[0].Attributes["alt"].Value;
-                                        if (formname.Equals(name.FormName) || (name.FormName == null && formname.Equals("Normal")))
+                                        if (formname.Equals(name.FormName_TMs) || (name.FormName_TMs == null && formname.Equals("Normal")))
                                             addMove = true;
                                     }
                                 }
@@ -240,8 +240,11 @@ namespace moveParser
                                 if (move.ChildNodes.Count >= 8)
                                 {
                                     foreach (hap.HtmlNode form in move.ChildNodes[8].ChildNodes[0].ChildNodes[0].ChildNodes)
-                                        if (form.ChildNodes[0].Attributes["alt"].Value.Equals(name.OriginalName))
+                                    {
+                                        string formname = form.ChildNodes[0].Attributes["alt"].Value;
+                                        if (formname.Equals(name.FormName_EggTutor) || (name.FormName_EggTutor == null && formname.Equals(name.OriginalName)))
                                             addMove = true;
+                                    }
                                 }
                                 else
                                     addMove = true;

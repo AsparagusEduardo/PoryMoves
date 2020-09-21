@@ -20,14 +20,16 @@ namespace moveParser.data
     {
         public string NatDexNum;
         public string OriginalName;
-        public string FormName;
+        public string FormName_TMs;
+        public string FormName_EggTutor;
         public string VarName;
         public string DefName;
-        public MonName(string nat, string og, string form, string var, string def)
+        public MonName(string nat, string og, string formtm, string formegg, string var, string def)
         {
             NatDexNum = nat;
             OriginalName = og;
-            FormName = form;
+            FormName_TMs = formtm;
+            FormName_EggTutor = formegg;
             VarName = var;
             DefName = def;
         }
