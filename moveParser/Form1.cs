@@ -360,7 +360,7 @@ namespace moveParser
             int i = 1;
             foreach (MonName item in nameList)
             {
-                if (i < 31)
+                //if (i < 31)
                 {
                     MonData mon = LoadMonData(item, generation);
                     if (mon != null)
