@@ -78,8 +78,14 @@ namespace moveParser
             mon.VarName = name.VarName;
 
             List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
-            List<int> ExtraMovesIds = new List<int>();
-            List<string> ExtraMoves = new List<string>();
+            List<int> TMMovesIds = new List<int>();
+            List<string> TMMoves = new List<string>();
+
+            List<int> EggMovesIds = new List<int>();
+            List<string> EggMoves = new List<string>();
+
+            List<int> TutorMovesIds = new List<int>();
+            List<string> TutorMoves = new List<string>();
 
             int number = int.Parse(name.NatDexNum);
             string pokedex, identifier;
@@ -152,7 +158,7 @@ namespace moveParser
                             if (move_num % 3 == 2)
                             {
                                 int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[3].ChildNodes[0].InnerText];
-                                ExtraMovesIds.Add(exMoveId);
+                                //ExtraMovesIds.Add(exMoveId);
                                 lmove.Move = "MOVE_" + MoveData.MoveDefNames[exMoveId];
 
                                 move_lvl = move.ChildNodes[1].InnerText;
@@ -215,7 +221,7 @@ namespace moveParser
                                 if (addMove)
                                 {
                                     int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[2].ChildNodes[0].InnerText];
-                                    ExtraMovesIds.Add(exMoveId);
+                                    TMMovesIds.Add(exMoveId);
                                 }
                             }
                             move_num++;
@@ -252,7 +258,7 @@ namespace moveParser
                                 if (addMove)
                                 {
                                     int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText];
-                                    ExtraMovesIds.Add(exMoveId);
+                                    TutorMovesIds.Add(exMoveId);
                                 }
 
                             }
@@ -292,26 +298,36 @@ namespace moveParser
                                 if (addMove)
                                 {
                                     int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText.Replace("USUM Only", "")];
-                                    ExtraMovesIds.Add(exMoveId);
+                                    EggMovesIds.Add(exMoveId);
                                 }
                             }
                             move_num++;
                         }
                     }
                 }
-                ExtraMovesIds = ExtraMovesIds.Distinct().ToList();
-                ExtraMovesIds.Sort();
-                foreach(int exMoveId in ExtraMovesIds)
-                {
-                    ExtraMoves.Add("MOVE_" + MoveData.MoveDefNames[exMoveId]);
-                }
+                TMMovesIds = TMMovesIds.Distinct().ToList();
+                TMMovesIds.Sort();
+                foreach (int exMoveId in TMMovesIds)
+                    TMMoves.Add("MOVE_" + MoveData.MoveDefNames[exMoveId]);
+
+                EggMovesIds = EggMovesIds.Distinct().ToList();
+                EggMovesIds.Sort();
+                foreach (int exMoveId in EggMovesIds)
+                    EggMoves.Add("MOVE_" + MoveData.MoveDefNames[exMoveId]);
+
+                TutorMovesIds = TutorMovesIds.Distinct().ToList();
+                TutorMovesIds.Sort();
+                foreach (int exMoveId in TutorMovesIds)
+                    TutorMoves.Add("MOVE_" + MoveData.MoveDefNames[exMoveId]);
             }
             else
             {
                 return null;
             }
             mon.LevelMoves = lvlMoves;
-            mon.ExtraMoves = ExtraMoves;
+            mon.TMMoves = TMMoves;
+            mon.EggMoves = EggMoves;
+            mon.TutorMoves = TutorMoves;
 
             return mon;
         }

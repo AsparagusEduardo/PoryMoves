@@ -14,7 +14,9 @@ namespace moveParser.data
         public string VarName;
         public string DefName;
         public List<LevelUpMove> LevelMoves;
-        public List<string> ExtraMoves;
+        public List<string> TMMoves;
+        public List<string> EggMoves;
+        public List<string> TutorMoves;
     }
     public class MonName
     {
