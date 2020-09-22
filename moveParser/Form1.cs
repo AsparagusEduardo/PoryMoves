@@ -379,7 +379,7 @@ namespace moveParser
 
         private void btnLoadFromSerebii_Click(object sender, EventArgs e)
         {
-            btnLoadFromSerebii.Enabled = false;
+            SetEnableForAllElements(false);
             backgroundWorker1.RunWorkerAsync(cmbGeneration.SelectedItem.ToString());
         }
 
@@ -388,7 +388,7 @@ namespace moveParser
             try
             {
                 List<MonName> nameList = new List<MonName>();
-                List<MonData> Database = new List<MonData>();
+                Dictionary<string, MonData> Database = new Dictionary<string, MonData>();
                 string namesFile = "db/monNames.json";
 
                 UpdateLoadingMessage("Loading species...");
@@ -408,7 +408,7 @@ namespace moveParser
                     {
                         MonData mon = LoadMonData(item, generation);
                         if (mon != null)
-                            Database.Add(mon);
+                            Database.Add(mon.DefName, mon);
                     }
                     backgroundWorker1.ReportProgress(i * 100 / namecount);
                     // Set the text.
@@ -445,11 +445,75 @@ namespace moveParser
             });
         }
 
+        public void SetEnableForAllElements(bool value)
+        {
+            SetEnableForAllButtons(value);
+            SetEnableForAllCombobox(value);
+        }
+
         public void FinishMoveDataLoading()
         {
+            SetEnableForAllElements(true);
+
             this.Invoke((MethodInvoker)delegate {
-                this.btnLoadFromSerebii.Enabled = true;
                 this.pbar1.Value = 0;
+            });
+        }
+
+
+        private void btnWriteLvlLearnsets_Click(object sender, EventArgs e)
+        {
+            bwrkExportLvl.RunWorkerAsync();
+        }
+        private void bwrkExportLvl_DoWork(object sender, DoWorkEventArgs e)
+        {
+            SetEnableForAllElements(false);
+            Dictionary<string, MonData> Data = PokemonData.GetMonDataFromFile("db/usum.json");
+
+            if (!Directory.Exists("output"))
+                Directory.CreateDirectory("output");
+
+            // file header
+            string sets = "#define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}\n";
+            //string sets = "#define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}\n#define LEVEL_UP_END (0xffff)\n";
+
+            // iterate over mons
+            int namecount = Data.Count;
+            int i = 1;
+            foreach (KeyValuePair<string, MonData> entry in Data)
+            {
+                // begin learnset
+                sets += $"\nstatic const struct LevelUpMove s{entry.Value.VarName}LevelUpLearnset[] = {{\n";
+
+                foreach (LevelUpMove move in entry.Value.LevelMoves)
+                    sets += $"    LEVEL_UP_MOVE({move.Level,-2}, {move.Move}),\n";
+                sets += "    LEVEL_UP_END\n};\n";
+
+
+                bwrkExportLvl.ReportProgress(i * 100 / namecount);
+                // Set the text.
+                UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Level Up movesets exported.");
+                i++;
+            }
+            // write to file
+            File.WriteAllText("output/level_up_learnsets.h", sets);
+
+            MessageBox.Show("Level Up moves exported to \"output/level_up_learnsets.h", "Success!", MessageBoxButtons.OK);
+            SetEnableForAllElements(true);
+        }
+
+        private void SetEnableForAllButtons(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                btnLoadFromSerebii.Enabled = value;
+                btnWriteLvlLearnsets.Enabled = value;
+            });
+        }
+
+        private void SetEnableForAllCombobox(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                cmbGeneration.Enabled = value;
             });
         }
     }

@@ -41,15 +41,15 @@ namespace moveParser.data
 
     public class PokemonData
     {
-        public static List<MonData> GetMonDataFromFile(string filedir)
+        public static Dictionary<string, MonData> GetMonDataFromFile(string filedir)
         {
-            List<MonData> list;
+            Dictionary<string, MonData> dict;
             string text = File.ReadAllText(filedir);
 
-            list = JsonConvert.DeserializeObject<List<MonData>>(text);
+            dict = JsonConvert.DeserializeObject<Dictionary<string, MonData>>(text);
 
 
-            return list;
+            return dict;
         }
 
         public static List<MonName> GetMonNamesFromFile(string filedir)

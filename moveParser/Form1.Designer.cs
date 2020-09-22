@@ -35,6 +35,8 @@
             this.lblOptions = new System.Windows.Forms.Label();
             this.cmbGeneration = new System.Windows.Forms.ComboBox();
             this.lblBaseMovesets = new System.Windows.Forms.Label();
+            this.btnWriteLvlLearnsets = new System.Windows.Forms.Button();
+            this.bwrkExportLvl = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // btnLoadFromSerebii
@@ -101,11 +103,28 @@
             this.lblBaseMovesets.TabIndex = 6;
             this.lblBaseMovesets.Text = "Load moves from:";
             // 
+            // btnWriteLvlLearnsets
+            // 
+            this.btnWriteLvlLearnsets.Location = new System.Drawing.Point(174, 364);
+            this.btnWriteLvlLearnsets.Name = "btnWriteLvlLearnsets";
+            this.btnWriteLvlLearnsets.Size = new System.Drawing.Size(80, 29);
+            this.btnWriteLvlLearnsets.TabIndex = 7;
+            this.btnWriteLvlLearnsets.Text = "Level Up";
+            this.btnWriteLvlLearnsets.UseVisualStyleBackColor = true;
+            this.btnWriteLvlLearnsets.Click += new System.EventHandler(this.btnWriteLvlLearnsets_Click);
+            // 
+            // bwrkExportLvl
+            // 
+            this.bwrkExportLvl.WorkerReportsProgress = true;
+            this.bwrkExportLvl.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkExportLvl_DoWork);
+            this.bwrkExportLvl.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnWriteLvlLearnsets);
             this.Controls.Add(this.lblBaseMovesets);
             this.Controls.Add(this.cmbGeneration);
             this.Controls.Add(this.lblOptions);
@@ -128,6 +147,8 @@
         private System.Windows.Forms.Label lblOptions;
         private System.Windows.Forms.ComboBox cmbGeneration;
         private System.Windows.Forms.Label lblBaseMovesets;
+        private System.Windows.Forms.Button btnWriteLvlLearnsets;
+        private System.ComponentModel.BackgroundWorker bwrkExportLvl;
     }
 }
 
