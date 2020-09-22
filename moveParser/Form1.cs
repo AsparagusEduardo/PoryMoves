@@ -28,12 +28,12 @@ namespace moveParser
 
         protected Dictionary<string, GenerationData> GenData = new Dictionary<string, GenerationData>()
         {
-            {"Gen VIII", new GenerationData(8, "swsh", "-swsh", "{1}/index", "//table[@class='dextable']",
+            {"SWSH", new GenerationData(8, "swsh", "-swsh", "{1}/index", "//table[@class='dextable']",
                                             "Standard Level Up", "Standard Level Up", "Level Up - {0}", "{0} Level Up",
                                             "Technical Machine Attacks", "Technical Record Attacks",
                                             "Move Tutor Attacks", "Isle of Armor Move Tutor Attacks",
                                             "Egg Moves (Details)") },
-            {"Gen VII", new GenerationData(7, "usum", "-sm", "{0}", "//table[@class='dextable']",
+            {"USUM", new GenerationData(7, "usum", "-sm", "{0}", "//table[@class='dextable']",
                                             "Generation VII Level Up", "Standard Level Up", "Sun / Moon Level Up - {0}", "{0} Level Up",
                                             "TM & HM Attacks", "TM & HM Attacks",
                                             "Move Tutor Attacks", "Ultra Sun/Ultra Moon Move Tutor Attacks",
