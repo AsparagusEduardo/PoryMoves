@@ -408,7 +408,16 @@ namespace moveParser
                     {
                         MonData mon = LoadMonData(item, generation);
                         if (mon != null)
-                            Database.Add(mon.DefName, mon);
+                        {
+                            try
+                            {
+                                Database.Add(mon.DefName, mon);
+                            }
+                            catch (ArgumentException ex)
+                            {
+                                File.AppendAllText("errorLog.txt", "[" + DateTime.Now.ToString() + "] Error adding " + mon.DefName + ": " + ex.Message);
+                            }
+                        }
                     }
                     backgroundWorker1.ReportProgress(i * 100 / namecount);
                     // Set the text.
@@ -475,7 +484,8 @@ namespace moveParser
 
             // file header
             string sets = "#define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}\n";
-            //string sets = "#define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}\n#define LEVEL_UP_END (0xffff)\n";
+            if (chkLvl_LevelUpEnd.Checked)
+                sets += "#define LEVEL_UP_END (0xffff)\n";
 
             // iterate over mons
             int namecount = Data.Count;
@@ -486,7 +496,10 @@ namespace moveParser
                 sets += $"\nstatic const struct LevelUpMove s{entry.Value.VarName}LevelUpLearnset[] = {{\n";
 
                 foreach (LevelUpMove move in entry.Value.LevelMoves)
+                {
                     sets += $"    LEVEL_UP_MOVE({move.Level,-2}, {move.Move}),\n";
+                    //sets += "    LEVEL_UP_MOVE(" + ((move.Level < 10) ? move.Level.ToString().PadLeft(2) : move.Level.ToString()) + ", " + move.Move + "),\n";
+                }
                 sets += "    LEVEL_UP_END\n};\n";
 
 

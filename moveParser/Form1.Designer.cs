@@ -44,9 +44,9 @@
             this.btnExportTM = new System.Windows.Forms.Button();
             this.chkTM_IncludeLvl = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkLvl_LevelUpEnd = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.chkLvl_EvoMovesLvl1 = new System.Windows.Forms.CheckBox();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
@@ -147,6 +147,7 @@
             // 
             // checkedListBox1
             // 
+            this.checkedListBox1.Enabled = false;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "SWSH",
@@ -188,6 +189,7 @@
             // chkTM_IncludeTutor
             // 
             this.chkTM_IncludeTutor.AutoSize = true;
+            this.chkTM_IncludeTutor.Enabled = false;
             this.chkTM_IncludeTutor.Location = new System.Drawing.Point(6, 260);
             this.chkTM_IncludeTutor.Name = "chkTM_IncludeTutor";
             this.chkTM_IncludeTutor.Size = new System.Drawing.Size(158, 21);
@@ -198,6 +200,7 @@
             // chkTM_IncludeEgg
             // 
             this.chkTM_IncludeEgg.AutoSize = true;
+            this.chkTM_IncludeEgg.Enabled = false;
             this.chkTM_IncludeEgg.Location = new System.Drawing.Point(6, 232);
             this.chkTM_IncludeEgg.Name = "chkTM_IncludeEgg";
             this.chkTM_IncludeEgg.Size = new System.Drawing.Size(149, 21);
@@ -207,6 +210,7 @@
             // 
             // btnExportTM
             // 
+            this.btnExportTM.Enabled = false;
             this.btnExportTM.Location = new System.Drawing.Point(6, 291);
             this.btnExportTM.Name = "btnExportTM";
             this.btnExportTM.Size = new System.Drawing.Size(180, 27);
@@ -217,6 +221,7 @@
             // chkTM_IncludeLvl
             // 
             this.chkTM_IncludeLvl.AutoSize = true;
+            this.chkTM_IncludeLvl.Enabled = false;
             this.chkTM_IncludeLvl.Location = new System.Drawing.Point(6, 205);
             this.chkTM_IncludeLvl.Name = "chkTM_IncludeLvl";
             this.chkTM_IncludeLvl.Size = new System.Drawing.Size(180, 21);
@@ -226,9 +231,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.chkLvl_LevelUpEnd);
             this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox3);
+            this.groupBox1.Controls.Add(this.chkLvl_EvoMovesLvl1);
             this.groupBox1.Controls.Add(this.checkedListBox2);
             this.groupBox1.Controls.Add(this.btnWriteLvlLearnsets);
             this.groupBox1.Location = new System.Drawing.Point(15, 108);
@@ -238,19 +243,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Level Up Moves";
             // 
-            // checkBox1
+            // chkLvl_LevelUpEnd
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 260);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(166, 21);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "Add LEVEL_UP_END";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkLvl_LevelUpEnd.AutoSize = true;
+            this.chkLvl_LevelUpEnd.Location = new System.Drawing.Point(6, 260);
+            this.chkLvl_LevelUpEnd.Name = "chkLvl_LevelUpEnd";
+            this.chkLvl_LevelUpEnd.Size = new System.Drawing.Size(166, 21);
+            this.chkLvl_LevelUpEnd.TabIndex = 17;
+            this.chkLvl_LevelUpEnd.Text = "Add LEVEL_UP_END";
+            this.chkLvl_LevelUpEnd.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.Enabled = false;
             this.checkBox2.Location = new System.Drawing.Point(6, 232);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(185, 21);
@@ -258,15 +264,15 @@
             this.checkBox2.Text = "Add previous evo moves";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkLvl_EvoMovesLvl1
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 205);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(182, 21);
-            this.checkBox3.TabIndex = 13;
-            this.checkBox3.Text = "Add Evo Moves to Lvl. 1";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkLvl_EvoMovesLvl1.AutoSize = true;
+            this.chkLvl_EvoMovesLvl1.Location = new System.Drawing.Point(6, 205);
+            this.chkLvl_EvoMovesLvl1.Name = "chkLvl_EvoMovesLvl1";
+            this.chkLvl_EvoMovesLvl1.Size = new System.Drawing.Size(182, 21);
+            this.chkLvl_EvoMovesLvl1.TabIndex = 13;
+            this.chkLvl_EvoMovesLvl1.Text = "Add Evo Moves to Lvl. 1";
+            this.chkLvl_EvoMovesLvl1.UseVisualStyleBackColor = true;
             // 
             // checkedListBox2
             // 
@@ -311,6 +317,7 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
+            this.checkBox4.Enabled = false;
             this.checkBox4.Location = new System.Drawing.Point(6, 260);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(158, 21);
@@ -321,6 +328,7 @@
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
+            this.checkBox5.Enabled = false;
             this.checkBox5.Location = new System.Drawing.Point(6, 232);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(144, 21);
@@ -330,6 +338,7 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(6, 291);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 27);
@@ -340,6 +349,7 @@
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
+            this.checkBox6.Enabled = false;
             this.checkBox6.Location = new System.Drawing.Point(6, 205);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(180, 21);
@@ -349,6 +359,7 @@
             // 
             // checkedListBox3
             // 
+            this.checkedListBox3.Enabled = false;
             this.checkedListBox3.FormattingEnabled = true;
             this.checkedListBox3.Items.AddRange(new object[] {
             "SWSH",
@@ -390,6 +401,7 @@
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
+            this.checkBox7.Enabled = false;
             this.checkBox7.Location = new System.Drawing.Point(6, 260);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(144, 21);
@@ -400,6 +412,7 @@
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
+            this.checkBox8.Enabled = false;
             this.checkBox8.Location = new System.Drawing.Point(6, 232);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(149, 21);
@@ -409,6 +422,7 @@
             // 
             // button2
             // 
+            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(6, 291);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(180, 27);
@@ -419,6 +433,7 @@
             // checkBox9
             // 
             this.checkBox9.AutoSize = true;
+            this.checkBox9.Enabled = false;
             this.checkBox9.Location = new System.Drawing.Point(6, 205);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(180, 21);
@@ -428,6 +443,7 @@
             // 
             // checkedListBox4
             // 
+            this.checkedListBox4.Enabled = false;
             this.checkedListBox4.FormattingEnabled = true;
             this.checkedListBox4.Items.AddRange(new object[] {
             "SWSH",
@@ -501,9 +517,9 @@
         private System.Windows.Forms.CheckBox chkTM_IncludeTutor;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox chkLvl_EvoMovesLvl1;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkLvl_LevelUpEnd;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
