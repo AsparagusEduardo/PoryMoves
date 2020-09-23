@@ -22,6 +22,7 @@ namespace moveParser
         public Form1()
         {
             InitializeComponent();
+            LoadGenerationData();
             cmbGeneration.SelectedIndex = 0;
             //LoadPkmnNameListFromSerebii();
         }
@@ -40,6 +41,22 @@ namespace moveParser
                                             "Egg Moves (Details)") },
         };
 
+        protected void LoadGenerationData()
+        {
+            cmbGeneration.Items.Clear();
+            cListLevelUp.Items.Clear();
+            cListTMMoves.Items.Clear();
+            cListEggMoves.Items.Clear();
+            cListTutorMoves.Items.Clear();
+            foreach(KeyValuePair<string, GenerationData> item in GenData)
+            {
+                cmbGeneration.Items.Add(item.Key);
+                cListLevelUp.Items.Add(item.Key);
+                cListTMMoves.Items.Add(item.Key);
+                cListEggMoves.Items.Add(item.Key);
+                cListTutorMoves.Items.Add(item.Key);
+            }
+        }
 
         protected void LoadPkmnNameListFromSerebii()
         {

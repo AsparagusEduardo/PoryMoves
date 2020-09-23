@@ -37,7 +37,7 @@
             this.lblBaseMovesets = new System.Windows.Forms.Label();
             this.btnWriteLvlLearnsets = new System.Windows.Forms.Button();
             this.bwrkExportLvl = new System.ComponentModel.BackgroundWorker();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.cListTMMoves = new System.Windows.Forms.CheckedListBox();
             this.gBoxOptionsTM = new System.Windows.Forms.GroupBox();
             this.chkTM_IncludeTutor = new System.Windows.Forms.CheckBox();
             this.chkTM_IncludeEgg = new System.Windows.Forms.CheckBox();
@@ -47,19 +47,19 @@
             this.chkLvl_LevelUpEnd = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.chkLvl_EvoMovesLvl1 = new System.Windows.Forms.CheckBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.cListLevelUp = new System.Windows.Forms.CheckedListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.cListEggMoves = new System.Windows.Forms.CheckedListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.cListTutorMoves = new System.Windows.Forms.CheckedListBox();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -145,11 +145,11 @@
             this.bwrkExportLvl.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkExportLvl_DoWork);
             this.bwrkExportLvl.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             // 
-            // checkedListBox1
+            // cListTMMoves
             // 
-            this.checkedListBox1.Enabled = false;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.cListTMMoves.Enabled = false;
+            this.cListTMMoves.FormattingEnabled = true;
+            this.cListTMMoves.Items.AddRange(new object[] {
             "SWSH",
             "USUM",
             "SM",
@@ -167,10 +167,10 @@
             "GS",
             "Y",
             "RB"});
-            this.checkedListBox1.Location = new System.Drawing.Point(6, 25);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(180, 174);
-            this.checkedListBox1.TabIndex = 12;
+            this.cListTMMoves.Location = new System.Drawing.Point(6, 25);
+            this.cListTMMoves.Name = "cListTMMoves";
+            this.cListTMMoves.Size = new System.Drawing.Size(180, 174);
+            this.cListTMMoves.TabIndex = 12;
             // 
             // gBoxOptionsTM
             // 
@@ -178,7 +178,7 @@
             this.gBoxOptionsTM.Controls.Add(this.chkTM_IncludeEgg);
             this.gBoxOptionsTM.Controls.Add(this.btnExportTM);
             this.gBoxOptionsTM.Controls.Add(this.chkTM_IncludeLvl);
-            this.gBoxOptionsTM.Controls.Add(this.checkedListBox1);
+            this.gBoxOptionsTM.Controls.Add(this.cListTMMoves);
             this.gBoxOptionsTM.Location = new System.Drawing.Point(220, 108);
             this.gBoxOptionsTM.Name = "gBoxOptionsTM";
             this.gBoxOptionsTM.Size = new System.Drawing.Size(199, 330);
@@ -234,7 +234,7 @@
             this.groupBox1.Controls.Add(this.chkLvl_LevelUpEnd);
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.chkLvl_EvoMovesLvl1);
-            this.groupBox1.Controls.Add(this.checkedListBox2);
+            this.groupBox1.Controls.Add(this.cListLevelUp);
             this.groupBox1.Controls.Add(this.btnWriteLvlLearnsets);
             this.groupBox1.Location = new System.Drawing.Point(15, 108);
             this.groupBox1.Name = "groupBox1";
@@ -274,10 +274,10 @@
             this.chkLvl_EvoMovesLvl1.Text = "Add Evo Moves to Lvl. 1";
             this.chkLvl_EvoMovesLvl1.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox2
+            // cListLevelUp
             // 
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
+            this.cListLevelUp.FormattingEnabled = true;
+            this.cListLevelUp.Items.AddRange(new object[] {
             "SWSH",
             "USUM",
             "SM",
@@ -295,10 +295,10 @@
             "GS",
             "Y",
             "RB"});
-            this.checkedListBox2.Location = new System.Drawing.Point(6, 25);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(180, 174);
-            this.checkedListBox2.TabIndex = 12;
+            this.cListLevelUp.Location = new System.Drawing.Point(6, 25);
+            this.cListLevelUp.Name = "cListLevelUp";
+            this.cListLevelUp.Size = new System.Drawing.Size(180, 174);
+            this.cListLevelUp.TabIndex = 12;
             // 
             // groupBox2
             // 
@@ -306,7 +306,7 @@
             this.groupBox2.Controls.Add(this.checkBox5);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.checkBox6);
-            this.groupBox2.Controls.Add(this.checkedListBox3);
+            this.groupBox2.Controls.Add(this.cListEggMoves);
             this.groupBox2.Location = new System.Drawing.Point(425, 108);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(199, 330);
@@ -357,11 +357,11 @@
             this.checkBox6.Text = "Include Level Up Moves";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox3
+            // cListEggMoves
             // 
-            this.checkedListBox3.Enabled = false;
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Items.AddRange(new object[] {
+            this.cListEggMoves.Enabled = false;
+            this.cListEggMoves.FormattingEnabled = true;
+            this.cListEggMoves.Items.AddRange(new object[] {
             "SWSH",
             "USUM",
             "SM",
@@ -379,10 +379,10 @@
             "GS",
             "Y",
             "RB"});
-            this.checkedListBox3.Location = new System.Drawing.Point(6, 25);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(180, 174);
-            this.checkedListBox3.TabIndex = 12;
+            this.cListEggMoves.Location = new System.Drawing.Point(6, 25);
+            this.cListEggMoves.Name = "cListEggMoves";
+            this.cListEggMoves.Size = new System.Drawing.Size(180, 174);
+            this.cListEggMoves.TabIndex = 12;
             // 
             // groupBox3
             // 
@@ -390,13 +390,13 @@
             this.groupBox3.Controls.Add(this.checkBox8);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.checkBox9);
-            this.groupBox3.Controls.Add(this.checkedListBox4);
+            this.groupBox3.Controls.Add(this.cListTutorMoves);
             this.groupBox3.Location = new System.Drawing.Point(630, 108);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(199, 330);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Egg Moves";
+            this.groupBox3.Text = "Tutor Moves";
             // 
             // checkBox7
             // 
@@ -441,11 +441,11 @@
             this.checkBox9.Text = "Include Level Up Moves";
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox4
+            // cListTutorMoves
             // 
-            this.checkedListBox4.Enabled = false;
-            this.checkedListBox4.FormattingEnabled = true;
-            this.checkedListBox4.Items.AddRange(new object[] {
+            this.cListTutorMoves.Enabled = false;
+            this.cListTutorMoves.FormattingEnabled = true;
+            this.cListTutorMoves.Items.AddRange(new object[] {
             "SWSH",
             "USUM",
             "SM",
@@ -463,10 +463,10 @@
             "GS",
             "Y",
             "RB"});
-            this.checkedListBox4.Location = new System.Drawing.Point(6, 25);
-            this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(180, 174);
-            this.checkedListBox4.TabIndex = 12;
+            this.cListTutorMoves.Location = new System.Drawing.Point(6, 25);
+            this.cListTutorMoves.Name = "cListTutorMoves";
+            this.cListTutorMoves.Size = new System.Drawing.Size(180, 174);
+            this.cListTutorMoves.TabIndex = 12;
             // 
             // Form1
             // 
@@ -509,7 +509,7 @@
         private System.Windows.Forms.Label lblBaseMovesets;
         private System.Windows.Forms.Button btnWriteLvlLearnsets;
         private System.ComponentModel.BackgroundWorker bwrkExportLvl;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox cListTMMoves;
         private System.Windows.Forms.GroupBox gBoxOptionsTM;
         private System.Windows.Forms.CheckBox chkTM_IncludeLvl;
         private System.Windows.Forms.Button btnExportTM;
@@ -518,20 +518,20 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox chkLvl_EvoMovesLvl1;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.CheckedListBox cListLevelUp;
         private System.Windows.Forms.CheckBox chkLvl_LevelUpEnd;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckedListBox checkedListBox3;
+        private System.Windows.Forms.CheckedListBox cListEggMoves;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckedListBox checkedListBox4;
+        private System.Windows.Forms.CheckedListBox cListTutorMoves;
     }
 }
 
