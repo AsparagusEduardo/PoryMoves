@@ -513,7 +513,7 @@ namespace moveParser
                 MonData mon = new MonData();
                 try
                 {
-                    mon = Data["SPECIES_" + name.DefName];
+                    mon = Data[name.DefName];
                 }
                 catch (KeyNotFoundException) {}
 
