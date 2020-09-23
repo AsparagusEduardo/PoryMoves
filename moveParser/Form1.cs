@@ -74,8 +74,6 @@ namespace moveParser
         protected MonData LoadMonData(MonName name, GenerationData gen)
         {
             MonData mon = new MonData();
-            mon.DefName = "SPECIES_" + name.DefName;
-            mon.VarName = name.VarName;
 
             List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
             List<int> TMMovesIds = new List<int>();
@@ -411,11 +409,11 @@ namespace moveParser
                         {
                             try
                             {
-                                Database.Add(mon.DefName, mon);
+                                Database.Add(item.DefName, mon);
                             }
                             catch (ArgumentException ex)
                             {
-                                File.AppendAllText("errorLog.txt", "[" + DateTime.Now.ToString() + "] Error adding " + mon.DefName + ": " + ex.Message);
+                                File.AppendAllText("errorLog.txt", "[" + DateTime.Now.ToString() + "] Error adding " + item.DefName + ": " + ex.Message);
                             }
                         }
                     }
@@ -477,6 +475,9 @@ namespace moveParser
         private void bwrkExportLvl_DoWork(object sender, DoWorkEventArgs e)
         {
             SetEnableForAllElements(false);
+
+            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
+
             Dictionary<string, MonData> Data = PokemonData.GetMonDataFromFile("db/usum.json");
 
             if (!Directory.Exists("output"))
@@ -488,22 +489,32 @@ namespace moveParser
                 sets += "#define LEVEL_UP_END (0xffff)\n";
 
             // iterate over mons
-            int namecount = Data.Count;
+            int namecount = nameList.Count;
             int i = 1;
-            foreach (KeyValuePair<string, MonData> entry in Data)
+            foreach (MonName name in nameList)
             {
-                // begin learnset
-                sets += $"\nstatic const struct LevelUpMove s{entry.Value.VarName}LevelUpLearnset[] = {{\n";
+                MonData mon = new MonData();
+                try
+                {
+                    mon = Data["SPECIES_" + name.DefName];
+                }
+                catch (KeyNotFoundException) {}
 
-                foreach (LevelUpMove move in entry.Value.LevelMoves)
+                // begin learnset
+                sets += $"\nstatic const struct LevelUpMove s{name.VarName}LevelUpLearnset[] = {{\n";
+
+                if (mon.LevelMoves.Count == 0)
+                    sets += "    LEVEL_UP_MOVE( 1, MOVE_POUND),\n";
+
+                foreach (LevelUpMove move in mon.LevelMoves)
                 {
                     sets += $"    LEVEL_UP_MOVE({move.Level,-2}, {move.Move}),\n";
                     //sets += "    LEVEL_UP_MOVE(" + ((move.Level < 10) ? move.Level.ToString().PadLeft(2) : move.Level.ToString()) + ", " + move.Move + "),\n";
                 }
                 sets += "    LEVEL_UP_END\n};\n";
 
-
-                bwrkExportLvl.ReportProgress(i * 100 / namecount);
+                int percent = i * 100 / namecount;
+                bwrkExportLvl.ReportProgress(percent);
                 // Set the text.
                 UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Level Up movesets exported.");
                 i++;

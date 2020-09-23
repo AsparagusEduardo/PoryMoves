@@ -11,12 +11,10 @@ namespace moveParser.data
 {
     public class MonData
     {
-        public string VarName;
-        public string DefName;
-        public List<LevelUpMove> LevelMoves;
-        public List<string> TMMoves;
-        public List<string> EggMoves;
-        public List<string> TutorMoves;
+        public List<LevelUpMove> LevelMoves = new List<LevelUpMove>();
+        public List<string> TMMoves = new List<string>();
+        public List<string> EggMoves = new List<string>();
+        public List<string> TutorMoves = new List<string>();
     }
     public class MonName
     {
