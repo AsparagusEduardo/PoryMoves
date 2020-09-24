@@ -93,6 +93,7 @@ namespace moveParser
             MonData mon = new MonData();
 
             List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
+            List<LevelUpMoveId> lvlMovesId = new List<LevelUpMoveId>();
             List<int> TMMovesIds = new List<int>();
             List<string> TMMoves = new List<string>();
 
@@ -136,191 +137,72 @@ namespace moveParser
             moveTutorTitle2 = gen.moveTutorTitle2;
             eggMoveTitle = gen.eggMoveTitle;
 
-            string html = "https://serebii.net/pokedex" + pokedex + "/" + identifier + ".shtml";
+            string html = "https://pokemondb.net/pokedex/" + name.SpeciesName.ToLower() + "/moves/7";
 
             hap.HtmlWeb web = new hap.HtmlWeb();
             hap.HtmlDocument htmlDoc = web.Load(html);
-            hap.HtmlNodeCollection nodes;
+            hap.HtmlNodeCollection columns;
 
-            if (gen.genNumber == 7 && number <= 151)
-                nodes = htmlDoc.DocumentNode.SelectNodes("//li[@title='Sun/Moon/Ultra Sun/Ultra Moon']/table[@class='dextable']");
-            else
-                nodes = htmlDoc.DocumentNode.SelectNodes(gen.tableNodes);
+            columns = htmlDoc.DocumentNode.SelectNodes("//div[@id='tabs-moves-16']/div/div[@class='grid-col span-lg-6']");
 
-            if (nodes != null)
+            if (columns != null)
             {
-                for (int i = 0; i < nodes.Count; i++)
+                string currentRead = "";
+                foreach (hap.HtmlNode column in columns)
                 {
-                    hap.HtmlNodeCollection moves;
-                    hap.HtmlNode nodo = nodes[i];
-
-                    //Checks for Level Up Moves
-                    if ((nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Gen) && name.IsBaseForm)
-                        || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Game)
-                        || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_Form)
-                        || nodo.ChildNodes[0].InnerText.Equals(lvlUpTitle_RegionalForm))
+                    for(int i = 0; i < column.ChildNodes.Count; i++)
                     {
-                        moves = nodo.ChildNodes;
-                        int move_num = 0;
-                        string move_lvl;
+                        hap.HtmlNode block = column.ChildNodes[i];
 
-                        List<string> evoMoves = new List<string>();
+                        bool isMoveTable = false;
+                        if (block.Name.Equals("h3"))
+                            currentRead = block.InnerHtml;
+                        else if (block.HasClass("tabset-moves-game-form") || block.HasClass("resp-scroll"))
+                            isMoveTable = true;
 
-                        foreach (hap.HtmlNode move in moves)
+                        if (isMoveTable)
                         {
-                            LevelUpMove lmove = new LevelUpMove();
-
-                            //Skips rows without relevant data.
-                            if (move_num % 3 == 2)
+                            int formId = 0;
+                            hap.HtmlNode moveTable; 
+                            if (block.HasClass("tabset-moves-game-form"))
+                                moveTable = block.ChildNodes[3].ChildNodes[formId].ChildNodes[0];
+                            else
+                                moveTable = block;
+                            foreach (hap.HtmlNode move in moveTable.SelectNodes(".//table/tbody/tr"))
                             {
-                                int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[3].ChildNodes[0].InnerText];
-                                //ExtraMovesIds.Add(exMoveId);
-                                lmove.Move = "MOVE_" + MoveData.MoveDefNames[exMoveId];
-
-                                move_lvl = move.ChildNodes[1].InnerText;
-
-                                //Dashes ("—") interpreted as level 1 moves.
-                                if (move_lvl.Equals("&#8212;"))
-                                    lmove.Level = 1;
-                                //Adds evolution moves from a separate list.
-                                else if (move_lvl.Equals("Evolve"))
+                                if (currentRead.Equals("Moves learnt by level up"))
                                 {
-                                    lmove.Level = 0;
-                                    evoMoves.Add(lmove.Move);
+                                    int lvl = int.Parse(move.ChildNodes[0].ChildNodes[0].InnerHtml);
+                                    int moveId = SerebiiNameToID[move.ChildNodes[1].ChildNodes[0].ChildNodes[0].InnerHtml];
+                                    string movename = "MOVE_" + MoveDefNames[moveId];
+                                    //lvlMoves.Add(new LevelUpMove(lvl, movename));
+                                    lvlMovesId.Add(new LevelUpMoveId(lvl, moveId));
                                 }
-                                else
-                                    lmove.Level = int.Parse(move_lvl);
-
-                                //Reads evo moves from separate list and adds them as level 1 moves before proper level 1 moves.
-                                if (lmove.Level > 0 && evoMoves.Count > 0)
+                                else if (currentRead.Equals("Egg moves"))
                                 {
-                                    foreach (string evo in evoMoves)
-                                        if (!lvlMoves.Contains(new LevelUpMove(1, evo)))
-                                            lvlMoves.Add(new LevelUpMove(1, evo));
-                                    evoMoves.Clear();
+                                    int moveId = SerebiiNameToID[move.ChildNodes[0].ChildNodes[0].ChildNodes[0].InnerHtml];
+                                    EggMovesIds.Add(moveId);
                                 }
-                                //Don't add move if it's already on the list.
-                                if (!InList(lvlMoves,lmove))
-                                    lvlMoves.Add(lmove);
-                            }
-                            move_num++;
-                        }
-                    }
-                    //Checks for TM/HM/TR
-                    else if (nodo.ChildNodes[0].InnerText.Equals(tmHmTrTitle) || nodo.ChildNodes[0].InnerText.Equals(tmHmTrTitle2))
-                    {
-                        moves = nodo.ChildNodes;
-                        int move_num = 0;
-                        foreach (hap.HtmlNode move in moves)
-                        {
-                            //Skips rows without relevant data.
-                            if (move_num % 3 == 2)
-                            {
-                                bool addMove = false;
-                                //Checks if it has an extra column for forms.
-                                if (move.ChildNodes.Count >= 17)
+                                else if (currentRead.Equals("Move Tutor moves"))
                                 {
-                                    //Looks at all the forms listed in this row.
-                                    foreach (hap.HtmlNode form in move.ChildNodes[16].ChildNodes[0].ChildNodes[0].ChildNodes)
-                                    {
-                                        string formname = form.ChildNodes[0].Attributes["alt"].Value;
-                                        //It first checks if the current form has the same name as the Pokémon being checked.
-                                        //If not, checks if it's a base form and if the form checked is tagged as "Normal" (useful for species with regional forms)
-                                        if (formname.Equals(name.FormName_TMs) || (name.IsBaseForm && formname.Equals("Normal")))
-                                            addMove = true;
-                                    }
+                                    int moveId = SerebiiNameToID[move.ChildNodes[0].ChildNodes[0].ChildNodes[0].InnerHtml];
+                                    TutorMovesIds.Add(moveId);
                                 }
-                                //Adds move if it doesn't have a form column.
-                                else
-                                    addMove = true;
-
-                                if (addMove)
+                                else if (currentRead.Equals("Moves learnt by TM"))
                                 {
-                                    int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[2].ChildNodes[0].InnerText];
-                                    TMMovesIds.Add(exMoveId);
+                                    int moveId = SerebiiNameToID[move.ChildNodes[1].ChildNodes[0].ChildNodes[0].InnerHtml];
+                                    TMMovesIds.Add(moveId);
                                 }
                             }
-                            move_num++;
                         }
-                    }
-                    //Checks for move tutors.
-                    else if ((nodo.ChildNodes[0].ChildNodes.Count > 0) && (nodo.ChildNodes[0].ChildNodes[0].InnerText.Equals(moveTutorTitle1))
-                        || (nodo.ChildNodes[0].ChildNodes.Count > 0) && (nodo.ChildNodes[0].ChildNodes[0].InnerText.Equals(moveTutorTitle2)))
-                    {
-                        moves = nodo.ChildNodes[0].ChildNodes;
-                        int move_num = 0;
-                        foreach (hap.HtmlNode move in moves)
-                        {
-                            //Skips rows without relevant data.
-                            if (move_num != 0 && move_num % 2 == 0)
-                            {
-                                bool addMove = false;
-                                //Checks if it has an extra column for forms.
-                                if (move.ChildNodes.Count >= 8)
-                                {
-                                    foreach (hap.HtmlNode form in move.ChildNodes[8].ChildNodes[0].ChildNodes[0].ChildNodes)
-                                    {
-                                        string formname = form.ChildNodes[0].Attributes["alt"].Value;
-                                        //It first checks if the current form has the same name as the Pokémon being checked.
-                                        //If not, checks if it's a base form and if the form checked is tagged with the original name (useful for species with regional forms)
-                                        if (formname.Equals(name.FormName_EggTutor) || (name.IsBaseForm && formname.Equals(name.SpeciesName)))
-                                            addMove = true;
-                                    }
-                                }
-                                //Adds move if it doesn't have a form column.
-                                else
-                                    addMove = true;
 
-                                if (addMove)
-                                {
-                                    int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText];
-                                    TutorMovesIds.Add(exMoveId);
-                                }
-
-                            }
-                            move_num++;
-                        }
                     }
-                    //Checks for Egg Moves
-                    else if ((nodo.ChildNodes[0].ChildNodes.Count > 0) && (nodo.ChildNodes[0].ChildNodes[0].InnerText.Equals(eggMoveTitle)))
-                    {
-                        moves = nodo.ChildNodes;
-                        int move_num = 0;
-                        foreach (hap.HtmlNode move in moves)
-                        {
-                            //Skips rows without relevant data.
-                            if (move_num % 3 == 2)
-                            {
-                                bool addMove = false;
-                                //Checks if it has an extra column for forms.
-                                if (move.ChildNodes[14].ChildNodes.Count > 1)
-                                {
-                                    foreach (hap.HtmlNode form in move.ChildNodes[14].ChildNodes)
-                                    {
-                                        if (form.Attributes["alt"] != null)
-                                        {
-                                            string formname = form.Attributes["alt"].Value;
-                                            //It first checks if the current form has the same name as the Pokémon being checked.
-                                            //If not, checks if it's a base form and if the form checked is tagged as "Normal" (useful for species with regional forms)
-                                            if (formname.Equals(name.FormName_EggTutor) || (name.IsBaseForm && formname.Equals("Normal")))
-                                                addMove = true;
-                                        }
-                                    }
-                                }
-                                //Adds move if it doesn't have a form column.
-                                else
-                                    addMove = true;
 
-                                if (addMove)
-                                {
-                                    int exMoveId = MoveData.SerebiiNameToID[move.ChildNodes[0].InnerText.Replace("USUM Only", "")];
-                                    EggMovesIds.Add(exMoveId);
-                                }
-                            }
-                            move_num++;
-                        }
-                    }
                 }
+                //lvlMovesId.Sort(new Comparison<LevelUpMoveId>(CompareLvlUpMoveIds));
+                foreach (LevelUpMoveId lvlid in lvlMovesId)
+                    lvlMoves.Add(new LevelUpMove(lvlid.Level, "MOVE_" + MoveDefNames[lvlid.MoveId]));
+
                 TMMovesIds = TMMovesIds.Distinct().ToList();
                 TMMovesIds.Sort();
                 foreach (int exMoveId in TMMovesIds)
@@ -400,6 +282,7 @@ namespace moveParser
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
+            string current = "";
             try
             {
                 List<MonName> nameList = new List<MonName>();
@@ -419,6 +302,7 @@ namespace moveParser
                 int i = 1;
                 foreach (MonName item in nameList)
                 {
+                    current = item.DefName;
                     //if (i < 31)
                     {
                         MonData mon = LoadMonData(item, generation);
@@ -448,7 +332,7 @@ namespace moveParser
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                UpdateLoadingMessage("Couldn't load Pokémon data.");
+                UpdateLoadingMessage("Couldn't load Pokémon data. (" + current + ")");
             }
             FinishMoveDataLoading();
         }

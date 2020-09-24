@@ -8,6 +8,29 @@ namespace moveParser.data
 {
     public class MoveData
     {
+        public static int CompareLvlUpMoveIds(LevelUpMoveId a, LevelUpMoveId b)
+        {
+            int result = a.Level.CompareTo(b.Level);
+            if (result == 0)
+                return a.MoveId.CompareTo(b.MoveId);
+            return result;
+        }
+
+        public class LevelUpMoveId
+        {
+            public int Level;
+            public int MoveId;
+            public LevelUpMoveId()
+            {
+
+            }
+            public LevelUpMoveId(int lvl, int mv)
+            {
+                Level = lvl;
+                MoveId = mv;
+            }
+        }
+
         public class LevelUpMove
         {
             public int Level;
