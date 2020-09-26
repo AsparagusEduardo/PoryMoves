@@ -156,6 +156,7 @@ namespace moveParser
                 bool inList = false;
                 bool LevelUpListRead = false;
                 bool TMListRead = false;
+                bool EggListRead = false;
                 bool TutorListRead = false;
                 string pagetext = columns[0].InnerText.Replace("&lt;br>\n", "&lt;br>");
                 string gameText = null, modeText = null, formText = null;
@@ -214,7 +215,7 @@ namespace moveParser
                                     if (column == 0)
                                         column = 1;
                                 }
-                                if ((modeText.Equals("TM") && !TMListRead) || modeText.Equals("EGG") || (modeText.Equals("TUTOR") && !TutorListRead))
+                                if ((modeText.Equals("TM") && !TMListRead) || (modeText.Equals("EGG") && !EggListRead) || (modeText.Equals("TUTOR") && !TutorListRead))
                                 {
                                     inList = true;
                                 }
@@ -236,6 +237,8 @@ namespace moveParser
                         else if (textRow.ToLower().Contains(("{{learnlist/breedf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
                         {
                             inList = false;
+                            if (formText == null || formText.Equals(name.FormName_TMs))
+                                EggListRead = true;
                         }
                         else if (textRow.ToLower().Contains(("{{learnlist/tutorf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
                         {
@@ -267,7 +270,7 @@ namespace moveParser
 
                                 TMMovesIds.Add(SerebiiNameToID[movename]);
                             }
-                            else if (modeText.Equals("EGG") && !textRow.Equals("{{learnlist/breed7null}}"))
+                            else if (modeText.Equals("EGG") && !EggListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !textRow.Equals("{{learnlist/breed7null}}"))
                             {
                                 string breedtext = textRow.Replace("{{MS|000}}{{tt|*|No legitimate means to pass down move}}", "");
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{MSP([^}]+)}}", "MON").Split('|');
