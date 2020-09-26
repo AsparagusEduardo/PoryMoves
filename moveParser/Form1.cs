@@ -261,7 +261,7 @@ namespace moveParser
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{MSP([^}]+)}}", "MON").Split('|');
                                 string movename = rowdata[2];
 
-                                if (!movename.Equals("Light Ball}}{{tt"))
+                                if (!movename.Equals("Light Ball}}{{tt") && !(rowdata.Length >= 9 && rowdata[8].Replace("}", "").Equals("†")))
                                     EggMovesIds.Add(SerebiiNameToID[movename]);
                             }
                             else if (modeText.Equals("TUTOR") && !textRow.Equals("{{learnlist/tutor7null}}"))
