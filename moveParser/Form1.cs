@@ -281,7 +281,8 @@ namespace moveParser
                             }
                             else if (modeText.Equals("TUTOR") && !TutorListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !textRow.Equals("{{learnlist/tutor7null}}"))
                             {
-                                string[] rowdata = System.Text.RegularExpressions.Regex.Replace(textRow, "}}", "").Split('|');
+                                string tutortext = textRow.Replace("{{tt|*|", "");
+                                string[] rowdata = System.Text.RegularExpressions.Regex.Replace(tutortext, "}}", "").Split('|');
                                 //if 
                                 string movename = rowdata[1];
                                 if (rowdata[8 + movetutorcolumn].Equals("yes"))
