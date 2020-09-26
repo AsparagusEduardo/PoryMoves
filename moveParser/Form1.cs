@@ -155,6 +155,7 @@ namespace moveParser
             {
                 bool inList = false;
                 bool LevelUpListRead = false;
+                bool TMListRead = false;
                 string pagetext = columns[0].InnerText.Replace("&lt;br>\n", "&lt;br>");
                 string gameText = null, modeText = null, formText = null;
 
@@ -212,7 +213,7 @@ namespace moveParser
                                     if (column == 0)
                                         column = 1;
                                 }
-                                if (modeText.Equals("TM") || modeText.Equals("EGG") || modeText.Equals("TUTOR"))
+                                if ((modeText.Equals("TM") && !TMListRead) || modeText.Equals("EGG") || modeText.Equals("TUTOR"))
                                 {
                                     inList = true;
                                 }
@@ -225,8 +226,13 @@ namespace moveParser
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 LevelUpListRead = true;
                         }
-                        else if (textRow.ToLower().Contains(("{{learnlist/tmf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower())
-                                || textRow.ToLower().Contains(("{{learnlist/breedf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower())
+                        else if (textRow.ToLower().Contains(("{{learnlist/tmf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
+                        {
+                            inList = false;
+                            if (formText == null || formText.Equals(name.FormName_TMs))
+                                TMListRead = true;
+                        }
+                        else if (textRow.ToLower().Contains(("{{learnlist/breedf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower())
                                 || textRow.ToLower().Contains(("{{learnlist/tutorf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
                         {
                             inList = false;
@@ -248,7 +254,7 @@ namespace moveParser
                                         lvlMovesId.Add(new LevelUpMoveId(int.Parse(lvl), SerebiiNameToID[movename]));
                                 }
                             }
-                            else if (modeText.Equals("TM") && !textRow.Equals("{{learnlist/tm7null}}"))
+                            else if (modeText.Equals("TM") && !TMListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !textRow.Equals("{{learnlist/tm7null}}"))
                             {
                                 string[] rowdata = textRow.Split('|');
                                 string movename = rowdata[2];
