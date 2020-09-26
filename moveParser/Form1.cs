@@ -276,7 +276,7 @@ namespace moveParser
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{MSP([^}]+)}}", "MON").Split('|');
                                 string movename = rowdata[2];
 
-                                if (!movename.Equals("Light Ball}}{{tt") && !(rowdata.Length >= 9 && rowdata[8].Replace("}", "").Equals("†")))
+                                if (!movename.Equals("Light Ball}}{{tt") && !(textRow.Contains("†") && !isIncenseBaby(name.SpeciesName)))
                                     EggMovesIds.Add(SerebiiNameToID[movename]);
                             }
                             else if (modeText.Equals("TUTOR") && !TutorListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !textRow.Equals("{{learnlist/tutor7null}}"))
@@ -323,6 +323,25 @@ namespace moveParser
             mon.TutorMoves = TutorMoves;
 
             return mon;
+        }
+
+        private bool isIncenseBaby(string name)
+        {
+            switch (name)
+            {
+                case "Munchlax":
+                case "Budew":
+                case "Bonsly":
+                case "Happiny":
+                case "Wynaut":
+                case "Azurill":
+                case "Mantyke":
+                case "Chingling":
+                case "Mime Jr.":
+                    return true;
+                default:
+                    return false;
+            }
         }
 
         private string NameToDefineFormat(string oldname)
