@@ -77,7 +77,7 @@ namespace moveParser
                 string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim();
                 //pkmnList.Add(number, species);
 
-                lista.Add(new MonName(number, species, true, null, null, NameToVarFormat(species), NameToDefineFormat(species)));
+                lista.Add(new MonName(number, species, true, species, species, NameToVarFormat(species), NameToDefineFormat(species)));
                 //texto += "{new MonData(\"" + NameToDefineFormat(species) + "\", \"" + NameToVarFormat(species) + "\") },\n";
             }
 
@@ -137,69 +137,149 @@ namespace moveParser
             moveTutorTitle2 = gen.moveTutorTitle2;
             eggMoveTitle = gen.eggMoveTitle;
 
-            string html = "https://pokemondb.net/pokedex/" + name.SpeciesName.ToLower() + "/moves/7";
+            string html = "https://bulbapedia.bulbagarden.net/w/index.php?title=" + name.SpeciesName + "_(Pok%C3%A9mon)/Generation_VII_learnset&action=edit";
 
             hap.HtmlWeb web = new hap.HtmlWeb();
             hap.HtmlDocument htmlDoc = web.Load(html);
             hap.HtmlNodeCollection columns;
 
-            columns = htmlDoc.DocumentNode.SelectNodes("//div[@id='tabs-moves-16']/div/div[@class='grid-col span-lg-6']");
+            columns = htmlDoc.DocumentNode.SelectNodes("//textarea");
+
+            int column = 0;
+            int gamecolumnamount = 1;
+            int movetutorcolumn = 2;
+            string gameAbv = gen.dbFilename.ToUpper();
+            string gametosearch = "Pokémon Ultra Sun and Ultra Moon";
 
             if (columns != null)
             {
-                string currentRead = "";
-                foreach (hap.HtmlNode column in columns)
+                bool inList = false;
+                bool LevelUpListRead = false;
+                string pagetext = columns[0].InnerText.Replace("&lt;br>\n", "&lt;br>");
+                string gameText = null, modeText = null, formText = null;
+
+                int rownum = 0;
+                List<int> evoMovesId = new List<int>();
+
+                foreach (string textRow in pagetext.Split('\n'))
                 {
-                    for(int i = 0; i < column.ChildNodes.Count; i++)
+                    if (!textRow.Trim().Equals(""))
                     {
-                        hap.HtmlNode block = column.ChildNodes[i];
+                        rownum++;
 
-                        bool isMoveTable = false;
-                        if (block.Name.Equals("h3"))
-                            currentRead = block.InnerHtml;
-                        else if (block.HasClass("tabset-moves-game-form") || block.HasClass("resp-scroll"))
-                            isMoveTable = true;
+                        if (textRow.Contains(gametosearch))
+                            gameText = gametosearch;
+                        else if (textRow.Contains("=" + name.SpeciesName + "="))
+                            formText = name.SpeciesName;
+                        else if (textRow.Contains("=" + name.FormName_TMs + "="))
+                            formText = name.FormName_TMs;
+                        else if (textRow.Contains("By [[Level|leveling up]]"))
+                            modeText = "Level";
+                        else if (textRow.Contains("By [[TM]]"))
+                            modeText = "TM";
+                        else if (textRow.Contains("By {{pkmn|breeding}}"))
+                            modeText = "EGG";
+                        else if (textRow.Contains("By [[Move Tutor|tutoring]]"))
+                            modeText = "TUTOR";
+                        else if (textRow.Contains("Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!") || textRow.Contains("Pokémon Ultra Sun and Ultra Moon"))
+                            gameText = textRow;
 
-                        if (isMoveTable)
+                        else if (textRow.Contains("{{learnlist/levelh/" + gen.genNumber + "|" + name.SpeciesName + "|")
+                            || textRow.Contains("{{learnlist/tmh/" + gen.genNumber + "|" + name.SpeciesName + "|")
+                            || textRow.Contains("{{learnlist/breedh/" + gen.genNumber + "|" + name.SpeciesName + "|")
+                            || textRow.Contains("{{learnlist/tutorh/" + gen.genNumber + "|" + name.SpeciesName + "|"))
                         {
-                            int formId = 0;
-                            hap.HtmlNode moveTable; 
-                            if (block.HasClass("tabset-moves-game-form"))
-                                moveTable = block.ChildNodes[3].ChildNodes[formId].ChildNodes[0];
-                            else
-                                moveTable = block;
-                            foreach (hap.HtmlNode move in moveTable.SelectNodes(".//table/tbody/tr"))
+                            if (modeText == null)
+                                continue;
+                            if (formText == null || formText.Equals(name.FormName_TMs))
                             {
-                                if (currentRead.Equals("Moves learnt by level up"))
+                                if (modeText.Equals("Level") && !LevelUpListRead)
                                 {
-                                    int lvl = int.Parse(move.ChildNodes[0].ChildNodes[0].InnerHtml);
-                                    int moveId = SerebiiNameToID[move.ChildNodes[1].ChildNodes[0].ChildNodes[0].InnerHtml];
-                                    string movename = "MOVE_" + MoveDefNames[moveId];
-                                    //lvlMoves.Add(new LevelUpMove(lvl, movename));
-                                    lvlMovesId.Add(new LevelUpMoveId(lvl, moveId));
+                                    inList = true;
+                                    string[] rowdata = textRow.Split('|');
+                                
+                                    gamecolumnamount = rowdata.Length - 5;
+                                    if (gamecolumnamount == 0)
+                                        gamecolumnamount = 1;
+                                    for (int i = 0; i < rowdata.Length; i++)
+                                    {
+                                        string bb = rowdata[i].Replace("}", "");
+                                        if (rowdata[i].Replace("}", "").Equals(gameAbv))
+                                        {
+                                            column = i - 4;
+                                        }
+                                    }
+                                    if (column == 0)
+                                        column = 1;
                                 }
-                                else if (currentRead.Equals("Egg moves"))
+                                if (modeText.Equals("TM") || modeText.Equals("EGG") || modeText.Equals("TUTOR"))
                                 {
-                                    int moveId = SerebiiNameToID[move.ChildNodes[0].ChildNodes[0].ChildNodes[0].InnerHtml];
-                                    EggMovesIds.Add(moveId);
-                                }
-                                else if (currentRead.Equals("Move Tutor moves"))
-                                {
-                                    int moveId = SerebiiNameToID[move.ChildNodes[0].ChildNodes[0].ChildNodes[0].InnerHtml];
-                                    TutorMovesIds.Add(moveId);
-                                }
-                                else if (currentRead.Equals("Moves learnt by TM"))
-                                {
-                                    int moveId = SerebiiNameToID[move.ChildNodes[1].ChildNodes[0].ChildNodes[0].InnerHtml];
-                                    TMMovesIds.Add(moveId);
+                                    inList = true;
                                 }
                             }
-                        }
 
+                        }
+                        else if (textRow.Contains("{{learnlist/levelf/" + gen.genNumber + "|" + name.SpeciesName + "|"))
+                        {
+                            inList = false;
+                            if (formText == null || formText.Equals(name.FormName_TMs))
+                                LevelUpListRead = true;
+                        }
+                        else if (textRow.ToLower().Contains(("{{learnlist/tmf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower())
+                                || textRow.ToLower().Contains(("{{learnlist/breedf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower())
+                                || textRow.ToLower().Contains(("{{learnlist/tutorf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
+                        {
+                            inList = false;
+                        }
+                        else if (inList && (gameText == null || gameText.Contains(gametosearch)))
+                        {
+                            if (modeText.Equals("Level") && !LevelUpListRead && (formText == null || formText.Equals(name.FormName_TMs)))
+                            {
+                                string lvltext = textRow.Replace("{{tt|Evo.|Learned upon evolving}}", "0");
+                                string[] rowdata = System.Text.RegularExpressions.Regex.Replace(lvltext, "{{tt([^}]+)}}", "").Split('|');
+                                string lvl = rowdata[column];
+                                string movename = rowdata[gamecolumnamount + 1];
+
+                                if (!lvl.Equals("N/A"))
+                                {
+                                    if (lvl.Equals("0"))
+                                        evoMovesId.Add(SerebiiNameToID[movename]);
+                                    else
+                                        lvlMovesId.Add(new LevelUpMoveId(int.Parse(lvl), SerebiiNameToID[movename]));
+                                }
+                            }
+                            else if (modeText.Equals("TM") && !textRow.Equals("{{learnlist/tm7null}}"))
+                            {
+                                string[] rowdata = textRow.Split('|');
+                                string movename = rowdata[2];
+
+                                TMMovesIds.Add(SerebiiNameToID[movename]);
+                            }
+                            else if (modeText.Equals("EGG") && !textRow.Equals("{{learnlist/breed7null}}"))
+                            {
+                                string breedtext = textRow.Replace("{{MS|000}}{{tt|*|No legitimate means to pass down move}}", "");
+                                string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{MSP([^}]+)}}", "MON").Split('|');
+                                string movename = rowdata[2];
+
+                                if (!movename.Equals("Light Ball}}{{tt"))
+                                    EggMovesIds.Add(SerebiiNameToID[movename]);
+                            }
+                            else if (modeText.Equals("TUTOR") && !textRow.Equals("{{learnlist/tutor7null}}"))
+                            {
+                                string[] rowdata = System.Text.RegularExpressions.Regex.Replace(textRow, "}}", "").Split('|');
+                                //if 
+                                string movename = rowdata[1];
+                                if (rowdata[8 + movetutorcolumn].Equals("yes"))
+                                    TutorMovesIds.Add(SerebiiNameToID[movename]);
+                            }
+
+                            //for (int i = 0; )
+                        }
                     }
 
                 }
-                //lvlMovesId.Sort(new Comparison<LevelUpMoveId>(CompareLvlUpMoveIds));
+                foreach (int evoid in evoMovesId)
+                    lvlMoves.Add(new LevelUpMove(0, "MOVE_" + MoveDefNames[evoid]));
                 foreach (LevelUpMoveId lvlid in lvlMovesId)
                     lvlMoves.Add(new LevelUpMove(lvlid.Level, "MOVE_" + MoveDefNames[lvlid.MoveId]));
 
@@ -283,7 +363,7 @@ namespace moveParser
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             string current = "";
-            try
+            //try
             {
                 List<MonName> nameList = new List<MonName>();
                 Dictionary<string, MonData> Database = new Dictionary<string, MonData>();
@@ -329,11 +409,13 @@ namespace moveParser
                 File.WriteAllText("db/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
                 UpdateLoadingMessage("Pokémon data loaded.");
             }
+            /*
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 UpdateLoadingMessage("Couldn't load Pokémon data. (" + current + ")");
             }
+            */
             FinishMoveDataLoading();
         }
 
