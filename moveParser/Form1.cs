@@ -223,10 +223,20 @@ namespace moveParser
 
                                 if (!lvl.Equals("N/A"))
                                 {
-                                    if (lvl.Equals("0"))
-                                        evoMovesId.Add(SerebiiNameToID[movename]);
+                                    int moveId = SerebiiNameToID[movename];
+
+                                    if (moveId == 617)
+                                    {
+                                        if (name.SpeciesName.Equals("FLOETTE_ETERNAL_FLOWER"))
+                                            lvlMovesId.Add(new LevelUpMoveId(int.Parse(lvl), moveId));
+                                    }
                                     else
-                                        lvlMovesId.Add(new LevelUpMoveId(int.Parse(lvl), SerebiiNameToID[movename]));
+                                    {
+                                        if (lvl.Equals("0"))
+                                            evoMovesId.Add(moveId);
+                                        else
+                                            lvlMovesId.Add(new LevelUpMoveId(int.Parse(lvl), moveId));
+                                    }
                                 }
                             }
                             else if (modeText.Equals("TM") && !TMListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !textRow.Equals("{{learnlist/tm7null}}"))
