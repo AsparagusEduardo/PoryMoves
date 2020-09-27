@@ -29,16 +29,8 @@ namespace moveParser
 
         protected Dictionary<string, GenerationData> GenData = new Dictionary<string, GenerationData>()
         {
-            {"SWSH", new GenerationData(8, "swsh", "-swsh", "{1}/index", "//table[@class='dextable']",
-                                            "Standard Level Up", "Standard Level Up", "Level Up - {0}", "{0} Level Up",
-                                            "Technical Machine Attacks", "Technical Record Attacks",
-                                            "Move Tutor Attacks", "Isle of Armor Move Tutor Attacks",
-                                            "Egg Moves (Details)") },
-            {"USUM", new GenerationData(7, "usum", "-sm", "{0}", "//table[@class='dextable']",
-                                            "Generation VII Level Up", "Standard Level Up", "Sun / Moon Level Up - {0}", "{0} Level Up",
-                                            "TM & HM Attacks", "TM & HM Attacks",
-                                            "Move Tutor Attacks", "Ultra Sun/Ultra Moon Move Tutor Attacks",
-                                            "Egg Moves (Details)") },
+            {"SWSH", new GenerationData(8, "swsh") },
+            {"USUM", new GenerationData(7, "usum") },
         };
 
         protected void LoadGenerationData()
@@ -77,7 +69,7 @@ namespace moveParser
                 string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim();
                 //pkmnList.Add(number, species);
 
-                lista.Add(new MonName(number, species, true, species, species, NameToVarFormat(species), NameToDefineFormat(species)));
+                lista.Add(new MonName(number, species, true, species, NameToVarFormat(species), NameToDefineFormat(species)));
                 //texto += "{new MonData(\"" + NameToDefineFormat(species) + "\", \"" + NameToVarFormat(species) + "\") },\n";
             }
 
@@ -104,38 +96,6 @@ namespace moveParser
             List<string> TutorMoves = new List<string>();
 
             int number = int.Parse(name.NatDexNum);
-            string pokedex, identifier;
-            string lvlUpTitle_Gen, lvlUpTitle_Game, lvlUpTitle_Form, lvlUpTitle_RegionalForm;
-            string tmHmTrTitle, tmHmTrTitle2;
-            string moveTutorTitle1, moveTutorTitle2;
-            string eggMoveTitle;
-
-            pokedex = gen.dexPage;
-            identifier = String.Format(gen.indexFormat, name.NatDexNum, name.SpeciesName.ToLower());
-            lvlUpTitle_Gen = gen.lvlUpTitle_Generation;
-
-            if (gen.genNumber == 7 && (number == 808 || number == 809))
-                lvlUpTitle_Game = "Let's Go Level Up";
-            else
-                lvlUpTitle_Game = "Ultra Sun/Ultra Moon Level Up";
-
-            //Checks if it's a form.
-            if (name.IsBaseForm)
-            {
-                lvlUpTitle_Form = String.Format(gen.lvlUpTitle_Forms, "Standard");
-                lvlUpTitle_RegionalForm = String.Format(gen.lvlUpTitle_RegionalForms, "Standard");
-            }
-            else
-            {
-                lvlUpTitle_Form = String.Format(gen.lvlUpTitle_Forms, name.FormName_EggTutor);
-                lvlUpTitle_RegionalForm = String.Format(gen.lvlUpTitle_RegionalForms, name.FormName_EggTutor);
-            }
-
-            tmHmTrTitle = gen.tmHmTrTitle;
-            tmHmTrTitle2 = gen.tmHmTrTitle2;
-            moveTutorTitle1 = gen.moveTutorTitle1;
-            moveTutorTitle2 = gen.moveTutorTitle2;
-            eggMoveTitle = gen.eggMoveTitle;
 
             string html = "https://bulbapedia.bulbagarden.net/w/index.php?title=" + name.SpeciesName + "_(Pok%C3%A9mon)/Generation_VII_learnset&action=edit";
 
