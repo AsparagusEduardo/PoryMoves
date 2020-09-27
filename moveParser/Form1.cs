@@ -176,7 +176,7 @@ namespace moveParser
                             formText = name.SpeciesName;
                         else if (textRow.Contains("=" + name.FormName_TMs + "="))
                             formText = name.FormName_TMs;
-                        else if (textRow.Contains("By [[Level|leveling up]]"))
+                        else if (textRow.ToLower().Contains("by [[level|leveling up]]"))
                             modeText = "Level";
                         else if (textRow.Contains("By [[TM]]"))
                             modeText = "TM";
