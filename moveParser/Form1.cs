@@ -286,7 +286,15 @@ namespace moveParser
                                 //if 
                                 string movename = rowdata[1];
                                 if (rowdata[8 + movetutorcolumn].Equals("yes"))
-                                    TutorMovesIds.Add(SerebiiNameToID[movename]);
+                                {
+                                    int modeid = SerebiiNameToID[movename];
+                                    if (modeid == 520 && name.SpeciesName.Equals("Silvally"))
+                                    {
+                                        TutorMovesIds.Add(518);
+                                        TutorMovesIds.Add(519);
+                                    }
+                                    TutorMovesIds.Add(modeid);
+                                }
                             }
 
                             //for (int i = 0; )
