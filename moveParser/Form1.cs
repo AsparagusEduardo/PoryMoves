@@ -176,6 +176,8 @@ namespace moveParser
                             formText = name.SpeciesName;
                         else if (textRow.Contains("=" + name.FormName_TMs + "="))
                             formText = name.FormName_TMs;
+                        else if ((gameText != null && textRow.Contains("======")) || (gameText == null && textRow.Contains("=====")))
+                            formText = textRow.Replace("=", "");
                         else if (textRow.ToLower().Contains("by [[level|leveling up]]"))
                             modeText = "Level";
                         else if (textRow.Contains("By [[TM]]"))
@@ -227,24 +229,28 @@ namespace moveParser
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 LevelUpListRead = true;
+                            formText = null;
                         }
                         else if (textRow.ToLower().Contains(("{{learnlist/tmf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 TMListRead = true;
+                            formText = null;
                         }
                         else if (textRow.ToLower().Contains(("{{learnlist/breedf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 EggListRead = true;
+                            formText = null;
                         }
                         else if (textRow.ToLower().Contains(("{{learnlist/tutorf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 TutorListRead = true;
+                            formText = null;
                         }
                         else if (inList && (gameText == null || gameText.Contains(gametosearch)))
                         {
