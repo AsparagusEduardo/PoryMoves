@@ -14,6 +14,7 @@ using Newtonsoft.Json.Linq;
 using System.Threading;
 using moveParser.data;
 using static moveParser.data.MoveData;
+using System.Text.RegularExpressions;
 
 namespace moveParser
 {
@@ -29,8 +30,8 @@ namespace moveParser
 
         protected Dictionary<string, GenerationData> GenData = new Dictionary<string, GenerationData>()
         {
-            {"SWSH", new GenerationData(8, "swsh") },
-            {"USUM", new GenerationData(7, "usum") },
+            {"SWSH", new GenerationData(8, "VIII", true, "swsh", "Pokémon Sword and Shield", 1) },
+            {"USUM", new GenerationData(7, "VII", false, "usum", "Pokémon Ultra Sun and Ultra Moon", 2) },
         };
 
         protected void LoadGenerationData()
@@ -97,7 +98,10 @@ namespace moveParser
 
             int number = int.Parse(name.NatDexNum);
 
-            string html = "https://bulbapedia.bulbagarden.net/w/index.php?title=" + name.SpeciesName + "_(Pok%C3%A9mon)/Generation_VII_learnset&action=edit";
+            string html = "https://bulbapedia.bulbagarden.net/w/index.php?title=" + name.SpeciesName + "_(Pokémon)";
+            if (!gen.isLatestGen)
+                html += "/Generation_" + gen.genNumberRoman + "_learnset";
+            html += "&action=edit";
 
             hap.HtmlWeb web = new hap.HtmlWeb();
             hap.HtmlDocument htmlDoc = web.Load(html);
@@ -107,13 +111,14 @@ namespace moveParser
 
             int column = 0;
             int gamecolumnamount = 1;
-            int movetutorcolumn = 2;
+            int movetutorcolumn = gen.moveTutorColumn;
             string gameAbv = gen.dbFilename.ToUpper();
-            string gametosearch = "Pokémon Ultra Sun and Ultra Moon";
+            string gametosearch = gen.gameFullName;
 
             if (columns != null)
             {
                 bool inList = false;
+                bool readingLearnsets = !gen.isLatestGen;
                 bool LevelUpListRead = false;
                 bool TMListRead = false;
                 bool EggListRead = false;
@@ -126,7 +131,12 @@ namespace moveParser
 
                 foreach (string textRow in pagetext.Split('\n'))
                 {
-                    if (!textRow.Trim().Equals(""))
+                    if (textRow.Contains("=Learnset="))
+                        readingLearnsets = true;
+                    else if (textRow.Contains("=Side game data="))
+                        readingLearnsets = false;
+
+                    if (!textRow.Trim().Equals("") && readingLearnsets)
                     {
                         rownum++;
 
@@ -239,23 +249,23 @@ namespace moveParser
                                     }
                                 }
                             }
-                            else if (modeText.Equals("TM") && !TMListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !textRow.Equals("{{learnlist/tm7null}}"))
+                            else if (modeText.Equals("TM") && !TMListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !Regex.IsMatch(textRow, "{{learnlist/t[mr].+null}}"))
                             {
                                 string[] rowdata = textRow.Split('|');
                                 string movename = rowdata[2];
 
                                 TMMovesIds.Add(SerebiiNameToID[movename]);
                             }
-                            else if (modeText.Equals("EGG") && !EggListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !textRow.Equals("{{learnlist/breed7null}}"))
+                            else if (modeText.Equals("EGG") && !EggListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !Regex.IsMatch(textRow, "{{learnlist/breed.+null}}"))
                             {
-                                string breedtext = textRow.Replace("{{MS|000}}{{tt|*|No legitimate means to pass down move}}", "");
-                                string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{MSP([^}]+)}}", "MON").Split('|');
+                                string breedtext = textRow.Replace("{{tt|*|No legitimate means to pass down move}}", "");
+                                string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{MS([^}]+)}}", "MON").Split('|');
                                 string movename = rowdata[2];
 
                                 if (!movename.Equals("Light Ball}}{{tt") && !(textRow.Contains("†") && !isIncenseBaby(name.SpeciesName)))
                                     EggMovesIds.Add(SerebiiNameToID[movename]);
                             }
-                            else if (modeText.Equals("TUTOR") && !TutorListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !textRow.Equals("{{learnlist/tutor7null}}"))
+                            else if (modeText.Equals("TUTOR") && !TutorListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !Regex.IsMatch(textRow, "{{learnlist/tutor.+null}}"))
                             {
                                 string tutortext = textRow.Replace("{{tt|*|", "");
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(tutortext, "}}", "").Split('|');
