@@ -20,6 +20,8 @@ namespace moveParser
 {
     public partial class Form1 : Form
     {
+        private Dictionary<string, Dictionary<string, MonData>> allGensData = new Dictionary<string, Dictionary<string, MonData>>();
+
         public Form1()
         {
             InitializeComponent();
@@ -48,6 +50,8 @@ namespace moveParser
                 cListTMMoves.Items.Add(item.Key);
                 cListEggMoves.Items.Add(item.Key);
                 cListTutorMoves.Items.Add(item.Key);
+
+                allGensData.Add(item.Key, PokemonData.GetMonDataFromFile("db/" + item.Value.dbFilename + ".json"));
             }
         }
 
@@ -119,6 +123,7 @@ namespace moveParser
             {
                 bool inList = false;
                 bool readingLearnsets = !gen.isLatestGen;
+                bool readingLevelUp = false;
                 bool LevelUpListRead = false;
                 bool TMListRead = false;
                 bool EggListRead = false;
@@ -139,17 +144,14 @@ namespace moveParser
                     if (!textRow.Trim().Equals("") && readingLearnsets)
                     {
                         rownum++;
-
-                        if (textRow.Contains(gametosearch))
+                        if (textRow.ToLower().Contains("{{learnlist/movena|"))
+                            return null;
+                        else if (textRow.Contains(gametosearch))
                             gameText = gametosearch;
-                        else if (textRow.Contains("=" + name.SpeciesName + "="))
-                            formText = name.SpeciesName;
-                        else if (textRow.Contains("=" + name.FormName_TMs + "="))
-                            formText = name.FormName_TMs;
-                        else if ((gameText != null && textRow.Contains("======")) || (gameText == null && textRow.Contains("=====")))
-                            formText = textRow.Replace("=", "");
                         else if (textRow.ToLower().Contains("by [[level|leveling up]]"))
+                        {
                             modeText = "Level";
+                        }
                         else if (textRow.Contains("By [[TM]]"))
                             modeText = "TM";
                         else if (textRow.Contains("By {{pkmn|breeding}}"))
@@ -158,6 +160,8 @@ namespace moveParser
                             modeText = "TUTOR";
                         else if (textRow.Contains("Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!") || textRow.Contains("Pokémon Ultra Sun and Ultra Moon"))
                             gameText = textRow;
+                        else if (textRow.Contains("====") && !readingLevelUp && !textRow.Contains("By a prior [[evolution]]"))
+                            formText = textRow.Replace("=", "");
 
                         else if (textRow.Contains("{{learnlist/levelh/" + gen.genNumber + "|" + name.SpeciesName + "|")
                             || textRow.Contains("{{learnlist/tmh/" + gen.genNumber + "|" + name.SpeciesName + "|")
@@ -171,8 +175,9 @@ namespace moveParser
                                 if (modeText.Equals("Level") && !LevelUpListRead)
                                 {
                                     inList = true;
+                                    readingLevelUp = true;
                                     string[] rowdata = textRow.Split('|');
-                                
+
                                     gamecolumnamount = rowdata.Length - 5;
                                     if (gamecolumnamount == 0)
                                         gamecolumnamount = 1;
@@ -200,6 +205,7 @@ namespace moveParser
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 LevelUpListRead = true;
                             formText = null;
+                            readingLevelUp = false;
                         }
                         else if (textRow.ToLower().Contains(("{{learnlist/tmf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
                         {
@@ -392,7 +398,7 @@ namespace moveParser
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             string current = "";
-            //try
+            try
             {
                 List<MonName> nameList = new List<MonName>();
                 Dictionary<string, MonData> Database = new Dictionary<string, MonData>();
@@ -438,13 +444,11 @@ namespace moveParser
                 File.WriteAllText("db/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
                 UpdateLoadingMessage("Pokémon data loaded.");
             }
-            /*
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.ToString(), "Error loading " + current, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 UpdateLoadingMessage("Couldn't load Pokémon data. (" + current + ")");
             }
-            */
             FinishMoveDataLoading();
         }
 
@@ -490,7 +494,7 @@ namespace moveParser
 
             List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
 
-            Dictionary<string, MonData> Data = PokemonData.GetMonDataFromFile("db/usum.json");
+            Dictionary<string, MonData> CustomData = PokemonData.GetMonDataFromFile("db/usum.json");
 
             if (!Directory.Exists("output"))
                 Directory.CreateDirectory("output");
@@ -508,7 +512,7 @@ namespace moveParser
                 MonData mon = new MonData();
                 try
                 {
-                    mon = Data[name.DefName];
+                    mon = CustomData[name.DefName];
                 }
                 catch (KeyNotFoundException) {}
 
@@ -551,6 +555,12 @@ namespace moveParser
             this.Invoke((MethodInvoker)delegate {
                 cmbGeneration.Enabled = value;
             });
+        }
+
+        private void cListLevelUp_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int ix = 0; ix < cListLevelUp.Items.Count; ++ix)
+                if (ix != e.Index) cListLevelUp.SetItemChecked(ix, false);
         }
     }
 }

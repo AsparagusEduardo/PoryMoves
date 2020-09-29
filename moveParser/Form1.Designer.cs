@@ -45,8 +45,6 @@
             this.chkTM_IncludeLvl = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chkLvl_LevelUpEnd = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.chkLvl_EvoMovesLvl1 = new System.Windows.Forms.CheckBox();
             this.cListLevelUp = new System.Windows.Forms.CheckedListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
@@ -68,11 +66,11 @@
             // 
             // btnLoadFromSerebii
             // 
-            this.btnLoadFromSerebii.Location = new System.Drawing.Point(689, 4);
+            this.btnLoadFromSerebii.Location = new System.Drawing.Point(660, 4);
             this.btnLoadFromSerebii.Name = "btnLoadFromSerebii";
-            this.btnLoadFromSerebii.Size = new System.Drawing.Size(140, 34);
+            this.btnLoadFromSerebii.Size = new System.Drawing.Size(169, 34);
             this.btnLoadFromSerebii.TabIndex = 0;
-            this.btnLoadFromSerebii.Text = "Load from Serebii";
+            this.btnLoadFromSerebii.Text = "Load from Bulbapedia";
             this.btnLoadFromSerebii.UseVisualStyleBackColor = true;
             this.btnLoadFromSerebii.Click += new System.EventHandler(this.btnLoadFromSerebii_Click);
             // 
@@ -147,26 +145,12 @@
             // 
             // cListTMMoves
             // 
+            this.cListTMMoves.CheckOnClick = true;
             this.cListTMMoves.Enabled = false;
             this.cListTMMoves.FormattingEnabled = true;
             this.cListTMMoves.Items.AddRange(new object[] {
             "SWSH",
-            "USUM",
-            "SM",
-            "ORAS",
-            "XY",
-            "BW2",
-            "BW",
-            "HGSS",
-            "PT",
-            "DP",
-            "EM",
-            "FRLG",
-            "RS",
-            "C",
-            "GS",
-            "Y",
-            "RB"});
+            "USUM"});
             this.cListTMMoves.Location = new System.Drawing.Point(6, 25);
             this.cListTMMoves.Name = "cListTMMoves";
             this.cListTMMoves.Size = new System.Drawing.Size(180, 174);
@@ -232,8 +216,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.chkLvl_LevelUpEnd);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.chkLvl_EvoMovesLvl1);
             this.groupBox1.Controls.Add(this.cListLevelUp);
             this.groupBox1.Controls.Add(this.btnWriteLvlLearnsets);
             this.groupBox1.Location = new System.Drawing.Point(15, 108);
@@ -246,59 +228,25 @@
             // chkLvl_LevelUpEnd
             // 
             this.chkLvl_LevelUpEnd.AutoSize = true;
-            this.chkLvl_LevelUpEnd.Location = new System.Drawing.Point(6, 260);
+            this.chkLvl_LevelUpEnd.Location = new System.Drawing.Point(6, 205);
             this.chkLvl_LevelUpEnd.Name = "chkLvl_LevelUpEnd";
             this.chkLvl_LevelUpEnd.Size = new System.Drawing.Size(166, 21);
             this.chkLvl_LevelUpEnd.TabIndex = 17;
             this.chkLvl_LevelUpEnd.Text = "Add LEVEL_UP_END";
             this.chkLvl_LevelUpEnd.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Enabled = false;
-            this.checkBox2.Location = new System.Drawing.Point(6, 232);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(185, 21);
-            this.checkBox2.TabIndex = 15;
-            this.checkBox2.Text = "Add previous evo moves";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // chkLvl_EvoMovesLvl1
-            // 
-            this.chkLvl_EvoMovesLvl1.AutoSize = true;
-            this.chkLvl_EvoMovesLvl1.Location = new System.Drawing.Point(6, 205);
-            this.chkLvl_EvoMovesLvl1.Name = "chkLvl_EvoMovesLvl1";
-            this.chkLvl_EvoMovesLvl1.Size = new System.Drawing.Size(182, 21);
-            this.chkLvl_EvoMovesLvl1.TabIndex = 13;
-            this.chkLvl_EvoMovesLvl1.Text = "Add Evo Moves to Lvl. 1";
-            this.chkLvl_EvoMovesLvl1.UseVisualStyleBackColor = true;
-            // 
             // cListLevelUp
             // 
+            this.cListLevelUp.CheckOnClick = true;
             this.cListLevelUp.FormattingEnabled = true;
             this.cListLevelUp.Items.AddRange(new object[] {
             "SWSH",
-            "USUM",
-            "SM",
-            "ORAS",
-            "XY",
-            "BW2",
-            "BW",
-            "HGSS",
-            "PT",
-            "DP",
-            "EM",
-            "FRLG",
-            "RS",
-            "C",
-            "GS",
-            "Y",
-            "RB"});
+            "USUM"});
             this.cListLevelUp.Location = new System.Drawing.Point(6, 25);
             this.cListLevelUp.Name = "cListLevelUp";
             this.cListLevelUp.Size = new System.Drawing.Size(180, 174);
             this.cListLevelUp.TabIndex = 12;
+            this.cListLevelUp.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.cListLevelUp_ItemCheck);
             // 
             // groupBox2
             // 
@@ -359,26 +307,12 @@
             // 
             // cListEggMoves
             // 
+            this.cListEggMoves.CheckOnClick = true;
             this.cListEggMoves.Enabled = false;
             this.cListEggMoves.FormattingEnabled = true;
             this.cListEggMoves.Items.AddRange(new object[] {
             "SWSH",
-            "USUM",
-            "SM",
-            "ORAS",
-            "XY",
-            "BW2",
-            "BW",
-            "HGSS",
-            "PT",
-            "DP",
-            "EM",
-            "FRLG",
-            "RS",
-            "C",
-            "GS",
-            "Y",
-            "RB"});
+            "USUM"});
             this.cListEggMoves.Location = new System.Drawing.Point(6, 25);
             this.cListEggMoves.Name = "cListEggMoves";
             this.cListEggMoves.Size = new System.Drawing.Size(180, 174);
@@ -443,26 +377,12 @@
             // 
             // cListTutorMoves
             // 
+            this.cListTutorMoves.CheckOnClick = true;
             this.cListTutorMoves.Enabled = false;
             this.cListTutorMoves.FormattingEnabled = true;
             this.cListTutorMoves.Items.AddRange(new object[] {
             "SWSH",
-            "USUM",
-            "SM",
-            "ORAS",
-            "XY",
-            "BW2",
-            "BW",
-            "HGSS",
-            "PT",
-            "DP",
-            "EM",
-            "FRLG",
-            "RS",
-            "C",
-            "GS",
-            "Y",
-            "RB"});
+            "USUM"});
             this.cListTutorMoves.Location = new System.Drawing.Point(6, 25);
             this.cListTutorMoves.Name = "cListTutorMoves";
             this.cListTutorMoves.Size = new System.Drawing.Size(180, 174);
@@ -516,8 +436,6 @@
         private System.Windows.Forms.CheckBox chkTM_IncludeEgg;
         private System.Windows.Forms.CheckBox chkTM_IncludeTutor;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox chkLvl_EvoMovesLvl1;
         private System.Windows.Forms.CheckedListBox cListLevelUp;
         private System.Windows.Forms.CheckBox chkLvl_LevelUpEnd;
         private System.Windows.Forms.GroupBox groupBox2;
