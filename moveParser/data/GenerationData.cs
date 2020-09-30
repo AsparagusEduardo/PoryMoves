@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,4 +27,17 @@ namespace moveParser.data
             moveTutorColumn = tutorcol;
         }
     }
+
+    public class GenerationsData
+    {
+        public static Dictionary<string, GenerationData> GetGenDataFromFile(string filedir)
+        {
+            Dictionary<string, GenerationData> dict;
+            string text = File.ReadAllText(filedir);
+
+            dict = JsonConvert.DeserializeObject<Dictionary<string, GenerationData>>(text);
+            return dict;
+        }
+    }
+
 }

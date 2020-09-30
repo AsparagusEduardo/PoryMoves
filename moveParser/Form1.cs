@@ -22,6 +22,7 @@ namespace moveParser
     {
         private Dictionary<string, Dictionary<string, MonData>> allGensData = new Dictionary<string, Dictionary<string, MonData>>();
         Dictionary<string, MonData> customGenData = new Dictionary<string, MonData>();
+        protected Dictionary<string, GenerationData> GenData;
 
         public Form1()
         {
@@ -31,14 +32,10 @@ namespace moveParser
             //LoadPkmnNameListFromSerebii();
         }
 
-        protected Dictionary<string, GenerationData> GenData = new Dictionary<string, GenerationData>()
-        {
-            {"SWSH", new GenerationData(8, "VIII", true, "swsh", "Pokémon Sword and Shield", 1) },
-            {"USUM", new GenerationData(7, "VII", false, "usum", "Pokémon Ultra Sun and Ultra Moon", 2) },
-        };
-
         protected void LoadGenerationData()
         {
+            GenData = GenerationsData.GetGenDataFromFile("db/generations.json");
+
             cmbGeneration.Items.Clear();
             cListLevelUp.Items.Clear();
             cListTMMoves.Items.Clear();
@@ -52,7 +49,9 @@ namespace moveParser
                 cListEggMoves.Items.Add(item.Key);
                 cListTutorMoves.Items.Add(item.Key);
 
-                allGensData.Add(item.Key, PokemonData.GetMonDataFromFile("db/" + item.Value.dbFilename + ".json"));
+                Dictionary<string, MonData> gen = PokemonData.GetMonDataFromFile("db/" + item.Value.dbFilename + ".json");
+
+                allGensData.Add(item.Key, gen);
             }
             cListLevelUp.SetItemChecked(0, true);
         }
@@ -133,7 +132,9 @@ namespace moveParser
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             string current = "";
+#if !DEBUG
             try
+#endif
             {
                 List<MonName> nameList = new List<MonName>();
                 Dictionary<string, MonData> Database = new Dictionary<string, MonData>();
@@ -179,11 +180,13 @@ namespace moveParser
                 File.WriteAllText("db/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
                 UpdateLoadingMessage("Pokémon data loaded.");
             }
+#if !DEBUG
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Error loading " + current, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 UpdateLoadingMessage("Couldn't load Pokémon data. (" + current + ")");
             }
+#endif
             FinishMoveDataLoading();
         }
 

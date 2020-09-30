@@ -42,6 +42,8 @@ namespace moveParser.data
         public static Dictionary<string, MonData> GetMonDataFromFile(string filedir)
         {
             Dictionary<string, MonData> dict;
+            if (!File.Exists(filedir))
+                return null;
             string text = File.ReadAllText(filedir);
 
             dict = JsonConvert.DeserializeObject<Dictionary<string, MonData>>(text);
@@ -253,16 +255,20 @@ namespace moveParser.data
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(tutortext, "}}", "").Split('|');
                                 //if 
                                 string movename = rowdata[1];
-                                if (rowdata[8 + movetutorcolumn].Equals("yes"))
+                                try
                                 {
-                                    int modeid = SerebiiNameToID[movename];
-                                    if (modeid == 520 && name.SpeciesName.Equals("Silvally"))
+                                    if (rowdata[8 + movetutorcolumn].Equals("yes"))
                                     {
-                                        TutorMovesIds.Add(518);
-                                        TutorMovesIds.Add(519);
+                                        int modeid = SerebiiNameToID[movename];
+                                        if (modeid == 520 && name.SpeciesName.Equals("Silvally"))
+                                        {
+                                            TutorMovesIds.Add(518);
+                                            TutorMovesIds.Add(519);
+                                        }
+                                        TutorMovesIds.Add(modeid);
                                     }
-                                    TutorMovesIds.Add(modeid);
                                 }
+                                catch (IndexOutOfRangeException) { }
                             }
 
                             //for (int i = 0; )
