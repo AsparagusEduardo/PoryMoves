@@ -206,6 +206,8 @@ namespace moveParser
         {
             SetEnableForAllButtons(value);
             SetEnableForAllCombobox(value);
+            SetEnableForAllComboBoxList(value);
+            SetEnableForAllCheckbox(value);
         }
 
         public void FinishMoveDataLoading()
@@ -221,7 +223,7 @@ namespace moveParser
         private void btnWriteLvlLearnsets_Click(object sender, EventArgs e)
         {
             SetEnableForAllElements(false);
-            bwrkGroupMovesets.RunWorkerAsync();
+            bwrkGroupMovesets_lvl.RunWorkerAsync();
         }
         private void bwrkExportLvl_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -285,6 +287,7 @@ namespace moveParser
             this.Invoke((MethodInvoker)delegate {
                 btnLoadFromSerebii.Enabled = value;
                 btnWriteLvlLearnsets.Enabled = value;
+                btnExportTM.Enabled = value;
             });
         }
 
@@ -292,6 +295,24 @@ namespace moveParser
         {
             this.Invoke((MethodInvoker)delegate {
                 cmbGeneration.Enabled = value;
+            });
+        }
+
+        private void SetEnableForAllComboBoxList(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                cListLevelUp.Enabled = value;
+                cListTMMoves.Enabled = value;
+            });
+        }
+
+        private void SetEnableForAllCheckbox(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                chkLvl_LevelUpEnd.Enabled = value;
+                chkTM_IncludeEgg.Enabled = value;
+                chkTM_IncludeLvl.Enabled = value;
+                chkTM_IncludeTutor.Enabled = value;
             });
         }
 
@@ -381,9 +402,18 @@ namespace moveParser
 
                 i++;
                 int percent = i * 100 / namecount;
-                bwrkGroupMovesets.ReportProgress(percent);
+                bwrkGroupMovesets_lvl.ReportProgress(percent);
             }
+        }
+
+        private void bwrkGroupMovesets_lvl_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
             bwrkExportLvl.RunWorkerAsync();
+        }
+
+        private void bwrkGroupMovesets_tm_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+
         }
     }
 }

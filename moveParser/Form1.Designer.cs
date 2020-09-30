@@ -59,7 +59,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.cListTutorMoves = new System.Windows.Forms.CheckedListBox();
-            this.bwrkGroupMovesets = new System.ComponentModel.BackgroundWorker();
+            this.bwrkGroupMovesets_lvl = new System.ComponentModel.BackgroundWorker();
+            this.bwrkGroupMovesets_tm = new System.ComponentModel.BackgroundWorker();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -148,7 +149,6 @@
             // cListTMMoves
             // 
             this.cListTMMoves.CheckOnClick = true;
-            this.cListTMMoves.Enabled = false;
             this.cListTMMoves.FormattingEnabled = true;
             this.cListTMMoves.Items.AddRange(new object[] {
             "SWSH",
@@ -175,7 +175,6 @@
             // chkTM_IncludeTutor
             // 
             this.chkTM_IncludeTutor.AutoSize = true;
-            this.chkTM_IncludeTutor.Enabled = false;
             this.chkTM_IncludeTutor.Location = new System.Drawing.Point(6, 260);
             this.chkTM_IncludeTutor.Name = "chkTM_IncludeTutor";
             this.chkTM_IncludeTutor.Size = new System.Drawing.Size(158, 21);
@@ -186,7 +185,6 @@
             // chkTM_IncludeEgg
             // 
             this.chkTM_IncludeEgg.AutoSize = true;
-            this.chkTM_IncludeEgg.Enabled = false;
             this.chkTM_IncludeEgg.Location = new System.Drawing.Point(6, 232);
             this.chkTM_IncludeEgg.Name = "chkTM_IncludeEgg";
             this.chkTM_IncludeEgg.Size = new System.Drawing.Size(149, 21);
@@ -196,7 +194,6 @@
             // 
             // btnExportTM
             // 
-            this.btnExportTM.Enabled = false;
             this.btnExportTM.Location = new System.Drawing.Point(6, 291);
             this.btnExportTM.Name = "btnExportTM";
             this.btnExportTM.Size = new System.Drawing.Size(180, 27);
@@ -207,7 +204,6 @@
             // chkTM_IncludeLvl
             // 
             this.chkTM_IncludeLvl.AutoSize = true;
-            this.chkTM_IncludeLvl.Enabled = false;
             this.chkTM_IncludeLvl.Location = new System.Drawing.Point(6, 205);
             this.chkTM_IncludeLvl.Name = "chkTM_IncludeLvl";
             this.chkTM_IncludeLvl.Size = new System.Drawing.Size(180, 21);
@@ -390,11 +386,19 @@
             this.cListTutorMoves.Size = new System.Drawing.Size(180, 174);
             this.cListTutorMoves.TabIndex = 12;
             // 
-            // bwrkGroupMovesets
+            // bwrkGroupMovesets_lvl
             // 
-            this.bwrkGroupMovesets.WorkerReportsProgress = true;
-            this.bwrkGroupMovesets.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkGroupMovesets_DoWork);
-            this.bwrkGroupMovesets.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            this.bwrkGroupMovesets_lvl.WorkerReportsProgress = true;
+            this.bwrkGroupMovesets_lvl.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkGroupMovesets_DoWork);
+            this.bwrkGroupMovesets_lvl.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            this.bwrkGroupMovesets_lvl.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bwrkGroupMovesets_lvl_RunWorkerCompleted);
+            // 
+            // bwrkGroupMovesets_tm
+            // 
+            this.bwrkGroupMovesets_tm.WorkerReportsProgress = true;
+            this.bwrkGroupMovesets_tm.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkGroupMovesets_DoWork);
+            this.bwrkGroupMovesets_tm.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            this.bwrkGroupMovesets_tm.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bwrkGroupMovesets_tm_RunWorkerCompleted);
             // 
             // Form1
             // 
@@ -459,7 +463,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckedListBox cListTutorMoves;
-        private System.ComponentModel.BackgroundWorker bwrkGroupMovesets;
+        private System.ComponentModel.BackgroundWorker bwrkGroupMovesets_lvl;
+        private System.ComponentModel.BackgroundWorker bwrkGroupMovesets_tm;
     }
 }
 
