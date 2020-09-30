@@ -59,6 +59,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.cListTutorMoves = new System.Windows.Forms.CheckedListBox();
+            this.bwrkGroupMovesets = new System.ComponentModel.BackgroundWorker();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -389,6 +390,12 @@
             this.cListTutorMoves.Size = new System.Drawing.Size(180, 174);
             this.cListTutorMoves.TabIndex = 12;
             // 
+            // bwrkGroupMovesets
+            // 
+            this.bwrkGroupMovesets.WorkerReportsProgress = true;
+            this.bwrkGroupMovesets.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkGroupMovesets_DoWork);
+            this.bwrkGroupMovesets.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -452,6 +459,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckedListBox cListTutorMoves;
+        private System.ComponentModel.BackgroundWorker bwrkGroupMovesets;
     }
 }
 

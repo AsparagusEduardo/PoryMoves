@@ -190,10 +190,9 @@ namespace moveParser
         private void backgroundWorker1_ProgressChanged(object sender,
             ProgressChangedEventArgs e)
         {
-            // Change the value of the ProgressBar to the BackgroundWorker progress.
-            pbar1.Value = e.ProgressPercentage;
-            // Set the text.
-            //this.Text = e.ProgressPercentage.ToString();
+            this.Invoke((MethodInvoker)delegate {
+                pbar1.Value = e.ProgressPercentage;
+            });
         }
 
         public void UpdateLoadingMessage(string newMessage)
@@ -221,78 +220,8 @@ namespace moveParser
 
         private void btnWriteLvlLearnsets_Click(object sender, EventArgs e)
         {
-            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
-
-            customGenData.Clear();
-
-            foreach(MonName name in nameList)
-            {
-                MonData monToAdd = new MonData();
-                monToAdd.LevelMoves = new List<LevelUpMove>();
-
-                List<LevelUpMove> evoMoves = new List<LevelUpMove>();
-                List<LevelUpMove> lvl1Moves = new List<LevelUpMove>();
-
-                Dictionary<string, List<Tuple<int, int>>> OtherLvlMoves = new Dictionary<string, List<Tuple<int, int>>>();
-                List<LevelUpMove> oLvlMoves = new List<LevelUpMove>();
-
-                foreach (string item in cListLevelUp.CheckedItems)
-                {
-                    GenerationData gen = GenData[item];
-                    MonData mon;
-                    try
-                    {
-                        mon = allGensData[item][name.DefName];
-                    }
-                    catch (KeyNotFoundException)
-                    {
-                        mon = new MonData();
-                    }
-                    foreach (LevelUpMove move in mon.LevelMoves)
-                    {
-                        if (move.Level == 0)
-                            evoMoves.Add(move);
-                        else if (move.Level == 1)
-                            lvl1Moves.Add(move);
-                        else
-                        {
-                            if (!OtherLvlMoves.ContainsKey(move.Move))
-                                OtherLvlMoves.Add(move.Move, new List<Tuple<int, int>> { new Tuple<int, int>(gen.genNumber, move.Level) });
-                            else
-                                OtherLvlMoves[move.Move].Add(new Tuple<int, int>(gen.genNumber, move.Level));
-                        }
-                    }
-
-                }
-                evoMoves = evoMoves.GroupBy(elem => elem.Move).Select(group => group.First()).ToList();
-                //evoMoves = evoMoves.Distinct().ToList();
-                foreach (LevelUpMove move in evoMoves)
-                    monToAdd.LevelMoves.Add(move);
-
-                lvl1Moves = lvl1Moves.GroupBy(elem => elem.Move).Select(group => group.First()).ToList();
-                foreach (LevelUpMove move in lvl1Moves)
-                    monToAdd.LevelMoves.Add(move);
-
-                foreach (KeyValuePair<string, List<Tuple<int, int>>> item in OtherLvlMoves)
-                {
-                    int weightedSum = 0;
-                    int sum = 0;
-
-                    foreach(Tuple<int, int> l in item.Value)
-                    {
-                        weightedSum += l.Item1 * l.Item2;
-                        sum += l.Item1;
-                    }
-                    //oLvlMoves.Add(new LevelUpMove(Math.Max((int)item.Value.Average(), 2), item.Key));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max((int)(weightedSum / sum), 2), item.Key));
-                }
-                //oLvlMoves = oLvlMoves.OrderBy(o => o.Level).ToList();
-                monToAdd.LevelMoves = monToAdd.LevelMoves.OrderBy(o => o.Level).ToList();
-
-                customGenData.Add(name.DefName, monToAdd);
-            }
-
-            bwrkExportLvl.RunWorkerAsync();
+            SetEnableForAllElements(false);
+            bwrkGroupMovesets.RunWorkerAsync();
         }
         private void bwrkExportLvl_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -343,7 +272,11 @@ namespace moveParser
             // write to file
             File.WriteAllText("output/level_up_learnsets.h", sets);
 
-            MessageBox.Show("Level Up moves exported to \"output/level_up_learnsets.h", "Success!", MessageBoxButtons.OK);
+            bwrkExportLvl.ReportProgress(0);
+            // Set the text.
+            UpdateLoadingMessage(namecount + " Level Up movesets exported.");
+
+            MessageBox.Show("Level Up moves exported to \"output/level_up_learnsets.h\"", "Success!", MessageBoxButtons.OK);
             SetEnableForAllElements(true);
         }
 
@@ -368,6 +301,89 @@ namespace moveParser
             for (int ix = 0; ix < cListLevelUp.Items.Count; ++ix)
                 if (ix != e.Index) cListLevelUp.SetItemChecked(ix, false);
             */
+        }
+
+        private void bwrkGroupMovesets_DoWork(object sender, DoWorkEventArgs e)
+        {
+            UpdateLoadingMessage("Grouping movesets...");
+            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
+
+            customGenData.Clear();
+
+            int i = 1;
+            int namecount = nameList.Count;
+            foreach (MonName name in nameList)
+            {
+                MonData monToAdd = new MonData();
+                monToAdd.LevelMoves = new List<LevelUpMove>();
+
+                List<LevelUpMove> evoMoves = new List<LevelUpMove>();
+                List<LevelUpMove> lvl1Moves = new List<LevelUpMove>();
+
+                Dictionary<string, List<Tuple<int, int>>> OtherLvlMoves = new Dictionary<string, List<Tuple<int, int>>>();
+                List<LevelUpMove> oLvlMoves = new List<LevelUpMove>();
+
+
+                foreach (string item in cListLevelUp.CheckedItems)
+                {
+                    GenerationData gen = GenData[item];
+                    MonData mon;
+                    try
+                    {
+                        mon = allGensData[item][name.DefName];
+                    }
+                    catch (KeyNotFoundException)
+                    {
+                        mon = new MonData();
+                    }
+                    foreach (LevelUpMove move in mon.LevelMoves)
+                    {
+                        if (move.Level == 0)
+                            evoMoves.Add(move);
+                        else if (move.Level == 1)
+                            lvl1Moves.Add(move);
+                        else
+                        {
+                            if (!OtherLvlMoves.ContainsKey(move.Move))
+                                OtherLvlMoves.Add(move.Move, new List<Tuple<int, int>> { new Tuple<int, int>(gen.genNumber, move.Level) });
+                            else
+                                OtherLvlMoves[move.Move].Add(new Tuple<int, int>(gen.genNumber, move.Level));
+                        }
+                    }
+
+                }
+                evoMoves = evoMoves.GroupBy(elem => elem.Move).Select(group => group.First()).ToList();
+                //evoMoves = evoMoves.Distinct().ToList();
+                foreach (LevelUpMove move in evoMoves)
+                    monToAdd.LevelMoves.Add(move);
+
+                lvl1Moves = lvl1Moves.GroupBy(elem => elem.Move).Select(group => group.First()).ToList();
+                foreach (LevelUpMove move in lvl1Moves)
+                    monToAdd.LevelMoves.Add(move);
+
+                foreach (KeyValuePair<string, List<Tuple<int, int>>> item in OtherLvlMoves)
+                {
+                    int weightedSum = 0;
+                    int sum = 0;
+
+                    foreach (Tuple<int, int> l in item.Value)
+                    {
+                        weightedSum += l.Item1 * l.Item2;
+                        sum += l.Item1;
+                    }
+                    //oLvlMoves.Add(new LevelUpMove(Math.Max((int)item.Value.Average(), 2), item.Key));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max((int)(weightedSum / sum), 2), item.Key));
+                }
+                //oLvlMoves = oLvlMoves.OrderBy(o => o.Level).ToList();
+                monToAdd.LevelMoves = monToAdd.LevelMoves.OrderBy(o => o.Level).ToList();
+
+                customGenData.Add(name.DefName, monToAdd);
+
+                i++;
+                int percent = i * 100 / namecount;
+                bwrkGroupMovesets.ReportProgress(percent);
+            }
+            bwrkExportLvl.RunWorkerAsync();
         }
     }
 }
