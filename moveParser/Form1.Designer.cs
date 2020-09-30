@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnLoadFromSerebii = new System.Windows.Forms.Button();
             this.pbar1 = new System.Windows.Forms.ProgressBar();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -403,8 +404,9 @@
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.pbar1);
             this.Controls.Add(this.btnLoadFromSerebii);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "PoryMoves";
             this.gBoxOptionsTM.ResumeLayout(false);
             this.gBoxOptionsTM.PerformLayout();
             this.groupBox1.ResumeLayout(false);

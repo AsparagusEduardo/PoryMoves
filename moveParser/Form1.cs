@@ -300,10 +300,6 @@ namespace moveParser
 
             List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
 
-            //for
-
-            //Dictionary<string, MonData> CustomData = PokemonData.GetMonDataFromFile("db/usum.json");
-
             if (!Directory.Exists("output"))
                 Directory.CreateDirectory("output");
 
