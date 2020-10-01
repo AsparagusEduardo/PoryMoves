@@ -65,6 +65,9 @@ namespace moveParser.data
 
         public static MonData LoadMonData(MonName name, GenerationData gen)
         {
+            if (gen.dbFilename.Equals("lgpe") && (int.Parse(name.NatDexNum) > 151 && (int.Parse(name.NatDexNum) != 808 && int.Parse(name.NatDexNum) != 809)))
+                return null;
+
             MonData mon = new MonData();
 
             List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
@@ -86,7 +89,16 @@ namespace moveParser.data
             html += "&action=edit";
 
             hap.HtmlWeb web = new hap.HtmlWeb();
-            hap.HtmlDocument htmlDoc = web.Load(html);
+            hap.HtmlDocument htmlDoc;
+            try
+            {
+                htmlDoc = web.Load(html);
+            }
+            catch (System.Net.WebException)
+            {
+                return null;
+            }
+            
             hap.HtmlNodeCollection columns;
 
             columns = htmlDoc.DocumentNode.SelectNodes("//textarea");
@@ -114,7 +126,9 @@ namespace moveParser.data
 
                 foreach (string textRow in pagetext.Split('\n'))
                 {
-                    if (textRow.Contains("=Learnset="))
+                    if (readingLearnsets && textRow.Contains("Pokémon") && !name.SpeciesName.Equals("Bonsly"))
+                        gameText = textRow;
+                    else if (textRow.Contains("=Learnset="))
                         readingLearnsets = true;
                     else if (textRow.Contains("=Side game data="))
                         readingLearnsets = false;
@@ -124,8 +138,6 @@ namespace moveParser.data
                         rownum++;
                         if (textRow.ToLower().Contains("{{learnlist/movena|"))
                             return null;
-                        else if (textRow.Contains(gametosearch))
-                            gameText = gametosearch;
                         else if (textRow.ToLower().Contains("by [[level|leveling up]]"))
                         {
                             modeText = "Level";
@@ -136,9 +148,8 @@ namespace moveParser.data
                             modeText = "EGG";
                         else if (textRow.Contains("By [[Move Tutor|tutoring]]"))
                             modeText = "TUTOR";
-                        else if (textRow.Contains("Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!") || textRow.Contains("Pokémon Ultra Sun and Ultra Moon"))
-                            gameText = textRow;
-                        else if (textRow.Contains("====") && !readingLevelUp && !textRow.Contains("By a prior [[evolution]]"))
+                        else if (textRow.Contains("====") && !readingLevelUp && !textRow.Contains("Pokémon")
+                            && !textRow.Contains("By a prior [[evolution]]") && !textRow.Contains("Special moves") && !textRow.Contains("By {{pkmn2|event}}s"))
                             formText = textRow.Replace("=", "");
 
                         else if (textRow.Contains("{{learnlist/levelh/" + gen.genNumber + "|" + name.SpeciesName + "|")
@@ -148,7 +159,7 @@ namespace moveParser.data
                         {
                             if (modeText == null)
                                 continue;
-                            if (formText == null || formText.Equals(name.FormName_TMs))
+                            if ((formText == null || formText.Equals(name.FormName_TMs)) && (gameText == null || gameText.Contains(gametosearch)))
                             {
                                 if (modeText.Equals("Level") && !LevelUpListRead)
                                 {
@@ -177,7 +188,7 @@ namespace moveParser.data
                             }
 
                         }
-                        else if (textRow.Contains("{{learnlist/levelf/" + gen.genNumber + "|" + name.SpeciesName + "|"))
+                        else if (textRow.Contains("{{learnlist/levelf/" + gen.genNumber + "|" + name.SpeciesName + "|") && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
@@ -185,21 +196,21 @@ namespace moveParser.data
                             formText = null;
                             readingLevelUp = false;
                         }
-                        else if (textRow.ToLower().Contains(("{{learnlist/tmf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
+                        else if (textRow.ToLower().Contains(("{{learnlist/tmf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 TMListRead = true;
                             formText = null;
                         }
-                        else if (textRow.ToLower().Contains(("{{learnlist/breedf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
+                        else if (textRow.ToLower().Contains(("{{learnlist/breedf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 EggListRead = true;
                             formText = null;
                         }
-                        else if (textRow.ToLower().Contains(("{{learnlist/tutorf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()))
+                        else if (textRow.ToLower().Contains(("{{learnlist/tutorf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
