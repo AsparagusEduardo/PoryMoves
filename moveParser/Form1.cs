@@ -263,7 +263,7 @@ namespace moveParser
 
                 foreach (LevelUpMove move in mon.LevelMoves)
                 {
-                    sets += $"    LEVEL_UP_MOVE({move.Level,-2}, {move.Move}),\n";
+                    sets += $"    LEVEL_UP_MOVE({move.Level, 2}, {move.Move}),\n";
                     //sets += "    LEVEL_UP_MOVE(" + ((move.Level < 10) ? move.Level.ToString().PadLeft(2) : move.Level.ToString()) + ", " + move.Move + "),\n";
                 }
                 sets += "    LEVEL_UP_END\n};\n";
