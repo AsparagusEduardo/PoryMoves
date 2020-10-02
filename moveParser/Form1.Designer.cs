@@ -59,8 +59,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.cListTutorMoves = new System.Windows.Forms.CheckedListBox();
-            this.bwrkGroupMovesets_lvl = new System.ComponentModel.BackgroundWorker();
-            this.bwrkGroupMovesets_tm = new System.ComponentModel.BackgroundWorker();
+            this.bwrkExportTM = new System.ComponentModel.BackgroundWorker();
+            this.chkTM_Extended = new System.Windows.Forms.CheckBox();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -155,11 +155,12 @@
             "USUM"});
             this.cListTMMoves.Location = new System.Drawing.Point(6, 25);
             this.cListTMMoves.Name = "cListTMMoves";
-            this.cListTMMoves.Size = new System.Drawing.Size(180, 174);
+            this.cListTMMoves.Size = new System.Drawing.Size(180, 140);
             this.cListTMMoves.TabIndex = 12;
             // 
             // gBoxOptionsTM
             // 
+            this.gBoxOptionsTM.Controls.Add(this.chkTM_Extended);
             this.gBoxOptionsTM.Controls.Add(this.chkTM_IncludeTutor);
             this.gBoxOptionsTM.Controls.Add(this.chkTM_IncludeEgg);
             this.gBoxOptionsTM.Controls.Add(this.btnExportTM);
@@ -200,6 +201,7 @@
             this.btnExportTM.TabIndex = 14;
             this.btnExportTM.Text = "Export TM Moves";
             this.btnExportTM.UseVisualStyleBackColor = true;
+            this.btnExportTM.Click += new System.EventHandler(this.btnExportTM_Click);
             // 
             // chkTM_IncludeLvl
             // 
@@ -242,7 +244,7 @@
             "USUM"});
             this.cListLevelUp.Location = new System.Drawing.Point(6, 25);
             this.cListLevelUp.Name = "cListLevelUp";
-            this.cListLevelUp.Size = new System.Drawing.Size(180, 174);
+            this.cListLevelUp.Size = new System.Drawing.Size(180, 140);
             this.cListLevelUp.TabIndex = 12;
             this.cListLevelUp.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.cListLevelUp_ItemCheck);
             // 
@@ -313,7 +315,7 @@
             "USUM"});
             this.cListEggMoves.Location = new System.Drawing.Point(6, 25);
             this.cListEggMoves.Name = "cListEggMoves";
-            this.cListEggMoves.Size = new System.Drawing.Size(180, 174);
+            this.cListEggMoves.Size = new System.Drawing.Size(180, 140);
             this.cListEggMoves.TabIndex = 12;
             // 
             // groupBox3
@@ -383,22 +385,25 @@
             "USUM"});
             this.cListTutorMoves.Location = new System.Drawing.Point(6, 25);
             this.cListTutorMoves.Name = "cListTutorMoves";
-            this.cListTutorMoves.Size = new System.Drawing.Size(180, 174);
+            this.cListTutorMoves.Size = new System.Drawing.Size(180, 140);
             this.cListTutorMoves.TabIndex = 12;
             // 
-            // bwrkGroupMovesets_lvl
+            // bwrkExportTM
             // 
-            this.bwrkGroupMovesets_lvl.WorkerReportsProgress = true;
-            this.bwrkGroupMovesets_lvl.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkGroupMovesets_DoWork);
-            this.bwrkGroupMovesets_lvl.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
-            this.bwrkGroupMovesets_lvl.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bwrkGroupMovesets_lvl_RunWorkerCompleted);
+            this.bwrkExportTM.WorkerReportsProgress = true;
+            this.bwrkExportTM.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkExportTM_DoWork);
+            this.bwrkExportTM.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            this.bwrkExportTM.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bwrkGroupMovesets_tm_RunWorkerCompleted);
             // 
-            // bwrkGroupMovesets_tm
+            // chkTM_Extended
             // 
-            this.bwrkGroupMovesets_tm.WorkerReportsProgress = true;
-            this.bwrkGroupMovesets_tm.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkGroupMovesets_DoWork);
-            this.bwrkGroupMovesets_tm.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
-            this.bwrkGroupMovesets_tm.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bwrkGroupMovesets_tm_RunWorkerCompleted);
+            this.chkTM_Extended.AutoSize = true;
+            this.chkTM_Extended.Location = new System.Drawing.Point(6, 178);
+            this.chkTM_Extended.Name = "chkTM_Extended";
+            this.chkTM_Extended.Size = new System.Drawing.Size(149, 21);
+            this.chkTM_Extended.TabIndex = 17;
+            this.chkTM_Extended.Text = "Use Extended TMs";
+            this.chkTM_Extended.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -463,8 +468,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox9;
         private System.Windows.Forms.CheckedListBox cListTutorMoves;
-        private System.ComponentModel.BackgroundWorker bwrkGroupMovesets_lvl;
-        private System.ComponentModel.BackgroundWorker bwrkGroupMovesets_tm;
+        private System.ComponentModel.BackgroundWorker bwrkExportTM;
+        private System.Windows.Forms.CheckBox chkTM_Extended;
     }
 }
 

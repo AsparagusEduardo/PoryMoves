@@ -226,108 +226,9 @@ namespace moveParser
         private void btnWriteLvlLearnsets_Click(object sender, EventArgs e)
         {
             SetEnableForAllElements(false);
-            bwrkGroupMovesets_lvl.RunWorkerAsync();
+            bwrkExportLvl.RunWorkerAsync();
         }
         private void bwrkExportLvl_DoWork(object sender, DoWorkEventArgs e)
-        {
-            SetEnableForAllElements(false);
-
-            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
-
-            if (!Directory.Exists("output"))
-                Directory.CreateDirectory("output");
-
-            // file header
-            string sets = "#define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}\n";
-            if (chkLvl_LevelUpEnd.Checked)
-                sets += "#define LEVEL_UP_END (0xffff)\n";
-
-            // iterate over mons
-            int namecount = nameList.Count;
-            int i = 1;
-            foreach (MonName name in nameList)
-            {
-                MonData mon = new MonData();
-                try
-                {
-                    mon = customGenData[name.DefName];
-                    //mon = CustomData[name.DefName];
-                }
-                catch (KeyNotFoundException) {}
-
-                // begin learnset
-                sets += $"\nstatic const struct LevelUpMove s{name.VarName}LevelUpLearnset[] = {{\n";
-
-                if (mon.LevelMoves.Count == 0)
-                    sets += "    LEVEL_UP_MOVE( 1, MOVE_POUND),\n";
-
-                foreach (LevelUpMove move in mon.LevelMoves)
-                {
-                    sets += $"    LEVEL_UP_MOVE({move.Level, 2}, {move.Move}),\n";
-                    //sets += "    LEVEL_UP_MOVE(" + ((move.Level < 10) ? move.Level.ToString().PadLeft(2) : move.Level.ToString()) + ", " + move.Move + "),\n";
-                }
-                sets += "    LEVEL_UP_END\n};\n";
-
-                int percent = i * 100 / namecount;
-                bwrkExportLvl.ReportProgress(percent);
-                // Set the text.
-                UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Level Up movesets exported.");
-                i++;
-            }
-            // write to file
-            File.WriteAllText("output/level_up_learnsets.h", sets);
-
-            bwrkExportLvl.ReportProgress(0);
-            // Set the text.
-            UpdateLoadingMessage(namecount + " Level Up movesets exported.");
-
-            MessageBox.Show("Level Up moves exported to \"output/level_up_learnsets.h\"", "Success!", MessageBoxButtons.OK);
-            SetEnableForAllElements(true);
-        }
-
-        private void SetEnableForAllButtons(bool value)
-        {
-            this.Invoke((MethodInvoker)delegate {
-                btnLoadFromSerebii.Enabled = value;
-                btnWriteLvlLearnsets.Enabled = value;
-                btnExportTM.Enabled = value;
-            });
-        }
-
-        private void SetEnableForAllCombobox(bool value)
-        {
-            this.Invoke((MethodInvoker)delegate {
-                cmbGeneration.Enabled = value;
-            });
-        }
-
-        private void SetEnableForAllComboBoxList(bool value)
-        {
-            this.Invoke((MethodInvoker)delegate {
-                cListLevelUp.Enabled = value;
-                cListTMMoves.Enabled = value;
-            });
-        }
-
-        private void SetEnableForAllCheckbox(bool value)
-        {
-            this.Invoke((MethodInvoker)delegate {
-                chkLvl_LevelUpEnd.Enabled = value;
-                chkTM_IncludeEgg.Enabled = value;
-                chkTM_IncludeLvl.Enabled = value;
-                chkTM_IncludeTutor.Enabled = value;
-            });
-        }
-
-        private void cListLevelUp_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-            /*
-            for (int ix = 0; ix < cListLevelUp.Items.Count; ++ix)
-                if (ix != e.Index) cListLevelUp.SetItemChecked(ix, false);
-            */
-        }
-
-        private void bwrkGroupMovesets_DoWork(object sender, DoWorkEventArgs e)
         {
             UpdateLoadingMessage("Grouping movesets...");
             List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
@@ -405,18 +306,284 @@ namespace moveParser
 
                 i++;
                 int percent = i * 100 / namecount;
-                bwrkGroupMovesets_lvl.ReportProgress(percent);
+                bwrkExportLvl.ReportProgress(percent);
             }
+
+            if (!Directory.Exists("output"))
+                Directory.CreateDirectory("output");
+
+            // file header
+            string sets = "#define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}\n";
+            if (chkLvl_LevelUpEnd.Checked)
+                sets += "#define LEVEL_UP_END (0xffff)\n";
+
+            // iterate over mons
+            i = 1;
+            foreach (MonName name in nameList)
+            {
+                MonData mon = new MonData();
+                try
+                {
+                    mon = customGenData[name.DefName];
+                    //mon = CustomData[name.DefName];
+                }
+                catch (KeyNotFoundException) {}
+
+                // begin learnset
+                sets += $"\nstatic const struct LevelUpMove s{name.VarName}LevelUpLearnset[] = {{\n";
+
+                if (mon.LevelMoves.Count == 0)
+                    sets += "    LEVEL_UP_MOVE( 1, MOVE_POUND),\n";
+
+                foreach (LevelUpMove move in mon.LevelMoves)
+                {
+                    sets += $"    LEVEL_UP_MOVE({move.Level, 2}, {move.Move}),\n";
+                    //sets += "    LEVEL_UP_MOVE(" + ((move.Level < 10) ? move.Level.ToString().PadLeft(2) : move.Level.ToString()) + ", " + move.Move + "),\n";
+                }
+                sets += "    LEVEL_UP_END\n};\n";
+
+                int percent = i * 100 / namecount;
+                bwrkExportLvl.ReportProgress(percent);
+                // Set the text.
+                UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Level Up movesets exported.");
+                i++;
+            }
+            // write to file
+            File.WriteAllText("output/level_up_learnsets.h", sets);
+
+            bwrkExportLvl.ReportProgress(0);
+            // Set the text.
+            UpdateLoadingMessage(namecount + " Level Up movesets exported.");
+
+            MessageBox.Show("Level Up moves exported to \"output/level_up_learnsets.h\"", "Success!", MessageBoxButtons.OK);
+            SetEnableForAllElements(true);
         }
 
-        private void bwrkGroupMovesets_lvl_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        private void SetEnableForAllButtons(bool value)
         {
-            bwrkExportLvl.RunWorkerAsync();
+            this.Invoke((MethodInvoker)delegate {
+                btnLoadFromSerebii.Enabled = value;
+                btnWriteLvlLearnsets.Enabled = value;
+                btnExportTM.Enabled = value;
+            });
+        }
+
+        private void SetEnableForAllCombobox(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                cmbGeneration.Enabled = value;
+            });
+        }
+
+        private void SetEnableForAllComboBoxList(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                cListLevelUp.Enabled = value;
+                cListTMMoves.Enabled = value;
+            });
+        }
+
+        private void SetEnableForAllCheckbox(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                chkLvl_LevelUpEnd.Enabled = value;
+                chkTM_IncludeEgg.Enabled = value;
+                chkTM_IncludeLvl.Enabled = value;
+                chkTM_IncludeTutor.Enabled = value;
+                chkTM_Extended.Enabled = value;
+            });
+        }
+
+        private void cListLevelUp_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            /*
+            for (int ix = 0; ix < cListLevelUp.Items.Count; ++ix)
+                if (ix != e.Index) cListLevelUp.SetItemChecked(ix, false);
+            */
         }
 
         private void bwrkGroupMovesets_tm_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
 
+        }
+
+        private void bwrkExportTM_DoWork(object sender, DoWorkEventArgs e)
+        {
+            UpdateLoadingMessage("Grouping movesets...");
+            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
+
+            Dictionary<string, List<string>> lvlMoves = new Dictionary<string, List<string>>();
+
+            customGenData.Clear();
+
+            int i = 1;
+            int namecount = nameList.Count;
+            foreach (MonName name in nameList)
+            {
+                MonData monToAdd = new MonData();
+                monToAdd.TMMoves = new List<string>();
+                lvlMoves.Add(name.DefName, new List<string>());
+
+                foreach (string item in cListTMMoves.CheckedItems)
+                {
+                    GenerationData gen = GenData[item];
+                    MonData mon;
+                    try
+                    {
+                        mon = allGensData[item][name.DefName];
+                    }
+                    catch (KeyNotFoundException)
+                    {
+                        mon = new MonData();
+                    }
+                    foreach (string move in mon.TMMoves)
+                        monToAdd.TMMoves.Add(move);
+                    if (chkTM_IncludeLvl.Checked)
+                    {
+                        foreach (LevelUpMove move in mon.LevelMoves)
+                            lvlMoves[name.DefName].Add(move.Move);
+                    }
+                    if (chkTM_IncludeEgg.Checked)
+                    {
+                        foreach (string move in mon.EggMoves)
+                            monToAdd.EggMoves.Add(move);
+                    }
+                    if (chkTM_IncludeTutor.Checked)
+                    {
+                        foreach (string move in mon.TutorMoves)
+                            monToAdd.TutorMoves.Add(move);
+                    }
+
+
+                }
+                monToAdd.TMMoves = monToAdd.TMMoves.GroupBy(elem => elem).Select(group => group.First()).ToList();
+
+                customGenData.Add(name.DefName, monToAdd);
+
+                i++;
+                int percent = i * 100 / namecount;
+                bwrkExportLvl.ReportProgress(percent);
+            }
+            bool oldStyle = !chkTM_Extended.Checked;
+
+            // load specified TM list
+            List<string> tmMoves = File.ReadAllLines("input/tm.txt").ToList();
+            // sanity check: old style TM list must be 64 entries or less
+            if (tmMoves.Count > 64 && oldStyle)
+            {
+                MessageBox.Show("Old-style TM learnsets only support up to 64 TMs/HMs.\nConsider using the new format here:\nhttps://github.com/LOuroboros/pokeemerald/commit/6f69765770a52c1a7d6608a117112b78a2afcc22",
+                                "FATAL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (tmMoves.Count > 255 && !oldStyle)
+            {
+                MessageBox.Show("FATAL: New-style TM learnsets only support up to 255 TMs/HMs. Consider reducing your TM amount.",
+                                "FATAL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            // build importable TM list
+            string tms = "// IMPORTANT: DO NOT PASTE THIS FILE INTO YOUR REPO!\n// Instead, paste the following array into src/data/party_menu.h\n\nconst u16 sTMHMMoves[TMHM_COUNT] =\n{\n";
+            foreach (string move in tmMoves)
+            {
+                tms += $"    MOVE{move.Substring(move.IndexOf('_'))},";
+            }
+            tms += "};\n";
+
+            if (!Directory.Exists("output"))
+                Directory.CreateDirectory("output");
+
+            File.WriteAllText("output/party_menu_tm_list.h", tms);
+
+            // file header
+            string sets;
+            if (oldStyle)
+            {
+                sets = $"#define TMHM_LEARNSET(moves) {{(u32)(moves), ((u64)(moves) >> 32)}}\n" +
+                    $"#define TMHM(tmhm) ((u64)1 << (ITEM_##tmhm - ITEM_{tmMoves[0]}))\n\n" +
+                    "// This table determines which TMs and HMs a species is capable of learning.\n" +
+                    "// Each entry is a 64-bit bit array spread across two 32-bit values, with\n" +
+                    "// each bit corresponding to a TM or HM.\n" +
+                    "const u32 gTMHMLearnsets[][2] =\n{\n" +
+                    $"    [SPECIES_NONE]        = TMHM_LEARNSET(0),\n";
+            }
+            else
+                sets = $"#define TMHM(tmhm) ((u8) ((ITEM_##tmhm) - ITEM_{tmMoves[0]}))\n\nstatic const u8 sNoneTMHMLearnset[] =\n{{\n    0xFF,\n}};\n";
+
+            i = 1;
+            // iterate over mons
+            foreach (MonName name in nameList)
+            {
+                MonData data = customGenData[name.DefName];
+                // begin learnset
+                if (oldStyle)
+                {
+                    sets += $"\n    {$"[SPECIES_{name.DefName}]",-22}= TMHM_LEARNSET(";
+                    // hacky workaround for first move being on the same line
+                    bool first = true;
+                    foreach (string move in tmMoves)
+                    {
+                        string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
+                        if (data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa))
+                        {
+                            if (first)
+                            {
+                                sets += $"TMHM({move})";
+                                first = false;
+                            }
+                            else
+                            {
+                                sets += $"\n                                        | TMHM({move})";
+                            }
+                        }
+                    }
+                    sets += "),\n";
+                }
+                else
+                {
+                    sets += $"\nstatic const u8 s{name.VarName}TMHMLearnset[] =\n{{\n";
+                    foreach (string move in tmMoves)
+                    {
+                        string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
+                        if (data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa))
+                        {
+                            sets += $"    TMHM({move}),\n";
+                        }
+                    }
+                    sets += "    0xFF,\n};\n";
+                }
+
+                int percent = i * 100 / namecount;
+                bwrkExportLvl.ReportProgress(percent);
+                // Set the text.
+                UpdateLoadingMessage(i.ToString() + " out of " + namecount + " TM movesets exported.");
+                i++;
+            }
+            if (oldStyle)
+                sets += "\n};\n";
+            else
+            {
+                sets += "const u8 *const gTMHMLearnsets[] =\n{\n";
+                foreach (MonName name in nameList)
+                {
+                    sets += $"    [SPECIES_{name.DefName}] = s{name.VarName}TMHMLearnset,\n";
+                }
+                sets += "};";
+            }
+
+            // write to file
+            File.WriteAllText("output/tmhm_learnsets.h", sets);
+
+            bwrkExportLvl.ReportProgress(0);
+            // Set the text.
+            UpdateLoadingMessage(namecount + " TM movesets exported.");
+
+            MessageBox.Show("TM moves exported to \"output/tmhm_learnsets.h\"", "Success!", MessageBoxButtons.OK);
+            SetEnableForAllElements(true);
+        }
+
+        private void btnExportTM_Click(object sender, EventArgs e)
+        {
+            SetEnableForAllElements(false);
+            bwrkExportTM.RunWorkerAsync();
         }
     }
 }
