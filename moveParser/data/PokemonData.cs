@@ -139,23 +139,21 @@ namespace moveParser.data
                         if (textRow.ToLower().Contains("{{learnlist/movena|"))
                             return null;
                         else if (textRow.ToLower().Contains("by [[level|leveling up]]"))
-                        {
                             modeText = "Level";
-                        }
                         else if (textRow.Contains("By [[TM]]"))
                             modeText = "TM";
                         else if (textRow.Contains("By {{pkmn|breeding}}"))
                             modeText = "EGG";
-                        else if (textRow.Contains("By [[Move Tutor|tutoring]]"))
+                        else if (textRow.ToLower().Contains("by [[move tutor|tutoring]]"))
                             modeText = "TUTOR";
                         else if (textRow.Contains("====") && !readingLevelUp && !textRow.Contains("Pokémon")
                             && !textRow.Contains("By a prior [[evolution]]") && !textRow.Contains("Special moves") && !textRow.Contains("By {{pkmn2|event}}s"))
-                            formText = textRow.Replace("=", "");
+                            formText = Regex.Replace(textRow.Replace("=", ""), "{{sup(.*)([A-Z][a-z]*)}}", "");
 
-                        else if (textRow.Contains("{{learnlist/levelh/" + gen.genNumber + "|" + name.SpeciesName + "|")
-                            || textRow.Contains("{{learnlist/tmh/" + gen.genNumber + "|" + name.SpeciesName + "|")
-                            || textRow.Contains("{{learnlist/breedh/" + gen.genNumber + "|" + name.SpeciesName + "|")
-                            || textRow.Contains("{{learnlist/tutorh/" + gen.genNumber + "|" + name.SpeciesName + "|"))
+                        else if (textRow.Contains("{{learnlist/levelh")
+                            || textRow.Contains("{{learnlist/tmh")
+                            || textRow.Contains("{{learnlist/breedh")
+                            || textRow.Contains("{{learnlist/tutorh"))
                         {
                             if (modeText == null)
                                 continue;
@@ -188,7 +186,7 @@ namespace moveParser.data
                             }
 
                         }
-                        else if (textRow.Contains("{{learnlist/levelf/" + gen.genNumber + "|" + name.SpeciesName + "|") && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRow.Contains("{{learnlist/levelf") && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
@@ -196,21 +194,21 @@ namespace moveParser.data
                             formText = null;
                             readingLevelUp = false;
                         }
-                        else if (textRow.ToLower().Contains(("{{learnlist/tmf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRow.ToLower().Contains(("{{learnlist/tmf").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 TMListRead = true;
                             formText = null;
                         }
-                        else if (textRow.ToLower().Contains(("{{learnlist/breedf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRow.ToLower().Contains(("{{learnlist/breedf").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 EggListRead = true;
                             formText = null;
                         }
-                        else if (textRow.ToLower().Contains(("{{learnlist/tutorf/" + gen.genNumber + "|" + name.SpeciesName + "|").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRow.ToLower().Contains(("{{learnlist/tutorf").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
@@ -251,12 +249,14 @@ namespace moveParser.data
 
                                 TMMovesIds.Add(SerebiiNameToID[movename]);
                             }
-                            else if (modeText.Equals("EGG") && !EggListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !Regex.IsMatch(textRow, "{{learnlist/breed.+null}}"))
+                            else if (modeText.Equals("EGG") && !EggListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !Regex.IsMatch(textRow, "{{learnlist/breed.+null"))
                             {
                                 string breedtext = textRow.Replace("{{tt|*|No legitimate means to pass down move}}", "");
-                                string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{MS([^}]+)}}", "MON").Split('|');
+                                string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{sup(.*)\v([A-Z]*)}}|{{MS([^}]+)}}", "MON").Split('|');
                                 string movename = rowdata[2];
 
+                                if (Regex.IsMatch(breedtext, "{{sup(.*)\\\u007C([A-Z]*)}}") && !breedtext.Contains(gen.dbFilename.ToUpper()))
+                                    continue;
                                 if (!movename.Equals("Light Ball}}{{tt") && !(textRow.Contains("†") && !isIncenseBaby(name.SpeciesName)))
                                     EggMovesIds.Add(SerebiiNameToID[movename]);
                             }

@@ -416,7 +416,7 @@ namespace moveParser
 
             customGenData.Clear();
 
-            int i = 1;
+            int i = 0;
             int namecount = nameList.Count;
             foreach (MonName name in nameList)
             {
