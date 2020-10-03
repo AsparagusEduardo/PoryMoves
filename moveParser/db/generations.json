@@ -1,0 +1,83 @@
+{
+  "IOA": {
+    "genNumber": 8,
+    "genNumberRoman": "VIII",
+    "isLatestGen": true,
+    "dbFilename": "ioa",
+    "gameFullName": "The Isle of Armor",
+    "moveTutorColumn": 2,
+    "maxDexNum": 893
+  },
+  "SWSH": {
+    "genNumber": 8,
+    "genNumberRoman": "VIII",
+    "isLatestGen": true,
+    "dbFilename": "swsh",
+    "gameFullName": "Pokémon Sword and Shield",
+    "moveTutorColumn": 1,
+    "maxDexNum": 890
+  },
+  "LGPE": {
+    "genNumber": 7,
+    "genNumberRoman": "VII",
+    "isLatestGen": false,
+    "dbFilename": "lgpe",
+    "gameFullName": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
+    "moveTutorColumn": 2,
+    "maxDexNum": 809
+  },
+  "USUM": {
+    "genNumber": 7,
+    "genNumberRoman": "VII",
+    "isLatestGen": false,
+    "dbFilename": "usum",
+    "gameFullName": "Pokémon Ultra Sun and Ultra Moon",
+    "moveTutorColumn": 2,
+    "maxDexNum": 807
+  },
+  "SM": {
+    "genNumber": 7,
+    "genNumberRoman": "VII",
+    "isLatestGen": false,
+    "dbFilename": "sm",
+    "gameFullName": "Pokémon Sun and Moon",
+    "moveTutorColumn": 1,
+    "maxDexNum": 802
+  },
+  "ORAS": {
+    "genNumber": 6,
+    "genNumberRoman": "VI",
+    "isLatestGen": false,
+    "dbFilename": "oras",
+    "gameFullName": "Pokémon Omega Ruby and Alpha Sapphire",
+    "moveTutorColumn": 2,
+    "maxDexNum": 721
+  },
+  "XY": {
+    "genNumber": 6,
+    "genNumberRoman": "VI",
+    "isLatestGen": false,
+    "dbFilename": "xy",
+    "gameFullName": "Pokémon X and Y",
+    "moveTutorColumn": 1,
+    "maxDexNum": 721
+  },
+  "FRLG": {
+    "genNumber": 3,
+    "genNumberRoman": "III",
+    "isLatestGen": false,
+    "dbFilename": "frlg",
+    "gameFullName": "Pokémon Fire Red and Leaf Green",
+    "moveTutorColumn": 1,
+    "maxDexNum": 386
+  },
+  "RSE": {
+    "genNumber": 3,
+    "genNumberRoman": "III",
+    "isLatestGen": false,
+    "dbFilename": "rse",
+    "gameFullName": "Pokémon Ruby, Sapphire and Emerald",
+    "moveTutorColumn": 2,
+    "maxDexNum": 386
+  }
+}
