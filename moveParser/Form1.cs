@@ -49,7 +49,7 @@ namespace moveParser
                 cListEggMoves.Items.Add(item.Key);
                 cListTutorMoves.Items.Add(item.Key);
 
-                Dictionary<string, MonData> gen = PokemonData.GetMonDataFromFile("db/" + item.Value.dbFilename + ".json");
+                Dictionary<string, MonData> gen = PokemonData.GetMonDataFromFile("db/gen/" + item.Value.dbFilename + ".json");
 
                 allGensData.Add(item.Key, gen);
             }
@@ -176,11 +176,13 @@ namespace moveParser
                 }
                 if (!Directory.Exists("db"))
                     Directory.CreateDirectory("db");
+                if (!Directory.Exists("db/gen"))
+                    Directory.CreateDirectory("db/gen");
 
-                File.WriteAllText("db/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
+                File.WriteAllText("db/gen/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
 
                 allGensData.Remove(generation.dbFilename.ToUpper());
-                allGensData.Add(generation.dbFilename.ToUpper(), PokemonData.GetMonDataFromFile("db/" + generation.dbFilename + ".json"));
+                allGensData.Add(generation.dbFilename.ToUpper(), PokemonData.GetMonDataFromFile("db/gen/" + generation.dbFilename + ".json"));
 
                 UpdateLoadingMessage("Pokémon data loaded.");
             }
