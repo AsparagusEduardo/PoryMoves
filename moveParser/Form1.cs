@@ -178,6 +178,10 @@ namespace moveParser
                     Directory.CreateDirectory("db");
 
                 File.WriteAllText("db/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
+
+                allGensData.Remove(generation.dbFilename.ToUpper());
+                allGensData.Add(generation.dbFilename.ToUpper(), PokemonData.GetMonDataFromFile("db/" + generation.dbFilename + ".json"));
+
                 UpdateLoadingMessage("Pokémon data loaded.");
             }
 #if !DEBUG

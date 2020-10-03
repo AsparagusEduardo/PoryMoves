@@ -16,8 +16,9 @@ namespace moveParser.data
         public string dbFilename;
         public string gameFullName;
         public int moveTutorColumn;
+        public int maxDexNum;
 
-        public GenerationData(int num, string roman, bool lastgen, string dbfile, string fullname, int tutorcol)
+        public GenerationData(int num, string roman, bool lastgen, string dbfile, string fullname, int tutorcol, int dexnum)
         {
             genNumber = num;
             genNumberRoman = roman;
@@ -25,6 +26,7 @@ namespace moveParser.data
             dbFilename = dbfile;
             gameFullName = fullname;
             moveTutorColumn = tutorcol;
+            maxDexNum = dexnum;
         }
     }
 

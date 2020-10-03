@@ -81,7 +81,11 @@ namespace moveParser.data
             List<int> TutorMovesIds = new List<int>();
             List<string> TutorMoves = new List<string>();
 
-            int number = int.Parse(name.NatDexNum);
+            if (gen.genNumber < 7 && name.FormName_TMs.Contains("Alola"))
+                return null;
+
+            if (gen.maxDexNum < int.Parse(name.NatDexNum))
+                return null;
 
             string html = "https://bulbapedia.bulbagarden.net/w/index.php?title=" + name.SpeciesName + "_(Pokémon)";
             if (!gen.isLatestGen)
@@ -148,16 +152,16 @@ namespace moveParser.data
                             modeText = "TUTOR";
                         else if (textRow.Contains("====") && !readingLevelUp && !textRow.Contains("Pokémon")
                             && !textRow.Contains("By a prior [[evolution]]") && !textRow.Contains("Special moves") && !textRow.Contains("By {{pkmn2|event}}s"))
-                            formText = Regex.Replace(textRow.Replace("=", ""), "{{sup(.*)([A-Z][a-z]*)}}", "");
+                            formText = Regex.Replace(textRow.Replace("=", ""), "{{sup([^{]*)([A-Z][a-z]*)}}", "");
 
-                        else if (textRow.Contains("{{learnlist/levelh")
-                            || textRow.Contains("{{learnlist/tmh")
-                            || textRow.Contains("{{learnlist/breedh")
-                            || textRow.Contains("{{learnlist/tutorh"))
+                        else if (textRow.ToLower().Contains("{{learnlist/levelh")
+                            || textRow.ToLower().Contains("{{learnlist/tmh")
+                            || textRow.ToLower().Contains("{{learnlist/breedh")
+                            || textRow.ToLower().Contains("{{learnlist/tutorh"))
                         {
                             if (modeText == null)
                                 continue;
-                            if ((formText == null || formText.Equals(name.FormName_TMs)) && (gameText == null || gameText.Contains(gametosearch)))
+                            if (matchForm(formText, name.FormName_TMs) && (gameText == null || gameText.Contains(gametosearch)))
                             {
                                 if (modeText.Equals("Level") && !LevelUpListRead)
                                 {
@@ -166,7 +170,9 @@ namespace moveParser.data
                                     string[] rowdata = textRow.Split('|');
 
                                     gamecolumnamount = rowdata.Length - 5;
-                                    if (gamecolumnamount == 0)
+                                    if (rowdata[rowdata.Length - 1].Contains("xy="))
+                                        gamecolumnamount--;
+                                    if (gamecolumnamount <= 0)
                                         gamecolumnamount = 1;
                                     for (int i = 0; i < rowdata.Length; i++)
                                     {
@@ -186,7 +192,7 @@ namespace moveParser.data
                             }
 
                         }
-                        else if (textRow.Contains("{{learnlist/levelf") && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRow.ToLower().Contains("{{learnlist/levelf") && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
@@ -194,21 +200,21 @@ namespace moveParser.data
                             formText = null;
                             readingLevelUp = false;
                         }
-                        else if (textRow.ToLower().Contains(("{{learnlist/tmf").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRow.ToLower().Contains("{{learnlist/tmf") && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 TMListRead = true;
                             formText = null;
                         }
-                        else if (textRow.ToLower().Contains(("{{learnlist/breedf").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRow.ToLower().Contains("{{learnlist/breedf") && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
                                 EggListRead = true;
                             formText = null;
                         }
-                        else if (textRow.ToLower().Contains(("{{learnlist/tutorf").ToLower()) && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRow.ToLower().Contains("{{learnlist/tutorf") && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName_TMs))
@@ -242,14 +248,14 @@ namespace moveParser.data
                                     }
                                 }
                             }
-                            else if (modeText.Equals("TM") && !TMListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !Regex.IsMatch(textRow, "{{learnlist/t[mr].+null}}"))
+                            else if (modeText.Equals("TM") && !TMListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/t[mr].+null}}"))
                             {
                                 string[] rowdata = textRow.Split('|');
                                 string movename = rowdata[2];
 
                                 TMMovesIds.Add(SerebiiNameToID[movename]);
                             }
-                            else if (modeText.Equals("EGG") && !EggListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !Regex.IsMatch(textRow, "{{learnlist/breed.+null"))
+                            else if (modeText.Equals("EGG") && !EggListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/breed.+null"))
                             {
                                 string breedtext = textRow.Replace("{{tt|*|No legitimate means to pass down move}}", "");
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{sup(.*)\v([A-Z]*)}}|{{MS([^}]+)}}", "MON").Split('|');
@@ -260,7 +266,8 @@ namespace moveParser.data
                                 if (!movename.Equals("Light Ball}}{{tt") && !(textRow.Contains("†") && !isIncenseBaby(name.SpeciesName)))
                                     EggMovesIds.Add(SerebiiNameToID[movename]);
                             }
-                            else if (modeText.Equals("TUTOR") && !TutorListRead && (formText == null || formText.Equals(name.FormName_TMs)) && !Regex.IsMatch(textRow, "{{learnlist/tutor.+null}}"))
+                            else if (modeText.Equals("TUTOR") && !TutorListRead && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/tutor.+null}}")
+                                 && matchForm(formText, name.FormName_TMs))
                             {
                                 string tutortext = textRow.Replace("{{tt|*|", "");
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(tutortext, "}}", "").Split('|');
@@ -268,7 +275,14 @@ namespace moveParser.data
                                 string movename = rowdata[1];
                                 try
                                 {
-                                    if (rowdata[8 + movetutorcolumn].Equals("yes"))
+                                    int tutorpad;
+                                    if (gen.genNumber == 3 || gen.genNumber == 4)
+                                        tutorpad = 10;
+                                    else
+                                        tutorpad = 8;
+
+
+                                    if (rowdata[tutorpad + movetutorcolumn].Equals("yes"))
                                     {
                                         int modeid = SerebiiNameToID[movename];
                                         if (modeid == 520 && name.SpeciesName.Equals("Silvally"))
@@ -335,6 +349,19 @@ namespace moveParser.data
                 default:
                     return false;
             }
+        }
+
+        public static bool matchForm(string currentForm, string formToCheck)
+        {
+            if (currentForm == null)
+                return true;
+            if (currentForm.Equals(formToCheck))
+                return true;
+            if (currentForm.Equals(formToCheck + " / Defense Forme"))
+                return true;
+            if (currentForm.Equals("Attack Forme / " + formToCheck))
+                return true;
+            return false;
         }
     }
 }
