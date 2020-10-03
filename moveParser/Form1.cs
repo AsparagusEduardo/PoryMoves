@@ -71,7 +71,7 @@ namespace moveParser
                 string number = nodo.ChildNodes[1].InnerHtml.Trim().Replace("#", "");
                 string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim();
 
-                lista.Add(new MonName(number, species, true, species, NameToVarFormat(species), NameToDefineFormat(species)));
+                lista.Add(new MonName(int.Parse(number), species, true, species, NameToVarFormat(species), NameToDefineFormat(species)));
             }
 
             if (!Directory.Exists("db"))
