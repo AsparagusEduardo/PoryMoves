@@ -225,9 +225,9 @@
   },
   {
     "NatDexNum": 29,
-    "SpeciesName": "Nidoran&#9792;",
+    "SpeciesName": "Nidoran♀",
     "IsBaseForm": true,
-    "FormName": "Nidoran&#9792;",
+    "FormName": "Nidoran♀",
     "VarName": "NidoranF",
     "DefName": "NIDORAN_F"
   },
@@ -249,9 +249,9 @@
   },
   {
     "NatDexNum": 32,
-    "SpeciesName": "Nidoran&#9794;",
+    "SpeciesName": "Nidoran♂",
     "IsBaseForm": true,
-    "FormName": "Nidoran&#9794;",
+    "FormName": "Nidoran♂",
     "VarName": "NidoranM",
     "DefName": "NIDORAN_M"
   },
@@ -5345,9 +5345,9 @@
   },
   {
     "NatDexNum": 669,
-    "SpeciesName": "Flab&eacute;b&eacute;",
+    "SpeciesName": "Flabébé",
     "IsBaseForm": true,
-    "FormName": "Flab&eacute;b&eacute;",
+    "FormName": "Flabébé",
     "VarName": "Flabebe",
     "DefName": "FLABEBE"
   },

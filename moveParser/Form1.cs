@@ -69,7 +69,7 @@ namespace moveParser
             {
                 hap.HtmlNode nodo = nodes[i];
                 string number = nodo.ChildNodes[1].InnerHtml.Trim().Replace("#", "");
-                string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim();
+                string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim().Replace("&eacute", "é").Replace("&#9792;", "♀").Replace("&#9794;", "♂");
 
                 lista.Add(new MonName(int.Parse(number), species, true, species, NameToVarFormat(species), NameToDefineFormat(species)));
             }
