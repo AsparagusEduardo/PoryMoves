@@ -2881,6 +2881,114 @@
     ],
     "TutorMoves": []
   },
+  "NIDORAN_F": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_GROWL"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SCRATCH"
+      },
+      {
+        "Level": 7,
+        "Move": "MOVE_TAIL_WHIP"
+      },
+      {
+        "Level": 9,
+        "Move": "MOVE_DOUBLE_KICK"
+      },
+      {
+        "Level": 13,
+        "Move": "MOVE_POISON_STING"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_FURY_SWIPES"
+      },
+      {
+        "Level": 21,
+        "Move": "MOVE_BITE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_HELPING_HAND"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_TOXIC_SPIKES"
+      },
+      {
+        "Level": 33,
+        "Move": "MOVE_FLATTER"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_CRUNCH"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_CAPTIVATE"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_POISON_FANG"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_CUT",
+      "MOVE_ICE_BEAM",
+      "MOVE_BLIZZARD",
+      "MOVE_STRENGTH",
+      "MOVE_THUNDERBOLT",
+      "MOVE_THUNDER",
+      "MOVE_DIG",
+      "MOVE_TOXIC",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_REST",
+      "MOVE_SUBSTITUTE",
+      "MOVE_THIEF",
+      "MOVE_PROTECT",
+      "MOVE_SLUDGE_BOMB",
+      "MOVE_SWAGGER",
+      "MOVE_ATTRACT",
+      "MOVE_SLEEP_TALK",
+      "MOVE_RETURN",
+      "MOVE_FRUSTRATION",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_RAIN_DANCE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_ROCK_SMASH",
+      "MOVE_FACADE",
+      "MOVE_SECRET_POWER",
+      "MOVE_AERIAL_ACE",
+      "MOVE_POISON_JAB",
+      "MOVE_SHADOW_CLAW",
+      "MOVE_HONE_CLAWS",
+      "MOVE_VENOSHOCK",
+      "MOVE_ROUND",
+      "MOVE_ECHOED_VOICE",
+      "MOVE_CONFIDE"
+    ],
+    "EggMoves": [
+      "MOVE_TAKE_DOWN",
+      "MOVE_SUPERSONIC",
+      "MOVE_DISABLE",
+      "MOVE_COUNTER",
+      "MOVE_FOCUS_ENERGY",
+      "MOVE_SKULL_BASH",
+      "MOVE_ENDURE",
+      "MOVE_CHARM",
+      "MOVE_PURSUIT",
+      "MOVE_IRON_TAIL",
+      "MOVE_BEAT_UP",
+      "MOVE_POISON_TAIL",
+      "MOVE_CHIP_AWAY",
+      "MOVE_VENOM_DRENCH"
+    ],
+    "TutorMoves": []
+  },
   "NIDORINA": {
     "LevelMoves": [
       {
@@ -3100,6 +3208,113 @@
       "MOVE_IRON_TAIL",
       "MOVE_BEAT_UP",
       "MOVE_POISON_TAIL",
+      "MOVE_CHIP_AWAY",
+      "MOVE_VENOM_DRENCH"
+    ],
+    "TutorMoves": []
+  },
+  "NIDORAN_M": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_PECK"
+      },
+      {
+        "Level": 7,
+        "Move": "MOVE_FOCUS_ENERGY"
+      },
+      {
+        "Level": 9,
+        "Move": "MOVE_DOUBLE_KICK"
+      },
+      {
+        "Level": 13,
+        "Move": "MOVE_POISON_STING"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_FURY_ATTACK"
+      },
+      {
+        "Level": 21,
+        "Move": "MOVE_HORN_ATTACK"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_HELPING_HAND"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_TOXIC_SPIKES"
+      },
+      {
+        "Level": 33,
+        "Move": "MOVE_FLATTER"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_POISON_JAB"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_CAPTIVATE"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_HORN_DRILL"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_CUT",
+      "MOVE_ICE_BEAM",
+      "MOVE_BLIZZARD",
+      "MOVE_STRENGTH",
+      "MOVE_THUNDERBOLT",
+      "MOVE_THUNDER",
+      "MOVE_DIG",
+      "MOVE_TOXIC",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_REST",
+      "MOVE_SUBSTITUTE",
+      "MOVE_THIEF",
+      "MOVE_PROTECT",
+      "MOVE_SLUDGE_BOMB",
+      "MOVE_SWAGGER",
+      "MOVE_ATTRACT",
+      "MOVE_SLEEP_TALK",
+      "MOVE_RETURN",
+      "MOVE_FRUSTRATION",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_RAIN_DANCE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_ROCK_SMASH",
+      "MOVE_FACADE",
+      "MOVE_SECRET_POWER",
+      "MOVE_POISON_JAB",
+      "MOVE_SHADOW_CLAW",
+      "MOVE_HONE_CLAWS",
+      "MOVE_VENOSHOCK",
+      "MOVE_ROUND",
+      "MOVE_ECHOED_VOICE",
+      "MOVE_CONFIDE"
+    ],
+    "EggMoves": [
+      "MOVE_TAKE_DOWN",
+      "MOVE_SUPERSONIC",
+      "MOVE_DISABLE",
+      "MOVE_COUNTER",
+      "MOVE_CONFUSION",
+      "MOVE_AMNESIA",
+      "MOVE_ENDURE",
+      "MOVE_IRON_TAIL",
+      "MOVE_BEAT_UP",
+      "MOVE_POISON_TAIL",
+      "MOVE_SUCKER_PUNCH",
+      "MOVE_HEAD_SMASH",
       "MOVE_CHIP_AWAY",
       "MOVE_VENOM_DRENCH"
     ],
@@ -44310,7 +44525,64 @@
     "TutorMoves": []
   },
   "DEOXYS": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_WRAP"
+      },
+      {
+        "Level": 9,
+        "Move": "MOVE_NIGHT_SHADE"
+      },
+      {
+        "Level": 17,
+        "Move": "MOVE_TELEPORT"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_KNOCK_OFF"
+      },
+      {
+        "Level": 33,
+        "Move": "MOVE_PURSUIT"
+      },
+      {
+        "Level": 41,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 49,
+        "Move": "MOVE_SNATCH"
+      },
+      {
+        "Level": 57,
+        "Move": "MOVE_PSYCHO_SHIFT"
+      },
+      {
+        "Level": 65,
+        "Move": "MOVE_ZEN_HEADBUTT"
+      },
+      {
+        "Level": 73,
+        "Move": "MOVE_COSMIC_POWER"
+      },
+      {
+        "Level": 81,
+        "Move": "MOVE_RECOVER"
+      },
+      {
+        "Level": 89,
+        "Move": "MOVE_PSYCHO_BOOST"
+      },
+      {
+        "Level": 97,
+        "Move": "MOVE_HYPER_BEAM"
+      }
+    ],
     "TMMoves": [
       "MOVE_CUT",
       "MOVE_ICE_BEAM",
@@ -47093,8 +47365,94 @@
     "TutorMoves": []
   },
   "WORMADAM": {
-    "LevelMoves": [],
-    "TMMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TACKLE"
+      },
+      {
+        "Level": 10,
+        "Move": "MOVE_PROTECT"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_BUG_BITE"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_HIDDEN_POWER"
+      },
+      {
+        "Level": 23,
+        "Move": "MOVE_CONFUSION"
+      },
+      {
+        "Level": 26,
+        "Move": "MOVE_RAZOR_LEAF"
+      },
+      {
+        "Level": 29,
+        "Move": "MOVE_GROWTH"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_CAPTIVATE"
+      },
+      {
+        "Level": 38,
+        "Move": "MOVE_FLAIL"
+      },
+      {
+        "Level": 41,
+        "Move": "MOVE_ATTRACT"
+      },
+      {
+        "Level": 44,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 47,
+        "Move": "MOVE_LEAF_STORM"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_HYPER_BEAM",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_TOXIC",
+      "MOVE_PSYCHIC",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_DREAM_EATER",
+      "MOVE_FLASH",
+      "MOVE_REST",
+      "MOVE_SUBSTITUTE",
+      "MOVE_THIEF",
+      "MOVE_PROTECT",
+      "MOVE_SWAGGER",
+      "MOVE_ATTRACT",
+      "MOVE_SLEEP_TALK",
+      "MOVE_RETURN",
+      "MOVE_FRUSTRATION",
+      "MOVE_SAFEGUARD",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_RAIN_DANCE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_PSYCH_UP",
+      "MOVE_SHADOW_BALL",
+      "MOVE_FACADE",
+      "MOVE_SECRET_POWER",
+      "MOVE_ENERGY_BALL",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_GRASS_KNOT",
+      "MOVE_VENOSHOCK",
+      "MOVE_ROUND",
+      "MOVE_STRUGGLE_BUG",
+      "MOVE_CONFIDE",
+      "MOVE_INFESTATION"
+    ],
     "EggMoves": [],
     "TutorMoves": []
   },
@@ -55899,7 +56257,9 @@
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_DRACO_METEOR"
+    ]
   },
   "CRESSELIA": {
     "LevelMoves": [
@@ -56302,7 +56662,56 @@
     "TutorMoves": []
   },
   "SHAYMIN": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_GROWTH"
+      },
+      {
+        "Level": 10,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_LEECH_SEED"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_SYNTHESIS"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_SWEET_SCENT"
+      },
+      {
+        "Level": 46,
+        "Move": "MOVE_NATURAL_GIFT"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_WORRY_SEED"
+      },
+      {
+        "Level": 64,
+        "Move": "MOVE_AROMATHERAPY"
+      },
+      {
+        "Level": 73,
+        "Move": "MOVE_ENERGY_BALL"
+      },
+      {
+        "Level": 82,
+        "Move": "MOVE_SWEET_KISS"
+      },
+      {
+        "Level": 91,
+        "Move": "MOVE_HEALING_WISH"
+      },
+      {
+        "Level": 100,
+        "Move": "MOVE_SEED_FLARE"
+      }
+    ],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
       "MOVE_HYPER_BEAM",
@@ -74479,7 +74888,68 @@
     "TutorMoves": []
   },
   "KYUREM": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ICY_WIND"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_DRAGON_RAGE"
+      },
+      {
+        "Level": 8,
+        "Move": "MOVE_IMPRISON"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_ANCIENT_POWER"
+      },
+      {
+        "Level": 22,
+        "Move": "MOVE_ICE_BEAM"
+      },
+      {
+        "Level": 29,
+        "Move": "MOVE_DRAGON_BREATH"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_SLASH"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_SCARY_FACE"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_GLACIATE"
+      },
+      {
+        "Level": 57,
+        "Move": "MOVE_DRAGON_PULSE"
+      },
+      {
+        "Level": 64,
+        "Move": "MOVE_IMPRISON"
+      },
+      {
+        "Level": 71,
+        "Move": "MOVE_ENDEAVOR"
+      },
+      {
+        "Level": 78,
+        "Move": "MOVE_BLIZZARD"
+      },
+      {
+        "Level": 85,
+        "Move": "MOVE_OUTRAGE"
+      },
+      {
+        "Level": 92,
+        "Move": "MOVE_HYPER_VOICE"
+      }
+    ],
     "TMMoves": [
       "MOVE_CUT",
       "MOVE_FLY",
@@ -76987,6 +77457,101 @@
     ],
     "TutorMoves": []
   },
+  "FLABEBE": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TACKLE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_VINE_WHIP"
+      },
+      {
+        "Level": 6,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 10,
+        "Move": "MOVE_LUCKY_CHANT"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_RAZOR_LEAF"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_WISH"
+      },
+      {
+        "Level": 22,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_GRASSY_TERRAIN"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_PETAL_BLIZZARD"
+      },
+      {
+        "Level": 33,
+        "Move": "MOVE_AROMATHERAPY"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_MISTY_TERRAIN"
+      },
+      {
+        "Level": 41,
+        "Move": "MOVE_MOONBLAST"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_PETAL_DANCE"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_SOLAR_BEAM"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_SOLAR_BEAM",
+      "MOVE_TOXIC",
+      "MOVE_PSYCHIC",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_FLASH",
+      "MOVE_REST",
+      "MOVE_SUBSTITUTE",
+      "MOVE_PROTECT",
+      "MOVE_SWAGGER",
+      "MOVE_ATTRACT",
+      "MOVE_SLEEP_TALK",
+      "MOVE_RETURN",
+      "MOVE_FRUSTRATION",
+      "MOVE_SAFEGUARD",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_RAIN_DANCE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_FACADE",
+      "MOVE_NATURE_POWER",
+      "MOVE_SECRET_POWER",
+      "MOVE_CALM_MIND",
+      "MOVE_ENERGY_BALL",
+      "MOVE_GRASS_KNOT",
+      "MOVE_ROUND",
+      "MOVE_ECHOED_VOICE",
+      "MOVE_CONFIDE",
+      "MOVE_DAZZLING_GLEAM"
+    ],
+    "EggMoves": [
+      "MOVE_CAMOUFLAGE",
+      "MOVE_COPYCAT",
+      "MOVE_CAPTIVATE"
+    ],
+    "TutorMoves": []
+  },
   "FLOETTE": {
     "LevelMoves": [
       {
@@ -77850,7 +78415,92 @@
     "TutorMoves": []
   },
   "MEOWSTIC": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_QUICK_GUARD"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MEAN_LOOK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_HELPING_HAND"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SCRATCH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_LEER"
+      },
+      {
+        "Level": 5,
+        "Move": "MOVE_COVET"
+      },
+      {
+        "Level": 9,
+        "Move": "MOVE_CONFUSION"
+      },
+      {
+        "Level": 13,
+        "Move": "MOVE_LIGHT_SCREEN"
+      },
+      {
+        "Level": 17,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_FAKE_OUT"
+      },
+      {
+        "Level": 22,
+        "Move": "MOVE_DISARMING_VOICE"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_PSYSHOCK"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_CHARM"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_MIRACLE_EYE"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_REFLECT"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_ROLE_PLAY"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_IMPRISON"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_SUCKER_PUNCH"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_MISTY_TERRAIN"
+      },
+      {
+        "Level": 53,
+        "Move": "MOVE_QUICK_GUARD"
+      }
+    ],
     "TMMoves": [
       "MOVE_CUT",
       "MOVE_HYPER_BEAM",
@@ -82643,7 +83293,80 @@
     "TutorMoves": []
   },
   "HOOPA": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_HYPERSPACE_HOLE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_TRICK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_DESTINY_BOND"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ALLY_SWITCH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_CONFUSION"
+      },
+      {
+        "Level": 6,
+        "Move": "MOVE_ASTONISH"
+      },
+      {
+        "Level": 10,
+        "Move": "MOVE_MAGIC_COAT"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_LIGHT_SCREEN"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_SKILL_SWAP"
+      },
+      {
+        "Level": 29,
+        "Move": "MOVE_POWER_SPLIT"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_GUARD_SPLIT"
+      },
+      {
+        "Level": 46,
+        "Move": "MOVE_PHANTOM_FORCE"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_WONDER_ROOM"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_TRICK_ROOM"
+      },
+      {
+        "Level": 68,
+        "Move": "MOVE_SHADOW_BALL"
+      },
+      {
+        "Level": 75,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 85,
+        "Move": "MOVE_HYPERSPACE_HOLE"
+      }
+    ],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_THUNDERBOLT",

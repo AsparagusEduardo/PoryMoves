@@ -41873,7 +41873,68 @@
     ]
   },
   "KYUREM": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_DRAGON_BREATH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_NOBLE_ROAR"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ANCIENT_POWER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_FREEZE_DRY"
+      },
+      {
+        "Level": 8,
+        "Move": "MOVE_SLASH"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_ENDEAVOR"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_DRAGON_PULSE"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_ICE_BEAM"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_HYPER_VOICE"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_SCARY_FACE"
+      },
+      {
+        "Level": 56,
+        "Move": "MOVE_BLIZZARD"
+      },
+      {
+        "Level": 64,
+        "Move": "MOVE_IMPRISON"
+      },
+      {
+        "Level": 72,
+        "Move": "MOVE_OUTRAGE"
+      },
+      {
+        "Level": 80,
+        "Move": "MOVE_GLACIATE"
+      },
+      {
+        "Level": 88,
+        "Move": "MOVE_SHEER_COLD"
+      }
+    ],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_ICE_BEAM",

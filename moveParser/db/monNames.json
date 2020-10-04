@@ -3083,7 +3083,7 @@
     "NatDexNum": 386,
     "SpeciesName": "Deoxys",
     "IsBaseForm": true,
-    "FormName": "Deoxys",
+    "FormName": "Normal Forme",
     "VarName": "Deoxys",
     "DefName": "DEOXYS"
   },
@@ -3299,7 +3299,7 @@
     "NatDexNum": 413,
     "SpeciesName": "Wormadam",
     "IsBaseForm": true,
-    "FormName": "Wormadam",
+    "FormName": "Plant Cloak",
     "VarName": "Wormadam",
     "DefName": "WORMADAM"
   },
@@ -3891,7 +3891,7 @@
     "NatDexNum": 487,
     "SpeciesName": "Giratina",
     "IsBaseForm": true,
-    "FormName": "Giratina",
+    "FormName": "Altered Forme",
     "VarName": "Giratina",
     "DefName": "GIRATINA"
   },
@@ -3931,7 +3931,7 @@
     "NatDexNum": 492,
     "SpeciesName": "Shaymin",
     "IsBaseForm": true,
-    "FormName": "Shaymin",
+    "FormName": "Land Forme",
     "VarName": "Shaymin",
     "DefName": "SHAYMIN"
   },
@@ -5131,7 +5131,7 @@
     "NatDexNum": 642,
     "SpeciesName": "Thundurus",
     "IsBaseForm": true,
-    "FormName": "Thundurus",
+    "FormName": "Incarnate Forme",
     "VarName": "Thundurus",
     "DefName": "THUNDURUS"
   },
@@ -5163,7 +5163,7 @@
     "NatDexNum": 646,
     "SpeciesName": "Kyurem",
     "IsBaseForm": true,
-    "FormName": "Kyurem",
+    "FormName": "Normal Kyurem",
     "VarName": "Kyurem",
     "DefName": "KYUREM"
   },
@@ -5419,7 +5419,7 @@
     "NatDexNum": 678,
     "SpeciesName": "Meowstic",
     "IsBaseForm": true,
-    "FormName": "Meowstic",
+    "FormName": "Male Meowstic",
     "VarName": "Meowstic",
     "DefName": "MEOWSTIC"
   },
@@ -5755,7 +5755,7 @@
     "NatDexNum": 720,
     "SpeciesName": "Hoopa",
     "IsBaseForm": true,
-    "FormName": "Hoopa",
+    "FormName": "Hoopa Confined",
     "VarName": "Hoopa",
     "DefName": "HOOPA"
   },
@@ -5955,7 +5955,7 @@
     "NatDexNum": 745,
     "SpeciesName": "Lycanroc",
     "IsBaseForm": true,
-    "FormName": "Lycanroc",
+    "FormName": "Midday Form",
     "VarName": "Lycanroc",
     "DefName": "LYCANROC"
   },
@@ -6787,7 +6787,7 @@
     "NatDexNum": 849,
     "SpeciesName": "Toxtricity",
     "IsBaseForm": true,
-    "FormName": "Toxtricity",
+    "FormName": "Amped Form",
     "VarName": "Toxtricity",
     "DefName": "TOXTRICITY"
   },
@@ -7003,7 +7003,7 @@
     "NatDexNum": 876,
     "SpeciesName": "Indeedee",
     "IsBaseForm": true,
-    "FormName": "Indeedee",
+    "FormName": "Male Indeedee",
     "VarName": "Indeedee",
     "DefName": "INDEEDEE"
   },

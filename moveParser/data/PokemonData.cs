@@ -258,6 +258,7 @@ namespace moveParser.data
                             else if (modeText.Equals("EGG") && !EggListRead && (formText == null || formText.Equals(name.FormName)) && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/breed.+null"))
                             {
                                 string breedtext = textRow.Replace("{{tt|*|No legitimate means to pass down move}}", "");
+                                breedtext = breedtext.Replace("{{tt|*|Male-only, and none of the evolutions can learn this move legitimately}}", "");
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{sup(.*)\v([A-Z]*)}}|{{MS([^}]+)}}", "MON").Split('|');
                                 string movename = rowdata[2];
 
