@@ -40,6 +40,7 @@
             this.bwrkExportLvl = new System.ComponentModel.BackgroundWorker();
             this.cListTMMoves = new System.Windows.Forms.CheckedListBox();
             this.gBoxOptionsTM = new System.Windows.Forms.GroupBox();
+            this.chkTM_Extended = new System.Windows.Forms.CheckBox();
             this.chkTM_IncludeTutor = new System.Windows.Forms.CheckBox();
             this.chkTM_IncludeEgg = new System.Windows.Forms.CheckBox();
             this.btnExportTM = new System.Windows.Forms.Button();
@@ -60,7 +61,6 @@
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.cListTutorMoves = new System.Windows.Forms.CheckedListBox();
             this.bwrkExportTM = new System.ComponentModel.BackgroundWorker();
-            this.chkTM_Extended = new System.Windows.Forms.CheckBox();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -89,6 +89,7 @@
             this.backgroundWorker1.WorkerReportsProgress = true;
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
             // lblLoading
             // 
@@ -172,6 +173,16 @@
             this.gBoxOptionsTM.TabIndex = 13;
             this.gBoxOptionsTM.TabStop = false;
             this.gBoxOptionsTM.Text = "TM/HM/TR Moves";
+            // 
+            // chkTM_Extended
+            // 
+            this.chkTM_Extended.AutoSize = true;
+            this.chkTM_Extended.Location = new System.Drawing.Point(6, 178);
+            this.chkTM_Extended.Name = "chkTM_Extended";
+            this.chkTM_Extended.Size = new System.Drawing.Size(149, 21);
+            this.chkTM_Extended.TabIndex = 17;
+            this.chkTM_Extended.Text = "Use Extended TMs";
+            this.chkTM_Extended.UseVisualStyleBackColor = true;
             // 
             // chkTM_IncludeTutor
             // 
@@ -394,16 +405,6 @@
             this.bwrkExportTM.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkExportTM_DoWork);
             this.bwrkExportTM.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.bwrkExportTM.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bwrkGroupMovesets_tm_RunWorkerCompleted);
-            // 
-            // chkTM_Extended
-            // 
-            this.chkTM_Extended.AutoSize = true;
-            this.chkTM_Extended.Location = new System.Drawing.Point(6, 178);
-            this.chkTM_Extended.Name = "chkTM_Extended";
-            this.chkTM_Extended.Size = new System.Drawing.Size(149, 21);
-            this.chkTM_Extended.TabIndex = 17;
-            this.chkTM_Extended.Text = "Use Extended TMs";
-            this.chkTM_Extended.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

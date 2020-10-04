@@ -130,7 +130,7 @@ namespace moveParser.data
 
                 foreach (string textRow in pagetext.Split('\n'))
                 {
-                    if (readingLearnsets && textRow.Contains("Pokémon") && !name.SpeciesName.Equals("Bonsly"))
+                    if (readingLearnsets && textRow.Contains("Pokémon") && !name.SpeciesName.Equals("Bonsly") && !(gen.genNumber == 1 && name.SpeciesName.Equals("Vaporeon")))
                         gameText = textRow;
                     else if (textRow.Contains("=Learnset="))
                         readingLearnsets = true;
@@ -169,23 +169,31 @@ namespace moveParser.data
                                     readingLevelUp = true;
                                     string[] rowdata = textRow.Split('|');
 
-                                    gamecolumnamount = rowdata.Length - 5;
-                                    if (rowdata[rowdata.Length - 1].Contains("xy="))
-                                        gamecolumnamount--;
-                                    if (gamecolumnamount <= 0)
-                                        gamecolumnamount = 1;
+                                    int toMinus = 0;
+
                                     for (int i = 0; i < rowdata.Length; i++)
                                     {
-                                        string bb = rowdata[i].Replace("}", "");
-                                        if (rowdata[i].Replace("}", "").Equals(gameAbv))
+                                        string header = rowdata[i].Replace("}", "");
+                                        int a;
+
+                                        if (header.Contains("xy=") || header.Equals("") || int.TryParse(header, out a))
+                                            toMinus++;
+
+                                        if (header.Equals(gameAbv))
                                         {
-                                            column = i - 4;
+                                            column = i - 3 - toMinus;
                                         }
                                     }
+
+                                    gamecolumnamount = rowdata.Length - 4 - toMinus;
+
+                                    if (gamecolumnamount <= 0)
+                                        gamecolumnamount = 1;
+
                                     if (column == 0)
                                         column = 1;
                                 }
-                                if ((modeText.Equals("TM") && !TMListRead) || (modeText.Equals("EGG") && !EggListRead) || (modeText.Equals("TUTOR") && !TutorListRead))
+                                else if ((modeText.Equals("TM") && !TMListRead) || (modeText.Equals("EGG") && !EggListRead) || (modeText.Equals("TUTOR") && !TutorListRead))
                                 {
                                     inList = true;
                                 }

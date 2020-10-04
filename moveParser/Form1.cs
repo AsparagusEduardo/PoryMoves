@@ -594,5 +594,10 @@ namespace moveParser
             SetEnableForAllElements(false);
             bwrkExportTM.RunWorkerAsync();
         }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            MessageBox.Show("Loading from Bulbapedia complete!", "Success!", MessageBoxButtons.OK);
+        }
     }
 }
