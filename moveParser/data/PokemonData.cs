@@ -235,7 +235,7 @@ namespace moveParser.data
                             {
                                 string lvltext = textRow.Replace("{{tt|Evo.|Learned upon evolving}}", "0");
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(lvltext, "{{tt([^}]+)}}", "").Split('|');
-                                string lvl = rowdata[column];
+                                string lvl = rowdata[column].Replace("*", "");
                                 string movename = rowdata[gamecolumnamount + 1];
 
                                 if (!lvl.Equals("N/A"))
