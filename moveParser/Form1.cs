@@ -35,6 +35,9 @@ namespace moveParser
         protected void LoadGenerationData()
         {
             GenData = GenerationsData.GetGenDataFromFile("db/generations.json");
+#if DEBUG
+            File.WriteAllText("../../db/generations.json", JsonConvert.SerializeObject(GenData, Formatting.Indented));
+#endif
 
             cmbGeneration.Items.Clear();
             cListLevelUp.Items.Clear();
@@ -145,6 +148,9 @@ namespace moveParser
                 if (!File.Exists(namesFile))
                     LoadPkmnNameListFromSerebii();
                 nameList = PokemonData.GetMonNamesFromFile(namesFile);
+#if DEBUG
+                File.WriteAllText("../../db/monNames.json", JsonConvert.SerializeObject(nameList, Formatting.Indented));
+#endif
 
                 GenerationData generation = GenData[(string)e.Argument];
 

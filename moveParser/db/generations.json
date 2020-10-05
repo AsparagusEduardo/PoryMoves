@@ -79,5 +79,32 @@
     "gameFullName": "Pokémon Ruby, Sapphire and Emerald",
     "moveTutorColumn": 2,
     "maxDexNum": 386
+  },
+  "GS": {
+    "genNumber": 2,
+    "genNumberRoman": "II",
+    "isLatestGen": false,
+    "dbFilename": "gs",
+    "gameFullName": "Pokémon Gold and Silver",
+    "moveTutorColumn": 1,
+    "maxDexNum": 251
+  },
+  "Y": {
+    "genNumber": 1,
+    "genNumberRoman": "I",
+    "isLatestGen": false,
+    "dbFilename": "y",
+    "gameFullName": "Pokémon Yellow",
+    "moveTutorColumn": 1,
+    "maxDexNum": 151
+  },
+  "RGB": {
+    "genNumber": 1,
+    "genNumberRoman": "I",
+    "isLatestGen": false,
+    "dbFilename": "rgb",
+    "gameFullName": "Pokémon Red, Green and Blue",
+    "moveTutorColumn": 1,
+    "maxDexNum": 151
   }
 }

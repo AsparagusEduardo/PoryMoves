@@ -236,6 +236,7 @@ namespace moveParser.data
             { "Snore", 173},
             { "Curse", 174},
             { "Flail", 175},
+            { "Conversion2", 176},
             { "Conversion 2", 176},
             { "Aeroblast", 177},
             { "Cotton Spore", 178},
