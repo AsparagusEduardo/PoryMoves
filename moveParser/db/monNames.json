@@ -7131,7 +7131,7 @@
     "NatDexNum": 892,
     "SpeciesName": "Urshifu",
     "IsBaseForm": true,
-    "FormName": "Urshifu",
+    "FormName": "Single Strike Style",
     "VarName": "Urshifu",
     "DefName": "URSHIFU"
   },
@@ -7312,7 +7312,7 @@
     "DefName": "ALOLAN_PERSIAN"
   },
   {
-    "NatDexNum": "074",
+    "NatDexNum": 74,
     "SpeciesName": "Geodude",
     "IsBaseForm": false,
     "FormName": "Alolan Geodude",

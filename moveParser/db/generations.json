@@ -80,6 +80,15 @@
     "moveTutorColumn": 2,
     "maxDexNum": 386
   },
+  "C": {
+    "genNumber": 2,
+    "genNumberRoman": "II",
+    "isLatestGen": false,
+    "dbFilename": "c",
+    "gameFullName": "Pokémon Crystal",
+    "moveTutorColumn": 1,
+    "maxDexNum": 251
+  },
   "GS": {
     "genNumber": 2,
     "genNumberRoman": "II",
