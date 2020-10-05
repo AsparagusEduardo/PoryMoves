@@ -348,7 +348,9 @@
       "MOVE_ANCIENT_POWER",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "CHARMELEON": {
     "LevelMoves": [
@@ -435,7 +437,9 @@
       "MOVE_ANCIENT_POWER",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "CHARIZARD": {
     "LevelMoves": [
@@ -536,7 +540,9 @@
       "MOVE_ANCIENT_POWER",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "SQUIRTLE": {
     "LevelMoves": [
@@ -624,7 +630,9 @@
       "MOVE_FORESIGHT",
       "MOVE_MIRROR_COAT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "WARTORTLE": {
     "LevelMoves": [
@@ -720,7 +728,9 @@
       "MOVE_FORESIGHT",
       "MOVE_MIRROR_COAT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "BLASTOISE": {
     "LevelMoves": [
@@ -823,7 +833,9 @@
       "MOVE_FORESIGHT",
       "MOVE_MIRROR_COAT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "CATERPIE": {
     "LevelMoves": [
@@ -1376,7 +1388,10 @@
       "MOVE_FLAME_WHEEL",
       "MOVE_REVERSAL"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "SPEAROW": {
     "LevelMoves": [
@@ -1745,7 +1760,9 @@
       "MOVE_PRESENT",
       "MOVE_ENCORE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "RAICHU": {
     "LevelMoves": [
@@ -1804,7 +1821,9 @@
       "MOVE_PRESENT",
       "MOVE_ENCORE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "SANDSHREW": {
     "LevelMoves": [
@@ -2036,7 +2055,9 @@
       "MOVE_CHARM",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "NIDORINA": {
     "LevelMoves": [
@@ -2109,7 +2130,10 @@
       "MOVE_CHARM",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "NIDOQUEEN": {
     "LevelMoves": [
@@ -2183,7 +2207,11 @@
       "MOVE_CHARM",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "NIDORAN_M": {
     "LevelMoves": [
@@ -2254,7 +2282,9 @@
       "MOVE_AMNESIA",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "NIDORINO": {
     "LevelMoves": [
@@ -2327,7 +2357,10 @@
       "MOVE_AMNESIA",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "NIDOKING": {
     "LevelMoves": [
@@ -2401,7 +2434,11 @@
       "MOVE_AMNESIA",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "CLEFAIRY": {
     "LevelMoves": [
@@ -2493,7 +2530,11 @@
       "MOVE_BELLY_DRUM",
       "MOVE_PRESENT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "CLEFABLE": {
     "LevelMoves": [
@@ -2562,7 +2603,11 @@
       "MOVE_BELLY_DRUM",
       "MOVE_PRESENT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "VULPIX": {
     "LevelMoves": [
@@ -2627,7 +2672,9 @@
       "MOVE_SPITE",
       "MOVE_FAINT_ATTACK"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "NINETALES": {
     "LevelMoves": [
@@ -2682,7 +2729,9 @@
       "MOVE_SPITE",
       "MOVE_FAINT_ATTACK"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "JIGGLYPUFF": {
     "LevelMoves": [
@@ -2766,7 +2815,11 @@
       "MOVE_PERISH_SONG",
       "MOVE_PRESENT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "WIGGLYTUFF": {
     "LevelMoves": [
@@ -2831,7 +2884,11 @@
       "MOVE_PERISH_SONG",
       "MOVE_PRESENT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "ZUBAT": {
     "LevelMoves": [
@@ -3692,7 +3749,9 @@
       "MOVE_SPITE",
       "MOVE_CHARM"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "PERSIAN": {
     "LevelMoves": [
@@ -3771,7 +3830,9 @@
       "MOVE_SPITE",
       "MOVE_CHARM"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "PSYDUCK": {
     "LevelMoves": [
@@ -3850,7 +3911,9 @@
       "MOVE_CROSS_CHOP",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "GOLDUCK": {
     "LevelMoves": [
@@ -3943,7 +4006,9 @@
       "MOVE_CROSS_CHOP",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "MANKEY": {
     "LevelMoves": [
@@ -4028,7 +4093,9 @@
       "MOVE_FORESIGHT",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "PRIMEAPE": {
     "LevelMoves": [
@@ -4126,7 +4193,9 @@
       "MOVE_FORESIGHT",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "GROWLITHE": {
     "LevelMoves": [
@@ -4194,7 +4263,9 @@
       "MOVE_SAFEGUARD",
       "MOVE_CRUNCH"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "ARCANINE": {
     "LevelMoves": [
@@ -4251,7 +4322,9 @@
       "MOVE_SAFEGUARD",
       "MOVE_CRUNCH"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "POLIWAG": {
     "LevelMoves": [
@@ -4320,7 +4393,9 @@
       "MOVE_SPLASH",
       "MOVE_MIND_READER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "POLIWHIRL": {
     "LevelMoves": [
@@ -4403,7 +4478,9 @@
       "MOVE_SPLASH",
       "MOVE_MIND_READER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "POLIWRATH": {
     "LevelMoves": [
@@ -4472,7 +4549,9 @@
       "MOVE_SPLASH",
       "MOVE_MIND_READER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "ABRA": {
     "LevelMoves": [
@@ -4759,7 +4838,9 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_ENCORE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "MACHOKE": {
     "LevelMoves": [
@@ -4843,7 +4924,9 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_ENCORE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "MACHAMP": {
     "LevelMoves": [
@@ -4928,7 +5011,9 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_ENCORE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "BELLSPROUT": {
     "LevelMoves": [
@@ -5206,7 +5291,9 @@
       "MOVE_RAPID_SPIN",
       "MOVE_MIRROR_COAT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "TENTACRUEL": {
     "LevelMoves": [
@@ -5286,7 +5373,9 @@
       "MOVE_RAPID_SPIN",
       "MOVE_MIRROR_COAT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "GEODUDE": {
     "LevelMoves": [
@@ -5359,7 +5448,9 @@
       "MOVE_MEGA_PUNCH",
       "MOVE_ROCK_SLIDE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "GRAVELER": {
     "LevelMoves": [
@@ -5440,7 +5531,9 @@
       "MOVE_MEGA_PUNCH",
       "MOVE_ROCK_SLIDE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "GOLEM": {
     "LevelMoves": [
@@ -5528,7 +5621,9 @@
       "MOVE_MEGA_PUNCH",
       "MOVE_ROCK_SLIDE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "PONYTA": {
     "LevelMoves": [
@@ -5597,7 +5692,9 @@
       "MOVE_FLAME_WHEEL",
       "MOVE_CHARM"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "RAPIDASH": {
     "LevelMoves": [
@@ -5683,7 +5780,9 @@
       "MOVE_FLAME_WHEEL",
       "MOVE_CHARM"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "SLOWPOKE": {
     "LevelMoves": [
@@ -5765,7 +5864,10 @@
       "MOVE_SAFEGUARD",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM"
+    ]
   },
   "SLOWBRO": {
     "LevelMoves": [
@@ -5864,7 +5966,10 @@
       "MOVE_SAFEGUARD",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM"
+    ]
   },
   "MAGNEMITE": {
     "LevelMoves": [
@@ -5926,7 +6031,9 @@
       "MOVE_RAIN_DANCE"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "MAGNETON": {
     "LevelMoves": [
@@ -6001,7 +6108,9 @@
       "MOVE_RAIN_DANCE"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "FARFETCHD": {
     "LevelMoves": [
@@ -6274,7 +6383,9 @@
       "MOVE_PERISH_SONG",
       "MOVE_ENCORE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "DEWGONG": {
     "LevelMoves": [
@@ -6346,7 +6457,9 @@
       "MOVE_PERISH_SONG",
       "MOVE_ENCORE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "GRIMER": {
     "LevelMoves": [
@@ -6419,7 +6532,10 @@
       "MOVE_LICK",
       "MOVE_MEAN_LOOK"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "MUK": {
     "LevelMoves": [
@@ -6497,7 +6613,10 @@
       "MOVE_LICK",
       "MOVE_MEAN_LOOK"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "SHELLDER": {
     "LevelMoves": [
@@ -6562,7 +6681,9 @@
       "MOVE_BARRIER",
       "MOVE_RAPID_SPIN"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "CLOYSTER": {
     "LevelMoves": [
@@ -6620,7 +6741,9 @@
       "MOVE_BARRIER",
       "MOVE_RAPID_SPIN"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "GASTLY": {
     "LevelMoves": [
@@ -6692,7 +6815,9 @@
       "MOVE_PSYWAVE",
       "MOVE_PERISH_SONG"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "HAUNTER": {
     "LevelMoves": [
@@ -6768,7 +6893,9 @@
       "MOVE_PSYWAVE",
       "MOVE_PERISH_SONG"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "GENGAR": {
     "LevelMoves": [
@@ -6852,7 +6979,9 @@
       "MOVE_PSYWAVE",
       "MOVE_PERISH_SONG"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "ONIX": {
     "LevelMoves": [
@@ -7153,7 +7282,9 @@
       "MOVE_AMNESIA",
       "MOVE_FLAIL"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "KINGLER": {
     "LevelMoves": [
@@ -7232,7 +7363,9 @@
       "MOVE_AMNESIA",
       "MOVE_FLAIL"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "VOLTORB": {
     "LevelMoves": [
@@ -7295,7 +7428,9 @@
       "MOVE_RAIN_DANCE"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "ELECTRODE": {
     "LevelMoves": [
@@ -7371,7 +7506,9 @@
       "MOVE_RAIN_DANCE"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "EXEGGCUTE": {
     "LevelMoves": [
@@ -7597,7 +7734,10 @@
       "MOVE_PERISH_SONG",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM"
+    ]
   },
   "MAROWAK": {
     "LevelMoves": [
@@ -7700,7 +7840,10 @@
       "MOVE_PERISH_SONG",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM"
+    ]
   },
   "HITMONLEE": {
     "LevelMoves": [
@@ -7941,7 +8084,11 @@
       "MOVE_BELLY_DRUM",
       "MOVE_MAGNITUDE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "KOFFING": {
     "LevelMoves": [
@@ -8011,7 +8158,10 @@
       "MOVE_DESTINY_BOND",
       "MOVE_PAIN_SPLIT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "WEEZING": {
     "LevelMoves": [
@@ -8090,7 +8240,10 @@
       "MOVE_DESTINY_BOND",
       "MOVE_PAIN_SPLIT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "RHYHORN": {
     "LevelMoves": [
@@ -8167,7 +8320,11 @@
       "MOVE_PURSUIT",
       "MOVE_CRUNCH"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "RHYDON": {
     "LevelMoves": [
@@ -8258,7 +8415,11 @@
       "MOVE_PURSUIT",
       "MOVE_CRUNCH"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "CHANSEY": {
     "LevelMoves": [
@@ -8350,7 +8511,11 @@
       "MOVE_HEAL_BELL",
       "MOVE_PRESENT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "TANGELA": {
     "LevelMoves": [
@@ -8514,7 +8679,11 @@
       "MOVE_FORESIGHT",
       "MOVE_SAFEGUARD"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "HORSEA": {
     "LevelMoves": [
@@ -8579,7 +8748,9 @@
       "MOVE_FLAIL",
       "MOVE_OCTAZOOKA"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "SEADRA": {
     "LevelMoves": [
@@ -8657,7 +8828,9 @@
       "MOVE_FLAIL",
       "MOVE_OCTAZOOKA"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "GOLDEEN": {
     "LevelMoves": [
@@ -8724,7 +8897,9 @@
       "MOVE_PSYBEAM",
       "MOVE_HAZE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "SEAKING": {
     "LevelMoves": [
@@ -8792,7 +8967,9 @@
       "MOVE_PSYBEAM",
       "MOVE_HAZE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "STARYU": {
     "LevelMoves": [
@@ -9008,7 +9185,9 @@
       "MOVE_MIMIC",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "SCYTHER": {
     "LevelMoves": [
@@ -9173,7 +9352,9 @@
       "MOVE_MEDITATE",
       "MOVE_LOVELY_KISS"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "ELECTABUZZ": {
     "LevelMoves": [
@@ -9254,7 +9435,9 @@
       "MOVE_BARRIER",
       "MOVE_CROSS_CHOP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "MAGMAR": {
     "LevelMoves": [
@@ -9343,7 +9526,9 @@
       "MOVE_BARRIER",
       "MOVE_CROSS_CHOP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "PINSIR": {
     "LevelMoves": [
@@ -9477,7 +9662,11 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "MAGIKARP": {
     "LevelMoves": [
@@ -9565,7 +9754,11 @@
       "MOVE_WHIRLPOOL"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "LAPRAS": {
     "LevelMoves": [
@@ -9649,7 +9842,10 @@
       "MOVE_AURORA_BEAM",
       "MOVE_FORESIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "DITTO": {
     "LevelMoves": [
@@ -9803,7 +9999,9 @@
       "MOVE_FLAIL",
       "MOVE_CHARM"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "JOLTEON": {
     "LevelMoves": [
@@ -9880,7 +10078,9 @@
       "MOVE_FLAIL",
       "MOVE_CHARM"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "FLAREON": {
     "LevelMoves": [
@@ -9956,7 +10156,9 @@
       "MOVE_FLAIL",
       "MOVE_CHARM"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "PORYGON": {
     "LevelMoves": [
@@ -10031,7 +10233,10 @@
       "MOVE_PSYCH_UP"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "OMANYTE": {
     "LevelMoves": [
@@ -10100,7 +10305,9 @@
       "MOVE_AURORA_BEAM",
       "MOVE_HAZE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "OMASTAR": {
     "LevelMoves": [
@@ -10178,7 +10385,9 @@
       "MOVE_AURORA_BEAM",
       "MOVE_HAZE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "KABUTO": {
     "LevelMoves": [
@@ -10245,7 +10454,9 @@
       "MOVE_FLAIL",
       "MOVE_RAPID_SPIN"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "KABUTOPS": {
     "LevelMoves": [
@@ -10326,7 +10537,9 @@
       "MOVE_FLAIL",
       "MOVE_RAPID_SPIN"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "AERODACTYL": {
     "LevelMoves": [
@@ -10398,7 +10611,9 @@
       "MOVE_STEEL_WING",
       "MOVE_PURSUIT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "SNORLAX": {
     "LevelMoves": [
@@ -10487,7 +10702,11 @@
       "MOVE_LICK",
       "MOVE_CHARM"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "ARTICUNO": {
     "LevelMoves": [
@@ -10552,7 +10771,9 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "ZAPDOS": {
     "LevelMoves": [
@@ -10618,7 +10839,9 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "MOLTRES": {
     "LevelMoves": [
@@ -10682,7 +10905,9 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "DRATINI": {
     "LevelMoves": [
@@ -10761,7 +10986,11 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_HAZE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "DRAGONAIR": {
     "LevelMoves": [
@@ -10848,7 +11077,11 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_HAZE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "DRAGONITE": {
     "LevelMoves": [
@@ -10952,7 +11185,11 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_HAZE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "MEWTWO": {
     "LevelMoves": [
@@ -11042,7 +11279,11 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "MEW": {
     "LevelMoves": [
@@ -11131,7 +11372,11 @@
       "MOVE_WHIRLPOOL"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "CHIKORITA": {
     "LevelMoves": [
@@ -11460,7 +11705,9 @@
       "MOVE_REVERSAL",
       "MOVE_FORESIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "QUILAVA": {
     "LevelMoves": [
@@ -11539,7 +11786,9 @@
       "MOVE_REVERSAL",
       "MOVE_FORESIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "TYPHLOSION": {
     "LevelMoves": [
@@ -11627,7 +11876,9 @@
       "MOVE_REVERSAL",
       "MOVE_FORESIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "TOTODILE": {
     "LevelMoves": [
@@ -11704,7 +11955,9 @@
       "MOVE_CRUNCH",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "CROCONAW": {
     "LevelMoves": [
@@ -11789,7 +12042,9 @@
       "MOVE_CRUNCH",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "FERALIGATR": {
     "LevelMoves": [
@@ -11880,7 +12135,9 @@
       "MOVE_CRUNCH",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "SENTRET": {
     "LevelMoves": [
@@ -12652,7 +12909,10 @@
       "MOVE_SCREECH",
       "MOVE_FLAIL"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "LANTURN": {
     "LevelMoves": [
@@ -12725,7 +12985,10 @@
       "MOVE_SCREECH",
       "MOVE_FLAIL"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "PICHU": {
     "LevelMoves": [
@@ -12783,7 +13046,9 @@
       "MOVE_PRESENT",
       "MOVE_ENCORE"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "CLEFFA": {
     "LevelMoves": [
@@ -12849,7 +13114,9 @@
       "MOVE_BELLY_DRUM",
       "MOVE_PRESENT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "IGGLYBUFF": {
     "LevelMoves": [
@@ -12911,7 +13178,9 @@
       "MOVE_PERISH_SONG",
       "MOVE_PRESENT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "TOGEPI": {
     "LevelMoves": [
@@ -12983,7 +13252,9 @@
       "MOVE_PRESENT",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "TOGETIC": {
     "LevelMoves": [
@@ -13058,7 +13329,9 @@
       "MOVE_PRESENT",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "NATU": {
     "LevelMoves": [
@@ -13260,7 +13533,9 @@
       "MOVE_REFLECT",
       "MOVE_SAFEGUARD"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "FLAAFFY": {
     "LevelMoves": [
@@ -13333,7 +13608,9 @@
       "MOVE_REFLECT",
       "MOVE_SAFEGUARD"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "AMPHAROS": {
     "LevelMoves": [
@@ -13415,7 +13692,9 @@
       "MOVE_REFLECT",
       "MOVE_SAFEGUARD"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "BELLOSSOM": {
     "LevelMoves": [
@@ -13545,7 +13824,9 @@
       "MOVE_PRESENT",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "AZUMARILL": {
     "LevelMoves": [
@@ -13636,7 +13917,9 @@
       "MOVE_PRESENT",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "SUDOWOODO": {
     "LevelMoves": [
@@ -13772,7 +14055,9 @@
       "MOVE_SPLASH",
       "MOVE_MIND_READER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "HOPPIP": {
     "LevelMoves": [
@@ -14108,7 +14393,9 @@
       "MOVE_PURSUIT",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "SUNKERN": {
     "LevelMoves": [
@@ -14359,7 +14646,9 @@
       "MOVE_SAFEGUARD",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "QUAGSIRE": {
     "LevelMoves": [
@@ -14434,7 +14723,9 @@
       "MOVE_SAFEGUARD",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "ESPEON": {
     "LevelMoves": [
@@ -14746,7 +15037,10 @@
       "MOVE_SAFEGUARD",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM"
+    ]
   },
   "MISDREAVUS": {
     "LevelMoves": [
@@ -14816,7 +15110,9 @@
       "MOVE_SCREECH",
       "MOVE_DESTINY_BOND"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "UNOWN": {
     "LevelMoves": [
@@ -14933,7 +15229,9 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "PINECO": {
     "LevelMoves": [
@@ -15153,7 +15451,10 @@
       "MOVE_ROCK_SLIDE",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "GLIGAR": {
     "LevelMoves": [
@@ -15382,7 +15683,9 @@
       "MOVE_PRESENT",
       "MOVE_CRUNCH"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "GRANBULL": {
     "LevelMoves": [
@@ -15467,7 +15770,9 @@
       "MOVE_PRESENT",
       "MOVE_CRUNCH"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "QWILFISH": {
     "LevelMoves": [
@@ -15540,7 +15845,9 @@
       "MOVE_HAZE",
       "MOVE_FLAIL"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "SCIZOR": {
     "LevelMoves": [
@@ -15842,7 +16149,9 @@
       "MOVE_SPITE",
       "MOVE_FORESIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "TEDDIURSA": {
     "LevelMoves": [
@@ -16078,7 +16387,9 @@
     "EggMoves": [
       "MOVE_ACID_ARMOR"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "MAGCARGO": {
     "LevelMoves": [
@@ -16150,7 +16461,9 @@
     "EggMoves": [
       "MOVE_ACID_ARMOR"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "SWINUB": {
     "LevelMoves": [
@@ -16216,7 +16529,9 @@
       "MOVE_ROCK_SLIDE",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "PILOSWINE": {
     "LevelMoves": [
@@ -16295,7 +16610,9 @@
       "MOVE_ROCK_SLIDE",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "CORSOLA": {
     "LevelMoves": [
@@ -16367,7 +16684,9 @@
       "MOVE_ROCK_SLIDE",
       "MOVE_SAFEGUARD"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "REMORAID": {
     "LevelMoves": [
@@ -16434,7 +16753,10 @@
       "MOVE_HAZE",
       "MOVE_OCTAZOOKA"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM"
+    ]
   },
   "OCTILLERY": {
     "LevelMoves": [
@@ -16505,7 +16827,10 @@
       "MOVE_HAZE",
       "MOVE_OCTAZOOKA"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM"
+    ]
   },
   "DELIBIRD": {
     "LevelMoves": [
@@ -16545,7 +16870,9 @@
       "MOVE_RAPID_SPIN",
       "MOVE_FUTURE_SIGHT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "MANTINE": {
     "LevelMoves": [
@@ -16612,7 +16939,9 @@
       "MOVE_HAZE",
       "MOVE_TWISTER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "SKARMORY": {
     "LevelMoves": [
@@ -16751,7 +17080,9 @@
       "MOVE_PURSUIT",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "HOUNDOOM": {
     "LevelMoves": [
@@ -16829,7 +17160,9 @@
       "MOVE_PURSUIT",
       "MOVE_BEAT_UP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "KINGDRA": {
     "LevelMoves": [
@@ -16907,7 +17240,9 @@
       "MOVE_FLAIL",
       "MOVE_OCTAZOOKA"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "PHANPY": {
     "LevelMoves": [
@@ -17120,7 +17455,10 @@
       "MOVE_PSYCH_UP"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "STANTLER": {
     "LevelMoves": [
@@ -17422,7 +17760,9 @@
       "MOVE_MEDITATE",
       "MOVE_LOVELY_KISS"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "ELEKID": {
     "LevelMoves": [
@@ -17495,7 +17835,9 @@
       "MOVE_BARRIER",
       "MOVE_CROSS_CHOP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "MAGBY": {
     "LevelMoves": [
@@ -17569,7 +17911,9 @@
       "MOVE_BARRIER",
       "MOVE_CROSS_CHOP"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "MILTANK": {
     "LevelMoves": [
@@ -17654,7 +17998,10 @@
       "MOVE_REVERSAL",
       "MOVE_PRESENT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "BLISSEY": {
     "LevelMoves": [
@@ -17744,7 +18091,11 @@
       "MOVE_HEAL_BELL",
       "MOVE_PRESENT"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "RAIKOU": {
     "LevelMoves": [
@@ -17818,7 +18169,9 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "ENTEI": {
     "LevelMoves": [
@@ -17892,7 +18245,9 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER"
+    ]
   },
   "SUICUNE": {
     "LevelMoves": [
@@ -17967,7 +18322,9 @@
       "MOVE_WHIRLPOOL"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM"
+    ]
   },
   "LARVITAR": {
     "LevelMoves": [
@@ -18223,7 +18580,11 @@
       "MOVE_PURSUIT",
       "MOVE_ANCIENT_POWER"
     ],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "LUGIA": {
     "LevelMoves": [
@@ -18312,7 +18673,10 @@
       "MOVE_WHIRLPOOL"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "HO_OH": {
     "LevelMoves": [
@@ -18397,7 +18761,10 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_FLAMETHROWER",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "CELEBI": {
     "LevelMoves": [

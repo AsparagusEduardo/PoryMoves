@@ -1336,7 +1336,9 @@
       "MOVE_SUBSTITUTE"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_SURF"
+    ]
   },
   "RAICHU": {
     "LevelMoves": [

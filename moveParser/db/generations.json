@@ -95,7 +95,7 @@
     "isLatestGen": false,
     "dbFilename": "gs",
     "gameFullName": "Pokémon Gold and Silver",
-    "moveTutorColumn": 1,
+    "moveTutorColumn": 0,
     "maxDexNum": 251
   },
   "Y": {

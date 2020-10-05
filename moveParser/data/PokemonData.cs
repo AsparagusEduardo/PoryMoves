@@ -150,7 +150,7 @@ namespace moveParser.data
                             modeText = "TM";
                         else if (textRow.Contains("By {{pkmn|breeding}}"))
                             modeText = "EGG";
-                        else if (textRow.ToLower().Contains("by [[move tutor|tutoring]]"))
+                        else if (gen.moveTutorColumn != 0 && textRow.ToLower().Contains("by [[move tutor|tutoring]]"))
                             modeText = "TUTOR";
                         else if (textRow.Contains("====") && !readingLevelUp && !textRow.Contains("Pokémon")
                             && !textRow.Contains("By a prior [[evolution]]") && !textRow.Contains("Special moves") && !textRow.Contains("By {{pkmn2|event}}s"))
@@ -294,8 +294,12 @@ namespace moveParser.data
                                     else
                                         tutorpad = 8;
 
-
-                                    if (rowdata[tutorpad + movetutorcolumn].Equals("yes"))
+                                    if (gen.genNumber == 1 || gen.genNumber == 2)
+                                    {
+                                        int modeid = SerebiiNameToID[movename];
+                                        TutorMovesIds.Add(modeid);
+                                    }
+                                    else if (rowdata[tutorpad + movetutorcolumn].Equals("yes"))
                                     {
                                         int modeid = SerebiiNameToID[movename];
                                         if (modeid == 520 && name.SpeciesName.Equals("Silvally"))
