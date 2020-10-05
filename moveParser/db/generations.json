@@ -62,6 +62,15 @@
     "moveTutorColumn": 1,
     "maxDexNum": 721
   },
+  "DP": {
+    "genNumber": 4,
+    "genNumberRoman": "IV",
+    "isLatestGen": false,
+    "dbFilename": "dp",
+    "gameFullName": "Pokémon Diamond and Pearl",
+    "moveTutorColumn": 1,
+    "maxDexNum": 493
+  },
   "FRLG": {
     "genNumber": 3,
     "genNumberRoman": "III",
