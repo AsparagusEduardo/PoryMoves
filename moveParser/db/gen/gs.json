@@ -3545,10 +3545,6 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_TRI_ATTACK"
-      },
-      {
-        "Level": 1,
         "Move": "MOVE_SCRATCH"
       },
       {
@@ -6581,10 +6577,6 @@
       {
         "Level": 1,
         "Move": "MOVE_PROTECT"
-      },
-      {
-        "Level": 33,
-        "Move": "MOVE_SPIKES"
       },
       {
         "Level": 41,
@@ -15780,10 +15772,6 @@
       {
         "Level": 57,
         "Move": "MOVE_BEAT_UP"
-      },
-      {
-        "Level": 65,
-        "Move": "MOVE_METAL_CLAW"
       }
     ],
     "TMMoves": [
@@ -16165,10 +16153,6 @@
       {
         "Level": 46,
         "Move": "MOVE_BLIZZARD"
-      },
-      {
-        "Level": 55,
-        "Move": "MOVE_AMNESIA"
       }
     ],
     "TMMoves": [
@@ -16243,10 +16227,6 @@
       {
         "Level": 56,
         "Move": "MOVE_BLIZZARD"
-      },
-      {
-        "Level": 70,
-        "Move": "MOVE_AMNESIA"
       }
     ],
     "TMMoves": [
