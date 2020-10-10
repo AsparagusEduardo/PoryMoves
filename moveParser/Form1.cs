@@ -228,6 +228,57 @@ namespace moveParser
             SetEnableForAllCheckbox(value);
         }
 
+        private void SetEnableForAllButtons(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                btnLoadFromSerebii.Enabled = value;
+
+                btnWriteLvlLearnsets.Enabled = value;
+                btnLvl_All.Enabled = value;
+
+                btnExportTM.Enabled = value;
+                btnTM_All.Enabled = value;
+
+                //btnEgg_All.Enabled = value;
+
+                btnExportTutor.Enabled = value;
+                btnTutor_All.Enabled = value;
+            });
+        }
+
+        private void SetEnableForAllCombobox(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                cmbGeneration.Enabled = value;
+            });
+        }
+
+        private void SetEnableForAllComboBoxList(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                cListLevelUp.Enabled = value;
+                cListTMMoves.Enabled = value;
+                cListTutorMoves.Enabled = value;
+            });
+        }
+
+        private void SetEnableForAllCheckbox(bool value)
+        {
+            this.Invoke((MethodInvoker)delegate {
+                chkLvl_LevelUpEnd.Enabled = value;
+
+                chkTM_IncludeEgg.Enabled = value;
+                chkTM_IncludeLvl.Enabled = value;
+                chkTM_IncludeTutor.Enabled = value;
+                chkTM_Extended.Enabled = value;
+
+                chkTutor_Extended.Enabled = value;
+                chkTutor_IncludeLvl.Enabled = value;
+                chkTutor_IncludeEgg.Enabled = value;
+                chkTutor_IncludeTM.Enabled = value;
+            });
+        }
+
         public void FinishMoveDataLoading()
         {
             SetEnableForAllElements(true);
@@ -353,7 +404,6 @@ namespace moveParser
                 foreach (LevelUpMove move in mon.LevelMoves)
                 {
                     sets += $"    LEVEL_UP_MOVE({move.Level, 2}, {move.Move}),\n";
-                    //sets += "    LEVEL_UP_MOVE(" + ((move.Level < 10) ? move.Level.ToString().PadLeft(2) : move.Level.ToString()) + ", " + move.Move + "),\n";
                 }
                 sets += "    LEVEL_UP_END\n};\n";
 
@@ -372,49 +422,6 @@ namespace moveParser
 
             MessageBox.Show("Level Up moves exported to \"output/level_up_learnsets.h\"", "Success!", MessageBoxButtons.OK);
             SetEnableForAllElements(true);
-        }
-
-        private void SetEnableForAllButtons(bool value)
-        {
-            this.Invoke((MethodInvoker)delegate {
-                btnLoadFromSerebii.Enabled = value;
-
-                btnWriteLvlLearnsets.Enabled = value;
-                btnLvl_All.Enabled = value;
-
-                btnExportTM.Enabled = value;
-                btnTM_All.Enabled = value;
-
-                btnEgg_All.Enabled = value;
-
-                btnTutor_All.Enabled = value;
-            });
-        }
-
-        private void SetEnableForAllCombobox(bool value)
-        {
-            this.Invoke((MethodInvoker)delegate {
-                cmbGeneration.Enabled = value;
-            });
-        }
-
-        private void SetEnableForAllComboBoxList(bool value)
-        {
-            this.Invoke((MethodInvoker)delegate {
-                cListLevelUp.Enabled = value;
-                cListTMMoves.Enabled = value;
-            });
-        }
-
-        private void SetEnableForAllCheckbox(bool value)
-        {
-            this.Invoke((MethodInvoker)delegate {
-                chkLvl_LevelUpEnd.Enabled = value;
-                chkTM_IncludeEgg.Enabled = value;
-                chkTM_IncludeLvl.Enabled = value;
-                chkTM_IncludeTutor.Enabled = value;
-                chkTM_Extended.Enabled = value;
-            });
         }
 
         private void bwrkGroupMovesets_tm_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -628,6 +635,182 @@ namespace moveParser
         {
             for (int i = 0; i < cListTutorMoves.Items.Count; ++i)
                 cListTutorMoves.SetItemChecked(i, true);
+        }
+
+        private void bwrkExportTutor_DoWork(object sender, DoWorkEventArgs e)
+        {
+            UpdateLoadingMessage("Grouping movesets...");
+            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
+
+            Dictionary<string, List<string>> lvlMoves = new Dictionary<string, List<string>>();
+
+            customGenData.Clear();
+
+            int i = 0;
+            int namecount = nameList.Count;
+            foreach (MonName name in nameList)
+            {
+                MonData monToAdd = new MonData();
+                monToAdd.TutorMoves = new List<string>();
+                lvlMoves.Add(name.DefName, new List<string>());
+
+                foreach (string item in cListTutorMoves.CheckedItems)
+                {
+                    GenerationData gen = GenData[item];
+                    MonData mon;
+                    try
+                    {
+                        mon = allGensData[item][name.DefName];
+                    }
+                    catch (KeyNotFoundException)
+                    {
+                        mon = new MonData();
+                    }
+                    foreach (string move in mon.TutorMoves)
+                        monToAdd.TutorMoves.Add(move);
+                    if (chkTutor_IncludeLvl.Checked)
+                    {
+                        foreach (LevelUpMove move in mon.LevelMoves)
+                            lvlMoves[name.DefName].Add(move.Move);
+                    }
+                    if (chkTutor_IncludeEgg.Checked)
+                    {
+                        foreach (string move in mon.EggMoves)
+                            monToAdd.EggMoves.Add(move);
+                    }
+                    if (chkTutor_IncludeTM.Checked)
+                    {
+                        foreach (string move in mon.TMMoves)
+                            monToAdd.TMMoves.Add(move);
+                    }
+
+
+                }
+                monToAdd.TutorMoves = monToAdd.TutorMoves.GroupBy(elem => elem).Select(group => group.First()).ToList();
+
+                customGenData.Add(name.DefName, monToAdd);
+
+                i++;
+                int percent = i * 100 / namecount;
+                bwrkExportTM.ReportProgress(percent);
+            }
+            bool oldStyle = !chkTutor_Extended.Checked;
+
+            // load specified tutor list
+            List<string> tutorMoves = File.ReadAllLines("input/tutor.txt").ToList();
+            // sanity check: old style tutor list must be 32 entries or less
+            if (tutorMoves.Count > 32 && oldStyle)
+            {
+                Console.WriteLine("FATAL: Old-style tutor learnsets only support up to 32 moves.\nConsider using the new format here:\n<commit to be made>");
+                return;
+            }
+            if (tutorMoves.Count > 255 && !oldStyle)
+            {
+                Console.WriteLine("FATAL: New-style tutor learnsets only support up to 255 tutor moves. Consider reducing your tutor amount.");
+            }
+            // build importable tutor list
+            string tutors = "// IMPORTANT: DO NOT PASTE THIS FILE INTO YOUR REPO!\n// Instead, paste the following list of defines into include/constants/party_menu.h\n\n";
+            for (int j = 0; j < tutorMoves.Count; j++)
+            {
+                string move = tutorMoves[j];
+                tutors += $"#define {move,-28} {j,3}\n";
+            }
+            tutors += $"#define TUTOR_MOVE_COUNT             {tutorMoves.Count,3}";
+            File.WriteAllText("party_menu_tutor_list.h", tutors);
+
+            // file header
+            string sets = "const u16 gTutorMoves[TUTOR_MOVE_COUNT] =\n{\n";
+            foreach (string move in tutorMoves)
+            {
+                sets += $"    [TUTOR_{move}] = MOVE_{move.Substring(5)},\n";
+            }
+            if (oldStyle)
+            {
+                // TODO: double check how the hell old style works	
+                sets += "};\n\n#define TUTOR(move) (1u << (TUTOR_##move))\n\nstatic const u32 sTutorLearnsets[TUTOR_MOVE_COUNT] =\n{\n    [SPECIES_NONE]             = (0),\n\n";
+            }
+            else
+            {
+                sets += "};\n\n#define TUTOR(move) ((u8) (TUTOR_##move))\n\nstatic const u8 sNoneTutorLearnset[TUTOR_MOVE_COUNT] =\n{\n    0xFF,\n};\n\n";
+            }
+            // iterate over mons
+            i = 1;
+            foreach (MonName entry in nameList)
+            {
+                MonData data = customGenData[entry.DefName];
+                // begin learnset
+                if (oldStyle)
+                {
+                    sets += $"\n    {$"[SPECIES_{entry.DefName}]",-27}= (";
+                    // hacky workaround for first move being on the same line
+                    bool first = true;
+                    foreach (string move in tutorMoves)
+                    {
+                        string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
+                        if (data.TMMoves.Contains(aa) || lvlMoves[entry.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa))
+                        {
+                            if (first)
+                            {
+                                sets += $"TUTOR({move})";
+                                first = false;
+                            }
+                            else
+                            {
+                                sets += $"\n                                | TUTOR({move})";
+                            }
+                        }
+                    }
+                    sets += "),\n";
+                }
+                else
+                {
+                    sets += $"\nstatic const u8 s{entry.VarName}TutorLearnset[] =\n{{\n";
+                    foreach (string move in tutorMoves)
+                    {
+                        string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
+                        if (data.TMMoves.Contains(aa) || lvlMoves[entry.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa))
+                        {
+                            sets += $"    TUTOR({move}),\n";
+                        }
+                    }
+                    sets += "    0xFF,\n};\n";
+                }
+
+                int percent = i * 100 / namecount;
+                bwrkExportTutor.ReportProgress(percent);
+                // Set the text.
+                UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Tutor movesets exported.");
+                i++;
+            }
+
+
+            if (oldStyle)
+                sets += "\n};\n";
+            else
+            {
+                sets += "const u8 *const sTutorLearnsets[] =\n{\n    [SPECIES_NONE] = sNoneTutorLearnset,\n";
+                foreach (MonName name in nameList)
+                {
+                    sets += $"    [SPECIES_{name.DefName}] = s{name.VarName}TutorLearnset,\n";
+                }
+                sets += "};\n";
+            }
+
+            // write to file
+            File.WriteAllText("output/tutor_learnsets.h", sets);
+
+            bwrkExportTutor.ReportProgress(0);
+            // Set the text.
+            UpdateLoadingMessage(namecount + " Tutor movesets exported.");
+
+            MessageBox.Show("Tutor moves exported to \"output/tutor_learnsets.h\"", "Success!", MessageBoxButtons.OK);
+            SetEnableForAllElements(true);
+        }
+
+        private void btnExportTutor_Click(object sender, EventArgs e)
+        {
+            SetEnableForAllElements(false);
+            bwrkExportTutor.RunWorkerAsync();
         }
     }
 }

@@ -56,14 +56,16 @@
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.cListEggMoves = new System.Windows.Forms.CheckedListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.chkTutor_IncludeTM = new System.Windows.Forms.CheckBox();
+            this.chkTutor_IncludeEgg = new System.Windows.Forms.CheckBox();
+            this.btnExportTutor = new System.Windows.Forms.Button();
+            this.chkTutor_IncludeLvl = new System.Windows.Forms.CheckBox();
             this.cListTutorMoves = new System.Windows.Forms.CheckedListBox();
             this.bwrkExportTM = new System.ComponentModel.BackgroundWorker();
             this.btnEgg_All = new System.Windows.Forms.Button();
             this.btnTutor_All = new System.Windows.Forms.Button();
+            this.chkTutor_Extended = new System.Windows.Forms.CheckBox();
+            this.bwrkExportTutor = new System.ComponentModel.BackgroundWorker();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -346,11 +348,12 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.chkTutor_Extended);
             this.groupBox3.Controls.Add(this.btnTutor_All);
-            this.groupBox3.Controls.Add(this.checkBox7);
-            this.groupBox3.Controls.Add(this.checkBox8);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.checkBox9);
+            this.groupBox3.Controls.Add(this.chkTutor_IncludeTM);
+            this.groupBox3.Controls.Add(this.chkTutor_IncludeEgg);
+            this.groupBox3.Controls.Add(this.btnExportTutor);
+            this.groupBox3.Controls.Add(this.chkTutor_IncludeLvl);
             this.groupBox3.Controls.Add(this.cListTutorMoves);
             this.groupBox3.Location = new System.Drawing.Point(630, 67);
             this.groupBox3.Name = "groupBox3";
@@ -359,53 +362,49 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tutor Moves";
             // 
-            // checkBox7
+            // chkTutor_IncludeTM
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Enabled = false;
-            this.checkBox7.Location = new System.Drawing.Point(6, 398);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(144, 21);
-            this.checkBox7.TabIndex = 16;
-            this.checkBox7.Text = "Include TM Moves";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.chkTutor_IncludeTM.AutoSize = true;
+            this.chkTutor_IncludeTM.Location = new System.Drawing.Point(6, 398);
+            this.chkTutor_IncludeTM.Name = "chkTutor_IncludeTM";
+            this.chkTutor_IncludeTM.Size = new System.Drawing.Size(144, 21);
+            this.chkTutor_IncludeTM.TabIndex = 16;
+            this.chkTutor_IncludeTM.Text = "Include TM Moves";
+            this.chkTutor_IncludeTM.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // chkTutor_IncludeEgg
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Enabled = false;
-            this.checkBox8.Location = new System.Drawing.Point(6, 371);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(149, 21);
-            this.checkBox8.TabIndex = 15;
-            this.checkBox8.Text = "Include Egg Moves";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.chkTutor_IncludeEgg.AutoSize = true;
+            this.chkTutor_IncludeEgg.Location = new System.Drawing.Point(6, 371);
+            this.chkTutor_IncludeEgg.Name = "chkTutor_IncludeEgg";
+            this.chkTutor_IncludeEgg.Size = new System.Drawing.Size(149, 21);
+            this.chkTutor_IncludeEgg.TabIndex = 15;
+            this.chkTutor_IncludeEgg.Text = "Include Egg Moves";
+            this.chkTutor_IncludeEgg.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnExportTutor
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(6, 425);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(180, 27);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Export Tutor Moves";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnExportTutor.Location = new System.Drawing.Point(6, 425);
+            this.btnExportTutor.Name = "btnExportTutor";
+            this.btnExportTutor.Size = new System.Drawing.Size(180, 27);
+            this.btnExportTutor.TabIndex = 14;
+            this.btnExportTutor.Text = "Export Tutor Moves";
+            this.btnExportTutor.UseVisualStyleBackColor = true;
+            this.btnExportTutor.Click += new System.EventHandler(this.btnExportTutor_Click);
             // 
-            // checkBox9
+            // chkTutor_IncludeLvl
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Enabled = false;
-            this.checkBox9.Location = new System.Drawing.Point(6, 344);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(180, 21);
-            this.checkBox9.TabIndex = 13;
-            this.checkBox9.Text = "Include Level Up Moves";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.chkTutor_IncludeLvl.AutoSize = true;
+            this.chkTutor_IncludeLvl.Location = new System.Drawing.Point(6, 344);
+            this.chkTutor_IncludeLvl.Name = "chkTutor_IncludeLvl";
+            this.chkTutor_IncludeLvl.Size = new System.Drawing.Size(180, 21);
+            this.chkTutor_IncludeLvl.TabIndex = 13;
+            this.chkTutor_IncludeLvl.Text = "Include Level Up Moves";
+            this.chkTutor_IncludeLvl.UseVisualStyleBackColor = true;
             // 
             // cListTutorMoves
             // 
             this.cListTutorMoves.CheckOnClick = true;
-            this.cListTutorMoves.Enabled = false;
             this.cListTutorMoves.FormattingEnabled = true;
             this.cListTutorMoves.Items.AddRange(new object[] {
             "SWSH",
@@ -424,6 +423,7 @@
             // 
             // btnEgg_All
             // 
+            this.btnEgg_All.Enabled = false;
             this.btnEgg_All.Location = new System.Drawing.Point(6, 284);
             this.btnEgg_All.Name = "btnEgg_All";
             this.btnEgg_All.Size = new System.Drawing.Size(180, 27);
@@ -441,6 +441,22 @@
             this.btnTutor_All.Text = "Select All";
             this.btnTutor_All.UseVisualStyleBackColor = true;
             this.btnTutor_All.Click += new System.EventHandler(this.btnTutor_All_Click);
+            // 
+            // chkTutor_Extended
+            // 
+            this.chkTutor_Extended.AutoSize = true;
+            this.chkTutor_Extended.Location = new System.Drawing.Point(6, 317);
+            this.chkTutor_Extended.Name = "chkTutor_Extended";
+            this.chkTutor_Extended.Size = new System.Drawing.Size(163, 21);
+            this.chkTutor_Extended.TabIndex = 22;
+            this.chkTutor_Extended.Text = "Use Extended Tutors";
+            this.chkTutor_Extended.UseVisualStyleBackColor = true;
+            // 
+            // bwrkExportTutor
+            // 
+            this.bwrkExportTutor.WorkerReportsProgress = true;
+            this.bwrkExportTutor.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkExportTutor_DoWork);
+            this.bwrkExportTutor.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             // 
             // Form1
             // 
@@ -498,10 +514,10 @@
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckedListBox cListEggMoves;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox chkTutor_IncludeTM;
+        private System.Windows.Forms.CheckBox chkTutor_IncludeEgg;
+        private System.Windows.Forms.Button btnExportTutor;
+        private System.Windows.Forms.CheckBox chkTutor_IncludeLvl;
         private System.Windows.Forms.CheckedListBox cListTutorMoves;
         private System.ComponentModel.BackgroundWorker bwrkExportTM;
         private System.Windows.Forms.CheckBox chkTM_Extended;
@@ -509,6 +525,8 @@
         private System.Windows.Forms.Button btnTM_All;
         private System.Windows.Forms.Button btnEgg_All;
         private System.Windows.Forms.Button btnTutor_All;
+        private System.Windows.Forms.CheckBox chkTutor_Extended;
+        private System.ComponentModel.BackgroundWorker bwrkExportTutor;
     }
 }
 
