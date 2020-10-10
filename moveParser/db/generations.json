@@ -69,6 +69,26 @@
     "moveTutorColumn": 1,
     "maxDexNum": 721
   },
+  "B2W2": {
+    "genNumber": 5,
+    "genNumberRoman": "V",
+    "isLatestGen": false,
+    "dbFilename": "b2w2",
+    "gameFullName": "Pokémon Black 2 and White 2",
+    "lvlUpColumn": "B2W2",
+    "moveTutorColumn": 2,
+    "maxDexNum": 649
+  },
+  "BW": {
+    "genNumber": 5,
+    "genNumberRoman": "V",
+    "isLatestGen": false,
+    "dbFilename": "bw",
+    "gameFullName": "Pokémon Black and White",
+    "lvlUpColumn": "BW",
+    "moveTutorColumn": 1,
+    "maxDexNum": 649
+  },
   "HGSS": {
     "genNumber": 4,
     "genNumberRoman": "IV",

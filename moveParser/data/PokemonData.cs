@@ -199,6 +199,14 @@ namespace moveParser.data
 
                                         if (header.Contains("xy=") || header.Equals("") || int.TryParse(header, out a))
                                             toMinus++;
+                                        if (header.Equals("V"))
+                                        {
+                                            toMinus--;
+                                            if (gen.lvlUpColumn.Equals("BW"))
+                                                column = 1;
+                                            else
+                                                column = 2;
+                                        }
 
                                         if (header.Equals(gameAbv))
                                         {
