@@ -110,7 +110,7 @@ namespace moveParser.data
             int column = 0;
             int gamecolumnamount = 1;
             int movetutorcolumn = gen.moveTutorColumn;
-            string gameAbv = gen.dbFilename.ToUpper();
+            string gameAbv = gen.lvlUpColumn;
             string gametosearch = gen.gameFullName;
 
             if (columns != null)
@@ -130,9 +130,28 @@ namespace moveParser.data
 
                 foreach (string textRow in pagetext.Split('\n'))
                 {
-                    if (readingLearnsets && textRow.Contains("Pokémon") && !name.SpeciesName.Equals("Bonsly")
-                        && !(gen.genNumber == 1 && name.SpeciesName.Equals("Vaporeon"))
-                        && !(gen.genNumber == 2 && name.SpeciesName.Equals("Muk")))
+                    bool gameTextException = false;
+
+                    switch (gen.genNumber)
+                    {
+                        case 1:
+                            if (name.SpeciesName.Equals("Vaporeon"))
+                                gameTextException = true;
+                            break;
+                        case 2:
+                            if (name.SpeciesName.Equals("Muk"))
+                                gameTextException = true;
+                            break;
+                        case 4:
+                            if (textRow.Contains("{{tt|60|70 in Pokémon Diamond and Pearl and Pokémon Battle Revolution}}"))
+                                gameTextException = true;
+                            break;
+                    }
+
+                    if (name.SpeciesName.Equals("Bonsly"))
+                        gameTextException = true;
+
+                    if (readingLearnsets && textRow.Contains("Pokémon") && !gameTextException)
                         gameText = textRow;
                     else if (textRow.Contains("=Learnset="))
                         readingLearnsets = true;
@@ -236,6 +255,7 @@ namespace moveParser.data
                             if (modeText.Equals("Level") && !LevelUpListRead && (formText == null || formText.Equals(name.FormName)))
                             {
                                 string lvltext = textRow.Replace("{{tt|Evo.|Learned upon evolving}}", "0");
+                                lvltext = lvltext.Replace("{{tt|60|70 in Pokémon Diamond and Pearl and Pokémon Battle Revolution}}", "60");
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(lvltext, "{{tt([^}]+)}}", "").Split('|');
                                 string lvl = rowdata[column].Replace("*", "");
                                 string movename = rowdata[gamecolumnamount + 1];
@@ -274,9 +294,11 @@ namespace moveParser.data
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{sup(.*)\v([A-Z]*)}}|{{MS([^}]+)}}", "MON").Split('|');
                                 string movename = rowdata[2];
 
-                                if (Regex.IsMatch(breedtext, "{{sup(.*)\\\u007C([A-Z]*)}}") && !breedtext.Contains(gen.dbFilename.ToUpper()))
+                                if (gen.genNumber == 4 && rowdata.Length >= 13 && !rowdata[12].Trim().Equals("") && !breedtext.Contains(gen.lvlUpColumn))
                                     continue;
-                                if (!movename.Equals("Light Ball}}{{tt") && !(textRow.Contains("†") && !isIncenseBaby(name.SpeciesName)))
+                                else if (Regex.IsMatch(breedtext, "{{sup(.*)\\\u007C([A-Z]*)}}") && !breedtext.Contains(gen.dbFilename.ToUpper()))
+                                    continue;
+                                else if (!movename.Equals("Light Ball}}{{tt") && !(textRow.Contains("†") && !isIncenseBaby(name.SpeciesName)))
                                     EggMovesIds.Add(SerebiiNameToID[movename]);
                             }
                             else if (modeText.Equals("TUTOR") && !TutorListRead && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/tutor.+null}}")

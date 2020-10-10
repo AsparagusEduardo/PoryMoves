@@ -15,16 +15,18 @@ namespace moveParser.data
         public bool isLatestGen;
         public string dbFilename;
         public string gameFullName;
+        public string lvlUpColumn;
         public int moveTutorColumn;
         public int maxDexNum;
 
-        public GenerationData(int num, string roman, bool lastgen, string dbfile, string fullname, int tutorcol, int dexnum)
+        public GenerationData(int num, string roman, bool lastgen, string dbfile, string fullname, string lvlcol, int tutorcol, int dexnum)
         {
             genNumber = num;
             genNumberRoman = roman;
             isLatestGen = lastgen;
             dbFilename = dbfile;
             gameFullName = fullname;
+            lvlUpColumn = lvlcol;
             moveTutorColumn = tutorcol;
             maxDexNum = dexnum;
         }
