@@ -56,7 +56,7 @@ namespace moveParser
 
                 allGensData.Add(item.Key, gen);
             }
-            cListLevelUp.SetItemChecked(0, true);
+            //cListLevelUp.SetItemChecked(0, true);
         }
 
         protected void LoadPkmnNameListFromSerebii()
@@ -378,8 +378,16 @@ namespace moveParser
         {
             this.Invoke((MethodInvoker)delegate {
                 btnLoadFromSerebii.Enabled = value;
+
                 btnWriteLvlLearnsets.Enabled = value;
+                btnLvl_All.Enabled = value;
+
                 btnExportTM.Enabled = value;
+                btnTM_All.Enabled = value;
+
+                btnEgg_All.Enabled = value;
+
+                btnTutor_All.Enabled = value;
             });
         }
 
@@ -407,14 +415,6 @@ namespace moveParser
                 chkTM_IncludeTutor.Enabled = value;
                 chkTM_Extended.Enabled = value;
             });
-        }
-
-        private void cListLevelUp_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-            /*
-            for (int ix = 0; ix < cListLevelUp.Items.Count; ++ix)
-                if (ix != e.Index) cListLevelUp.SetItemChecked(ix, false);
-            */
         }
 
         private void bwrkGroupMovesets_tm_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -477,7 +477,7 @@ namespace moveParser
 
                 i++;
                 int percent = i * 100 / namecount;
-                bwrkExportLvl.ReportProgress(percent);
+                bwrkExportTM.ReportProgress(percent);
             }
             bool oldStyle = !chkTM_Extended.Checked;
 
@@ -567,7 +567,7 @@ namespace moveParser
                 }
 
                 int percent = i * 100 / namecount;
-                bwrkExportLvl.ReportProgress(percent);
+                bwrkExportTM.ReportProgress(percent);
                 // Set the text.
                 UpdateLoadingMessage(i.ToString() + " out of " + namecount + " TM movesets exported.");
                 i++;
@@ -587,7 +587,7 @@ namespace moveParser
             // write to file
             File.WriteAllText("output/tmhm_learnsets.h", sets);
 
-            bwrkExportLvl.ReportProgress(0);
+            bwrkExportTM.ReportProgress(0);
             // Set the text.
             UpdateLoadingMessage(namecount + " TM movesets exported.");
 
@@ -604,6 +604,30 @@ namespace moveParser
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             MessageBox.Show("Loading from Bulbapedia complete!", "Success!", MessageBoxButtons.OK);
+        }
+
+        private void btnLvl_All_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < cListLevelUp.Items.Count; ++i)
+                cListLevelUp.SetItemChecked(i, true);
+        }
+
+        private void btnTM_All_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < cListTMMoves.Items.Count; ++i)
+                cListTMMoves.SetItemChecked(i, true);
+        }
+
+        private void btnEgg_All_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < cListEggMoves.Items.Count; ++i)
+                cListEggMoves.SetItemChecked(i, true);
+        }
+
+        private void btnTutor_All_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < cListTutorMoves.Items.Count; ++i)
+                cListTutorMoves.SetItemChecked(i, true);
         }
     }
 }

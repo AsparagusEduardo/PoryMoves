@@ -35,17 +35,18 @@
             this.lblLoading = new System.Windows.Forms.Label();
             this.lblOptions = new System.Windows.Forms.Label();
             this.cmbGeneration = new System.Windows.Forms.ComboBox();
-            this.lblBaseMovesets = new System.Windows.Forms.Label();
             this.btnWriteLvlLearnsets = new System.Windows.Forms.Button();
             this.bwrkExportLvl = new System.ComponentModel.BackgroundWorker();
             this.cListTMMoves = new System.Windows.Forms.CheckedListBox();
             this.gBoxOptionsTM = new System.Windows.Forms.GroupBox();
+            this.btnTM_All = new System.Windows.Forms.Button();
             this.chkTM_Extended = new System.Windows.Forms.CheckBox();
             this.chkTM_IncludeTutor = new System.Windows.Forms.CheckBox();
             this.chkTM_IncludeEgg = new System.Windows.Forms.CheckBox();
             this.btnExportTM = new System.Windows.Forms.Button();
             this.chkTM_IncludeLvl = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnLvl_All = new System.Windows.Forms.Button();
             this.chkLvl_LevelUpEnd = new System.Windows.Forms.CheckBox();
             this.cListLevelUp = new System.Windows.Forms.CheckedListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -61,6 +62,8 @@
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.cListTutorMoves = new System.Windows.Forms.CheckedListBox();
             this.bwrkExportTM = new System.ComponentModel.BackgroundWorker();
+            this.btnEgg_All = new System.Windows.Forms.Button();
+            this.btnTutor_All = new System.Windows.Forms.Button();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -69,19 +72,20 @@
             // 
             // btnLoadFromSerebii
             // 
-            this.btnLoadFromSerebii.Location = new System.Drawing.Point(660, 4);
+            this.btnLoadFromSerebii.Location = new System.Drawing.Point(616, 7);
             this.btnLoadFromSerebii.Name = "btnLoadFromSerebii";
             this.btnLoadFromSerebii.Size = new System.Drawing.Size(169, 34);
             this.btnLoadFromSerebii.TabIndex = 0;
             this.btnLoadFromSerebii.Text = "Load from Bulbapedia";
             this.btnLoadFromSerebii.UseVisualStyleBackColor = true;
+            this.btnLoadFromSerebii.Visible = false;
             this.btnLoadFromSerebii.Click += new System.EventHandler(this.btnLoadFromSerebii_Click);
             // 
             // pbar1
             // 
-            this.pbar1.Location = new System.Drawing.Point(12, 44);
+            this.pbar1.Location = new System.Drawing.Point(355, 12);
             this.pbar1.Name = "pbar1";
-            this.pbar1.Size = new System.Drawing.Size(817, 23);
+            this.pbar1.Size = new System.Drawing.Size(476, 23);
             this.pbar1.TabIndex = 1;
             // 
             // backgroundWorker1
@@ -93,9 +97,9 @@
             // 
             // lblLoading
             // 
-            this.lblLoading.Location = new System.Drawing.Point(260, 6);
+            this.lblLoading.Location = new System.Drawing.Point(9, 9);
             this.lblLoading.Name = "lblLoading";
-            this.lblLoading.Size = new System.Drawing.Size(378, 32);
+            this.lblLoading.Size = new System.Drawing.Size(340, 32);
             this.lblLoading.TabIndex = 2;
             this.lblLoading.Text = "Welcome!";
             this.lblLoading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -104,7 +108,7 @@
             // 
             this.lblOptions.AutoSize = true;
             this.lblOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOptions.Location = new System.Drawing.Point(9, 79);
+            this.lblOptions.Location = new System.Drawing.Point(9, 44);
             this.lblOptions.Name = "lblOptions";
             this.lblOptions.Size = new System.Drawing.Size(115, 17);
             this.lblOptions.TabIndex = 3;
@@ -114,26 +118,15 @@
             // 
             this.cmbGeneration.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGeneration.FormattingEnabled = true;
-            this.cmbGeneration.Items.AddRange(new object[] {
-            "SWSH",
-            "USUM"});
-            this.cmbGeneration.Location = new System.Drawing.Point(162, 10);
+            this.cmbGeneration.Location = new System.Drawing.Point(468, 11);
             this.cmbGeneration.Name = "cmbGeneration";
             this.cmbGeneration.Size = new System.Drawing.Size(92, 24);
             this.cmbGeneration.TabIndex = 5;
-            // 
-            // lblBaseMovesets
-            // 
-            this.lblBaseMovesets.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBaseMovesets.Location = new System.Drawing.Point(12, 13);
-            this.lblBaseMovesets.Name = "lblBaseMovesets";
-            this.lblBaseMovesets.Size = new System.Drawing.Size(144, 23);
-            this.lblBaseMovesets.TabIndex = 6;
-            this.lblBaseMovesets.Text = "Load moves from:";
+            this.cmbGeneration.Visible = false;
             // 
             // btnWriteLvlLearnsets
             // 
-            this.btnWriteLvlLearnsets.Location = new System.Drawing.Point(6, 291);
+            this.btnWriteLvlLearnsets.Location = new System.Drawing.Point(6, 425);
             this.btnWriteLvlLearnsets.Name = "btnWriteLvlLearnsets";
             this.btnWriteLvlLearnsets.Size = new System.Drawing.Size(180, 27);
             this.btnWriteLvlLearnsets.TabIndex = 7;
@@ -156,28 +149,39 @@
             "USUM"});
             this.cListTMMoves.Location = new System.Drawing.Point(6, 25);
             this.cListTMMoves.Name = "cListTMMoves";
-            this.cListTMMoves.Size = new System.Drawing.Size(180, 140);
+            this.cListTMMoves.Size = new System.Drawing.Size(180, 259);
             this.cListTMMoves.TabIndex = 12;
             // 
             // gBoxOptionsTM
             // 
+            this.gBoxOptionsTM.Controls.Add(this.btnTM_All);
             this.gBoxOptionsTM.Controls.Add(this.chkTM_Extended);
             this.gBoxOptionsTM.Controls.Add(this.chkTM_IncludeTutor);
             this.gBoxOptionsTM.Controls.Add(this.chkTM_IncludeEgg);
             this.gBoxOptionsTM.Controls.Add(this.btnExportTM);
             this.gBoxOptionsTM.Controls.Add(this.chkTM_IncludeLvl);
             this.gBoxOptionsTM.Controls.Add(this.cListTMMoves);
-            this.gBoxOptionsTM.Location = new System.Drawing.Point(220, 108);
+            this.gBoxOptionsTM.Location = new System.Drawing.Point(220, 67);
             this.gBoxOptionsTM.Name = "gBoxOptionsTM";
-            this.gBoxOptionsTM.Size = new System.Drawing.Size(199, 330);
+            this.gBoxOptionsTM.Size = new System.Drawing.Size(199, 458);
             this.gBoxOptionsTM.TabIndex = 13;
             this.gBoxOptionsTM.TabStop = false;
             this.gBoxOptionsTM.Text = "TM/HM/TR Moves";
             // 
+            // btnTM_All
+            // 
+            this.btnTM_All.Location = new System.Drawing.Point(6, 284);
+            this.btnTM_All.Name = "btnTM_All";
+            this.btnTM_All.Size = new System.Drawing.Size(180, 27);
+            this.btnTM_All.TabIndex = 19;
+            this.btnTM_All.Text = "Select All";
+            this.btnTM_All.UseVisualStyleBackColor = true;
+            this.btnTM_All.Click += new System.EventHandler(this.btnTM_All_Click);
+            // 
             // chkTM_Extended
             // 
             this.chkTM_Extended.AutoSize = true;
-            this.chkTM_Extended.Location = new System.Drawing.Point(6, 178);
+            this.chkTM_Extended.Location = new System.Drawing.Point(6, 317);
             this.chkTM_Extended.Name = "chkTM_Extended";
             this.chkTM_Extended.Size = new System.Drawing.Size(149, 21);
             this.chkTM_Extended.TabIndex = 17;
@@ -187,7 +191,7 @@
             // chkTM_IncludeTutor
             // 
             this.chkTM_IncludeTutor.AutoSize = true;
-            this.chkTM_IncludeTutor.Location = new System.Drawing.Point(6, 260);
+            this.chkTM_IncludeTutor.Location = new System.Drawing.Point(6, 398);
             this.chkTM_IncludeTutor.Name = "chkTM_IncludeTutor";
             this.chkTM_IncludeTutor.Size = new System.Drawing.Size(158, 21);
             this.chkTM_IncludeTutor.TabIndex = 16;
@@ -197,7 +201,7 @@
             // chkTM_IncludeEgg
             // 
             this.chkTM_IncludeEgg.AutoSize = true;
-            this.chkTM_IncludeEgg.Location = new System.Drawing.Point(6, 232);
+            this.chkTM_IncludeEgg.Location = new System.Drawing.Point(6, 371);
             this.chkTM_IncludeEgg.Name = "chkTM_IncludeEgg";
             this.chkTM_IncludeEgg.Size = new System.Drawing.Size(149, 21);
             this.chkTM_IncludeEgg.TabIndex = 15;
@@ -206,7 +210,7 @@
             // 
             // btnExportTM
             // 
-            this.btnExportTM.Location = new System.Drawing.Point(6, 291);
+            this.btnExportTM.Location = new System.Drawing.Point(6, 425);
             this.btnExportTM.Name = "btnExportTM";
             this.btnExportTM.Size = new System.Drawing.Size(180, 27);
             this.btnExportTM.TabIndex = 14;
@@ -217,7 +221,7 @@
             // chkTM_IncludeLvl
             // 
             this.chkTM_IncludeLvl.AutoSize = true;
-            this.chkTM_IncludeLvl.Location = new System.Drawing.Point(6, 205);
+            this.chkTM_IncludeLvl.Location = new System.Drawing.Point(6, 344);
             this.chkTM_IncludeLvl.Name = "chkTM_IncludeLvl";
             this.chkTM_IncludeLvl.Size = new System.Drawing.Size(180, 21);
             this.chkTM_IncludeLvl.TabIndex = 13;
@@ -226,20 +230,31 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnLvl_All);
             this.groupBox1.Controls.Add(this.chkLvl_LevelUpEnd);
             this.groupBox1.Controls.Add(this.cListLevelUp);
             this.groupBox1.Controls.Add(this.btnWriteLvlLearnsets);
-            this.groupBox1.Location = new System.Drawing.Point(15, 108);
+            this.groupBox1.Location = new System.Drawing.Point(15, 67);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(199, 330);
+            this.groupBox1.Size = new System.Drawing.Size(199, 458);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Level Up Moves";
             // 
+            // btnLvl_All
+            // 
+            this.btnLvl_All.Location = new System.Drawing.Point(0, 284);
+            this.btnLvl_All.Name = "btnLvl_All";
+            this.btnLvl_All.Size = new System.Drawing.Size(180, 27);
+            this.btnLvl_All.TabIndex = 18;
+            this.btnLvl_All.Text = "Select All";
+            this.btnLvl_All.UseVisualStyleBackColor = true;
+            this.btnLvl_All.Click += new System.EventHandler(this.btnLvl_All_Click);
+            // 
             // chkLvl_LevelUpEnd
             // 
             this.chkLvl_LevelUpEnd.AutoSize = true;
-            this.chkLvl_LevelUpEnd.Location = new System.Drawing.Point(6, 205);
+            this.chkLvl_LevelUpEnd.Location = new System.Drawing.Point(6, 317);
             this.chkLvl_LevelUpEnd.Name = "chkLvl_LevelUpEnd";
             this.chkLvl_LevelUpEnd.Size = new System.Drawing.Size(166, 21);
             this.chkLvl_LevelUpEnd.TabIndex = 17;
@@ -255,20 +270,20 @@
             "USUM"});
             this.cListLevelUp.Location = new System.Drawing.Point(6, 25);
             this.cListLevelUp.Name = "cListLevelUp";
-            this.cListLevelUp.Size = new System.Drawing.Size(180, 140);
+            this.cListLevelUp.Size = new System.Drawing.Size(180, 259);
             this.cListLevelUp.TabIndex = 12;
-            this.cListLevelUp.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.cListLevelUp_ItemCheck);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnEgg_All);
             this.groupBox2.Controls.Add(this.checkBox4);
             this.groupBox2.Controls.Add(this.checkBox5);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.checkBox6);
             this.groupBox2.Controls.Add(this.cListEggMoves);
-            this.groupBox2.Location = new System.Drawing.Point(425, 108);
+            this.groupBox2.Location = new System.Drawing.Point(425, 67);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(199, 330);
+            this.groupBox2.Size = new System.Drawing.Size(199, 458);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Egg Moves";
@@ -277,7 +292,7 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Enabled = false;
-            this.checkBox4.Location = new System.Drawing.Point(6, 260);
+            this.checkBox4.Location = new System.Drawing.Point(6, 398);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(158, 21);
             this.checkBox4.TabIndex = 16;
@@ -288,7 +303,7 @@
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Enabled = false;
-            this.checkBox5.Location = new System.Drawing.Point(6, 232);
+            this.checkBox5.Location = new System.Drawing.Point(6, 371);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(144, 21);
             this.checkBox5.TabIndex = 15;
@@ -298,7 +313,7 @@
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(6, 291);
+            this.button1.Location = new System.Drawing.Point(6, 425);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 27);
             this.button1.TabIndex = 14;
@@ -309,7 +324,7 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.Enabled = false;
-            this.checkBox6.Location = new System.Drawing.Point(6, 205);
+            this.checkBox6.Location = new System.Drawing.Point(6, 344);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(180, 21);
             this.checkBox6.TabIndex = 13;
@@ -326,19 +341,20 @@
             "USUM"});
             this.cListEggMoves.Location = new System.Drawing.Point(6, 25);
             this.cListEggMoves.Name = "cListEggMoves";
-            this.cListEggMoves.Size = new System.Drawing.Size(180, 140);
+            this.cListEggMoves.Size = new System.Drawing.Size(180, 259);
             this.cListEggMoves.TabIndex = 12;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnTutor_All);
             this.groupBox3.Controls.Add(this.checkBox7);
             this.groupBox3.Controls.Add(this.checkBox8);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.checkBox9);
             this.groupBox3.Controls.Add(this.cListTutorMoves);
-            this.groupBox3.Location = new System.Drawing.Point(630, 108);
+            this.groupBox3.Location = new System.Drawing.Point(630, 67);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(199, 330);
+            this.groupBox3.Size = new System.Drawing.Size(199, 458);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tutor Moves";
@@ -347,7 +363,7 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.Enabled = false;
-            this.checkBox7.Location = new System.Drawing.Point(6, 260);
+            this.checkBox7.Location = new System.Drawing.Point(6, 398);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(144, 21);
             this.checkBox7.TabIndex = 16;
@@ -358,7 +374,7 @@
             // 
             this.checkBox8.AutoSize = true;
             this.checkBox8.Enabled = false;
-            this.checkBox8.Location = new System.Drawing.Point(6, 232);
+            this.checkBox8.Location = new System.Drawing.Point(6, 371);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(149, 21);
             this.checkBox8.TabIndex = 15;
@@ -368,7 +384,7 @@
             // button2
             // 
             this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(6, 291);
+            this.button2.Location = new System.Drawing.Point(6, 425);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(180, 27);
             this.button2.TabIndex = 14;
@@ -379,7 +395,7 @@
             // 
             this.checkBox9.AutoSize = true;
             this.checkBox9.Enabled = false;
-            this.checkBox9.Location = new System.Drawing.Point(6, 205);
+            this.checkBox9.Location = new System.Drawing.Point(6, 344);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(180, 21);
             this.checkBox9.TabIndex = 13;
@@ -396,7 +412,7 @@
             "USUM"});
             this.cListTutorMoves.Location = new System.Drawing.Point(6, 25);
             this.cListTutorMoves.Name = "cListTutorMoves";
-            this.cListTutorMoves.Size = new System.Drawing.Size(180, 140);
+            this.cListTutorMoves.Size = new System.Drawing.Size(180, 259);
             this.cListTutorMoves.TabIndex = 12;
             // 
             // bwrkExportTM
@@ -406,21 +422,40 @@
             this.bwrkExportTM.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.bwrkExportTM.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bwrkGroupMovesets_tm_RunWorkerCompleted);
             // 
+            // btnEgg_All
+            // 
+            this.btnEgg_All.Location = new System.Drawing.Point(6, 284);
+            this.btnEgg_All.Name = "btnEgg_All";
+            this.btnEgg_All.Size = new System.Drawing.Size(180, 27);
+            this.btnEgg_All.TabIndex = 20;
+            this.btnEgg_All.Text = "Select All";
+            this.btnEgg_All.UseVisualStyleBackColor = true;
+            this.btnEgg_All.Click += new System.EventHandler(this.btnEgg_All_Click);
+            // 
+            // btnTutor_All
+            // 
+            this.btnTutor_All.Location = new System.Drawing.Point(6, 284);
+            this.btnTutor_All.Name = "btnTutor_All";
+            this.btnTutor_All.Size = new System.Drawing.Size(180, 27);
+            this.btnTutor_All.TabIndex = 21;
+            this.btnTutor_All.Text = "Select All";
+            this.btnTutor_All.UseVisualStyleBackColor = true;
+            this.btnTutor_All.Click += new System.EventHandler(this.btnTutor_All_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 450);
+            this.ClientSize = new System.Drawing.Size(843, 537);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gBoxOptionsTM);
-            this.Controls.Add(this.lblBaseMovesets);
             this.Controls.Add(this.cmbGeneration);
             this.Controls.Add(this.lblOptions);
+            this.Controls.Add(this.btnLoadFromSerebii);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.pbar1);
-            this.Controls.Add(this.btnLoadFromSerebii);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "PoryMoves";
@@ -445,7 +480,6 @@
         private System.Windows.Forms.Label lblLoading;
         private System.Windows.Forms.Label lblOptions;
         private System.Windows.Forms.ComboBox cmbGeneration;
-        private System.Windows.Forms.Label lblBaseMovesets;
         private System.Windows.Forms.Button btnWriteLvlLearnsets;
         private System.ComponentModel.BackgroundWorker bwrkExportLvl;
         private System.Windows.Forms.CheckedListBox cListTMMoves;
@@ -471,6 +505,10 @@
         private System.Windows.Forms.CheckedListBox cListTutorMoves;
         private System.ComponentModel.BackgroundWorker bwrkExportTM;
         private System.Windows.Forms.CheckBox chkTM_Extended;
+        private System.Windows.Forms.Button btnLvl_All;
+        private System.Windows.Forms.Button btnTM_All;
+        private System.Windows.Forms.Button btnEgg_All;
+        private System.Windows.Forms.Button btnTutor_All;
     }
 }
 
