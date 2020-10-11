@@ -3,6 +3,7 @@
     "NatDexNum": 1,
     "SpeciesName": "Bulbasaur",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bulbasaur",
     "VarName": "Bulbasaur",
     "DefName": "BULBASAUR"
@@ -11,6 +12,7 @@
     "NatDexNum": 2,
     "SpeciesName": "Ivysaur",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ivysaur",
     "VarName": "Ivysaur",
     "DefName": "IVYSAUR"
@@ -19,6 +21,7 @@
     "NatDexNum": 3,
     "SpeciesName": "Venusaur",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Venusaur",
     "VarName": "Venusaur",
     "DefName": "VENUSAUR"
@@ -27,6 +30,7 @@
     "NatDexNum": 4,
     "SpeciesName": "Charmander",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Charmander",
     "VarName": "Charmander",
     "DefName": "CHARMANDER"
@@ -35,6 +39,7 @@
     "NatDexNum": 5,
     "SpeciesName": "Charmeleon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Charmeleon",
     "VarName": "Charmeleon",
     "DefName": "CHARMELEON"
@@ -43,6 +48,7 @@
     "NatDexNum": 6,
     "SpeciesName": "Charizard",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Charizard",
     "VarName": "Charizard",
     "DefName": "CHARIZARD"
@@ -51,6 +57,7 @@
     "NatDexNum": 7,
     "SpeciesName": "Squirtle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Squirtle",
     "VarName": "Squirtle",
     "DefName": "SQUIRTLE"
@@ -59,6 +66,7 @@
     "NatDexNum": 8,
     "SpeciesName": "Wartortle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Wartortle",
     "VarName": "Wartortle",
     "DefName": "WARTORTLE"
@@ -67,6 +75,7 @@
     "NatDexNum": 9,
     "SpeciesName": "Blastoise",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Blastoise",
     "VarName": "Blastoise",
     "DefName": "BLASTOISE"
@@ -75,6 +84,7 @@
     "NatDexNum": 10,
     "SpeciesName": "Caterpie",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Caterpie",
     "VarName": "Caterpie",
     "DefName": "CATERPIE"
@@ -83,6 +93,7 @@
     "NatDexNum": 11,
     "SpeciesName": "Metapod",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Metapod",
     "VarName": "Metapod",
     "DefName": "METAPOD"
@@ -91,6 +102,7 @@
     "NatDexNum": 12,
     "SpeciesName": "Butterfree",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Butterfree",
     "VarName": "Butterfree",
     "DefName": "BUTTERFREE"
@@ -99,6 +111,7 @@
     "NatDexNum": 13,
     "SpeciesName": "Weedle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Weedle",
     "VarName": "Weedle",
     "DefName": "WEEDLE"
@@ -107,6 +120,7 @@
     "NatDexNum": 14,
     "SpeciesName": "Kakuna",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kakuna",
     "VarName": "Kakuna",
     "DefName": "KAKUNA"
@@ -115,6 +129,7 @@
     "NatDexNum": 15,
     "SpeciesName": "Beedrill",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Beedrill",
     "VarName": "Beedrill",
     "DefName": "BEEDRILL"
@@ -123,6 +138,7 @@
     "NatDexNum": 16,
     "SpeciesName": "Pidgey",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pidgey",
     "VarName": "Pidgey",
     "DefName": "PIDGEY"
@@ -131,6 +147,7 @@
     "NatDexNum": 17,
     "SpeciesName": "Pidgeotto",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Pidgeotto",
     "VarName": "Pidgeotto",
     "DefName": "PIDGEOTTO"
@@ -139,6 +156,7 @@
     "NatDexNum": 18,
     "SpeciesName": "Pidgeot",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Pidgeot",
     "VarName": "Pidgeot",
     "DefName": "PIDGEOT"
@@ -147,6 +165,7 @@
     "NatDexNum": 19,
     "SpeciesName": "Rattata",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Rattata",
     "VarName": "Rattata",
     "DefName": "RATTATA"
@@ -155,6 +174,7 @@
     "NatDexNum": 20,
     "SpeciesName": "Raticate",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Raticate",
     "VarName": "Raticate",
     "DefName": "RATICATE"
@@ -163,6 +183,7 @@
     "NatDexNum": 21,
     "SpeciesName": "Spearow",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Spearow",
     "VarName": "Spearow",
     "DefName": "SPEAROW"
@@ -171,6 +192,7 @@
     "NatDexNum": 22,
     "SpeciesName": "Fearow",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Fearow",
     "VarName": "Fearow",
     "DefName": "FEAROW"
@@ -179,6 +201,7 @@
     "NatDexNum": 23,
     "SpeciesName": "Ekans",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Ekans",
     "VarName": "Ekans",
     "DefName": "EKANS"
@@ -187,6 +210,7 @@
     "NatDexNum": 24,
     "SpeciesName": "Arbok",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Arbok",
     "VarName": "Arbok",
     "DefName": "ARBOK"
@@ -195,6 +219,7 @@
     "NatDexNum": 25,
     "SpeciesName": "Pikachu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Pikachu",
     "VarName": "Pikachu",
     "DefName": "PIKACHU"
@@ -203,6 +228,7 @@
     "NatDexNum": 26,
     "SpeciesName": "Raichu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Raichu",
     "VarName": "Raichu",
     "DefName": "RAICHU"
@@ -211,6 +237,7 @@
     "NatDexNum": 27,
     "SpeciesName": "Sandshrew",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sandshrew",
     "VarName": "Sandshrew",
     "DefName": "SANDSHREW"
@@ -219,6 +246,7 @@
     "NatDexNum": 28,
     "SpeciesName": "Sandslash",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sandslash",
     "VarName": "Sandslash",
     "DefName": "SANDSLASH"
@@ -227,6 +255,7 @@
     "NatDexNum": 29,
     "SpeciesName": "Nidoran♀",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Nidoran♀",
     "VarName": "NidoranF",
     "DefName": "NIDORAN_F"
@@ -235,6 +264,7 @@
     "NatDexNum": 30,
     "SpeciesName": "Nidorina",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Nidorina",
     "VarName": "Nidorina",
     "DefName": "NIDORINA"
@@ -243,6 +273,7 @@
     "NatDexNum": 31,
     "SpeciesName": "Nidoqueen",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Nidoqueen",
     "VarName": "Nidoqueen",
     "DefName": "NIDOQUEEN"
@@ -251,6 +282,7 @@
     "NatDexNum": 32,
     "SpeciesName": "Nidoran♂",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Nidoran♂",
     "VarName": "NidoranM",
     "DefName": "NIDORAN_M"
@@ -259,6 +291,7 @@
     "NatDexNum": 33,
     "SpeciesName": "Nidorino",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Nidorino",
     "VarName": "Nidorino",
     "DefName": "NIDORINO"
@@ -267,6 +300,7 @@
     "NatDexNum": 34,
     "SpeciesName": "Nidoking",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Nidoking",
     "VarName": "Nidoking",
     "DefName": "NIDOKING"
@@ -275,6 +309,7 @@
     "NatDexNum": 35,
     "SpeciesName": "Clefairy",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Clefairy",
     "VarName": "Clefairy",
     "DefName": "CLEFAIRY"
@@ -283,6 +318,7 @@
     "NatDexNum": 36,
     "SpeciesName": "Clefable",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Clefable",
     "VarName": "Clefable",
     "DefName": "CLEFABLE"
@@ -291,6 +327,7 @@
     "NatDexNum": 37,
     "SpeciesName": "Vulpix",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Vulpix",
     "VarName": "Vulpix",
     "DefName": "VULPIX"
@@ -299,6 +336,7 @@
     "NatDexNum": 38,
     "SpeciesName": "Ninetales",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ninetales",
     "VarName": "Ninetales",
     "DefName": "NINETALES"
@@ -307,6 +345,7 @@
     "NatDexNum": 39,
     "SpeciesName": "Jigglypuff",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Jigglypuff",
     "VarName": "Jigglypuff",
     "DefName": "JIGGLYPUFF"
@@ -315,6 +354,7 @@
     "NatDexNum": 40,
     "SpeciesName": "Wigglytuff",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Wigglytuff",
     "VarName": "Wigglytuff",
     "DefName": "WIGGLYTUFF"
@@ -323,6 +363,7 @@
     "NatDexNum": 41,
     "SpeciesName": "Zubat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Zubat",
     "VarName": "Zubat",
     "DefName": "ZUBAT"
@@ -331,6 +372,7 @@
     "NatDexNum": 42,
     "SpeciesName": "Golbat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Golbat",
     "VarName": "Golbat",
     "DefName": "GOLBAT"
@@ -339,6 +381,7 @@
     "NatDexNum": 43,
     "SpeciesName": "Oddish",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Oddish",
     "VarName": "Oddish",
     "DefName": "ODDISH"
@@ -347,6 +390,7 @@
     "NatDexNum": 44,
     "SpeciesName": "Gloom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gloom",
     "VarName": "Gloom",
     "DefName": "GLOOM"
@@ -355,6 +399,7 @@
     "NatDexNum": 45,
     "SpeciesName": "Vileplume",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Vileplume",
     "VarName": "Vileplume",
     "DefName": "VILEPLUME"
@@ -363,6 +408,7 @@
     "NatDexNum": 46,
     "SpeciesName": "Paras",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Paras",
     "VarName": "Paras",
     "DefName": "PARAS"
@@ -371,6 +417,7 @@
     "NatDexNum": 47,
     "SpeciesName": "Parasect",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Parasect",
     "VarName": "Parasect",
     "DefName": "PARASECT"
@@ -379,6 +426,7 @@
     "NatDexNum": 48,
     "SpeciesName": "Venonat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Venonat",
     "VarName": "Venonat",
     "DefName": "VENONAT"
@@ -387,6 +435,7 @@
     "NatDexNum": 49,
     "SpeciesName": "Venomoth",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Venomoth",
     "VarName": "Venomoth",
     "DefName": "VENOMOTH"
@@ -395,6 +444,7 @@
     "NatDexNum": 50,
     "SpeciesName": "Diglett",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Diglett",
     "VarName": "Diglett",
     "DefName": "DIGLETT"
@@ -403,6 +453,7 @@
     "NatDexNum": 51,
     "SpeciesName": "Dugtrio",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dugtrio",
     "VarName": "Dugtrio",
     "DefName": "DUGTRIO"
@@ -411,6 +462,7 @@
     "NatDexNum": 52,
     "SpeciesName": "Meowth",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Meowth",
     "VarName": "Meowth",
     "DefName": "MEOWTH"
@@ -419,6 +471,7 @@
     "NatDexNum": 53,
     "SpeciesName": "Persian",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Persian",
     "VarName": "Persian",
     "DefName": "PERSIAN"
@@ -427,6 +480,7 @@
     "NatDexNum": 54,
     "SpeciesName": "Psyduck",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Psyduck",
     "VarName": "Psyduck",
     "DefName": "PSYDUCK"
@@ -435,6 +489,7 @@
     "NatDexNum": 55,
     "SpeciesName": "Golduck",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Golduck",
     "VarName": "Golduck",
     "DefName": "GOLDUCK"
@@ -443,6 +498,7 @@
     "NatDexNum": 56,
     "SpeciesName": "Mankey",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mankey",
     "VarName": "Mankey",
     "DefName": "MANKEY"
@@ -451,6 +507,7 @@
     "NatDexNum": 57,
     "SpeciesName": "Primeape",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Primeape",
     "VarName": "Primeape",
     "DefName": "PRIMEAPE"
@@ -459,6 +516,7 @@
     "NatDexNum": 58,
     "SpeciesName": "Growlithe",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Growlithe",
     "VarName": "Growlithe",
     "DefName": "GROWLITHE"
@@ -467,6 +525,7 @@
     "NatDexNum": 59,
     "SpeciesName": "Arcanine",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Arcanine",
     "VarName": "Arcanine",
     "DefName": "ARCANINE"
@@ -475,6 +534,7 @@
     "NatDexNum": 60,
     "SpeciesName": "Poliwag",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Poliwag",
     "VarName": "Poliwag",
     "DefName": "POLIWAG"
@@ -483,6 +543,7 @@
     "NatDexNum": 61,
     "SpeciesName": "Poliwhirl",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Poliwhirl",
     "VarName": "Poliwhirl",
     "DefName": "POLIWHIRL"
@@ -491,6 +552,7 @@
     "NatDexNum": 62,
     "SpeciesName": "Poliwrath",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Poliwrath",
     "VarName": "Poliwrath",
     "DefName": "POLIWRATH"
@@ -499,6 +561,7 @@
     "NatDexNum": 63,
     "SpeciesName": "Abra",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Abra",
     "VarName": "Abra",
     "DefName": "ABRA"
@@ -507,6 +570,7 @@
     "NatDexNum": 64,
     "SpeciesName": "Kadabra",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kadabra",
     "VarName": "Kadabra",
     "DefName": "KADABRA"
@@ -515,6 +579,7 @@
     "NatDexNum": 65,
     "SpeciesName": "Alakazam",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Alakazam",
     "VarName": "Alakazam",
     "DefName": "ALAKAZAM"
@@ -523,6 +588,7 @@
     "NatDexNum": 66,
     "SpeciesName": "Machop",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Machop",
     "VarName": "Machop",
     "DefName": "MACHOP"
@@ -531,6 +597,7 @@
     "NatDexNum": 67,
     "SpeciesName": "Machoke",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Machoke",
     "VarName": "Machoke",
     "DefName": "MACHOKE"
@@ -539,6 +606,7 @@
     "NatDexNum": 68,
     "SpeciesName": "Machamp",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Machamp",
     "VarName": "Machamp",
     "DefName": "MACHAMP"
@@ -547,6 +615,7 @@
     "NatDexNum": 69,
     "SpeciesName": "Bellsprout",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bellsprout",
     "VarName": "Bellsprout",
     "DefName": "BELLSPROUT"
@@ -555,6 +624,7 @@
     "NatDexNum": 70,
     "SpeciesName": "Weepinbell",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Weepinbell",
     "VarName": "Weepinbell",
     "DefName": "WEEPINBELL"
@@ -563,6 +633,7 @@
     "NatDexNum": 71,
     "SpeciesName": "Victreebel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Victreebel",
     "VarName": "Victreebel",
     "DefName": "VICTREEBEL"
@@ -571,6 +642,7 @@
     "NatDexNum": 72,
     "SpeciesName": "Tentacool",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Tentacool",
     "VarName": "Tentacool",
     "DefName": "TENTACOOL"
@@ -579,6 +651,7 @@
     "NatDexNum": 73,
     "SpeciesName": "Tentacruel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tentacruel",
     "VarName": "Tentacruel",
     "DefName": "TENTACRUEL"
@@ -587,6 +660,7 @@
     "NatDexNum": 74,
     "SpeciesName": "Geodude",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Geodude",
     "VarName": "Geodude",
     "DefName": "GEODUDE"
@@ -595,6 +669,7 @@
     "NatDexNum": 75,
     "SpeciesName": "Graveler",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Graveler",
     "VarName": "Graveler",
     "DefName": "GRAVELER"
@@ -603,6 +678,7 @@
     "NatDexNum": 76,
     "SpeciesName": "Golem",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Golem",
     "VarName": "Golem",
     "DefName": "GOLEM"
@@ -611,6 +687,7 @@
     "NatDexNum": 77,
     "SpeciesName": "Ponyta",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Ponyta",
     "VarName": "Ponyta",
     "DefName": "PONYTA"
@@ -619,6 +696,7 @@
     "NatDexNum": 78,
     "SpeciesName": "Rapidash",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Rapidash",
     "VarName": "Rapidash",
     "DefName": "RAPIDASH"
@@ -627,6 +705,7 @@
     "NatDexNum": 79,
     "SpeciesName": "Slowpoke",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Slowpoke",
     "VarName": "Slowpoke",
     "DefName": "SLOWPOKE"
@@ -635,6 +714,7 @@
     "NatDexNum": 80,
     "SpeciesName": "Slowbro",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Slowbro",
     "VarName": "Slowbro",
     "DefName": "SLOWBRO"
@@ -643,6 +723,7 @@
     "NatDexNum": 81,
     "SpeciesName": "Magnemite",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Magnemite",
     "VarName": "Magnemite",
     "DefName": "MAGNEMITE"
@@ -651,6 +732,7 @@
     "NatDexNum": 82,
     "SpeciesName": "Magneton",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Magneton",
     "VarName": "Magneton",
     "DefName": "MAGNETON"
@@ -659,6 +741,7 @@
     "NatDexNum": 83,
     "SpeciesName": "Farfetch'd",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Farfetch'd",
     "VarName": "Farfetchd",
     "DefName": "FARFETCHD"
@@ -667,6 +750,7 @@
     "NatDexNum": 84,
     "SpeciesName": "Doduo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Doduo",
     "VarName": "Doduo",
     "DefName": "DODUO"
@@ -675,6 +759,7 @@
     "NatDexNum": 85,
     "SpeciesName": "Dodrio",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dodrio",
     "VarName": "Dodrio",
     "DefName": "DODRIO"
@@ -683,6 +768,7 @@
     "NatDexNum": 86,
     "SpeciesName": "Seel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Seel",
     "VarName": "Seel",
     "DefName": "SEEL"
@@ -691,6 +777,7 @@
     "NatDexNum": 87,
     "SpeciesName": "Dewgong",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dewgong",
     "VarName": "Dewgong",
     "DefName": "DEWGONG"
@@ -699,6 +786,7 @@
     "NatDexNum": 88,
     "SpeciesName": "Grimer",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Grimer",
     "VarName": "Grimer",
     "DefName": "GRIMER"
@@ -707,6 +795,7 @@
     "NatDexNum": 89,
     "SpeciesName": "Muk",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Muk",
     "VarName": "Muk",
     "DefName": "MUK"
@@ -715,6 +804,7 @@
     "NatDexNum": 90,
     "SpeciesName": "Shellder",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Shellder",
     "VarName": "Shellder",
     "DefName": "SHELLDER"
@@ -723,6 +813,7 @@
     "NatDexNum": 91,
     "SpeciesName": "Cloyster",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cloyster",
     "VarName": "Cloyster",
     "DefName": "CLOYSTER"
@@ -731,6 +822,7 @@
     "NatDexNum": 92,
     "SpeciesName": "Gastly",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Gastly",
     "VarName": "Gastly",
     "DefName": "GASTLY"
@@ -739,6 +831,7 @@
     "NatDexNum": 93,
     "SpeciesName": "Haunter",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Haunter",
     "VarName": "Haunter",
     "DefName": "HAUNTER"
@@ -747,6 +840,7 @@
     "NatDexNum": 94,
     "SpeciesName": "Gengar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gengar",
     "VarName": "Gengar",
     "DefName": "GENGAR"
@@ -755,6 +849,7 @@
     "NatDexNum": 95,
     "SpeciesName": "Onix",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Onix",
     "VarName": "Onix",
     "DefName": "ONIX"
@@ -763,6 +858,7 @@
     "NatDexNum": 96,
     "SpeciesName": "Drowzee",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Drowzee",
     "VarName": "Drowzee",
     "DefName": "DROWZEE"
@@ -771,6 +867,7 @@
     "NatDexNum": 97,
     "SpeciesName": "Hypno",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hypno",
     "VarName": "Hypno",
     "DefName": "HYPNO"
@@ -779,6 +876,7 @@
     "NatDexNum": 98,
     "SpeciesName": "Krabby",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Krabby",
     "VarName": "Krabby",
     "DefName": "KRABBY"
@@ -787,6 +885,7 @@
     "NatDexNum": 99,
     "SpeciesName": "Kingler",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kingler",
     "VarName": "Kingler",
     "DefName": "KINGLER"
@@ -795,6 +894,7 @@
     "NatDexNum": 100,
     "SpeciesName": "Voltorb",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Voltorb",
     "VarName": "Voltorb",
     "DefName": "VOLTORB"
@@ -803,6 +903,7 @@
     "NatDexNum": 101,
     "SpeciesName": "Electrode",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Electrode",
     "VarName": "Electrode",
     "DefName": "ELECTRODE"
@@ -811,6 +912,7 @@
     "NatDexNum": 102,
     "SpeciesName": "Exeggcute",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Exeggcute",
     "VarName": "Exeggcute",
     "DefName": "EXEGGCUTE"
@@ -819,6 +921,7 @@
     "NatDexNum": 103,
     "SpeciesName": "Exeggutor",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Exeggutor",
     "VarName": "Exeggutor",
     "DefName": "EXEGGUTOR"
@@ -827,6 +930,7 @@
     "NatDexNum": 104,
     "SpeciesName": "Cubone",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cubone",
     "VarName": "Cubone",
     "DefName": "CUBONE"
@@ -835,6 +939,7 @@
     "NatDexNum": 105,
     "SpeciesName": "Marowak",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Marowak",
     "VarName": "Marowak",
     "DefName": "MAROWAK"
@@ -843,6 +948,7 @@
     "NatDexNum": 106,
     "SpeciesName": "Hitmonlee",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hitmonlee",
     "VarName": "Hitmonlee",
     "DefName": "HITMONLEE"
@@ -851,6 +957,7 @@
     "NatDexNum": 107,
     "SpeciesName": "Hitmonchan",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hitmonchan",
     "VarName": "Hitmonchan",
     "DefName": "HITMONCHAN"
@@ -859,6 +966,7 @@
     "NatDexNum": 108,
     "SpeciesName": "Lickitung",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Lickitung",
     "VarName": "Lickitung",
     "DefName": "LICKITUNG"
@@ -867,6 +975,7 @@
     "NatDexNum": 109,
     "SpeciesName": "Koffing",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Koffing",
     "VarName": "Koffing",
     "DefName": "KOFFING"
@@ -875,6 +984,7 @@
     "NatDexNum": 110,
     "SpeciesName": "Weezing",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Weezing",
     "VarName": "Weezing",
     "DefName": "WEEZING"
@@ -883,6 +993,7 @@
     "NatDexNum": 111,
     "SpeciesName": "Rhyhorn",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Rhyhorn",
     "VarName": "Rhyhorn",
     "DefName": "RHYHORN"
@@ -891,6 +1002,7 @@
     "NatDexNum": 112,
     "SpeciesName": "Rhydon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Rhydon",
     "VarName": "Rhydon",
     "DefName": "RHYDON"
@@ -899,6 +1011,7 @@
     "NatDexNum": 113,
     "SpeciesName": "Chansey",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Chansey",
     "VarName": "Chansey",
     "DefName": "CHANSEY"
@@ -907,6 +1020,7 @@
     "NatDexNum": 114,
     "SpeciesName": "Tangela",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Tangela",
     "VarName": "Tangela",
     "DefName": "TANGELA"
@@ -915,6 +1029,7 @@
     "NatDexNum": 115,
     "SpeciesName": "Kangaskhan",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Kangaskhan",
     "VarName": "Kangaskhan",
     "DefName": "KANGASKHAN"
@@ -923,6 +1038,7 @@
     "NatDexNum": 116,
     "SpeciesName": "Horsea",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Horsea",
     "VarName": "Horsea",
     "DefName": "HORSEA"
@@ -931,6 +1047,7 @@
     "NatDexNum": 117,
     "SpeciesName": "Seadra",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Seadra",
     "VarName": "Seadra",
     "DefName": "SEADRA"
@@ -939,6 +1056,7 @@
     "NatDexNum": 118,
     "SpeciesName": "Goldeen",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Goldeen",
     "VarName": "Goldeen",
     "DefName": "GOLDEEN"
@@ -947,6 +1065,7 @@
     "NatDexNum": 119,
     "SpeciesName": "Seaking",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Seaking",
     "VarName": "Seaking",
     "DefName": "SEAKING"
@@ -955,6 +1074,7 @@
     "NatDexNum": 120,
     "SpeciesName": "Staryu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Staryu",
     "VarName": "Staryu",
     "DefName": "STARYU"
@@ -963,6 +1083,7 @@
     "NatDexNum": 121,
     "SpeciesName": "Starmie",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Starmie",
     "VarName": "Starmie",
     "DefName": "STARMIE"
@@ -971,6 +1092,7 @@
     "NatDexNum": 122,
     "SpeciesName": "Mr. Mime",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mr. Mime",
     "VarName": "MrMime",
     "DefName": "MR_MIME"
@@ -979,6 +1101,7 @@
     "NatDexNum": 123,
     "SpeciesName": "Scyther",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Scyther",
     "VarName": "Scyther",
     "DefName": "SCYTHER"
@@ -987,6 +1110,7 @@
     "NatDexNum": 124,
     "SpeciesName": "Jynx",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Jynx",
     "VarName": "Jynx",
     "DefName": "JYNX"
@@ -995,6 +1119,7 @@
     "NatDexNum": 125,
     "SpeciesName": "Electabuzz",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Electabuzz",
     "VarName": "Electabuzz",
     "DefName": "ELECTABUZZ"
@@ -1003,6 +1128,7 @@
     "NatDexNum": 126,
     "SpeciesName": "Magmar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Magmar",
     "VarName": "Magmar",
     "DefName": "MAGMAR"
@@ -1011,6 +1137,7 @@
     "NatDexNum": 127,
     "SpeciesName": "Pinsir",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pinsir",
     "VarName": "Pinsir",
     "DefName": "PINSIR"
@@ -1019,6 +1146,7 @@
     "NatDexNum": 128,
     "SpeciesName": "Tauros",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Tauros",
     "VarName": "Tauros",
     "DefName": "TAUROS"
@@ -1027,6 +1155,7 @@
     "NatDexNum": 129,
     "SpeciesName": "Magikarp",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Magikarp",
     "VarName": "Magikarp",
     "DefName": "MAGIKARP"
@@ -1035,6 +1164,7 @@
     "NatDexNum": 130,
     "SpeciesName": "Gyarados",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gyarados",
     "VarName": "Gyarados",
     "DefName": "GYARADOS"
@@ -1043,6 +1173,7 @@
     "NatDexNum": 131,
     "SpeciesName": "Lapras",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Lapras",
     "VarName": "Lapras",
     "DefName": "LAPRAS"
@@ -1051,6 +1182,7 @@
     "NatDexNum": 132,
     "SpeciesName": "Ditto",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ditto",
     "VarName": "Ditto",
     "DefName": "DITTO"
@@ -1059,6 +1191,7 @@
     "NatDexNum": 133,
     "SpeciesName": "Eevee",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Eevee",
     "VarName": "Eevee",
     "DefName": "EEVEE"
@@ -1067,6 +1200,7 @@
     "NatDexNum": 134,
     "SpeciesName": "Vaporeon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Vaporeon",
     "VarName": "Vaporeon",
     "DefName": "VAPOREON"
@@ -1075,6 +1209,7 @@
     "NatDexNum": 135,
     "SpeciesName": "Jolteon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Jolteon",
     "VarName": "Jolteon",
     "DefName": "JOLTEON"
@@ -1083,6 +1218,7 @@
     "NatDexNum": 136,
     "SpeciesName": "Flareon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Flareon",
     "VarName": "Flareon",
     "DefName": "FLAREON"
@@ -1091,6 +1227,7 @@
     "NatDexNum": 137,
     "SpeciesName": "Porygon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Porygon",
     "VarName": "Porygon",
     "DefName": "PORYGON"
@@ -1099,6 +1236,7 @@
     "NatDexNum": 138,
     "SpeciesName": "Omanyte",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Omanyte",
     "VarName": "Omanyte",
     "DefName": "OMANYTE"
@@ -1107,6 +1245,7 @@
     "NatDexNum": 139,
     "SpeciesName": "Omastar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Omastar",
     "VarName": "Omastar",
     "DefName": "OMASTAR"
@@ -1115,6 +1254,7 @@
     "NatDexNum": 140,
     "SpeciesName": "Kabuto",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Kabuto",
     "VarName": "Kabuto",
     "DefName": "KABUTO"
@@ -1123,6 +1263,7 @@
     "NatDexNum": 141,
     "SpeciesName": "Kabutops",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kabutops",
     "VarName": "Kabutops",
     "DefName": "KABUTOPS"
@@ -1131,6 +1272,7 @@
     "NatDexNum": 142,
     "SpeciesName": "Aerodactyl",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Aerodactyl",
     "VarName": "Aerodactyl",
     "DefName": "AERODACTYL"
@@ -1139,6 +1281,7 @@
     "NatDexNum": 143,
     "SpeciesName": "Snorlax",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Snorlax",
     "VarName": "Snorlax",
     "DefName": "SNORLAX"
@@ -1147,6 +1290,7 @@
     "NatDexNum": 144,
     "SpeciesName": "Articuno",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Articuno",
     "VarName": "Articuno",
     "DefName": "ARTICUNO"
@@ -1155,6 +1299,7 @@
     "NatDexNum": 145,
     "SpeciesName": "Zapdos",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Zapdos",
     "VarName": "Zapdos",
     "DefName": "ZAPDOS"
@@ -1163,6 +1308,7 @@
     "NatDexNum": 146,
     "SpeciesName": "Moltres",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Moltres",
     "VarName": "Moltres",
     "DefName": "MOLTRES"
@@ -1171,6 +1317,7 @@
     "NatDexNum": 147,
     "SpeciesName": "Dratini",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Dratini",
     "VarName": "Dratini",
     "DefName": "DRATINI"
@@ -1179,6 +1326,7 @@
     "NatDexNum": 148,
     "SpeciesName": "Dragonair",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dragonair",
     "VarName": "Dragonair",
     "DefName": "DRAGONAIR"
@@ -1187,6 +1335,7 @@
     "NatDexNum": 149,
     "SpeciesName": "Dragonite",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dragonite",
     "VarName": "Dragonite",
     "DefName": "DRAGONITE"
@@ -1195,6 +1344,7 @@
     "NatDexNum": 150,
     "SpeciesName": "Mewtwo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mewtwo",
     "VarName": "Mewtwo",
     "DefName": "MEWTWO"
@@ -1203,6 +1353,7 @@
     "NatDexNum": 151,
     "SpeciesName": "Mew",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mew",
     "VarName": "Mew",
     "DefName": "MEW"
@@ -1211,6 +1362,7 @@
     "NatDexNum": 152,
     "SpeciesName": "Chikorita",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Chikorita",
     "VarName": "Chikorita",
     "DefName": "CHIKORITA"
@@ -1219,6 +1371,7 @@
     "NatDexNum": 153,
     "SpeciesName": "Bayleef",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Bayleef",
     "VarName": "Bayleef",
     "DefName": "BAYLEEF"
@@ -1227,6 +1380,7 @@
     "NatDexNum": 154,
     "SpeciesName": "Meganium",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Meganium",
     "VarName": "Meganium",
     "DefName": "MEGANIUM"
@@ -1235,6 +1389,7 @@
     "NatDexNum": 155,
     "SpeciesName": "Cyndaquil",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cyndaquil",
     "VarName": "Cyndaquil",
     "DefName": "CYNDAQUIL"
@@ -1243,6 +1398,7 @@
     "NatDexNum": 156,
     "SpeciesName": "Quilava",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Quilava",
     "VarName": "Quilava",
     "DefName": "QUILAVA"
@@ -1251,6 +1407,7 @@
     "NatDexNum": 157,
     "SpeciesName": "Typhlosion",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Typhlosion",
     "VarName": "Typhlosion",
     "DefName": "TYPHLOSION"
@@ -1259,6 +1416,7 @@
     "NatDexNum": 158,
     "SpeciesName": "Totodile",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Totodile",
     "VarName": "Totodile",
     "DefName": "TOTODILE"
@@ -1267,6 +1425,7 @@
     "NatDexNum": 159,
     "SpeciesName": "Croconaw",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Croconaw",
     "VarName": "Croconaw",
     "DefName": "CROCONAW"
@@ -1275,6 +1434,7 @@
     "NatDexNum": 160,
     "SpeciesName": "Feraligatr",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Feraligatr",
     "VarName": "Feraligatr",
     "DefName": "FERALIGATR"
@@ -1283,6 +1443,7 @@
     "NatDexNum": 161,
     "SpeciesName": "Sentret",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sentret",
     "VarName": "Sentret",
     "DefName": "SENTRET"
@@ -1291,6 +1452,7 @@
     "NatDexNum": 162,
     "SpeciesName": "Furret",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Furret",
     "VarName": "Furret",
     "DefName": "FURRET"
@@ -1299,6 +1461,7 @@
     "NatDexNum": 163,
     "SpeciesName": "Hoothoot",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Hoothoot",
     "VarName": "Hoothoot",
     "DefName": "HOOTHOOT"
@@ -1307,6 +1470,7 @@
     "NatDexNum": 164,
     "SpeciesName": "Noctowl",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Noctowl",
     "VarName": "Noctowl",
     "DefName": "NOCTOWL"
@@ -1315,6 +1479,7 @@
     "NatDexNum": 165,
     "SpeciesName": "Ledyba",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Ledyba",
     "VarName": "Ledyba",
     "DefName": "LEDYBA"
@@ -1323,6 +1488,7 @@
     "NatDexNum": 166,
     "SpeciesName": "Ledian",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ledian",
     "VarName": "Ledian",
     "DefName": "LEDIAN"
@@ -1331,6 +1497,7 @@
     "NatDexNum": 167,
     "SpeciesName": "Spinarak",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Spinarak",
     "VarName": "Spinarak",
     "DefName": "SPINARAK"
@@ -1339,6 +1506,7 @@
     "NatDexNum": 168,
     "SpeciesName": "Ariados",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ariados",
     "VarName": "Ariados",
     "DefName": "ARIADOS"
@@ -1347,6 +1515,7 @@
     "NatDexNum": 169,
     "SpeciesName": "Crobat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Crobat",
     "VarName": "Crobat",
     "DefName": "CROBAT"
@@ -1355,6 +1524,7 @@
     "NatDexNum": 170,
     "SpeciesName": "Chinchou",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Chinchou",
     "VarName": "Chinchou",
     "DefName": "CHINCHOU"
@@ -1363,6 +1533,7 @@
     "NatDexNum": 171,
     "SpeciesName": "Lanturn",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lanturn",
     "VarName": "Lanturn",
     "DefName": "LANTURN"
@@ -1371,6 +1542,7 @@
     "NatDexNum": 172,
     "SpeciesName": "Pichu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pichu",
     "VarName": "Pichu",
     "DefName": "PICHU"
@@ -1379,6 +1551,7 @@
     "NatDexNum": 173,
     "SpeciesName": "Cleffa",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cleffa",
     "VarName": "Cleffa",
     "DefName": "CLEFFA"
@@ -1387,6 +1560,7 @@
     "NatDexNum": 174,
     "SpeciesName": "Igglybuff",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Igglybuff",
     "VarName": "Igglybuff",
     "DefName": "IGGLYBUFF"
@@ -1395,6 +1569,7 @@
     "NatDexNum": 175,
     "SpeciesName": "Togepi",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Togepi",
     "VarName": "Togepi",
     "DefName": "TOGEPI"
@@ -1403,6 +1578,7 @@
     "NatDexNum": 176,
     "SpeciesName": "Togetic",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Togetic",
     "VarName": "Togetic",
     "DefName": "TOGETIC"
@@ -1411,6 +1587,7 @@
     "NatDexNum": 177,
     "SpeciesName": "Natu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Natu",
     "VarName": "Natu",
     "DefName": "NATU"
@@ -1419,6 +1596,7 @@
     "NatDexNum": 178,
     "SpeciesName": "Xatu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Xatu",
     "VarName": "Xatu",
     "DefName": "XATU"
@@ -1427,6 +1605,7 @@
     "NatDexNum": 179,
     "SpeciesName": "Mareep",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mareep",
     "VarName": "Mareep",
     "DefName": "MAREEP"
@@ -1435,6 +1614,7 @@
     "NatDexNum": 180,
     "SpeciesName": "Flaaffy",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Flaaffy",
     "VarName": "Flaaffy",
     "DefName": "FLAAFFY"
@@ -1443,6 +1623,7 @@
     "NatDexNum": 181,
     "SpeciesName": "Ampharos",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ampharos",
     "VarName": "Ampharos",
     "DefName": "AMPHAROS"
@@ -1451,6 +1632,7 @@
     "NatDexNum": 182,
     "SpeciesName": "Bellossom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Bellossom",
     "VarName": "Bellossom",
     "DefName": "BELLOSSOM"
@@ -1459,6 +1641,7 @@
     "NatDexNum": 183,
     "SpeciesName": "Marill",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Marill",
     "VarName": "Marill",
     "DefName": "MARILL"
@@ -1467,6 +1650,7 @@
     "NatDexNum": 184,
     "SpeciesName": "Azumarill",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Azumarill",
     "VarName": "Azumarill",
     "DefName": "AZUMARILL"
@@ -1475,6 +1659,7 @@
     "NatDexNum": 185,
     "SpeciesName": "Sudowoodo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sudowoodo",
     "VarName": "Sudowoodo",
     "DefName": "SUDOWOODO"
@@ -1483,6 +1668,7 @@
     "NatDexNum": 186,
     "SpeciesName": "Politoed",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Politoed",
     "VarName": "Politoed",
     "DefName": "POLITOED"
@@ -1491,6 +1677,7 @@
     "NatDexNum": 187,
     "SpeciesName": "Hoppip",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Hoppip",
     "VarName": "Hoppip",
     "DefName": "HOPPIP"
@@ -1499,6 +1686,7 @@
     "NatDexNum": 188,
     "SpeciesName": "Skiploom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Skiploom",
     "VarName": "Skiploom",
     "DefName": "SKIPLOOM"
@@ -1507,6 +1695,7 @@
     "NatDexNum": 189,
     "SpeciesName": "Jumpluff",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Jumpluff",
     "VarName": "Jumpluff",
     "DefName": "JUMPLUFF"
@@ -1515,6 +1704,7 @@
     "NatDexNum": 190,
     "SpeciesName": "Aipom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Aipom",
     "VarName": "Aipom",
     "DefName": "AIPOM"
@@ -1523,6 +1713,7 @@
     "NatDexNum": 191,
     "SpeciesName": "Sunkern",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sunkern",
     "VarName": "Sunkern",
     "DefName": "SUNKERN"
@@ -1531,6 +1722,7 @@
     "NatDexNum": 192,
     "SpeciesName": "Sunflora",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sunflora",
     "VarName": "Sunflora",
     "DefName": "SUNFLORA"
@@ -1539,6 +1731,7 @@
     "NatDexNum": 193,
     "SpeciesName": "Yanma",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Yanma",
     "VarName": "Yanma",
     "DefName": "YANMA"
@@ -1547,6 +1740,7 @@
     "NatDexNum": 194,
     "SpeciesName": "Wooper",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Wooper",
     "VarName": "Wooper",
     "DefName": "WOOPER"
@@ -1555,6 +1749,7 @@
     "NatDexNum": 195,
     "SpeciesName": "Quagsire",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Quagsire",
     "VarName": "Quagsire",
     "DefName": "QUAGSIRE"
@@ -1563,6 +1758,7 @@
     "NatDexNum": 196,
     "SpeciesName": "Espeon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Espeon",
     "VarName": "Espeon",
     "DefName": "ESPEON"
@@ -1571,6 +1767,7 @@
     "NatDexNum": 197,
     "SpeciesName": "Umbreon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Umbreon",
     "VarName": "Umbreon",
     "DefName": "UMBREON"
@@ -1579,6 +1776,7 @@
     "NatDexNum": 198,
     "SpeciesName": "Murkrow",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Murkrow",
     "VarName": "Murkrow",
     "DefName": "MURKROW"
@@ -1587,6 +1785,7 @@
     "NatDexNum": 199,
     "SpeciesName": "Slowking",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Slowking",
     "VarName": "Slowking",
     "DefName": "SLOWKING"
@@ -1595,6 +1794,7 @@
     "NatDexNum": 200,
     "SpeciesName": "Misdreavus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Misdreavus",
     "VarName": "Misdreavus",
     "DefName": "MISDREAVUS"
@@ -1603,6 +1803,7 @@
     "NatDexNum": 201,
     "SpeciesName": "Unown",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Unown",
     "VarName": "Unown",
     "DefName": "UNOWN"
@@ -1611,6 +1812,7 @@
     "NatDexNum": 202,
     "SpeciesName": "Wobbuffet",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Wobbuffet",
     "VarName": "Wobbuffet",
     "DefName": "WOBBUFFET"
@@ -1619,6 +1821,7 @@
     "NatDexNum": 203,
     "SpeciesName": "Girafarig",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Girafarig",
     "VarName": "Girafarig",
     "DefName": "GIRAFARIG"
@@ -1627,6 +1830,7 @@
     "NatDexNum": 204,
     "SpeciesName": "Pineco",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pineco",
     "VarName": "Pineco",
     "DefName": "PINECO"
@@ -1635,6 +1839,7 @@
     "NatDexNum": 205,
     "SpeciesName": "Forretress",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Forretress",
     "VarName": "Forretress",
     "DefName": "FORRETRESS"
@@ -1643,6 +1848,7 @@
     "NatDexNum": 206,
     "SpeciesName": "Dunsparce",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Dunsparce",
     "VarName": "Dunsparce",
     "DefName": "DUNSPARCE"
@@ -1651,6 +1857,7 @@
     "NatDexNum": 207,
     "SpeciesName": "Gligar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Gligar",
     "VarName": "Gligar",
     "DefName": "GLIGAR"
@@ -1659,6 +1866,7 @@
     "NatDexNum": 208,
     "SpeciesName": "Steelix",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Steelix",
     "VarName": "Steelix",
     "DefName": "STEELIX"
@@ -1667,6 +1875,7 @@
     "NatDexNum": 209,
     "SpeciesName": "Snubbull",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Snubbull",
     "VarName": "Snubbull",
     "DefName": "SNUBBULL"
@@ -1675,6 +1884,7 @@
     "NatDexNum": 210,
     "SpeciesName": "Granbull",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Granbull",
     "VarName": "Granbull",
     "DefName": "GRANBULL"
@@ -1683,6 +1893,7 @@
     "NatDexNum": 211,
     "SpeciesName": "Qwilfish",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Qwilfish",
     "VarName": "Qwilfish",
     "DefName": "QWILFISH"
@@ -1691,6 +1902,7 @@
     "NatDexNum": 212,
     "SpeciesName": "Scizor",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Scizor",
     "VarName": "Scizor",
     "DefName": "SCIZOR"
@@ -1699,6 +1911,7 @@
     "NatDexNum": 213,
     "SpeciesName": "Shuckle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Shuckle",
     "VarName": "Shuckle",
     "DefName": "SHUCKLE"
@@ -1707,6 +1920,7 @@
     "NatDexNum": 214,
     "SpeciesName": "Heracross",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Heracross",
     "VarName": "Heracross",
     "DefName": "HERACROSS"
@@ -1715,6 +1929,7 @@
     "NatDexNum": 215,
     "SpeciesName": "Sneasel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sneasel",
     "VarName": "Sneasel",
     "DefName": "SNEASEL"
@@ -1723,6 +1938,7 @@
     "NatDexNum": 216,
     "SpeciesName": "Teddiursa",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Teddiursa",
     "VarName": "Teddiursa",
     "DefName": "TEDDIURSA"
@@ -1731,6 +1947,7 @@
     "NatDexNum": 217,
     "SpeciesName": "Ursaring",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ursaring",
     "VarName": "Ursaring",
     "DefName": "URSARING"
@@ -1739,6 +1956,7 @@
     "NatDexNum": 218,
     "SpeciesName": "Slugma",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Slugma",
     "VarName": "Slugma",
     "DefName": "SLUGMA"
@@ -1747,6 +1965,7 @@
     "NatDexNum": 219,
     "SpeciesName": "Magcargo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Magcargo",
     "VarName": "Magcargo",
     "DefName": "MAGCARGO"
@@ -1755,6 +1974,7 @@
     "NatDexNum": 220,
     "SpeciesName": "Swinub",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Swinub",
     "VarName": "Swinub",
     "DefName": "SWINUB"
@@ -1763,6 +1983,7 @@
     "NatDexNum": 221,
     "SpeciesName": "Piloswine",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Piloswine",
     "VarName": "Piloswine",
     "DefName": "PILOSWINE"
@@ -1771,6 +1992,7 @@
     "NatDexNum": 222,
     "SpeciesName": "Corsola",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Corsola",
     "VarName": "Corsola",
     "DefName": "CORSOLA"
@@ -1779,6 +2001,7 @@
     "NatDexNum": 223,
     "SpeciesName": "Remoraid",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Remoraid",
     "VarName": "Remoraid",
     "DefName": "REMORAID"
@@ -1787,6 +2010,7 @@
     "NatDexNum": 224,
     "SpeciesName": "Octillery",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Octillery",
     "VarName": "Octillery",
     "DefName": "OCTILLERY"
@@ -1795,6 +2019,7 @@
     "NatDexNum": 225,
     "SpeciesName": "Delibird",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Delibird",
     "VarName": "Delibird",
     "DefName": "DELIBIRD"
@@ -1803,6 +2028,7 @@
     "NatDexNum": 226,
     "SpeciesName": "Mantine",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mantine",
     "VarName": "Mantine",
     "DefName": "MANTINE"
@@ -1811,6 +2037,7 @@
     "NatDexNum": 227,
     "SpeciesName": "Skarmory",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Skarmory",
     "VarName": "Skarmory",
     "DefName": "SKARMORY"
@@ -1819,6 +2046,7 @@
     "NatDexNum": 228,
     "SpeciesName": "Houndour",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Houndour",
     "VarName": "Houndour",
     "DefName": "HOUNDOUR"
@@ -1827,6 +2055,7 @@
     "NatDexNum": 229,
     "SpeciesName": "Houndoom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Houndoom",
     "VarName": "Houndoom",
     "DefName": "HOUNDOOM"
@@ -1835,6 +2064,7 @@
     "NatDexNum": 230,
     "SpeciesName": "Kingdra",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kingdra",
     "VarName": "Kingdra",
     "DefName": "KINGDRA"
@@ -1843,6 +2073,7 @@
     "NatDexNum": 231,
     "SpeciesName": "Phanpy",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Phanpy",
     "VarName": "Phanpy",
     "DefName": "PHANPY"
@@ -1851,6 +2082,7 @@
     "NatDexNum": 232,
     "SpeciesName": "Donphan",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Donphan",
     "VarName": "Donphan",
     "DefName": "DONPHAN"
@@ -1859,6 +2091,7 @@
     "NatDexNum": 233,
     "SpeciesName": "Porygon2",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Porygon2",
     "VarName": "Porygon2",
     "DefName": "PORYGON2"
@@ -1867,6 +2100,7 @@
     "NatDexNum": 234,
     "SpeciesName": "Stantler",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Stantler",
     "VarName": "Stantler",
     "DefName": "STANTLER"
@@ -1875,6 +2109,7 @@
     "NatDexNum": 235,
     "SpeciesName": "Smeargle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Smeargle",
     "VarName": "Smeargle",
     "DefName": "SMEARGLE"
@@ -1883,6 +2118,7 @@
     "NatDexNum": 236,
     "SpeciesName": "Tyrogue",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Tyrogue",
     "VarName": "Tyrogue",
     "DefName": "TYROGUE"
@@ -1891,6 +2127,7 @@
     "NatDexNum": 237,
     "SpeciesName": "Hitmontop",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hitmontop",
     "VarName": "Hitmontop",
     "DefName": "HITMONTOP"
@@ -1899,6 +2136,7 @@
     "NatDexNum": 238,
     "SpeciesName": "Smoochum",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Smoochum",
     "VarName": "Smoochum",
     "DefName": "SMOOCHUM"
@@ -1907,6 +2145,7 @@
     "NatDexNum": 239,
     "SpeciesName": "Elekid",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Elekid",
     "VarName": "Elekid",
     "DefName": "ELEKID"
@@ -1915,6 +2154,7 @@
     "NatDexNum": 240,
     "SpeciesName": "Magby",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Magby",
     "VarName": "Magby",
     "DefName": "MAGBY"
@@ -1923,6 +2163,7 @@
     "NatDexNum": 241,
     "SpeciesName": "Miltank",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Miltank",
     "VarName": "Miltank",
     "DefName": "MILTANK"
@@ -1931,6 +2172,7 @@
     "NatDexNum": 242,
     "SpeciesName": "Blissey",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Blissey",
     "VarName": "Blissey",
     "DefName": "BLISSEY"
@@ -1939,6 +2181,7 @@
     "NatDexNum": 243,
     "SpeciesName": "Raikou",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Raikou",
     "VarName": "Raikou",
     "DefName": "RAIKOU"
@@ -1947,6 +2190,7 @@
     "NatDexNum": 244,
     "SpeciesName": "Entei",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Entei",
     "VarName": "Entei",
     "DefName": "ENTEI"
@@ -1955,6 +2199,7 @@
     "NatDexNum": 245,
     "SpeciesName": "Suicune",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Suicune",
     "VarName": "Suicune",
     "DefName": "SUICUNE"
@@ -1963,6 +2208,7 @@
     "NatDexNum": 246,
     "SpeciesName": "Larvitar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Larvitar",
     "VarName": "Larvitar",
     "DefName": "LARVITAR"
@@ -1971,6 +2217,7 @@
     "NatDexNum": 247,
     "SpeciesName": "Pupitar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Pupitar",
     "VarName": "Pupitar",
     "DefName": "PUPITAR"
@@ -1979,6 +2226,7 @@
     "NatDexNum": 248,
     "SpeciesName": "Tyranitar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tyranitar",
     "VarName": "Tyranitar",
     "DefName": "TYRANITAR"
@@ -1987,6 +2235,7 @@
     "NatDexNum": 249,
     "SpeciesName": "Lugia",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lugia",
     "VarName": "Lugia",
     "DefName": "LUGIA"
@@ -1995,6 +2244,7 @@
     "NatDexNum": 250,
     "SpeciesName": "Ho-Oh",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ho-Oh",
     "VarName": "HoOh",
     "DefName": "HO_OH"
@@ -2003,6 +2253,7 @@
     "NatDexNum": 251,
     "SpeciesName": "Celebi",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Celebi",
     "VarName": "Celebi",
     "DefName": "CELEBI"
@@ -2011,6 +2262,7 @@
     "NatDexNum": 252,
     "SpeciesName": "Treecko",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Treecko",
     "VarName": "Treecko",
     "DefName": "TREECKO"
@@ -2019,6 +2271,7 @@
     "NatDexNum": 253,
     "SpeciesName": "Grovyle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Grovyle",
     "VarName": "Grovyle",
     "DefName": "GROVYLE"
@@ -2027,6 +2280,7 @@
     "NatDexNum": 254,
     "SpeciesName": "Sceptile",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sceptile",
     "VarName": "Sceptile",
     "DefName": "SCEPTILE"
@@ -2035,6 +2289,7 @@
     "NatDexNum": 255,
     "SpeciesName": "Torchic",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Torchic",
     "VarName": "Torchic",
     "DefName": "TORCHIC"
@@ -2043,6 +2298,7 @@
     "NatDexNum": 256,
     "SpeciesName": "Combusken",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Combusken",
     "VarName": "Combusken",
     "DefName": "COMBUSKEN"
@@ -2051,6 +2307,7 @@
     "NatDexNum": 257,
     "SpeciesName": "Blaziken",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Blaziken",
     "VarName": "Blaziken",
     "DefName": "BLAZIKEN"
@@ -2059,6 +2316,7 @@
     "NatDexNum": 258,
     "SpeciesName": "Mudkip",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mudkip",
     "VarName": "Mudkip",
     "DefName": "MUDKIP"
@@ -2067,6 +2325,7 @@
     "NatDexNum": 259,
     "SpeciesName": "Marshtomp",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Marshtomp",
     "VarName": "Marshtomp",
     "DefName": "MARSHTOMP"
@@ -2075,6 +2334,7 @@
     "NatDexNum": 260,
     "SpeciesName": "Swampert",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Swampert",
     "VarName": "Swampert",
     "DefName": "SWAMPERT"
@@ -2083,6 +2343,7 @@
     "NatDexNum": 261,
     "SpeciesName": "Poochyena",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Poochyena",
     "VarName": "Poochyena",
     "DefName": "POOCHYENA"
@@ -2091,6 +2352,7 @@
     "NatDexNum": 262,
     "SpeciesName": "Mightyena",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mightyena",
     "VarName": "Mightyena",
     "DefName": "MIGHTYENA"
@@ -2099,6 +2361,7 @@
     "NatDexNum": 263,
     "SpeciesName": "Zigzagoon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Zigzagoon",
     "VarName": "Zigzagoon",
     "DefName": "ZIGZAGOON"
@@ -2107,6 +2370,7 @@
     "NatDexNum": 264,
     "SpeciesName": "Linoone",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Linoone",
     "VarName": "Linoone",
     "DefName": "LINOONE"
@@ -2115,6 +2379,7 @@
     "NatDexNum": 265,
     "SpeciesName": "Wurmple",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Wurmple",
     "VarName": "Wurmple",
     "DefName": "WURMPLE"
@@ -2123,6 +2388,7 @@
     "NatDexNum": 266,
     "SpeciesName": "Silcoon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Silcoon",
     "VarName": "Silcoon",
     "DefName": "SILCOON"
@@ -2131,6 +2397,7 @@
     "NatDexNum": 267,
     "SpeciesName": "Beautifly",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Beautifly",
     "VarName": "Beautifly",
     "DefName": "BEAUTIFLY"
@@ -2139,6 +2406,7 @@
     "NatDexNum": 268,
     "SpeciesName": "Cascoon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cascoon",
     "VarName": "Cascoon",
     "DefName": "CASCOON"
@@ -2147,6 +2415,7 @@
     "NatDexNum": 269,
     "SpeciesName": "Dustox",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dustox",
     "VarName": "Dustox",
     "DefName": "DUSTOX"
@@ -2155,6 +2424,7 @@
     "NatDexNum": 270,
     "SpeciesName": "Lotad",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Lotad",
     "VarName": "Lotad",
     "DefName": "LOTAD"
@@ -2163,6 +2433,7 @@
     "NatDexNum": 271,
     "SpeciesName": "Lombre",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lombre",
     "VarName": "Lombre",
     "DefName": "LOMBRE"
@@ -2171,6 +2442,7 @@
     "NatDexNum": 272,
     "SpeciesName": "Ludicolo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ludicolo",
     "VarName": "Ludicolo",
     "DefName": "LUDICOLO"
@@ -2179,6 +2451,7 @@
     "NatDexNum": 273,
     "SpeciesName": "Seedot",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Seedot",
     "VarName": "Seedot",
     "DefName": "SEEDOT"
@@ -2187,6 +2460,7 @@
     "NatDexNum": 274,
     "SpeciesName": "Nuzleaf",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Nuzleaf",
     "VarName": "Nuzleaf",
     "DefName": "NUZLEAF"
@@ -2195,6 +2469,7 @@
     "NatDexNum": 275,
     "SpeciesName": "Shiftry",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Shiftry",
     "VarName": "Shiftry",
     "DefName": "SHIFTRY"
@@ -2203,6 +2478,7 @@
     "NatDexNum": 276,
     "SpeciesName": "Taillow",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Taillow",
     "VarName": "Taillow",
     "DefName": "TAILLOW"
@@ -2211,6 +2487,7 @@
     "NatDexNum": 277,
     "SpeciesName": "Swellow",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Swellow",
     "VarName": "Swellow",
     "DefName": "SWELLOW"
@@ -2219,6 +2496,7 @@
     "NatDexNum": 278,
     "SpeciesName": "Wingull",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Wingull",
     "VarName": "Wingull",
     "DefName": "WINGULL"
@@ -2227,6 +2505,7 @@
     "NatDexNum": 279,
     "SpeciesName": "Pelipper",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Pelipper",
     "VarName": "Pelipper",
     "DefName": "PELIPPER"
@@ -2235,6 +2514,7 @@
     "NatDexNum": 280,
     "SpeciesName": "Ralts",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Ralts",
     "VarName": "Ralts",
     "DefName": "RALTS"
@@ -2243,6 +2523,7 @@
     "NatDexNum": 281,
     "SpeciesName": "Kirlia",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kirlia",
     "VarName": "Kirlia",
     "DefName": "KIRLIA"
@@ -2251,6 +2532,7 @@
     "NatDexNum": 282,
     "SpeciesName": "Gardevoir",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gardevoir",
     "VarName": "Gardevoir",
     "DefName": "GARDEVOIR"
@@ -2259,6 +2541,7 @@
     "NatDexNum": 283,
     "SpeciesName": "Surskit",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Surskit",
     "VarName": "Surskit",
     "DefName": "SURSKIT"
@@ -2267,6 +2550,7 @@
     "NatDexNum": 284,
     "SpeciesName": "Masquerain",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Masquerain",
     "VarName": "Masquerain",
     "DefName": "MASQUERAIN"
@@ -2275,6 +2559,7 @@
     "NatDexNum": 285,
     "SpeciesName": "Shroomish",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Shroomish",
     "VarName": "Shroomish",
     "DefName": "SHROOMISH"
@@ -2283,6 +2568,7 @@
     "NatDexNum": 286,
     "SpeciesName": "Breloom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Breloom",
     "VarName": "Breloom",
     "DefName": "BRELOOM"
@@ -2291,6 +2577,7 @@
     "NatDexNum": 287,
     "SpeciesName": "Slakoth",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Slakoth",
     "VarName": "Slakoth",
     "DefName": "SLAKOTH"
@@ -2299,6 +2586,7 @@
     "NatDexNum": 288,
     "SpeciesName": "Vigoroth",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Vigoroth",
     "VarName": "Vigoroth",
     "DefName": "VIGOROTH"
@@ -2307,6 +2595,7 @@
     "NatDexNum": 289,
     "SpeciesName": "Slaking",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Slaking",
     "VarName": "Slaking",
     "DefName": "SLAKING"
@@ -2315,6 +2604,7 @@
     "NatDexNum": 290,
     "SpeciesName": "Nincada",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Nincada",
     "VarName": "Nincada",
     "DefName": "NINCADA"
@@ -2323,6 +2613,7 @@
     "NatDexNum": 291,
     "SpeciesName": "Ninjask",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ninjask",
     "VarName": "Ninjask",
     "DefName": "NINJASK"
@@ -2331,6 +2622,7 @@
     "NatDexNum": 292,
     "SpeciesName": "Shedinja",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Shedinja",
     "VarName": "Shedinja",
     "DefName": "SHEDINJA"
@@ -2339,6 +2631,7 @@
     "NatDexNum": 293,
     "SpeciesName": "Whismur",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Whismur",
     "VarName": "Whismur",
     "DefName": "WHISMUR"
@@ -2347,6 +2640,7 @@
     "NatDexNum": 294,
     "SpeciesName": "Loudred",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Loudred",
     "VarName": "Loudred",
     "DefName": "LOUDRED"
@@ -2355,6 +2649,7 @@
     "NatDexNum": 295,
     "SpeciesName": "Exploud",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Exploud",
     "VarName": "Exploud",
     "DefName": "EXPLOUD"
@@ -2363,6 +2658,7 @@
     "NatDexNum": 296,
     "SpeciesName": "Makuhita",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Makuhita",
     "VarName": "Makuhita",
     "DefName": "MAKUHITA"
@@ -2371,6 +2667,7 @@
     "NatDexNum": 297,
     "SpeciesName": "Hariyama",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hariyama",
     "VarName": "Hariyama",
     "DefName": "HARIYAMA"
@@ -2379,6 +2676,7 @@
     "NatDexNum": 298,
     "SpeciesName": "Azurill",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Azurill",
     "VarName": "Azurill",
     "DefName": "AZURILL"
@@ -2387,6 +2685,7 @@
     "NatDexNum": 299,
     "SpeciesName": "Nosepass",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Nosepass",
     "VarName": "Nosepass",
     "DefName": "NOSEPASS"
@@ -2395,6 +2694,7 @@
     "NatDexNum": 300,
     "SpeciesName": "Skitty",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Skitty",
     "VarName": "Skitty",
     "DefName": "SKITTY"
@@ -2403,6 +2703,7 @@
     "NatDexNum": 301,
     "SpeciesName": "Delcatty",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Delcatty",
     "VarName": "Delcatty",
     "DefName": "DELCATTY"
@@ -2411,6 +2712,7 @@
     "NatDexNum": 302,
     "SpeciesName": "Sableye",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sableye",
     "VarName": "Sableye",
     "DefName": "SABLEYE"
@@ -2419,6 +2721,7 @@
     "NatDexNum": 303,
     "SpeciesName": "Mawile",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mawile",
     "VarName": "Mawile",
     "DefName": "MAWILE"
@@ -2427,6 +2730,7 @@
     "NatDexNum": 304,
     "SpeciesName": "Aron",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Aron",
     "VarName": "Aron",
     "DefName": "ARON"
@@ -2435,6 +2739,7 @@
     "NatDexNum": 305,
     "SpeciesName": "Lairon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lairon",
     "VarName": "Lairon",
     "DefName": "LAIRON"
@@ -2443,6 +2748,7 @@
     "NatDexNum": 306,
     "SpeciesName": "Aggron",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Aggron",
     "VarName": "Aggron",
     "DefName": "AGGRON"
@@ -2451,6 +2757,7 @@
     "NatDexNum": 307,
     "SpeciesName": "Meditite",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Meditite",
     "VarName": "Meditite",
     "DefName": "MEDITITE"
@@ -2459,6 +2766,7 @@
     "NatDexNum": 308,
     "SpeciesName": "Medicham",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Medicham",
     "VarName": "Medicham",
     "DefName": "MEDICHAM"
@@ -2467,6 +2775,7 @@
     "NatDexNum": 309,
     "SpeciesName": "Electrike",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Electrike",
     "VarName": "Electrike",
     "DefName": "ELECTRIKE"
@@ -2475,6 +2784,7 @@
     "NatDexNum": 310,
     "SpeciesName": "Manectric",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Manectric",
     "VarName": "Manectric",
     "DefName": "MANECTRIC"
@@ -2483,6 +2793,7 @@
     "NatDexNum": 311,
     "SpeciesName": "Plusle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Plusle",
     "VarName": "Plusle",
     "DefName": "PLUSLE"
@@ -2491,6 +2802,7 @@
     "NatDexNum": 312,
     "SpeciesName": "Minun",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Minun",
     "VarName": "Minun",
     "DefName": "MINUN"
@@ -2499,6 +2811,7 @@
     "NatDexNum": 313,
     "SpeciesName": "Volbeat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Volbeat",
     "VarName": "Volbeat",
     "DefName": "VOLBEAT"
@@ -2507,6 +2820,7 @@
     "NatDexNum": 314,
     "SpeciesName": "Illumise",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Illumise",
     "VarName": "Illumise",
     "DefName": "ILLUMISE"
@@ -2515,6 +2829,7 @@
     "NatDexNum": 315,
     "SpeciesName": "Roselia",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Roselia",
     "VarName": "Roselia",
     "DefName": "ROSELIA"
@@ -2523,6 +2838,7 @@
     "NatDexNum": 316,
     "SpeciesName": "Gulpin",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Gulpin",
     "VarName": "Gulpin",
     "DefName": "GULPIN"
@@ -2531,6 +2847,7 @@
     "NatDexNum": 317,
     "SpeciesName": "Swalot",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Swalot",
     "VarName": "Swalot",
     "DefName": "SWALOT"
@@ -2539,6 +2856,7 @@
     "NatDexNum": 318,
     "SpeciesName": "Carvanha",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Carvanha",
     "VarName": "Carvanha",
     "DefName": "CARVANHA"
@@ -2547,6 +2865,7 @@
     "NatDexNum": 319,
     "SpeciesName": "Sharpedo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sharpedo",
     "VarName": "Sharpedo",
     "DefName": "SHARPEDO"
@@ -2555,6 +2874,7 @@
     "NatDexNum": 320,
     "SpeciesName": "Wailmer",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Wailmer",
     "VarName": "Wailmer",
     "DefName": "WAILMER"
@@ -2563,6 +2883,7 @@
     "NatDexNum": 321,
     "SpeciesName": "Wailord",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Wailord",
     "VarName": "Wailord",
     "DefName": "WAILORD"
@@ -2571,6 +2892,7 @@
     "NatDexNum": 322,
     "SpeciesName": "Numel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Numel",
     "VarName": "Numel",
     "DefName": "NUMEL"
@@ -2579,6 +2901,7 @@
     "NatDexNum": 323,
     "SpeciesName": "Camerupt",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Camerupt",
     "VarName": "Camerupt",
     "DefName": "CAMERUPT"
@@ -2587,6 +2910,7 @@
     "NatDexNum": 324,
     "SpeciesName": "Torkoal",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Torkoal",
     "VarName": "Torkoal",
     "DefName": "TORKOAL"
@@ -2595,6 +2919,7 @@
     "NatDexNum": 325,
     "SpeciesName": "Spoink",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Spoink",
     "VarName": "Spoink",
     "DefName": "SPOINK"
@@ -2603,6 +2928,7 @@
     "NatDexNum": 326,
     "SpeciesName": "Grumpig",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Grumpig",
     "VarName": "Grumpig",
     "DefName": "GRUMPIG"
@@ -2611,6 +2937,7 @@
     "NatDexNum": 327,
     "SpeciesName": "Spinda",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Spinda",
     "VarName": "Spinda",
     "DefName": "SPINDA"
@@ -2619,6 +2946,7 @@
     "NatDexNum": 328,
     "SpeciesName": "Trapinch",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Trapinch",
     "VarName": "Trapinch",
     "DefName": "TRAPINCH"
@@ -2627,6 +2955,7 @@
     "NatDexNum": 329,
     "SpeciesName": "Vibrava",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Vibrava",
     "VarName": "Vibrava",
     "DefName": "VIBRAVA"
@@ -2635,6 +2964,7 @@
     "NatDexNum": 330,
     "SpeciesName": "Flygon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Flygon",
     "VarName": "Flygon",
     "DefName": "FLYGON"
@@ -2643,6 +2973,7 @@
     "NatDexNum": 331,
     "SpeciesName": "Cacnea",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cacnea",
     "VarName": "Cacnea",
     "DefName": "CACNEA"
@@ -2651,6 +2982,7 @@
     "NatDexNum": 332,
     "SpeciesName": "Cacturne",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cacturne",
     "VarName": "Cacturne",
     "DefName": "CACTURNE"
@@ -2659,6 +2991,7 @@
     "NatDexNum": 333,
     "SpeciesName": "Swablu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Swablu",
     "VarName": "Swablu",
     "DefName": "SWABLU"
@@ -2667,6 +3000,7 @@
     "NatDexNum": 334,
     "SpeciesName": "Altaria",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Altaria",
     "VarName": "Altaria",
     "DefName": "ALTARIA"
@@ -2675,6 +3009,7 @@
     "NatDexNum": 335,
     "SpeciesName": "Zangoose",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Zangoose",
     "VarName": "Zangoose",
     "DefName": "ZANGOOSE"
@@ -2683,6 +3018,7 @@
     "NatDexNum": 336,
     "SpeciesName": "Seviper",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Seviper",
     "VarName": "Seviper",
     "DefName": "SEVIPER"
@@ -2691,6 +3027,7 @@
     "NatDexNum": 337,
     "SpeciesName": "Lunatone",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Lunatone",
     "VarName": "Lunatone",
     "DefName": "LUNATONE"
@@ -2699,6 +3036,7 @@
     "NatDexNum": 338,
     "SpeciesName": "Solrock",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Solrock",
     "VarName": "Solrock",
     "DefName": "SOLROCK"
@@ -2707,6 +3045,7 @@
     "NatDexNum": 339,
     "SpeciesName": "Barboach",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Barboach",
     "VarName": "Barboach",
     "DefName": "BARBOACH"
@@ -2715,6 +3054,7 @@
     "NatDexNum": 340,
     "SpeciesName": "Whiscash",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Whiscash",
     "VarName": "Whiscash",
     "DefName": "WHISCASH"
@@ -2723,6 +3063,7 @@
     "NatDexNum": 341,
     "SpeciesName": "Corphish",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Corphish",
     "VarName": "Corphish",
     "DefName": "CORPHISH"
@@ -2731,6 +3072,7 @@
     "NatDexNum": 342,
     "SpeciesName": "Crawdaunt",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Crawdaunt",
     "VarName": "Crawdaunt",
     "DefName": "CRAWDAUNT"
@@ -2739,6 +3081,7 @@
     "NatDexNum": 343,
     "SpeciesName": "Baltoy",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Baltoy",
     "VarName": "Baltoy",
     "DefName": "BALTOY"
@@ -2747,6 +3090,7 @@
     "NatDexNum": 344,
     "SpeciesName": "Claydol",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Claydol",
     "VarName": "Claydol",
     "DefName": "CLAYDOL"
@@ -2755,6 +3099,7 @@
     "NatDexNum": 345,
     "SpeciesName": "Lileep",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Lileep",
     "VarName": "Lileep",
     "DefName": "LILEEP"
@@ -2763,6 +3108,7 @@
     "NatDexNum": 346,
     "SpeciesName": "Cradily",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cradily",
     "VarName": "Cradily",
     "DefName": "CRADILY"
@@ -2771,6 +3117,7 @@
     "NatDexNum": 347,
     "SpeciesName": "Anorith",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Anorith",
     "VarName": "Anorith",
     "DefName": "ANORITH"
@@ -2779,6 +3126,7 @@
     "NatDexNum": 348,
     "SpeciesName": "Armaldo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Armaldo",
     "VarName": "Armaldo",
     "DefName": "ARMALDO"
@@ -2787,6 +3135,7 @@
     "NatDexNum": 349,
     "SpeciesName": "Feebas",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Feebas",
     "VarName": "Feebas",
     "DefName": "FEEBAS"
@@ -2795,6 +3144,7 @@
     "NatDexNum": 350,
     "SpeciesName": "Milotic",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Milotic",
     "VarName": "Milotic",
     "DefName": "MILOTIC"
@@ -2803,6 +3153,7 @@
     "NatDexNum": 351,
     "SpeciesName": "Castform",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Castform",
     "VarName": "Castform",
     "DefName": "CASTFORM"
@@ -2811,6 +3162,7 @@
     "NatDexNum": 352,
     "SpeciesName": "Kecleon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Kecleon",
     "VarName": "Kecleon",
     "DefName": "KECLEON"
@@ -2819,6 +3171,7 @@
     "NatDexNum": 353,
     "SpeciesName": "Shuppet",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Shuppet",
     "VarName": "Shuppet",
     "DefName": "SHUPPET"
@@ -2827,6 +3180,7 @@
     "NatDexNum": 354,
     "SpeciesName": "Banette",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Banette",
     "VarName": "Banette",
     "DefName": "BANETTE"
@@ -2835,6 +3189,7 @@
     "NatDexNum": 355,
     "SpeciesName": "Duskull",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Duskull",
     "VarName": "Duskull",
     "DefName": "DUSKULL"
@@ -2843,6 +3198,7 @@
     "NatDexNum": 356,
     "SpeciesName": "Dusclops",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dusclops",
     "VarName": "Dusclops",
     "DefName": "DUSCLOPS"
@@ -2851,6 +3207,7 @@
     "NatDexNum": 357,
     "SpeciesName": "Tropius",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Tropius",
     "VarName": "Tropius",
     "DefName": "TROPIUS"
@@ -2859,6 +3216,7 @@
     "NatDexNum": 358,
     "SpeciesName": "Chimecho",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Chimecho",
     "VarName": "Chimecho",
     "DefName": "CHIMECHO"
@@ -2867,6 +3225,7 @@
     "NatDexNum": 359,
     "SpeciesName": "Absol",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Absol",
     "VarName": "Absol",
     "DefName": "ABSOL"
@@ -2875,6 +3234,7 @@
     "NatDexNum": 360,
     "SpeciesName": "Wynaut",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Wynaut",
     "VarName": "Wynaut",
     "DefName": "WYNAUT"
@@ -2883,6 +3243,7 @@
     "NatDexNum": 361,
     "SpeciesName": "Snorunt",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Snorunt",
     "VarName": "Snorunt",
     "DefName": "SNORUNT"
@@ -2891,6 +3252,7 @@
     "NatDexNum": 362,
     "SpeciesName": "Glalie",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Glalie",
     "VarName": "Glalie",
     "DefName": "GLALIE"
@@ -2899,6 +3261,7 @@
     "NatDexNum": 363,
     "SpeciesName": "Spheal",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Spheal",
     "VarName": "Spheal",
     "DefName": "SPHEAL"
@@ -2907,6 +3270,7 @@
     "NatDexNum": 364,
     "SpeciesName": "Sealeo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sealeo",
     "VarName": "Sealeo",
     "DefName": "SEALEO"
@@ -2915,6 +3279,7 @@
     "NatDexNum": 365,
     "SpeciesName": "Walrein",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Walrein",
     "VarName": "Walrein",
     "DefName": "WALREIN"
@@ -2923,6 +3288,7 @@
     "NatDexNum": 366,
     "SpeciesName": "Clamperl",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Clamperl",
     "VarName": "Clamperl",
     "DefName": "CLAMPERL"
@@ -2931,6 +3297,7 @@
     "NatDexNum": 367,
     "SpeciesName": "Huntail",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Huntail",
     "VarName": "Huntail",
     "DefName": "HUNTAIL"
@@ -2939,6 +3306,7 @@
     "NatDexNum": 368,
     "SpeciesName": "Gorebyss",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gorebyss",
     "VarName": "Gorebyss",
     "DefName": "GOREBYSS"
@@ -2947,6 +3315,7 @@
     "NatDexNum": 369,
     "SpeciesName": "Relicanth",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Relicanth",
     "VarName": "Relicanth",
     "DefName": "RELICANTH"
@@ -2955,6 +3324,7 @@
     "NatDexNum": 370,
     "SpeciesName": "Luvdisc",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Luvdisc",
     "VarName": "Luvdisc",
     "DefName": "LUVDISC"
@@ -2963,6 +3333,7 @@
     "NatDexNum": 371,
     "SpeciesName": "Bagon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bagon",
     "VarName": "Bagon",
     "DefName": "BAGON"
@@ -2971,6 +3342,7 @@
     "NatDexNum": 372,
     "SpeciesName": "Shelgon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Shelgon",
     "VarName": "Shelgon",
     "DefName": "SHELGON"
@@ -2979,6 +3351,7 @@
     "NatDexNum": 373,
     "SpeciesName": "Salamence",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Salamence",
     "VarName": "Salamence",
     "DefName": "SALAMENCE"
@@ -2987,6 +3360,7 @@
     "NatDexNum": 374,
     "SpeciesName": "Beldum",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Beldum",
     "VarName": "Beldum",
     "DefName": "BELDUM"
@@ -2995,6 +3369,7 @@
     "NatDexNum": 375,
     "SpeciesName": "Metang",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Metang",
     "VarName": "Metang",
     "DefName": "METANG"
@@ -3003,6 +3378,7 @@
     "NatDexNum": 376,
     "SpeciesName": "Metagross",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Metagross",
     "VarName": "Metagross",
     "DefName": "METAGROSS"
@@ -3011,6 +3387,7 @@
     "NatDexNum": 377,
     "SpeciesName": "Regirock",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Regirock",
     "VarName": "Regirock",
     "DefName": "REGIROCK"
@@ -3019,6 +3396,7 @@
     "NatDexNum": 378,
     "SpeciesName": "Regice",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Regice",
     "VarName": "Regice",
     "DefName": "REGICE"
@@ -3027,6 +3405,7 @@
     "NatDexNum": 379,
     "SpeciesName": "Registeel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Registeel",
     "VarName": "Registeel",
     "DefName": "REGISTEEL"
@@ -3035,6 +3414,7 @@
     "NatDexNum": 380,
     "SpeciesName": "Latias",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Latias",
     "VarName": "Latias",
     "DefName": "LATIAS"
@@ -3043,6 +3423,7 @@
     "NatDexNum": 381,
     "SpeciesName": "Latios",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Latios",
     "VarName": "Latios",
     "DefName": "LATIOS"
@@ -3051,6 +3432,7 @@
     "NatDexNum": 382,
     "SpeciesName": "Kyogre",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kyogre",
     "VarName": "Kyogre",
     "DefName": "KYOGRE"
@@ -3059,6 +3441,7 @@
     "NatDexNum": 383,
     "SpeciesName": "Groudon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Groudon",
     "VarName": "Groudon",
     "DefName": "GROUDON"
@@ -3067,6 +3450,7 @@
     "NatDexNum": 384,
     "SpeciesName": "Rayquaza",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Rayquaza",
     "VarName": "Rayquaza",
     "DefName": "RAYQUAZA"
@@ -3075,6 +3459,7 @@
     "NatDexNum": 385,
     "SpeciesName": "Jirachi",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Jirachi",
     "VarName": "Jirachi",
     "DefName": "JIRACHI"
@@ -3083,6 +3468,7 @@
     "NatDexNum": 386,
     "SpeciesName": "Deoxys",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Normal Forme",
     "VarName": "Deoxys",
     "DefName": "DEOXYS"
@@ -3091,6 +3477,7 @@
     "NatDexNum": 387,
     "SpeciesName": "Turtwig",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Turtwig",
     "VarName": "Turtwig",
     "DefName": "TURTWIG"
@@ -3099,6 +3486,7 @@
     "NatDexNum": 388,
     "SpeciesName": "Grotle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Grotle",
     "VarName": "Grotle",
     "DefName": "GROTLE"
@@ -3107,6 +3495,7 @@
     "NatDexNum": 389,
     "SpeciesName": "Torterra",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Torterra",
     "VarName": "Torterra",
     "DefName": "TORTERRA"
@@ -3115,6 +3504,7 @@
     "NatDexNum": 390,
     "SpeciesName": "Chimchar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Chimchar",
     "VarName": "Chimchar",
     "DefName": "CHIMCHAR"
@@ -3123,6 +3513,7 @@
     "NatDexNum": 391,
     "SpeciesName": "Monferno",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Monferno",
     "VarName": "Monferno",
     "DefName": "MONFERNO"
@@ -3131,6 +3522,7 @@
     "NatDexNum": 392,
     "SpeciesName": "Infernape",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Infernape",
     "VarName": "Infernape",
     "DefName": "INFERNAPE"
@@ -3139,6 +3531,7 @@
     "NatDexNum": 393,
     "SpeciesName": "Piplup",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Piplup",
     "VarName": "Piplup",
     "DefName": "PIPLUP"
@@ -3147,6 +3540,7 @@
     "NatDexNum": 394,
     "SpeciesName": "Prinplup",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Prinplup",
     "VarName": "Prinplup",
     "DefName": "PRINPLUP"
@@ -3155,6 +3549,7 @@
     "NatDexNum": 395,
     "SpeciesName": "Empoleon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Empoleon",
     "VarName": "Empoleon",
     "DefName": "EMPOLEON"
@@ -3163,6 +3558,7 @@
     "NatDexNum": 396,
     "SpeciesName": "Starly",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Starly",
     "VarName": "Starly",
     "DefName": "STARLY"
@@ -3171,6 +3567,7 @@
     "NatDexNum": 397,
     "SpeciesName": "Staravia",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Staravia",
     "VarName": "Staravia",
     "DefName": "STARAVIA"
@@ -3179,6 +3576,7 @@
     "NatDexNum": 398,
     "SpeciesName": "Staraptor",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Staraptor",
     "VarName": "Staraptor",
     "DefName": "STARAPTOR"
@@ -3187,6 +3585,7 @@
     "NatDexNum": 399,
     "SpeciesName": "Bidoof",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bidoof",
     "VarName": "Bidoof",
     "DefName": "BIDOOF"
@@ -3195,6 +3594,7 @@
     "NatDexNum": 400,
     "SpeciesName": "Bibarel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Bibarel",
     "VarName": "Bibarel",
     "DefName": "BIBAREL"
@@ -3203,6 +3603,7 @@
     "NatDexNum": 401,
     "SpeciesName": "Kricketot",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Kricketot",
     "VarName": "Kricketot",
     "DefName": "KRICKETOT"
@@ -3211,6 +3612,7 @@
     "NatDexNum": 402,
     "SpeciesName": "Kricketune",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kricketune",
     "VarName": "Kricketune",
     "DefName": "KRICKETUNE"
@@ -3219,6 +3621,7 @@
     "NatDexNum": 403,
     "SpeciesName": "Shinx",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Shinx",
     "VarName": "Shinx",
     "DefName": "SHINX"
@@ -3227,6 +3630,7 @@
     "NatDexNum": 404,
     "SpeciesName": "Luxio",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Luxio",
     "VarName": "Luxio",
     "DefName": "LUXIO"
@@ -3235,6 +3639,7 @@
     "NatDexNum": 405,
     "SpeciesName": "Luxray",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Luxray",
     "VarName": "Luxray",
     "DefName": "LUXRAY"
@@ -3243,6 +3648,7 @@
     "NatDexNum": 406,
     "SpeciesName": "Budew",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Budew",
     "VarName": "Budew",
     "DefName": "BUDEW"
@@ -3251,6 +3657,7 @@
     "NatDexNum": 407,
     "SpeciesName": "Roserade",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Roserade",
     "VarName": "Roserade",
     "DefName": "ROSERADE"
@@ -3259,6 +3666,7 @@
     "NatDexNum": 408,
     "SpeciesName": "Cranidos",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cranidos",
     "VarName": "Cranidos",
     "DefName": "CRANIDOS"
@@ -3267,6 +3675,7 @@
     "NatDexNum": 409,
     "SpeciesName": "Rampardos",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Rampardos",
     "VarName": "Rampardos",
     "DefName": "RAMPARDOS"
@@ -3275,6 +3684,7 @@
     "NatDexNum": 410,
     "SpeciesName": "Shieldon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Shieldon",
     "VarName": "Shieldon",
     "DefName": "SHIELDON"
@@ -3283,6 +3693,7 @@
     "NatDexNum": 411,
     "SpeciesName": "Bastiodon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Bastiodon",
     "VarName": "Bastiodon",
     "DefName": "BASTIODON"
@@ -3291,6 +3702,7 @@
     "NatDexNum": 412,
     "SpeciesName": "Burmy",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Burmy",
     "VarName": "Burmy",
     "DefName": "BURMY"
@@ -3299,6 +3711,7 @@
     "NatDexNum": 413,
     "SpeciesName": "Wormadam",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Plant Cloak",
     "VarName": "Wormadam",
     "DefName": "WORMADAM"
@@ -3307,6 +3720,7 @@
     "NatDexNum": 414,
     "SpeciesName": "Mothim",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mothim",
     "VarName": "Mothim",
     "DefName": "MOTHIM"
@@ -3315,6 +3729,7 @@
     "NatDexNum": 415,
     "SpeciesName": "Combee",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Combee",
     "VarName": "Combee",
     "DefName": "COMBEE"
@@ -3323,6 +3738,7 @@
     "NatDexNum": 416,
     "SpeciesName": "Vespiquen",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Vespiquen",
     "VarName": "Vespiquen",
     "DefName": "VESPIQUEN"
@@ -3331,6 +3747,7 @@
     "NatDexNum": 417,
     "SpeciesName": "Pachirisu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pachirisu",
     "VarName": "Pachirisu",
     "DefName": "PACHIRISU"
@@ -3339,6 +3756,7 @@
     "NatDexNum": 418,
     "SpeciesName": "Buizel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Buizel",
     "VarName": "Buizel",
     "DefName": "BUIZEL"
@@ -3347,6 +3765,7 @@
     "NatDexNum": 419,
     "SpeciesName": "Floatzel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Floatzel",
     "VarName": "Floatzel",
     "DefName": "FLOATZEL"
@@ -3355,6 +3774,7 @@
     "NatDexNum": 420,
     "SpeciesName": "Cherubi",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cherubi",
     "VarName": "Cherubi",
     "DefName": "CHERUBI"
@@ -3363,6 +3783,7 @@
     "NatDexNum": 421,
     "SpeciesName": "Cherrim",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cherrim",
     "VarName": "Cherrim",
     "DefName": "CHERRIM"
@@ -3371,6 +3792,7 @@
     "NatDexNum": 422,
     "SpeciesName": "Shellos",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Shellos",
     "VarName": "Shellos",
     "DefName": "SHELLOS"
@@ -3379,6 +3801,7 @@
     "NatDexNum": 423,
     "SpeciesName": "Gastrodon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gastrodon",
     "VarName": "Gastrodon",
     "DefName": "GASTRODON"
@@ -3387,6 +3810,7 @@
     "NatDexNum": 424,
     "SpeciesName": "Ambipom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ambipom",
     "VarName": "Ambipom",
     "DefName": "AMBIPOM"
@@ -3395,6 +3819,7 @@
     "NatDexNum": 425,
     "SpeciesName": "Drifloon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Drifloon",
     "VarName": "Drifloon",
     "DefName": "DRIFLOON"
@@ -3403,6 +3828,7 @@
     "NatDexNum": 426,
     "SpeciesName": "Drifblim",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Drifblim",
     "VarName": "Drifblim",
     "DefName": "DRIFBLIM"
@@ -3411,6 +3837,7 @@
     "NatDexNum": 427,
     "SpeciesName": "Buneary",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Buneary",
     "VarName": "Buneary",
     "DefName": "BUNEARY"
@@ -3419,6 +3846,7 @@
     "NatDexNum": 428,
     "SpeciesName": "Lopunny",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lopunny",
     "VarName": "Lopunny",
     "DefName": "LOPUNNY"
@@ -3427,6 +3855,7 @@
     "NatDexNum": 429,
     "SpeciesName": "Mismagius",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mismagius",
     "VarName": "Mismagius",
     "DefName": "MISMAGIUS"
@@ -3435,6 +3864,7 @@
     "NatDexNum": 430,
     "SpeciesName": "Honchkrow",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Honchkrow",
     "VarName": "Honchkrow",
     "DefName": "HONCHKROW"
@@ -3443,6 +3873,7 @@
     "NatDexNum": 431,
     "SpeciesName": "Glameow",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Glameow",
     "VarName": "Glameow",
     "DefName": "GLAMEOW"
@@ -3451,6 +3882,7 @@
     "NatDexNum": 432,
     "SpeciesName": "Purugly",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Purugly",
     "VarName": "Purugly",
     "DefName": "PURUGLY"
@@ -3459,6 +3891,7 @@
     "NatDexNum": 433,
     "SpeciesName": "Chingling",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Chingling",
     "VarName": "Chingling",
     "DefName": "CHINGLING"
@@ -3467,6 +3900,7 @@
     "NatDexNum": 434,
     "SpeciesName": "Stunky",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Stunky",
     "VarName": "Stunky",
     "DefName": "STUNKY"
@@ -3475,6 +3909,7 @@
     "NatDexNum": 435,
     "SpeciesName": "Skuntank",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Skuntank",
     "VarName": "Skuntank",
     "DefName": "SKUNTANK"
@@ -3483,6 +3918,7 @@
     "NatDexNum": 436,
     "SpeciesName": "Bronzor",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bronzor",
     "VarName": "Bronzor",
     "DefName": "BRONZOR"
@@ -3491,6 +3927,7 @@
     "NatDexNum": 437,
     "SpeciesName": "Bronzong",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Bronzong",
     "VarName": "Bronzong",
     "DefName": "BRONZONG"
@@ -3499,6 +3936,7 @@
     "NatDexNum": 438,
     "SpeciesName": "Bonsly",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bonsly",
     "VarName": "Bonsly",
     "DefName": "BONSLY"
@@ -3507,14 +3945,16 @@
     "NatDexNum": 439,
     "SpeciesName": "Mime Jr.",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mime Jr.",
     "VarName": "MimeJr",
-    "DefName": "MIME_JR"
+    "DefName": "MIMEJR"
   },
   {
     "NatDexNum": 440,
     "SpeciesName": "Happiny",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Happiny",
     "VarName": "Happiny",
     "DefName": "HAPPINY"
@@ -3523,6 +3963,7 @@
     "NatDexNum": 441,
     "SpeciesName": "Chatot",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Chatot",
     "VarName": "Chatot",
     "DefName": "CHATOT"
@@ -3531,6 +3972,7 @@
     "NatDexNum": 442,
     "SpeciesName": "Spiritomb",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Spiritomb",
     "VarName": "Spiritomb",
     "DefName": "SPIRITOMB"
@@ -3539,6 +3981,7 @@
     "NatDexNum": 443,
     "SpeciesName": "Gible",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Gible",
     "VarName": "Gible",
     "DefName": "GIBLE"
@@ -3547,6 +3990,7 @@
     "NatDexNum": 444,
     "SpeciesName": "Gabite",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gabite",
     "VarName": "Gabite",
     "DefName": "GABITE"
@@ -3555,6 +3999,7 @@
     "NatDexNum": 445,
     "SpeciesName": "Garchomp",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Garchomp",
     "VarName": "Garchomp",
     "DefName": "GARCHOMP"
@@ -3563,6 +4008,7 @@
     "NatDexNum": 446,
     "SpeciesName": "Munchlax",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Munchlax",
     "VarName": "Munchlax",
     "DefName": "MUNCHLAX"
@@ -3571,6 +4017,7 @@
     "NatDexNum": 447,
     "SpeciesName": "Riolu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Riolu",
     "VarName": "Riolu",
     "DefName": "RIOLU"
@@ -3579,6 +4026,7 @@
     "NatDexNum": 448,
     "SpeciesName": "Lucario",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lucario",
     "VarName": "Lucario",
     "DefName": "LUCARIO"
@@ -3587,6 +4035,7 @@
     "NatDexNum": 449,
     "SpeciesName": "Hippopotas",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Hippopotas",
     "VarName": "Hippopotas",
     "DefName": "HIPPOPOTAS"
@@ -3595,6 +4044,7 @@
     "NatDexNum": 450,
     "SpeciesName": "Hippowdon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hippowdon",
     "VarName": "Hippowdon",
     "DefName": "HIPPOWDON"
@@ -3603,6 +4053,7 @@
     "NatDexNum": 451,
     "SpeciesName": "Skorupi",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Skorupi",
     "VarName": "Skorupi",
     "DefName": "SKORUPI"
@@ -3611,6 +4062,7 @@
     "NatDexNum": 452,
     "SpeciesName": "Drapion",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Drapion",
     "VarName": "Drapion",
     "DefName": "DRAPION"
@@ -3619,6 +4071,7 @@
     "NatDexNum": 453,
     "SpeciesName": "Croagunk",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Croagunk",
     "VarName": "Croagunk",
     "DefName": "CROAGUNK"
@@ -3627,6 +4080,7 @@
     "NatDexNum": 454,
     "SpeciesName": "Toxicroak",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Toxicroak",
     "VarName": "Toxicroak",
     "DefName": "TOXICROAK"
@@ -3635,6 +4089,7 @@
     "NatDexNum": 455,
     "SpeciesName": "Carnivine",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Carnivine",
     "VarName": "Carnivine",
     "DefName": "CARNIVINE"
@@ -3643,6 +4098,7 @@
     "NatDexNum": 456,
     "SpeciesName": "Finneon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Finneon",
     "VarName": "Finneon",
     "DefName": "FINNEON"
@@ -3651,6 +4107,7 @@
     "NatDexNum": 457,
     "SpeciesName": "Lumineon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lumineon",
     "VarName": "Lumineon",
     "DefName": "LUMINEON"
@@ -3659,6 +4116,7 @@
     "NatDexNum": 458,
     "SpeciesName": "Mantyke",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mantyke",
     "VarName": "Mantyke",
     "DefName": "MANTYKE"
@@ -3667,6 +4125,7 @@
     "NatDexNum": 459,
     "SpeciesName": "Snover",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Snover",
     "VarName": "Snover",
     "DefName": "SNOVER"
@@ -3675,6 +4134,7 @@
     "NatDexNum": 460,
     "SpeciesName": "Abomasnow",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Abomasnow",
     "VarName": "Abomasnow",
     "DefName": "ABOMASNOW"
@@ -3683,6 +4143,7 @@
     "NatDexNum": 461,
     "SpeciesName": "Weavile",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Weavile",
     "VarName": "Weavile",
     "DefName": "WEAVILE"
@@ -3691,6 +4152,7 @@
     "NatDexNum": 462,
     "SpeciesName": "Magnezone",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Magnezone",
     "VarName": "Magnezone",
     "DefName": "MAGNEZONE"
@@ -3699,6 +4161,7 @@
     "NatDexNum": 463,
     "SpeciesName": "Lickilicky",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lickilicky",
     "VarName": "Lickilicky",
     "DefName": "LICKILICKY"
@@ -3707,6 +4170,7 @@
     "NatDexNum": 464,
     "SpeciesName": "Rhyperior",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Rhyperior",
     "VarName": "Rhyperior",
     "DefName": "RHYPERIOR"
@@ -3715,6 +4179,7 @@
     "NatDexNum": 465,
     "SpeciesName": "Tangrowth",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tangrowth",
     "VarName": "Tangrowth",
     "DefName": "TANGROWTH"
@@ -3723,6 +4188,7 @@
     "NatDexNum": 466,
     "SpeciesName": "Electivire",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Electivire",
     "VarName": "Electivire",
     "DefName": "ELECTIVIRE"
@@ -3731,6 +4197,7 @@
     "NatDexNum": 467,
     "SpeciesName": "Magmortar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Magmortar",
     "VarName": "Magmortar",
     "DefName": "MAGMORTAR"
@@ -3739,6 +4206,7 @@
     "NatDexNum": 468,
     "SpeciesName": "Togekiss",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Togekiss",
     "VarName": "Togekiss",
     "DefName": "TOGEKISS"
@@ -3747,6 +4215,7 @@
     "NatDexNum": 469,
     "SpeciesName": "Yanmega",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Yanmega",
     "VarName": "Yanmega",
     "DefName": "YANMEGA"
@@ -3755,6 +4224,7 @@
     "NatDexNum": 470,
     "SpeciesName": "Leafeon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Leafeon",
     "VarName": "Leafeon",
     "DefName": "LEAFEON"
@@ -3763,6 +4233,7 @@
     "NatDexNum": 471,
     "SpeciesName": "Glaceon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Glaceon",
     "VarName": "Glaceon",
     "DefName": "GLACEON"
@@ -3771,6 +4242,7 @@
     "NatDexNum": 472,
     "SpeciesName": "Gliscor",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gliscor",
     "VarName": "Gliscor",
     "DefName": "GLISCOR"
@@ -3779,6 +4251,7 @@
     "NatDexNum": 473,
     "SpeciesName": "Mamoswine",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mamoswine",
     "VarName": "Mamoswine",
     "DefName": "MAMOSWINE"
@@ -3787,6 +4260,7 @@
     "NatDexNum": 474,
     "SpeciesName": "Porygon-Z",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Porygon-Z",
     "VarName": "PorygonZ",
     "DefName": "PORYGON_Z"
@@ -3795,6 +4269,7 @@
     "NatDexNum": 475,
     "SpeciesName": "Gallade",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gallade",
     "VarName": "Gallade",
     "DefName": "GALLADE"
@@ -3803,6 +4278,7 @@
     "NatDexNum": 476,
     "SpeciesName": "Probopass",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Probopass",
     "VarName": "Probopass",
     "DefName": "PROBOPASS"
@@ -3811,6 +4287,7 @@
     "NatDexNum": 477,
     "SpeciesName": "Dusknoir",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dusknoir",
     "VarName": "Dusknoir",
     "DefName": "DUSKNOIR"
@@ -3819,6 +4296,7 @@
     "NatDexNum": 478,
     "SpeciesName": "Froslass",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Froslass",
     "VarName": "Froslass",
     "DefName": "FROSLASS"
@@ -3827,6 +4305,7 @@
     "NatDexNum": 479,
     "SpeciesName": "Rotom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Rotom",
     "VarName": "Rotom",
     "DefName": "ROTOM"
@@ -3835,6 +4314,7 @@
     "NatDexNum": 480,
     "SpeciesName": "Uxie",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Uxie",
     "VarName": "Uxie",
     "DefName": "UXIE"
@@ -3843,6 +4323,7 @@
     "NatDexNum": 481,
     "SpeciesName": "Mesprit",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mesprit",
     "VarName": "Mesprit",
     "DefName": "MESPRIT"
@@ -3851,6 +4332,7 @@
     "NatDexNum": 482,
     "SpeciesName": "Azelf",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Azelf",
     "VarName": "Azelf",
     "DefName": "AZELF"
@@ -3859,6 +4341,7 @@
     "NatDexNum": 483,
     "SpeciesName": "Dialga",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dialga",
     "VarName": "Dialga",
     "DefName": "DIALGA"
@@ -3867,6 +4350,7 @@
     "NatDexNum": 484,
     "SpeciesName": "Palkia",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Palkia",
     "VarName": "Palkia",
     "DefName": "PALKIA"
@@ -3875,6 +4359,7 @@
     "NatDexNum": 485,
     "SpeciesName": "Heatran",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Heatran",
     "VarName": "Heatran",
     "DefName": "HEATRAN"
@@ -3883,6 +4368,7 @@
     "NatDexNum": 486,
     "SpeciesName": "Regigigas",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Regigigas",
     "VarName": "Regigigas",
     "DefName": "REGIGIGAS"
@@ -3891,6 +4377,7 @@
     "NatDexNum": 487,
     "SpeciesName": "Giratina",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Altered Forme",
     "VarName": "Giratina",
     "DefName": "GIRATINA"
@@ -3899,6 +4386,7 @@
     "NatDexNum": 488,
     "SpeciesName": "Cresselia",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cresselia",
     "VarName": "Cresselia",
     "DefName": "CRESSELIA"
@@ -3907,6 +4395,7 @@
     "NatDexNum": 489,
     "SpeciesName": "Phione",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Phione",
     "VarName": "Phione",
     "DefName": "PHIONE"
@@ -3915,6 +4404,7 @@
     "NatDexNum": 490,
     "SpeciesName": "Manaphy",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Manaphy",
     "VarName": "Manaphy",
     "DefName": "MANAPHY"
@@ -3923,6 +4413,7 @@
     "NatDexNum": 491,
     "SpeciesName": "Darkrai",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Darkrai",
     "VarName": "Darkrai",
     "DefName": "DARKRAI"
@@ -3931,6 +4422,7 @@
     "NatDexNum": 492,
     "SpeciesName": "Shaymin",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Land Forme",
     "VarName": "Shaymin",
     "DefName": "SHAYMIN"
@@ -3939,6 +4431,7 @@
     "NatDexNum": 493,
     "SpeciesName": "Arceus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Arceus",
     "VarName": "Arceus",
     "DefName": "ARCEUS"
@@ -3947,6 +4440,7 @@
     "NatDexNum": 494,
     "SpeciesName": "Victini",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Victini",
     "VarName": "Victini",
     "DefName": "VICTINI"
@@ -3955,6 +4449,7 @@
     "NatDexNum": 495,
     "SpeciesName": "Snivy",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Snivy",
     "VarName": "Snivy",
     "DefName": "SNIVY"
@@ -3963,6 +4458,7 @@
     "NatDexNum": 496,
     "SpeciesName": "Servine",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Servine",
     "VarName": "Servine",
     "DefName": "SERVINE"
@@ -3971,6 +4467,7 @@
     "NatDexNum": 497,
     "SpeciesName": "Serperior",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Serperior",
     "VarName": "Serperior",
     "DefName": "SERPERIOR"
@@ -3979,6 +4476,7 @@
     "NatDexNum": 498,
     "SpeciesName": "Tepig",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Tepig",
     "VarName": "Tepig",
     "DefName": "TEPIG"
@@ -3987,6 +4485,7 @@
     "NatDexNum": 499,
     "SpeciesName": "Pignite",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Pignite",
     "VarName": "Pignite",
     "DefName": "PIGNITE"
@@ -3995,6 +4494,7 @@
     "NatDexNum": 500,
     "SpeciesName": "Emboar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Emboar",
     "VarName": "Emboar",
     "DefName": "EMBOAR"
@@ -4003,6 +4503,7 @@
     "NatDexNum": 501,
     "SpeciesName": "Oshawott",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Oshawott",
     "VarName": "Oshawott",
     "DefName": "OSHAWOTT"
@@ -4011,6 +4512,7 @@
     "NatDexNum": 502,
     "SpeciesName": "Dewott",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dewott",
     "VarName": "Dewott",
     "DefName": "DEWOTT"
@@ -4019,6 +4521,7 @@
     "NatDexNum": 503,
     "SpeciesName": "Samurott",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Samurott",
     "VarName": "Samurott",
     "DefName": "SAMUROTT"
@@ -4027,6 +4530,7 @@
     "NatDexNum": 504,
     "SpeciesName": "Patrat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Patrat",
     "VarName": "Patrat",
     "DefName": "PATRAT"
@@ -4035,6 +4539,7 @@
     "NatDexNum": 505,
     "SpeciesName": "Watchog",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Watchog",
     "VarName": "Watchog",
     "DefName": "WATCHOG"
@@ -4043,6 +4548,7 @@
     "NatDexNum": 506,
     "SpeciesName": "Lillipup",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Lillipup",
     "VarName": "Lillipup",
     "DefName": "LILLIPUP"
@@ -4051,6 +4557,7 @@
     "NatDexNum": 507,
     "SpeciesName": "Herdier",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Herdier",
     "VarName": "Herdier",
     "DefName": "HERDIER"
@@ -4059,6 +4566,7 @@
     "NatDexNum": 508,
     "SpeciesName": "Stoutland",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Stoutland",
     "VarName": "Stoutland",
     "DefName": "STOUTLAND"
@@ -4067,6 +4575,7 @@
     "NatDexNum": 509,
     "SpeciesName": "Purrloin",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Purrloin",
     "VarName": "Purrloin",
     "DefName": "PURRLOIN"
@@ -4075,6 +4584,7 @@
     "NatDexNum": 510,
     "SpeciesName": "Liepard",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Liepard",
     "VarName": "Liepard",
     "DefName": "LIEPARD"
@@ -4083,6 +4593,7 @@
     "NatDexNum": 511,
     "SpeciesName": "Pansage",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pansage",
     "VarName": "Pansage",
     "DefName": "PANSAGE"
@@ -4091,6 +4602,7 @@
     "NatDexNum": 512,
     "SpeciesName": "Simisage",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Simisage",
     "VarName": "Simisage",
     "DefName": "SIMISAGE"
@@ -4099,6 +4611,7 @@
     "NatDexNum": 513,
     "SpeciesName": "Pansear",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pansear",
     "VarName": "Pansear",
     "DefName": "PANSEAR"
@@ -4107,6 +4620,7 @@
     "NatDexNum": 514,
     "SpeciesName": "Simisear",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Simisear",
     "VarName": "Simisear",
     "DefName": "SIMISEAR"
@@ -4115,6 +4629,7 @@
     "NatDexNum": 515,
     "SpeciesName": "Panpour",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Panpour",
     "VarName": "Panpour",
     "DefName": "PANPOUR"
@@ -4123,6 +4638,7 @@
     "NatDexNum": 516,
     "SpeciesName": "Simipour",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Simipour",
     "VarName": "Simipour",
     "DefName": "SIMIPOUR"
@@ -4131,6 +4647,7 @@
     "NatDexNum": 517,
     "SpeciesName": "Munna",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Munna",
     "VarName": "Munna",
     "DefName": "MUNNA"
@@ -4139,6 +4656,7 @@
     "NatDexNum": 518,
     "SpeciesName": "Musharna",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Musharna",
     "VarName": "Musharna",
     "DefName": "MUSHARNA"
@@ -4147,6 +4665,7 @@
     "NatDexNum": 519,
     "SpeciesName": "Pidove",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pidove",
     "VarName": "Pidove",
     "DefName": "PIDOVE"
@@ -4155,6 +4674,7 @@
     "NatDexNum": 520,
     "SpeciesName": "Tranquill",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tranquill",
     "VarName": "Tranquill",
     "DefName": "TRANQUILL"
@@ -4163,6 +4683,7 @@
     "NatDexNum": 521,
     "SpeciesName": "Unfezant",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Unfezant",
     "VarName": "Unfezant",
     "DefName": "UNFEZANT"
@@ -4171,6 +4692,7 @@
     "NatDexNum": 522,
     "SpeciesName": "Blitzle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Blitzle",
     "VarName": "Blitzle",
     "DefName": "BLITZLE"
@@ -4179,6 +4701,7 @@
     "NatDexNum": 523,
     "SpeciesName": "Zebstrika",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Zebstrika",
     "VarName": "Zebstrika",
     "DefName": "ZEBSTRIKA"
@@ -4187,6 +4710,7 @@
     "NatDexNum": 524,
     "SpeciesName": "Roggenrola",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Roggenrola",
     "VarName": "Roggenrola",
     "DefName": "ROGGENROLA"
@@ -4195,6 +4719,7 @@
     "NatDexNum": 525,
     "SpeciesName": "Boldore",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Boldore",
     "VarName": "Boldore",
     "DefName": "BOLDORE"
@@ -4203,6 +4728,7 @@
     "NatDexNum": 526,
     "SpeciesName": "Gigalith",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gigalith",
     "VarName": "Gigalith",
     "DefName": "GIGALITH"
@@ -4211,6 +4737,7 @@
     "NatDexNum": 527,
     "SpeciesName": "Woobat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Woobat",
     "VarName": "Woobat",
     "DefName": "WOOBAT"
@@ -4219,6 +4746,7 @@
     "NatDexNum": 528,
     "SpeciesName": "Swoobat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Swoobat",
     "VarName": "Swoobat",
     "DefName": "SWOOBAT"
@@ -4227,6 +4755,7 @@
     "NatDexNum": 529,
     "SpeciesName": "Drilbur",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Drilbur",
     "VarName": "Drilbur",
     "DefName": "DRILBUR"
@@ -4235,6 +4764,7 @@
     "NatDexNum": 530,
     "SpeciesName": "Excadrill",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Excadrill",
     "VarName": "Excadrill",
     "DefName": "EXCADRILL"
@@ -4243,6 +4773,7 @@
     "NatDexNum": 531,
     "SpeciesName": "Audino",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Audino",
     "VarName": "Audino",
     "DefName": "AUDINO"
@@ -4251,6 +4782,7 @@
     "NatDexNum": 532,
     "SpeciesName": "Timburr",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Timburr",
     "VarName": "Timburr",
     "DefName": "TIMBURR"
@@ -4259,6 +4791,7 @@
     "NatDexNum": 533,
     "SpeciesName": "Gurdurr",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gurdurr",
     "VarName": "Gurdurr",
     "DefName": "GURDURR"
@@ -4267,6 +4800,7 @@
     "NatDexNum": 534,
     "SpeciesName": "Conkeldurr",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Conkeldurr",
     "VarName": "Conkeldurr",
     "DefName": "CONKELDURR"
@@ -4275,6 +4809,7 @@
     "NatDexNum": 535,
     "SpeciesName": "Tympole",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Tympole",
     "VarName": "Tympole",
     "DefName": "TYMPOLE"
@@ -4283,6 +4818,7 @@
     "NatDexNum": 536,
     "SpeciesName": "Palpitoad",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Palpitoad",
     "VarName": "Palpitoad",
     "DefName": "PALPITOAD"
@@ -4291,6 +4827,7 @@
     "NatDexNum": 537,
     "SpeciesName": "Seismitoad",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Seismitoad",
     "VarName": "Seismitoad",
     "DefName": "SEISMITOAD"
@@ -4299,6 +4836,7 @@
     "NatDexNum": 538,
     "SpeciesName": "Throh",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Throh",
     "VarName": "Throh",
     "DefName": "THROH"
@@ -4307,6 +4845,7 @@
     "NatDexNum": 539,
     "SpeciesName": "Sawk",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sawk",
     "VarName": "Sawk",
     "DefName": "SAWK"
@@ -4315,6 +4854,7 @@
     "NatDexNum": 540,
     "SpeciesName": "Sewaddle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sewaddle",
     "VarName": "Sewaddle",
     "DefName": "SEWADDLE"
@@ -4323,6 +4863,7 @@
     "NatDexNum": 541,
     "SpeciesName": "Swadloon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Swadloon",
     "VarName": "Swadloon",
     "DefName": "SWADLOON"
@@ -4331,6 +4872,7 @@
     "NatDexNum": 542,
     "SpeciesName": "Leavanny",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Leavanny",
     "VarName": "Leavanny",
     "DefName": "LEAVANNY"
@@ -4339,6 +4881,7 @@
     "NatDexNum": 543,
     "SpeciesName": "Venipede",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Venipede",
     "VarName": "Venipede",
     "DefName": "VENIPEDE"
@@ -4347,6 +4890,7 @@
     "NatDexNum": 544,
     "SpeciesName": "Whirlipede",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Whirlipede",
     "VarName": "Whirlipede",
     "DefName": "WHIRLIPEDE"
@@ -4355,6 +4899,7 @@
     "NatDexNum": 545,
     "SpeciesName": "Scolipede",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Scolipede",
     "VarName": "Scolipede",
     "DefName": "SCOLIPEDE"
@@ -4363,6 +4908,7 @@
     "NatDexNum": 546,
     "SpeciesName": "Cottonee",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cottonee",
     "VarName": "Cottonee",
     "DefName": "COTTONEE"
@@ -4371,6 +4917,7 @@
     "NatDexNum": 547,
     "SpeciesName": "Whimsicott",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Whimsicott",
     "VarName": "Whimsicott",
     "DefName": "WHIMSICOTT"
@@ -4379,6 +4926,7 @@
     "NatDexNum": 548,
     "SpeciesName": "Petilil",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Petilil",
     "VarName": "Petilil",
     "DefName": "PETILIL"
@@ -4387,6 +4935,7 @@
     "NatDexNum": 549,
     "SpeciesName": "Lilligant",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lilligant",
     "VarName": "Lilligant",
     "DefName": "LILLIGANT"
@@ -4395,6 +4944,7 @@
     "NatDexNum": 550,
     "SpeciesName": "Basculin",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Basculin",
     "VarName": "Basculin",
     "DefName": "BASCULIN"
@@ -4403,6 +4953,7 @@
     "NatDexNum": 551,
     "SpeciesName": "Sandile",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sandile",
     "VarName": "Sandile",
     "DefName": "SANDILE"
@@ -4411,6 +4962,7 @@
     "NatDexNum": 552,
     "SpeciesName": "Krokorok",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Krokorok",
     "VarName": "Krokorok",
     "DefName": "KROKOROK"
@@ -4419,6 +4971,7 @@
     "NatDexNum": 553,
     "SpeciesName": "Krookodile",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Krookodile",
     "VarName": "Krookodile",
     "DefName": "KROOKODILE"
@@ -4427,6 +4980,7 @@
     "NatDexNum": 554,
     "SpeciesName": "Darumaka",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Darumaka",
     "VarName": "Darumaka",
     "DefName": "DARUMAKA"
@@ -4435,6 +4989,7 @@
     "NatDexNum": 555,
     "SpeciesName": "Darmanitan",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Darmanitan",
     "VarName": "Darmanitan",
     "DefName": "DARMANITAN"
@@ -4443,6 +4998,7 @@
     "NatDexNum": 556,
     "SpeciesName": "Maractus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Maractus",
     "VarName": "Maractus",
     "DefName": "MARACTUS"
@@ -4451,6 +5007,7 @@
     "NatDexNum": 557,
     "SpeciesName": "Dwebble",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Dwebble",
     "VarName": "Dwebble",
     "DefName": "DWEBBLE"
@@ -4459,6 +5016,7 @@
     "NatDexNum": 558,
     "SpeciesName": "Crustle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Crustle",
     "VarName": "Crustle",
     "DefName": "CRUSTLE"
@@ -4467,6 +5025,7 @@
     "NatDexNum": 559,
     "SpeciesName": "Scraggy",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Scraggy",
     "VarName": "Scraggy",
     "DefName": "SCRAGGY"
@@ -4475,6 +5034,7 @@
     "NatDexNum": 560,
     "SpeciesName": "Scrafty",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Scrafty",
     "VarName": "Scrafty",
     "DefName": "SCRAFTY"
@@ -4483,6 +5043,7 @@
     "NatDexNum": 561,
     "SpeciesName": "Sigilyph",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sigilyph",
     "VarName": "Sigilyph",
     "DefName": "SIGILYPH"
@@ -4491,6 +5052,7 @@
     "NatDexNum": 562,
     "SpeciesName": "Yamask",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Yamask",
     "VarName": "Yamask",
     "DefName": "YAMASK"
@@ -4499,6 +5061,7 @@
     "NatDexNum": 563,
     "SpeciesName": "Cofagrigus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cofagrigus",
     "VarName": "Cofagrigus",
     "DefName": "COFAGRIGUS"
@@ -4507,6 +5070,7 @@
     "NatDexNum": 564,
     "SpeciesName": "Tirtouga",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Tirtouga",
     "VarName": "Tirtouga",
     "DefName": "TIRTOUGA"
@@ -4515,6 +5079,7 @@
     "NatDexNum": 565,
     "SpeciesName": "Carracosta",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Carracosta",
     "VarName": "Carracosta",
     "DefName": "CARRACOSTA"
@@ -4523,6 +5088,7 @@
     "NatDexNum": 566,
     "SpeciesName": "Archen",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Archen",
     "VarName": "Archen",
     "DefName": "ARCHEN"
@@ -4531,6 +5097,7 @@
     "NatDexNum": 567,
     "SpeciesName": "Archeops",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Archeops",
     "VarName": "Archeops",
     "DefName": "ARCHEOPS"
@@ -4539,6 +5106,7 @@
     "NatDexNum": 568,
     "SpeciesName": "Trubbish",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Trubbish",
     "VarName": "Trubbish",
     "DefName": "TRUBBISH"
@@ -4547,6 +5115,7 @@
     "NatDexNum": 569,
     "SpeciesName": "Garbodor",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Garbodor",
     "VarName": "Garbodor",
     "DefName": "GARBODOR"
@@ -4555,6 +5124,7 @@
     "NatDexNum": 570,
     "SpeciesName": "Zorua",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Zorua",
     "VarName": "Zorua",
     "DefName": "ZORUA"
@@ -4563,6 +5133,7 @@
     "NatDexNum": 571,
     "SpeciesName": "Zoroark",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Zoroark",
     "VarName": "Zoroark",
     "DefName": "ZOROARK"
@@ -4571,6 +5142,7 @@
     "NatDexNum": 572,
     "SpeciesName": "Minccino",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Minccino",
     "VarName": "Minccino",
     "DefName": "MINCCINO"
@@ -4579,6 +5151,7 @@
     "NatDexNum": 573,
     "SpeciesName": "Cinccino",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cinccino",
     "VarName": "Cinccino",
     "DefName": "CINCCINO"
@@ -4587,6 +5160,7 @@
     "NatDexNum": 574,
     "SpeciesName": "Gothita",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Gothita",
     "VarName": "Gothita",
     "DefName": "GOTHITA"
@@ -4595,6 +5169,7 @@
     "NatDexNum": 575,
     "SpeciesName": "Gothorita",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gothorita",
     "VarName": "Gothorita",
     "DefName": "GOTHORITA"
@@ -4603,6 +5178,7 @@
     "NatDexNum": 576,
     "SpeciesName": "Gothitelle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gothitelle",
     "VarName": "Gothitelle",
     "DefName": "GOTHITELLE"
@@ -4611,6 +5187,7 @@
     "NatDexNum": 577,
     "SpeciesName": "Solosis",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Solosis",
     "VarName": "Solosis",
     "DefName": "SOLOSIS"
@@ -4619,6 +5196,7 @@
     "NatDexNum": 578,
     "SpeciesName": "Duosion",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Duosion",
     "VarName": "Duosion",
     "DefName": "DUOSION"
@@ -4627,6 +5205,7 @@
     "NatDexNum": 579,
     "SpeciesName": "Reuniclus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Reuniclus",
     "VarName": "Reuniclus",
     "DefName": "REUNICLUS"
@@ -4635,6 +5214,7 @@
     "NatDexNum": 580,
     "SpeciesName": "Ducklett",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Ducklett",
     "VarName": "Ducklett",
     "DefName": "DUCKLETT"
@@ -4643,6 +5223,7 @@
     "NatDexNum": 581,
     "SpeciesName": "Swanna",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Swanna",
     "VarName": "Swanna",
     "DefName": "SWANNA"
@@ -4651,6 +5232,7 @@
     "NatDexNum": 582,
     "SpeciesName": "Vanillite",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Vanillite",
     "VarName": "Vanillite",
     "DefName": "VANILLITE"
@@ -4659,6 +5241,7 @@
     "NatDexNum": 583,
     "SpeciesName": "Vanillish",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Vanillish",
     "VarName": "Vanillish",
     "DefName": "VANILLISH"
@@ -4667,6 +5250,7 @@
     "NatDexNum": 584,
     "SpeciesName": "Vanilluxe",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Vanilluxe",
     "VarName": "Vanilluxe",
     "DefName": "VANILLUXE"
@@ -4675,6 +5259,7 @@
     "NatDexNum": 585,
     "SpeciesName": "Deerling",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Deerling",
     "VarName": "Deerling",
     "DefName": "DEERLING"
@@ -4683,6 +5268,7 @@
     "NatDexNum": 586,
     "SpeciesName": "Sawsbuck",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sawsbuck",
     "VarName": "Sawsbuck",
     "DefName": "SAWSBUCK"
@@ -4691,6 +5277,7 @@
     "NatDexNum": 587,
     "SpeciesName": "Emolga",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Emolga",
     "VarName": "Emolga",
     "DefName": "EMOLGA"
@@ -4699,6 +5286,7 @@
     "NatDexNum": 588,
     "SpeciesName": "Karrablast",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Karrablast",
     "VarName": "Karrablast",
     "DefName": "KARRABLAST"
@@ -4707,6 +5295,7 @@
     "NatDexNum": 589,
     "SpeciesName": "Escavalier",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Escavalier",
     "VarName": "Escavalier",
     "DefName": "ESCAVALIER"
@@ -4715,6 +5304,7 @@
     "NatDexNum": 590,
     "SpeciesName": "Foongus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Foongus",
     "VarName": "Foongus",
     "DefName": "FOONGUS"
@@ -4723,6 +5313,7 @@
     "NatDexNum": 591,
     "SpeciesName": "Amoonguss",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Amoonguss",
     "VarName": "Amoonguss",
     "DefName": "AMOONGUSS"
@@ -4731,6 +5322,7 @@
     "NatDexNum": 592,
     "SpeciesName": "Frillish",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Frillish",
     "VarName": "Frillish",
     "DefName": "FRILLISH"
@@ -4739,6 +5331,7 @@
     "NatDexNum": 593,
     "SpeciesName": "Jellicent",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Jellicent",
     "VarName": "Jellicent",
     "DefName": "JELLICENT"
@@ -4747,6 +5340,7 @@
     "NatDexNum": 594,
     "SpeciesName": "Alomomola",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Alomomola",
     "VarName": "Alomomola",
     "DefName": "ALOMOMOLA"
@@ -4755,6 +5349,7 @@
     "NatDexNum": 595,
     "SpeciesName": "Joltik",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Joltik",
     "VarName": "Joltik",
     "DefName": "JOLTIK"
@@ -4763,6 +5358,7 @@
     "NatDexNum": 596,
     "SpeciesName": "Galvantula",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Galvantula",
     "VarName": "Galvantula",
     "DefName": "GALVANTULA"
@@ -4771,6 +5367,7 @@
     "NatDexNum": 597,
     "SpeciesName": "Ferroseed",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Ferroseed",
     "VarName": "Ferroseed",
     "DefName": "FERROSEED"
@@ -4779,6 +5376,7 @@
     "NatDexNum": 598,
     "SpeciesName": "Ferrothorn",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ferrothorn",
     "VarName": "Ferrothorn",
     "DefName": "FERROTHORN"
@@ -4787,6 +5385,7 @@
     "NatDexNum": 599,
     "SpeciesName": "Klink",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Klink",
     "VarName": "Klink",
     "DefName": "KLINK"
@@ -4795,6 +5394,7 @@
     "NatDexNum": 600,
     "SpeciesName": "Klang",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Klang",
     "VarName": "Klang",
     "DefName": "KLANG"
@@ -4803,6 +5403,7 @@
     "NatDexNum": 601,
     "SpeciesName": "Klinklang",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Klinklang",
     "VarName": "Klinklang",
     "DefName": "KLINKLANG"
@@ -4811,6 +5412,7 @@
     "NatDexNum": 602,
     "SpeciesName": "Tynamo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Tynamo",
     "VarName": "Tynamo",
     "DefName": "TYNAMO"
@@ -4819,6 +5421,7 @@
     "NatDexNum": 603,
     "SpeciesName": "Eelektrik",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Eelektrik",
     "VarName": "Eelektrik",
     "DefName": "EELEKTRIK"
@@ -4827,6 +5430,7 @@
     "NatDexNum": 604,
     "SpeciesName": "Eelektross",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Eelektross",
     "VarName": "Eelektross",
     "DefName": "EELEKTROSS"
@@ -4835,6 +5439,7 @@
     "NatDexNum": 605,
     "SpeciesName": "Elgyem",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Elgyem",
     "VarName": "Elgyem",
     "DefName": "ELGYEM"
@@ -4843,6 +5448,7 @@
     "NatDexNum": 606,
     "SpeciesName": "Beheeyem",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Beheeyem",
     "VarName": "Beheeyem",
     "DefName": "BEHEEYEM"
@@ -4851,6 +5457,7 @@
     "NatDexNum": 607,
     "SpeciesName": "Litwick",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Litwick",
     "VarName": "Litwick",
     "DefName": "LITWICK"
@@ -4859,6 +5466,7 @@
     "NatDexNum": 608,
     "SpeciesName": "Lampent",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lampent",
     "VarName": "Lampent",
     "DefName": "LAMPENT"
@@ -4867,6 +5475,7 @@
     "NatDexNum": 609,
     "SpeciesName": "Chandelure",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Chandelure",
     "VarName": "Chandelure",
     "DefName": "CHANDELURE"
@@ -4875,6 +5484,7 @@
     "NatDexNum": 610,
     "SpeciesName": "Axew",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Axew",
     "VarName": "Axew",
     "DefName": "AXEW"
@@ -4883,6 +5493,7 @@
     "NatDexNum": 611,
     "SpeciesName": "Fraxure",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Fraxure",
     "VarName": "Fraxure",
     "DefName": "FRAXURE"
@@ -4891,6 +5502,7 @@
     "NatDexNum": 612,
     "SpeciesName": "Haxorus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Haxorus",
     "VarName": "Haxorus",
     "DefName": "HAXORUS"
@@ -4899,6 +5511,7 @@
     "NatDexNum": 613,
     "SpeciesName": "Cubchoo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cubchoo",
     "VarName": "Cubchoo",
     "DefName": "CUBCHOO"
@@ -4907,6 +5520,7 @@
     "NatDexNum": 614,
     "SpeciesName": "Beartic",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Beartic",
     "VarName": "Beartic",
     "DefName": "BEARTIC"
@@ -4915,6 +5529,7 @@
     "NatDexNum": 615,
     "SpeciesName": "Cryogonal",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cryogonal",
     "VarName": "Cryogonal",
     "DefName": "CRYOGONAL"
@@ -4923,6 +5538,7 @@
     "NatDexNum": 616,
     "SpeciesName": "Shelmet",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Shelmet",
     "VarName": "Shelmet",
     "DefName": "SHELMET"
@@ -4931,6 +5547,7 @@
     "NatDexNum": 617,
     "SpeciesName": "Accelgor",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Accelgor",
     "VarName": "Accelgor",
     "DefName": "ACCELGOR"
@@ -4939,6 +5556,7 @@
     "NatDexNum": 618,
     "SpeciesName": "Stunfisk",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Stunfisk",
     "VarName": "Stunfisk",
     "DefName": "STUNFISK"
@@ -4947,6 +5565,7 @@
     "NatDexNum": 619,
     "SpeciesName": "Mienfoo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mienfoo",
     "VarName": "Mienfoo",
     "DefName": "MIENFOO"
@@ -4955,6 +5574,7 @@
     "NatDexNum": 620,
     "SpeciesName": "Mienshao",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mienshao",
     "VarName": "Mienshao",
     "DefName": "MIENSHAO"
@@ -4963,6 +5583,7 @@
     "NatDexNum": 621,
     "SpeciesName": "Druddigon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Druddigon",
     "VarName": "Druddigon",
     "DefName": "DRUDDIGON"
@@ -4971,6 +5592,7 @@
     "NatDexNum": 622,
     "SpeciesName": "Golett",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Golett",
     "VarName": "Golett",
     "DefName": "GOLETT"
@@ -4979,6 +5601,7 @@
     "NatDexNum": 623,
     "SpeciesName": "Golurk",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Golurk",
     "VarName": "Golurk",
     "DefName": "GOLURK"
@@ -4987,6 +5610,7 @@
     "NatDexNum": 624,
     "SpeciesName": "Pawniard",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pawniard",
     "VarName": "Pawniard",
     "DefName": "PAWNIARD"
@@ -4995,6 +5619,7 @@
     "NatDexNum": 625,
     "SpeciesName": "Bisharp",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Bisharp",
     "VarName": "Bisharp",
     "DefName": "BISHARP"
@@ -5003,6 +5628,7 @@
     "NatDexNum": 626,
     "SpeciesName": "Bouffalant",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bouffalant",
     "VarName": "Bouffalant",
     "DefName": "BOUFFALANT"
@@ -5011,6 +5637,7 @@
     "NatDexNum": 627,
     "SpeciesName": "Rufflet",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Rufflet",
     "VarName": "Rufflet",
     "DefName": "RUFFLET"
@@ -5019,6 +5646,7 @@
     "NatDexNum": 628,
     "SpeciesName": "Braviary",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Braviary",
     "VarName": "Braviary",
     "DefName": "BRAVIARY"
@@ -5027,6 +5655,7 @@
     "NatDexNum": 629,
     "SpeciesName": "Vullaby",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Vullaby",
     "VarName": "Vullaby",
     "DefName": "VULLABY"
@@ -5035,6 +5664,7 @@
     "NatDexNum": 630,
     "SpeciesName": "Mandibuzz",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mandibuzz",
     "VarName": "Mandibuzz",
     "DefName": "MANDIBUZZ"
@@ -5043,6 +5673,7 @@
     "NatDexNum": 631,
     "SpeciesName": "Heatmor",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Heatmor",
     "VarName": "Heatmor",
     "DefName": "HEATMOR"
@@ -5051,6 +5682,7 @@
     "NatDexNum": 632,
     "SpeciesName": "Durant",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Durant",
     "VarName": "Durant",
     "DefName": "DURANT"
@@ -5059,6 +5691,7 @@
     "NatDexNum": 633,
     "SpeciesName": "Deino",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Deino",
     "VarName": "Deino",
     "DefName": "DEINO"
@@ -5067,6 +5700,7 @@
     "NatDexNum": 634,
     "SpeciesName": "Zweilous",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Zweilous",
     "VarName": "Zweilous",
     "DefName": "ZWEILOUS"
@@ -5075,6 +5709,7 @@
     "NatDexNum": 635,
     "SpeciesName": "Hydreigon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hydreigon",
     "VarName": "Hydreigon",
     "DefName": "HYDREIGON"
@@ -5083,6 +5718,7 @@
     "NatDexNum": 636,
     "SpeciesName": "Larvesta",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Larvesta",
     "VarName": "Larvesta",
     "DefName": "LARVESTA"
@@ -5091,6 +5727,7 @@
     "NatDexNum": 637,
     "SpeciesName": "Volcarona",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Volcarona",
     "VarName": "Volcarona",
     "DefName": "VOLCARONA"
@@ -5099,6 +5736,7 @@
     "NatDexNum": 638,
     "SpeciesName": "Cobalion",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cobalion",
     "VarName": "Cobalion",
     "DefName": "COBALION"
@@ -5107,6 +5745,7 @@
     "NatDexNum": 639,
     "SpeciesName": "Terrakion",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Terrakion",
     "VarName": "Terrakion",
     "DefName": "TERRAKION"
@@ -5115,6 +5754,7 @@
     "NatDexNum": 640,
     "SpeciesName": "Virizion",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Virizion",
     "VarName": "Virizion",
     "DefName": "VIRIZION"
@@ -5123,6 +5763,7 @@
     "NatDexNum": 641,
     "SpeciesName": "Tornadus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tornadus",
     "VarName": "Tornadus",
     "DefName": "TORNADUS"
@@ -5131,6 +5772,7 @@
     "NatDexNum": 642,
     "SpeciesName": "Thundurus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Incarnate Forme",
     "VarName": "Thundurus",
     "DefName": "THUNDURUS"
@@ -5139,6 +5781,7 @@
     "NatDexNum": 643,
     "SpeciesName": "Reshiram",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Reshiram",
     "VarName": "Reshiram",
     "DefName": "RESHIRAM"
@@ -5147,6 +5790,7 @@
     "NatDexNum": 644,
     "SpeciesName": "Zekrom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Zekrom",
     "VarName": "Zekrom",
     "DefName": "ZEKROM"
@@ -5155,6 +5799,7 @@
     "NatDexNum": 645,
     "SpeciesName": "Landorus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Landorus",
     "VarName": "Landorus",
     "DefName": "LANDORUS"
@@ -5163,6 +5808,7 @@
     "NatDexNum": 646,
     "SpeciesName": "Kyurem",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Normal Kyurem",
     "VarName": "Kyurem",
     "DefName": "KYUREM"
@@ -5171,6 +5817,7 @@
     "NatDexNum": 647,
     "SpeciesName": "Keldeo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Keldeo",
     "VarName": "Keldeo",
     "DefName": "KELDEO"
@@ -5179,6 +5826,7 @@
     "NatDexNum": 648,
     "SpeciesName": "Meloetta",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Meloetta",
     "VarName": "Meloetta",
     "DefName": "MELOETTA"
@@ -5187,6 +5835,7 @@
     "NatDexNum": 649,
     "SpeciesName": "Genesect",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Genesect",
     "VarName": "Genesect",
     "DefName": "GENESECT"
@@ -5195,6 +5844,7 @@
     "NatDexNum": 650,
     "SpeciesName": "Chespin",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Chespin",
     "VarName": "Chespin",
     "DefName": "CHESPIN"
@@ -5203,6 +5853,7 @@
     "NatDexNum": 651,
     "SpeciesName": "Quilladin",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Quilladin",
     "VarName": "Quilladin",
     "DefName": "QUILLADIN"
@@ -5211,6 +5862,7 @@
     "NatDexNum": 652,
     "SpeciesName": "Chesnaught",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Chesnaught",
     "VarName": "Chesnaught",
     "DefName": "CHESNAUGHT"
@@ -5219,6 +5871,7 @@
     "NatDexNum": 653,
     "SpeciesName": "Fennekin",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Fennekin",
     "VarName": "Fennekin",
     "DefName": "FENNEKIN"
@@ -5227,6 +5880,7 @@
     "NatDexNum": 654,
     "SpeciesName": "Braixen",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Braixen",
     "VarName": "Braixen",
     "DefName": "BRAIXEN"
@@ -5235,6 +5889,7 @@
     "NatDexNum": 655,
     "SpeciesName": "Delphox",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Delphox",
     "VarName": "Delphox",
     "DefName": "DELPHOX"
@@ -5243,6 +5898,7 @@
     "NatDexNum": 656,
     "SpeciesName": "Froakie",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Froakie",
     "VarName": "Froakie",
     "DefName": "FROAKIE"
@@ -5251,6 +5907,7 @@
     "NatDexNum": 657,
     "SpeciesName": "Frogadier",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Frogadier",
     "VarName": "Frogadier",
     "DefName": "FROGADIER"
@@ -5259,6 +5916,7 @@
     "NatDexNum": 658,
     "SpeciesName": "Greninja",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Greninja",
     "VarName": "Greninja",
     "DefName": "GRENINJA"
@@ -5267,6 +5925,7 @@
     "NatDexNum": 659,
     "SpeciesName": "Bunnelby",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bunnelby",
     "VarName": "Bunnelby",
     "DefName": "BUNNELBY"
@@ -5275,6 +5934,7 @@
     "NatDexNum": 660,
     "SpeciesName": "Diggersby",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Diggersby",
     "VarName": "Diggersby",
     "DefName": "DIGGERSBY"
@@ -5283,6 +5943,7 @@
     "NatDexNum": 661,
     "SpeciesName": "Fletchling",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Fletchling",
     "VarName": "Fletchling",
     "DefName": "FLETCHLING"
@@ -5291,6 +5952,7 @@
     "NatDexNum": 662,
     "SpeciesName": "Fletchinder",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Fletchinder",
     "VarName": "Fletchinder",
     "DefName": "FLETCHINDER"
@@ -5299,6 +5961,7 @@
     "NatDexNum": 663,
     "SpeciesName": "Talonflame",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Talonflame",
     "VarName": "Talonflame",
     "DefName": "TALONFLAME"
@@ -5307,6 +5970,7 @@
     "NatDexNum": 664,
     "SpeciesName": "Scatterbug",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Scatterbug",
     "VarName": "Scatterbug",
     "DefName": "SCATTERBUG"
@@ -5315,6 +5979,7 @@
     "NatDexNum": 665,
     "SpeciesName": "Spewpa",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Spewpa",
     "VarName": "Spewpa",
     "DefName": "SPEWPA"
@@ -5323,6 +5988,7 @@
     "NatDexNum": 666,
     "SpeciesName": "Vivillon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Vivillon",
     "VarName": "Vivillon",
     "DefName": "VIVILLON"
@@ -5331,6 +5997,7 @@
     "NatDexNum": 667,
     "SpeciesName": "Litleo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Litleo",
     "VarName": "Litleo",
     "DefName": "LITLEO"
@@ -5339,6 +6006,7 @@
     "NatDexNum": 668,
     "SpeciesName": "Pyroar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Pyroar",
     "VarName": "Pyroar",
     "DefName": "PYROAR"
@@ -5347,6 +6015,7 @@
     "NatDexNum": 669,
     "SpeciesName": "Flabébé",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Flabébé",
     "VarName": "Flabebe",
     "DefName": "FLABEBE"
@@ -5355,6 +6024,7 @@
     "NatDexNum": 670,
     "SpeciesName": "Floette",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Floette",
     "VarName": "Floette",
     "DefName": "FLOETTE"
@@ -5363,6 +6033,7 @@
     "NatDexNum": 671,
     "SpeciesName": "Florges",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Florges",
     "VarName": "Florges",
     "DefName": "FLORGES"
@@ -5371,6 +6042,7 @@
     "NatDexNum": 672,
     "SpeciesName": "Skiddo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Skiddo",
     "VarName": "Skiddo",
     "DefName": "SKIDDO"
@@ -5379,6 +6051,7 @@
     "NatDexNum": 673,
     "SpeciesName": "Gogoat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gogoat",
     "VarName": "Gogoat",
     "DefName": "GOGOAT"
@@ -5387,6 +6060,7 @@
     "NatDexNum": 674,
     "SpeciesName": "Pancham",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pancham",
     "VarName": "Pancham",
     "DefName": "PANCHAM"
@@ -5395,6 +6069,7 @@
     "NatDexNum": 675,
     "SpeciesName": "Pangoro",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Pangoro",
     "VarName": "Pangoro",
     "DefName": "PANGORO"
@@ -5403,6 +6078,7 @@
     "NatDexNum": 676,
     "SpeciesName": "Furfrou",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Furfrou",
     "VarName": "Furfrou",
     "DefName": "FURFROU"
@@ -5411,6 +6087,7 @@
     "NatDexNum": 677,
     "SpeciesName": "Espurr",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Espurr",
     "VarName": "Espurr",
     "DefName": "ESPURR"
@@ -5419,6 +6096,7 @@
     "NatDexNum": 678,
     "SpeciesName": "Meowstic",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Male Meowstic",
     "VarName": "Meowstic",
     "DefName": "MEOWSTIC"
@@ -5427,6 +6105,7 @@
     "NatDexNum": 679,
     "SpeciesName": "Honedge",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Honedge",
     "VarName": "Honedge",
     "DefName": "HONEDGE"
@@ -5435,6 +6114,7 @@
     "NatDexNum": 680,
     "SpeciesName": "Doublade",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Doublade",
     "VarName": "Doublade",
     "DefName": "DOUBLADE"
@@ -5443,6 +6123,7 @@
     "NatDexNum": 681,
     "SpeciesName": "Aegislash",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Aegislash",
     "VarName": "Aegislash",
     "DefName": "AEGISLASH"
@@ -5451,6 +6132,7 @@
     "NatDexNum": 682,
     "SpeciesName": "Spritzee",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Spritzee",
     "VarName": "Spritzee",
     "DefName": "SPRITZEE"
@@ -5459,6 +6141,7 @@
     "NatDexNum": 683,
     "SpeciesName": "Aromatisse",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Aromatisse",
     "VarName": "Aromatisse",
     "DefName": "AROMATISSE"
@@ -5467,6 +6150,7 @@
     "NatDexNum": 684,
     "SpeciesName": "Swirlix",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Swirlix",
     "VarName": "Swirlix",
     "DefName": "SWIRLIX"
@@ -5475,6 +6159,7 @@
     "NatDexNum": 685,
     "SpeciesName": "Slurpuff",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Slurpuff",
     "VarName": "Slurpuff",
     "DefName": "SLURPUFF"
@@ -5483,6 +6168,7 @@
     "NatDexNum": 686,
     "SpeciesName": "Inkay",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Inkay",
     "VarName": "Inkay",
     "DefName": "INKAY"
@@ -5491,6 +6177,7 @@
     "NatDexNum": 687,
     "SpeciesName": "Malamar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Malamar",
     "VarName": "Malamar",
     "DefName": "MALAMAR"
@@ -5499,6 +6186,7 @@
     "NatDexNum": 688,
     "SpeciesName": "Binacle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Binacle",
     "VarName": "Binacle",
     "DefName": "BINACLE"
@@ -5507,6 +6195,7 @@
     "NatDexNum": 689,
     "SpeciesName": "Barbaracle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Barbaracle",
     "VarName": "Barbaracle",
     "DefName": "BARBARACLE"
@@ -5515,6 +6204,7 @@
     "NatDexNum": 690,
     "SpeciesName": "Skrelp",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Skrelp",
     "VarName": "Skrelp",
     "DefName": "SKRELP"
@@ -5523,6 +6213,7 @@
     "NatDexNum": 691,
     "SpeciesName": "Dragalge",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dragalge",
     "VarName": "Dragalge",
     "DefName": "DRAGALGE"
@@ -5531,6 +6222,7 @@
     "NatDexNum": 692,
     "SpeciesName": "Clauncher",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Clauncher",
     "VarName": "Clauncher",
     "DefName": "CLAUNCHER"
@@ -5539,6 +6231,7 @@
     "NatDexNum": 693,
     "SpeciesName": "Clawitzer",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Clawitzer",
     "VarName": "Clawitzer",
     "DefName": "CLAWITZER"
@@ -5547,6 +6240,7 @@
     "NatDexNum": 694,
     "SpeciesName": "Helioptile",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Helioptile",
     "VarName": "Helioptile",
     "DefName": "HELIOPTILE"
@@ -5555,6 +6249,7 @@
     "NatDexNum": 695,
     "SpeciesName": "Heliolisk",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Heliolisk",
     "VarName": "Heliolisk",
     "DefName": "HELIOLISK"
@@ -5563,6 +6258,7 @@
     "NatDexNum": 696,
     "SpeciesName": "Tyrunt",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Tyrunt",
     "VarName": "Tyrunt",
     "DefName": "TYRUNT"
@@ -5571,6 +6267,7 @@
     "NatDexNum": 697,
     "SpeciesName": "Tyrantrum",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tyrantrum",
     "VarName": "Tyrantrum",
     "DefName": "TYRANTRUM"
@@ -5579,6 +6276,7 @@
     "NatDexNum": 698,
     "SpeciesName": "Amaura",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Amaura",
     "VarName": "Amaura",
     "DefName": "AMAURA"
@@ -5587,6 +6285,7 @@
     "NatDexNum": 699,
     "SpeciesName": "Aurorus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Aurorus",
     "VarName": "Aurorus",
     "DefName": "AURORUS"
@@ -5595,6 +6294,7 @@
     "NatDexNum": 700,
     "SpeciesName": "Sylveon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sylveon",
     "VarName": "Sylveon",
     "DefName": "SYLVEON"
@@ -5603,6 +6303,7 @@
     "NatDexNum": 701,
     "SpeciesName": "Hawlucha",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Hawlucha",
     "VarName": "Hawlucha",
     "DefName": "HAWLUCHA"
@@ -5611,6 +6312,7 @@
     "NatDexNum": 702,
     "SpeciesName": "Dedenne",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Dedenne",
     "VarName": "Dedenne",
     "DefName": "DEDENNE"
@@ -5619,6 +6321,7 @@
     "NatDexNum": 703,
     "SpeciesName": "Carbink",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Carbink",
     "VarName": "Carbink",
     "DefName": "CARBINK"
@@ -5627,6 +6330,7 @@
     "NatDexNum": 704,
     "SpeciesName": "Goomy",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Goomy",
     "VarName": "Goomy",
     "DefName": "GOOMY"
@@ -5635,6 +6339,7 @@
     "NatDexNum": 705,
     "SpeciesName": "Sliggoo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sliggoo",
     "VarName": "Sliggoo",
     "DefName": "SLIGGOO"
@@ -5643,6 +6348,7 @@
     "NatDexNum": 706,
     "SpeciesName": "Goodra",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Goodra",
     "VarName": "Goodra",
     "DefName": "GOODRA"
@@ -5651,6 +6357,7 @@
     "NatDexNum": 707,
     "SpeciesName": "Klefki",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Klefki",
     "VarName": "Klefki",
     "DefName": "KLEFKI"
@@ -5659,6 +6366,7 @@
     "NatDexNum": 708,
     "SpeciesName": "Phantump",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Phantump",
     "VarName": "Phantump",
     "DefName": "PHANTUMP"
@@ -5667,6 +6375,7 @@
     "NatDexNum": 709,
     "SpeciesName": "Trevenant",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Trevenant",
     "VarName": "Trevenant",
     "DefName": "TREVENANT"
@@ -5675,6 +6384,7 @@
     "NatDexNum": 710,
     "SpeciesName": "Pumpkaboo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pumpkaboo",
     "VarName": "Pumpkaboo",
     "DefName": "PUMPKABOO"
@@ -5683,6 +6393,7 @@
     "NatDexNum": 711,
     "SpeciesName": "Gourgeist",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gourgeist",
     "VarName": "Gourgeist",
     "DefName": "GOURGEIST"
@@ -5691,6 +6402,7 @@
     "NatDexNum": 712,
     "SpeciesName": "Bergmite",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bergmite",
     "VarName": "Bergmite",
     "DefName": "BERGMITE"
@@ -5699,6 +6411,7 @@
     "NatDexNum": 713,
     "SpeciesName": "Avalugg",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Avalugg",
     "VarName": "Avalugg",
     "DefName": "AVALUGG"
@@ -5707,6 +6420,7 @@
     "NatDexNum": 714,
     "SpeciesName": "Noibat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Noibat",
     "VarName": "Noibat",
     "DefName": "NOIBAT"
@@ -5715,6 +6429,7 @@
     "NatDexNum": 715,
     "SpeciesName": "Noivern",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Noivern",
     "VarName": "Noivern",
     "DefName": "NOIVERN"
@@ -5723,6 +6438,7 @@
     "NatDexNum": 716,
     "SpeciesName": "Xerneas",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Xerneas",
     "VarName": "Xerneas",
     "DefName": "XERNEAS"
@@ -5731,6 +6447,7 @@
     "NatDexNum": 717,
     "SpeciesName": "Yveltal",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Yveltal",
     "VarName": "Yveltal",
     "DefName": "YVELTAL"
@@ -5739,6 +6456,7 @@
     "NatDexNum": 718,
     "SpeciesName": "Zygarde",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Zygarde",
     "VarName": "Zygarde",
     "DefName": "ZYGARDE"
@@ -5747,6 +6465,7 @@
     "NatDexNum": 719,
     "SpeciesName": "Diancie",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Diancie",
     "VarName": "Diancie",
     "DefName": "DIANCIE"
@@ -5755,6 +6474,7 @@
     "NatDexNum": 720,
     "SpeciesName": "Hoopa",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hoopa Confined",
     "VarName": "Hoopa",
     "DefName": "HOOPA"
@@ -5763,6 +6483,7 @@
     "NatDexNum": 721,
     "SpeciesName": "Volcanion",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Volcanion",
     "VarName": "Volcanion",
     "DefName": "VOLCANION"
@@ -5771,6 +6492,7 @@
     "NatDexNum": 722,
     "SpeciesName": "Rowlet",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Rowlet",
     "VarName": "Rowlet",
     "DefName": "ROWLET"
@@ -5779,6 +6501,7 @@
     "NatDexNum": 723,
     "SpeciesName": "Dartrix",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dartrix",
     "VarName": "Dartrix",
     "DefName": "DARTRIX"
@@ -5787,6 +6510,7 @@
     "NatDexNum": 724,
     "SpeciesName": "Decidueye",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Decidueye",
     "VarName": "Decidueye",
     "DefName": "DECIDUEYE"
@@ -5795,6 +6519,7 @@
     "NatDexNum": 725,
     "SpeciesName": "Litten",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Litten",
     "VarName": "Litten",
     "DefName": "LITTEN"
@@ -5803,6 +6528,7 @@
     "NatDexNum": 726,
     "SpeciesName": "Torracat",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Torracat",
     "VarName": "Torracat",
     "DefName": "TORRACAT"
@@ -5811,6 +6537,7 @@
     "NatDexNum": 727,
     "SpeciesName": "Incineroar",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Incineroar",
     "VarName": "Incineroar",
     "DefName": "INCINEROAR"
@@ -5819,6 +6546,7 @@
     "NatDexNum": 728,
     "SpeciesName": "Popplio",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Popplio",
     "VarName": "Popplio",
     "DefName": "POPPLIO"
@@ -5827,6 +6555,7 @@
     "NatDexNum": 729,
     "SpeciesName": "Brionne",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Brionne",
     "VarName": "Brionne",
     "DefName": "BRIONNE"
@@ -5835,6 +6564,7 @@
     "NatDexNum": 730,
     "SpeciesName": "Primarina",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Primarina",
     "VarName": "Primarina",
     "DefName": "PRIMARINA"
@@ -5843,6 +6573,7 @@
     "NatDexNum": 731,
     "SpeciesName": "Pikipek",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pikipek",
     "VarName": "Pikipek",
     "DefName": "PIKIPEK"
@@ -5851,6 +6582,7 @@
     "NatDexNum": 732,
     "SpeciesName": "Trumbeak",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Trumbeak",
     "VarName": "Trumbeak",
     "DefName": "TRUMBEAK"
@@ -5859,6 +6591,7 @@
     "NatDexNum": 733,
     "SpeciesName": "Toucannon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Toucannon",
     "VarName": "Toucannon",
     "DefName": "TOUCANNON"
@@ -5867,6 +6600,7 @@
     "NatDexNum": 734,
     "SpeciesName": "Yungoos",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Yungoos",
     "VarName": "Yungoos",
     "DefName": "YUNGOOS"
@@ -5875,6 +6609,7 @@
     "NatDexNum": 735,
     "SpeciesName": "Gumshoos",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Gumshoos",
     "VarName": "Gumshoos",
     "DefName": "GUMSHOOS"
@@ -5883,6 +6618,7 @@
     "NatDexNum": 736,
     "SpeciesName": "Grubbin",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Grubbin",
     "VarName": "Grubbin",
     "DefName": "GRUBBIN"
@@ -5891,6 +6627,7 @@
     "NatDexNum": 737,
     "SpeciesName": "Charjabug",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Charjabug",
     "VarName": "Charjabug",
     "DefName": "CHARJABUG"
@@ -5899,6 +6636,7 @@
     "NatDexNum": 738,
     "SpeciesName": "Vikavolt",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Vikavolt",
     "VarName": "Vikavolt",
     "DefName": "VIKAVOLT"
@@ -5907,6 +6645,7 @@
     "NatDexNum": 739,
     "SpeciesName": "Crabrawler",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Crabrawler",
     "VarName": "Crabrawler",
     "DefName": "CRABRAWLER"
@@ -5915,6 +6654,7 @@
     "NatDexNum": 740,
     "SpeciesName": "Crabominable",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Crabominable",
     "VarName": "Crabominable",
     "DefName": "CRABOMINABLE"
@@ -5923,6 +6663,7 @@
     "NatDexNum": 741,
     "SpeciesName": "Oricorio",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Oricorio",
     "VarName": "Oricorio",
     "DefName": "ORICORIO"
@@ -5931,6 +6672,7 @@
     "NatDexNum": 742,
     "SpeciesName": "Cutiefly",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cutiefly",
     "VarName": "Cutiefly",
     "DefName": "CUTIEFLY"
@@ -5939,6 +6681,7 @@
     "NatDexNum": 743,
     "SpeciesName": "Ribombee",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Ribombee",
     "VarName": "Ribombee",
     "DefName": "RIBOMBEE"
@@ -5947,6 +6690,7 @@
     "NatDexNum": 744,
     "SpeciesName": "Rockruff",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Rockruff",
     "VarName": "Rockruff",
     "DefName": "ROCKRUFF"
@@ -5955,6 +6699,7 @@
     "NatDexNum": 745,
     "SpeciesName": "Lycanroc",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Midday Form",
     "VarName": "Lycanroc",
     "DefName": "LYCANROC"
@@ -5963,6 +6708,7 @@
     "NatDexNum": 746,
     "SpeciesName": "Wishiwashi",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Wishiwashi",
     "VarName": "Wishiwashi",
     "DefName": "WISHIWASHI"
@@ -5971,6 +6717,7 @@
     "NatDexNum": 747,
     "SpeciesName": "Mareanie",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mareanie",
     "VarName": "Mareanie",
     "DefName": "MAREANIE"
@@ -5979,6 +6726,7 @@
     "NatDexNum": 748,
     "SpeciesName": "Toxapex",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Toxapex",
     "VarName": "Toxapex",
     "DefName": "TOXAPEX"
@@ -5987,6 +6735,7 @@
     "NatDexNum": 749,
     "SpeciesName": "Mudbray",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mudbray",
     "VarName": "Mudbray",
     "DefName": "MUDBRAY"
@@ -5995,6 +6744,7 @@
     "NatDexNum": 750,
     "SpeciesName": "Mudsdale",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mudsdale",
     "VarName": "Mudsdale",
     "DefName": "MUDSDALE"
@@ -6003,6 +6753,7 @@
     "NatDexNum": 751,
     "SpeciesName": "Dewpider",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Dewpider",
     "VarName": "Dewpider",
     "DefName": "DEWPIDER"
@@ -6011,6 +6762,7 @@
     "NatDexNum": 752,
     "SpeciesName": "Araquanid",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Araquanid",
     "VarName": "Araquanid",
     "DefName": "ARAQUANID"
@@ -6019,6 +6771,7 @@
     "NatDexNum": 753,
     "SpeciesName": "Fomantis",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Fomantis",
     "VarName": "Fomantis",
     "DefName": "FOMANTIS"
@@ -6027,6 +6780,7 @@
     "NatDexNum": 754,
     "SpeciesName": "Lurantis",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lurantis",
     "VarName": "Lurantis",
     "DefName": "LURANTIS"
@@ -6035,6 +6789,7 @@
     "NatDexNum": 755,
     "SpeciesName": "Morelull",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Morelull",
     "VarName": "Morelull",
     "DefName": "MORELULL"
@@ -6043,6 +6798,7 @@
     "NatDexNum": 756,
     "SpeciesName": "Shiinotic",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Shiinotic",
     "VarName": "Shiinotic",
     "DefName": "SHIINOTIC"
@@ -6051,6 +6807,7 @@
     "NatDexNum": 757,
     "SpeciesName": "Salandit",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Salandit",
     "VarName": "Salandit",
     "DefName": "SALANDIT"
@@ -6059,6 +6816,7 @@
     "NatDexNum": 758,
     "SpeciesName": "Salazzle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Salazzle",
     "VarName": "Salazzle",
     "DefName": "SALAZZLE"
@@ -6067,6 +6825,7 @@
     "NatDexNum": 759,
     "SpeciesName": "Stufful",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Stufful",
     "VarName": "Stufful",
     "DefName": "STUFFUL"
@@ -6075,6 +6834,7 @@
     "NatDexNum": 760,
     "SpeciesName": "Bewear",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Bewear",
     "VarName": "Bewear",
     "DefName": "BEWEAR"
@@ -6083,6 +6843,7 @@
     "NatDexNum": 761,
     "SpeciesName": "Bounsweet",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bounsweet",
     "VarName": "Bounsweet",
     "DefName": "BOUNSWEET"
@@ -6091,6 +6852,7 @@
     "NatDexNum": 762,
     "SpeciesName": "Steenee",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Steenee",
     "VarName": "Steenee",
     "DefName": "STEENEE"
@@ -6099,6 +6861,7 @@
     "NatDexNum": 763,
     "SpeciesName": "Tsareena",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tsareena",
     "VarName": "Tsareena",
     "DefName": "TSAREENA"
@@ -6107,6 +6870,7 @@
     "NatDexNum": 764,
     "SpeciesName": "Comfey",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Comfey",
     "VarName": "Comfey",
     "DefName": "COMFEY"
@@ -6115,6 +6879,7 @@
     "NatDexNum": 765,
     "SpeciesName": "Oranguru",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Oranguru",
     "VarName": "Oranguru",
     "DefName": "ORANGURU"
@@ -6123,6 +6888,7 @@
     "NatDexNum": 766,
     "SpeciesName": "Passimian",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Passimian",
     "VarName": "Passimian",
     "DefName": "PASSIMIAN"
@@ -6131,6 +6897,7 @@
     "NatDexNum": 767,
     "SpeciesName": "Wimpod",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Wimpod",
     "VarName": "Wimpod",
     "DefName": "WIMPOD"
@@ -6139,6 +6906,7 @@
     "NatDexNum": 768,
     "SpeciesName": "Golisopod",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Golisopod",
     "VarName": "Golisopod",
     "DefName": "GOLISOPOD"
@@ -6147,6 +6915,7 @@
     "NatDexNum": 769,
     "SpeciesName": "Sandygast",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sandygast",
     "VarName": "Sandygast",
     "DefName": "SANDYGAST"
@@ -6155,6 +6924,7 @@
     "NatDexNum": 770,
     "SpeciesName": "Palossand",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Palossand",
     "VarName": "Palossand",
     "DefName": "PALOSSAND"
@@ -6163,6 +6933,7 @@
     "NatDexNum": 771,
     "SpeciesName": "Pyukumuku",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pyukumuku",
     "VarName": "Pyukumuku",
     "DefName": "PYUKUMUKU"
@@ -6171,6 +6942,7 @@
     "NatDexNum": 772,
     "SpeciesName": "Type: Null",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Type: Null",
     "VarName": "TypeNull",
     "DefName": "TYPE_NULL"
@@ -6179,6 +6951,7 @@
     "NatDexNum": 773,
     "SpeciesName": "Silvally",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Silvally",
     "VarName": "Silvally",
     "DefName": "SILVALLY"
@@ -6187,6 +6960,7 @@
     "NatDexNum": 774,
     "SpeciesName": "Minior",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Minior",
     "VarName": "Minior",
     "DefName": "MINIOR"
@@ -6195,6 +6969,7 @@
     "NatDexNum": 775,
     "SpeciesName": "Komala",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Komala",
     "VarName": "Komala",
     "DefName": "KOMALA"
@@ -6203,6 +6978,7 @@
     "NatDexNum": 776,
     "SpeciesName": "Turtonator",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Turtonator",
     "VarName": "Turtonator",
     "DefName": "TURTONATOR"
@@ -6211,6 +6987,7 @@
     "NatDexNum": 777,
     "SpeciesName": "Togedemaru",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Togedemaru",
     "VarName": "Togedemaru",
     "DefName": "TOGEDEMARU"
@@ -6219,6 +6996,7 @@
     "NatDexNum": 778,
     "SpeciesName": "Mimikyu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Mimikyu",
     "VarName": "Mimikyu",
     "DefName": "MIMIKYU"
@@ -6227,6 +7005,7 @@
     "NatDexNum": 779,
     "SpeciesName": "Bruxish",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Bruxish",
     "VarName": "Bruxish",
     "DefName": "BRUXISH"
@@ -6235,6 +7014,7 @@
     "NatDexNum": 780,
     "SpeciesName": "Drampa",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Drampa",
     "VarName": "Drampa",
     "DefName": "DRAMPA"
@@ -6243,6 +7023,7 @@
     "NatDexNum": 781,
     "SpeciesName": "Dhelmise",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Dhelmise",
     "VarName": "Dhelmise",
     "DefName": "DHELMISE"
@@ -6251,6 +7032,7 @@
     "NatDexNum": 782,
     "SpeciesName": "Jangmo-o",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Jangmo-o",
     "VarName": "JangmoO",
     "DefName": "JANGMO_O"
@@ -6259,6 +7041,7 @@
     "NatDexNum": 783,
     "SpeciesName": "Hakamo-o",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hakamo-o",
     "VarName": "HakamoO",
     "DefName": "HAKAMO_O"
@@ -6267,6 +7050,7 @@
     "NatDexNum": 784,
     "SpeciesName": "Kommo-o",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kommo-o",
     "VarName": "KommoO",
     "DefName": "KOMMO_O"
@@ -6275,6 +7059,7 @@
     "NatDexNum": 785,
     "SpeciesName": "Tapu Koko",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tapu Koko",
     "VarName": "TapuKoko",
     "DefName": "TAPU_KOKO"
@@ -6283,6 +7068,7 @@
     "NatDexNum": 786,
     "SpeciesName": "Tapu Lele",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tapu Lele",
     "VarName": "TapuLele",
     "DefName": "TAPU_LELE"
@@ -6291,6 +7077,7 @@
     "NatDexNum": 787,
     "SpeciesName": "Tapu Bulu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tapu Bulu",
     "VarName": "TapuBulu",
     "DefName": "TAPU_BULU"
@@ -6299,6 +7086,7 @@
     "NatDexNum": 788,
     "SpeciesName": "Tapu Fini",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Tapu Fini",
     "VarName": "TapuFini",
     "DefName": "TAPU_FINI"
@@ -6307,6 +7095,7 @@
     "NatDexNum": 789,
     "SpeciesName": "Cosmog",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cosmog",
     "VarName": "Cosmog",
     "DefName": "COSMOG"
@@ -6315,6 +7104,7 @@
     "NatDexNum": 790,
     "SpeciesName": "Cosmoem",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cosmoem",
     "VarName": "Cosmoem",
     "DefName": "COSMOEM"
@@ -6323,6 +7113,7 @@
     "NatDexNum": 791,
     "SpeciesName": "Solgaleo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Solgaleo",
     "VarName": "Solgaleo",
     "DefName": "SOLGALEO"
@@ -6331,6 +7122,7 @@
     "NatDexNum": 792,
     "SpeciesName": "Lunala",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Lunala",
     "VarName": "Lunala",
     "DefName": "LUNALA"
@@ -6339,6 +7131,7 @@
     "NatDexNum": 793,
     "SpeciesName": "Nihilego",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Nihilego",
     "VarName": "Nihilego",
     "DefName": "NIHILEGO"
@@ -6347,6 +7140,7 @@
     "NatDexNum": 794,
     "SpeciesName": "Buzzwole",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Buzzwole",
     "VarName": "Buzzwole",
     "DefName": "BUZZWOLE"
@@ -6355,6 +7149,7 @@
     "NatDexNum": 795,
     "SpeciesName": "Pheromosa",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Pheromosa",
     "VarName": "Pheromosa",
     "DefName": "PHEROMOSA"
@@ -6363,6 +7158,7 @@
     "NatDexNum": 796,
     "SpeciesName": "Xurkitree",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Xurkitree",
     "VarName": "Xurkitree",
     "DefName": "XURKITREE"
@@ -6371,6 +7167,7 @@
     "NatDexNum": 797,
     "SpeciesName": "Celesteela",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Celesteela",
     "VarName": "Celesteela",
     "DefName": "CELESTEELA"
@@ -6379,6 +7176,7 @@
     "NatDexNum": 798,
     "SpeciesName": "Kartana",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kartana",
     "VarName": "Kartana",
     "DefName": "KARTANA"
@@ -6387,6 +7185,7 @@
     "NatDexNum": 799,
     "SpeciesName": "Guzzlord",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Guzzlord",
     "VarName": "Guzzlord",
     "DefName": "GUZZLORD"
@@ -6395,6 +7194,7 @@
     "NatDexNum": 800,
     "SpeciesName": "Necrozma",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Necrozma",
     "VarName": "Necrozma",
     "DefName": "NECROZMA"
@@ -6403,6 +7203,7 @@
     "NatDexNum": 801,
     "SpeciesName": "Magearna",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Magearna",
     "VarName": "Magearna",
     "DefName": "MAGEARNA"
@@ -6411,6 +7212,7 @@
     "NatDexNum": 802,
     "SpeciesName": "Marshadow",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Marshadow",
     "VarName": "Marshadow",
     "DefName": "MARSHADOW"
@@ -6419,6 +7221,7 @@
     "NatDexNum": 803,
     "SpeciesName": "Poipole",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Poipole",
     "VarName": "Poipole",
     "DefName": "POIPOLE"
@@ -6427,6 +7230,7 @@
     "NatDexNum": 804,
     "SpeciesName": "Naganadel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Naganadel",
     "VarName": "Naganadel",
     "DefName": "NAGANADEL"
@@ -6435,6 +7239,7 @@
     "NatDexNum": 805,
     "SpeciesName": "Stakataka",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Stakataka",
     "VarName": "Stakataka",
     "DefName": "STAKATAKA"
@@ -6443,6 +7248,7 @@
     "NatDexNum": 806,
     "SpeciesName": "Blacephalon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Blacephalon",
     "VarName": "Blacephalon",
     "DefName": "BLACEPHALON"
@@ -6451,6 +7257,7 @@
     "NatDexNum": 807,
     "SpeciesName": "Zeraora",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Zeraora",
     "VarName": "Zeraora",
     "DefName": "ZERAORA"
@@ -6459,6 +7266,7 @@
     "NatDexNum": 808,
     "SpeciesName": "Meltan",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Meltan",
     "VarName": "Meltan",
     "DefName": "MELTAN"
@@ -6467,6 +7275,7 @@
     "NatDexNum": 809,
     "SpeciesName": "Melmetal",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Melmetal",
     "VarName": "Melmetal",
     "DefName": "MELMETAL"
@@ -6475,6 +7284,7 @@
     "NatDexNum": 810,
     "SpeciesName": "Grookey",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Grookey",
     "VarName": "Grookey",
     "DefName": "GROOKEY"
@@ -6483,6 +7293,7 @@
     "NatDexNum": 811,
     "SpeciesName": "Thwackey",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Thwackey",
     "VarName": "Thwackey",
     "DefName": "THWACKEY"
@@ -6491,6 +7302,7 @@
     "NatDexNum": 812,
     "SpeciesName": "Rillaboom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Rillaboom",
     "VarName": "Rillaboom",
     "DefName": "RILLABOOM"
@@ -6499,6 +7311,7 @@
     "NatDexNum": 813,
     "SpeciesName": "Scorbunny",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Scorbunny",
     "VarName": "Scorbunny",
     "DefName": "SCORBUNNY"
@@ -6507,6 +7320,7 @@
     "NatDexNum": 814,
     "SpeciesName": "Raboot",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Raboot",
     "VarName": "Raboot",
     "DefName": "RABOOT"
@@ -6515,6 +7329,7 @@
     "NatDexNum": 815,
     "SpeciesName": "Cinderace",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cinderace",
     "VarName": "Cinderace",
     "DefName": "CINDERACE"
@@ -6523,6 +7338,7 @@
     "NatDexNum": 816,
     "SpeciesName": "Sobble",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sobble",
     "VarName": "Sobble",
     "DefName": "SOBBLE"
@@ -6531,6 +7347,7 @@
     "NatDexNum": 817,
     "SpeciesName": "Drizzile",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Drizzile",
     "VarName": "Drizzile",
     "DefName": "DRIZZILE"
@@ -6539,6 +7356,7 @@
     "NatDexNum": 818,
     "SpeciesName": "Inteleon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Inteleon",
     "VarName": "Inteleon",
     "DefName": "INTELEON"
@@ -6547,6 +7365,7 @@
     "NatDexNum": 819,
     "SpeciesName": "Skwovet",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Skwovet",
     "VarName": "Skwovet",
     "DefName": "SKWOVET"
@@ -6555,6 +7374,7 @@
     "NatDexNum": 820,
     "SpeciesName": "Greedent",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Greedent",
     "VarName": "Greedent",
     "DefName": "GREEDENT"
@@ -6563,6 +7383,7 @@
     "NatDexNum": 821,
     "SpeciesName": "Rookidee",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Rookidee",
     "VarName": "Rookidee",
     "DefName": "ROOKIDEE"
@@ -6571,6 +7392,7 @@
     "NatDexNum": 822,
     "SpeciesName": "Corvisquire",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Corvisquire",
     "VarName": "Corvisquire",
     "DefName": "CORVISQUIRE"
@@ -6579,6 +7401,7 @@
     "NatDexNum": 823,
     "SpeciesName": "Corviknight",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Corviknight",
     "VarName": "Corviknight",
     "DefName": "CORVIKNIGHT"
@@ -6587,6 +7410,7 @@
     "NatDexNum": 824,
     "SpeciesName": "Blipbug",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Blipbug",
     "VarName": "Blipbug",
     "DefName": "BLIPBUG"
@@ -6595,6 +7419,7 @@
     "NatDexNum": 825,
     "SpeciesName": "Dottler",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dottler",
     "VarName": "Dottler",
     "DefName": "DOTTLER"
@@ -6603,6 +7428,7 @@
     "NatDexNum": 826,
     "SpeciesName": "Orbeetle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Orbeetle",
     "VarName": "Orbeetle",
     "DefName": "ORBEETLE"
@@ -6611,6 +7437,7 @@
     "NatDexNum": 827,
     "SpeciesName": "Nickit",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Nickit",
     "VarName": "Nickit",
     "DefName": "NICKIT"
@@ -6619,6 +7446,7 @@
     "NatDexNum": 828,
     "SpeciesName": "Thievul",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Thievul",
     "VarName": "Thievul",
     "DefName": "THIEVUL"
@@ -6627,6 +7455,7 @@
     "NatDexNum": 829,
     "SpeciesName": "Gossifleur",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Gossifleur",
     "VarName": "Gossifleur",
     "DefName": "GOSSIFLEUR"
@@ -6635,6 +7464,7 @@
     "NatDexNum": 830,
     "SpeciesName": "Eldegoss",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Eldegoss",
     "VarName": "Eldegoss",
     "DefName": "ELDEGOSS"
@@ -6643,6 +7473,7 @@
     "NatDexNum": 831,
     "SpeciesName": "Wooloo",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Wooloo",
     "VarName": "Wooloo",
     "DefName": "WOOLOO"
@@ -6651,6 +7482,7 @@
     "NatDexNum": 832,
     "SpeciesName": "Dubwool",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dubwool",
     "VarName": "Dubwool",
     "DefName": "DUBWOOL"
@@ -6659,6 +7491,7 @@
     "NatDexNum": 833,
     "SpeciesName": "Chewtle",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Chewtle",
     "VarName": "Chewtle",
     "DefName": "CHEWTLE"
@@ -6667,6 +7500,7 @@
     "NatDexNum": 834,
     "SpeciesName": "Drednaw",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Drednaw",
     "VarName": "Drednaw",
     "DefName": "DREDNAW"
@@ -6675,6 +7509,7 @@
     "NatDexNum": 835,
     "SpeciesName": "Yamper",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Yamper",
     "VarName": "Yamper",
     "DefName": "YAMPER"
@@ -6683,6 +7518,7 @@
     "NatDexNum": 836,
     "SpeciesName": "Boltund",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Boltund",
     "VarName": "Boltund",
     "DefName": "BOLTUND"
@@ -6691,6 +7527,7 @@
     "NatDexNum": 837,
     "SpeciesName": "Rolycoly",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Rolycoly",
     "VarName": "Rolycoly",
     "DefName": "ROLYCOLY"
@@ -6699,6 +7536,7 @@
     "NatDexNum": 838,
     "SpeciesName": "Carkol",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Carkol",
     "VarName": "Carkol",
     "DefName": "CARKOL"
@@ -6707,6 +7545,7 @@
     "NatDexNum": 839,
     "SpeciesName": "Coalossal",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Coalossal",
     "VarName": "Coalossal",
     "DefName": "COALOSSAL"
@@ -6715,6 +7554,7 @@
     "NatDexNum": 840,
     "SpeciesName": "Applin",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Applin",
     "VarName": "Applin",
     "DefName": "APPLIN"
@@ -6723,6 +7563,7 @@
     "NatDexNum": 841,
     "SpeciesName": "Flapple",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Flapple",
     "VarName": "Flapple",
     "DefName": "FLAPPLE"
@@ -6731,6 +7572,7 @@
     "NatDexNum": 842,
     "SpeciesName": "Appletun",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Appletun",
     "VarName": "Appletun",
     "DefName": "APPLETUN"
@@ -6739,6 +7581,7 @@
     "NatDexNum": 843,
     "SpeciesName": "Silicobra",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Silicobra",
     "VarName": "Silicobra",
     "DefName": "SILICOBRA"
@@ -6747,6 +7590,7 @@
     "NatDexNum": 844,
     "SpeciesName": "Sandaconda",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sandaconda",
     "VarName": "Sandaconda",
     "DefName": "SANDACONDA"
@@ -6755,6 +7599,7 @@
     "NatDexNum": 845,
     "SpeciesName": "Cramorant",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cramorant",
     "VarName": "Cramorant",
     "DefName": "CRAMORANT"
@@ -6763,6 +7608,7 @@
     "NatDexNum": 846,
     "SpeciesName": "Arrokuda",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Arrokuda",
     "VarName": "Arrokuda",
     "DefName": "ARROKUDA"
@@ -6771,6 +7617,7 @@
     "NatDexNum": 847,
     "SpeciesName": "Barraskewda",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Barraskewda",
     "VarName": "Barraskewda",
     "DefName": "BARRASKEWDA"
@@ -6779,6 +7626,7 @@
     "NatDexNum": 848,
     "SpeciesName": "Toxel",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Toxel",
     "VarName": "Toxel",
     "DefName": "TOXEL"
@@ -6787,6 +7635,7 @@
     "NatDexNum": 849,
     "SpeciesName": "Toxtricity",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Amped Form",
     "VarName": "Toxtricity",
     "DefName": "TOXTRICITY"
@@ -6795,6 +7644,7 @@
     "NatDexNum": 850,
     "SpeciesName": "Sizzlipede",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sizzlipede",
     "VarName": "Sizzlipede",
     "DefName": "SIZZLIPEDE"
@@ -6803,6 +7653,7 @@
     "NatDexNum": 851,
     "SpeciesName": "Centiskorch",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Centiskorch",
     "VarName": "Centiskorch",
     "DefName": "CENTISKORCH"
@@ -6811,6 +7662,7 @@
     "NatDexNum": 852,
     "SpeciesName": "Clobbopus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Clobbopus",
     "VarName": "Clobbopus",
     "DefName": "CLOBBOPUS"
@@ -6819,6 +7671,7 @@
     "NatDexNum": 853,
     "SpeciesName": "Grapploct",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Grapploct",
     "VarName": "Grapploct",
     "DefName": "GRAPPLOCT"
@@ -6827,6 +7680,7 @@
     "NatDexNum": 854,
     "SpeciesName": "Sinistea",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Sinistea",
     "VarName": "Sinistea",
     "DefName": "SINISTEA"
@@ -6835,6 +7689,7 @@
     "NatDexNum": 855,
     "SpeciesName": "Polteageist",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Polteageist",
     "VarName": "Polteageist",
     "DefName": "POLTEAGEIST"
@@ -6843,6 +7698,7 @@
     "NatDexNum": 856,
     "SpeciesName": "Hatenna",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Hatenna",
     "VarName": "Hatenna",
     "DefName": "HATENNA"
@@ -6851,6 +7707,7 @@
     "NatDexNum": 857,
     "SpeciesName": "Hattrem",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hattrem",
     "VarName": "Hattrem",
     "DefName": "HATTREM"
@@ -6859,6 +7716,7 @@
     "NatDexNum": 858,
     "SpeciesName": "Hatterene",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Hatterene",
     "VarName": "Hatterene",
     "DefName": "HATTERENE"
@@ -6867,6 +7725,7 @@
     "NatDexNum": 859,
     "SpeciesName": "Impidimp",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Impidimp",
     "VarName": "Impidimp",
     "DefName": "IMPIDIMP"
@@ -6875,6 +7734,7 @@
     "NatDexNum": 860,
     "SpeciesName": "Morgrem",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Morgrem",
     "VarName": "Morgrem",
     "DefName": "MORGREM"
@@ -6883,6 +7743,7 @@
     "NatDexNum": 861,
     "SpeciesName": "Grimmsnarl",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Grimmsnarl",
     "VarName": "Grimmsnarl",
     "DefName": "GRIMMSNARL"
@@ -6891,6 +7752,7 @@
     "NatDexNum": 862,
     "SpeciesName": "Obstagoon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Obstagoon",
     "VarName": "Obstagoon",
     "DefName": "OBSTAGOON"
@@ -6899,6 +7761,7 @@
     "NatDexNum": 863,
     "SpeciesName": "Perrserker",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Perrserker",
     "VarName": "Perrserker",
     "DefName": "PERRSERKER"
@@ -6907,6 +7770,7 @@
     "NatDexNum": 864,
     "SpeciesName": "Cursola",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Cursola",
     "VarName": "Cursola",
     "DefName": "CURSOLA"
@@ -6915,6 +7779,7 @@
     "NatDexNum": 865,
     "SpeciesName": "Sirfetch'd",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Sirfetch'd",
     "VarName": "Sirfetchd",
     "DefName": "SIRFETCHD"
@@ -6923,6 +7788,7 @@
     "NatDexNum": 866,
     "SpeciesName": "Mr. Rime",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Mr. Rime",
     "VarName": "MrRime",
     "DefName": "MR_RIME"
@@ -6931,6 +7797,7 @@
     "NatDexNum": 867,
     "SpeciesName": "Runerigus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Runerigus",
     "VarName": "Runerigus",
     "DefName": "RUNERIGUS"
@@ -6939,6 +7806,7 @@
     "NatDexNum": 868,
     "SpeciesName": "Milcery",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Milcery",
     "VarName": "Milcery",
     "DefName": "MILCERY"
@@ -6947,6 +7815,7 @@
     "NatDexNum": 869,
     "SpeciesName": "Alcremie",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Alcremie",
     "VarName": "Alcremie",
     "DefName": "ALCREMIE"
@@ -6955,6 +7824,7 @@
     "NatDexNum": 870,
     "SpeciesName": "Falinks",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Falinks",
     "VarName": "Falinks",
     "DefName": "FALINKS"
@@ -6963,6 +7833,7 @@
     "NatDexNum": 871,
     "SpeciesName": "Pincurchin",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Pincurchin",
     "VarName": "Pincurchin",
     "DefName": "PINCURCHIN"
@@ -6971,6 +7842,7 @@
     "NatDexNum": 872,
     "SpeciesName": "Snom",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Snom",
     "VarName": "Snom",
     "DefName": "SNOM"
@@ -6979,6 +7851,7 @@
     "NatDexNum": 873,
     "SpeciesName": "Frosmoth",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Frosmoth",
     "VarName": "Frosmoth",
     "DefName": "FROSMOTH"
@@ -6987,6 +7860,7 @@
     "NatDexNum": 874,
     "SpeciesName": "Stonjourner",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Stonjourner",
     "VarName": "Stonjourner",
     "DefName": "STONJOURNER"
@@ -6995,6 +7869,7 @@
     "NatDexNum": 875,
     "SpeciesName": "Eiscue",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Eiscue",
     "VarName": "Eiscue",
     "DefName": "EISCUE"
@@ -7003,6 +7878,7 @@
     "NatDexNum": 876,
     "SpeciesName": "Indeedee",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Male Indeedee",
     "VarName": "Indeedee",
     "DefName": "INDEEDEE"
@@ -7011,6 +7887,7 @@
     "NatDexNum": 877,
     "SpeciesName": "Morpeko",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Morpeko",
     "VarName": "Morpeko",
     "DefName": "MORPEKO"
@@ -7019,6 +7896,7 @@
     "NatDexNum": 878,
     "SpeciesName": "Cufant",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Cufant",
     "VarName": "Cufant",
     "DefName": "CUFANT"
@@ -7027,6 +7905,7 @@
     "NatDexNum": 879,
     "SpeciesName": "Copperajah",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Copperajah",
     "VarName": "Copperajah",
     "DefName": "COPPERAJAH"
@@ -7035,6 +7914,7 @@
     "NatDexNum": 880,
     "SpeciesName": "Dracozolt",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dracozolt",
     "VarName": "Dracozolt",
     "DefName": "DRACOZOLT"
@@ -7043,6 +7923,7 @@
     "NatDexNum": 881,
     "SpeciesName": "Arctozolt",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Arctozolt",
     "VarName": "Arctozolt",
     "DefName": "ARCTOZOLT"
@@ -7051,6 +7932,7 @@
     "NatDexNum": 882,
     "SpeciesName": "Dracovish",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dracovish",
     "VarName": "Dracovish",
     "DefName": "DRACOVISH"
@@ -7059,6 +7941,7 @@
     "NatDexNum": 883,
     "SpeciesName": "Arctovish",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Arctovish",
     "VarName": "Arctovish",
     "DefName": "ARCTOVISH"
@@ -7067,6 +7950,7 @@
     "NatDexNum": 884,
     "SpeciesName": "Duraludon",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Duraludon",
     "VarName": "Duraludon",
     "DefName": "DURALUDON"
@@ -7075,6 +7959,7 @@
     "NatDexNum": 885,
     "SpeciesName": "Dreepy",
     "IsBaseForm": true,
+    "CanHatchFromEgg": true,
     "FormName": "Dreepy",
     "VarName": "Dreepy",
     "DefName": "DREEPY"
@@ -7083,6 +7968,7 @@
     "NatDexNum": 886,
     "SpeciesName": "Drakloak",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Drakloak",
     "VarName": "Drakloak",
     "DefName": "DRAKLOAK"
@@ -7091,6 +7977,7 @@
     "NatDexNum": 887,
     "SpeciesName": "Dragapult",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Dragapult",
     "VarName": "Dragapult",
     "DefName": "DRAGAPULT"
@@ -7099,6 +7986,7 @@
     "NatDexNum": 888,
     "SpeciesName": "Zacian",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Zacian",
     "VarName": "Zacian",
     "DefName": "ZACIAN"
@@ -7107,6 +7995,7 @@
     "NatDexNum": 889,
     "SpeciesName": "Zamazenta",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Zamazenta",
     "VarName": "Zamazenta",
     "DefName": "ZAMAZENTA"
@@ -7115,6 +8004,7 @@
     "NatDexNum": 890,
     "SpeciesName": "Eternatus",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Eternatus",
     "VarName": "Eternatus",
     "DefName": "ETERNATUS"
@@ -7123,6 +8013,7 @@
     "NatDexNum": 891,
     "SpeciesName": "Kubfu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Kubfu",
     "VarName": "Kubfu",
     "DefName": "KUBFU"
@@ -7131,6 +8022,7 @@
     "NatDexNum": 892,
     "SpeciesName": "Urshifu",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Single Strike Style",
     "VarName": "Urshifu",
     "DefName": "URSHIFU"
@@ -7139,6 +8031,7 @@
     "NatDexNum": 893,
     "SpeciesName": "Zarude",
     "IsBaseForm": true,
+    "CanHatchFromEgg": false,
     "FormName": "Zarude",
     "VarName": "Zarude",
     "DefName": "ZARUDE"
@@ -7147,6 +8040,7 @@
     "NatDexNum": 413,
     "SpeciesName": "Wormadam",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Sandy Cloak",
     "VarName": "WormadamSandy",
     "DefName": "WORMADAM_SANDY"
@@ -7155,6 +8049,7 @@
     "NatDexNum": 413,
     "SpeciesName": "Wormadam",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Trash Cloak",
     "VarName": "WormadamTrash",
     "DefName": "WORMADAM_TRASH"
@@ -7163,6 +8058,7 @@
     "NatDexNum": 479,
     "SpeciesName": "Rotom",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Heat Rotom",
     "VarName": "RotomHeat",
     "DefName": "ROTOM_HEAT"
@@ -7171,6 +8067,7 @@
     "NatDexNum": 479,
     "SpeciesName": "Rotom",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Wash Rotom",
     "VarName": "RotomWash",
     "DefName": "ROTOM_WASH"
@@ -7179,6 +8076,7 @@
     "NatDexNum": 479,
     "SpeciesName": "Rotom",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Frost Rotom",
     "VarName": "RotomFrost",
     "DefName": "ROTOM_FROST"
@@ -7187,6 +8085,7 @@
     "NatDexNum": 479,
     "SpeciesName": "Rotom",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Fan Rotom",
     "VarName": "RotomFan",
     "DefName": "ROTOM_FAN"
@@ -7195,6 +8094,7 @@
     "NatDexNum": 479,
     "SpeciesName": "Rotom",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Mow Rotom",
     "VarName": "RotomMow",
     "DefName": "ROTOM_MOW"
@@ -7203,6 +8103,7 @@
     "NatDexNum": 646,
     "SpeciesName": "Kyurem",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Black Kyurem",
     "VarName": "KyuremBlack",
     "DefName": "KYUREM_BLACK"
@@ -7211,6 +8112,7 @@
     "NatDexNum": 646,
     "SpeciesName": "Kyurem",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "White Kyurem",
     "VarName": "KyuremWhite",
     "DefName": "KYUREM_WHITE"
@@ -7219,6 +8121,7 @@
     "NatDexNum": 678,
     "SpeciesName": "Meowstic",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Female Meowstic",
     "VarName": "MeowsticF",
     "DefName": "MEOWSTIC_F"
@@ -7227,6 +8130,7 @@
     "NatDexNum": 19,
     "SpeciesName": "Rattata",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Alolan Rattata",
     "VarName": "AlolanRattata",
     "DefName": "ALOLAN_RATTATA"
@@ -7235,6 +8139,7 @@
     "NatDexNum": 20,
     "SpeciesName": "Raticate",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Raticate",
     "VarName": "AlolanRaticate",
     "DefName": "ALOLAN_RATICATE"
@@ -7243,6 +8148,7 @@
     "NatDexNum": 26,
     "SpeciesName": "Raichu",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Raichu",
     "VarName": "AlolanRaichu",
     "DefName": "ALOLAN_RAICHU"
@@ -7251,6 +8157,7 @@
     "NatDexNum": 27,
     "SpeciesName": "Sandshrew",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Alolan Sandshrew",
     "VarName": "AlolanSandshrew",
     "DefName": "ALOLAN_SANDSHREW"
@@ -7259,6 +8166,7 @@
     "NatDexNum": 28,
     "SpeciesName": "Sandslash",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Sandslash",
     "VarName": "AlolanSandslash",
     "DefName": "ALOLAN_SANDSLASH"
@@ -7267,6 +8175,7 @@
     "NatDexNum": 37,
     "SpeciesName": "Vulpix",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Alolan Vulpix",
     "VarName": "AlolanVulpix",
     "DefName": "ALOLAN_VULPIX"
@@ -7275,6 +8184,7 @@
     "NatDexNum": 38,
     "SpeciesName": "Ninetales",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Ninetales",
     "VarName": "AlolanNinetales",
     "DefName": "ALOLAN_NINETALES"
@@ -7283,6 +8193,7 @@
     "NatDexNum": 50,
     "SpeciesName": "Diglett",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Alolan Diglett",
     "VarName": "AlolanDiglett",
     "DefName": "ALOLAN_DIGLETT"
@@ -7291,6 +8202,7 @@
     "NatDexNum": 51,
     "SpeciesName": "Dugtrio",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Dugtrio",
     "VarName": "AlolanDugtrio",
     "DefName": "ALOLAN_DUGTRIO"
@@ -7299,6 +8211,7 @@
     "NatDexNum": 52,
     "SpeciesName": "Meowth",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Alolan Meowth",
     "VarName": "AlolanMeowth",
     "DefName": "ALOLAN_MEOWTH"
@@ -7307,6 +8220,7 @@
     "NatDexNum": 53,
     "SpeciesName": "Persian",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Persian",
     "VarName": "AlolanPersian",
     "DefName": "ALOLAN_PERSIAN"
@@ -7315,6 +8229,7 @@
     "NatDexNum": 74,
     "SpeciesName": "Geodude",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Alolan Geodude",
     "VarName": "AlolanGeodude",
     "DefName": "ALOLAN_GEODUDE"
@@ -7323,6 +8238,7 @@
     "NatDexNum": 75,
     "SpeciesName": "Graveler",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Graveler",
     "VarName": "AlolanGraveler",
     "DefName": "ALOLAN_GRAVELER"
@@ -7331,6 +8247,7 @@
     "NatDexNum": 76,
     "SpeciesName": "Golem",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Golem",
     "VarName": "AlolanGolem",
     "DefName": "ALOLAN_GOLEM"
@@ -7339,6 +8256,7 @@
     "NatDexNum": 88,
     "SpeciesName": "Grimer",
     "IsBaseForm": false,
+    "CanHatchFromEgg": true,
     "FormName": "Alolan Grimer",
     "VarName": "AlolanGrimer",
     "DefName": "ALOLAN_GRIMER"
@@ -7347,6 +8265,7 @@
     "NatDexNum": 89,
     "SpeciesName": "Muk",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Muk",
     "VarName": "AlolanMuk",
     "DefName": "ALOLAN_MUK"
@@ -7355,6 +8274,7 @@
     "NatDexNum": 103,
     "SpeciesName": "Exeggutor",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Exeggutor",
     "VarName": "AlolanExeggutor",
     "DefName": "ALOLAN_EXEGGUTOR"
@@ -7363,6 +8283,7 @@
     "NatDexNum": 105,
     "SpeciesName": "Marowak",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Alolan Marowak",
     "VarName": "AlolanMarowak",
     "DefName": "ALOLAN_MAROWAK"
@@ -7371,6 +8292,7 @@
     "NatDexNum": 745,
     "SpeciesName": "Lycanroc",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Midnight Form",
     "VarName": "LycanrocMidnight",
     "DefName": "LYCANROC_MIDNIGHT"
@@ -7379,6 +8301,7 @@
     "NatDexNum": 745,
     "SpeciesName": "Lycanroc",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Dusk Form",
     "VarName": "LycanrocDusk",
     "DefName": "LYCANROC_DUSK"
@@ -7387,6 +8310,7 @@
     "NatDexNum": 386,
     "SpeciesName": "Deoxys",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Attack Forme",
     "VarName": "DeoxysAttack",
     "DefName": "DEOXYS_ATTACK"
@@ -7395,6 +8319,7 @@
     "NatDexNum": 386,
     "SpeciesName": "Deoxys",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Defense Forme",
     "VarName": "DeoxysDefense",
     "DefName": "DEOXYS_DEFENSE"
@@ -7403,6 +8328,7 @@
     "NatDexNum": 386,
     "SpeciesName": "Deoxys",
     "IsBaseForm": false,
+    "CanHatchFromEgg": false,
     "FormName": "Speed Forme",
     "VarName": "DeoxysSpeed",
     "DefName": "DEOXYS_SPEED"

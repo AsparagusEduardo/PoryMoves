@@ -23,6 +23,7 @@ namespace moveParser.data
         public int NatDexNum;
         public string SpeciesName;
         public bool IsBaseForm;
+        public bool CanHatchFromEgg;
         public string FormName;
         public string VarName;
         public string DefName;

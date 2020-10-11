@@ -239,7 +239,8 @@ namespace moveParser
                 btnExportTM.Enabled = value;
                 btnTM_All.Enabled = value;
 
-                //btnEgg_All.Enabled = value;
+                btnEgg_All.Enabled = value;
+                btnExportEgg.Enabled = value;
 
                 btnExportTutor.Enabled = value;
                 btnTutor_All.Enabled = value;
@@ -259,6 +260,7 @@ namespace moveParser
                 cListLevelUp.Enabled = value;
                 cListTMMoves.Enabled = value;
                 cListTutorMoves.Enabled = value;
+                cListEggMoves.Enabled = value;
             });
         }
 
@@ -276,6 +278,11 @@ namespace moveParser
                 chkTutor_IncludeLvl.Enabled = value;
                 chkTutor_IncludeEgg.Enabled = value;
                 chkTutor_IncludeTM.Enabled = value;
+
+                chkEgg_Extended.Enabled = value;
+                chkEgg_IncludeLvl.Enabled = value;
+                chkEgg_IncludeTM.Enabled = value;
+                chkEgg_IncludeTutor.Enabled = value;
             });
         }
 
@@ -499,8 +506,9 @@ namespace moveParser
             }
             if (tmMoves.Count > 255 && !oldStyle)
             {
-                MessageBox.Show("FATAL: New-style TM learnsets only support up to 255 TMs/HMs. Consider reducing your TM amount.",
+                MessageBox.Show("New-style TM learnsets only support up to 255 TMs/HMs. Consider reducing your TM amount.",
                                 "FATAL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
             // build importable TM list
             string tms = "// IMPORTANT: DO NOT PASTE THIS FILE INTO YOUR REPO!\n// Instead, paste the following array into src/data/party_menu.h\n\nconst u16 sTMHMMoves[TMHM_COUNT] =\n{\n";
@@ -692,7 +700,7 @@ namespace moveParser
 
                 i++;
                 int percent = i * 100 / namecount;
-                bwrkExportTM.ReportProgress(percent);
+                bwrkExportTutor.ReportProgress(percent);
             }
             bool oldStyle = !chkTutor_Extended.Checked;
 
@@ -701,12 +709,15 @@ namespace moveParser
             // sanity check: old style tutor list must be 32 entries or less
             if (tutorMoves.Count > 32 && oldStyle)
             {
-                Console.WriteLine("FATAL: Old-style tutor learnsets only support up to 32 moves.\nConsider using the new format here:\n<commit to be made>");
+                MessageBox.Show("Old-style tutor learnsets only support up to 32 moves.\nConsider using the new format here:\n<commit to be made>",
+                                "FATAL", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (tutorMoves.Count > 255 && !oldStyle)
             {
-                Console.WriteLine("FATAL: New-style tutor learnsets only support up to 255 tutor moves. Consider reducing your tutor amount.");
+                MessageBox.Show("New-style tutor learnsets only support up to 255 tutor moves. Consider reducing your tutor amount.",
+                                "FATAL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
             // build importable tutor list
             string tutors = "// IMPORTANT: DO NOT PASTE THIS FILE INTO YOUR REPO!\n// Instead, paste the following list of defines into include/constants/party_menu.h\n\n";
@@ -811,6 +822,129 @@ namespace moveParser
         {
             SetEnableForAllElements(false);
             bwrkExportTutor.RunWorkerAsync();
+        }
+
+        private void btnExportEgg_Click(object sender, EventArgs e)
+        {
+            SetEnableForAllElements(false);
+            bwrkExportEgg.RunWorkerAsync();
+        }
+
+        private void bwrkExportEgg_DoWork(object sender, DoWorkEventArgs e)
+        {
+            UpdateLoadingMessage("Grouping movesets...");
+            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
+
+            Dictionary<string, List<string>> lvlMoves = new Dictionary<string, List<string>>();
+
+            customGenData.Clear();
+
+            int i = 0;
+            int namecount = nameList.Count;
+            foreach (MonName name in nameList)
+            {
+                MonData monToAdd = new MonData();
+                monToAdd.EggMoves = new List<string>();
+                lvlMoves.Add(name.DefName, new List<string>());
+
+                foreach (string item in cListEggMoves.CheckedItems)
+                {
+                    GenerationData gen = GenData[item];
+                    MonData mon;
+                    try
+                    {
+                        mon = allGensData[item][name.DefName];
+                    }
+                    catch (KeyNotFoundException)
+                    {
+                        mon = new MonData();
+                    }
+                    foreach (string move in mon.EggMoves)
+                        monToAdd.EggMoves.Add(move);
+                    if (chkEgg_IncludeLvl.Checked)
+                    {
+                        foreach (LevelUpMove move in mon.LevelMoves)
+                            monToAdd.EggMoves.Add(move.Move);
+                    }
+                    if (chkEgg_IncludeTutor.Checked)
+                    {
+                        foreach (string move in mon.TutorMoves)
+                            monToAdd.EggMoves.Add(move);
+                    }
+                    if (chkEgg_IncludeTM.Checked)
+                    {
+                        foreach (string move in mon.TMMoves)
+                            monToAdd.EggMoves.Add(move);
+                    }
+
+
+                }
+                monToAdd.EggMoves = monToAdd.EggMoves.GroupBy(elem => elem).Select(group => group.First()).ToList();
+
+                customGenData.Add(name.DefName, monToAdd);
+
+                i++;
+                int percent = i * 100 / namecount;
+                bwrkExportEgg.ReportProgress(percent);
+            }
+            bool oldStyle = !chkEgg_Extended.Checked;
+
+            // file header
+            string sets = "#define EGG_MOVES_SPECIES_OFFSET 20000\n" +
+                            "#define EGG_MOVES_TERMINATOR 0xFFFF\n" +
+                            "#define egg_moves(species, moves...) (SPECIES_##species + EGG_MOVES_SPECIES_OFFSET), moves\n\n" +
+                            "const u16 gEggMoves[] = {\n";
+
+            // iterate over mons
+            i = 1;
+            foreach (MonName entry in nameList)
+            {
+                MonData data = customGenData[entry.DefName];
+                if (entry.CanHatchFromEgg && data.EggMoves.Count > 0)
+                {
+                    // begin learnset
+                    if (oldStyle)
+                        sets += $"    egg_moves({entry.DefName},\n";
+                    else
+                        sets += $"\tegg_moves({entry.DefName},\n";
+                    // hacky workaround for first move being on the same line
+                    int eggm = 1;
+                    foreach (string move in data.EggMoves)
+                    {
+                        if (oldStyle)
+                        {
+                            sets += $"              {move}";
+                        }
+                        else
+                        {
+                            sets += $"\t\t{move}";
+                        }
+                        if (eggm == data.EggMoves.Count)
+                            sets += ")";
+                        sets += ",\n";
+                        eggm++;
+                    }
+                    sets += "\n";
+                }
+
+                int percent = i * 100 / namecount;
+                bwrkExportEgg.ReportProgress(percent);
+                // Set the text.
+                UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Egg movesets exported.");
+                i++;
+            }
+
+            sets += "    EGG_MOVES_TERMINATOR\n};\n";
+
+            // write to file
+            File.WriteAllText("output/egg_moves.h", sets);
+
+            bwrkExportTutor.ReportProgress(0);
+            // Set the text.
+            UpdateLoadingMessage(namecount + " Egg movesets exported.");
+
+            MessageBox.Show("Egg moves exported to \"output/egg_moves.h\"", "Success!", MessageBoxButtons.OK);
+            SetEnableForAllElements(true);
         }
     }
 }
