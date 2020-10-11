@@ -514,7 +514,7 @@ namespace moveParser
             string tms = "// IMPORTANT: DO NOT PASTE THIS FILE INTO YOUR REPO!\n// Instead, paste the following array into src/data/party_menu.h\n\nconst u16 sTMHMMoves[TMHM_COUNT] =\n{\n";
             foreach (string move in tmMoves)
             {
-                tms += $"    MOVE{move.Substring(move.IndexOf('_'))},";
+                tms += $"    MOVE{move.Substring(move.IndexOf('_'))},\n";
             }
             tms += "};\n";
 
