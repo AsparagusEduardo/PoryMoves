@@ -1,4 +1,14 @@
 {
+  "CT": {
+    "genNumber": 8,
+    "genNumberRoman": "VIII",
+    "isLatestGen": true,
+    "dbFilename": "ct",
+    "gameFullName": "The Crown Tundra",
+    "lvlUpColumn": "CT",
+    "moveTutorColumn": 3,
+    "maxDexNum": 898
+  },
   "IOA": {
     "genNumber": 8,
     "genNumberRoman": "VIII",
@@ -7,7 +17,7 @@
     "gameFullName": "The Isle of Armor",
     "lvlUpColumn": "IOA",
     "moveTutorColumn": 2,
-    "maxDexNum": 893
+    "maxDexNum": 898
   },
   "SWSH": {
     "genNumber": 8,
@@ -17,7 +27,7 @@
     "gameFullName": "Pokémon Sword and Shield",
     "lvlUpColumn": "SWSH",
     "moveTutorColumn": 1,
-    "maxDexNum": 890
+    "maxDexNum": 898
   },
   "LGPE": {
     "genNumber": 7,
