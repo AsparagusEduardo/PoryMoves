@@ -170,6 +170,8 @@ namespace moveParser.data
                             modeText = "TM";
                         else if (textRow.Contains("By {{pkmn|breeding}}"))
                             modeText = "EGG";
+                        else if (textRow.Contains("By [[transfer]] from"))
+                            modeText = "TRANSFER";
                         else if (gen.moveTutorColumn != 0 && textRow.ToLower().Contains("by [[move tutor|tutoring]]"))
                             modeText = "TUTOR";
                         else if (textRow.Contains("====") && !readingLevelUp && !textRow.Contains("Pokémon")

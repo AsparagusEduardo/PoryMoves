@@ -8037,13 +8037,175 @@
     "DefName": "ZARUDE"
   },
   {
+    "NatDexNum": 19,
+    "SpeciesName": "Rattata",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": true,
+    "FormName": "Alolan Rattata",
+    "VarName": "RattataAlolan",
+    "DefName": "RATTATA_ALOLAN"
+  },
+  {
+    "NatDexNum": 20,
+    "SpeciesName": "Raticate",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Raticate",
+    "VarName": "RaticateAlolan",
+    "DefName": "RATICATE_ALOLAN"
+  },
+  {
+    "NatDexNum": 26,
+    "SpeciesName": "Raichu",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Raichu",
+    "VarName": "RaichuAlolan",
+    "DefName": "RAICHU_ALOLAN"
+  },
+  {
+    "NatDexNum": 27,
+    "SpeciesName": "Sandshrew",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": true,
+    "FormName": "Alolan Sandshrew",
+    "VarName": "SandshrewAlolan",
+    "DefName": "SANDSHREW_ALOLAN"
+  },
+  {
+    "NatDexNum": 28,
+    "SpeciesName": "Sandslash",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Sandslash",
+    "VarName": "SandslashAlolan",
+    "DefName": "SANDSLASH_ALOLAN"
+  },
+  {
+    "NatDexNum": 37,
+    "SpeciesName": "Vulpix",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": true,
+    "FormName": "Alolan Vulpix",
+    "VarName": "VulpixAlolan",
+    "DefName": "VULPIX_ALOLAN"
+  },
+  {
+    "NatDexNum": 38,
+    "SpeciesName": "Ninetales",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Ninetales",
+    "VarName": "NinetalesAlolan",
+    "DefName": "NINETALES_ALOLAN"
+  },
+  {
+    "NatDexNum": 50,
+    "SpeciesName": "Diglett",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": true,
+    "FormName": "Alolan Diglett",
+    "VarName": "DiglettAlolan",
+    "DefName": "DIGLETT_ALOLAN"
+  },
+  {
+    "NatDexNum": 51,
+    "SpeciesName": "Dugtrio",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Dugtrio",
+    "VarName": "DugtrioAlolan",
+    "DefName": "DUGTRIO_ALOLAN"
+  },
+  {
+    "NatDexNum": 52,
+    "SpeciesName": "Meowth",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": true,
+    "FormName": "Alolan Meowth",
+    "VarName": "MeowthAlolan",
+    "DefName": "MEOWTH_ALOLAN"
+  },
+  {
+    "NatDexNum": 53,
+    "SpeciesName": "Persian",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Persian",
+    "VarName": "PersianAlolan",
+    "DefName": "PERSIAN_ALOLAN"
+  },
+  {
+    "NatDexNum": 74,
+    "SpeciesName": "Geodude",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": true,
+    "FormName": "Alolan Geodude",
+    "VarName": "GeodudeAlolan",
+    "DefName": "GEODUDE_ALOLAN"
+  },
+  {
+    "NatDexNum": 75,
+    "SpeciesName": "Graveler",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Graveler",
+    "VarName": "GravelerAlolan",
+    "DefName": "GRAVELER_ALOLAN"
+  },
+  {
+    "NatDexNum": 76,
+    "SpeciesName": "Golem",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Golem",
+    "VarName": "GolemAlolan",
+    "DefName": "GOLEM_ALOLAN"
+  },
+  {
+    "NatDexNum": 88,
+    "SpeciesName": "Grimer",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": true,
+    "FormName": "Alolan Grimer",
+    "VarName": "GrimerAlolan",
+    "DefName": "GRIMER_ALOLAN"
+  },
+  {
+    "NatDexNum": 89,
+    "SpeciesName": "Muk",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Muk",
+    "VarName": "MukAlolan",
+    "DefName": "MUK_ALOLAN"
+  },
+  {
+    "NatDexNum": 103,
+    "SpeciesName": "Exeggutor",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Exeggutor",
+    "VarName": "ExeggutorAlolan",
+    "DefName": "EXEGGUTOR_ALOLAN"
+  },
+  {
+    "NatDexNum": 105,
+    "SpeciesName": "Marowak",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Alolan Marowak",
+    "VarName": "MarowakAlolan",
+    "DefName": "MAROWAK_ALOLAN"
+  },
+  {
     "NatDexNum": 413,
     "SpeciesName": "Wormadam",
     "IsBaseForm": false,
     "CanHatchFromEgg": false,
     "FormName": "Sandy Cloak",
-    "VarName": "WormadamSandy",
-    "DefName": "WORMADAM_SANDY"
+    "VarName": "WormadamSandyCloak",
+    "DefName": "WORMADAM_SANDY_CLOAK"
   },
   {
     "NatDexNum": 413,
@@ -8051,8 +8213,8 @@
     "IsBaseForm": false,
     "CanHatchFromEgg": false,
     "FormName": "Trash Cloak",
-    "VarName": "WormadamTrash",
-    "DefName": "WORMADAM_TRASH"
+    "VarName": "WormadamTrashCloak",
+    "DefName": "WORMADAM_TRASH_CLOAK"
   },
   {
     "NatDexNum": 479,
@@ -8100,6 +8262,15 @@
     "DefName": "ROTOM_MOW"
   },
   {
+    "NatDexNum": 492,
+    "SpeciesName": "Shaymin",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Sky Forme",
+    "VarName": "ShayminSky",
+    "DefName": "SHAYMIN_SKY"
+  },
+  {
     "NatDexNum": 646,
     "SpeciesName": "Kyurem",
     "IsBaseForm": false,
@@ -8118,175 +8289,31 @@
     "DefName": "KYUREM_WHITE"
   },
   {
+    "NatDexNum": 670,
+    "SpeciesName": "Floette",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Floette",
+    "VarName": "FloetteEternalFlower",
+    "DefName": "FLOETTE_ETERNAL_FLOWER"
+  },
+  {
     "NatDexNum": 678,
     "SpeciesName": "Meowstic",
     "IsBaseForm": false,
     "CanHatchFromEgg": false,
     "FormName": "Female Meowstic",
-    "VarName": "MeowsticF",
-    "DefName": "MEOWSTIC_F"
+    "VarName": "MeowsticFemale",
+    "DefName": "MEOWSTIC_FEMALE"
   },
   {
-    "NatDexNum": 19,
-    "SpeciesName": "Rattata",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": true,
-    "FormName": "Alolan Rattata",
-    "VarName": "AlolanRattata",
-    "DefName": "ALOLAN_RATTATA"
-  },
-  {
-    "NatDexNum": 20,
-    "SpeciesName": "Raticate",
+    "NatDexNum": 720,
+    "SpeciesName": "Hoopa",
     "IsBaseForm": false,
     "CanHatchFromEgg": false,
-    "FormName": "Alolan Raticate",
-    "VarName": "AlolanRaticate",
-    "DefName": "ALOLAN_RATICATE"
-  },
-  {
-    "NatDexNum": 26,
-    "SpeciesName": "Raichu",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Alolan Raichu",
-    "VarName": "AlolanRaichu",
-    "DefName": "ALOLAN_RAICHU"
-  },
-  {
-    "NatDexNum": 27,
-    "SpeciesName": "Sandshrew",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": true,
-    "FormName": "Alolan Sandshrew",
-    "VarName": "AlolanSandshrew",
-    "DefName": "ALOLAN_SANDSHREW"
-  },
-  {
-    "NatDexNum": 28,
-    "SpeciesName": "Sandslash",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Alolan Sandslash",
-    "VarName": "AlolanSandslash",
-    "DefName": "ALOLAN_SANDSLASH"
-  },
-  {
-    "NatDexNum": 37,
-    "SpeciesName": "Vulpix",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": true,
-    "FormName": "Alolan Vulpix",
-    "VarName": "AlolanVulpix",
-    "DefName": "ALOLAN_VULPIX"
-  },
-  {
-    "NatDexNum": 38,
-    "SpeciesName": "Ninetales",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Alolan Ninetales",
-    "VarName": "AlolanNinetales",
-    "DefName": "ALOLAN_NINETALES"
-  },
-  {
-    "NatDexNum": 50,
-    "SpeciesName": "Diglett",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": true,
-    "FormName": "Alolan Diglett",
-    "VarName": "AlolanDiglett",
-    "DefName": "ALOLAN_DIGLETT"
-  },
-  {
-    "NatDexNum": 51,
-    "SpeciesName": "Dugtrio",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Alolan Dugtrio",
-    "VarName": "AlolanDugtrio",
-    "DefName": "ALOLAN_DUGTRIO"
-  },
-  {
-    "NatDexNum": 52,
-    "SpeciesName": "Meowth",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": true,
-    "FormName": "Alolan Meowth",
-    "VarName": "AlolanMeowth",
-    "DefName": "ALOLAN_MEOWTH"
-  },
-  {
-    "NatDexNum": 53,
-    "SpeciesName": "Persian",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Alolan Persian",
-    "VarName": "AlolanPersian",
-    "DefName": "ALOLAN_PERSIAN"
-  },
-  {
-    "NatDexNum": 74,
-    "SpeciesName": "Geodude",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": true,
-    "FormName": "Alolan Geodude",
-    "VarName": "AlolanGeodude",
-    "DefName": "ALOLAN_GEODUDE"
-  },
-  {
-    "NatDexNum": 75,
-    "SpeciesName": "Graveler",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Alolan Graveler",
-    "VarName": "AlolanGraveler",
-    "DefName": "ALOLAN_GRAVELER"
-  },
-  {
-    "NatDexNum": 76,
-    "SpeciesName": "Golem",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Alolan Golem",
-    "VarName": "AlolanGolem",
-    "DefName": "ALOLAN_GOLEM"
-  },
-  {
-    "NatDexNum": 88,
-    "SpeciesName": "Grimer",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": true,
-    "FormName": "Alolan Grimer",
-    "VarName": "AlolanGrimer",
-    "DefName": "ALOLAN_GRIMER"
-  },
-  {
-    "NatDexNum": 89,
-    "SpeciesName": "Muk",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Alolan Muk",
-    "VarName": "AlolanMuk",
-    "DefName": "ALOLAN_MUK"
-  },
-  {
-    "NatDexNum": 103,
-    "SpeciesName": "Exeggutor",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Alolan Exeggutor",
-    "VarName": "AlolanExeggutor",
-    "DefName": "ALOLAN_EXEGGUTOR"
-  },
-  {
-    "NatDexNum": 105,
-    "SpeciesName": "Marowak",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Alolan Marowak",
-    "VarName": "AlolanMarowak",
-    "DefName": "ALOLAN_MAROWAK"
+    "FormName": "Hoopa Unbound",
+    "VarName": "HoopaUnbound",
+    "DefName": "HOOPA_UNBOUND"
   },
   {
     "NatDexNum": 745,

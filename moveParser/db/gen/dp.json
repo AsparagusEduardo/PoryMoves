@@ -21172,15 +21172,15 @@
       },
       {
         "Level": 1,
+        "Move": "MOVE_ASTONISH"
+      },
+      {
+        "Level": 1,
         "Move": "MOVE_TACKLE"
       },
       {
         "Level": 1,
         "Move": "MOVE_GROWL"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_ASTONISH"
       },
       {
         "Level": 1,
@@ -45727,7 +45727,7 @@
     ],
     "TutorMoves": []
   },
-  "MIME_JR": {
+  "MIMEJR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -51826,7 +51826,7 @@
       "MOVE_DRACO_METEOR"
     ]
   },
-  "WORMADAM_SANDY": {
+  "WORMADAM_SANDY_CLOAK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -51914,7 +51914,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "WORMADAM_TRASH": {
+  "WORMADAM_TRASH_CLOAK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -52432,6 +52432,89 @@
       "MOVE_NATURAL_GIFT",
       "MOVE_DARK_PULSE",
       "MOVE_CHARGE_BEAM"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SHAYMIN_SKY": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_GROWTH"
+      },
+      {
+        "Level": 10,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_LEECH_SEED"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_QUICK_ATTACK"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_SWEET_SCENT"
+      },
+      {
+        "Level": 46,
+        "Move": "MOVE_NATURAL_GIFT"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_WORRY_SEED"
+      },
+      {
+        "Level": 64,
+        "Move": "MOVE_AIR_SLASH"
+      },
+      {
+        "Level": 73,
+        "Move": "MOVE_ENERGY_BALL"
+      },
+      {
+        "Level": 82,
+        "Move": "MOVE_SWEET_KISS"
+      },
+      {
+        "Level": 91,
+        "Move": "MOVE_LEAF_STORM"
+      },
+      {
+        "Level": 100,
+        "Move": "MOVE_SEED_FLARE"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_SWORDS_DANCE",
+      "MOVE_HYPER_BEAM",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_TOXIC",
+      "MOVE_PSYCHIC",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_FLASH",
+      "MOVE_REST",
+      "MOVE_SUBSTITUTE",
+      "MOVE_PROTECT",
+      "MOVE_GIGA_DRAIN",
+      "MOVE_ENDURE",
+      "MOVE_SWAGGER",
+      "MOVE_SLEEP_TALK",
+      "MOVE_RETURN",
+      "MOVE_FRUSTRATION",
+      "MOVE_SAFEGUARD",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_SUNNY_DAY",
+      "MOVE_PSYCH_UP",
+      "MOVE_FACADE",
+      "MOVE_SECRET_POWER",
+      "MOVE_BULLET_SEED",
+      "MOVE_NATURAL_GIFT",
+      "MOVE_ENERGY_BALL",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_GRASS_KNOT"
     ],
     "EggMoves": [],
     "TutorMoves": []
