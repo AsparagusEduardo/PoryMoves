@@ -852,6 +852,14 @@ namespace moveParser.data
             { "Jungle Healing", 816},
             { "Wicked Blow", 817},
             { "Surging Strikes", 818},
+            { "Thunder Cage", 819},
+            { "Dragon Energy", 820},
+            { "Freezing Glare", 821},
+            { "Fiery Wrath", 822},
+            { "Thunderous Kick", 823},
+            { "Glacial Lance", 824},
+            { "Astral Barrage", 825},
+            { "Eerie Spell", 826}
         };
 
         public static Dictionary<int, string> MoveDefNames = new Dictionary<int, string>()
@@ -1590,6 +1598,14 @@ namespace moveParser.data
             { 816, "JUNGLE_HEALING"},
             { 817, "WICKED_BLOW"},
             { 818, "SURGING_STRIKES"},
+            { 819, "THUNDER_CAGE"},
+            { 820, "DRAGON_ENERGY"},
+            { 821, "FREEZING_GLARE"},
+            { 822, "FIERY_WRATH"},
+            { 823, "THUNDEROUS_KICK"},
+            { 824, "GLACIAL_LANCE"},
+            { 825, "ASTRAL_BARRAGE"},
+            { 826, "EERIE_SPELL"}
         };
     }
 }
