@@ -8037,6 +8037,51 @@
     "DefName": "ZARUDE"
   },
   {
+    "NatDexNum": 894,
+    "SpeciesName": "Regieleki",
+    "IsBaseForm": true,
+    "CanHatchFromEgg": false,
+    "FormName": "Regieleki",
+    "VarName": "Regieleki",
+    "DefName": "REGIELEKI"
+  },
+  {
+    "NatDexNum": 895,
+    "SpeciesName": "Regidrago",
+    "IsBaseForm": true,
+    "CanHatchFromEgg": false,
+    "FormName": "Regidrago",
+    "VarName": "Regidrago",
+    "DefName": "REGIDRAGO"
+  },
+  {
+    "NatDexNum": 896,
+    "SpeciesName": "Glastrier",
+    "IsBaseForm": true,
+    "CanHatchFromEgg": false,
+    "FormName": "Glastrier",
+    "VarName": "Glastrier",
+    "DefName": "GLASTRIER"
+  },
+  {
+    "NatDexNum": 897,
+    "SpeciesName": "Spectrier",
+    "IsBaseForm": true,
+    "CanHatchFromEgg": false,
+    "FormName": "Spectrier",
+    "VarName": "Spectrier",
+    "DefName": "SPECTRIER"
+  },
+  {
+    "NatDexNum": 898,
+    "SpeciesName": "Calyrex",
+    "IsBaseForm": true,
+    "CanHatchFromEgg": false,
+    "FormName": "Calyrex",
+    "VarName": "Calyrex",
+    "DefName": "CALYREX"
+  },
+  {
     "NatDexNum": 19,
     "SpeciesName": "Rattata",
     "IsBaseForm": false,
@@ -8359,5 +8404,23 @@
     "FormName": "Speed Forme",
     "VarName": "DeoxysSpeed",
     "DefName": "DEOXYS_SPEED"
+  },
+  {
+    "NatDexNum": 898,
+    "SpeciesName": "Calyrex",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Ice Rider",
+    "VarName": "CalyrexIceRider",
+    "DefName": "CALYREX_ICE_RIDER"
+  },
+  {
+    "NatDexNum": 898,
+    "SpeciesName": "Calyrex",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Shadow Rider",
+    "VarName": "CalyrexShadowRider",
+    "DefName": "CALYREX_SHADOW_RIDER"
   }
 ]
