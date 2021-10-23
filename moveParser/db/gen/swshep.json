@@ -79403,6 +79403,141 @@
     ],
     "TutorMoves": []
   },
+  "URSHIFU_RAPID_STRIKE_STYLE": {
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_SURGING_STRIKES"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SURGING_STRIKES"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_AQUA_JET"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ROCK_SMASH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_LEER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ENDURE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_FOCUS_ENERGY"
+      },
+      {
+        "Level": 12,
+        "Move": "MOVE_AERIAL_ACE"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_SCARY_FACE"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_HEADBUTT"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_BRICK_BREAK"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_DETECT"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_BULK_UP"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_IRON_HEAD"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_DYNAMIC_PUNCH"
+      },
+      {
+        "Level": 44,
+        "Move": "MOVE_COUNTER"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_CLOSE_COMBAT"
+      },
+      {
+        "Level": 52,
+        "Move": "MOVE_FOCUS_PUNCH"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_MEGA_PUNCH",
+      "MOVE_FIRE_PUNCH",
+      "MOVE_ICE_PUNCH",
+      "MOVE_THUNDER_PUNCH",
+      "MOVE_MEGA_KICK",
+      "MOVE_BODY_SLAM",
+      "MOVE_LOW_KICK",
+      "MOVE_DIG",
+      "MOVE_FOCUS_ENERGY",
+      "MOVE_WATERFALL",
+      "MOVE_SWIFT",
+      "MOVE_REST",
+      "MOVE_ROCK_SLIDE",
+      "MOVE_SUBSTITUTE",
+      "MOVE_SNORE",
+      "MOVE_REVERSAL",
+      "MOVE_PROTECT",
+      "MOVE_SCARY_FACE",
+      "MOVE_ENDURE",
+      "MOVE_FALSE_SWIPE",
+      "MOVE_ATTRACT",
+      "MOVE_SLEEP_TALK",
+      "MOVE_RAIN_DANCE",
+      "MOVE_WHIRLPOOL",
+      "MOVE_FACADE",
+      "MOVE_TAUNT",
+      "MOVE_HELPING_HAND",
+      "MOVE_SUPERPOWER",
+      "MOVE_REVENGE",
+      "MOVE_BRICK_BREAK",
+      "MOVE_DIVE",
+      "MOVE_ROCK_TOMB",
+      "MOVE_IRON_DEFENSE",
+      "MOVE_BULK_UP",
+      "MOVE_BRINE",
+      "MOVE_U_TURN",
+      "MOVE_CLOSE_COMBAT",
+      "MOVE_AURA_SPHERE",
+      "MOVE_POISON_JAB",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_FOCUS_BLAST",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_IRON_HEAD",
+      "MOVE_STONE_EDGE",
+      "MOVE_LOW_SWEEP",
+      "MOVE_ROUND",
+      "MOVE_SCALD",
+      "MOVE_ACROBATICS",
+      "MOVE_RETALIATE",
+      "MOVE_WORK_UP",
+      "MOVE_LIQUIDATION",
+      "MOVE_BODY_PRESS"
+    ],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_COACHING"
+    ]
+  },
   "CALYREX_ICE_RIDER": {
     "LevelMoves": [
       {

@@ -8244,6 +8244,33 @@
     "DefName": "MAROWAK_ALOLAN"
   },
   {
+    "NatDexNum": 386,
+    "SpeciesName": "Deoxys",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Attack Forme",
+    "VarName": "DeoxysAttack",
+    "DefName": "DEOXYS_ATTACK"
+  },
+  {
+    "NatDexNum": 386,
+    "SpeciesName": "Deoxys",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Defense Forme",
+    "VarName": "DeoxysDefense",
+    "DefName": "DEOXYS_DEFENSE"
+  },
+  {
+    "NatDexNum": 386,
+    "SpeciesName": "Deoxys",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Speed Forme",
+    "VarName": "DeoxysSpeed",
+    "DefName": "DEOXYS_SPEED"
+  },
+  {
     "NatDexNum": 413,
     "SpeciesName": "Wormadam",
     "IsBaseForm": false,
@@ -8379,31 +8406,13 @@
     "DefName": "LYCANROC_DUSK"
   },
   {
-    "NatDexNum": 386,
-    "SpeciesName": "Deoxys",
-    "IsBaseForm": false,
+    "NatDexNum": 892,
+    "SpeciesName": "Urshifu",
+    "IsBaseForm": true,
     "CanHatchFromEgg": false,
-    "FormName": "Attack Forme",
-    "VarName": "DeoxysAttack",
-    "DefName": "DEOXYS_ATTACK"
-  },
-  {
-    "NatDexNum": 386,
-    "SpeciesName": "Deoxys",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Defense Forme",
-    "VarName": "DeoxysDefense",
-    "DefName": "DEOXYS_DEFENSE"
-  },
-  {
-    "NatDexNum": 386,
-    "SpeciesName": "Deoxys",
-    "IsBaseForm": false,
-    "CanHatchFromEgg": false,
-    "FormName": "Speed Forme",
-    "VarName": "DeoxysSpeed",
-    "DefName": "DEOXYS_SPEED"
+    "FormName": "Rapid Strike Style",
+    "VarName": "Urshifu",
+    "DefName": "URSHIFU_RAPID_STRIKE_STYLE"
   },
   {
     "NatDexNum": 898,
