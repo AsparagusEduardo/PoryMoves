@@ -68,6 +68,7 @@
             this.bwrkExportTM = new System.ComponentModel.BackgroundWorker();
             this.bwrkExportTutor = new System.ComponentModel.BackgroundWorker();
             this.bwrkExportEgg = new System.ComponentModel.BackgroundWorker();
+            this.label1 = new System.Windows.Forms.Label();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -76,20 +77,19 @@
             // 
             // btnLoadFromSerebii
             // 
-            this.btnLoadFromSerebii.Location = new System.Drawing.Point(616, 7);
+            this.btnLoadFromSerebii.Location = new System.Drawing.Point(494, 12);
             this.btnLoadFromSerebii.Name = "btnLoadFromSerebii";
             this.btnLoadFromSerebii.Size = new System.Drawing.Size(169, 34);
             this.btnLoadFromSerebii.TabIndex = 0;
             this.btnLoadFromSerebii.Text = "Load from Bulbapedia";
             this.btnLoadFromSerebii.UseVisualStyleBackColor = true;
-            this.btnLoadFromSerebii.Visible = false;
             this.btnLoadFromSerebii.Click += new System.EventHandler(this.btnLoadFromSerebii_Click);
             // 
             // pbar1
             // 
-            this.pbar1.Location = new System.Drawing.Point(355, 12);
+            this.pbar1.Location = new System.Drawing.Point(21, 57);
             this.pbar1.Name = "pbar1";
-            this.pbar1.Size = new System.Drawing.Size(476, 23);
+            this.pbar1.Size = new System.Drawing.Size(808, 23);
             this.pbar1.TabIndex = 1;
             // 
             // backgroundWorker1
@@ -112,7 +112,7 @@
             // 
             this.lblOptions.AutoSize = true;
             this.lblOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOptions.Location = new System.Drawing.Point(9, 44);
+            this.lblOptions.Location = new System.Drawing.Point(9, 112);
             this.lblOptions.Name = "lblOptions";
             this.lblOptions.Size = new System.Drawing.Size(115, 17);
             this.lblOptions.TabIndex = 3;
@@ -122,11 +122,10 @@
             // 
             this.cmbGeneration.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGeneration.FormattingEnabled = true;
-            this.cmbGeneration.Location = new System.Drawing.Point(468, 11);
+            this.cmbGeneration.Location = new System.Drawing.Point(396, 18);
             this.cmbGeneration.Name = "cmbGeneration";
             this.cmbGeneration.Size = new System.Drawing.Size(92, 24);
             this.cmbGeneration.TabIndex = 5;
-            this.cmbGeneration.Visible = false;
             // 
             // btnWriteLvlLearnsets
             // 
@@ -165,9 +164,9 @@
             this.gBoxOptionsTM.Controls.Add(this.btnExportTM);
             this.gBoxOptionsTM.Controls.Add(this.chkTM_IncludeLvl);
             this.gBoxOptionsTM.Controls.Add(this.cListTMMoves);
-            this.gBoxOptionsTM.Location = new System.Drawing.Point(220, 67);
+            this.gBoxOptionsTM.Location = new System.Drawing.Point(220, 157);
             this.gBoxOptionsTM.Name = "gBoxOptionsTM";
-            this.gBoxOptionsTM.Size = new System.Drawing.Size(199, 458);
+            this.gBoxOptionsTM.Size = new System.Drawing.Size(199, 459);
             this.gBoxOptionsTM.TabIndex = 13;
             this.gBoxOptionsTM.TabStop = false;
             this.gBoxOptionsTM.Text = "TM/HM/TR Moves";
@@ -238,9 +237,9 @@
             this.groupBox1.Controls.Add(this.chkLvl_LevelUpEnd);
             this.groupBox1.Controls.Add(this.cListLevelUp);
             this.groupBox1.Controls.Add(this.btnWriteLvlLearnsets);
-            this.groupBox1.Location = new System.Drawing.Point(15, 67);
+            this.groupBox1.Location = new System.Drawing.Point(15, 157);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(199, 458);
+            this.groupBox1.Size = new System.Drawing.Size(199, 459);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Level Up Moves";
@@ -286,9 +285,9 @@
             this.groupBox2.Controls.Add(this.btnExportEgg);
             this.groupBox2.Controls.Add(this.chkEgg_IncludeLvl);
             this.groupBox2.Controls.Add(this.cListEggMoves);
-            this.groupBox2.Location = new System.Drawing.Point(425, 67);
+            this.groupBox2.Location = new System.Drawing.Point(425, 157);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(199, 458);
+            this.groupBox2.Size = new System.Drawing.Size(199, 459);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Egg Moves";
@@ -374,9 +373,9 @@
             this.groupBox3.Controls.Add(this.btnExportTutor);
             this.groupBox3.Controls.Add(this.chkTutor_IncludeLvl);
             this.groupBox3.Controls.Add(this.cListTutorMoves);
-            this.groupBox3.Location = new System.Drawing.Point(630, 67);
+            this.groupBox3.Location = new System.Drawing.Point(630, 157);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(199, 458);
+            this.groupBox3.Size = new System.Drawing.Size(199, 459);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tutor Moves";
@@ -472,11 +471,21 @@
             this.bwrkExportEgg.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkExportEgg_DoWork);
             this.bwrkExportEgg.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(669, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 38);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "(This WILL take a while)";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 537);
+            this.ClientSize = new System.Drawing.Size(843, 628);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -543,6 +552,7 @@
         private System.ComponentModel.BackgroundWorker bwrkExportTutor;
         private System.ComponentModel.BackgroundWorker bwrkExportEgg;
         private System.Windows.Forms.CheckBox chkEgg_Extended;
+        private System.Windows.Forms.Label label1;
     }
 }
 
