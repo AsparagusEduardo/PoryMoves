@@ -1,21 +1,11 @@
 {
-  "CT": {
+  "SWSHEP": {
     "genNumber": 8,
     "genNumberRoman": "VIII",
     "isLatestGen": true,
-    "dbFilename": "ct",
-    "gameFullName": "The Crown Tundra",
-    "lvlUpColumn": "CT",
-    "moveTutorColumn": 3,
-    "maxDexNum": 898
-  },
-  "IOA": {
-    "genNumber": 8,
-    "genNumberRoman": "VIII",
-    "isLatestGen": true,
-    "dbFilename": "ioa",
-    "gameFullName": "The Isle of Armor",
-    "lvlUpColumn": "IOA",
+    "dbFilename": "swshep",
+    "gameFullName": "Pokémon Sword and Shield Expansion Pass",
+    "lvlUpColumn": "SWSHEP",
     "moveTutorColumn": 2,
     "maxDexNum": 898
   },

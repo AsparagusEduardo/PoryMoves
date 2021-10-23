@@ -313,7 +313,7 @@ namespace moveParser.data
                                     EggMovesIds.Add(SerebiiNameToID[movename]);
                             }
                             else if (modeText.Equals("TUTOR") && !TutorListRead && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/tutor.+null}}")
-                                 && matchForm(formText, name.FormName))
+                                && matchForm(formText, name.FormName))
                             {
                                 string tutortext = textRow.Replace("{{tt|*|", "");
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(tutortext, "}}", "").Split('|');

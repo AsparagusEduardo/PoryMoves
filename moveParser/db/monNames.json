@@ -5809,7 +5809,7 @@
     "SpeciesName": "Kyurem",
     "IsBaseForm": true,
     "CanHatchFromEgg": false,
-    "FormName": "Normal Kyurem",
+    "FormName": "Kyurem",
     "VarName": "Kyurem",
     "DefName": "KYUREM"
   },
@@ -8410,7 +8410,7 @@
     "SpeciesName": "Calyrex",
     "IsBaseForm": false,
     "CanHatchFromEgg": false,
-    "FormName": "Ice Rider",
+    "FormName": "Ice Rider Calyrex",
     "VarName": "CalyrexIceRider",
     "DefName": "CALYREX_ICE_RIDER"
   },
@@ -8419,7 +8419,7 @@
     "SpeciesName": "Calyrex",
     "IsBaseForm": false,
     "CanHatchFromEgg": false,
-    "FormName": "Shadow Rider",
+    "FormName": "Shadow Rider Calyrex",
     "VarName": "CalyrexShadowRider",
     "DefName": "CALYREX_SHADOW_RIDER"
   }
