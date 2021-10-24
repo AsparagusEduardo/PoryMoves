@@ -359,20 +359,33 @@ namespace moveParser
                 foreach (LevelUpMove move in lvl1Moves)
                     monToAdd.LevelMoves.Add(move);
 
-                foreach (KeyValuePair<string, List<Tuple<int, int>>> item in OtherLvlMoves)
+                if (!name.SpeciesName.Equals("Smeargle"))
                 {
-                    int weightedSum = 0;
-                    int sum = 0;
-
-                    foreach (Tuple<int, int> l in item.Value)
+                    foreach (KeyValuePair<string, List<Tuple<int, int>>> item in OtherLvlMoves)
                     {
-                        weightedSum += l.Item1 * l.Item2;
-                        sum += l.Item1;
+                        int weightedSum = 0;
+                        int sum = 0;
+
+                        foreach (Tuple<int, int> l in item.Value)
+                        {
+                            weightedSum += l.Item1 * l.Item2;
+                            sum += l.Item1;
+                        }
+                        monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max((int)(weightedSum / sum), 2), item.Key));
                     }
-                    //oLvlMoves.Add(new LevelUpMove(Math.Max((int)item.Value.Average(), 2), item.Key));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max((int)(weightedSum / sum), 2), item.Key));
                 }
-                //oLvlMoves = oLvlMoves.OrderBy(o => o.Level).ToList();
+                else
+                {
+                    monToAdd.LevelMoves.Add(new LevelUpMove(11, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(21, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(31, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(41, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(51, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(61, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(71, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(81, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(91, "MOVE_SKETCH"));
+                }
                 monToAdd.LevelMoves = monToAdd.LevelMoves.OrderBy(o => o.Level).ToList();
 
                 customGenData.Add(name.DefName, monToAdd);
