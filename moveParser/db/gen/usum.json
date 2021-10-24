@@ -104887,6 +104887,429 @@
       "MOVE_STOMPING_TANTRUM"
     ]
   },
+  "DEOXYS_ATTACK": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_WRAP"
+      },
+      {
+        "Level": 7,
+        "Move": "MOVE_NIGHT_SHADE"
+      },
+      {
+        "Level": 13,
+        "Move": "MOVE_TELEPORT"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_TAUNT"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_PURSUIT"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_SUPERPOWER"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_PSYCHO_SHIFT"
+      },
+      {
+        "Level": 49,
+        "Move": "MOVE_ZEN_HEADBUTT"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_COSMIC_POWER"
+      },
+      {
+        "Level": 61,
+        "Move": "MOVE_ZAP_CANNON"
+      },
+      {
+        "Level": 67,
+        "Move": "MOVE_PSYCHO_BOOST"
+      },
+      {
+        "Level": 73,
+        "Move": "MOVE_HYPER_BEAM"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_HYPER_BEAM",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_THUNDERBOLT",
+      "MOVE_THUNDER_WAVE",
+      "MOVE_THUNDER",
+      "MOVE_TOXIC",
+      "MOVE_PSYCHIC",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_REFLECT",
+      "MOVE_DREAM_EATER",
+      "MOVE_REST",
+      "MOVE_ROCK_SLIDE",
+      "MOVE_SUBSTITUTE",
+      "MOVE_PROTECT",
+      "MOVE_SWAGGER",
+      "MOVE_SLEEP_TALK",
+      "MOVE_RETURN",
+      "MOVE_FRUSTRATION",
+      "MOVE_SAFEGUARD",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_RAIN_DANCE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_PSYCH_UP",
+      "MOVE_SHADOW_BALL",
+      "MOVE_TORMENT",
+      "MOVE_FACADE",
+      "MOVE_TAUNT",
+      "MOVE_BRICK_BREAK",
+      "MOVE_ROCK_TOMB",
+      "MOVE_AERIAL_ACE",
+      "MOVE_CALM_MIND",
+      "MOVE_FLING",
+      "MOVE_POISON_JAB",
+      "MOVE_DARK_PULSE",
+      "MOVE_FOCUS_BLAST",
+      "MOVE_ENERGY_BALL",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_FLASH_CANNON",
+      "MOVE_TRICK_ROOM",
+      "MOVE_GRASS_KNOT",
+      "MOVE_CHARGE_BEAM",
+      "MOVE_PSYSHOCK",
+      "MOVE_LOW_SWEEP",
+      "MOVE_ROUND",
+      "MOVE_CONFIDE",
+      "MOVE_BRUTAL_SWING"
+    ],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_BIND",
+      "MOVE_LOW_KICK",
+      "MOVE_SNORE",
+      "MOVE_FOCUS_PUNCH",
+      "MOVE_TRICK",
+      "MOVE_ROLE_PLAY",
+      "MOVE_SUPERPOWER",
+      "MOVE_MAGIC_COAT",
+      "MOVE_RECYCLE",
+      "MOVE_SKILL_SWAP",
+      "MOVE_SNATCH",
+      "MOVE_SIGNAL_BEAM",
+      "MOVE_SHOCK_WAVE",
+      "MOVE_WATER_PULSE",
+      "MOVE_GRAVITY",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_STEALTH_ROCK",
+      "MOVE_WONDER_ROOM",
+      "MOVE_TELEKINESIS",
+      "MOVE_ALLY_SWITCH",
+      "MOVE_LASER_FOCUS",
+      "MOVE_THROAT_CHOP",
+      "MOVE_STOMPING_TANTRUM"
+    ]
+  },
+  "DEOXYS_DEFENSE": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_WRAP"
+      },
+      {
+        "Level": 7,
+        "Move": "MOVE_NIGHT_SHADE"
+      },
+      {
+        "Level": 13,
+        "Move": "MOVE_TELEPORT"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_KNOCK_OFF"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_SPIKES"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_SNATCH"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_PSYCHO_SHIFT"
+      },
+      {
+        "Level": 49,
+        "Move": "MOVE_ZEN_HEADBUTT"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_IRON_DEFENSE"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_AMNESIA"
+      },
+      {
+        "Level": 61,
+        "Move": "MOVE_RECOVER"
+      },
+      {
+        "Level": 67,
+        "Move": "MOVE_PSYCHO_BOOST"
+      },
+      {
+        "Level": 73,
+        "Move": "MOVE_COUNTER"
+      },
+      {
+        "Level": 73,
+        "Move": "MOVE_MIRROR_COAT"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_HYPER_BEAM",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_THUNDERBOLT",
+      "MOVE_THUNDER_WAVE",
+      "MOVE_THUNDER",
+      "MOVE_TOXIC",
+      "MOVE_PSYCHIC",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_REFLECT",
+      "MOVE_DREAM_EATER",
+      "MOVE_REST",
+      "MOVE_ROCK_SLIDE",
+      "MOVE_SUBSTITUTE",
+      "MOVE_PROTECT",
+      "MOVE_SWAGGER",
+      "MOVE_SLEEP_TALK",
+      "MOVE_RETURN",
+      "MOVE_FRUSTRATION",
+      "MOVE_SAFEGUARD",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_RAIN_DANCE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_PSYCH_UP",
+      "MOVE_SHADOW_BALL",
+      "MOVE_TORMENT",
+      "MOVE_FACADE",
+      "MOVE_TAUNT",
+      "MOVE_BRICK_BREAK",
+      "MOVE_ROCK_TOMB",
+      "MOVE_AERIAL_ACE",
+      "MOVE_CALM_MIND",
+      "MOVE_FLING",
+      "MOVE_POISON_JAB",
+      "MOVE_DARK_PULSE",
+      "MOVE_FOCUS_BLAST",
+      "MOVE_ENERGY_BALL",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_FLASH_CANNON",
+      "MOVE_TRICK_ROOM",
+      "MOVE_GRASS_KNOT",
+      "MOVE_CHARGE_BEAM",
+      "MOVE_PSYSHOCK",
+      "MOVE_LOW_SWEEP",
+      "MOVE_ROUND",
+      "MOVE_CONFIDE",
+      "MOVE_BRUTAL_SWING"
+    ],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_BIND",
+      "MOVE_LOW_KICK",
+      "MOVE_SNORE",
+      "MOVE_FOCUS_PUNCH",
+      "MOVE_TRICK",
+      "MOVE_ROLE_PLAY",
+      "MOVE_MAGIC_COAT",
+      "MOVE_RECYCLE",
+      "MOVE_KNOCK_OFF",
+      "MOVE_SKILL_SWAP",
+      "MOVE_SNATCH",
+      "MOVE_SIGNAL_BEAM",
+      "MOVE_IRON_DEFENSE",
+      "MOVE_SHOCK_WAVE",
+      "MOVE_WATER_PULSE",
+      "MOVE_GRAVITY",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_STEALTH_ROCK",
+      "MOVE_WONDER_ROOM",
+      "MOVE_TELEKINESIS",
+      "MOVE_ALLY_SWITCH",
+      "MOVE_LASER_FOCUS",
+      "MOVE_THROAT_CHOP",
+      "MOVE_STOMPING_TANTRUM"
+    ]
+  },
+  "DEOXYS_SPEED": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_LEER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_WRAP"
+      },
+      {
+        "Level": 7,
+        "Move": "MOVE_NIGHT_SHADE"
+      },
+      {
+        "Level": 13,
+        "Move": "MOVE_DOUBLE_TEAM"
+      },
+      {
+        "Level": 19,
+        "Move": "MOVE_KNOCK_OFF"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_PURSUIT"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 37,
+        "Move": "MOVE_SWIFT"
+      },
+      {
+        "Level": 43,
+        "Move": "MOVE_PSYCHO_SHIFT"
+      },
+      {
+        "Level": 49,
+        "Move": "MOVE_ZEN_HEADBUTT"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_AGILITY"
+      },
+      {
+        "Level": 61,
+        "Move": "MOVE_RECOVER"
+      },
+      {
+        "Level": 67,
+        "Move": "MOVE_PSYCHO_BOOST"
+      },
+      {
+        "Level": 73,
+        "Move": "MOVE_EXTREME_SPEED"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_HYPER_BEAM",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_THUNDERBOLT",
+      "MOVE_THUNDER_WAVE",
+      "MOVE_THUNDER",
+      "MOVE_TOXIC",
+      "MOVE_PSYCHIC",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_REFLECT",
+      "MOVE_DREAM_EATER",
+      "MOVE_REST",
+      "MOVE_ROCK_SLIDE",
+      "MOVE_SUBSTITUTE",
+      "MOVE_PROTECT",
+      "MOVE_SWAGGER",
+      "MOVE_SLEEP_TALK",
+      "MOVE_RETURN",
+      "MOVE_FRUSTRATION",
+      "MOVE_SAFEGUARD",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_RAIN_DANCE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_PSYCH_UP",
+      "MOVE_SHADOW_BALL",
+      "MOVE_TORMENT",
+      "MOVE_FACADE",
+      "MOVE_TAUNT",
+      "MOVE_BRICK_BREAK",
+      "MOVE_ROCK_TOMB",
+      "MOVE_AERIAL_ACE",
+      "MOVE_CALM_MIND",
+      "MOVE_FLING",
+      "MOVE_POISON_JAB",
+      "MOVE_DARK_PULSE",
+      "MOVE_FOCUS_BLAST",
+      "MOVE_ENERGY_BALL",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_FLASH_CANNON",
+      "MOVE_TRICK_ROOM",
+      "MOVE_GRASS_KNOT",
+      "MOVE_CHARGE_BEAM",
+      "MOVE_PSYSHOCK",
+      "MOVE_LOW_SWEEP",
+      "MOVE_ROUND",
+      "MOVE_CONFIDE",
+      "MOVE_BRUTAL_SWING"
+    ],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_FIRE_PUNCH",
+      "MOVE_ICE_PUNCH",
+      "MOVE_THUNDER_PUNCH",
+      "MOVE_BIND",
+      "MOVE_LOW_KICK",
+      "MOVE_SNORE",
+      "MOVE_FOCUS_PUNCH",
+      "MOVE_TRICK",
+      "MOVE_ROLE_PLAY",
+      "MOVE_MAGIC_COAT",
+      "MOVE_RECYCLE",
+      "MOVE_KNOCK_OFF",
+      "MOVE_SKILL_SWAP",
+      "MOVE_SNATCH",
+      "MOVE_SIGNAL_BEAM",
+      "MOVE_SHOCK_WAVE",
+      "MOVE_WATER_PULSE",
+      "MOVE_GRAVITY",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_STEALTH_ROCK",
+      "MOVE_WONDER_ROOM",
+      "MOVE_TELEKINESIS",
+      "MOVE_ALLY_SWITCH",
+      "MOVE_LASER_FOCUS",
+      "MOVE_THROAT_CHOP",
+      "MOVE_STOMPING_TANTRUM"
+    ]
+  },
   "WORMADAM_SANDY_CLOAK": {
     "LevelMoves": [
       {
@@ -106753,429 +107176,6 @@
       "MOVE_IRON_HEAD",
       "MOVE_STEALTH_ROCK",
       "MOVE_DRILL_RUN",
-      "MOVE_STOMPING_TANTRUM"
-    ]
-  },
-  "DEOXYS_ATTACK": {
-    "LevelMoves": [
-      {
-        "Level": 1,
-        "Move": "MOVE_LEER"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_WRAP"
-      },
-      {
-        "Level": 7,
-        "Move": "MOVE_NIGHT_SHADE"
-      },
-      {
-        "Level": 13,
-        "Move": "MOVE_TELEPORT"
-      },
-      {
-        "Level": 19,
-        "Move": "MOVE_TAUNT"
-      },
-      {
-        "Level": 25,
-        "Move": "MOVE_PURSUIT"
-      },
-      {
-        "Level": 31,
-        "Move": "MOVE_PSYCHIC"
-      },
-      {
-        "Level": 37,
-        "Move": "MOVE_SUPERPOWER"
-      },
-      {
-        "Level": 43,
-        "Move": "MOVE_PSYCHO_SHIFT"
-      },
-      {
-        "Level": 49,
-        "Move": "MOVE_ZEN_HEADBUTT"
-      },
-      {
-        "Level": 55,
-        "Move": "MOVE_COSMIC_POWER"
-      },
-      {
-        "Level": 61,
-        "Move": "MOVE_ZAP_CANNON"
-      },
-      {
-        "Level": 67,
-        "Move": "MOVE_PSYCHO_BOOST"
-      },
-      {
-        "Level": 73,
-        "Move": "MOVE_HYPER_BEAM"
-      }
-    ],
-    "TMMoves": [
-      "MOVE_ICE_BEAM",
-      "MOVE_HYPER_BEAM",
-      "MOVE_SOLAR_BEAM",
-      "MOVE_THUNDERBOLT",
-      "MOVE_THUNDER_WAVE",
-      "MOVE_THUNDER",
-      "MOVE_TOXIC",
-      "MOVE_PSYCHIC",
-      "MOVE_DOUBLE_TEAM",
-      "MOVE_LIGHT_SCREEN",
-      "MOVE_REFLECT",
-      "MOVE_DREAM_EATER",
-      "MOVE_REST",
-      "MOVE_ROCK_SLIDE",
-      "MOVE_SUBSTITUTE",
-      "MOVE_PROTECT",
-      "MOVE_SWAGGER",
-      "MOVE_SLEEP_TALK",
-      "MOVE_RETURN",
-      "MOVE_FRUSTRATION",
-      "MOVE_SAFEGUARD",
-      "MOVE_HIDDEN_POWER",
-      "MOVE_RAIN_DANCE",
-      "MOVE_SUNNY_DAY",
-      "MOVE_PSYCH_UP",
-      "MOVE_SHADOW_BALL",
-      "MOVE_TORMENT",
-      "MOVE_FACADE",
-      "MOVE_TAUNT",
-      "MOVE_BRICK_BREAK",
-      "MOVE_ROCK_TOMB",
-      "MOVE_AERIAL_ACE",
-      "MOVE_CALM_MIND",
-      "MOVE_FLING",
-      "MOVE_POISON_JAB",
-      "MOVE_DARK_PULSE",
-      "MOVE_FOCUS_BLAST",
-      "MOVE_ENERGY_BALL",
-      "MOVE_GIGA_IMPACT",
-      "MOVE_FLASH_CANNON",
-      "MOVE_TRICK_ROOM",
-      "MOVE_GRASS_KNOT",
-      "MOVE_CHARGE_BEAM",
-      "MOVE_PSYSHOCK",
-      "MOVE_LOW_SWEEP",
-      "MOVE_ROUND",
-      "MOVE_CONFIDE",
-      "MOVE_BRUTAL_SWING"
-    ],
-    "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_BIND",
-      "MOVE_LOW_KICK",
-      "MOVE_SNORE",
-      "MOVE_FOCUS_PUNCH",
-      "MOVE_TRICK",
-      "MOVE_ROLE_PLAY",
-      "MOVE_SUPERPOWER",
-      "MOVE_MAGIC_COAT",
-      "MOVE_RECYCLE",
-      "MOVE_SKILL_SWAP",
-      "MOVE_SNATCH",
-      "MOVE_SIGNAL_BEAM",
-      "MOVE_SHOCK_WAVE",
-      "MOVE_WATER_PULSE",
-      "MOVE_GRAVITY",
-      "MOVE_DRAIN_PUNCH",
-      "MOVE_ZEN_HEADBUTT",
-      "MOVE_STEALTH_ROCK",
-      "MOVE_WONDER_ROOM",
-      "MOVE_TELEKINESIS",
-      "MOVE_ALLY_SWITCH",
-      "MOVE_LASER_FOCUS",
-      "MOVE_THROAT_CHOP",
-      "MOVE_STOMPING_TANTRUM"
-    ]
-  },
-  "DEOXYS_DEFENSE": {
-    "LevelMoves": [
-      {
-        "Level": 1,
-        "Move": "MOVE_LEER"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_WRAP"
-      },
-      {
-        "Level": 7,
-        "Move": "MOVE_NIGHT_SHADE"
-      },
-      {
-        "Level": 13,
-        "Move": "MOVE_TELEPORT"
-      },
-      {
-        "Level": 19,
-        "Move": "MOVE_KNOCK_OFF"
-      },
-      {
-        "Level": 25,
-        "Move": "MOVE_SPIKES"
-      },
-      {
-        "Level": 31,
-        "Move": "MOVE_PSYCHIC"
-      },
-      {
-        "Level": 37,
-        "Move": "MOVE_SNATCH"
-      },
-      {
-        "Level": 43,
-        "Move": "MOVE_PSYCHO_SHIFT"
-      },
-      {
-        "Level": 49,
-        "Move": "MOVE_ZEN_HEADBUTT"
-      },
-      {
-        "Level": 55,
-        "Move": "MOVE_IRON_DEFENSE"
-      },
-      {
-        "Level": 55,
-        "Move": "MOVE_AMNESIA"
-      },
-      {
-        "Level": 61,
-        "Move": "MOVE_RECOVER"
-      },
-      {
-        "Level": 67,
-        "Move": "MOVE_PSYCHO_BOOST"
-      },
-      {
-        "Level": 73,
-        "Move": "MOVE_COUNTER"
-      },
-      {
-        "Level": 73,
-        "Move": "MOVE_MIRROR_COAT"
-      }
-    ],
-    "TMMoves": [
-      "MOVE_ICE_BEAM",
-      "MOVE_HYPER_BEAM",
-      "MOVE_SOLAR_BEAM",
-      "MOVE_THUNDERBOLT",
-      "MOVE_THUNDER_WAVE",
-      "MOVE_THUNDER",
-      "MOVE_TOXIC",
-      "MOVE_PSYCHIC",
-      "MOVE_DOUBLE_TEAM",
-      "MOVE_LIGHT_SCREEN",
-      "MOVE_REFLECT",
-      "MOVE_DREAM_EATER",
-      "MOVE_REST",
-      "MOVE_ROCK_SLIDE",
-      "MOVE_SUBSTITUTE",
-      "MOVE_PROTECT",
-      "MOVE_SWAGGER",
-      "MOVE_SLEEP_TALK",
-      "MOVE_RETURN",
-      "MOVE_FRUSTRATION",
-      "MOVE_SAFEGUARD",
-      "MOVE_HIDDEN_POWER",
-      "MOVE_RAIN_DANCE",
-      "MOVE_SUNNY_DAY",
-      "MOVE_PSYCH_UP",
-      "MOVE_SHADOW_BALL",
-      "MOVE_TORMENT",
-      "MOVE_FACADE",
-      "MOVE_TAUNT",
-      "MOVE_BRICK_BREAK",
-      "MOVE_ROCK_TOMB",
-      "MOVE_AERIAL_ACE",
-      "MOVE_CALM_MIND",
-      "MOVE_FLING",
-      "MOVE_POISON_JAB",
-      "MOVE_DARK_PULSE",
-      "MOVE_FOCUS_BLAST",
-      "MOVE_ENERGY_BALL",
-      "MOVE_GIGA_IMPACT",
-      "MOVE_FLASH_CANNON",
-      "MOVE_TRICK_ROOM",
-      "MOVE_GRASS_KNOT",
-      "MOVE_CHARGE_BEAM",
-      "MOVE_PSYSHOCK",
-      "MOVE_LOW_SWEEP",
-      "MOVE_ROUND",
-      "MOVE_CONFIDE",
-      "MOVE_BRUTAL_SWING"
-    ],
-    "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_BIND",
-      "MOVE_LOW_KICK",
-      "MOVE_SNORE",
-      "MOVE_FOCUS_PUNCH",
-      "MOVE_TRICK",
-      "MOVE_ROLE_PLAY",
-      "MOVE_MAGIC_COAT",
-      "MOVE_RECYCLE",
-      "MOVE_KNOCK_OFF",
-      "MOVE_SKILL_SWAP",
-      "MOVE_SNATCH",
-      "MOVE_SIGNAL_BEAM",
-      "MOVE_IRON_DEFENSE",
-      "MOVE_SHOCK_WAVE",
-      "MOVE_WATER_PULSE",
-      "MOVE_GRAVITY",
-      "MOVE_DRAIN_PUNCH",
-      "MOVE_ZEN_HEADBUTT",
-      "MOVE_STEALTH_ROCK",
-      "MOVE_WONDER_ROOM",
-      "MOVE_TELEKINESIS",
-      "MOVE_ALLY_SWITCH",
-      "MOVE_LASER_FOCUS",
-      "MOVE_THROAT_CHOP",
-      "MOVE_STOMPING_TANTRUM"
-    ]
-  },
-  "DEOXYS_SPEED": {
-    "LevelMoves": [
-      {
-        "Level": 1,
-        "Move": "MOVE_LEER"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_WRAP"
-      },
-      {
-        "Level": 7,
-        "Move": "MOVE_NIGHT_SHADE"
-      },
-      {
-        "Level": 13,
-        "Move": "MOVE_DOUBLE_TEAM"
-      },
-      {
-        "Level": 19,
-        "Move": "MOVE_KNOCK_OFF"
-      },
-      {
-        "Level": 25,
-        "Move": "MOVE_PURSUIT"
-      },
-      {
-        "Level": 31,
-        "Move": "MOVE_PSYCHIC"
-      },
-      {
-        "Level": 37,
-        "Move": "MOVE_SWIFT"
-      },
-      {
-        "Level": 43,
-        "Move": "MOVE_PSYCHO_SHIFT"
-      },
-      {
-        "Level": 49,
-        "Move": "MOVE_ZEN_HEADBUTT"
-      },
-      {
-        "Level": 55,
-        "Move": "MOVE_AGILITY"
-      },
-      {
-        "Level": 61,
-        "Move": "MOVE_RECOVER"
-      },
-      {
-        "Level": 67,
-        "Move": "MOVE_PSYCHO_BOOST"
-      },
-      {
-        "Level": 73,
-        "Move": "MOVE_EXTREME_SPEED"
-      }
-    ],
-    "TMMoves": [
-      "MOVE_ICE_BEAM",
-      "MOVE_HYPER_BEAM",
-      "MOVE_SOLAR_BEAM",
-      "MOVE_THUNDERBOLT",
-      "MOVE_THUNDER_WAVE",
-      "MOVE_THUNDER",
-      "MOVE_TOXIC",
-      "MOVE_PSYCHIC",
-      "MOVE_DOUBLE_TEAM",
-      "MOVE_LIGHT_SCREEN",
-      "MOVE_REFLECT",
-      "MOVE_DREAM_EATER",
-      "MOVE_REST",
-      "MOVE_ROCK_SLIDE",
-      "MOVE_SUBSTITUTE",
-      "MOVE_PROTECT",
-      "MOVE_SWAGGER",
-      "MOVE_SLEEP_TALK",
-      "MOVE_RETURN",
-      "MOVE_FRUSTRATION",
-      "MOVE_SAFEGUARD",
-      "MOVE_HIDDEN_POWER",
-      "MOVE_RAIN_DANCE",
-      "MOVE_SUNNY_DAY",
-      "MOVE_PSYCH_UP",
-      "MOVE_SHADOW_BALL",
-      "MOVE_TORMENT",
-      "MOVE_FACADE",
-      "MOVE_TAUNT",
-      "MOVE_BRICK_BREAK",
-      "MOVE_ROCK_TOMB",
-      "MOVE_AERIAL_ACE",
-      "MOVE_CALM_MIND",
-      "MOVE_FLING",
-      "MOVE_POISON_JAB",
-      "MOVE_DARK_PULSE",
-      "MOVE_FOCUS_BLAST",
-      "MOVE_ENERGY_BALL",
-      "MOVE_GIGA_IMPACT",
-      "MOVE_FLASH_CANNON",
-      "MOVE_TRICK_ROOM",
-      "MOVE_GRASS_KNOT",
-      "MOVE_CHARGE_BEAM",
-      "MOVE_PSYSHOCK",
-      "MOVE_LOW_SWEEP",
-      "MOVE_ROUND",
-      "MOVE_CONFIDE",
-      "MOVE_BRUTAL_SWING"
-    ],
-    "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_FIRE_PUNCH",
-      "MOVE_ICE_PUNCH",
-      "MOVE_THUNDER_PUNCH",
-      "MOVE_BIND",
-      "MOVE_LOW_KICK",
-      "MOVE_SNORE",
-      "MOVE_FOCUS_PUNCH",
-      "MOVE_TRICK",
-      "MOVE_ROLE_PLAY",
-      "MOVE_MAGIC_COAT",
-      "MOVE_RECYCLE",
-      "MOVE_KNOCK_OFF",
-      "MOVE_SKILL_SWAP",
-      "MOVE_SNATCH",
-      "MOVE_SIGNAL_BEAM",
-      "MOVE_SHOCK_WAVE",
-      "MOVE_WATER_PULSE",
-      "MOVE_GRAVITY",
-      "MOVE_DRAIN_PUNCH",
-      "MOVE_ZEN_HEADBUTT",
-      "MOVE_STEALTH_ROCK",
-      "MOVE_WONDER_ROOM",
-      "MOVE_TELEKINESIS",
-      "MOVE_ALLY_SWITCH",
-      "MOVE_LASER_FOCUS",
-      "MOVE_THROAT_CHOP",
       "MOVE_STOMPING_TANTRUM"
     ]
   }

@@ -6552,14 +6552,6 @@
         "Move": "MOVE_HARDEN"
       },
       {
-        "Level": 23,
-        "Move": "MOVE_MINIMIZE"
-      },
-      {
-        "Level": 31,
-        "Move": "MOVE_SCREECH"
-      },
-      {
         "Level": 33,
         "Move": "MOVE_HARDEN"
       },
@@ -6570,6 +6562,14 @@
       {
         "Level": 45,
         "Move": "MOVE_SLUDGE"
+      },
+      {
+        "Level": 23,
+        "Move": "MOVE_MINIMIZE"
+      },
+      {
+        "Level": 31,
+        "Move": "MOVE_SCREECH"
       },
       {
         "Level": 45,
@@ -9041,8 +9041,15 @@
       "MOVE_PSYCH_UP",
       "MOVE_WHIRLPOOL"
     ],
-    "EggMoves": [],
-    "TutorMoves": []
+    "EggMoves": [
+      "MOVE_SUPERSONIC",
+      "MOVE_AURORA_BEAM",
+      "MOVE_BARRIER"
+    ],
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "STARMIE": {
     "LevelMoves": [
@@ -9097,8 +9104,15 @@
       "MOVE_PSYCH_UP",
       "MOVE_WHIRLPOOL"
     ],
-    "EggMoves": [],
-    "TutorMoves": []
+    "EggMoves": [
+      "MOVE_SUPERSONIC",
+      "MOVE_AURORA_BEAM",
+      "MOVE_BARRIER"
+    ],
+    "TutorMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_THUNDERBOLT"
+    ]
   },
   "MR_MIME": {
     "LevelMoves": [
