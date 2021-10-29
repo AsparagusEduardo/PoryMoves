@@ -1,50 +1,21 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using PoryMoves.entity;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace moveParser.data
 {
     public class MoveData
     {
-        public static int CompareLvlUpMoveIds(LevelUpMoveId a, LevelUpMoveId b)
+        public int moveId;
+        public string defineName;
+
+        public MoveData(int id, string define)
         {
-            int result = a.Level.CompareTo(b.Level);
-            if (result == 0)
-                return a.MoveId.CompareTo(b.MoveId);
-            return result;
+            moveId = id;
+            defineName = define;
         }
 
-        public class LevelUpMoveId
-        {
-            public int Level;
-            public int MoveId;
-            public LevelUpMoveId()
-            {
-
-            }
-            public LevelUpMoveId(int lvl, int mv)
-            {
-                Level = lvl;
-                MoveId = mv;
-            }
-        }
-
-        public class LevelUpMove
-        {
-            public int Level;
-            public string Move;
-            public LevelUpMove()
-            {
-
-            }
-            public LevelUpMove(int lvl, string mv)
-            {
-                Level = lvl;
-                Move = mv;
-            }
-        }
         public static Dictionary<string, int> SerebiiNameToID = new Dictionary<string, int>()
         {
             { "Pound", 1},
@@ -1608,4 +1579,24 @@ namespace moveParser.data
             { 826, "EERIE_SPELL"}
         };
     }
+
+    public class MovesData
+    {
+        public static Dictionary<string, MoveData> GetMoveDataFromFile(string filedir)
+        {
+            Dictionary<string, MoveData> dict;
+            string text = File.ReadAllText(filedir);
+
+            dict = JsonConvert.DeserializeObject<Dictionary<string, MoveData>>(text);
+            return dict;
+        }
+        public static int CompareLvlUpMoveIds(LevelUpMoveId a, LevelUpMoveId b)
+        {
+            int result = a.Level.CompareTo(b.Level);
+            if (result == 0)
+                return a.MoveId.CompareTo(b.MoveId);
+            return result;
+        }
+    }
+
 }

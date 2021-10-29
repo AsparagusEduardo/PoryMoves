@@ -15,11 +15,13 @@ using System.Threading;
 using moveParser.data;
 using static moveParser.data.MoveData;
 using System.Text.RegularExpressions;
+using PoryMoves.entity;
 
 namespace moveParser
 {
     public partial class Form1 : Form
     {
+
         private Dictionary<string, Dictionary<string, MonData>> allGensData = new Dictionary<string, Dictionary<string, MonData>>();
         Dictionary<string, MonData> customGenData = new Dictionary<string, MonData>();
         protected Dictionary<string, GenerationData> GenData;
