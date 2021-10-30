@@ -740,10 +740,10 @@ namespace moveParser
             for (int j = 0; j < tutorMoves.Count; j++)
             {
                 string move = tutorMoves[j];
-                tutors += $"#define {move,-28} {j,3}\n";
+                tutors += $"#define TUTOR_{move,-22} {j,3}\n";
             }
             tutors += $"#define TUTOR_MOVE_COUNT             {tutorMoves.Count,3}";
-            File.WriteAllText("party_menu_tutor_list.h", tutors);
+            File.WriteAllText("output/party_menu_tutor_list.h", tutors);
 
             // file header
             string sets = "const u16 gTutorMoves[TUTOR_MOVE_COUNT] =\n{\n";
