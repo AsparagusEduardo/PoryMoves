@@ -13,7 +13,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Threading;
 using moveParser.data;
-using static moveParser.data.MoveData;
+using static moveParser.data.Move;
 using System.Text.RegularExpressions;
 using PoryMoves.entity;
 
@@ -25,12 +25,32 @@ namespace moveParser
         private Dictionary<string, Dictionary<string, MonData>> allGensData = new Dictionary<string, Dictionary<string, MonData>>();
         Dictionary<string, MonData> customGenData = new Dictionary<string, MonData>();
         protected Dictionary<string, GenerationData> GenData;
+        protected Dictionary<string, Move> MoveData;
 
         public Form1()
         {
             InitializeComponent();
             LoadGenerationData();
             cmbGeneration.SelectedIndex = 0;
+            /*
+            Dictionary<string, Move> movelist = new Dictionary<string, Move>();
+            foreach (KeyValuePair<string, int> item in SerebiiNameToID)
+            {
+                string aaa = item.Key;
+                try
+                {
+                    movelist.Add(aaa, new Move(item.Value, MoveDefNames[item.Value]));
+                }
+                catch(Exception ex)
+                {
+
+                }
+            }
+
+            File.WriteAllText("../../db/moveNames.json", JsonConvert.SerializeObject(movelist, Formatting.Indented));
+            */
+
+            MoveData = MovesData.GetMoveDataFromFile("db/moveNames.json");
             //LoadPkmnNameListFromSerebii();
         }
 
@@ -164,7 +184,7 @@ namespace moveParser
                     current = item.DefName;
                     //if (i < 31)
                     {
-                        MonData mon = PokemonData.LoadMonData(item, generation);
+                        MonData mon = PokemonData.LoadMonData(item, generation, MoveData);
                         if (mon != null)
                         {
                             try
@@ -320,7 +340,7 @@ namespace moveParser
                 List<LevelUpMove> evoMoves = new List<LevelUpMove>();
                 List<LevelUpMove> lvl1Moves = new List<LevelUpMove>();
 
-                Dictionary<string, List<Tuple<int, int>>> OtherLvlMoves = new Dictionary<string, List<Tuple<int, int>>>();
+                Dictionary<Move, List<Tuple<int, int>>> OtherLvlMoves = new Dictionary<Move, List<Tuple<int, int>>>();
                 List<LevelUpMove> oLvlMoves = new List<LevelUpMove>();
 
 
@@ -363,7 +383,7 @@ namespace moveParser
 
                 if (!name.SpeciesName.Equals("Smeargle"))
                 {
-                    foreach (KeyValuePair<string, List<Tuple<int, int>>> item in OtherLvlMoves)
+                    foreach (KeyValuePair<Move, List<Tuple<int, int>>> item in OtherLvlMoves)
                     {
                         int weightedSum = 0;
                         int sum = 0;
@@ -378,15 +398,15 @@ namespace moveParser
                 }
                 else
                 {
-                    monToAdd.LevelMoves.Add(new LevelUpMove(11, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(21, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(31, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(41, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(51, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(61, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(71, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(81, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(91, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(11, new Move(166, "MOVE_SKETCH")));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(21, new Move(166, "MOVE_SKETCH")));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(31, new Move(166, "MOVE_SKETCH")));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(41, new Move(166, "MOVE_SKETCH")));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(51, new Move(166, "MOVE_SKETCH")));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(61, new Move(166, "MOVE_SKETCH")));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(71, new Move(166, "MOVE_SKETCH")));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(81, new Move(166, "MOVE_SKETCH")));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(91, new Move(166, "MOVE_SKETCH")));
                 }
                 monToAdd.LevelMoves = monToAdd.LevelMoves.OrderBy(o => o.Level).ToList();
 
@@ -425,7 +445,7 @@ namespace moveParser
 
                 foreach (LevelUpMove move in mon.LevelMoves)
                 {
-                    sets += $"    LEVEL_UP_MOVE({move.Level, 2}, {move.Move}),\n";
+                    sets += $"    LEVEL_UP_MOVE({move.Level, 2}, MOVE_{move.Move.defineName}),\n";
                 }
                 sets += "    LEVEL_UP_END\n};\n";
 
@@ -485,7 +505,7 @@ namespace moveParser
                     if (chkTM_IncludeLvl.Checked)
                     {
                         foreach (LevelUpMove move in mon.LevelMoves)
-                            lvlMoves[name.DefName].Add(move.Move);
+                            lvlMoves[name.DefName].Add(move.Move.defineName);
                     }
                     if (chkTM_IncludeEgg.Checked)
                     {
@@ -694,7 +714,7 @@ namespace moveParser
                     if (chkTutor_IncludeLvl.Checked)
                     {
                         foreach (LevelUpMove move in mon.LevelMoves)
-                            lvlMoves[name.DefName].Add(move.Move);
+                            lvlMoves[name.DefName].Add(move.Move.defineName);
                     }
                     if (chkTutor_IncludeEgg.Checked)
                     {
@@ -879,7 +899,7 @@ namespace moveParser
                     if (chkEgg_IncludeLvl.Checked)
                     {
                         foreach (LevelUpMove move in mon.LevelMoves)
-                            monToAdd.EggMoves.Add(move.Move);
+                            monToAdd.EggMoves.Add(move.Move.defineName);
                     }
                     if (chkEgg_IncludeTutor.Checked)
                     {
