@@ -497,7 +497,7 @@
             this.Controls.Add(this.pbar1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "PoryMoves 1.1.0";
+            this.Text = "PoryMoves 1.2.0";
             this.gBoxOptionsTM.ResumeLayout(false);
             this.gBoxOptionsTM.PerformLayout();
             this.groupBox1.ResumeLayout(false);
