@@ -340,7 +340,7 @@ namespace moveParser
                 List<LevelUpMove> evoMoves = new List<LevelUpMove>();
                 List<LevelUpMove> lvl1Moves = new List<LevelUpMove>();
 
-                Dictionary<Move, List<Tuple<int, int>>> OtherLvlMoves = new Dictionary<Move, List<Tuple<int, int>>>();
+                Dictionary<string, List<Tuple<int, int>>> OtherLvlMoves = new Dictionary<string, List<Tuple<int, int>>>();
                 List<LevelUpMove> oLvlMoves = new List<LevelUpMove>();
 
 
@@ -383,7 +383,7 @@ namespace moveParser
 
                 if (!name.SpeciesName.Equals("Smeargle"))
                 {
-                    foreach (KeyValuePair<Move, List<Tuple<int, int>>> item in OtherLvlMoves)
+                    foreach (KeyValuePair<string, List<Tuple<int, int>>> item in OtherLvlMoves)
                     {
                         int weightedSum = 0;
                         int sum = 0;
@@ -398,6 +398,16 @@ namespace moveParser
                 }
                 else
                 {
+                    monToAdd.LevelMoves.Add(new LevelUpMove(11, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(21, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(31, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(41, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(51, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(61, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(71, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(81, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(91, "MOVE_SKETCH"));
+                    /*
                     monToAdd.LevelMoves.Add(new LevelUpMove(11, new Move(166, "MOVE_SKETCH")));
                     monToAdd.LevelMoves.Add(new LevelUpMove(21, new Move(166, "MOVE_SKETCH")));
                     monToAdd.LevelMoves.Add(new LevelUpMove(31, new Move(166, "MOVE_SKETCH")));
@@ -407,6 +417,7 @@ namespace moveParser
                     monToAdd.LevelMoves.Add(new LevelUpMove(71, new Move(166, "MOVE_SKETCH")));
                     monToAdd.LevelMoves.Add(new LevelUpMove(81, new Move(166, "MOVE_SKETCH")));
                     monToAdd.LevelMoves.Add(new LevelUpMove(91, new Move(166, "MOVE_SKETCH")));
+                    */
                 }
                 monToAdd.LevelMoves = monToAdd.LevelMoves.OrderBy(o => o.Level).ToList();
 
@@ -445,7 +456,7 @@ namespace moveParser
 
                 foreach (LevelUpMove move in mon.LevelMoves)
                 {
-                    sets += $"    LEVEL_UP_MOVE({move.Level, 2}, MOVE_{move.Move.defineName}),\n";
+                    sets += $"    LEVEL_UP_MOVE({move.Level, 2}, {move.Move}),\n";
                 }
                 sets += "    LEVEL_UP_END\n};\n";
 
@@ -505,7 +516,7 @@ namespace moveParser
                     if (chkTM_IncludeLvl.Checked)
                     {
                         foreach (LevelUpMove move in mon.LevelMoves)
-                            lvlMoves[name.DefName].Add(move.Move.defineName);
+                            lvlMoves[name.DefName].Add(move.Move);
                     }
                     if (chkTM_IncludeEgg.Checked)
                     {
@@ -714,7 +725,7 @@ namespace moveParser
                     if (chkTutor_IncludeLvl.Checked)
                     {
                         foreach (LevelUpMove move in mon.LevelMoves)
-                            lvlMoves[name.DefName].Add(move.Move.defineName);
+                            lvlMoves[name.DefName].Add(move.Move);
                     }
                     if (chkTutor_IncludeEgg.Checked)
                     {
@@ -899,7 +910,7 @@ namespace moveParser
                     if (chkEgg_IncludeLvl.Checked)
                     {
                         foreach (LevelUpMove move in mon.LevelMoves)
-                            monToAdd.EggMoves.Add(move.Move.defineName);
+                            monToAdd.EggMoves.Add(move.Move);
                     }
                     if (chkEgg_IncludeTutor.Checked)
                     {

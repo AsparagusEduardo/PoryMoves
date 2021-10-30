@@ -5,12 +5,12 @@ namespace PoryMoves.entity
     public class LevelUpMove
     {
         public int Level;
-        public Move Move;
+        public string Move;
         public LevelUpMove()
         {
 
         }
-        public LevelUpMove(int lvl, Move mv)
+        public LevelUpMove(int lvl, string mv)
         {
             Level = lvl;
             Move = mv;

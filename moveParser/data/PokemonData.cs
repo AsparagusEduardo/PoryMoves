@@ -283,14 +283,14 @@ namespace moveParser.data
                                     if (mo.moveId == 617)
                                     {
                                         if (name.SpeciesName.Equals("FLOETTE_ETERNAL_FLOWER"))
-                                            lvlMoves.Add(new LevelUpMove(int.Parse(lvl), mo));
+                                            lvlMoves.Add(new LevelUpMove(int.Parse(lvl), mo.defineName));
                                     }
                                     else
                                     {
                                         if (lvl.Equals("0"))
                                             evoMovesId.Add(mo);
                                         else
-                                            lvlMoves.Add(new LevelUpMove(int.Parse(lvl), mo));
+                                            lvlMoves.Add(new LevelUpMove(int.Parse(lvl), mo.defineName));
                                     }
                                 }
                             }
@@ -369,7 +369,7 @@ namespace moveParser.data
 
                 }
                 foreach (Move moe in evoMovesId)
-                    lvlMoves.Insert(0,new LevelUpMove(0, moe));
+                    lvlMoves.Insert(0,new LevelUpMove(0, moe.defineName));
 
                 TMMovesNew = TMMovesNew.Distinct().ToList();
                 EggMovesNew = EggMovesNew.Distinct().ToList();
