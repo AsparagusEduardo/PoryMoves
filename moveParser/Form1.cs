@@ -32,26 +32,8 @@ namespace moveParser
             InitializeComponent();
             LoadGenerationData();
             cmbGeneration.SelectedIndex = 0;
-            /*
-            Dictionary<string, Move> movelist = new Dictionary<string, Move>();
-            foreach (KeyValuePair<string, int> item in SerebiiNameToID)
-            {
-                string aaa = item.Key;
-                try
-                {
-                    movelist.Add(aaa, new Move(item.Value, MoveDefNames[item.Value]));
-                }
-                catch(Exception ex)
-                {
-
-                }
-            }
-
-            File.WriteAllText("../../db/moveNames.json", JsonConvert.SerializeObject(movelist, Formatting.Indented));
-            */
 
             MoveData = MovesData.GetMoveDataFromFile("db/moveNames.json");
-            //LoadPkmnNameListFromSerebii();
         }
 
         protected void LoadGenerationData()
@@ -373,7 +355,6 @@ namespace moveParser
 
                 }
                 evoMoves = evoMoves.GroupBy(elem => elem.Move).Select(group => group.First()).ToList();
-                //evoMoves = evoMoves.Distinct().ToList();
                 foreach (LevelUpMove move in evoMoves)
                     monToAdd.LevelMoves.Add(move);
 
@@ -407,17 +388,6 @@ namespace moveParser
                     monToAdd.LevelMoves.Add(new LevelUpMove(71, "MOVE_SKETCH"));
                     monToAdd.LevelMoves.Add(new LevelUpMove(81, "MOVE_SKETCH"));
                     monToAdd.LevelMoves.Add(new LevelUpMove(91, "MOVE_SKETCH"));
-                    /*
-                    monToAdd.LevelMoves.Add(new LevelUpMove(11, new Move(166, "MOVE_SKETCH")));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(21, new Move(166, "MOVE_SKETCH")));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(31, new Move(166, "MOVE_SKETCH")));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(41, new Move(166, "MOVE_SKETCH")));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(51, new Move(166, "MOVE_SKETCH")));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(61, new Move(166, "MOVE_SKETCH")));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(71, new Move(166, "MOVE_SKETCH")));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(81, new Move(166, "MOVE_SKETCH")));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(91, new Move(166, "MOVE_SKETCH")));
-                    */
                 }
                 monToAdd.LevelMoves = monToAdd.LevelMoves.OrderBy(o => o.Level).ToList();
 
