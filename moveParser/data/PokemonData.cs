@@ -314,6 +314,7 @@ namespace moveParser.data
                                 string breedtext = textRow.Replace("{{tt|*|No legitimate means to pass down move}}", "");
                                 breedtext = breedtext.Replace("{{tt|*|Male-only, and none of the evolutions can learn this move legitimately}}", "");
                                 breedtext = breedtext.Replace("{{tt|*|No legitimate father to pass down move}}", "");
+                                breedtext = breedtext.Replace("{{tt|*|No legitimate means to pass down the move}}", "");
                                 breedtext = breedtext.Replace("{{tt|*|Paras learns Sweet Scent as an Egg move in Gold and Silver; in Crystal, the only fathers that can be learn the move learn it via TM}}", "");
                                 string[] rowdata = System.Text.RegularExpressions.Regex.Replace(breedtext, "{{sup(.*)\v([A-Z]*)}}|{{MS([^}]+)}}", "MON").Split('|');
                                 string movename = rowdata[2];
