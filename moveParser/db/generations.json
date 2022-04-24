@@ -1,10 +1,33 @@
 {
+  "LA": {
+    "genNumber": 8,
+    "genNumberRoman": "VIII",
+    "isLatestGen": true,
+    "dbFilename": "la",
+    "gameFullName": "Pokémon Legends: Arceus",
+    "gameAvailableName": "Legends: Arceus",
+    "lvlUpColumn": "LA",
+    "moveTutorColumn": 0,
+    "maxDexNum": 898
+  },
+  "BDSP": {
+    "genNumber": 8,
+    "genNumberRoman": "VIII",
+    "isLatestGen": true,
+    "dbFilename": "bdsp",
+    "gameFullName": "Pokémon Brilliant Diamond and Shining Pearl",
+    "gameAvailableName": "Brilliant Diamond",
+    "lvlUpColumn": "BDSP",
+    "moveTutorColumn": 3,
+    "maxDexNum": 493
+  },
   "SWSHEP": {
     "genNumber": 8,
     "genNumberRoman": "VIII",
     "isLatestGen": true,
     "dbFilename": "swshep",
     "gameFullName": "Pokémon Sword and Shield Expansion Pass",
+    "gameAvailableName": "Sword and Shield",
     "lvlUpColumn": "SWSHEP",
     "moveTutorColumn": 2,
     "maxDexNum": 898
@@ -15,6 +38,7 @@
     "isLatestGen": true,
     "dbFilename": "swsh",
     "gameFullName": "Pokémon Sword and Shield",
+    "gameAvailableName": "Sword and Shield",
     "lvlUpColumn": "SWSH",
     "moveTutorColumn": 1,
     "maxDexNum": 898
@@ -25,6 +49,7 @@
     "isLatestGen": false,
     "dbFilename": "lgpe",
     "gameFullName": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
+    "gameAvailableName": null,
     "lvlUpColumn": "LGPE",
     "moveTutorColumn": 2,
     "maxDexNum": 809
@@ -35,6 +60,7 @@
     "isLatestGen": false,
     "dbFilename": "usum",
     "gameFullName": "Pokémon Ultra Sun and Ultra Moon",
+    "gameAvailableName": null,
     "lvlUpColumn": "USUM",
     "moveTutorColumn": 2,
     "maxDexNum": 807
@@ -45,6 +71,7 @@
     "isLatestGen": false,
     "dbFilename": "sm",
     "gameFullName": "Pokémon Sun and Moon",
+    "gameAvailableName": null,
     "lvlUpColumn": "SM",
     "moveTutorColumn": 1,
     "maxDexNum": 802
@@ -55,6 +82,7 @@
     "isLatestGen": false,
     "dbFilename": "oras",
     "gameFullName": "Pokémon Omega Ruby and Alpha Sapphire",
+    "gameAvailableName": null,
     "lvlUpColumn": "ORAS",
     "moveTutorColumn": 2,
     "maxDexNum": 721
@@ -65,6 +93,7 @@
     "isLatestGen": false,
     "dbFilename": "xy",
     "gameFullName": "Pokémon X and Y",
+    "gameAvailableName": null,
     "lvlUpColumn": "XY",
     "moveTutorColumn": 1,
     "maxDexNum": 721
@@ -75,6 +104,7 @@
     "isLatestGen": false,
     "dbFilename": "b2w2",
     "gameFullName": "Pokémon Black 2 and White 2",
+    "gameAvailableName": null,
     "lvlUpColumn": "B2W2",
     "moveTutorColumn": 2,
     "maxDexNum": 649
@@ -85,6 +115,7 @@
     "isLatestGen": false,
     "dbFilename": "bw",
     "gameFullName": "Pokémon Black and White",
+    "gameAvailableName": null,
     "lvlUpColumn": "BW",
     "moveTutorColumn": 1,
     "maxDexNum": 649
@@ -95,6 +126,7 @@
     "isLatestGen": false,
     "dbFilename": "hgss",
     "gameFullName": "Pokémon HeartGold and SoulSilver",
+    "gameAvailableName": null,
     "lvlUpColumn": "PtHGSS",
     "moveTutorColumn": 3,
     "maxDexNum": 493
@@ -105,6 +137,7 @@
     "isLatestGen": false,
     "dbFilename": "pt",
     "gameFullName": "Pokémon Platinum",
+    "gameAvailableName": null,
     "lvlUpColumn": "PtHGSS",
     "moveTutorColumn": 2,
     "maxDexNum": 493
@@ -115,6 +148,7 @@
     "isLatestGen": false,
     "dbFilename": "dp",
     "gameFullName": "Pokémon Diamond and Pearl",
+    "gameAvailableName": null,
     "lvlUpColumn": "DP",
     "moveTutorColumn": 1,
     "maxDexNum": 493
@@ -125,6 +159,7 @@
     "isLatestGen": false,
     "dbFilename": "frlg",
     "gameFullName": "Pokémon Fire Red and Leaf Green",
+    "gameAvailableName": null,
     "lvlUpColumn": "FRLG",
     "moveTutorColumn": 1,
     "maxDexNum": 386
@@ -135,6 +170,7 @@
     "isLatestGen": false,
     "dbFilename": "rse",
     "gameFullName": "Pokémon Ruby, Sapphire and Emerald",
+    "gameAvailableName": null,
     "lvlUpColumn": "RSE",
     "moveTutorColumn": 2,
     "maxDexNum": 386
@@ -145,6 +181,7 @@
     "isLatestGen": false,
     "dbFilename": "c",
     "gameFullName": "Pokémon Crystal",
+    "gameAvailableName": null,
     "lvlUpColumn": "C",
     "moveTutorColumn": 1,
     "maxDexNum": 251
@@ -155,6 +192,7 @@
     "isLatestGen": false,
     "dbFilename": "gs",
     "gameFullName": "Pokémon Gold and Silver",
+    "gameAvailableName": null,
     "lvlUpColumn": "GS",
     "moveTutorColumn": 0,
     "maxDexNum": 251
@@ -165,6 +203,7 @@
     "isLatestGen": false,
     "dbFilename": "y",
     "gameFullName": "Pokémon Yellow",
+    "gameAvailableName": null,
     "lvlUpColumn": "Y",
     "moveTutorColumn": 1,
     "maxDexNum": 151
@@ -175,6 +214,7 @@
     "isLatestGen": false,
     "dbFilename": "rgb",
     "gameFullName": "Pokémon Red, Green and Blue",
+    "gameAvailableName": null,
     "lvlUpColumn": "RGB",
     "moveTutorColumn": 1,
     "maxDexNum": 151
