@@ -253,7 +253,7 @@
   },
   {
     "NatDexNum": 29,
-    "SpeciesName": "Nidoran♀",
+    "SpeciesName": "Nidoran-F",
     "IsBaseForm": true,
     "CanHatchFromEgg": true,
     "FormName": "Nidoran♀",
@@ -280,7 +280,7 @@
   },
   {
     "NatDexNum": 32,
-    "SpeciesName": "Nidoran♂",
+    "SpeciesName": "Nidoran-M",
     "IsBaseForm": true,
     "CanHatchFromEgg": true,
     "FormName": "Nidoran♂",
@@ -739,7 +739,7 @@
   },
   {
     "NatDexNum": 83,
-    "SpeciesName": "Farfetch'd",
+    "SpeciesName": "Farfetchd",
     "IsBaseForm": true,
     "CanHatchFromEgg": true,
     "FormName": "Farfetch'd",
@@ -1090,7 +1090,7 @@
   },
   {
     "NatDexNum": 122,
-    "SpeciesName": "Mr. Mime",
+    "SpeciesName": "Mr-Mime",
     "IsBaseForm": true,
     "CanHatchFromEgg": true,
     "FormName": "Mr. Mime",

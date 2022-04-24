@@ -203,7 +203,7 @@
     "isLatestGen": false,
     "dbFilename": "y",
     "gameFullName": "Pokémon Yellow",
-    "gameAvailableName": null,
+    "gameAvailableName": "Yellow",
     "lvlUpColumn": "Y",
     "moveTutorColumn": 1,
     "maxDexNum": 151
@@ -214,7 +214,7 @@
     "isLatestGen": false,
     "dbFilename": "rgb",
     "gameFullName": "Pokémon Red, Green and Blue",
-    "gameAvailableName": null,
+    "gameAvailableName": "Red/Blue",
     "lvlUpColumn": "RGB",
     "moveTutorColumn": 1,
     "maxDexNum": 151
