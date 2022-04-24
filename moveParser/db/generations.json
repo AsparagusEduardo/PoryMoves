@@ -181,7 +181,7 @@
     "isLatestGen": false,
     "dbFilename": "c",
     "gameFullName": "Pokémon Crystal",
-    "gameAvailableName": null,
+    "gameAvailableName": "Crystal",
     "lvlUpColumn": "C",
     "moveTutorColumn": 1,
     "maxDexNum": 251
@@ -192,7 +192,7 @@
     "isLatestGen": false,
     "dbFilename": "gs",
     "gameFullName": "Pokémon Gold and Silver",
-    "gameAvailableName": null,
+    "gameAvailableName": "Gold/Silver",
     "lvlUpColumn": "GS",
     "moveTutorColumn": 0,
     "maxDexNum": 251

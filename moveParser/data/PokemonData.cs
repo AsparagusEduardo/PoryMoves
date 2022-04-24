@@ -124,16 +124,6 @@ namespace moveParser.data
 
             if (columns != null)
             {
-                bool inList = false;
-                bool readingLearnsets = !gen.isLatestGen;
-                bool readingLevelUp = false;
-                bool LevelUpListRead = false;
-                bool TMListRead = false;
-                bool EggListRead = false;
-                bool TutorListRead = false;
-                string pagetext = columns[0].InnerHtml.Replace("&lt;br>\n", "&lt;br>");
-                string gameText = null, modeText = null, formText = null;
-
                 int tabNum = 0;
 
                 tableReadMode readMode = tableReadMode.NONE;
@@ -160,18 +150,16 @@ namespace moveParser.data
                                     foreach (hap.HtmlNode nodo5 in nodo4.ChildNodes)
                                     {
                                         if (nodo5.InnerText.Equals("Moves learnt by level up"))
-                                        {
                                             readMode = tableReadMode.LEVEL;
-                                        }
                                         else if (nodo5.InnerText.Equals("Moves learnt by TM"))
-                                        {
                                             readMode = tableReadMode.TM;
-                                        }
                                         else if (nodo5.InnerText.Equals("Moves learnt by HM"))
-                                        {
                                             readMode = tableReadMode.HM;
-                                        }
-                                        else if (nodo5.Attributes["class"] != null && nodo5.Attributes["class"].Value.Equals("text-small"))
+                                        else if (nodo5.InnerText.Equals("Egg moves"))
+                                            readMode = tableReadMode.EGG;
+                                        else if (nodo5.InnerText.Equals("Move Tutor moves"))
+                                            readMode = tableReadMode.TUTOR;
+                                        else if (nodo5.Name.Equals("p"))
                                         {
                                             if (nodo5.InnerText.Contains("does not") || nodo5.InnerText.Contains("cannot"))
                                             {
@@ -198,6 +186,14 @@ namespace moveParser.data
                                                     case tableReadMode.HM:
                                                         movename = tableRow.ChildNodes[1].InnerText;
                                                         HMMovesNew.Add(MoveData[movename]);
+                                                        break;
+                                                    case tableReadMode.EGG:
+                                                        movename = tableRow.ChildNodes[0].InnerText;
+                                                        EggMovesNew.Add(MoveData[movename]);
+                                                        break;
+                                                    case tableReadMode.TUTOR:
+                                                        movename = tableRow.ChildNodes[0].InnerText;
+                                                        TutorMovesNew.Add(MoveData[movename]);
                                                         break;
                                                 }
                                             }
@@ -233,37 +229,6 @@ namespace moveParser.data
                 mon.TutorMoves.Add("MOVE_" + m.defineName);
 
             return mon;
-        }
-        public static bool isIncenseBaby(string name)
-        {
-            switch (name)
-            {
-                case "Munchlax":
-                case "Budew":
-                case "Bonsly":
-                case "Happiny":
-                case "Wynaut":
-                case "Azurill":
-                case "Mantyke":
-                case "Chingling":
-                case "Mime Jr.":
-                    return true;
-                default:
-                    return false;
-            }
-        }
-
-        public static bool matchForm(string currentForm, string formToCheck)
-        {
-            if (currentForm == null)
-                return true;
-            if (currentForm.Equals(formToCheck))
-                return true;
-            if (currentForm.Equals(formToCheck + " / Defense Forme"))
-                return true;
-            if (currentForm.Equals("Attack Forme / " + formToCheck))
-                return true;
-            return false;
         }
     }
 }
