@@ -75,16 +75,8 @@ namespace moveParser.data
             //List<LevelUpMoveId> lvlMovesId = new List<LevelUpMoveId>();
 
 
-            List<int> TMMovesIds = new List<int>();
-            List<string> TMMoves = new List<string>();
             List<Move> TMMovesNew = new List<Move>();
-
-            List<int> EggMovesIds = new List<int>();
-            List<string> EggMoves = new List<string>();
             List<Move> EggMovesNew = new List<Move>();
-
-            List<int> TutorMovesIds = new List<int>();
-            List<string> TutorMoves = new List<string>();
             List<Move> TutorMovesNew = new List<Move>();
 
             if (gen.genNumber < 7 && name.FormName.Contains("Alola"))
@@ -93,16 +85,15 @@ namespace moveParser.data
             if (gen.maxDexNum < name.NatDexNum)
                 return null;
 
-            string html = "https://bulbapedia.bulbagarden.net/w/index.php?title=" + name.SpeciesName + "_(Pokémon)";
-            if (!gen.isLatestGen)
-                html += "/Generation_" + gen.genNumberRoman + "_learnset";
-            html += "&action=edit";
+            string html = "https://pokemondb.net/pokedex/" + name.SpeciesName + "/moves/" + gen.genNumber;
+            //string html = "https://pokemondb.net/pokedex/sneasel/moves/8";
 
             hap.HtmlWeb web = new hap.HtmlWeb();
             hap.HtmlDocument htmlDoc;
             try
             {
                 htmlDoc = web.Load(html);
+                htmlDoc.DocumentNode.InnerHtml = htmlDoc.DocumentNode.InnerHtml.Replace("\n", "").Replace("> <", "><");
             }
             catch (System.Net.WebException)
             {
@@ -111,7 +102,7 @@ namespace moveParser.data
             
             hap.HtmlNodeCollection columns;
 
-            columns = htmlDoc.DocumentNode.SelectNodes("//textarea");
+            columns = htmlDoc.DocumentNode.SelectNodes("//div[@class='tabset-moves-game sv-tabs-wrapper']");
 
             int column = 0;
             int gamecolumnamount = 1;
@@ -128,11 +119,61 @@ namespace moveParser.data
                 bool TMListRead = false;
                 bool EggListRead = false;
                 bool TutorListRead = false;
-                string pagetext = columns[0].InnerText.Replace("&lt;br>\n", "&lt;br>");
+                string pagetext = columns[0].InnerHtml.Replace("&lt;br>\n", "&lt;br>");
                 string gameText = null, modeText = null, formText = null;
 
+                int tabNum = 1;
+                foreach (hap.HtmlNode nodo1 in columns[0].ChildNodes)
+                {
+                    if (nodo1.Attributes["class"].Value.Equals("sv-tabs-tab-list"))
+                    {
+                        foreach (hap.HtmlNode nodo2 in nodo1.ChildNodes)
+                        {
+                            if (nodo2.InnerText.Equals(gen.gameAvailableName))
+                                break;
+                            tabNum++;
+                        }
+                    }
+                    else if (nodo1.Attributes["class"].Value.Equals("sv-tabs-panel-list"))
+                    {
+                        hap.HtmlNode nodo2 = nodo1.ChildNodes[tabNum - 1];
+                        foreach(hap.HtmlNode nodo3 in nodo2.ChildNodes)
+                        {
+                            if (nodo3.Attributes["class"].Value.Equals("grid-row"))
+                            {
+                                foreach(hap.HtmlNode nodo4 in nodo3.ChildNodes)
+                                {
+                                    for(int i = 0; i < nodo4.ChildNodes.Count / 3; i++)
+                                    {
+                                        if (nodo4.ChildNodes[i * 3].InnerText.Equals("Moves learnt by level up"))
+                                        {
+                                            foreach(hap.HtmlNode levelRow in nodo4.ChildNodes[i * 3 + 2].ChildNodes[0].ChildNodes[1].ChildNodes)
+                                            {
+                                                int lvl = int.Parse(levelRow.ChildNodes[0].InnerText);
+                                                string movename = levelRow.ChildNodes[1].InnerText;
+                                                Move mo = MoveData[movename];
+                                                lvlMoves.Add(new LevelUpMove(lvl, "MOVE_" + mo.defineName));
+                                            }
+                                        }
+                                        else if (nodo4.ChildNodes[i * 3].InnerText.Equals("Moves learnt by level up"))
+                                        {
+                                            foreach (hap.HtmlNode levelRow in nodo4.ChildNodes[i * 3 + 2].ChildNodes[0].ChildNodes[1].ChildNodes)
+                                            {
+                                                int lvl = int.Parse(levelRow.ChildNodes[0].InnerText);
+                                                string movename = levelRow.ChildNodes[1].InnerText;
+                                                Move mo = MoveData[movename];
+                                                lvlMoves.Add(new LevelUpMove(lvl, "MOVE_" + mo.defineName));
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 int rownum = 0;
                 List<Move> evoMovesId = new List<Move>();
+                /*
 
                 foreach (string textRow in pagetext.Split('\n'))
                 {
@@ -369,6 +410,7 @@ namespace moveParser.data
                     }
 
                 }
+                */
                 foreach (Move moe in evoMovesId)
                     lvlMoves.Insert(0,new LevelUpMove(0, "MOVE_" + moe.defineName));
 
