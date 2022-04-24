@@ -14,6 +14,7 @@ namespace moveParser.data
     public class MonData
     {
         public List<LevelUpMove> LevelMoves = new List<LevelUpMove>();
+        public List<string> PreEvoMoves = new List<string>();
         public List<string> TMMoves = new List<string>();
         public List<string> EggMoves = new List<string>();
         public List<string> TutorMoves = new List<string>();
@@ -68,6 +69,7 @@ namespace moveParser.data
             NONE,
             LEVEL,
             EVO,
+            PREEVO,
             TM,
             HM,
             TR,
@@ -84,13 +86,11 @@ namespace moveParser.data
             MonData mon = new MonData();
 
             List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
-            //List<LevelUpMoveId> lvlMovesId = new List<LevelUpMoveId>();
-
-
-            List<Move> TMMovesNew = new List<Move>();
-            List<Move> HMMovesNew = new List<Move>();
-            List<Move> EggMovesNew = new List<Move>();
-            List<Move> TutorMovesNew = new List<Move>();
+            List<Move> PreEvoMoves = new List<Move>();
+            List<Move> TMMoves = new List<Move>();
+            List<Move> HMMoves = new List<Move>();
+            List<Move> EggMoves = new List<Move>();
+            List<Move> TutorMoves = new List<Move>();
 
             if (gen.genNumber < 7 && name.FormName.Contains("Alola"))
                 return null;
@@ -151,6 +151,8 @@ namespace moveParser.data
                                     {
                                         if (nodo5.InnerText.Equals("Moves learnt by level up"))
                                             readMode = tableReadMode.LEVEL;
+                                        else if (nodo5.InnerText.Equals("Pre-evolution moves"))
+                                            readMode = tableReadMode.PREEVO;
                                         else if (nodo5.InnerText.Equals("Moves learnt by TM"))
                                             readMode = tableReadMode.TM;
                                         else if (nodo5.InnerText.Equals("Moves learnt by HM"))
@@ -181,19 +183,23 @@ namespace moveParser.data
                                                         break;
                                                     case tableReadMode.TM:
                                                         movename = tableRow.ChildNodes[1].InnerText;
-                                                        TMMovesNew.Add(MoveData[movename]);
+                                                        TMMoves.Add(MoveData[movename]);
                                                         break;
                                                     case tableReadMode.HM:
                                                         movename = tableRow.ChildNodes[1].InnerText;
-                                                        HMMovesNew.Add(MoveData[movename]);
+                                                        HMMoves.Add(MoveData[movename]);
                                                         break;
                                                     case tableReadMode.EGG:
                                                         movename = tableRow.ChildNodes[0].InnerText;
-                                                        EggMovesNew.Add(MoveData[movename]);
+                                                        EggMoves.Add(MoveData[movename]);
                                                         break;
                                                     case tableReadMode.TUTOR:
                                                         movename = tableRow.ChildNodes[0].InnerText;
-                                                        TutorMovesNew.Add(MoveData[movename]);
+                                                        TutorMoves.Add(MoveData[movename]);
+                                                        break;
+                                                    case tableReadMode.PREEVO:
+                                                        movename = tableRow.ChildNodes[0].InnerText;
+                                                        PreEvoMoves.Add(MoveData[movename]);
                                                         break;
                                                 }
                                             }
@@ -210,22 +216,24 @@ namespace moveParser.data
                 foreach (Move moe in evoMovesId)
                     lvlMoves.Insert(0,new LevelUpMove(0, "MOVE_" + moe.defineName));
 
-                TMMovesNew = TMMovesNew.Distinct().ToList();
-                EggMovesNew = EggMovesNew.Distinct().ToList();
-                TutorMovesNew = TutorMovesNew.Distinct().ToList();
+                TMMoves = TMMoves.Distinct().ToList();
+                EggMoves = EggMoves.Distinct().ToList();
+                TutorMoves = TutorMoves.Distinct().ToList();
             }
             else
             {
                 return null;
             }
             mon.LevelMoves = lvlMoves;
-            foreach (Move m in TMMovesNew)
+            foreach (Move m in PreEvoMoves)
+                mon.PreEvoMoves.Add("MOVE_" + m.defineName);
+            foreach (Move m in TMMoves)
                 mon.TMMoves.Add("MOVE_" + m.defineName);
-            foreach (Move m in HMMovesNew)
+            foreach (Move m in HMMoves)
                 mon.TMMoves.Add("MOVE_" + m.defineName);
-            foreach (Move m in EggMovesNew)
+            foreach (Move m in EggMoves)
                 mon.EggMoves.Add("MOVE_" + m.defineName);
-            foreach (Move m in TutorMovesNew)
+            foreach (Move m in TutorMoves)
                 mon.TutorMoves.Add("MOVE_" + m.defineName);
 
             return mon;
