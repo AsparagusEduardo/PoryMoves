@@ -98,14 +98,28 @@ namespace moveParser.data
             html += "&action=edit";
 
             hap.HtmlWeb web = new hap.HtmlWeb();
-            hap.HtmlDocument htmlDoc;
-            try
+            hap.HtmlDocument htmlDoc = null;
+
+            int connectionTries = 1;
+            int totalTries = 0;
+            for(int i = 0; i < connectionTries; i++)
             {
-                htmlDoc = web.Load(html);
-            }
-            catch (System.Net.WebException)
-            {
-                return null;
+                try
+                {
+                    htmlDoc = web.Load(html);
+                    i = connectionTries;
+                }
+                catch (System.Net.WebException)
+                {
+                    //return null;
+                }
+                totalTries++;
+                if (i == connectionTries - 1 && htmlDoc == null)
+                {
+                    DialogResult res = MessageBox.Show("There was an issue connecting to " + name.SpeciesName + "'s Bulbapedia Page. Retry? (Total tries: " + totalTries + ")", "Missing Data", MessageBoxButtons.YesNo);
+                    if (res == DialogResult.Yes)
+                        connectionTries = -1;
+                }
             }
             
             hap.HtmlNodeCollection columns;
