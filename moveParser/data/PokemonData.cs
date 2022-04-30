@@ -138,6 +138,7 @@ namespace moveParser.data
                 foreach (string textRow in pagetext.Split('\n'))
                 {
                     bool gameTextException = false;
+                    string textRowLower = textRow.ToLower();
 
                     switch (gen.genNumber)
                     {
@@ -168,9 +169,9 @@ namespace moveParser.data
                     if (readingLearnsets && !textRow.Trim().Equals(""))
                     {
                         rownum++;
-                        if (textRow.ToLower().Contains("{{learnlist/movena|"))
+                        if (textRowLower.Contains("{{learnlist/movena|"))
                             return null;
-                        else if (textRow.ToLower().Contains("by [[level|leveling"))
+                        else if (textRowLower.Contains("by [[level|leveling"))
                             modeText = readingMode.LEVEL;
                         else if (textRow.Contains("By [[TM]]"))
                             modeText = readingMode.TM;
@@ -178,16 +179,16 @@ namespace moveParser.data
                             modeText = readingMode.EGG;
                         else if (textRow.Contains("By [[transfer]] from"))
                             modeText = readingMode.TRANSFER;
-                        else if (gen.moveTutorColumn != 0 && textRow.ToLower().Contains("by [[move tutor|tutoring]]"))
+                        else if (gen.moveTutorColumn != 0 && textRowLower.Contains("by [[move tutor|tutoring]]"))
                             modeText = readingMode.TUTOR;
                         else if (textRow.Contains("====") && !readingLevelUp && !textRow.Contains("Pokémon")
                             && !textRow.Contains("By a prior [[evolution]]") && !textRow.Contains("Special moves") && !textRow.Contains("By {{pkmn2|event}}s"))
                             formText = Regex.Replace(textRow.Replace("=", ""), "{{sup([^{]*)([A-Z][a-z]*)}}", "");
 
-                        else if (textRow.ToLower().Contains("{{learnlist/levelh")
-                            || textRow.ToLower().Contains("{{learnlist/tmh")
-                            || textRow.ToLower().Contains("{{learnlist/breedh")
-                            || textRow.ToLower().Contains("{{learnlist/tutorh"))
+                        else if (textRowLower.Contains("{{learnlist/levelh")
+                            || textRowLower.Contains("{{learnlist/tmh")
+                            || textRowLower.Contains("{{learnlist/breedh")
+                            || textRowLower.Contains("{{learnlist/tutorh"))
                         {
                             if (modeText == readingMode.NONE)
                                 continue;
@@ -238,7 +239,7 @@ namespace moveParser.data
                             }
 
                         }
-                        else if (textRow.ToLower().Contains("{{learnlist/levelf") && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRowLower.Contains("{{learnlist/levelf") && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName))
@@ -246,21 +247,21 @@ namespace moveParser.data
                             formText = null;
                             readingLevelUp = false;
                         }
-                        else if (textRow.ToLower().Contains("{{learnlist/tmf") && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRowLower.Contains("{{learnlist/tmf") && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName))
                                 TMListRead = true;
                             formText = null;
                         }
-                        else if (textRow.ToLower().Contains("{{learnlist/breedf") && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRowLower.Contains("{{learnlist/breedf") && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName))
                                 EggListRead = true;
                             formText = null;
                         }
-                        else if (textRow.ToLower().Contains("{{learnlist/tutorf") && (gameText == null || gameText.Contains(gametosearch)))
+                        else if (textRowLower.Contains("{{learnlist/tutorf") && (gameText == null || gameText.Contains(gametosearch)))
                         {
                             inList = false;
                             if (formText == null || formText.Equals(name.FormName))
@@ -295,7 +296,7 @@ namespace moveParser.data
                                     }
                                 }
                             }
-                            else if (modeText == readingMode.TM && !TMListRead && (formText == null || formText.Equals(name.FormName)) && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/t[mr].+null}}"))
+                            else if (modeText == readingMode.TM && !TMListRead && (formText == null || formText.Equals(name.FormName)) && !Regex.IsMatch(textRowLower, "{{learnlist/t[mr].+null}}"))
                             {
                                 string[] rowdata = textRow.Split('|');
                                 string movename = rowdata[2];
@@ -310,7 +311,7 @@ namespace moveParser.data
                                     MessageBox.Show("There's no move data in db/moveNames.json for " + movename + ". Skipping move.", "Missing Data", MessageBoxButtons.OK);
                                 }
                             }
-                            else if (modeText == readingMode.EGG && !EggListRead && (formText == null || formText.Equals(name.FormName)) && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/breed.+null"))
+                            else if (modeText == readingMode.EGG && !EggListRead && (formText == null || formText.Equals(name.FormName)) && !Regex.IsMatch(textRowLower, "{{learnlist/breed.+null"))
                             {
                                 string breedtext = textRow.Replace("{{tt|*|No legitimate means to pass down move}}", "");
                                 breedtext = breedtext.Replace("{{tt|*|Male-only, and none of the evolutions can learn this move legitimately}}", "");
@@ -328,7 +329,7 @@ namespace moveParser.data
                                     //EggMovesIds.Add(SerebiiNameToID[movename]);
                                     EggMoves.Add(MoveData[movename]);
                             }
-                            else if (modeText == readingMode.TUTOR && !TutorListRead && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/tutor.+null}}")
+                            else if (modeText == readingMode.TUTOR && !TutorListRead && !Regex.IsMatch(textRowLower, "{{learnlist/tutor.+null}}")
                                 && matchForm(formText, name.FormName))
                             {
                                 string tutortext = textRow.Replace("{{tt|*|", "");
