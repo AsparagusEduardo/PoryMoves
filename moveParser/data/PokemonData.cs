@@ -64,6 +64,16 @@ namespace moveParser.data
             return list;
         }
 
+        enum readingMode
+        {
+            NONE = 0,
+            LEVEL,
+            TM,
+            EGG,
+            TUTOR,
+            TRANSFER
+        }
+
         public static MonData LoadMonData(MonName name, GenerationData gen, Dictionary<string, Move> MoveData)
         {
             if (gen.dbFilename.Equals("lgpe") && (name.NatDexNum > 151 && (name.NatDexNum != 808 && name.NatDexNum != 809)))
@@ -118,7 +128,9 @@ namespace moveParser.data
                 bool EggListRead = false;
                 bool TutorListRead = false;
                 string pagetext = columns[0].InnerText.Replace("&lt;br>\n", "&lt;br>");
-                string gameText = null, modeText = null, formText = null;
+                string gameText = null, formText = null;
+
+                readingMode modeText = readingMode.NONE;
 
                 int rownum = 0;
                 List<Move> evoMovesId = new List<Move>();
@@ -130,11 +142,11 @@ namespace moveParser.data
                     switch (gen.genNumber)
                     {
                         case 1:
-                            if (name.SpeciesName.Equals("Vaporeon"))
+                            if (name.NatDexNum == 134) // Vaporeon
                                 gameTextException = true;
                             break;
                         case 2:
-                            if (name.SpeciesName.Equals("Muk"))
+                            if (name.NatDexNum == 89) // Muk
                                 gameTextException = true;
                             break;
                         case 4:
@@ -143,7 +155,7 @@ namespace moveParser.data
                             break;
                     }
 
-                    if (name.SpeciesName.Equals("Bonsly"))
+                    if (name.NatDexNum == 438) // Bonsly
                         gameTextException = true;
 
                     if (readingLearnsets && textRow.Contains("Pokémon") && !gameTextException)
@@ -159,15 +171,15 @@ namespace moveParser.data
                         if (textRow.ToLower().Contains("{{learnlist/movena|"))
                             return null;
                         else if (textRow.ToLower().Contains("by [[level|leveling"))
-                            modeText = "Level";
+                            modeText = readingMode.LEVEL;
                         else if (textRow.Contains("By [[TM]]"))
-                            modeText = "TM";
+                            modeText = readingMode.TM;
                         else if (textRow.Contains("By {{pkmn|breeding}}"))
-                            modeText = "EGG";
+                            modeText = readingMode.EGG;
                         else if (textRow.Contains("By [[transfer]] from"))
-                            modeText = "TRANSFER";
+                            modeText = readingMode.TRANSFER;
                         else if (gen.moveTutorColumn != 0 && textRow.ToLower().Contains("by [[move tutor|tutoring]]"))
-                            modeText = "TUTOR";
+                            modeText = readingMode.TUTOR;
                         else if (textRow.Contains("====") && !readingLevelUp && !textRow.Contains("Pokémon")
                             && !textRow.Contains("By a prior [[evolution]]") && !textRow.Contains("Special moves") && !textRow.Contains("By {{pkmn2|event}}s"))
                             formText = Regex.Replace(textRow.Replace("=", ""), "{{sup([^{]*)([A-Z][a-z]*)}}", "");
@@ -177,11 +189,11 @@ namespace moveParser.data
                             || textRow.ToLower().Contains("{{learnlist/breedh")
                             || textRow.ToLower().Contains("{{learnlist/tutorh"))
                         {
-                            if (modeText == null)
+                            if (modeText == readingMode.NONE)
                                 continue;
                             if (matchForm(formText, name.FormName) && (gameText == null || gameText.Contains(gametosearch)))
                             {
-                                if (modeText.Equals("Level") && !LevelUpListRead)
+                                if (modeText == readingMode.LEVEL && !LevelUpListRead)
                                 {
                                     inList = true;
                                     readingLevelUp = true;
@@ -219,7 +231,7 @@ namespace moveParser.data
                                     if (column == 0)
                                         column = 1;
                                 }
-                                else if ((modeText.Equals("TM") && !TMListRead) || (modeText.Equals("EGG") && !EggListRead) || (modeText.Equals("TUTOR") && !TutorListRead))
+                                else if ((modeText == readingMode.TM && !TMListRead) || (modeText == readingMode.EGG && !EggListRead) || (modeText == readingMode.TUTOR && !TutorListRead))
                                 {
                                     inList = true;
                                 }
@@ -257,7 +269,7 @@ namespace moveParser.data
                         }
                         else if (inList && (gameText == null || gameText.Contains(gametosearch)))
                         {
-                            if (modeText.Equals("Level") && !LevelUpListRead && (formText == null || formText.Equals(name.FormName)))
+                            if (modeText == readingMode.LEVEL && !LevelUpListRead && (formText == null || formText.Equals(name.FormName)))
                             {
                                 string lvltext = textRow.Replace("{{tt|Evo.|Learned upon evolving}}", "0");
                                 lvltext = lvltext.Replace("{{tt|60|70 in Pokémon Diamond and Pearl and Pokémon Battle Revolution}}", "60");
@@ -283,7 +295,7 @@ namespace moveParser.data
                                     }
                                 }
                             }
-                            else if (modeText.Equals("TM") && !TMListRead && (formText == null || formText.Equals(name.FormName)) && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/t[mr].+null}}"))
+                            else if (modeText == readingMode.TM && !TMListRead && (formText == null || formText.Equals(name.FormName)) && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/t[mr].+null}}"))
                             {
                                 string[] rowdata = textRow.Split('|');
                                 string movename = rowdata[2];
@@ -298,7 +310,7 @@ namespace moveParser.data
                                     MessageBox.Show("There's no move data in db/moveNames.json for " + movename + ". Skipping move.", "Missing Data", MessageBoxButtons.OK);
                                 }
                             }
-                            else if (modeText.Equals("EGG") && !EggListRead && (formText == null || formText.Equals(name.FormName)) && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/breed.+null"))
+                            else if (modeText == readingMode.EGG && !EggListRead && (formText == null || formText.Equals(name.FormName)) && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/breed.+null"))
                             {
                                 string breedtext = textRow.Replace("{{tt|*|No legitimate means to pass down move}}", "");
                                 breedtext = breedtext.Replace("{{tt|*|Male-only, and none of the evolutions can learn this move legitimately}}", "");
@@ -316,7 +328,7 @@ namespace moveParser.data
                                     //EggMovesIds.Add(SerebiiNameToID[movename]);
                                     EggMoves.Add(MoveData[movename]);
                             }
-                            else if (modeText.Equals("TUTOR") && !TutorListRead && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/tutor.+null}}")
+                            else if (modeText == readingMode.TUTOR && !TutorListRead && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/tutor.+null}}")
                                 && matchForm(formText, name.FormName))
                             {
                                 string tutortext = textRow.Replace("{{tt|*|", "");
