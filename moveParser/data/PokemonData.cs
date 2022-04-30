@@ -72,20 +72,9 @@ namespace moveParser.data
             MonData mon = new MonData();
 
             List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
-            //List<LevelUpMoveId> lvlMovesId = new List<LevelUpMoveId>();
-
-
-            List<int> TMMovesIds = new List<int>();
-            List<string> TMMoves = new List<string>();
-            List<Move> TMMovesNew = new List<Move>();
-
-            List<int> EggMovesIds = new List<int>();
-            List<string> EggMoves = new List<string>();
-            List<Move> EggMovesNew = new List<Move>();
-
-            List<int> TutorMovesIds = new List<int>();
-            List<string> TutorMoves = new List<string>();
-            List<Move> TutorMovesNew = new List<Move>();
+            List<Move> TMMoves = new List<Move>();
+            List<Move> EggMoves = new List<Move>();
+            List<Move> TutorMoves = new List<Move>();
 
             if (gen.genNumber < 7 && name.FormName.Contains("Alola"))
                 return null;
@@ -302,7 +291,7 @@ namespace moveParser.data
                                 //TMMovesIds.Add(SerebiiNameToID[movename]);
                                 try
                                 {
-                                    TMMovesNew.Add(MoveData[movename]);
+                                    TMMoves.Add(MoveData[movename]);
                                 }
                                 catch (Exception ex)
                                 {
@@ -325,7 +314,7 @@ namespace moveParser.data
                                     continue;
                                 else if (!movename.Equals("Light Ball}}{{tt") && !(textRow.Contains("†") && !isIncenseBaby(name.SpeciesName)))
                                     //EggMovesIds.Add(SerebiiNameToID[movename]);
-                                    EggMovesNew.Add(MoveData[movename]);
+                                    EggMoves.Add(MoveData[movename]);
                             }
                             else if (modeText.Equals("TUTOR") && !TutorListRead && !Regex.IsMatch(textRow.ToLower(), "{{learnlist/tutor.+null}}")
                                 && matchForm(formText, name.FormName))
@@ -346,7 +335,7 @@ namespace moveParser.data
                                     {
                                         //int modeid = SerebiiNameToID[movename];
                                         //TutorMovesIds.Add(modeid);
-                                        TutorMovesNew.Add(MoveData[movename]);
+                                        TutorMoves.Add(MoveData[movename]);
                                     }
                                     else if (rowdata[tutorpad + movetutorcolumn].Equals("yes"))
                                     {
@@ -355,10 +344,10 @@ namespace moveParser.data
                                         {
                                             //TutorMovesIds.Add(518);
                                             //TutorMovesIds.Add(519);
-                                            TutorMovesNew.Add(MoveData["Water Pledge"]);
-                                            TutorMovesNew.Add(MoveData["Fire Pledge"]);
+                                            TutorMoves.Add(MoveData["Water Pledge"]);
+                                            TutorMoves.Add(MoveData["Fire Pledge"]);
                                         }
-                                        TutorMovesNew.Add(mov);
+                                        TutorMoves.Add(mov);
                                     }
                                 }
                                 catch (IndexOutOfRangeException) { }
@@ -372,20 +361,20 @@ namespace moveParser.data
                 foreach (Move moe in evoMovesId)
                     lvlMoves.Insert(0,new LevelUpMove(0, "MOVE_" + moe.defineName));
 
-                TMMovesNew = TMMovesNew.Distinct().ToList();
-                EggMovesNew = EggMovesNew.Distinct().ToList();
-                TutorMovesNew = TutorMovesNew.Distinct().ToList();
+                TMMoves = TMMoves.Distinct().ToList();
+                EggMoves = EggMoves.Distinct().ToList();
+                TutorMoves = TutorMoves.Distinct().ToList();
             }
             else
             {
                 return null;
             }
             mon.LevelMoves = lvlMoves;
-            foreach (Move m in TMMovesNew)
+            foreach (Move m in TMMoves)
                 mon.TMMoves.Add("MOVE_" + m.defineName);
-            foreach (Move m in EggMovesNew)
+            foreach (Move m in EggMoves)
                 mon.EggMoves.Add("MOVE_" + m.defineName);
-            foreach (Move m in TutorMovesNew)
+            foreach (Move m in TutorMoves)
                 mon.TutorMoves.Add("MOVE_" + m.defineName);
 
             return mon;
