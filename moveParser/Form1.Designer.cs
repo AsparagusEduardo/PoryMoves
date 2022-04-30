@@ -186,9 +186,9 @@
             this.chkTM_Extended.AutoSize = true;
             this.chkTM_Extended.Location = new System.Drawing.Point(6, 317);
             this.chkTM_Extended.Name = "chkTM_Extended";
-            this.chkTM_Extended.Size = new System.Drawing.Size(149, 21);
+            this.chkTM_Extended.Size = new System.Drawing.Size(160, 21);
             this.chkTM_Extended.TabIndex = 17;
-            this.chkTM_Extended.Text = "Use Extended TMs";
+            this.chkTM_Extended.Text = "Use Refactored TMs";
             this.chkTM_Extended.UseVisualStyleBackColor = true;
             // 
             // chkTM_IncludeTutor
@@ -385,9 +385,9 @@
             this.chkTutor_Extended.AutoSize = true;
             this.chkTutor_Extended.Location = new System.Drawing.Point(6, 317);
             this.chkTutor_Extended.Name = "chkTutor_Extended";
-            this.chkTutor_Extended.Size = new System.Drawing.Size(163, 21);
+            this.chkTutor_Extended.Size = new System.Drawing.Size(174, 21);
             this.chkTutor_Extended.TabIndex = 22;
-            this.chkTutor_Extended.Text = "Use Extended Tutors";
+            this.chkTutor_Extended.Text = "Use Refactored Tutors";
             this.chkTutor_Extended.UseVisualStyleBackColor = true;
             // 
             // btnTutor_All
