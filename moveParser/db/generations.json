@@ -28,7 +28,7 @@
     "dbFilename": "swshep",
     "gameFullName": "Pokémon Sword and Shield Expansion Pass",
     "gameAvailableName": "Sword and Shield",
-    "lvlUpColumn": "SWSHEP",
+    "lvlUpColumn": "SwSh",
     "moveTutorColumn": 2,
     "maxDexNum": 898
   },
@@ -39,7 +39,7 @@
     "dbFilename": "swsh",
     "gameFullName": "Pokémon Sword and Shield",
     "gameAvailableName": "Sword and Shield",
-    "lvlUpColumn": "SWSH",
+    "lvlUpColumn": "SwSh",
     "moveTutorColumn": 1,
     "maxDexNum": 898
   },

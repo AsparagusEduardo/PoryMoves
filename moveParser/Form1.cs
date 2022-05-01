@@ -164,7 +164,11 @@ namespace moveParser
                 foreach (MonName item in nameList)
                 {
                     current = item.DefName;
-                    //if (i < 31)
+                    //if (i < 152)
+                    //if (i == 124)
+                    if (item.NatDexNum <= generation.maxDexNum)
+                    //if (i > 898)
+                    //if (item.NatDexNum == 26)
                     {
                         MonData mon = PokemonData.LoadMonData(item, generation, MoveData);
                         if (mon != null)
