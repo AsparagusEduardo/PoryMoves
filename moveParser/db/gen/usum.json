@@ -41088,7 +41088,7 @@
         "Move": "MOVE_FOCUS_ENERGY"
       },
       {
-        "Level": 5,
+        "Level": 8,
         "Move": "MOVE_EMBER"
       },
       {
@@ -45092,8 +45092,8 @@
       "MOVE_DIZZY_PUNCH",
       "MOVE_FAKE_OUT",
       "MOVE_FOUL_PLAY",
-      "MOVE_POWER_UP_PUNCH",
       "MOVE_MAGIC_COAT",
+      "MOVE_POWER_UP_PUNCH",
       "MOVE_NASTY_PLOT",
       "MOVE_RECOVER",
       "MOVE_SKILL_SWAP",

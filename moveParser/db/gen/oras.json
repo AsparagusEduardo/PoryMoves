@@ -88276,11 +88276,11 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_STONE_EDGE"
+        "Move": "MOVE_SKULL_BASH"
       },
       {
         "Level": 1,
-        "Move": "MOVE_SKULL_BASH"
+        "Move": "MOVE_STONE_EDGE"
       },
       {
         "Level": 1,

@@ -12051,6 +12051,7 @@
       "MOVE_STRENGTH"
     ],
     "EggMoves": [
+      "MOVE_ALLY_SWITCH",
       "MOVE_BULLET_PUNCH",
       "MOVE_COUNTER",
       "MOVE_ENDURE",
@@ -12187,6 +12188,7 @@
       "MOVE_STRENGTH"
     ],
     "EggMoves": [
+      "MOVE_ALLY_SWITCH",
       "MOVE_BULLET_PUNCH",
       "MOVE_COUNTER",
       "MOVE_ENDURE",
@@ -27460,6 +27462,7 @@
       "MOVE_STRENGTH"
     ],
     "EggMoves": [
+      "MOVE_ALLY_SWITCH",
       "MOVE_BULLET_PUNCH",
       "MOVE_COUNTER",
       "MOVE_ENDURE",
@@ -79696,11 +79699,11 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_STONE_EDGE"
+        "Move": "MOVE_SKULL_BASH"
       },
       {
         "Level": 1,
-        "Move": "MOVE_SKULL_BASH"
+        "Move": "MOVE_STONE_EDGE"
       },
       {
         "Level": 1,

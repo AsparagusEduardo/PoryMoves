@@ -17889,10 +17889,6 @@
         "Move": "MOVE_ROAR"
       },
       {
-        "Level": 21,
-        "Move": "MOVE_RAIN_DANCE"
-      },
-      {
         "Level": 31,
         "Move": "MOVE_GUST"
       },
