@@ -73,8 +73,130 @@ namespace moveParser.data
             TUTOR,
             TRANSFER
         }
+        public static MonData LoadMonDataSerebii(MonName name, GenerationData gen, Dictionary<string, Move> MoveData)
+        {
+            MonData mon = new MonData();
 
-        public static MonData LoadMonData(MonName name, GenerationData gen, Dictionary<string, Move> MoveData)
+            List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
+            List<Move> evoMoves = new List<Move>();
+            List<Move> TMMoves = new List<Move>();
+            List<Move> EggMoves = new List<Move>();
+            List<Move> TutorMoves = new List<Move>();
+
+            if (gen.maxDexNum < name.NatDexNum)
+                return null;
+
+            string html = "https://serebii.net/pokedex" + gen.serebiiDexURL + "/" + name.SpeciesName.ToLower() + "/";
+
+            hap.HtmlWeb web = new hap.HtmlWeb();
+            hap.HtmlDocument htmlDoc = null;
+
+            int connectionTries = 1;
+            int totalTries = 0;
+            for (int i = 0; i < connectionTries; i++)
+            {
+                try
+                {
+                    htmlDoc = web.Load(html);
+                    htmlDoc.DocumentNode.InnerHtml = htmlDoc.DocumentNode.InnerHtml.Replace("\n", "").Replace("\r", "").Replace("\t", "").Replace("> <", "><");
+                    i = connectionTries;
+                }
+                catch (System.Net.WebException)
+                {
+                    //return null;
+                }
+                totalTries++;
+                if (i == connectionTries - 1 && htmlDoc == null)
+                {
+                    DialogResult res = MessageBox.Show("There was an issue connecting to " + name.SpeciesName + "'s Serebii Page. Retry? (Total tries: " + totalTries + ")", "Missing Data", MessageBoxButtons.YesNo);
+                    if (res == DialogResult.Yes)
+                        connectionTries = -1;
+                }
+            }
+
+            hap.HtmlNodeCollection columns;
+            columns = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']");
+
+            int idSeccionLevelUp = 0;
+            if (columns != null)
+            {
+
+                int tabNum = 1;
+                foreach (hap.HtmlNode nodo1 in columns)
+                {
+                    int nroSeccion = 0;
+                    foreach (hap.HtmlNode nodo2 in nodo1.ChildNodes[0].ChildNodes)
+                    {
+                        nroSeccion++;
+                        if (nodo2.InnerText.EndsWith("Level Up"))
+                        {
+                            if ((gen.gameNameAlt1 != null && nodo2.InnerText.Contains(gen.gameNameAlt1))
+                                || nodo2.InnerText.Contains("Generation " + gen.genNumberRoman)
+                                || (nodo2.InnerText.Equals("Standard Level Up") && (nodo1.ParentNode.Id.Equals("legends") == gen.dbFilename.Equals("la")))
+                                )
+                            {
+                                
+                                int tableRow = 2;
+                                while (tableRow < nodo1.ChildNodes.Count)
+                                {
+                                    string lvlText = nodo1.ChildNodes[tableRow].ChildNodes[0].InnerText.Replace("&#8212;", "1");
+                                    if (!lvlText.Contains("Evo"))
+                                    {
+                                        int lvl = int.Parse(lvlText);
+                                        string movename = nodo1.ChildNodes[tableRow].ChildNodes[1].InnerText;
+                                        Move mo = MoveData[movename];
+                                        lvlMoves.Add(new LevelUpMove(lvl, "MOVE_" + mo.defineName));
+                                    }
+                                    else
+                                    {
+                                        string movename = nodo1.ChildNodes[tableRow].ChildNodes[1].InnerText;
+                                        Move mo = MoveData[movename];
+                                        evoMoves.Add(mo);
+                                    }
+                                    tableRow += 2;
+
+                                }
+                                //16
+                                //2-4-6-8-10-14
+                            }
+                        }
+                        else if (nodo2.InnerText.Equals("TM & HM Attacks"))
+                        {
+                            int tableRow = 2;
+                            while (tableRow < nodo1.ChildNodes.Count)
+                            {
+                                string movename = nodo1.ChildNodes[tableRow].ChildNodes[1].InnerText;
+                                Move mo = MoveData[movename];
+                                TMMoves.Add(mo);
+                                tableRow += 2;
+                            }
+                        }
+                    }
+                }
+
+                foreach (Move moe in evoMoves)
+                    lvlMoves.Insert(0, new LevelUpMove(0, "MOVE_" + moe.defineName));
+
+                TMMoves = TMMoves.Distinct().ToList();
+                EggMoves = EggMoves.Distinct().ToList();
+                TutorMoves = TutorMoves.Distinct().ToList();
+            }
+            else
+            {
+                return null;
+            }
+            mon.LevelMoves = lvlMoves;
+            foreach (Move m in TMMoves)
+                mon.TMMoves.Add("MOVE_" + m.defineName);
+            foreach (Move m in EggMoves)
+                mon.EggMoves.Add("MOVE_" + m.defineName);
+            foreach (Move m in TutorMoves)
+                mon.TutorMoves.Add("MOVE_" + m.defineName);
+
+            return mon;
+        }
+
+        public static MonData LoadMonDataBulbapedia(MonName name, GenerationData gen, Dictionary<string, Move> MoveData)
         {
             if (gen.dbFilename.Equals("lgpe") && (name.NatDexNum > 151 && (name.NatDexNum != 808 && name.NatDexNum != 809)))
                 return null;

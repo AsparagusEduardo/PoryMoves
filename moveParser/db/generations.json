@@ -6,9 +6,11 @@
     "dbFilename": "la",
     "gameFullName": "Pokémon Legends: Arceus",
     "gameAvailableName": "Legends: Arceus",
+    "gameNameAlt1": null,
     "lvlUpColumn": "LA",
     "moveTutorColumn": 0,
-    "maxDexNum": 898
+    "maxDexNum": 898,
+    "serebiiDexURL": "-swsh"
   },
   "BDSP": {
     "genNumber": 8,
@@ -17,9 +19,11 @@
     "dbFilename": "bdsp",
     "gameFullName": "Pokémon Brilliant Diamond and Shining Pearl",
     "gameAvailableName": "Brilliant Diamond",
+    "gameNameAlt1": null,
     "lvlUpColumn": "BDSP",
     "moveTutorColumn": 3,
-    "maxDexNum": 493
+    "maxDexNum": 493,
+    "serebiiDexURL": "-swsh"
   },
   "SWSHEP": {
     "genNumber": 8,
@@ -28,9 +32,11 @@
     "dbFilename": "swshep",
     "gameFullName": "Pokémon Sword and Shield Expansion Pass",
     "gameAvailableName": "Sword and Shield",
+    "gameNameAlt1": null,
     "lvlUpColumn": "SwSh",
     "moveTutorColumn": 2,
-    "maxDexNum": 898
+    "maxDexNum": 898,
+    "serebiiDexURL": "-swsh"
   },
   "SWSH": {
     "genNumber": 8,
@@ -39,9 +45,11 @@
     "dbFilename": "swsh",
     "gameFullName": "Pokémon Sword and Shield",
     "gameAvailableName": "Sword and Shield",
+    "gameNameAlt1": null,
     "lvlUpColumn": "SwSh",
     "moveTutorColumn": 1,
-    "maxDexNum": 898
+    "maxDexNum": 898,
+    "serebiiDexURL": "-swsh"
   },
   "LGPE": {
     "genNumber": 7,
@@ -50,9 +58,11 @@
     "dbFilename": "lgpe",
     "gameFullName": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "LGPE",
     "moveTutorColumn": 2,
-    "maxDexNum": 809
+    "maxDexNum": 809,
+    "serebiiDexURL": null
   },
   "USUM": {
     "genNumber": 7,
@@ -61,9 +71,11 @@
     "dbFilename": "usum",
     "gameFullName": "Pokémon Ultra Sun and Ultra Moon",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "USUM",
     "moveTutorColumn": 2,
-    "maxDexNum": 807
+    "maxDexNum": 807,
+    "serebiiDexURL": null
   },
   "SM": {
     "genNumber": 7,
@@ -72,9 +84,11 @@
     "dbFilename": "sm",
     "gameFullName": "Pokémon Sun and Moon",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "SM",
     "moveTutorColumn": 1,
-    "maxDexNum": 802
+    "maxDexNum": 802,
+    "serebiiDexURL": null
   },
   "ORAS": {
     "genNumber": 6,
@@ -83,9 +97,11 @@
     "dbFilename": "oras",
     "gameFullName": "Pokémon Omega Ruby and Alpha Sapphire",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "ORAS",
     "moveTutorColumn": 2,
-    "maxDexNum": 721
+    "maxDexNum": 721,
+    "serebiiDexURL": null
   },
   "XY": {
     "genNumber": 6,
@@ -94,9 +110,11 @@
     "dbFilename": "xy",
     "gameFullName": "Pokémon X and Y",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "XY",
     "moveTutorColumn": 1,
-    "maxDexNum": 721
+    "maxDexNum": 721,
+    "serebiiDexURL": null
   },
   "B2W2": {
     "genNumber": 5,
@@ -105,9 +123,11 @@
     "dbFilename": "b2w2",
     "gameFullName": "Pokémon Black 2 and White 2",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "B2W2",
     "moveTutorColumn": 2,
-    "maxDexNum": 649
+    "maxDexNum": 649,
+    "serebiiDexURL": null
   },
   "BW": {
     "genNumber": 5,
@@ -116,9 +136,11 @@
     "dbFilename": "bw",
     "gameFullName": "Pokémon Black and White",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "BW",
     "moveTutorColumn": 1,
-    "maxDexNum": 649
+    "maxDexNum": 649,
+    "serebiiDexURL": null
   },
   "HGSS": {
     "genNumber": 4,
@@ -127,9 +149,11 @@
     "dbFilename": "hgss",
     "gameFullName": "Pokémon HeartGold and SoulSilver",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "PtHGSS",
     "moveTutorColumn": 3,
-    "maxDexNum": 493
+    "maxDexNum": 493,
+    "serebiiDexURL": null
   },
   "PT": {
     "genNumber": 4,
@@ -138,9 +162,11 @@
     "dbFilename": "pt",
     "gameFullName": "Pokémon Platinum",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "PtHGSS",
     "moveTutorColumn": 2,
-    "maxDexNum": 493
+    "maxDexNum": 493,
+    "serebiiDexURL": null
   },
   "DP": {
     "genNumber": 4,
@@ -149,9 +175,11 @@
     "dbFilename": "dp",
     "gameFullName": "Pokémon Diamond and Pearl",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "DP",
     "moveTutorColumn": 1,
-    "maxDexNum": 493
+    "maxDexNum": 493,
+    "serebiiDexURL": null
   },
   "FRLG": {
     "genNumber": 3,
@@ -160,9 +188,11 @@
     "dbFilename": "frlg",
     "gameFullName": "Pokémon Fire Red and Leaf Green",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "FRLG",
     "moveTutorColumn": 1,
-    "maxDexNum": 386
+    "maxDexNum": 386,
+    "serebiiDexURL": null
   },
   "RSE": {
     "genNumber": 3,
@@ -171,9 +201,11 @@
     "dbFilename": "rse",
     "gameFullName": "Pokémon Ruby, Sapphire and Emerald",
     "gameAvailableName": null,
+    "gameNameAlt1": null,
     "lvlUpColumn": "RSE",
     "moveTutorColumn": 2,
-    "maxDexNum": 386
+    "maxDexNum": 386,
+    "serebiiDexURL": null
   },
   "C": {
     "genNumber": 2,
@@ -182,9 +214,11 @@
     "dbFilename": "c",
     "gameFullName": "Pokémon Crystal",
     "gameAvailableName": "Crystal",
+    "gameNameAlt1": null,
     "lvlUpColumn": "C",
     "moveTutorColumn": 1,
-    "maxDexNum": 251
+    "maxDexNum": 251,
+    "serebiiDexURL": null
   },
   "GS": {
     "genNumber": 2,
@@ -193,9 +227,11 @@
     "dbFilename": "gs",
     "gameFullName": "Pokémon Gold and Silver",
     "gameAvailableName": "Gold/Silver",
+    "gameNameAlt1": null,
     "lvlUpColumn": "GS",
     "moveTutorColumn": 0,
-    "maxDexNum": 251
+    "maxDexNum": 251,
+    "serebiiDexURL": "-gs"
   },
   "Y": {
     "genNumber": 1,
@@ -204,9 +240,11 @@
     "dbFilename": "y",
     "gameFullName": "Pokémon Yellow",
     "gameAvailableName": "Yellow",
+    "gameNameAlt1": "Yellow",
     "lvlUpColumn": "Y",
     "moveTutorColumn": 1,
-    "maxDexNum": 151
+    "maxDexNum": 151,
+    "serebiiDexURL": ""
   },
   "RGB": {
     "genNumber": 1,
@@ -215,8 +253,10 @@
     "dbFilename": "rgb",
     "gameFullName": "Pokémon Red, Green and Blue",
     "gameAvailableName": "Red/Blue",
+    "gameNameAlt1": "Red, Green & Blue",
     "lvlUpColumn": "RGB",
     "moveTutorColumn": 1,
-    "maxDexNum": 151
+    "maxDexNum": 151,
+    "serebiiDexURL": ""
   }
 }

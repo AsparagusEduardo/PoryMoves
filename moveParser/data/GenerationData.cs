@@ -16,9 +16,11 @@ namespace moveParser.data
         public string dbFilename;
         public string gameFullName;
         public string gameAvailableName;
+        public string gameNameAlt1;
         public string lvlUpColumn;
         public int moveTutorColumn;
         public int maxDexNum;
+        public string serebiiDexURL;
     }
 
     public class GenerationsData

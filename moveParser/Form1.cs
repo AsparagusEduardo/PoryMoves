@@ -166,7 +166,12 @@ namespace moveParser
                     current = item.DefName;
                     //if (i < 31)
                     {
-                        MonData mon = PokemonData.LoadMonData(item, generation, MoveData);
+                        MonData mon = null;
+                        if (generation.genNumber > 7)
+                            mon = PokemonData.LoadMonDataSerebii(item, generation, MoveData);
+                        else
+                            mon = PokemonData.LoadMonDataBulbapedia(item, generation, MoveData);
+
                         if (mon != null)
                         {
                             try
