@@ -27,6 +27,7 @@ namespace moveParser.data
         public string FormName;
         public string VarName;
         public string DefName;
+        public string SerebiiFormName;
         public MonName(int nat, string og, bool isfrm, string formtm, string var, string def)
         {
             NatDexNum = nat;
@@ -128,11 +129,12 @@ namespace moveParser.data
                     foreach (hap.HtmlNode nodo2 in nodo1.ChildNodes[0].ChildNodes)
                     {
                         nroSeccion++;
-                        if (nodo2.InnerText.EndsWith("Level Up"))
+                        if (nodo2.InnerText.Contains("Level Up"))
                         {
                             if ((gen.gameNameAlt1 != null && nodo2.InnerText.Contains(gen.gameNameAlt1))
                                 || nodo2.InnerText.Contains("Generation " + gen.genNumberRoman)
                                 || (nodo2.InnerText.Equals("Standard Level Up") && (nodo1.ParentNode.Id.Equals("legends") == gen.dbFilename.Equals("la")))
+                                || nodo2.InnerText.Equals(gen.serebiiLevelUpTitle)
                                 )
                             {
                                 
@@ -158,16 +160,20 @@ namespace moveParser.data
                                 }
                             }
                         }
-                        //else if (nodo2.InnerText.Equals("TM & HM Attacks"))
                         else if (nodo2.InnerText.Equals(gen.gameNameAlt1 + " Technical Machine Attacks")
                                 || nodo2.InnerText.Equals("Technical Record Attacks"))
                         {
                             int tableRow = 2;
                             while (tableRow < nodo1.ChildNodes.Count)
                             {
-                                string movename = nodo1.ChildNodes[tableRow].ChildNodes[1].InnerText;
-                                Move mo = MoveData[movename];
-                                TMMoves.Add(mo);
+                                if (nodo1.ChildNodes[tableRow].ChildNodes.Count <= 8 || name.SerebiiFormName == null
+                                     || nodo1.ChildNodes[tableRow].ChildNodes[8].ChildNodes[0].ChildNodes[0].OuterHtml.Contains("alt=\"" + name.SerebiiFormName + "\"")
+                                    )
+                                {
+                                    string movename = nodo1.ChildNodes[tableRow].ChildNodes[1].InnerText;
+                                    Move mo = MoveData[movename];
+                                    TMMoves.Add(mo);
+                                }
                                 tableRow += 2;
                             }
                         }
@@ -176,8 +182,12 @@ namespace moveParser.data
                             int tableRow = 2;
                             while (tableRow < nodo1.ChildNodes.Count)
                             {
-                                if (nodo1.ChildNodes[tableRow].ChildNodes[0].ChildNodes.Count < 2 ||
+                                if ((nodo1.ChildNodes[tableRow].ChildNodes[0].ChildNodes.Count < 2 ||
                                     nodo1.ChildNodes[tableRow].ChildNodes[0].InnerText.ToLower().Contains(gen.dbFilename + " only"))
+                                        &&
+                                    (name.SerebiiFormName == null
+                                     || nodo1.ChildNodes[tableRow].ChildNodes[7].ChildNodes[0].OuterHtml.Contains("alt=\"" + name.SerebiiFormName + "\""))
+                                    )
                                 {
                                     string movename = nodo1.ChildNodes[tableRow].ChildNodes[0].ChildNodes[0].InnerText;
                                     Move mo = MoveData[movename];
@@ -191,11 +201,34 @@ namespace moveParser.data
                             int tableRow = 2;
                             while (tableRow < nodo1.ChildNodes[0].ChildNodes.Count)
                             {
-                                string movename = nodo1.ChildNodes[0].ChildNodes[tableRow].ChildNodes[0].ChildNodes[0].InnerText;
-                                Move mo = MoveData[movename];
-                                TutorMoves.Add(mo);
+                                if (nodo1.ChildNodes[0].ChildNodes[tableRow].ChildNodes.Count > 7)
+                                    ;
+
+                                if (nodo1.ChildNodes[0].ChildNodes[tableRow].ChildNodes.Count <= 7 || name.SerebiiFormName == null
+                                     || nodo1.ChildNodes[0].ChildNodes[tableRow].ChildNodes[7].ChildNodes[0].ChildNodes[0].OuterHtml.Contains("alt=\"" + name.SerebiiFormName + "\"")
+                                    )
+                                {
+                                    string movename = nodo1.ChildNodes[0].ChildNodes[tableRow].ChildNodes[0].ChildNodes[0].InnerText;
+                                    Move mo = MoveData[movename];
+                                    TutorMoves.Add(mo);
+                                }
+
                                 tableRow += 2;
                             }
+                        }
+                        else if (nodo2.InnerText.Contains("Locations"))
+                        {
+                            bool isInGame = false;
+                            int tableRow = 1;
+                            while (tableRow < nodo1.ChildNodes.Count)
+                            {
+                                if (nodo1.ChildNodes[tableRow].ChildNodes[0].InnerText.Equals(gen.serebiiLocationsName))
+                                    isInGame = true;
+                                tableRow++;
+                            }
+                            if (!isInGame)
+                                return null;
+
                         }
                     }
                 }

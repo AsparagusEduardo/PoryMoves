@@ -11,7 +11,9 @@
     "moveTutorColumn": 0,
     "maxDexNum": 898,
     "serebiiDexURL": "-swsh",
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "BDSP": {
     "genNumber": 8,
@@ -25,7 +27,9 @@
     "moveTutorColumn": 3,
     "maxDexNum": 493,
     "serebiiDexURL": "-swsh",
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "SWSHEP": {
     "genNumber": 8,
@@ -39,7 +43,9 @@
     "moveTutorColumn": 2,
     "maxDexNum": 898,
     "serebiiDexURL": "-swsh",
-    "serebiiMoveTutorTitle": "Isle of Armor Move Tutor Attacks"
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": "Isle of Armor Move Tutor Attacks",
+    "serebiiLocationsName": "Sword"
   },
   "SWSH": {
     "genNumber": 8,
@@ -53,7 +59,9 @@
     "moveTutorColumn": 1,
     "maxDexNum": 898,
     "serebiiDexURL": "-swsh",
-    "serebiiMoveTutorTitle": "Move Tutor Attacks"
+    "serebiiLevelUpTitle": "Standard Level Up - Sword & Shield",
+    "serebiiMoveTutorTitle": "Move Tutor Attacks",
+    "serebiiLocationsName": "Sword"
   },
   "LGPE": {
     "genNumber": 7,
@@ -67,7 +75,9 @@
     "moveTutorColumn": 2,
     "maxDexNum": 809,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "USUM": {
     "genNumber": 7,
@@ -81,7 +91,9 @@
     "moveTutorColumn": 2,
     "maxDexNum": 807,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "SM": {
     "genNumber": 7,
@@ -95,7 +107,9 @@
     "moveTutorColumn": 1,
     "maxDexNum": 802,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "ORAS": {
     "genNumber": 6,
@@ -109,7 +123,9 @@
     "moveTutorColumn": 2,
     "maxDexNum": 721,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "XY": {
     "genNumber": 6,
@@ -123,7 +139,9 @@
     "moveTutorColumn": 1,
     "maxDexNum": 721,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "B2W2": {
     "genNumber": 5,
@@ -137,7 +155,9 @@
     "moveTutorColumn": 2,
     "maxDexNum": 649,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "BW": {
     "genNumber": 5,
@@ -151,7 +171,9 @@
     "moveTutorColumn": 1,
     "maxDexNum": 649,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "HGSS": {
     "genNumber": 4,
@@ -165,7 +187,9 @@
     "moveTutorColumn": 3,
     "maxDexNum": 493,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "PT": {
     "genNumber": 4,
@@ -179,7 +203,9 @@
     "moveTutorColumn": 2,
     "maxDexNum": 493,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "DP": {
     "genNumber": 4,
@@ -193,7 +219,9 @@
     "moveTutorColumn": 1,
     "maxDexNum": 493,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "FRLG": {
     "genNumber": 3,
@@ -207,7 +235,9 @@
     "moveTutorColumn": 1,
     "maxDexNum": 386,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "RSE": {
     "genNumber": 3,
@@ -221,7 +251,9 @@
     "moveTutorColumn": 2,
     "maxDexNum": 386,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "C": {
     "genNumber": 2,
@@ -235,7 +267,9 @@
     "moveTutorColumn": 1,
     "maxDexNum": 251,
     "serebiiDexURL": null,
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "GS": {
     "genNumber": 2,
@@ -249,7 +283,9 @@
     "moveTutorColumn": 0,
     "maxDexNum": 251,
     "serebiiDexURL": "-gs",
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "Y": {
     "genNumber": 1,
@@ -263,7 +299,9 @@
     "moveTutorColumn": 1,
     "maxDexNum": 151,
     "serebiiDexURL": "",
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   },
   "RGB": {
     "genNumber": 1,
@@ -277,6 +315,8 @@
     "moveTutorColumn": 1,
     "maxDexNum": 151,
     "serebiiDexURL": "",
-    "serebiiMoveTutorTitle": null
+    "serebiiLevelUpTitle": null,
+    "serebiiMoveTutorTitle": null,
+    "serebiiLocationsName": null
   }
 }

@@ -22,7 +22,9 @@ namespace moveParser.data
         public int maxDexNum;
 
         public string serebiiDexURL;
+        public string serebiiLevelUpTitle;
         public string serebiiMoveTutorTitle;
+        public string serebiiLocationsName;
     }
 
     public class GenerationsData
