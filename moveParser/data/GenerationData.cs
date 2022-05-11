@@ -20,7 +20,9 @@ namespace moveParser.data
         public string lvlUpColumn;
         public int moveTutorColumn;
         public int maxDexNum;
+
         public string serebiiDexURL;
+        public string serebiiMoveTutorTitle;
     }
 
     public class GenerationsData

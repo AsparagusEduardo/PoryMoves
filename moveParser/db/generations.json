@@ -10,7 +10,8 @@
     "lvlUpColumn": "LA",
     "moveTutorColumn": 0,
     "maxDexNum": 898,
-    "serebiiDexURL": "-swsh"
+    "serebiiDexURL": "-swsh",
+    "serebiiMoveTutorTitle": null
   },
   "BDSP": {
     "genNumber": 8,
@@ -23,7 +24,8 @@
     "lvlUpColumn": "BDSP",
     "moveTutorColumn": 3,
     "maxDexNum": 493,
-    "serebiiDexURL": "-swsh"
+    "serebiiDexURL": "-swsh",
+    "serebiiMoveTutorTitle": null
   },
   "SWSHEP": {
     "genNumber": 8,
@@ -36,7 +38,8 @@
     "lvlUpColumn": "SwSh",
     "moveTutorColumn": 2,
     "maxDexNum": 898,
-    "serebiiDexURL": "-swsh"
+    "serebiiDexURL": "-swsh",
+    "serebiiMoveTutorTitle": "Isle of Armor Move Tutor Attacks"
   },
   "SWSH": {
     "genNumber": 8,
@@ -45,11 +48,12 @@
     "dbFilename": "swsh",
     "gameFullName": "Pokémon Sword and Shield",
     "gameAvailableName": "Sword and Shield",
-    "gameNameAlt1": null,
+    "gameNameAlt1": "Sword & Shield",
     "lvlUpColumn": "SwSh",
     "moveTutorColumn": 1,
     "maxDexNum": 898,
-    "serebiiDexURL": "-swsh"
+    "serebiiDexURL": "-swsh",
+    "serebiiMoveTutorTitle": "Move Tutor Attacks"
   },
   "LGPE": {
     "genNumber": 7,
@@ -62,7 +66,8 @@
     "lvlUpColumn": "LGPE",
     "moveTutorColumn": 2,
     "maxDexNum": 809,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "USUM": {
     "genNumber": 7,
@@ -75,7 +80,8 @@
     "lvlUpColumn": "USUM",
     "moveTutorColumn": 2,
     "maxDexNum": 807,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "SM": {
     "genNumber": 7,
@@ -88,7 +94,8 @@
     "lvlUpColumn": "SM",
     "moveTutorColumn": 1,
     "maxDexNum": 802,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "ORAS": {
     "genNumber": 6,
@@ -101,7 +108,8 @@
     "lvlUpColumn": "ORAS",
     "moveTutorColumn": 2,
     "maxDexNum": 721,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "XY": {
     "genNumber": 6,
@@ -114,7 +122,8 @@
     "lvlUpColumn": "XY",
     "moveTutorColumn": 1,
     "maxDexNum": 721,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "B2W2": {
     "genNumber": 5,
@@ -127,7 +136,8 @@
     "lvlUpColumn": "B2W2",
     "moveTutorColumn": 2,
     "maxDexNum": 649,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "BW": {
     "genNumber": 5,
@@ -140,7 +150,8 @@
     "lvlUpColumn": "BW",
     "moveTutorColumn": 1,
     "maxDexNum": 649,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "HGSS": {
     "genNumber": 4,
@@ -153,7 +164,8 @@
     "lvlUpColumn": "PtHGSS",
     "moveTutorColumn": 3,
     "maxDexNum": 493,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "PT": {
     "genNumber": 4,
@@ -166,7 +178,8 @@
     "lvlUpColumn": "PtHGSS",
     "moveTutorColumn": 2,
     "maxDexNum": 493,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "DP": {
     "genNumber": 4,
@@ -179,7 +192,8 @@
     "lvlUpColumn": "DP",
     "moveTutorColumn": 1,
     "maxDexNum": 493,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "FRLG": {
     "genNumber": 3,
@@ -192,7 +206,8 @@
     "lvlUpColumn": "FRLG",
     "moveTutorColumn": 1,
     "maxDexNum": 386,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "RSE": {
     "genNumber": 3,
@@ -205,7 +220,8 @@
     "lvlUpColumn": "RSE",
     "moveTutorColumn": 2,
     "maxDexNum": 386,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "C": {
     "genNumber": 2,
@@ -218,7 +234,8 @@
     "lvlUpColumn": "C",
     "moveTutorColumn": 1,
     "maxDexNum": 251,
-    "serebiiDexURL": null
+    "serebiiDexURL": null,
+    "serebiiMoveTutorTitle": null
   },
   "GS": {
     "genNumber": 2,
@@ -231,7 +248,8 @@
     "lvlUpColumn": "GS",
     "moveTutorColumn": 0,
     "maxDexNum": 251,
-    "serebiiDexURL": "-gs"
+    "serebiiDexURL": "-gs",
+    "serebiiMoveTutorTitle": null
   },
   "Y": {
     "genNumber": 1,
@@ -244,7 +262,8 @@
     "lvlUpColumn": "Y",
     "moveTutorColumn": 1,
     "maxDexNum": 151,
-    "serebiiDexURL": ""
+    "serebiiDexURL": "",
+    "serebiiMoveTutorTitle": null
   },
   "RGB": {
     "genNumber": 1,
@@ -257,6 +276,7 @@
     "lvlUpColumn": "RGB",
     "moveTutorColumn": 1,
     "maxDexNum": 151,
-    "serebiiDexURL": ""
+    "serebiiDexURL": "",
+    "serebiiMoveTutorTitle": null
   }
 }

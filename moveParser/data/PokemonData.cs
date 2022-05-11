@@ -156,11 +156,11 @@ namespace moveParser.data
                                     tableRow += 2;
 
                                 }
-                                //16
-                                //2-4-6-8-10-14
                             }
                         }
-                        else if (nodo2.InnerText.Equals("TM & HM Attacks"))
+                        //else if (nodo2.InnerText.Equals("TM & HM Attacks"))
+                        else if (nodo2.InnerText.Equals(gen.gameNameAlt1 + " Technical Machine Attacks")
+                                || nodo2.InnerText.Equals("Technical Record Attacks"))
                         {
                             int tableRow = 2;
                             while (tableRow < nodo1.ChildNodes.Count)
@@ -171,6 +171,32 @@ namespace moveParser.data
                                 tableRow += 2;
                             }
                         }
+                        else if (nodo2.InnerText.Contains("Egg Moves"))
+                        {
+                            int tableRow = 2;
+                            while (tableRow < nodo1.ChildNodes.Count)
+                            {
+                                if (nodo1.ChildNodes[tableRow].ChildNodes[0].ChildNodes.Count < 2 ||
+                                    nodo1.ChildNodes[tableRow].ChildNodes[0].InnerText.ToLower().Contains(gen.dbFilename + " only"))
+                                {
+                                    string movename = nodo1.ChildNodes[tableRow].ChildNodes[0].ChildNodes[0].InnerText;
+                                    Move mo = MoveData[movename];
+                                    EggMoves.Add(mo);
+                                }
+                                tableRow += 2;
+                            }
+                        }
+                        else if (nodo2.InnerText.Equals(gen.serebiiMoveTutorTitle))
+                        {
+                            int tableRow = 2;
+                            while (tableRow < nodo1.ChildNodes[0].ChildNodes.Count)
+                            {
+                                string movename = nodo1.ChildNodes[0].ChildNodes[tableRow].ChildNodes[0].ChildNodes[0].InnerText;
+                                Move mo = MoveData[movename];
+                                TutorMoves.Add(mo);
+                                tableRow += 2;
+                            }
+                        }
                     }
                 }
 
@@ -178,7 +204,7 @@ namespace moveParser.data
                     lvlMoves.Insert(0, new LevelUpMove(0, "MOVE_" + moe.defineName));
 
                 TMMoves = TMMoves.Distinct().ToList();
-                EggMoves = EggMoves.Distinct().ToList();
+                EggMoves = EggMoves.Distinct().OrderBy(x => x.defineName).ToList();
                 TutorMoves = TutorMoves.Distinct().ToList();
             }
             else
