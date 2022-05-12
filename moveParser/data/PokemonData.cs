@@ -231,7 +231,7 @@ namespace moveParser.data
                                 tableRow += 2;
                             }
                         }
-                        else if (nodo2.InnerText.Equals(gen.serebiiMoveTutorTitle))
+                        else if (nodo2.InnerText.Equals(gen.serebiiMoveTutorTitle) || nodo2.InnerText.Equals(gen.serebiiMoveTutorTitleAlt))
                         {
                             int tableRow = 2;
                             while (tableRow < nodo1.ChildNodes[0].ChildNodes.Count)

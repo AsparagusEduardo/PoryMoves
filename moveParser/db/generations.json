@@ -13,6 +13,7 @@
     "serebiiDexURL": "-swsh",
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "BDSP": {
@@ -29,23 +30,8 @@
     "serebiiDexURL": "-swsh",
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
-  },
-  "SWSHEP": {
-    "genNumber": 8,
-    "genNumberRoman": "VIII",
-    "isLatestGen": true,
-    "dbFilename": "swshep",
-    "gameFullName": "Pokémon Sword and Shield Expansion Pass",
-    "gameAvailableName": "Sword and Shield",
-    "gameNameAlt1": null,
-    "lvlUpColumn": "SwSh",
-    "moveTutorColumn": 2,
-    "maxDexNum": 898,
-    "serebiiDexURL": "-swsh",
-    "serebiiLevelUpTitle": null,
-    "serebiiMoveTutorTitle": "Isle of Armor Move Tutor Attacks",
-    "serebiiLocationsName": "Sword"
   },
   "SWSH": {
     "genNumber": 8,
@@ -61,6 +47,7 @@
     "serebiiDexURL": "-swsh",
     "serebiiLevelUpTitle": "Standard Level Up - Sword & Shield",
     "serebiiMoveTutorTitle": "Move Tutor Attacks",
+    "serebiiMoveTutorTitleAlt": "Isle of Armor Move Tutor Attacks",
     "serebiiLocationsName": "Sword"
   },
   "LGPE": {
@@ -77,6 +64,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "USUM": {
@@ -93,6 +81,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "SM": {
@@ -109,6 +98,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "ORAS": {
@@ -125,6 +115,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "XY": {
@@ -141,6 +132,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "B2W2": {
@@ -157,6 +149,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "BW": {
@@ -173,6 +166,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "HGSS": {
@@ -189,6 +183,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "PT": {
@@ -205,6 +200,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "DP": {
@@ -221,6 +217,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "FRLG": {
@@ -237,6 +234,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "RSE": {
@@ -253,6 +251,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "C": {
@@ -269,6 +268,7 @@
     "serebiiDexURL": null,
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "GS": {
@@ -285,6 +285,7 @@
     "serebiiDexURL": "-gs",
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "Y": {
@@ -301,6 +302,7 @@
     "serebiiDexURL": "",
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   },
   "RGB": {
@@ -317,6 +319,7 @@
     "serebiiDexURL": "",
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
+    "serebiiMoveTutorTitleAlt": null,
     "serebiiLocationsName": null
   }
 }

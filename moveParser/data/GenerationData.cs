@@ -24,6 +24,7 @@ namespace moveParser.data
         public string serebiiDexURL;
         public string serebiiLevelUpTitle;
         public string serebiiMoveTutorTitle;
+        public string serebiiMoveTutorTitleAlt;
         public string serebiiLocationsName;
     }
 
