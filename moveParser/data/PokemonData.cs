@@ -28,6 +28,10 @@ namespace moveParser.data
         public string VarName;
         public string DefName;
         public string SerebiiFormName;
+        public string SerebiiFormNameAlt;
+        public string SerebiiURL;
+        public string SerebiiLevelUpTableName;
+        public string SerebiiTMTableName;
         public MonName(int nat, string og, bool isfrm, string formtm, string var, string def)
         {
             NatDexNum = nat;
@@ -87,7 +91,16 @@ namespace moveParser.data
             if (gen.maxDexNum < name.NatDexNum)
                 return null;
 
-            string html = "https://serebii.net/pokedex" + gen.serebiiDexURL + "/" + name.SpeciesName.ToLower() + "/";
+            /*
+            if (name.NatDexNum != 876)
+                return null;
+            //*/
+
+            string html;
+            if (name.SerebiiURL != null)
+                html = "https://serebii.net/pokedex" + gen.serebiiDexURL + "/" + name.SerebiiURL + "/";
+            else
+                html = "https://serebii.net/pokedex" + gen.serebiiDexURL + "/" + name.SpeciesName.ToLower() + "/";
 
             hap.HtmlWeb web = new hap.HtmlWeb();
             hap.HtmlDocument htmlDoc = null;
@@ -131,10 +144,14 @@ namespace moveParser.data
                         nroSeccion++;
                         if (nodo2.InnerText.Contains("Level Up"))
                         {
-                            if ((gen.gameNameAlt1 != null && nodo2.InnerText.Contains(gen.gameNameAlt1))
-                                || nodo2.InnerText.Contains("Generation " + gen.genNumberRoman)
-                                || (nodo2.InnerText.Equals("Standard Level Up") && (nodo1.ParentNode.Id.Equals("legends") == gen.dbFilename.Equals("la")))
-                                || nodo2.InnerText.Equals(gen.serebiiLevelUpTitle)
+                            if (//(gen.gameNameAlt1 != null && nodo2.InnerText.Contains(gen.gameNameAlt1))
+                                //|| 
+                                (nodo1.ParentNode.Id.Equals("legends") == gen.dbFilename.Equals("la")) &&
+                                (
+                                    nodo2.InnerText.Equals(name.SerebiiLevelUpTableName)
+                                    || (name.IsBaseForm && nodo2.InnerText.Equals(gen.serebiiLevelUpTitle))
+                                    || (name.IsBaseForm && nodo2.InnerText.Equals("Standard Level Up"))
+                                )
                                 )
                             {
                                 
@@ -161,13 +178,17 @@ namespace moveParser.data
                             }
                         }
                         else if (nodo2.InnerText.Equals(gen.gameNameAlt1 + " Technical Machine Attacks")
-                                || nodo2.InnerText.Equals("Technical Record Attacks"))
+                                || nodo2.InnerText.Equals("Technical Record Attacks")
+                                || nodo2.InnerText.Equals(name.SerebiiTMTableName)
+                                || (name.IsBaseForm && nodo2.InnerText.Equals("Technical Machine Attacks"))
+                                )
                         {
                             int tableRow = 2;
                             while (tableRow < nodo1.ChildNodes.Count)
                             {
                                 if (nodo1.ChildNodes[tableRow].ChildNodes.Count <= 8 || name.SerebiiFormName == null
                                      || nodo1.ChildNodes[tableRow].ChildNodes[8].ChildNodes[0].ChildNodes[0].OuterHtml.Contains("alt=\"" + name.SerebiiFormName + "\"")
+                                     || nodo1.ChildNodes[tableRow].ChildNodes[8].ChildNodes[0].ChildNodes[0].OuterHtml.Contains("alt=\"" + name.SerebiiFormNameAlt + "\"")
                                     )
                                 {
                                     string movename = nodo1.ChildNodes[tableRow].ChildNodes[1].InnerText;
@@ -180,13 +201,25 @@ namespace moveParser.data
                         else if (nodo2.InnerText.Contains("Egg Moves"))
                         {
                             int tableRow = 2;
+                            bool hasFormDifferences = false;
+
+                            while (tableRow < nodo1.ChildNodes.Count && !hasFormDifferences)
+                            {
+                                if (nodo1.ChildNodes[tableRow].ChildNodes[7].OuterHtml.Contains("alt=\""))
+                                    hasFormDifferences = true;
+                                tableRow += 2;
+                            }
+
+                            tableRow = 2;
                             while (tableRow < nodo1.ChildNodes.Count)
                             {
                                 if ((nodo1.ChildNodes[tableRow].ChildNodes[0].ChildNodes.Count < 2 ||
                                     nodo1.ChildNodes[tableRow].ChildNodes[0].InnerText.ToLower().Contains(gen.dbFilename + " only"))
                                         &&
                                     (name.SerebiiFormName == null
-                                     || nodo1.ChildNodes[tableRow].ChildNodes[7].ChildNodes[0].OuterHtml.Contains("alt=\"" + name.SerebiiFormName + "\""))
+                                     || !hasFormDifferences
+                                     || nodo1.ChildNodes[tableRow].ChildNodes[7].OuterHtml.Contains("alt=\"" + name.SerebiiFormName + "\"")
+                                     || nodo1.ChildNodes[tableRow].ChildNodes[7].OuterHtml.Contains("alt=\"" + name.SerebiiFormNameAlt + "\""))
                                     )
                                 {
                                     string movename = nodo1.ChildNodes[tableRow].ChildNodes[0].ChildNodes[0].InnerText;
@@ -210,6 +243,11 @@ namespace moveParser.data
                                 {
                                     string movename = nodo1.ChildNodes[0].ChildNodes[tableRow].ChildNodes[0].ChildNodes[0].InnerText;
                                     Move mo = MoveData[movename];
+                                    if (mo.moveId == 520 && name.SpeciesName.Equals("Silvally"))
+                                    {
+                                        TutorMoves.Add(MoveData["Water Pledge"]);
+                                        TutorMoves.Add(MoveData["Fire Pledge"]);
+                                    }
                                     TutorMoves.Add(mo);
                                 }
 
