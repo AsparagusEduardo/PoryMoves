@@ -224,7 +224,9 @@ namespace moveParser.data
                                 {
                                     string movename = nodo1.ChildNodes[tableRow].ChildNodes[0].ChildNodes[0].InnerText;
                                     Move mo = MoveData[movename];
-                                    EggMoves.Add(mo);
+
+                                    if (!(mo.moveId == 344 && (name.NatDexNum == 25 || name.NatDexNum == 26 || name.NatDexNum == 172))) //Volt Tackle Pichu
+                                        EggMoves.Add(mo);
                                 }
                                 tableRow += 2;
                             }
