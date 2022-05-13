@@ -71,6 +71,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.chkNewDefines = new System.Windows.Forms.CheckBox();
+            this.btnOpenOutputFolder = new System.Windows.Forms.Button();
+            this.btnOpenInputFolder = new System.Windows.Forms.Button();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -545,11 +547,35 @@
             this.chkNewDefines.Text = "Use updated move defines";
             this.chkNewDefines.UseVisualStyleBackColor = true;
             // 
+            // btnOpenOutputFolder
+            // 
+            this.btnOpenOutputFolder.Location = new System.Drawing.Point(519, 81);
+            this.btnOpenOutputFolder.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOpenOutputFolder.Name = "btnOpenOutputFolder";
+            this.btnOpenOutputFolder.Size = new System.Drawing.Size(103, 28);
+            this.btnOpenOutputFolder.TabIndex = 22;
+            this.btnOpenOutputFolder.Text = "Open output folder";
+            this.btnOpenOutputFolder.UseVisualStyleBackColor = true;
+            this.btnOpenOutputFolder.Click += new System.EventHandler(this.btnOpenOutputFolder_Click);
+            // 
+            // btnOpenInputFolder
+            // 
+            this.btnOpenInputFolder.Location = new System.Drawing.Point(412, 81);
+            this.btnOpenInputFolder.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOpenInputFolder.Name = "btnOpenInputFolder";
+            this.btnOpenInputFolder.Size = new System.Drawing.Size(103, 28);
+            this.btnOpenInputFolder.TabIndex = 23;
+            this.btnOpenInputFolder.Text = "Open input folder";
+            this.btnOpenInputFolder.UseVisualStyleBackColor = true;
+            this.btnOpenInputFolder.Click += new System.EventHandler(this.btnOpenInputFolder_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 510);
+            this.Controls.Add(this.btnOpenInputFolder);
+            this.Controls.Add(this.btnOpenOutputFolder);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
@@ -624,6 +650,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.CheckBox chkNewDefines;
+        private System.Windows.Forms.Button btnOpenOutputFolder;
+        private System.Windows.Forms.Button btnOpenInputFolder;
     }
 }
 

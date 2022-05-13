@@ -16,6 +16,7 @@ using moveParser.data;
 using static moveParser.data.Move;
 using System.Text.RegularExpressions;
 using PoryMoves.entity;
+using System.Diagnostics;
 
 namespace moveParser
 {
@@ -48,7 +49,7 @@ namespace moveParser
             cListTMMoves.Items.Clear();
             cListEggMoves.Items.Clear();
             cListTutorMoves.Items.Clear();
-            foreach(KeyValuePair<string, GenerationData> item in GenData)
+            foreach (KeyValuePair<string, GenerationData> item in GenData)
             {
                 cmbGeneration.Items.Add(item.Key);
                 cListLevelUp.Items.Add(item.Key);
@@ -72,7 +73,7 @@ namespace moveParser
             hap.HtmlDocument htmlDoc = web.Load(html);
             hap.HtmlNodeCollection nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr");
 
-            for(int i = 2; i < nodes.Count; i++)
+            for (int i = 2; i < nodes.Count; i++)
             {
                 hap.HtmlNode nodo = nodes[i];
                 string number = nodo.ChildNodes[1].InnerHtml.Trim().Replace("#", "");
@@ -217,14 +218,16 @@ namespace moveParser
         private void backgroundWorker1_ProgressChanged(object sender,
             ProgressChangedEventArgs e)
         {
-            this.Invoke((MethodInvoker)delegate {
+            this.Invoke((MethodInvoker)delegate
+            {
                 pbar1.Value = e.ProgressPercentage;
             });
         }
 
         public void UpdateLoadingMessage(string newMessage)
         {
-            this.Invoke((MethodInvoker)delegate {
+            this.Invoke((MethodInvoker)delegate
+            {
                 this.lblLoading.Text = newMessage;
             });
         }
@@ -239,7 +242,8 @@ namespace moveParser
 
         private void SetEnableForAllButtons(bool value)
         {
-            this.Invoke((MethodInvoker)delegate {
+            this.Invoke((MethodInvoker)delegate
+            {
                 btnLoadFromSerebii.Enabled = value;
 
                 btnWriteLvlLearnsets.Enabled = value;
@@ -258,14 +262,16 @@ namespace moveParser
 
         private void SetEnableForAllCombobox(bool value)
         {
-            this.Invoke((MethodInvoker)delegate {
+            this.Invoke((MethodInvoker)delegate
+            {
                 cmbGeneration.Enabled = value;
             });
         }
 
         private void SetEnableForAllComboBoxList(bool value)
         {
-            this.Invoke((MethodInvoker)delegate {
+            this.Invoke((MethodInvoker)delegate
+            {
                 cListLevelUp.Enabled = value;
                 cListTMMoves.Enabled = value;
                 cListTutorMoves.Enabled = value;
@@ -275,7 +281,8 @@ namespace moveParser
 
         private void SetEnableForAllCheckbox(bool value)
         {
-            this.Invoke((MethodInvoker)delegate {
+            this.Invoke((MethodInvoker)delegate
+            {
                 chkLvl_LevelUpEnd.Enabled = value;
 
                 chkTM_IncludeEgg.Enabled = value;
@@ -301,7 +308,8 @@ namespace moveParser
         {
             SetEnableForAllElements(true);
 
-            this.Invoke((MethodInvoker)delegate {
+            this.Invoke((MethodInvoker)delegate
+            {
                 this.pbar1.Value = 0;
             });
         }
@@ -423,7 +431,7 @@ namespace moveParser
                     mon = customGenData[name.DefName];
                     //mon = CustomData[name.DefName];
                 }
-                catch (KeyNotFoundException) {}
+                catch (KeyNotFoundException) { }
 
                 // begin learnset
                 if (!name.usesBaseFormLearnset)
@@ -991,7 +999,7 @@ namespace moveParser
             MessageBox.Show("Egg moves exported to \"output/egg_moves.h\"", "Success!", MessageBoxButtons.OK);
             SetEnableForAllElements(true);
         }
-    
+
         private string replaceOldDefines(string text)
         {
             text = text
@@ -1002,6 +1010,32 @@ namespace moveParser
                 ;
 
             return text;
+        }
+
+        private void btnOpenInputFolder_Click(object sender, EventArgs e)
+        {
+            if (!Directory.Exists("input"))
+                Directory.CreateDirectory("input");
+
+            ProcessStartInfo startInfo = new ProcessStartInfo
+            {
+                Arguments = "input",
+                FileName = "explorer.exe"
+            };
+            Process.Start(startInfo);
+        }
+
+        private void btnOpenOutputFolder_Click(object sender, EventArgs e)
+        {
+            if (!Directory.Exists("output"))
+                Directory.CreateDirectory("output");
+
+            ProcessStartInfo startInfo = new ProcessStartInfo
+            {
+                Arguments = "output",
+                FileName = "explorer.exe"
+            };
+            Process.Start(startInfo);
         }
     }
 }
