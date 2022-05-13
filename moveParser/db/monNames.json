@@ -6138,7 +6138,7 @@
     "CanHatchFromEgg": true,
     "FormName": "Mime Jr.",
     "VarName": "MimeJr",
-    "DefName": "MIMEJR",
+    "DefName": "MIME_JR",
     "SerebiiFormName": null,
     "SerebiiFormNameAlt": null,
     "SerebiiURL": "mimejr.",
