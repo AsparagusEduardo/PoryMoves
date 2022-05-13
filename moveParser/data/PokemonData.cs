@@ -34,6 +34,9 @@ namespace moveParser.data
         public string SerebiiTMTableName;
 
         public bool usesBaseFormLearnset;
+        public bool ignoresNearUniversalTMs;
+        public bool isGenderless;
+
         public MonName(int nat, string og, bool isfrm, string formtm, string var, string def)
         {
             NatDexNum = nat;

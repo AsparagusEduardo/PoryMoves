@@ -533,7 +533,23 @@ namespace moveParser
             bool oldStyle = !chkTM_Extended.Checked;
 
             // load specified TM list
-            List<string> tmMoves = File.ReadAllLines("input/tm.txt").ToList();
+            List<string> tmMovesTemp = File.ReadAllLines("input/tm.txt").ToList();
+            List<string> tmMoves = new List<string>();
+#if DEBUG
+            string writeText = "";
+#endif
+            foreach (string str in tmMovesTemp)
+            {
+#if DEBUG
+                writeText += str + "\n";
+#endif
+                if (!str.Trim().Equals("") && !str.Trim().StartsWith("//"))
+                    tmMoves.Add(str);
+            }
+#if DEBUG
+            File.WriteAllText("../../input/tm.txt", writeText);
+#endif
+
             // sanity check: old style TM list must be 64 entries or less
             if (tmMoves.Count > 64 && oldStyle)
             {
@@ -589,11 +605,12 @@ namespace moveParser
                     foreach (string move in tmMoves)
                     {
                         string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
-                        if (data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa))
+                        if (data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa)
+                            || (!name.ignoresNearUniversalTMs && move.Contains("*") && !(move.Contains("ATTRACT") && (name.NatDexNum == 290 || name.isGenderless)))) //Gender-unknown and Nincada shouldn't learn Attract.
                         {
                             if (first)
                             {
-                                sets += $"TMHM({move})";
+                                sets += $"TMHM({move.Replace("*", "")})";
                                 first = false;
                             }
                             else
@@ -612,9 +629,10 @@ namespace moveParser
                         foreach (string move in tmMoves)
                         {
                             string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
-                            if (data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa))
+                            if (data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa)
+                                || (!name.ignoresNearUniversalTMs && move.Contains("*") && !(move.Contains("ATTRACT") && (name.NatDexNum == 290 || name.isGenderless)))) //Gender-unknown and Nincada shouldn't learn Attract.
                             {
-                                sets += $"    TMHM({move}),\n";
+                                sets += $"    TMHM({move.Replace("*","")}),\n";
                             }
                         }
                         sets += "    0xFF,\n};\n";
