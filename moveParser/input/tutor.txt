@@ -1,3 +1,5 @@
+// Use this file to define which Tutor Moves are to be used by the system.
+
 MOVE_MEGA_PUNCH
 MOVE_SWORDS_DANCE
 MOVE_MEGA_KICK

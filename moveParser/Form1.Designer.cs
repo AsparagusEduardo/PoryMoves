@@ -325,9 +325,9 @@
             this.chkEgg_Extended.Location = new System.Drawing.Point(4, 189);
             this.chkEgg_Extended.Margin = new System.Windows.Forms.Padding(2);
             this.chkEgg_Extended.Name = "chkEgg_Extended";
-            this.chkEgg_Extended.Size = new System.Drawing.Size(94, 17);
+            this.chkEgg_Extended.Size = new System.Drawing.Size(124, 17);
             this.chkEgg_Extended.TabIndex = 20;
-            this.chkEgg_Extended.Text = "Use new Style";
+            this.chkEgg_Extended.Text = "Align moves to name";
             this.chkEgg_Extended.UseVisualStyleBackColor = true;
             // 
             // btnEgg_All

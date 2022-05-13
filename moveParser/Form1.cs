@@ -768,7 +768,25 @@ namespace moveParser
             bool oldStyle = !chkTutor_Extended.Checked;
 
             // load specified tutor list
-            List<string> tutorMoves = File.ReadAllLines("input/tutor.txt").ToList();
+            List<string> tutorMovesTemp = File.ReadAllLines("input/tutor.txt").ToList();
+            List<string> tutorMoves = new List<string>();
+
+#if DEBUG
+            string writeText = "";
+#endif
+            foreach (string str in tutorMovesTemp)
+            {
+#if DEBUG
+                writeText += str + "\n";
+#endif
+                if (!str.Trim().Equals("") && !str.Trim().StartsWith("//"))
+                    tutorMoves.Add(str);
+            }
+#if DEBUG
+            File.WriteAllText("../../input/tutor.txt", writeText);
+#endif
+
+
             // sanity check: old style tutor list must be 32 entries or less
             if (tutorMoves.Count > 32 && oldStyle)
             {
@@ -1007,10 +1025,13 @@ namespace moveParser
 
             sets += "    EGG_MOVES_TERMINATOR\n};\n";
 
+            if (chkNewDefines.Checked)
+                sets = replaceOldDefines(sets);
+
             // write to file
             File.WriteAllText("output/egg_moves.h", sets);
 
-            bwrkExportTutor.ReportProgress(0);
+            bwrkExportEgg.ReportProgress(0);
             // Set the text.
             UpdateLoadingMessage(namecount + " Egg movesets exported.");
 
