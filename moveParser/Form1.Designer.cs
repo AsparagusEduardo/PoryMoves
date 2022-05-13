@@ -174,7 +174,7 @@
             this.gBoxOptionsTM.Controls.Add(this.btnExportTM);
             this.gBoxOptionsTM.Controls.Add(this.chkTM_IncludeLvl);
             this.gBoxOptionsTM.Controls.Add(this.cListTMMoves);
-            this.gBoxOptionsTM.Location = new System.Drawing.Point(165, 114);
+            this.gBoxOptionsTM.Location = new System.Drawing.Point(165, 193);
             this.gBoxOptionsTM.Margin = new System.Windows.Forms.Padding(2);
             this.gBoxOptionsTM.Name = "gBoxOptionsTM";
             this.gBoxOptionsTM.Padding = new System.Windows.Forms.Padding(2);
@@ -255,7 +255,7 @@
             this.groupBox1.Controls.Add(this.chkLvl_LevelUpEnd);
             this.groupBox1.Controls.Add(this.cListLevelUp);
             this.groupBox1.Controls.Add(this.btnWriteLvlLearnsets);
-            this.groupBox1.Location = new System.Drawing.Point(12, 114);
+            this.groupBox1.Location = new System.Drawing.Point(12, 193);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -308,7 +308,7 @@
             this.groupBox2.Controls.Add(this.btnExportEgg);
             this.groupBox2.Controls.Add(this.chkEgg_IncludeLvl);
             this.groupBox2.Controls.Add(this.cListEggMoves);
-            this.groupBox2.Location = new System.Drawing.Point(318, 114);
+            this.groupBox2.Location = new System.Drawing.Point(320, 193);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -405,7 +405,7 @@
             this.groupBox3.Controls.Add(this.btnExportTutor);
             this.groupBox3.Controls.Add(this.chkTutor_IncludeLvl);
             this.groupBox3.Controls.Add(this.cListTutorMoves);
-            this.groupBox3.Location = new System.Drawing.Point(473, 114);
+            this.groupBox3.Location = new System.Drawing.Point(473, 193);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -525,7 +525,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.chkNewDefines);
-            this.groupBox4.Location = new System.Drawing.Point(10, 425);
+            this.groupBox4.Location = new System.Drawing.Point(12, 115);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(610, 73);
             this.groupBox4.TabIndex = 20;
