@@ -424,16 +424,19 @@ namespace moveParser
                 catch (KeyNotFoundException) {}
 
                 // begin learnset
-                sets += $"\nstatic const struct LevelUpMove s{name.VarName}LevelUpLearnset[] = {{\n";
-
-                if (mon.LevelMoves.Count == 0)
-                    sets += "    LEVEL_UP_MOVE( 1, MOVE_POUND),\n";
-
-                foreach (LevelUpMove move in mon.LevelMoves)
+                if (!name.usesBaseFormLearnset)
                 {
-                    sets += $"    LEVEL_UP_MOVE({move.Level, 2}, {move.Move}),\n";
+                    sets += $"\nstatic const struct LevelUpMove s{name.VarName}LevelUpLearnset[] = {{\n";
+
+                    if (mon.LevelMoves.Count == 0)
+                        sets += "    LEVEL_UP_MOVE( 1, MOVE_POUND),\n";
+
+                    foreach (LevelUpMove move in mon.LevelMoves)
+                    {
+                        sets += $"    LEVEL_UP_MOVE({move.Level,2}, {move.Move}),\n";
+                    }
+                    sets += "    LEVEL_UP_END\n};\n";
                 }
-                sets += "    LEVEL_UP_END\n};\n";
 
                 int percent = i * 100 / namecount;
                 bwrkExportLvl.ReportProgress(percent);
@@ -590,16 +593,19 @@ namespace moveParser
                 }
                 else
                 {
-                    sets += $"\nstatic const u8 s{name.VarName}TMHMLearnset[] =\n{{\n";
-                    foreach (string move in tmMoves)
+                    if (!name.usesBaseFormLearnset)
                     {
-                        string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
-                        if (data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa))
+                        sets += $"\nstatic const u8 s{name.VarName}TMHMLearnset[] =\n{{\n";
+                        foreach (string move in tmMoves)
                         {
-                            sets += $"    TMHM({move}),\n";
+                            string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
+                            if (data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa))
+                            {
+                                sets += $"    TMHM({move}),\n";
+                            }
                         }
+                        sets += "    0xFF,\n};\n";
                     }
-                    sets += "    0xFF,\n};\n";
                 }
 
                 int percent = i * 100 / namecount;
@@ -615,7 +621,10 @@ namespace moveParser
                 sets += "const u8 *const gTMHMLearnsets[] =\n{\n";
                 foreach (MonName name in nameList)
                 {
-                    sets += $"    [SPECIES_{name.DefName}] = s{name.VarName}TMHMLearnset,\n";
+                    if (!name.usesBaseFormLearnset)
+                        sets += $"    [SPECIES_{name.DefName}] = s{name.VarName}TMHMLearnset,\n";
+                    else
+                        sets += $"    [SPECIES_{name.DefName}] = s{nameList[name.NatDexNum - 1].VarName}TMHMLearnset,\n";
                 }
                 sets += "};";
             }
@@ -796,16 +805,19 @@ namespace moveParser
                 }
                 else
                 {
-                    sets += $"\nstatic const u8 s{entry.VarName}TutorLearnset[] =\n{{\n";
-                    foreach (string move in tutorMoves)
+                    if (!entry.usesBaseFormLearnset)
                     {
-                        string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
-                        if (data.TMMoves.Contains(aa) || lvlMoves[entry.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa))
+                        sets += $"\nstatic const u8 s{entry.VarName}TutorLearnset[] =\n{{\n";
+                        foreach (string move in tutorMoves)
                         {
-                            sets += $"    TUTOR({move}),\n";
+                            string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
+                            if (data.TMMoves.Contains(aa) || lvlMoves[entry.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa))
+                            {
+                                sets += $"    TUTOR({move}),\n";
+                            }
                         }
+                        sets += "    0xFF,\n};\n";
                     }
-                    sets += "    0xFF,\n};\n";
                 }
 
                 int percent = i * 100 / namecount;
@@ -823,7 +835,10 @@ namespace moveParser
                 sets += "const u8 *const sTutorLearnsets[] =\n{\n    [SPECIES_NONE] = sNoneTutorLearnset,\n";
                 foreach (MonName name in nameList)
                 {
-                    sets += $"    [SPECIES_{name.DefName}] = s{name.VarName}TutorLearnset,\n";
+                    if (!name.usesBaseFormLearnset)
+                        sets += $"    [SPECIES_{name.DefName}] = s{name.VarName}TutorLearnset,\n";
+                    else
+                        sets += $"    [SPECIES_{name.DefName}] = s{nameList[name.NatDexNum - 1].VarName}TutorLearnset,\n";
                 }
                 sets += "};\n";
             }

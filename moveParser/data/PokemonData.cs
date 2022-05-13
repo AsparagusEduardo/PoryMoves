@@ -32,6 +32,8 @@ namespace moveParser.data
         public string SerebiiURL;
         public string SerebiiLevelUpTableName;
         public string SerebiiTMTableName;
+
+        public bool usesBaseFormLearnset;
         public MonName(int nat, string og, bool isfrm, string formtm, string var, string def)
         {
             NatDexNum = nat;
