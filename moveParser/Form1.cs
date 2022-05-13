@@ -292,6 +292,8 @@ namespace moveParser
                 chkEgg_IncludeLvl.Enabled = value;
                 chkEgg_IncludeTM.Enabled = value;
                 chkEgg_IncludeTutor.Enabled = value;
+
+                chkNewDefines.Enabled = value;
             });
         }
 
@@ -444,6 +446,9 @@ namespace moveParser
                 UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Level Up movesets exported.");
                 i++;
             }
+            if (chkNewDefines.Checked)
+                sets = replaceOldDefines(sets);
+
             // write to file
             File.WriteAllText("output/level_up_learnsets.h", sets);
 
@@ -628,6 +633,8 @@ namespace moveParser
                 }
                 sets += "};";
             }
+            if (chkNewDefines.Checked)
+                sets = replaceOldDefines(sets);
 
             // write to file
             File.WriteAllText("output/tmhm_learnsets.h", sets);
@@ -842,6 +849,8 @@ namespace moveParser
                 }
                 sets += "};\n";
             }
+            if (chkNewDefines.Checked)
+                sets = replaceOldDefines(sets);
 
             // write to file
             File.WriteAllText("output/tutor_learnsets.h", sets);
@@ -981,6 +990,18 @@ namespace moveParser
 
             MessageBox.Show("Egg moves exported to \"output/egg_moves.h\"", "Success!", MessageBoxButtons.OK);
             SetEnableForAllElements(true);
+        }
+    
+        private string replaceOldDefines(string text)
+        {
+            text = text
+                .Replace("MOVE_FAINT_ATTACK", "MOVE_FEINT_ATTACK")
+                .Replace("MOVE_SMELLING_SALT", "MOVE_SMELLING_SALTS")
+                .Replace("MOVE_VICE_GRIP", "MOVE_VISE_GRIP")
+                .Replace("MOVE_HI_JUMP_KICK", "MOVE_HIGH_JUMP_KICK")
+                ;
+
+            return text;
         }
     }
 }
