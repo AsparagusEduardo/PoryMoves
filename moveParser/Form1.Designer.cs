@@ -535,6 +535,8 @@
             // chkNewDefines
             // 
             this.chkNewDefines.AutoSize = true;
+            this.chkNewDefines.Checked = true;
+            this.chkNewDefines.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkNewDefines.Location = new System.Drawing.Point(5, 18);
             this.chkNewDefines.Margin = new System.Windows.Forms.Padding(2);
             this.chkNewDefines.Name = "chkNewDefines";

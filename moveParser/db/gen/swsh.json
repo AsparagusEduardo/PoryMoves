@@ -81883,6 +81883,270 @@
     ],
     "TutorMoves": []
   },
+  "TOXTRICITY_LOW_KEY": {
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_SPARK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_SPARK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_EERIE_IMPULSE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_BELCH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_TEARFUL_LOOK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_NUZZLE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_GROWL"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_FLAIL"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ACID"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_THUNDER_SHOCK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ACID_SPRAY"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_LEER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_NOBLE_ROAR"
+      },
+      {
+        "Level": 4,
+        "Move": "MOVE_CHARGE"
+      },
+      {
+        "Level": 8,
+        "Move": "MOVE_SHOCK_WAVE"
+      },
+      {
+        "Level": 12,
+        "Move": "MOVE_SCARY_FACE"
+      },
+      {
+        "Level": 16,
+        "Move": "MOVE_TAUNT"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_VENOM_DRENCH"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_SCREECH"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_SWAGGER"
+      },
+      {
+        "Level": 32,
+        "Move": "MOVE_TOXIC"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_DISCHARGE"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_POISON_JAB"
+      },
+      {
+        "Level": 44,
+        "Move": "MOVE_OVERDRIVE"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_BOOMBURST"
+      },
+      {
+        "Level": 52,
+        "Move": "MOVE_MAGNETIC_FLUX"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_MEGA_PUNCH",
+      "MOVE_MEGA_KICK",
+      "MOVE_FIRE_PUNCH",
+      "MOVE_THUNDER_PUNCH",
+      "MOVE_HYPER_BEAM",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_THUNDER_WAVE",
+      "MOVE_SCREECH",
+      "MOVE_REST",
+      "MOVE_SNORE",
+      "MOVE_PROTECT",
+      "MOVE_SCARY_FACE",
+      "MOVE_ATTRACT",
+      "MOVE_FACADE",
+      "MOVE_SWIFT",
+      "MOVE_PAYBACK",
+      "MOVE_FLING",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_ROUND",
+      "MOVE_HEX",
+      "MOVE_VOLT_SWITCH",
+      "MOVE_SNARL",
+      "MOVE_EERIE_IMPULSE",
+      "MOVE_THUNDERBOLT",
+      "MOVE_THUNDER",
+      "MOVE_SUBSTITUTE",
+      "MOVE_SLUDGE_BOMB",
+      "MOVE_ENDURE",
+      "MOVE_SLEEP_TALK",
+      "MOVE_ENCORE",
+      "MOVE_UPROAR",
+      "MOVE_TAUNT",
+      "MOVE_HYPER_VOICE",
+      "MOVE_POISON_JAB",
+      "MOVE_GUNK_SHOT",
+      "MOVE_SLUDGE_WAVE",
+      "MOVE_ELECTRO_BALL",
+      "MOVE_STORED_POWER",
+      "MOVE_WILD_CHARGE",
+      "MOVE_VENOM_DRENCH",
+      "MOVE_THROAT_CHOP"
+    ],
+    "EggMoves": [
+      "MOVE_ENDEAVOR",
+      "MOVE_METAL_SOUND",
+      "MOVE_POWER_UP_PUNCH"
+    ],
+    "TutorMoves": [
+      "MOVE_RISING_VOLTAGE"
+    ]
+  },
+  "INDEEDEE_FEMALE": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_STORED_POWER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_PLAY_NICE"
+      },
+      {
+        "Level": 5,
+        "Move": "MOVE_BATON_PASS"
+      },
+      {
+        "Level": 10,
+        "Move": "MOVE_DISARMING_VOICE"
+      },
+      {
+        "Level": 15,
+        "Move": "MOVE_PSYBEAM"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_HELPING_HAND"
+      },
+      {
+        "Level": 25,
+        "Move": "MOVE_FOLLOW_ME"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_AROMATHERAPY"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_PSYCHIC"
+      },
+      {
+        "Level": 40,
+        "Move": "MOVE_CALM_MIND"
+      },
+      {
+        "Level": 45,
+        "Move": "MOVE_GUARD_SPLIT"
+      },
+      {
+        "Level": 50,
+        "Move": "MOVE_PSYCHIC_TERRAIN"
+      },
+      {
+        "Level": 55,
+        "Move": "MOVE_HEALING_WISH"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_PAY_DAY",
+      "MOVE_MAGICAL_LEAF",
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_REFLECT",
+      "MOVE_SAFEGUARD",
+      "MOVE_REST",
+      "MOVE_SNORE",
+      "MOVE_PROTECT",
+      "MOVE_ATTRACT",
+      "MOVE_FACADE",
+      "MOVE_SWIFT",
+      "MOVE_HELPING_HAND",
+      "MOVE_IMPRISON",
+      "MOVE_GUARD_SWAP",
+      "MOVE_DRAIN_PUNCH",
+      "MOVE_ROUND",
+      "MOVE_DRAINING_KISS",
+      "MOVE_PSYCHIC_TERRAIN",
+      "MOVE_MYSTICAL_FIRE",
+      "MOVE_PSYCHIC",
+      "MOVE_METRONOME",
+      "MOVE_SUBSTITUTE",
+      "MOVE_PSYSHOCK",
+      "MOVE_ENDURE",
+      "MOVE_SLEEP_TALK",
+      "MOVE_BATON_PASS",
+      "MOVE_SHADOW_BALL",
+      "MOVE_FUTURE_SIGHT",
+      "MOVE_TRICK",
+      "MOVE_HYPER_VOICE",
+      "MOVE_CALM_MIND",
+      "MOVE_ENERGY_BALL",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_STORED_POWER",
+      "MOVE_ALLY_SWITCH",
+      "MOVE_PLAY_ROUGH",
+      "MOVE_DAZZLING_GLEAM"
+    ],
+    "EggMoves": [
+      "MOVE_FAKE_OUT",
+      "MOVE_HEAL_PULSE",
+      "MOVE_PSYCH_UP",
+      "MOVE_PSYCHO_SHIFT"
+    ],
+    "TutorMoves": [
+      "MOVE_TERRAIN_PULSE",
+      "MOVE_EXPANDING_FORCE"
+    ]
+  },
   "URSHIFU_RAPID_STRIKE_STYLE": {
     "LevelMoves": [
       {

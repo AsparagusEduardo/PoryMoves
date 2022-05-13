@@ -11720,7 +11720,7 @@
     "IsBaseForm": true,
     "CanHatchFromEgg": true,
     "FormName": "Jangmo-o",
-    "VarName": "JangmoO",
+    "VarName": "Jangmoo",
     "DefName": "JANGMO_O",
     "SerebiiFormName": null,
     "SerebiiFormNameAlt": null,
@@ -14112,7 +14112,7 @@
     "SerebiiURL": null,
     "SerebiiLevelUpTableName": "Standard Level Up",
     "SerebiiTMTableName": null,
-    "usesBaseFormLearnset": false
+    "usesBaseFormLearnset": true
   },
   {
     "NatDexNum": 479,
@@ -14127,7 +14127,7 @@
     "SerebiiURL": null,
     "SerebiiLevelUpTableName": "Standard Level Up",
     "SerebiiTMTableName": null,
-    "usesBaseFormLearnset": false
+    "usesBaseFormLearnset": true
   },
   {
     "NatDexNum": 479,
@@ -14142,7 +14142,7 @@
     "SerebiiURL": null,
     "SerebiiLevelUpTableName": "Standard Level Up",
     "SerebiiTMTableName": null,
-    "usesBaseFormLearnset": false
+    "usesBaseFormLearnset": true
   },
   {
     "NatDexNum": 479,
@@ -14157,7 +14157,7 @@
     "SerebiiURL": null,
     "SerebiiLevelUpTableName": "Standard Level Up",
     "SerebiiTMTableName": null,
-    "usesBaseFormLearnset": false
+    "usesBaseFormLearnset": true
   },
   {
     "NatDexNum": 479,
@@ -14172,7 +14172,7 @@
     "SerebiiURL": null,
     "SerebiiLevelUpTableName": "Standard Level Up",
     "SerebiiTMTableName": null,
-    "usesBaseFormLearnset": false
+    "usesBaseFormLearnset": true
   },
   {
     "NatDexNum": 492,
@@ -14291,6 +14291,36 @@
     "SerebiiFormNameAlt": null,
     "SerebiiURL": null,
     "SerebiiLevelUpTableName": "Level Up - Dusk Form",
+    "SerebiiTMTableName": "Technical Machine Attacks",
+    "usesBaseFormLearnset": false
+  },
+  {
+    "NatDexNum": 849,
+    "SpeciesName": "Toxtricity",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": false,
+    "FormName": "Low Key Form",
+    "VarName": "ToxtricityLowKey",
+    "DefName": "TOXTRICITY_LOW_KEY",
+    "SerebiiFormName": "Low Key Form",
+    "SerebiiFormNameAlt": null,
+    "SerebiiURL": null,
+    "SerebiiLevelUpTableName": "Level Up - Low Key Form",
+    "SerebiiTMTableName": "Technical Machine Attacks",
+    "usesBaseFormLearnset": false
+  },
+  {
+    "NatDexNum": 876,
+    "SpeciesName": "Indeedee",
+    "IsBaseForm": false,
+    "CanHatchFromEgg": true,
+    "FormName": "Female Indeedee",
+    "VarName": "IndeedeeFemale",
+    "DefName": "INDEEDEE_FEMALE",
+    "SerebiiFormName": "Female",
+    "SerebiiFormNameAlt": null,
+    "SerebiiURL": null,
+    "SerebiiLevelUpTableName": "Level Up - Female",
     "SerebiiTMTableName": "Technical Machine Attacks",
     "usesBaseFormLearnset": false
   },
