@@ -89,6 +89,7 @@
             this.btnLoadFromSerebii.TabIndex = 0;
             this.btnLoadFromSerebii.Text = "Load from Internet";
             this.btnLoadFromSerebii.UseVisualStyleBackColor = true;
+            this.btnLoadFromSerebii.Visible = false;
             this.btnLoadFromSerebii.Click += new System.EventHandler(this.btnLoadFromSerebii_Click);
             // 
             // pbar1
@@ -136,6 +137,7 @@
             this.cmbGeneration.Name = "cmbGeneration";
             this.cmbGeneration.Size = new System.Drawing.Size(70, 21);
             this.cmbGeneration.TabIndex = 5;
+            this.cmbGeneration.Visible = false;
             // 
             // btnWriteLvlLearnsets
             // 

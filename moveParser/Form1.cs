@@ -34,6 +34,11 @@ namespace moveParser
             LoadGenerationData();
             cmbGeneration.SelectedIndex = 0;
 
+#if DEBUG
+            cmbGeneration.Visible = true;
+            btnLoadFromSerebii.Visible = true;
+#endif
+
             MoveData = MovesData.GetMoveDataFromFile("db/moveNames.json");
         }
 
@@ -976,7 +981,7 @@ namespace moveParser
                 int percent = i * 100 / namecount;
                 bwrkExportEgg.ReportProgress(percent);
             }
-            bool oldStyle = !chkEgg_Extended.Checked;
+            bool oldStyle = chkEgg_Extended.Checked;
 
             // file header
             string sets = "#define EGG_MOVES_SPECIES_OFFSET 20000\n" +
