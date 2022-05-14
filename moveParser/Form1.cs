@@ -610,7 +610,8 @@ namespace moveParser
                     foreach (string move in tmMoves)
                     {
                         string aa = $"MOVE{move.Substring(move.IndexOf('_'))}";
-                        if (data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa)
+                        if (name.NatDexNum == 151 // Mew can learn all TMs
+                            || data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa)
                             || (!name.ignoresNearUniversalTMs && move.Contains("*") && !(move.Contains("ATTRACT") && (name.NatDexNum == 290 || name.isGenderless)))) //Gender-unknown and Nincada shouldn't learn Attract.
                         {
                             if (first)
