@@ -33,7 +33,6 @@
             this.pbar1 = new System.Windows.Forms.ProgressBar();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.lblLoading = new System.Windows.Forms.Label();
-            this.lblOptions = new System.Windows.Forms.Label();
             this.cmbGeneration = new System.Windows.Forms.ComboBox();
             this.btnWriteLvlLearnsets = new System.Windows.Forms.Button();
             this.bwrkExportLvl = new System.ComponentModel.BackgroundWorker();
@@ -68,7 +67,6 @@
             this.bwrkExportTM = new System.ComponentModel.BackgroundWorker();
             this.bwrkExportTutor = new System.ComponentModel.BackgroundWorker();
             this.bwrkExportEgg = new System.ComponentModel.BackgroundWorker();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.chkNewDefines = new System.Windows.Forms.CheckBox();
             this.btnOpenOutputFolder = new System.Windows.Forms.Button();
@@ -82,7 +80,7 @@
             // 
             // btnLoadFromSerebii
             // 
-            this.btnLoadFromSerebii.Location = new System.Drawing.Point(394, 10);
+            this.btnLoadFromSerebii.Location = new System.Drawing.Point(305, 11);
             this.btnLoadFromSerebii.Margin = new System.Windows.Forms.Padding(2);
             this.btnLoadFromSerebii.Name = "btnLoadFromSerebii";
             this.btnLoadFromSerebii.Size = new System.Drawing.Size(103, 28);
@@ -94,10 +92,10 @@
             // 
             // pbar1
             // 
-            this.pbar1.Location = new System.Drawing.Point(16, 46);
+            this.pbar1.Location = new System.Drawing.Point(12, 46);
             this.pbar1.Margin = new System.Windows.Forms.Padding(2);
             this.pbar1.Name = "pbar1";
-            this.pbar1.Size = new System.Drawing.Size(606, 19);
+            this.pbar1.Size = new System.Drawing.Size(610, 19);
             this.pbar1.TabIndex = 1;
             // 
             // backgroundWorker1
@@ -109,7 +107,7 @@
             // 
             // lblLoading
             // 
-            this.lblLoading.Location = new System.Drawing.Point(7, 7);
+            this.lblLoading.Location = new System.Drawing.Point(9, 9);
             this.lblLoading.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLoading.Name = "lblLoading";
             this.lblLoading.Size = new System.Drawing.Size(255, 26);
@@ -117,31 +115,21 @@
             this.lblLoading.Text = "Welcome!";
             this.lblLoading.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblOptions
-            // 
-            this.lblOptions.AutoSize = true;
-            this.lblOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOptions.Location = new System.Drawing.Point(7, 89);
-            this.lblOptions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblOptions.Name = "lblOptions";
-            this.lblOptions.Size = new System.Drawing.Size(90, 13);
-            this.lblOptions.TabIndex = 3;
-            this.lblOptions.Text = "Export Options";
-            // 
             // cmbGeneration
             // 
             this.cmbGeneration.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGeneration.FormattingEnabled = true;
-            this.cmbGeneration.Location = new System.Drawing.Point(319, 15);
+            this.cmbGeneration.Location = new System.Drawing.Point(243, 14);
             this.cmbGeneration.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGeneration.Name = "cmbGeneration";
-            this.cmbGeneration.Size = new System.Drawing.Size(70, 21);
+            this.cmbGeneration.Size = new System.Drawing.Size(58, 21);
             this.cmbGeneration.TabIndex = 5;
             this.cmbGeneration.Visible = false;
             // 
             // btnWriteLvlLearnsets
             // 
-            this.btnWriteLvlLearnsets.Location = new System.Drawing.Point(8, 277);
+            this.btnWriteLvlLearnsets.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWriteLvlLearnsets.Location = new System.Drawing.Point(10, 339);
             this.btnWriteLvlLearnsets.Margin = new System.Windows.Forms.Padding(2);
             this.btnWriteLvlLearnsets.Name = "btnWriteLvlLearnsets";
             this.btnWriteLvlLearnsets.Size = new System.Drawing.Size(135, 22);
@@ -159,6 +147,7 @@
             // cListTMMoves
             // 
             this.cListTMMoves.CheckOnClick = true;
+            this.cListTMMoves.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cListTMMoves.FormattingEnabled = true;
             this.cListTMMoves.Items.AddRange(new object[] {
             "SWSH",
@@ -166,7 +155,7 @@
             this.cListTMMoves.Location = new System.Drawing.Point(4, 20);
             this.cListTMMoves.Margin = new System.Windows.Forms.Padding(2);
             this.cListTMMoves.Name = "cListTMMoves";
-            this.cListTMMoves.Size = new System.Drawing.Size(136, 139);
+            this.cListTMMoves.Size = new System.Drawing.Size(136, 199);
             this.cListTMMoves.TabIndex = 12;
             // 
             // gBoxOptionsTM
@@ -178,18 +167,20 @@
             this.gBoxOptionsTM.Controls.Add(this.btnExportTM);
             this.gBoxOptionsTM.Controls.Add(this.chkTM_IncludeLvl);
             this.gBoxOptionsTM.Controls.Add(this.cListTMMoves);
-            this.gBoxOptionsTM.Location = new System.Drawing.Point(165, 193);
+            this.gBoxOptionsTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBoxOptionsTM.Location = new System.Drawing.Point(165, 124);
             this.gBoxOptionsTM.Margin = new System.Windows.Forms.Padding(2);
             this.gBoxOptionsTM.Name = "gBoxOptionsTM";
             this.gBoxOptionsTM.Padding = new System.Windows.Forms.Padding(2);
-            this.gBoxOptionsTM.Size = new System.Drawing.Size(149, 306);
+            this.gBoxOptionsTM.Size = new System.Drawing.Size(149, 375);
             this.gBoxOptionsTM.TabIndex = 13;
             this.gBoxOptionsTM.TabStop = false;
             this.gBoxOptionsTM.Text = "TM/HM/TR Moves";
             // 
             // btnTM_All
             // 
-            this.btnTM_All.Location = new System.Drawing.Point(4, 163);
+            this.btnTM_All.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTM_All.Location = new System.Drawing.Point(5, 225);
             this.btnTM_All.Margin = new System.Windows.Forms.Padding(2);
             this.btnTM_All.Name = "btnTM_All";
             this.btnTM_All.Size = new System.Drawing.Size(135, 22);
@@ -201,7 +192,8 @@
             // chkTM_Extended
             // 
             this.chkTM_Extended.AutoSize = true;
-            this.chkTM_Extended.Location = new System.Drawing.Point(4, 190);
+            this.chkTM_Extended.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTM_Extended.Location = new System.Drawing.Point(5, 252);
             this.chkTM_Extended.Margin = new System.Windows.Forms.Padding(2);
             this.chkTM_Extended.Name = "chkTM_Extended";
             this.chkTM_Extended.Size = new System.Drawing.Size(125, 17);
@@ -212,7 +204,8 @@
             // chkTM_IncludeTutor
             // 
             this.chkTM_IncludeTutor.AutoSize = true;
-            this.chkTM_IncludeTutor.Location = new System.Drawing.Point(4, 255);
+            this.chkTM_IncludeTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTM_IncludeTutor.Location = new System.Drawing.Point(5, 317);
             this.chkTM_IncludeTutor.Margin = new System.Windows.Forms.Padding(2);
             this.chkTM_IncludeTutor.Name = "chkTM_IncludeTutor";
             this.chkTM_IncludeTutor.Size = new System.Drawing.Size(124, 17);
@@ -223,7 +216,8 @@
             // chkTM_IncludeEgg
             // 
             this.chkTM_IncludeEgg.AutoSize = true;
-            this.chkTM_IncludeEgg.Location = new System.Drawing.Point(4, 233);
+            this.chkTM_IncludeEgg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTM_IncludeEgg.Location = new System.Drawing.Point(5, 295);
             this.chkTM_IncludeEgg.Margin = new System.Windows.Forms.Padding(2);
             this.chkTM_IncludeEgg.Name = "chkTM_IncludeEgg";
             this.chkTM_IncludeEgg.Size = new System.Drawing.Size(118, 17);
@@ -233,7 +227,8 @@
             // 
             // btnExportTM
             // 
-            this.btnExportTM.Location = new System.Drawing.Point(4, 277);
+            this.btnExportTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportTM.Location = new System.Drawing.Point(5, 339);
             this.btnExportTM.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportTM.Name = "btnExportTM";
             this.btnExportTM.Size = new System.Drawing.Size(135, 22);
@@ -245,7 +240,8 @@
             // chkTM_IncludeLvl
             // 
             this.chkTM_IncludeLvl.AutoSize = true;
-            this.chkTM_IncludeLvl.Location = new System.Drawing.Point(4, 212);
+            this.chkTM_IncludeLvl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTM_IncludeLvl.Location = new System.Drawing.Point(5, 274);
             this.chkTM_IncludeLvl.Margin = new System.Windows.Forms.Padding(2);
             this.chkTM_IncludeLvl.Name = "chkTM_IncludeLvl";
             this.chkTM_IncludeLvl.Size = new System.Drawing.Size(142, 17);
@@ -259,18 +255,20 @@
             this.groupBox1.Controls.Add(this.chkLvl_LevelUpEnd);
             this.groupBox1.Controls.Add(this.cListLevelUp);
             this.groupBox1.Controls.Add(this.btnWriteLvlLearnsets);
-            this.groupBox1.Location = new System.Drawing.Point(12, 193);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 124);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(149, 306);
+            this.groupBox1.Size = new System.Drawing.Size(149, 375);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Level Up Moves";
             // 
             // btnLvl_All
             // 
-            this.btnLvl_All.Location = new System.Drawing.Point(4, 163);
+            this.btnLvl_All.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLvl_All.Location = new System.Drawing.Point(6, 225);
             this.btnLvl_All.Margin = new System.Windows.Forms.Padding(2);
             this.btnLvl_All.Name = "btnLvl_All";
             this.btnLvl_All.Size = new System.Drawing.Size(135, 22);
@@ -282,7 +280,8 @@
             // chkLvl_LevelUpEnd
             // 
             this.chkLvl_LevelUpEnd.AutoSize = true;
-            this.chkLvl_LevelUpEnd.Location = new System.Drawing.Point(8, 190);
+            this.chkLvl_LevelUpEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLvl_LevelUpEnd.Location = new System.Drawing.Point(10, 252);
             this.chkLvl_LevelUpEnd.Margin = new System.Windows.Forms.Padding(2);
             this.chkLvl_LevelUpEnd.Name = "chkLvl_LevelUpEnd";
             this.chkLvl_LevelUpEnd.Size = new System.Drawing.Size(131, 17);
@@ -293,6 +292,7 @@
             // cListLevelUp
             // 
             this.cListLevelUp.CheckOnClick = true;
+            this.cListLevelUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cListLevelUp.FormattingEnabled = true;
             this.cListLevelUp.Items.AddRange(new object[] {
             "SWSH",
@@ -300,7 +300,7 @@
             this.cListLevelUp.Location = new System.Drawing.Point(4, 20);
             this.cListLevelUp.Margin = new System.Windows.Forms.Padding(2);
             this.cListLevelUp.Name = "cListLevelUp";
-            this.cListLevelUp.Size = new System.Drawing.Size(136, 139);
+            this.cListLevelUp.Size = new System.Drawing.Size(136, 199);
             this.cListLevelUp.TabIndex = 12;
             // 
             // groupBox2
@@ -312,11 +312,12 @@
             this.groupBox2.Controls.Add(this.btnExportEgg);
             this.groupBox2.Controls.Add(this.chkEgg_IncludeLvl);
             this.groupBox2.Controls.Add(this.cListEggMoves);
-            this.groupBox2.Location = new System.Drawing.Point(320, 193);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(320, 124);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(149, 306);
+            this.groupBox2.Size = new System.Drawing.Size(149, 375);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Egg Moves";
@@ -324,7 +325,8 @@
             // chkEgg_Extended
             // 
             this.chkEgg_Extended.AutoSize = true;
-            this.chkEgg_Extended.Location = new System.Drawing.Point(4, 189);
+            this.chkEgg_Extended.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEgg_Extended.Location = new System.Drawing.Point(4, 251);
             this.chkEgg_Extended.Margin = new System.Windows.Forms.Padding(2);
             this.chkEgg_Extended.Name = "chkEgg_Extended";
             this.chkEgg_Extended.Size = new System.Drawing.Size(124, 17);
@@ -334,7 +336,8 @@
             // 
             // btnEgg_All
             // 
-            this.btnEgg_All.Location = new System.Drawing.Point(4, 163);
+            this.btnEgg_All.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEgg_All.Location = new System.Drawing.Point(4, 225);
             this.btnEgg_All.Margin = new System.Windows.Forms.Padding(2);
             this.btnEgg_All.Name = "btnEgg_All";
             this.btnEgg_All.Size = new System.Drawing.Size(135, 22);
@@ -346,7 +349,8 @@
             // chkEgg_IncludeTutor
             // 
             this.chkEgg_IncludeTutor.AutoSize = true;
-            this.chkEgg_IncludeTutor.Location = new System.Drawing.Point(4, 254);
+            this.chkEgg_IncludeTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEgg_IncludeTutor.Location = new System.Drawing.Point(4, 316);
             this.chkEgg_IncludeTutor.Margin = new System.Windows.Forms.Padding(2);
             this.chkEgg_IncludeTutor.Name = "chkEgg_IncludeTutor";
             this.chkEgg_IncludeTutor.Size = new System.Drawing.Size(124, 17);
@@ -357,7 +361,8 @@
             // chkEgg_IncludeTM
             // 
             this.chkEgg_IncludeTM.AutoSize = true;
-            this.chkEgg_IncludeTM.Location = new System.Drawing.Point(4, 232);
+            this.chkEgg_IncludeTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEgg_IncludeTM.Location = new System.Drawing.Point(4, 294);
             this.chkEgg_IncludeTM.Margin = new System.Windows.Forms.Padding(2);
             this.chkEgg_IncludeTM.Name = "chkEgg_IncludeTM";
             this.chkEgg_IncludeTM.Size = new System.Drawing.Size(115, 17);
@@ -367,7 +372,8 @@
             // 
             // btnExportEgg
             // 
-            this.btnExportEgg.Location = new System.Drawing.Point(4, 276);
+            this.btnExportEgg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportEgg.Location = new System.Drawing.Point(4, 338);
             this.btnExportEgg.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportEgg.Name = "btnExportEgg";
             this.btnExportEgg.Size = new System.Drawing.Size(135, 22);
@@ -379,7 +385,8 @@
             // chkEgg_IncludeLvl
             // 
             this.chkEgg_IncludeLvl.AutoSize = true;
-            this.chkEgg_IncludeLvl.Location = new System.Drawing.Point(4, 211);
+            this.chkEgg_IncludeLvl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEgg_IncludeLvl.Location = new System.Drawing.Point(4, 273);
             this.chkEgg_IncludeLvl.Margin = new System.Windows.Forms.Padding(2);
             this.chkEgg_IncludeLvl.Name = "chkEgg_IncludeLvl";
             this.chkEgg_IncludeLvl.Size = new System.Drawing.Size(142, 17);
@@ -390,6 +397,7 @@
             // cListEggMoves
             // 
             this.cListEggMoves.CheckOnClick = true;
+            this.cListEggMoves.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cListEggMoves.FormattingEnabled = true;
             this.cListEggMoves.Items.AddRange(new object[] {
             "SWSH",
@@ -397,7 +405,7 @@
             this.cListEggMoves.Location = new System.Drawing.Point(4, 20);
             this.cListEggMoves.Margin = new System.Windows.Forms.Padding(2);
             this.cListEggMoves.Name = "cListEggMoves";
-            this.cListEggMoves.Size = new System.Drawing.Size(136, 139);
+            this.cListEggMoves.Size = new System.Drawing.Size(136, 199);
             this.cListEggMoves.TabIndex = 12;
             // 
             // groupBox3
@@ -409,11 +417,12 @@
             this.groupBox3.Controls.Add(this.btnExportTutor);
             this.groupBox3.Controls.Add(this.chkTutor_IncludeLvl);
             this.groupBox3.Controls.Add(this.cListTutorMoves);
-            this.groupBox3.Location = new System.Drawing.Point(473, 193);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(473, 124);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(149, 306);
+            this.groupBox3.Size = new System.Drawing.Size(149, 375);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tutor Moves";
@@ -421,7 +430,8 @@
             // chkTutor_Extended
             // 
             this.chkTutor_Extended.AutoSize = true;
-            this.chkTutor_Extended.Location = new System.Drawing.Point(4, 189);
+            this.chkTutor_Extended.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTutor_Extended.Location = new System.Drawing.Point(4, 251);
             this.chkTutor_Extended.Margin = new System.Windows.Forms.Padding(2);
             this.chkTutor_Extended.Name = "chkTutor_Extended";
             this.chkTutor_Extended.Size = new System.Drawing.Size(134, 17);
@@ -431,7 +441,8 @@
             // 
             // btnTutor_All
             // 
-            this.btnTutor_All.Location = new System.Drawing.Point(4, 163);
+            this.btnTutor_All.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTutor_All.Location = new System.Drawing.Point(4, 225);
             this.btnTutor_All.Margin = new System.Windows.Forms.Padding(2);
             this.btnTutor_All.Name = "btnTutor_All";
             this.btnTutor_All.Size = new System.Drawing.Size(135, 22);
@@ -443,7 +454,8 @@
             // chkTutor_IncludeTM
             // 
             this.chkTutor_IncludeTM.AutoSize = true;
-            this.chkTutor_IncludeTM.Location = new System.Drawing.Point(4, 254);
+            this.chkTutor_IncludeTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTutor_IncludeTM.Location = new System.Drawing.Point(4, 316);
             this.chkTutor_IncludeTM.Margin = new System.Windows.Forms.Padding(2);
             this.chkTutor_IncludeTM.Name = "chkTutor_IncludeTM";
             this.chkTutor_IncludeTM.Size = new System.Drawing.Size(115, 17);
@@ -454,7 +466,8 @@
             // chkTutor_IncludeEgg
             // 
             this.chkTutor_IncludeEgg.AutoSize = true;
-            this.chkTutor_IncludeEgg.Location = new System.Drawing.Point(4, 232);
+            this.chkTutor_IncludeEgg.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTutor_IncludeEgg.Location = new System.Drawing.Point(4, 294);
             this.chkTutor_IncludeEgg.Margin = new System.Windows.Forms.Padding(2);
             this.chkTutor_IncludeEgg.Name = "chkTutor_IncludeEgg";
             this.chkTutor_IncludeEgg.Size = new System.Drawing.Size(118, 17);
@@ -464,7 +477,8 @@
             // 
             // btnExportTutor
             // 
-            this.btnExportTutor.Location = new System.Drawing.Point(4, 276);
+            this.btnExportTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportTutor.Location = new System.Drawing.Point(4, 338);
             this.btnExportTutor.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportTutor.Name = "btnExportTutor";
             this.btnExportTutor.Size = new System.Drawing.Size(135, 22);
@@ -476,7 +490,8 @@
             // chkTutor_IncludeLvl
             // 
             this.chkTutor_IncludeLvl.AutoSize = true;
-            this.chkTutor_IncludeLvl.Location = new System.Drawing.Point(4, 211);
+            this.chkTutor_IncludeLvl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTutor_IncludeLvl.Location = new System.Drawing.Point(4, 273);
             this.chkTutor_IncludeLvl.Margin = new System.Windows.Forms.Padding(2);
             this.chkTutor_IncludeLvl.Name = "chkTutor_IncludeLvl";
             this.chkTutor_IncludeLvl.Size = new System.Drawing.Size(142, 17);
@@ -487,6 +502,7 @@
             // cListTutorMoves
             // 
             this.cListTutorMoves.CheckOnClick = true;
+            this.cListTutorMoves.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cListTutorMoves.FormattingEnabled = true;
             this.cListTutorMoves.Items.AddRange(new object[] {
             "SWSH",
@@ -494,7 +510,7 @@
             this.cListTutorMoves.Location = new System.Drawing.Point(4, 20);
             this.cListTutorMoves.Margin = new System.Windows.Forms.Padding(2);
             this.cListTutorMoves.Name = "cListTutorMoves";
-            this.cListTutorMoves.Size = new System.Drawing.Size(136, 139);
+            this.cListTutorMoves.Size = new System.Drawing.Size(136, 199);
             this.cListTutorMoves.TabIndex = 12;
             // 
             // bwrkExportTM
@@ -516,22 +532,13 @@
             this.bwrkExportEgg.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwrkExportEgg_DoWork);
             this.bwrkExportEgg.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(502, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 31);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "(This WILL take a while)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.chkNewDefines);
-            this.groupBox4.Location = new System.Drawing.Point(12, 115);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(12, 70);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(610, 73);
+            this.groupBox4.Size = new System.Drawing.Size(610, 49);
             this.groupBox4.TabIndex = 20;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "General Options";
@@ -541,6 +548,7 @@
             this.chkNewDefines.AutoSize = true;
             this.chkNewDefines.Checked = true;
             this.chkNewDefines.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkNewDefines.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkNewDefines.Location = new System.Drawing.Point(5, 18);
             this.chkNewDefines.Margin = new System.Windows.Forms.Padding(2);
             this.chkNewDefines.Name = "chkNewDefines";
@@ -551,7 +559,7 @@
             // 
             // btnOpenOutputFolder
             // 
-            this.btnOpenOutputFolder.Location = new System.Drawing.Point(519, 81);
+            this.btnOpenOutputFolder.Location = new System.Drawing.Point(519, 11);
             this.btnOpenOutputFolder.Margin = new System.Windows.Forms.Padding(2);
             this.btnOpenOutputFolder.Name = "btnOpenOutputFolder";
             this.btnOpenOutputFolder.Size = new System.Drawing.Size(103, 28);
@@ -562,7 +570,7 @@
             // 
             // btnOpenInputFolder
             // 
-            this.btnOpenInputFolder.Location = new System.Drawing.Point(412, 81);
+            this.btnOpenInputFolder.Location = new System.Drawing.Point(412, 11);
             this.btnOpenInputFolder.Margin = new System.Windows.Forms.Padding(2);
             this.btnOpenInputFolder.Name = "btnOpenInputFolder";
             this.btnOpenInputFolder.Size = new System.Drawing.Size(103, 28);
@@ -577,16 +585,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 510);
             this.Controls.Add(this.btnOpenInputFolder);
+            this.Controls.Add(this.btnLoadFromSerebii);
+            this.Controls.Add(this.cmbGeneration);
             this.Controls.Add(this.btnOpenOutputFolder);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gBoxOptionsTM);
-            this.Controls.Add(this.cmbGeneration);
-            this.Controls.Add(this.lblOptions);
-            this.Controls.Add(this.btnLoadFromSerebii);
             this.Controls.Add(this.lblLoading);
             this.Controls.Add(this.pbar1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -604,7 +610,6 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -614,7 +619,6 @@
         private System.Windows.Forms.ProgressBar pbar1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label lblLoading;
-        private System.Windows.Forms.Label lblOptions;
         private System.Windows.Forms.ComboBox cmbGeneration;
         private System.Windows.Forms.Button btnWriteLvlLearnsets;
         private System.ComponentModel.BackgroundWorker bwrkExportLvl;
@@ -649,7 +653,6 @@
         private System.ComponentModel.BackgroundWorker bwrkExportTutor;
         private System.ComponentModel.BackgroundWorker bwrkExportEgg;
         private System.Windows.Forms.CheckBox chkEgg_Extended;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.CheckBox chkNewDefines;
         private System.Windows.Forms.Button btnOpenOutputFolder;
