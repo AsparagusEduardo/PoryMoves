@@ -968,7 +968,7 @@ namespace moveParser
 
 
                 }
-                monToAdd.EggMoves = monToAdd.EggMoves.GroupBy(elem => elem).Select(group => group.First()).ToList();
+                monToAdd.EggMoves = monToAdd.EggMoves.GroupBy(elem => elem).Select(group => group.First()).OrderBy(x => x).ToList();
 
                 customGenData.Add(name.DefName, monToAdd);
 
