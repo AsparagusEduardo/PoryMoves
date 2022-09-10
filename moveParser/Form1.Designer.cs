@@ -56,7 +56,6 @@
             this.chkEgg_IncludeLvl = new System.Windows.Forms.CheckBox();
             this.cListEggMoves = new System.Windows.Forms.CheckedListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.chkTutor_Extended = new System.Windows.Forms.CheckBox();
             this.btnTutor_All = new System.Windows.Forms.Button();
             this.chkTutor_IncludeTM = new System.Windows.Forms.CheckBox();
             this.chkTutor_IncludeEgg = new System.Windows.Forms.CheckBox();
@@ -72,6 +71,8 @@
             this.btnOpenInputFolder = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbTM_ExportMode = new System.Windows.Forms.ComboBox();
+            this.cmbTutor_ExportMode = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -399,7 +400,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.chkTutor_Extended);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.cmbTutor_ExportMode);
             this.groupBox3.Controls.Add(this.btnTutor_All);
             this.groupBox3.Controls.Add(this.chkTutor_IncludeTM);
             this.groupBox3.Controls.Add(this.chkTutor_IncludeEgg);
@@ -415,18 +417,6 @@
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tutor Moves";
-            // 
-            // chkTutor_Extended
-            // 
-            this.chkTutor_Extended.AutoSize = true;
-            this.chkTutor_Extended.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTutor_Extended.Location = new System.Drawing.Point(5, 309);
-            this.chkTutor_Extended.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chkTutor_Extended.Name = "chkTutor_Extended";
-            this.chkTutor_Extended.Size = new System.Drawing.Size(174, 21);
-            this.chkTutor_Extended.TabIndex = 22;
-            this.chkTutor_Extended.Text = "Use Refactored Tutors";
-            this.chkTutor_Extended.UseVisualStyleBackColor = true;
             // 
             // btnTutor_All
             // 
@@ -591,6 +581,27 @@
             this.cmbTM_ExportMode.TabIndex = 22;
             this.cmbTM_ExportMode.SelectedIndexChanged += new System.EventHandler(this.cmbTM_ExportMode_SelectedIndexChanged);
             // 
+            // cmbTutor_ExportMode
+            // 
+            this.cmbTutor_ExportMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTutor_ExportMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTutor_ExportMode.FormattingEnabled = true;
+            this.cmbTutor_ExportMode.Location = new System.Drawing.Point(5, 307);
+            this.cmbTutor_ExportMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbTutor_ExportMode.Name = "cmbTutor_ExportMode";
+            this.cmbTutor_ExportMode.Size = new System.Drawing.Size(180, 25);
+            this.cmbTutor_ExportMode.TabIndex = 23;
+            this.cmbTutor_ExportMode.SelectedIndexChanged += new System.EventHandler(this.cmbTutor_ExportMode_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 288);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 17);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Export Mode";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -660,7 +671,6 @@
         private System.Windows.Forms.Button btnTM_All;
         private System.Windows.Forms.Button btnEgg_All;
         private System.Windows.Forms.Button btnTutor_All;
-        private System.Windows.Forms.CheckBox chkTutor_Extended;
         private System.ComponentModel.BackgroundWorker bwrkExportTutor;
         private System.ComponentModel.BackgroundWorker bwrkExportEgg;
         private System.Windows.Forms.CheckBox chkEgg_Extended;
@@ -670,6 +680,8 @@
         private System.Windows.Forms.Button btnOpenInputFolder;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbTM_ExportMode;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbTutor_ExportMode;
     }
 }
 

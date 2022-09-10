@@ -41,7 +41,6 @@ namespace moveParser
             LoadGenerationData();
             cmbGeneration.SelectedIndex = 0;
             LoadExportModes();
-            cmbTM_ExportMode.SelectedIndex = 0;
 #if DEBUG
             cmbGeneration.Visible = true;
             btnLoadFromSerebii.Visible = true;
@@ -55,6 +54,12 @@ namespace moveParser
             cmbTM_ExportMode.Items.Insert(((int)ExportModes.Vanilla), "Vanilla Mode");
             cmbTM_ExportMode.Items.Insert(((int)ExportModes.SBirdRefactor), "SBird's TM Refactor");
             cmbTM_ExportMode.Items.Insert(((int)ExportModes.RHH_1_0_0), "RHH 1.0.0");
+            cmbTM_ExportMode.SelectedIndex = 0;
+
+            cmbTutor_ExportMode.Items.Insert(((int)ExportModes.Vanilla), "Vanilla Mode");
+            cmbTutor_ExportMode.Items.Insert(((int)ExportModes.SBirdRefactor), "SBird's Tutor Refactor");
+            cmbTutor_ExportMode.Items.Insert(((int)ExportModes.RHH_1_0_0), "RHH 1.0.0");
+            cmbTutor_ExportMode.SelectedIndex = 0;
         }
 
         protected void LoadGenerationData()
@@ -310,10 +315,10 @@ namespace moveParser
                 chkTM_IncludeTutor.Enabled = value;
                 cmbTM_ExportMode.Enabled = value;
 
-                chkTutor_Extended.Enabled = value;
                 chkTutor_IncludeLvl.Enabled = value;
                 chkTutor_IncludeEgg.Enabled = value;
                 chkTutor_IncludeTM.Enabled = value;
+                cmbTutor_ExportMode.Enabled = value;
 
                 chkEgg_Extended.Enabled = value;
                 chkEgg_IncludeLvl.Enabled = value;
@@ -562,14 +567,10 @@ namespace moveParser
             // load specified TM list
             List<string> tmMovesTemp = File.ReadAllLines("input/tm.txt").ToList();
             List<string> tmMoves = new List<string>();
-#if DEBUG
             string writeText = "";
-#endif
             foreach (string str in tmMovesTemp)
             {
-#if DEBUG
-                writeText += str + "\n";
-#endif
+                writeText += str + "\n";    
                 if (!str.Trim().Equals("") && !str.Trim().StartsWith("//"))
                     tmMoves.Add(str);
             }
@@ -859,6 +860,12 @@ namespace moveParser
 
         private void bwrkExportTutor_DoWork(object sender, DoWorkEventArgs e)
         {
+            ExportModes mode = ExportModes.Vanilla;
+            this.Invoke((MethodInvoker)delegate
+            {
+                mode = (ExportModes)this.cmbTutor_ExportMode.SelectedIndex;
+            });
+
             UpdateLoadingMessage("Grouping movesets...");
             List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
 
@@ -914,22 +921,26 @@ namespace moveParser
                 int percent = i * 100 / namecount;
                 bwrkExportTutor.ReportProgress(percent);
             }
-            bool oldStyle = !chkTutor_Extended.Checked;
 
             // load specified tutor list
             List<string> tutorMovesTemp = File.ReadAllLines("input/tutor.txt").ToList();
             List<string> tutorMoves = new List<string>();
-
-#if DEBUG
+            
             string writeText = "";
-#endif
             foreach (string str in tutorMovesTemp)
             {
-#if DEBUG
                 writeText += str + "\n";
-#endif
                 if (!str.Trim().Equals("") && !str.Trim().StartsWith("//"))
                     tutorMoves.Add(str);
+            }
+
+            List<string> tmMovesTemp = File.ReadAllLines("input/tm.txt").ToList();
+            List<string> tmMoves = new List<string>();
+
+            foreach (string str in tmMovesTemp)
+            {
+                if (!str.Trim().Equals("") && !str.Trim().StartsWith("//"))
+                    tmMoves.Add(str);
             }
 #if DEBUG
             File.WriteAllText("../../input/tutor.txt", writeText);
@@ -937,13 +948,13 @@ namespace moveParser
 
 
             // sanity check: old style tutor list must be 32 entries or less
-            if (tutorMoves.Count > 32 && oldStyle)
+            if (tutorMoves.Count > 32 && mode == ExportModes.Vanilla)
             {
                 MessageBox.Show("Old-style tutor learnsets only support up to 32 moves.\nConsider using the new format here:\n<commit to be made>",
                                 "FATAL", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (tutorMoves.Count > 255 && !oldStyle)
+            else if (tutorMoves.Count > 255 && mode == ExportModes.SBirdRefactor)
             {
                 MessageBox.Show("New-style tutor learnsets only support up to 255 tutor moves. Consider reducing your tutor amount.",
                                 "FATAL", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -959,28 +970,34 @@ namespace moveParser
             tutors += $"#define TUTOR_MOVE_COUNT             {tutorMoves.Count,3}";
             File.WriteAllText("output/party_menu_tutor_list.h", tutors);
 
+            string sets = "";
             // file header
-            string sets = "const u16 gTutorMoves[TUTOR_MOVE_COUNT] =\n{\n";
-            foreach (string move in tutorMoves)
+            if (mode == ExportModes.Vanilla || mode == ExportModes.SBirdRefactor)
             {
-                sets += $"    [TUTOR_{move}] = MOVE_{move.Substring(5)},\n";
+                sets = "const u16 gTutorMoves[TUTOR_MOVE_COUNT] =\n{\n";
+                foreach (string move in tutorMoves)
+                {
+                    sets += $"    [TUTOR_{move}] = MOVE_{move.Substring(5)},\n";
+                }
             }
-            if (oldStyle)
+            
+            if (mode == ExportModes.Vanilla)
             {
                 // TODO: double check how the hell old style works	
                 sets += "};\n\n#define TUTOR(move) (1u << (TUTOR_##move))\n\nstatic const u32 sTutorLearnsets[TUTOR_MOVE_COUNT] =\n{\n    [SPECIES_NONE]             = (0),\n\n";
             }
-            else
+            else if (mode == ExportModes.SBirdRefactor)
             {
                 sets += "};\n\n#define TUTOR(move) ((u8) (TUTOR_##move))\n\nstatic const u8 sNoneTutorLearnset[TUTOR_MOVE_COUNT] =\n{\n    0xFF,\n};\n\n";
             }
             // iterate over mons
             i = 1;
+
             foreach (MonName entry in nameList)
             {
                 MonData data = customGenData[entry.DefName];
                 // begin learnset
-                if (oldStyle)
+                if (mode == ExportModes.Vanilla)
                 {
                     sets += $"\n    {$"[SPECIES_{entry.DefName}]",-27}= (";
                     // hacky workaround for first move being on the same line
@@ -1003,7 +1020,7 @@ namespace moveParser
                     }
                     sets += "),\n";
                 }
-                else
+                else if (mode == ExportModes.SBirdRefactor)
                 {
                     if (!entry.usesBaseFormLearnset)
                     {
@@ -1019,6 +1036,54 @@ namespace moveParser
                         sets += "    0xFF,\n};\n";
                     }
                 }
+                else if (mode == ExportModes.RHH_1_0_0)
+                {
+                    if (!entry.usesBaseFormLearnset)
+                    {
+                        List<string> teachableLearnsets = new List<string>();
+
+                        sets += $"\nstatic const u16 s{entry.VarName}TeachableLearnset[] = {{\n";
+
+                        foreach (string move in lvlMoves[entry.DefName])
+                            if (!teachableLearnsets.Contains(move))
+                                teachableLearnsets.Add(move);
+
+                        foreach (string move in data.TMMoves)
+                            if (!teachableLearnsets.Contains(move))
+                                teachableLearnsets.Add(move);
+
+                        foreach (string move in data.EggMoves)
+                            if (!teachableLearnsets.Contains(move))
+                                teachableLearnsets.Add(move);
+
+                        foreach (string move in data.TutorMoves)
+                            if (!teachableLearnsets.Contains(move))
+                                teachableLearnsets.Add(move);
+
+                        if (chkTutor_IncludeTM.Checked)
+                        {
+                            // Include universal TM moves
+                            foreach (string tmMove in tmMoves)
+                            {
+                                string move = "MOVE_" + Regex.Replace(tmMove.Replace("*", ""), @"TM\d{1,3}_", "");
+
+                                if (!teachableLearnsets.Contains(move) && !entry.ignoresNearUniversalTMs && tmMove.StartsWith("*"))
+                                    teachableLearnsets.Add(move);
+                            }
+                        }
+
+                        // Order alphabetically
+                        teachableLearnsets = teachableLearnsets.OrderBy(x => x).ToList();
+
+                        foreach (string move in teachableLearnsets)
+                        {
+                            //Gender-unknown and Nincada's family shouldn't learn Attract.)
+                            if (!((entry.isGenderless || entry.NatDexNum == 290 || entry.NatDexNum == 291) && move.Equals("MOVE_ATTRACT")))
+                                sets += $"    {move},\n";
+                        }
+                        sets += "    MOVE_UNAVAILABLE,\n};\n";
+                    }
+                }
 
                 int percent = i * 100 / namecount;
                 bwrkExportTutor.ReportProgress(percent);
@@ -1027,10 +1092,10 @@ namespace moveParser
                 i++;
             }
 
-
-            if (oldStyle)
+            string pointers = "";
+            if (mode == ExportModes.Vanilla)
                 sets += "\n};\n";
-            else
+            else if (mode == ExportModes.SBirdRefactor)
             {
                 sets += "const u8 *const sTutorLearnsets[] =\n{\n    [SPECIES_NONE] = sNoneTutorLearnset,\n";
                 foreach (MonName name in nameList)
@@ -1042,17 +1107,39 @@ namespace moveParser
                 }
                 sets += "};\n";
             }
+            else if (mode == ExportModes.RHH_1_0_0)
+            {
+                pointers += "const u16 *const gTeachableLearnsets[NUM_SPECIES] =\n{\n";
+                foreach (MonName name in nameList)
+                {
+                    if (!name.usesBaseFormLearnset)
+                        pointers += $"    [SPECIES_{name.DefName}] = s{name.VarName}TeachableLearnset,\n";
+                    else
+                        pointers += $"    [SPECIES_{name.DefName}] = s{nameList[name.NatDexNum - 1].VarName}TeachableLearnset,\n";
+                }
+                pointers += "};\n";
+            }
             if (chkNewDefines.Checked)
                 sets = replaceOldDefines(sets);
 
             // write to file
-            File.WriteAllText("output/tutor_learnsets.h", sets);
+            if (mode == ExportModes.RHH_1_0_0)
+            {
+                File.WriteAllText("output/teachable_learnsets.h", sets);
+                File.WriteAllText("output/teachable_learnset_pointers.h", pointers);
+            }
+            else
+                File.WriteAllText("output/tutor_learnsets.h", sets);
 
             bwrkExportTutor.ReportProgress(0);
             // Set the text.
             UpdateLoadingMessage(namecount + " Tutor movesets exported.");
 
-            MessageBox.Show("Tutor moves exported to \"output/tutor_learnsets.h\"", "Success!", MessageBoxButtons.OK);
+            if (mode == ExportModes.RHH_1_0_0)
+                MessageBox.Show("Teachable moves exported to \"output/teachable_learnsets.h\" and \"output/teachable_learnset_pointers.h\"", "Success!", MessageBoxButtons.OK);
+            else
+                MessageBox.Show("Tutor moves exported to \"output/tutor_learnsets.h\"", "Success!", MessageBoxButtons.OK);
+
             SetEnableForAllElements(true);
         }
 
@@ -1231,6 +1318,14 @@ namespace moveParser
             if (cmbTM_ExportMode.SelectedIndex == (int)ExportModes.RHH_1_0_0)
             {
                 chkTM_IncludeTutor.Checked = true;
+            }
+        }
+
+        private void cmbTutor_ExportMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbTutor_ExportMode.SelectedIndex == (int)ExportModes.RHH_1_0_0)
+            {
+                chkTutor_IncludeTM.Checked = true;
             }
         }
     }
