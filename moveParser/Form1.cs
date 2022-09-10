@@ -692,26 +692,66 @@ namespace moveParser
 
         private void btnLvl_All_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < cListLevelUp.Items.Count; ++i)
-                cListLevelUp.SetItemChecked(i, true);
+            if (btnLvl_All.Text.Equals("Select All"))
+            {
+                for (int i = 0; i < cListLevelUp.Items.Count; ++i)
+                    cListLevelUp.SetItemChecked(i, true);
+                btnLvl_All.Text = "Deselect All";
+            }
+            else
+            {
+                for (int i = 0; i < cListLevelUp.Items.Count; ++i)
+                    cListLevelUp.SetItemChecked(i, false);
+                btnLvl_All.Text = "Select All";
+            }
         }
 
         private void btnTM_All_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < cListTMMoves.Items.Count; ++i)
-                cListTMMoves.SetItemChecked(i, true);
+            if (btnTM_All.Text.Equals("Select All"))
+            {
+                for (int i = 0; i < cListTMMoves.Items.Count; ++i)
+                    cListTMMoves.SetItemChecked(i, true);
+                btnTM_All.Text = "Deselect All";
+            }
+            else
+            {
+                for (int i = 0; i < cListTMMoves.Items.Count; ++i)
+                    cListTMMoves.SetItemChecked(i, false);
+                btnTM_All.Text = "Select All";
+            }
         }
 
         private void btnEgg_All_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < cListEggMoves.Items.Count; ++i)
-                cListEggMoves.SetItemChecked(i, true);
+            if (btnEgg_All.Text.Equals("Select All"))
+            {
+                for (int i = 0; i < cListEggMoves.Items.Count; ++i)
+                    cListEggMoves.SetItemChecked(i, true);
+                btnEgg_All.Text = "Deselect All";
+            }
+            else
+            {
+                for (int i = 0; i < cListEggMoves.Items.Count; ++i)
+                    cListEggMoves.SetItemChecked(i, false);
+                btnEgg_All.Text = "Select All";
+            }
         }
 
         private void btnTutor_All_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < cListTutorMoves.Items.Count; ++i)
-                cListTutorMoves.SetItemChecked(i, true);
+            if (btnTutor_All.Text.Equals("Select All"))
+            {
+                for (int i = 0; i < cListTutorMoves.Items.Count; ++i)
+                    cListTutorMoves.SetItemChecked(i, true);
+                btnTutor_All.Text = "Deselect All";
+            }
+            else
+            {
+                for (int i = 0; i < cListTutorMoves.Items.Count; ++i)
+                    cListTutorMoves.SetItemChecked(i, false);
+                btnTutor_All.Text = "Select All";
+            }
         }
 
         private void bwrkExportTutor_DoWork(object sender, DoWorkEventArgs e)
