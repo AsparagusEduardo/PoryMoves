@@ -39,6 +39,8 @@
             this.bwrkExportLvl = new System.ComponentModel.BackgroundWorker();
             this.cListTMMoves = new System.Windows.Forms.CheckedListBox();
             this.gBoxOptionsTM = new System.Windows.Forms.GroupBox();
+            this.cmbTM_ExportMode = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnTM_All = new System.Windows.Forms.Button();
             this.chkTM_IncludeTutor = new System.Windows.Forms.CheckBox();
             this.chkTM_IncludeEgg = new System.Windows.Forms.CheckBox();
@@ -57,6 +59,8 @@
             this.chkEgg_IncludeLvl = new System.Windows.Forms.CheckBox();
             this.cListEggMoves = new System.Windows.Forms.CheckedListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbTutor_ExportMode = new System.Windows.Forms.ComboBox();
             this.btnTutor_All = new System.Windows.Forms.Button();
             this.chkTutor_IncludeTM = new System.Windows.Forms.CheckBox();
             this.chkTutor_IncludeEgg = new System.Windows.Forms.CheckBox();
@@ -67,14 +71,10 @@
             this.bwrkExportTutor = new System.ComponentModel.BackgroundWorker();
             this.bwrkExportEgg = new System.ComponentModel.BackgroundWorker();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.chkGeneral_MewExclusiveTutor = new System.Windows.Forms.CheckBox();
             this.chkNewDefines = new System.Windows.Forms.CheckBox();
             this.btnOpenOutputFolder = new System.Windows.Forms.Button();
             this.btnOpenInputFolder = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbTM_ExportMode = new System.Windows.Forms.ComboBox();
-            this.cmbTutor_ExportMode = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.chkGeneral_MewExclusiveTutor = new System.Windows.Forms.CheckBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -182,6 +182,27 @@
             this.gBoxOptionsTM.TabStop = false;
             this.gBoxOptionsTM.Text = "TM/HM/TR Moves";
             // 
+            // cmbTM_ExportMode
+            // 
+            this.cmbTM_ExportMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTM_ExportMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTM_ExportMode.FormattingEnabled = true;
+            this.cmbTM_ExportMode.Location = new System.Drawing.Point(5, 307);
+            this.cmbTM_ExportMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbTM_ExportMode.Name = "cmbTM_ExportMode";
+            this.cmbTM_ExportMode.Size = new System.Drawing.Size(180, 25);
+            this.cmbTM_ExportMode.TabIndex = 22;
+            this.cmbTM_ExportMode.SelectedIndexChanged += new System.EventHandler(this.cmbTM_ExportMode_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 288);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 17);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Export Mode";
+            // 
             // btnTM_All
             // 
             this.btnTM_All.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -197,6 +218,8 @@
             // chkTM_IncludeTutor
             // 
             this.chkTM_IncludeTutor.AutoSize = true;
+            this.chkTM_IncludeTutor.Checked = true;
+            this.chkTM_IncludeTutor.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkTM_IncludeTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkTM_IncludeTutor.Location = new System.Drawing.Point(7, 390);
             this.chkTM_IncludeTutor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -421,6 +444,27 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tutor Moves";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 288);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 17);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Export Mode";
+            // 
+            // cmbTutor_ExportMode
+            // 
+            this.cmbTutor_ExportMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTutor_ExportMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTutor_ExportMode.FormattingEnabled = true;
+            this.cmbTutor_ExportMode.Location = new System.Drawing.Point(5, 307);
+            this.cmbTutor_ExportMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbTutor_ExportMode.Name = "cmbTutor_ExportMode";
+            this.cmbTutor_ExportMode.Size = new System.Drawing.Size(180, 25);
+            this.cmbTutor_ExportMode.TabIndex = 23;
+            this.cmbTutor_ExportMode.SelectedIndexChanged += new System.EventHandler(this.cmbTutor_ExportMode_SelectedIndexChanged);
+            // 
             // btnTutor_All
             // 
             this.btnTutor_All.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -436,6 +480,8 @@
             // chkTutor_IncludeTM
             // 
             this.chkTutor_IncludeTM.AutoSize = true;
+            this.chkTutor_IncludeTM.Checked = true;
+            this.chkTutor_IncludeTM.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkTutor_IncludeTM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkTutor_IncludeTM.Location = new System.Drawing.Point(5, 389);
             this.chkTutor_IncludeTM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -520,13 +566,26 @@
             this.groupBox4.Controls.Add(this.chkNewDefines);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(16, 86);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(813, 60);
             this.groupBox4.TabIndex = 20;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "General Options";
+            // 
+            // chkGeneral_MewExclusiveTutor
+            // 
+            this.chkGeneral_MewExclusiveTutor.AutoSize = true;
+            this.chkGeneral_MewExclusiveTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkGeneral_MewExclusiveTutor.Location = new System.Drawing.Point(256, 22);
+            this.chkGeneral_MewExclusiveTutor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkGeneral_MewExclusiveTutor.Name = "chkGeneral_MewExclusiveTutor";
+            this.chkGeneral_MewExclusiveTutor.Size = new System.Drawing.Size(265, 21);
+            this.chkGeneral_MewExclusiveTutor.TabIndex = 19;
+            this.chkGeneral_MewExclusiveTutor.Text = "Mew can learn exclusive Tutor Moves";
+            this.toolTip1.SetToolTip(this.chkGeneral_MewExclusiveTutor, resources.GetString("chkGeneral_MewExclusiveTutor.ToolTip"));
+            this.chkGeneral_MewExclusiveTutor.UseVisualStyleBackColor = true;
             // 
             // chkNewDefines
             // 
@@ -564,61 +623,6 @@
             this.btnOpenInputFolder.Text = "Open input folder";
             this.btnOpenInputFolder.UseVisualStyleBackColor = true;
             this.btnOpenInputFolder.Click += new System.EventHandler(this.btnOpenInputFolder_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 288);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 17);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Export Mode";
-            // 
-            // cmbTM_ExportMode
-            // 
-            this.cmbTM_ExportMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTM_ExportMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTM_ExportMode.FormattingEnabled = true;
-            this.cmbTM_ExportMode.Location = new System.Drawing.Point(5, 307);
-            this.cmbTM_ExportMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbTM_ExportMode.Name = "cmbTM_ExportMode";
-            this.cmbTM_ExportMode.Size = new System.Drawing.Size(180, 25);
-            this.cmbTM_ExportMode.TabIndex = 22;
-            this.cmbTM_ExportMode.SelectedIndexChanged += new System.EventHandler(this.cmbTM_ExportMode_SelectedIndexChanged);
-            // 
-            // cmbTutor_ExportMode
-            // 
-            this.cmbTutor_ExportMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTutor_ExportMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTutor_ExportMode.FormattingEnabled = true;
-            this.cmbTutor_ExportMode.Location = new System.Drawing.Point(5, 307);
-            this.cmbTutor_ExportMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbTutor_ExportMode.Name = "cmbTutor_ExportMode";
-            this.cmbTutor_ExportMode.Size = new System.Drawing.Size(180, 25);
-            this.cmbTutor_ExportMode.TabIndex = 23;
-            this.cmbTutor_ExportMode.SelectedIndexChanged += new System.EventHandler(this.cmbTutor_ExportMode_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 288);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 17);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Export Mode";
-            // 
-            // chkGeneral_MewExclusiveTutor
-            // 
-            this.chkGeneral_MewExclusiveTutor.AutoSize = true;
-            this.chkGeneral_MewExclusiveTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkGeneral_MewExclusiveTutor.Location = new System.Drawing.Point(256, 22);
-            this.chkGeneral_MewExclusiveTutor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chkGeneral_MewExclusiveTutor.Name = "chkGeneral_MewExclusiveTutor";
-            this.chkGeneral_MewExclusiveTutor.Size = new System.Drawing.Size(265, 21);
-            this.chkGeneral_MewExclusiveTutor.TabIndex = 19;
-            this.chkGeneral_MewExclusiveTutor.Text = "Mew can learn exclusive Tutor Moves";
-            this.toolTip1.SetToolTip(this.chkGeneral_MewExclusiveTutor, resources.GetString("chkGeneral_MewExclusiveTutor.ToolTip"));
-            this.chkGeneral_MewExclusiveTutor.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
