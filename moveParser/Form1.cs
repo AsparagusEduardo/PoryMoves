@@ -975,7 +975,7 @@ namespace moveParser
             // sanity check: old style tutor list must be 32 entries or less
             if (tutorMoves.Count > 32 && mode == ExportModes.Vanilla)
             {
-                MessageBox.Show("Old-style tutor learnsets only support up to 32 moves.\nConsider using the new format here:\n<commit to be made>",
+                MessageBox.Show("Old-style tutor learnsets only support up to 32 moves.",
                                 "FATAL", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
