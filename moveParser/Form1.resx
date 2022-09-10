@@ -132,6 +132,25 @@
   <metadata name="bwrkExportEgg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>663, 0</value>
   </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>822, 0</value>
+  </metadata>
+  <data name="chkGeneral_MewExclusiveTutor.ToolTip" xml:space="preserve">
+    <value>In vanilla Pokémon, Mew is able to learn every TM, HM, TR and
+Tutor Move except those exclusive to a particular Pokémon or
+group of Pokémon, such as Draco Meteor and Secret Sword.
+
+Checking this setting, will allow Mew to learn those exclusive moves.
+
+</value>
+  </data>
+  <data name="chkNewDefines.ToolTip" xml:space="preserve">
+    <value>In pokeemerald-expansion, certain move defines were updated
+to match their current names, such as VICE_GRIP -&gt; VISE_GRIP
+or FAINT_ATTACK -&gt; FEINT_ATTACK .
+
+Unchecking this box will use default pokeemerald's labels.</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>

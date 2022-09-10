@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnLoadFromSerebii = new System.Windows.Forms.Button();
             this.pbar1 = new System.Windows.Forms.ProgressBar();
@@ -73,6 +74,8 @@
             this.cmbTM_ExportMode = new System.Windows.Forms.ComboBox();
             this.cmbTutor_ExportMode = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.chkGeneral_MewExclusiveTutor = new System.Windows.Forms.CheckBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -513,6 +516,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.chkGeneral_MewExclusiveTutor);
             this.groupBox4.Controls.Add(this.chkNewDefines);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(16, 86);
@@ -536,6 +540,7 @@
             this.chkNewDefines.Size = new System.Drawing.Size(243, 21);
             this.chkNewDefines.TabIndex = 18;
             this.chkNewDefines.Text = "Use updated move defines (RHH)";
+            this.toolTip1.SetToolTip(this.chkNewDefines, resources.GetString("chkNewDefines.ToolTip"));
             this.chkNewDefines.UseVisualStyleBackColor = true;
             // 
             // btnOpenOutputFolder
@@ -601,6 +606,19 @@
             this.label2.Size = new System.Drawing.Size(98, 17);
             this.label2.TabIndex = 23;
             this.label2.Text = "Export Mode";
+            // 
+            // chkGeneral_MewExclusiveTutor
+            // 
+            this.chkGeneral_MewExclusiveTutor.AutoSize = true;
+            this.chkGeneral_MewExclusiveTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkGeneral_MewExclusiveTutor.Location = new System.Drawing.Point(256, 22);
+            this.chkGeneral_MewExclusiveTutor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkGeneral_MewExclusiveTutor.Name = "chkGeneral_MewExclusiveTutor";
+            this.chkGeneral_MewExclusiveTutor.Size = new System.Drawing.Size(265, 21);
+            this.chkGeneral_MewExclusiveTutor.TabIndex = 19;
+            this.chkGeneral_MewExclusiveTutor.Text = "Mew can learn exclusive Tutor Moves";
+            this.toolTip1.SetToolTip(this.chkGeneral_MewExclusiveTutor, resources.GetString("chkGeneral_MewExclusiveTutor.ToolTip"));
+            this.chkGeneral_MewExclusiveTutor.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -682,6 +700,8 @@
         private System.Windows.Forms.ComboBox cmbTM_ExportMode;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbTutor_ExportMode;
+        private System.Windows.Forms.CheckBox chkGeneral_MewExclusiveTutor;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
