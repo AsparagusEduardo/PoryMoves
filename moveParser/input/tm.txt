@@ -1,4 +1,4 @@
-// Use this file to define the TM moves are to be used by the system.
+// Use this file to define which TM moves are to be used by the system.
 // TMs that begin with an * are near-universal TMs.
 
 TM01_FOCUS_PUNCH

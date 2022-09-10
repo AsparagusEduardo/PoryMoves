@@ -28,18 +28,33 @@ namespace moveParser
         protected Dictionary<string, GenerationData> GenData;
         protected Dictionary<string, Move> MoveData;
 
+        enum ExportModes
+        {
+            Vanilla,
+            SBirdRefactor,
+            RHH_1_0_0,
+        }
+
         public Form1()
         {
             InitializeComponent();
             LoadGenerationData();
             cmbGeneration.SelectedIndex = 0;
-
+            LoadExportModes();
+            cmbTM_ExportMode.SelectedIndex = 0;
 #if DEBUG
             cmbGeneration.Visible = true;
             btnLoadFromSerebii.Visible = true;
 #endif
 
             MoveData = MovesData.GetMoveDataFromFile("db/moveNames.json");
+        }
+
+        protected void LoadExportModes()
+        {
+            cmbTM_ExportMode.Items.Insert(((int)ExportModes.Vanilla), "Vanilla Mode");
+            cmbTM_ExportMode.Items.Insert(((int)ExportModes.SBirdRefactor), "SBird's TM Refactor");
+            cmbTM_ExportMode.Items.Insert(((int)ExportModes.RHH_1_0_0), "RHH 1.0.0");
         }
 
         protected void LoadGenerationData()
@@ -293,7 +308,7 @@ namespace moveParser
                 chkTM_IncludeEgg.Enabled = value;
                 chkTM_IncludeLvl.Enabled = value;
                 chkTM_IncludeTutor.Enabled = value;
-                chkTM_Extended.Enabled = value;
+                cmbTM_ExportMode.Enabled = value;
 
                 chkTutor_Extended.Enabled = value;
                 chkTutor_IncludeLvl.Enabled = value;
@@ -480,6 +495,12 @@ namespace moveParser
 
         private void bwrkExportTM_DoWork(object sender, DoWorkEventArgs e)
         {
+            ExportModes mode = ExportModes.Vanilla;
+            this.Invoke((MethodInvoker)delegate
+            {
+                mode = (ExportModes)this.cmbTM_ExportMode.SelectedIndex;
+            });
+
             UpdateLoadingMessage("Grouping movesets...");
             List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
 
@@ -535,7 +556,8 @@ namespace moveParser
                 int percent = i * 100 / namecount;
                 bwrkExportTM.ReportProgress(percent);
             }
-            bool oldStyle = !chkTM_Extended.Checked;
+
+
 
             // load specified TM list
             List<string> tmMovesTemp = File.ReadAllLines("input/tm.txt").ToList();
@@ -556,13 +578,13 @@ namespace moveParser
 #endif
 
             // sanity check: old style TM list must be 64 entries or less
-            if (tmMoves.Count > 64 && oldStyle)
+            if (tmMoves.Count > 64 && mode == ExportModes.Vanilla)
             {
                 MessageBox.Show("Old-style TM learnsets only support up to 64 TMs/HMs.\nConsider using the new format here:\nhttps://github.com/LOuroboros/pokeemerald/commit/6f69765770a52c1a7d6608a117112b78a2afcc22",
                                 "FATAL", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (tmMoves.Count > 255 && !oldStyle)
+            if (tmMoves.Count > 255 && mode == ExportModes.SBirdRefactor)
             {
                 MessageBox.Show("New-style TM learnsets only support up to 255 TMs/HMs. Consider reducing your TM amount.",
                                 "FATAL", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -582,8 +604,8 @@ namespace moveParser
             File.WriteAllText("output/party_menu_tm_list.h", tms);
 
             // file header
-            string sets;
-            if (oldStyle)
+            string sets = "";
+            if (mode == ExportModes.Vanilla)
             {
                 sets = $"#define TMHM_LEARNSET(moves) {{(u32)(moves), ((u64)(moves) >> 32)}}\n" +
                     $"#define TMHM(tmhm) ((u64)1 << (ITEM_##tmhm - ITEM_{tmMoves[0]}))\n\n" +
@@ -593,8 +615,14 @@ namespace moveParser
                     "const u32 gTMHMLearnsets[][2] =\n{\n" +
                     $"    [SPECIES_NONE]        = TMHM_LEARNSET(0),\n";
             }
-            else
+            else if (mode == ExportModes.SBirdRefactor)
+            {
                 sets = $"#define TMHM(tmhm) ((u8) ((ITEM_##tmhm) - ITEM_{tmMoves[0]}))\n\nstatic const u8 sNoneTMHMLearnset[] =\n{{\n    0xFF,\n}};\n";
+            }
+            else if (mode == ExportModes.RHH_1_0_0)
+            {
+                //Do nothing.
+            }
 
             i = 1;
             // iterate over mons
@@ -602,7 +630,7 @@ namespace moveParser
             {
                 MonData data = customGenData[name.DefName];
                 // begin learnset
-                if (oldStyle)
+                if (mode == ExportModes.Vanilla)
                 {
                     sets += $"\n    {$"[SPECIES_{name.DefName}]",-22}= TMHM_LEARNSET(";
                     // hacky workaround for first move being on the same line
@@ -627,7 +655,7 @@ namespace moveParser
                     }
                     sets += "),\n";
                 }
-                else
+                else if (mode == ExportModes.SBirdRefactor)
                 {
                     if (!name.usesBaseFormLearnset)
                     {
@@ -638,10 +666,55 @@ namespace moveParser
                             if (data.TMMoves.Contains(aa) || lvlMoves[name.DefName].Contains(aa) || data.EggMoves.Contains(aa) || data.TutorMoves.Contains(aa)
                                 || (!name.ignoresNearUniversalTMs && move.Contains("*") && !(move.Contains("ATTRACT") && (name.NatDexNum == 290 || name.isGenderless)))) //Gender-unknown and Nincada shouldn't learn Attract.
                             {
-                                sets += $"    TMHM({move.Replace("*","")}),\n";
+                                sets += $"    TMHM({move.Replace("*", "")}),\n";
                             }
                         }
                         sets += "    0xFF,\n};\n";
+                    }
+                }
+                else if (mode == ExportModes.RHH_1_0_0)
+                {
+                    if (!name.usesBaseFormLearnset)
+                    {
+                        List<string> teachableLearnsets = new List<string>();
+
+                        sets += $"\nstatic const u16 s{name.VarName}TeachableLearnset[] = {{\n";
+
+                        foreach (string move in lvlMoves[name.DefName])
+                            if (!teachableLearnsets.Contains(move))
+                                teachableLearnsets.Add(move);
+
+                        foreach (string move in data.TMMoves)
+                            if (!teachableLearnsets.Contains(move))
+                                teachableLearnsets.Add(move);
+
+                        foreach (string move in data.EggMoves)
+                            if (!teachableLearnsets.Contains(move))
+                                teachableLearnsets.Add(move);
+
+                        foreach (string move in data.TutorMoves)
+                            if (!teachableLearnsets.Contains(move))
+                                teachableLearnsets.Add(move);
+
+                        // Include universal TM moves
+                        foreach (string tmMove in tmMoves)
+                        {
+                            string move = "MOVE_" + Regex.Replace(tmMove.Replace("*", ""), @"TM\d{1,3}_", "");
+
+                            if (!teachableLearnsets.Contains(move) && !name.ignoresNearUniversalTMs && tmMove.StartsWith("*"))
+                                teachableLearnsets.Add(move);
+                        }
+
+                        // Order alphabetically
+                        teachableLearnsets = teachableLearnsets.OrderBy(x => x).ToList();
+
+                        foreach (string move in teachableLearnsets)
+                        {
+                            //Gender-unknown and Nincada's family shouldn't learn Attract.)
+                            if (!((name.isGenderless || name.NatDexNum == 290 || name.NatDexNum == 291) && move.Equals("MOVE_ATTRACT")))
+                                sets += $"    {move},\n";
+                        }
+                        sets += "    MOVE_UNAVAILABLE,\n};\n";
                     }
                 }
 
@@ -651,9 +724,11 @@ namespace moveParser
                 UpdateLoadingMessage(i.ToString() + " out of " + namecount + " TM movesets exported.");
                 i++;
             }
-            if (oldStyle)
+
+            string pointers = "";
+            if (mode == ExportModes.Vanilla)
                 sets += "\n};\n";
-            else
+            else if (mode == ExportModes.SBirdRefactor)
             {
                 sets += "const u8 *const gTMHMLearnsets[] =\n{\n";
                 foreach (MonName name in nameList)
@@ -665,17 +740,45 @@ namespace moveParser
                 }
                 sets += "};";
             }
+            else if (mode == ExportModes.RHH_1_0_0)
+            {
+                pointers += "const u16 *const gTeachableLearnsets[NUM_SPECIES] =\n{\n";
+                foreach (MonName name in nameList)
+                {
+                    if (!name.usesBaseFormLearnset)
+                        pointers += $"    [SPECIES_{name.DefName}] = s{name.VarName}TeachableLearnset,\n";
+                    else
+                        pointers += $"    [SPECIES_{name.DefName}] = s{nameList[name.NatDexNum - 1].VarName}TeachableLearnset,\n";
+                }
+                pointers += "};\n";
+            }
             if (chkNewDefines.Checked)
+            {
                 sets = replaceOldDefines(sets);
+                pointers = replaceOldDefines(pointers);
+            }
 
             // write to file
-            File.WriteAllText("output/tmhm_learnsets.h", sets);
+            if (mode == ExportModes.RHH_1_0_0)
+            {
+                File.WriteAllText("output/teachable_learnsets.h", sets);
+                File.WriteAllText("output/teachable_learnset_pointers.h", pointers);
+            }
+            else
+                File.WriteAllText("output/tmhm_learnsets.h", sets);
 
             bwrkExportTM.ReportProgress(0);
             // Set the text.
             UpdateLoadingMessage(namecount + " TM movesets exported.");
 
-            MessageBox.Show("TM moves exported to \"output/tmhm_learnsets.h\"", "Success!", MessageBoxButtons.OK);
+            if (mode == ExportModes.RHH_1_0_0)
+            {
+                MessageBox.Show("Teachable moves exported to \"output/teachable_learnsets.h\" and \"output/teachable_learnset_pointers.h\"", "Success!", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("TM moves exported to \"output/tmhm_learnsets.h\"", "Success!", MessageBoxButtons.OK);
+            }
             SetEnableForAllElements(true);
         }
 
@@ -1121,6 +1224,14 @@ namespace moveParser
                 FileName = "explorer.exe"
             };
             Process.Start(startInfo);
+        }
+
+        private void cmbTM_ExportMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbTM_ExportMode.SelectedIndex == (int)ExportModes.RHH_1_0_0)
+            {
+                chkTM_IncludeTutor.Checked = true;
+            }
         }
     }
 }
