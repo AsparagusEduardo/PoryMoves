@@ -38,6 +38,9 @@ namespace moveParser
         public Form1()
         {
             InitializeComponent();
+
+            this.Text = "PoryMoves " + typeof(Form1).Assembly.GetName().Version.ToString(3);
+
             LoadGenerationData();
             cmbGeneration.SelectedIndex = 0;
             LoadExportModes();
