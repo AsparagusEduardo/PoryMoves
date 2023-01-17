@@ -62,6 +62,7 @@
         "Move": "MOVE_SOLAR_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_SOLAR_BEAM",
@@ -172,6 +173,7 @@
         "Move": "MOVE_SOLAR_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_SOLAR_BEAM",
@@ -294,6 +296,7 @@
         "Move": "MOVE_SOLAR_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -401,6 +404,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -512,6 +516,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -639,6 +644,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -777,6 +783,7 @@
         "Move": "MOVE_SKULL_BASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -895,6 +902,7 @@
         "Move": "MOVE_SKULL_BASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -1021,6 +1029,7 @@
         "Move": "MOVE_SKULL_BASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -1110,6 +1119,7 @@
         "Move": "MOVE_BUG_BITE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ELECTROWEB"
     ],
@@ -1127,6 +1137,7 @@
         "Move": "MOVE_HARDEN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ELECTROWEB",
       "MOVE_IRON_DEFENSE"
@@ -1213,6 +1224,7 @@
         "Move": "MOVE_QUIVER_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -1336,6 +1348,7 @@
         "Move": "MOVE_THUNDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -1484,6 +1497,7 @@
         "Move": "MOVE_QUICK_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -1617,6 +1631,7 @@
         "Move": "MOVE_EARTHQUAKE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SAFEGUARD",
@@ -1742,6 +1757,7 @@
         "Move": "MOVE_EARTHQUAKE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -1854,6 +1870,7 @@
         "Move": "MOVE_EARTH_POWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -1953,6 +1970,7 @@
         "Move": "MOVE_EARTH_POWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -2061,6 +2079,7 @@
         "Move": "MOVE_TAIL_WHIP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -2202,6 +2221,7 @@
         "Move": "MOVE_EARTH_POWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -2305,6 +2325,7 @@
         "Move": "MOVE_EARTH_POWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -2417,6 +2438,7 @@
         "Move": "MOVE_FOCUS_ENERGY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -2598,6 +2620,7 @@
         "Move": "MOVE_HEALING_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -2770,6 +2793,7 @@
         "Move": "MOVE_DEFENSE_CURL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -2921,6 +2945,7 @@
         "Move": "MOVE_FIRE_BLAST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_SPIN",
       "MOVE_DIG",
@@ -3044,6 +3069,7 @@
         "Move": "MOVE_QUICK_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -3188,6 +3214,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -3348,6 +3375,7 @@
         "Move": "MOVE_DEFENSE_CURL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -3481,6 +3509,7 @@
         "Move": "MOVE_LEECH_LIFE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_REST",
@@ -3589,6 +3618,7 @@
         "Move": "MOVE_LEECH_LIFE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -3700,6 +3730,7 @@
         "Move": "MOVE_PETAL_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_REST",
@@ -3799,6 +3830,7 @@
         "Move": "MOVE_PETAL_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_REST",
@@ -3912,6 +3944,7 @@
         "Move": "MOVE_SWEET_SCENT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -4016,6 +4049,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -4129,6 +4163,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -4233,6 +4268,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_DIG",
@@ -4352,6 +4388,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -4470,6 +4507,7 @@
         "Move": "MOVE_WONDER_ROOM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -4592,6 +4630,7 @@
         "Move": "MOVE_WONDER_ROOM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -4723,6 +4762,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_SPIN",
       "MOVE_DIG",
@@ -4848,6 +4888,7 @@
         "Move": "MOVE_BITE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -4952,6 +4993,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -5041,6 +5083,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -5157,6 +5200,7 @@
         "Move": "MOVE_MUD_SHOT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -5233,6 +5277,7 @@
         "Move": "MOVE_TELEPORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -5354,6 +5399,7 @@
         "Move": "MOVE_CALM_MIND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -5475,6 +5521,7 @@
         "Move": "MOVE_CALM_MIND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -5606,6 +5653,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -5728,6 +5776,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -5855,6 +5904,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -5983,6 +6033,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SCREECH",
       "MOVE_SAFEGUARD",
@@ -6098,6 +6149,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -6210,6 +6262,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_SOLAR_BLADE",
@@ -6328,6 +6381,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -6452,6 +6506,7 @@
         "Move": "MOVE_HEAL_PULSE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_THUNDER_WAVE",
@@ -6589,6 +6644,7 @@
         "Move": "MOVE_HEAL_PULSE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -6730,6 +6786,7 @@
         "Move": "MOVE_ZAP_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_SCREECH",
@@ -6837,6 +6894,7 @@
         "Move": "MOVE_ZAP_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -6936,6 +6994,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_SOLAR_BLADE",
@@ -7051,6 +7110,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SCREECH",
       "MOVE_SELF_DESTRUCT",
@@ -7171,6 +7231,7 @@
         "Move": "MOVE_ICE_SHARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -7282,6 +7343,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -7408,6 +7470,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -7541,6 +7604,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -7691,6 +7755,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -7806,6 +7871,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -7921,6 +7987,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -8030,6 +8097,7 @@
         "Move": "MOVE_SOLAR_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -8154,6 +8222,7 @@
         "Move": "MOVE_LEECH_SEED"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -8267,6 +8336,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -8386,6 +8456,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -8529,6 +8600,7 @@
         "Move": "MOVE_HI_JUMP_KICK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -8679,6 +8751,7 @@
         "Move": "MOVE_FOCUS_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -8788,6 +8861,7 @@
         "Move": "MOVE_BELLY_DRUM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -8917,6 +8991,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SCREECH",
       "MOVE_SELF_DESTRUCT",
@@ -9039,6 +9114,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -9146,6 +9222,7 @@
         "Move": "MOVE_HORN_DRILL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -9277,6 +9354,7 @@
         "Move": "MOVE_HORN_DRILL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -9453,6 +9531,7 @@
         "Move": "MOVE_HEALING_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -9590,6 +9669,7 @@
         "Move": "MOVE_GRASSY_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -9695,6 +9775,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -9822,6 +9903,7 @@
         "Move": "MOVE_RAIN_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -9924,6 +10006,7 @@
         "Move": "MOVE_RAIN_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -10024,6 +10107,7 @@
         "Move": "MOVE_HORN_DRILL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -10121,6 +10205,7 @@
         "Move": "MOVE_HORN_DRILL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -10236,6 +10321,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -10343,6 +10429,7 @@
         "Move": "MOVE_CONFUSE_RAY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -10484,6 +10571,7 @@
         "Move": "MOVE_TEETER_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -10619,6 +10707,7 @@
         "Move": "MOVE_SWORDS_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -10729,6 +10818,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -10861,6 +10951,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -10975,6 +11066,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -11090,6 +11182,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -11199,6 +11292,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -11271,6 +11365,7 @@
         "Move": "MOVE_FLAIL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_BOUNCE",
       "MOVE_HYDRO_PUMP"
@@ -11361,6 +11456,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -11483,6 +11579,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -11548,6 +11645,7 @@
         "Move": "MOVE_TRANSFORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
@@ -11619,6 +11717,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_DIG",
@@ -11763,6 +11862,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -11924,6 +12024,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_PIN_MISSILE",
@@ -12078,6 +12179,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -12194,6 +12296,7 @@
         "Move": "MOVE_ZAP_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -12296,6 +12399,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -12416,6 +12520,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -12534,6 +12639,7 @@
         "Move": "MOVE_STONE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -12661,6 +12767,7 @@
         "Move": "MOVE_STONE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_HYPER_BEAM",
@@ -12785,6 +12892,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -12957,6 +13065,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -13103,6 +13212,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -13204,6 +13314,7 @@
         "Move": "MOVE_ZAP_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -13307,6 +13418,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -13403,6 +13515,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -13515,6 +13628,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -13655,6 +13769,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -13804,6 +13919,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -13945,6 +14061,7 @@
         "Move": "MOVE_PSYCHIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -14232,6 +14349,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_SCREECH",
@@ -14345,6 +14463,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -14469,6 +14588,7 @@
         "Move": "MOVE_LEECH_LIFE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -14581,6 +14701,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_SCREECH",
@@ -14708,6 +14829,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -14786,6 +14908,7 @@
         "Move": "MOVE_CHARM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -14869,6 +14992,7 @@
         "Move": "MOVE_CHARM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -14961,6 +15085,7 @@
         "Move": "MOVE_CHARM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -15077,6 +15202,7 @@
         "Move": "MOVE_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -15205,6 +15331,7 @@
         "Move": "MOVE_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -15326,6 +15453,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDER_WAVE",
@@ -15445,6 +15573,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -15576,6 +15705,7 @@
         "Move": "MOVE_SWEET_SCENT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -15699,6 +15829,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -15836,6 +15967,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -15986,6 +16118,7 @@
         "Move": "MOVE_HEAD_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -16108,6 +16241,7 @@
         "Move": "MOVE_MUD_SHOT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -16222,6 +16356,7 @@
         "Move": "MOVE_EARTHQUAKE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ICE_PUNCH",
       "MOVE_DIG",
@@ -16332,6 +16467,7 @@
         "Move": "MOVE_EARTHQUAKE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -16499,6 +16635,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -16663,6 +16800,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -16804,6 +16942,7 @@
         "Move": "MOVE_HEAL_PULSE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -16933,6 +17072,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SAFEGUARD",
       "MOVE_CHARM",
@@ -17009,6 +17149,7 @@
         "Move": "MOVE_ENDEAVOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDER_WAVE",
@@ -17171,6 +17312,7 @@
         "Move": "MOVE_MAGNET_RISE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -17317,6 +17459,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_THUNDER_WAVE",
@@ -17458,6 +17601,7 @@
         "Move": "MOVE_SWORDS_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -17581,6 +17725,7 @@
         "Move": "MOVE_SHELL_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SAFEGUARD",
@@ -17691,6 +17836,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -17804,6 +17950,7 @@
         "Move": "MOVE_SLASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -17921,6 +18068,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_LIGHT_SCREEN",
@@ -18033,6 +18181,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -18139,6 +18288,7 @@
         "Move": "MOVE_MIRROR_COAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -18252,6 +18402,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_THUNDER_WAVE",
@@ -18377,6 +18528,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -18447,6 +18599,7 @@
         "Move": "MOVE_DRILL_PECK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -18577,6 +18730,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -18699,6 +18853,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_REST",
@@ -18813,6 +18968,7 @@
         "Move": "MOVE_RAIN_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -18934,6 +19090,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -18996,6 +19153,7 @@
         "Move": "MOVE_FOCUS_ENERGY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -19121,6 +19279,7 @@
         "Move": "MOVE_ENDEAVOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -19235,6 +19394,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -19347,6 +19507,7 @@
         "Move": "MOVE_THUNDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -19450,6 +19611,7 @@
         "Move": "MOVE_FIRE_BLAST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -19550,6 +19712,7 @@
         "Move": "MOVE_HIGH_HORSEPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -19705,6 +19868,7 @@
         "Move": "MOVE_HEALING_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -19852,6 +20016,7 @@
         "Move": "MOVE_ZAP_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -19977,6 +20142,7 @@
         "Move": "MOVE_ERUPTION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -20103,6 +20269,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -20217,6 +20384,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_DIG",
@@ -20344,6 +20512,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_DIG",
@@ -20483,6 +20652,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -20634,6 +20804,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -20761,6 +20932,7 @@
         "Move": "MOVE_BURN_UP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -20867,6 +21039,7 @@
         "Move": "MOVE_PERISH_SONG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -20995,6 +21168,7 @@
         "Move": "MOVE_LEAF_STORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -21131,6 +21305,7 @@
         "Move": "MOVE_LEAF_STORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -21280,6 +21455,7 @@
         "Move": "MOVE_LEAF_STORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -21420,6 +21596,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -21548,6 +21725,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -21692,6 +21870,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -21831,6 +22010,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -21963,6 +22143,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -22106,6 +22287,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -22242,6 +22424,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_THUNDER_WAVE",
@@ -22368,6 +22551,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -22476,6 +22660,7 @@
         "Move": "MOVE_ENERGY_BALL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_REST",
@@ -22595,6 +22780,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -22729,6 +22915,7 @@
         "Move": "MOVE_WATER_GUN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -22850,6 +23037,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_DIG",
@@ -22981,6 +23169,7 @@
         "Move": "MOVE_LEAF_BLADE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_HYPER_BEAM",
@@ -23140,6 +23329,7 @@
         "Move": "MOVE_ASTONISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_HYPER_BEAM",
@@ -23260,6 +23450,7 @@
         "Move": "MOVE_HURRICANE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_REST",
@@ -23381,6 +23572,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -23497,6 +23689,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -23627,6 +23820,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -23782,6 +23976,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -23902,6 +24097,7 @@
         "Move": "MOVE_DIG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_DIG",
@@ -24028,6 +24224,7 @@
         "Move": "MOVE_X_SCISSOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -24143,6 +24340,7 @@
         "Move": "MOVE_PHANTOM_FORCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -24236,6 +24434,7 @@
         "Move": "MOVE_HYPER_VOICE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -24341,6 +24540,7 @@
         "Move": "MOVE_HYPER_VOICE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -24479,6 +24679,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -24583,6 +24784,7 @@
         "Move": "MOVE_BOUNCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_REST",
@@ -24706,6 +24908,7 @@
         "Move": "MOVE_FOUL_PLAY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -24839,6 +25042,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -24980,6 +25184,7 @@
         "Move": "MOVE_METAL_BURST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -25096,6 +25301,7 @@
         "Move": "MOVE_METAL_BURST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -25216,6 +25422,7 @@
         "Move": "MOVE_METAL_BURST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -25357,6 +25564,7 @@
         "Move": "MOVE_THUNDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -25463,6 +25671,7 @@
         "Move": "MOVE_ELECTRIC_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -25587,6 +25796,7 @@
         "Move": "MOVE_PETAL_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_MAGICAL_LEAF",
@@ -25688,6 +25898,7 @@
         "Move": "MOVE_TAKE_DOWN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SCREECH",
       "MOVE_REST",
@@ -25809,6 +26020,7 @@
         "Move": "MOVE_TAKE_DOWN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -25938,6 +26150,7 @@
         "Move": "MOVE_WATER_SPOUT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SELF_DESTRUCT",
       "MOVE_REST",
@@ -26064,6 +26277,7 @@
         "Move": "MOVE_WATER_SPOUT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -26194,6 +26408,7 @@
         "Move": "MOVE_ERUPTION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -26305,6 +26520,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_SOLAR_BEAM",
@@ -26441,6 +26657,7 @@
         "Move": "MOVE_BOOMBURST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -26603,6 +26820,7 @@
         "Move": "MOVE_BOOMBURST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -26728,6 +26946,7 @@
         "Move": "MOVE_PERISH_SONG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_SOLAR_BEAM",
@@ -26843,6 +27062,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -26968,6 +27188,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -27097,6 +27318,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -27210,6 +27432,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -27318,6 +27541,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -27432,6 +27656,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -27553,6 +27778,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -27689,6 +27915,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_DIG",
@@ -27826,6 +28053,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -27951,6 +28179,7 @@
         "Move": "MOVE_ENERGY_BALL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_REST",
@@ -28059,6 +28288,7 @@
         "Move": "MOVE_ENERGY_BALL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -28164,6 +28394,7 @@
         "Move": "MOVE_X_SCISSOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -28260,6 +28491,7 @@
         "Move": "MOVE_X_SCISSOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -28329,6 +28561,7 @@
         "Move": "MOVE_FLAIL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_REST",
@@ -28453,6 +28686,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -28566,6 +28800,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_THIEF",
@@ -28696,6 +28931,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -28811,6 +29047,7 @@
         "Move": "MOVE_PERISH_SONG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -28916,6 +29153,7 @@
         "Move": "MOVE_AMNESIA"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SAFEGUARD",
       "MOVE_CHARM",
@@ -28984,6 +29222,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_SAFEGUARD",
@@ -29091,6 +29330,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -29204,6 +29444,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -29318,6 +29559,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -29437,6 +29679,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -29548,6 +29791,7 @@
         "Move": "MOVE_HEAD_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -29658,6 +29902,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -29763,6 +30008,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -29876,6 +30122,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -29941,6 +30188,7 @@
         "Move": "MOVE_TACKLE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_IRON_DEFENSE",
       "MOVE_ZEN_HEADBUTT",
@@ -30018,6 +30266,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ICE_PUNCH",
       "MOVE_THUNDER_PUNCH",
@@ -30137,6 +30386,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ICE_PUNCH",
       "MOVE_THUNDER_PUNCH",
@@ -30256,6 +30506,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -30370,6 +30621,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -30486,6 +30738,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -30607,6 +30860,7 @@
         "Move": "MOVE_PSYCHO_SHIFT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -30748,6 +31002,7 @@
         "Move": "MOVE_PSYCHO_SHIFT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -30876,6 +31131,7 @@
         "Move": "MOVE_WATER_SPOUT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -30980,6 +31236,7 @@
         "Move": "MOVE_ERUPTION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -31101,6 +31358,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -31238,6 +31496,7 @@
         "Move": "MOVE_DOOM_DESIRE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -31366,6 +31625,7 @@
         "Move": "MOVE_WILD_CHARGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -31471,6 +31731,7 @@
         "Move": "MOVE_WILD_CHARGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -31580,6 +31841,7 @@
         "Move": "MOVE_WILD_CHARGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -31651,6 +31913,7 @@
         "Move": "MOVE_WORRY_SEED"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_SOLAR_BEAM",
@@ -31772,6 +32035,7 @@
         "Move": "MOVE_WORRY_SEED"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -31841,6 +32105,7 @@
         "Move": "MOVE_BUG_BITE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SNORE",
       "MOVE_BUG_BUZZ"
@@ -31933,6 +32198,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -32021,6 +32287,7 @@
         "Move": "MOVE_SOLAR_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_SOLAR_BEAM",
@@ -32127,6 +32394,7 @@
         "Move": "MOVE_PETAL_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -32221,6 +32489,7 @@
         "Move": "MOVE_MEMENTO"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -32312,6 +32581,7 @@
         "Move": "MOVE_MEMENTO"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -32434,6 +32704,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_SELF_DESTRUCT",
@@ -32556,6 +32827,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -32671,6 +32943,7 @@
         "Move": "MOVE_HEALING_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -32807,6 +33080,7 @@
         "Move": "MOVE_HI_JUMP_KICK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -32950,6 +33224,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -33081,6 +33356,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -33193,6 +33469,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -33318,6 +33595,7 @@
         "Move": "MOVE_RAIN_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -33431,6 +33709,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SELF_DESTRUCT",
@@ -33541,6 +33820,7 @@
         "Move": "MOVE_TEETER_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDER_WAVE",
@@ -33633,6 +33913,7 @@
         "Move": "MOVE_CHARM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDER_WAVE",
@@ -33734,6 +34015,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -33834,6 +34116,7 @@
         "Move": "MOVE_DRAGON_RUSH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -33936,6 +34219,7 @@
         "Move": "MOVE_DRAGON_RUSH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -34046,6 +34330,7 @@
         "Move": "MOVE_DRAGON_RUSH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -34174,6 +34459,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -34305,6 +34591,7 @@
         "Move": "MOVE_REVERSAL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -34486,6 +34773,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -34626,6 +34914,7 @@
         "Move": "MOVE_SLACK_OFF"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -34744,6 +35033,7 @@
         "Move": "MOVE_SLACK_OFF"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -34871,6 +35161,7 @@
         "Move": "MOVE_CRUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_DIG",
@@ -35006,6 +35297,7 @@
         "Move": "MOVE_CRUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -35131,6 +35423,7 @@
         "Move": "MOVE_BELCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -35259,6 +35552,7 @@
         "Move": "MOVE_BELCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -35394,6 +35688,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -35488,6 +35783,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -35594,6 +35890,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -35731,6 +36028,7 @@
         "Move": "MOVE_DARK_PULSE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -35883,6 +36181,7 @@
         "Move": "MOVE_ZAP_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -35976,6 +36275,7 @@
         "Move": "MOVE_BELLY_DRUM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -36112,6 +36412,7 @@
         "Move": "MOVE_ROCK_WRECKER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -36274,6 +36575,7 @@
         "Move": "MOVE_GRASSY_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -36391,6 +36693,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -36516,6 +36819,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -36669,6 +36973,7 @@
         "Move": "MOVE_LIFE_DEW"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -36846,6 +37151,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -37002,6 +37308,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -37125,6 +37432,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -37255,6 +37563,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -37428,6 +37737,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -37609,6 +37919,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -37762,6 +38073,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ICE_PUNCH",
       "MOVE_HYPER_BEAM",
@@ -37874,6 +38186,7 @@
         "Move": "MOVE_UPROAR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -37971,6 +38284,7 @@
         "Move": "MOVE_MEMENTO"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -38092,6 +38406,7 @@
         "Move": "MOVE_HEALING_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -38212,6 +38527,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -38336,6 +38652,7 @@
         "Move": "MOVE_ROAR_OF_TIME"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -38450,6 +38767,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -38572,6 +38890,7 @@
         "Move": "MOVE_MAGMA_STORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -38688,6 +39007,7 @@
         "Move": "MOVE_CRUSH_GRIP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -38800,6 +39120,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -38913,6 +39234,7 @@
         "Move": "MOVE_LUNAR_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -39035,6 +39357,7 @@
         "Move": "MOVE_FINAL_GAMBIT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -39162,6 +39485,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GIGA_IMPACT",
       "MOVE_THUNDER_WAVE",
@@ -39266,6 +39590,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GIGA_IMPACT",
       "MOVE_THUNDER_WAVE",
@@ -39383,6 +39708,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -39485,6 +39811,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_THUNDER_WAVE",
@@ -39587,6 +39914,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -39707,6 +40035,7 @@
         "Move": "MOVE_WONDER_ROOM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -39821,6 +40150,7 @@
         "Move": "MOVE_PSYBEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -39927,6 +40257,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_REST",
@@ -40017,6 +40348,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_REST",
@@ -40107,6 +40439,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -40201,6 +40534,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -40300,6 +40634,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -40397,6 +40732,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -40498,6 +40834,7 @@
         "Move": "MOVE_SIMPLE_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_THUNDER_WAVE",
@@ -40616,6 +40953,7 @@
         "Move": "MOVE_SIMPLE_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -40741,6 +41079,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -40848,6 +41187,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -40968,6 +41308,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -41096,6 +41437,7 @@
         "Move": "MOVE_FOCUS_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -41209,6 +41551,7 @@
         "Move": "MOVE_FOCUS_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -41324,6 +41667,7 @@
         "Move": "MOVE_FOCUS_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -41445,6 +41789,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SCREECH",
       "MOVE_REST",
@@ -41540,6 +41885,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SCREECH",
       "MOVE_REST",
@@ -41650,6 +41996,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -41765,6 +42112,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -41871,6 +42219,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -41977,6 +42326,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_SOLAR_BEAM",
@@ -42075,6 +42425,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_SOLAR_BEAM",
@@ -42177,6 +42528,7 @@
         "Move": "MOVE_MEGAHORN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -42301,6 +42653,7 @@
         "Move": "MOVE_SOLAR_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_SAFEGUARD",
@@ -42431,6 +42784,7 @@
         "Move": "MOVE_STUN_SPORE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -42548,6 +42902,7 @@
         "Move": "MOVE_LEAF_STORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_SOLAR_BEAM",
@@ -42669,6 +43024,7 @@
         "Move": "MOVE_STUN_SPORE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -42777,6 +43133,7 @@
         "Move": "MOVE_HEAD_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -42888,6 +43245,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -43001,6 +43359,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -43129,6 +43488,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -43263,6 +43623,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -43380,6 +43741,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -43532,6 +43894,7 @@
         "Move": "MOVE_COTTON_GUARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_SOLAR_BEAM",
@@ -43633,6 +43996,7 @@
         "Move": "MOVE_ROCK_WRECKER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_DIG",
@@ -43732,6 +44096,7 @@
         "Move": "MOVE_ROCK_WRECKER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -43842,6 +44207,7 @@
         "Move": "MOVE_HEAD_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -43972,6 +44338,7 @@
         "Move": "MOVE_HEAD_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -44107,6 +44474,7 @@
         "Move": "MOVE_SKILL_SWAP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -44231,6 +44599,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SAFEGUARD",
       "MOVE_REST",
@@ -44348,6 +44717,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -44469,6 +44839,7 @@
         "Move": "MOVE_SHELL_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -44593,6 +44964,7 @@
         "Move": "MOVE_SHELL_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -44724,6 +45096,7 @@
         "Move": "MOVE_ENDEAVOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -44849,6 +45222,7 @@
         "Move": "MOVE_ENDEAVOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -44980,6 +45354,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SELF_DESTRUCT",
       "MOVE_REST",
@@ -45099,6 +45474,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -45210,6 +45586,7 @@
         "Move": "MOVE_FOUL_PLAY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -45336,6 +45713,7 @@
         "Move": "MOVE_FOUL_PLAY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -45461,6 +45839,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_DIG",
@@ -45575,6 +45954,7 @@
         "Move": "MOVE_ECHOED_VOICE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -45688,6 +46068,7 @@
         "Move": "MOVE_MAGIC_ROOM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -45803,6 +46184,7 @@
         "Move": "MOVE_MAGIC_ROOM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -45918,6 +46300,7 @@
         "Move": "MOVE_MAGIC_ROOM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -46043,6 +46426,7 @@
         "Move": "MOVE_WONDER_ROOM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -46158,6 +46542,7 @@
         "Move": "MOVE_WONDER_ROOM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -46281,6 +46666,7 @@
         "Move": "MOVE_WONDER_ROOM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_FIRE_PUNCH",
@@ -46403,6 +46789,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_SELF_DESTRUCT",
@@ -46499,6 +46886,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_SELF_DESTRUCT",
@@ -46607,6 +46995,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -46703,6 +47092,7 @@
         "Move": "MOVE_AGILITY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDER_WAVE",
@@ -46811,6 +47201,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SCREECH",
       "MOVE_REST",
@@ -46932,6 +47323,7 @@
         "Move": "MOVE_METAL_BURST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -47039,6 +47431,7 @@
         "Move": "MOVE_SPORE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_REST",
@@ -47130,6 +47523,7 @@
         "Move": "MOVE_SPORE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -47226,6 +47620,7 @@
         "Move": "MOVE_WATER_SPOUT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SAFEGUARD",
       "MOVE_REST",
@@ -47339,6 +47734,7 @@
         "Move": "MOVE_WATER_SPOUT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -47451,6 +47847,7 @@
         "Move": "MOVE_BUG_BUZZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_THUNDER_WAVE",
@@ -47563,6 +47960,7 @@
         "Move": "MOVE_BUG_BUZZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -47663,6 +48061,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_SOLAR_BEAM",
@@ -47765,6 +48164,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -47879,6 +48279,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_THUNDER_WAVE",
@@ -47967,6 +48368,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_THUNDER_WAVE",
@@ -48068,6 +48470,7 @@
         "Move": "MOVE_ELECTRIC_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -48157,6 +48560,7 @@
         "Move": "MOVE_PSYCHIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_SCREECH",
@@ -48269,6 +48673,7 @@
         "Move": "MOVE_PSYCHIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -48395,6 +48800,7 @@
         "Move": "MOVE_MEMENTO"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_FIRE_SPIN",
@@ -48508,6 +48914,7 @@
         "Move": "MOVE_MEMENTO"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_FIRE_SPIN",
@@ -48621,6 +49028,7 @@
         "Move": "MOVE_MINIMIZE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -48744,6 +49152,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GIGA_IMPACT",
       "MOVE_DIG",
@@ -48867,6 +49276,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GIGA_IMPACT",
       "MOVE_DIG",
@@ -48993,6 +49403,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -49123,6 +49534,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -49251,6 +49663,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -49392,6 +49805,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_SOLAR_BEAM",
@@ -49482,6 +49896,7 @@
         "Move": "MOVE_FINAL_GAMBIT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -49608,6 +50023,7 @@
         "Move": "MOVE_TOXIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -49717,6 +50133,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_DIG",
@@ -49826,6 +50243,7 @@
         "Move": "MOVE_HI_JUMP_KICK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -49947,6 +50365,7 @@
         "Move": "MOVE_HI_JUMP_KICK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -50065,6 +50484,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_FIRE_PUNCH",
@@ -50196,6 +50616,7 @@
         "Move": "MOVE_DYNAMIC_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -50323,6 +50744,7 @@
         "Move": "MOVE_DYNAMIC_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -50453,6 +50875,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_DIG",
@@ -50573,6 +50996,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -50687,6 +51111,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GIGA_IMPACT",
       "MOVE_REST",
@@ -50805,6 +51230,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_REST",
@@ -50914,6 +51340,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -51014,6 +51441,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_REST",
@@ -51133,6 +51561,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -51246,6 +51675,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_PUNCH",
       "MOVE_THUNDER_PUNCH",
@@ -51365,6 +51795,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GIGA_IMPACT",
       "MOVE_THUNDER_WAVE",
@@ -51482,6 +51913,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_SCREECH",
@@ -51602,6 +52034,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_SCREECH",
@@ -51732,6 +52165,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -51864,6 +52298,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_SCREECH",
@@ -52000,6 +52435,7 @@
         "Move": "MOVE_RAGE_POWDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -52108,6 +52544,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -52217,6 +52654,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -52327,6 +52765,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -52446,6 +52885,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -52564,6 +53004,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_PUNCH",
       "MOVE_FLY",
@@ -52685,6 +53126,7 @@
         "Move": "MOVE_BLUE_FLARE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -52809,6 +53251,7 @@
         "Move": "MOVE_BOLT_STRIKE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_PUNCH",
       "MOVE_FLY",
@@ -52939,6 +53382,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -53051,6 +53495,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -53171,6 +53616,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -53286,6 +53732,7 @@
         "Move": "MOVE_SELF_DESTRUCT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -53398,6 +53845,7 @@
         "Move": "MOVE_SUPER_FANG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -53507,6 +53955,7 @@
         "Move": "MOVE_HAMMER_ARM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -53620,6 +54069,7 @@
         "Move": "MOVE_FLY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_REST",
@@ -53717,6 +54167,7 @@
         "Move": "MOVE_FLY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_FIRE_SPIN",
@@ -53821,6 +54272,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -53920,6 +54372,7 @@
         "Move": "MOVE_ENTRAINMENT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -54053,6 +54506,7 @@
         "Move": "MOVE_HAMMER_ARM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -54177,6 +54631,7 @@
         "Move": "MOVE_PSYSHOCK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_THUNDER_WAVE",
@@ -54303,6 +54758,7 @@
         "Move": "MOVE_MISTY_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -54418,6 +54874,7 @@
         "Move": "MOVE_SACRED_SWORD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BLADE",
       "MOVE_SCREECH",
@@ -54515,6 +54972,7 @@
         "Move": "MOVE_SACRED_SWORD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BLADE",
       "MOVE_SCREECH",
@@ -54624,6 +55082,7 @@
         "Move": "MOVE_AUTOTOMIZE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -54730,6 +55189,7 @@
         "Move": "MOVE_SKILL_SWAP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_REFLECT",
@@ -54846,6 +55306,7 @@
         "Move": "MOVE_PSYCH_UP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -54956,6 +55417,7 @@
         "Move": "MOVE_ENDEAVOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_SAFEGUARD",
@@ -55062,6 +55524,7 @@
         "Move": "MOVE_STICKY_WEB"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -55169,6 +55632,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_REFLECT",
@@ -55284,6 +55748,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -55394,6 +55859,7 @@
         "Move": "MOVE_CROSS_CHOP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -55513,6 +55979,7 @@
         "Move": "MOVE_STONE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -55638,6 +56105,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -55740,6 +56208,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -55843,6 +56312,7 @@
         "Move": "MOVE_CRABHAMMER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -55951,6 +56421,7 @@
         "Move": "MOVE_CRABHAMMER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -56053,6 +56524,7 @@
         "Move": "MOVE_THUNDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_DIG",
@@ -56161,6 +56633,7 @@
         "Move": "MOVE_THUNDER_SHOCK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -56281,6 +56754,7 @@
         "Move": "MOVE_HORN_DRILL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -56407,6 +56881,7 @@
         "Move": "MOVE_HEAD_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -56538,6 +57013,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_THUNDER_WAVE",
@@ -56661,6 +57137,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -56821,6 +57298,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -56945,6 +57423,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -57080,6 +57559,7 @@
         "Move": "MOVE_THUNDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_PUNCH",
       "MOVE_GIGA_IMPACT",
@@ -57184,6 +57664,7 @@
         "Move": "MOVE_STONE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_REFLECT",
@@ -57278,6 +57759,7 @@
         "Move": "MOVE_MUDDY_WATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -57369,6 +57851,7 @@
         "Move": "MOVE_MUDDY_WATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -57482,6 +57965,7 @@
         "Move": "MOVE_POWER_WHIP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -57602,6 +58086,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -57707,6 +58192,7 @@
         "Move": "MOVE_FORESTS_CURSE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_SOLAR_BEAM",
@@ -57828,6 +58314,7 @@
         "Move": "MOVE_FORESTS_CURSE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -57954,6 +58441,7 @@
         "Move": "MOVE_PAIN_SPLIT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -58083,6 +58571,7 @@
         "Move": "MOVE_PHANTOM_FORCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -58207,6 +58696,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SAFEGUARD",
       "MOVE_REST",
@@ -58325,6 +58815,7 @@
         "Move": "MOVE_SKULL_BASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -58435,6 +58926,7 @@
         "Move": "MOVE_HURRICANE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_SOLAR_BEAM",
@@ -58561,6 +59053,7 @@
         "Move": "MOVE_BOOMBURST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -58693,6 +59186,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -58818,6 +59312,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -58937,6 +59432,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -59049,6 +59545,7 @@
         "Move": "MOVE_DIAMOND_STORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -59179,6 +59676,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -59294,6 +59792,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -59394,6 +59893,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -59518,6 +60018,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -59635,6 +60136,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_FIRE_SPIN",
@@ -59738,6 +60240,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_FIRE_SPIN",
@@ -59861,6 +60364,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -59995,6 +60499,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -60101,6 +60606,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -60215,6 +60721,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -60319,6 +60826,7 @@
         "Move": "MOVE_DIG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_DIG",
@@ -60412,6 +60920,7 @@
         "Move": "MOVE_DISCHARGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_DIG",
@@ -60532,6 +61041,7 @@
         "Move": "MOVE_ZAP_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -60627,6 +61137,7 @@
         "Move": "MOVE_QUIVER_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_REFLECT",
@@ -60733,6 +61244,7 @@
         "Move": "MOVE_QUIVER_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -60844,6 +61356,7 @@
         "Move": "MOVE_STONE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -60960,6 +61473,7 @@
         "Move": "MOVE_STONE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GIGA_IMPACT",
       "MOVE_REST",
@@ -61068,6 +61582,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -61160,6 +61675,7 @@
         "Move": "MOVE_TOXIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_SAFEGUARD",
@@ -61262,6 +61778,7 @@
         "Move": "MOVE_TOXIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_LIGHT_SCREEN",
@@ -61363,6 +61880,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_REST",
@@ -61457,6 +61975,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_HYPER_BEAM",
@@ -61564,6 +62083,7 @@
         "Move": "MOVE_MIRROR_COAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -61665,6 +62185,7 @@
         "Move": "MOVE_MIRROR_COAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REFLECT",
       "MOVE_SAFEGUARD",
@@ -61758,6 +62279,7 @@
         "Move": "MOVE_SOLAR_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_SOLAR_BEAM",
@@ -61868,6 +62390,7 @@
         "Move": "MOVE_SOLAR_BLADE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -61971,6 +62494,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDER_WAVE",
@@ -62061,6 +62585,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -62160,6 +62685,7 @@
         "Move": "MOVE_ENDEAVOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -62299,6 +62825,7 @@
         "Move": "MOVE_TOXIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -62414,6 +62941,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -62525,6 +63053,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -62625,6 +63154,7 @@
         "Move": "MOVE_AROMATHERAPY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_SOLAR_BEAM",
@@ -62713,6 +63243,7 @@
         "Move": "MOVE_LEAF_STORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_SOLAR_BEAM",
@@ -62826,6 +63357,7 @@
         "Move": "MOVE_HI_JUMP_KICK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_HYPER_BEAM",
@@ -62952,6 +63484,7 @@
         "Move": "MOVE_GRASSY_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_MAGICAL_LEAF",
@@ -63061,6 +63594,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -63181,6 +63715,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -63262,6 +63797,7 @@
         "Move": "MOVE_DEFENSE_CURL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SCREECH",
       "MOVE_REST",
@@ -63368,6 +63904,7 @@
         "Move": "MOVE_LIQUIDATION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -63494,6 +64031,7 @@
         "Move": "MOVE_SANDSTORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -63597,6 +64135,7 @@
         "Move": "MOVE_SANDSTORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GIGA_IMPACT",
       "MOVE_REST",
@@ -63703,6 +64242,7 @@
         "Move": "MOVE_MEMENTO"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SCREECH",
       "MOVE_LIGHT_SCREEN",
@@ -63784,6 +64324,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -63917,6 +64458,7 @@
         "Move": "MOVE_PARTING_SHOT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -64042,6 +64584,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -64165,6 +64708,7 @@
         "Move": "MOVE_SPIKY_SHIELD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -64284,6 +64828,7 @@
         "Move": "MOVE_PAIN_SPLIT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -64393,6 +64938,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -64536,6 +65082,7 @@
         "Move": "MOVE_POWER_WHIP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -64646,6 +65193,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SCREECH",
       "MOVE_SAFEGUARD",
@@ -64759,6 +65307,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -64898,6 +65447,7 @@
         "Move": "MOVE_BOOMBURST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -65041,6 +65591,7 @@
         "Move": "MOVE_ELECTRIC_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_PUNCH",
       "MOVE_FLY",
@@ -65162,6 +65713,7 @@
         "Move": "MOVE_PSYCHIC_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -65280,6 +65832,7 @@
         "Move": "MOVE_GRASSY_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_HYPER_BEAM",
@@ -65411,6 +65964,7 @@
         "Move": "MOVE_MISTY_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ICE_PUNCH",
       "MOVE_HYPER_BEAM",
@@ -65469,6 +66023,7 @@
         "Move": "MOVE_TELEPORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
@@ -65488,6 +66043,7 @@
         "Move": "MOVE_TELEPORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_COSMIC_POWER"
     ],
@@ -65569,6 +66125,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -65710,6 +66267,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -65838,6 +66396,7 @@
         "Move": "MOVE_HEAD_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -65952,6 +66511,7 @@
         "Move": "MOVE_FOCUS_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -66068,6 +66628,7 @@
         "Move": "MOVE_HI_JUMP_KICK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -66178,6 +66739,7 @@
         "Move": "MOVE_ZAP_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_PUNCH",
       "MOVE_HYPER_BEAM",
@@ -66284,6 +66846,7 @@
         "Move": "MOVE_SKULL_BASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -66397,6 +66960,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GIGA_IMPACT",
       "MOVE_SOLAR_BLADE",
@@ -66496,6 +67060,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -66624,6 +67189,7 @@
         "Move": "MOVE_PRISMATIC_LASER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -66757,6 +67323,7 @@
         "Move": "MOVE_FLEUR_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -66887,6 +67454,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -67008,6 +67576,7 @@
         "Move": "MOVE_TOXIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_REST",
@@ -67110,6 +67679,7 @@
         "Move": "MOVE_DRAGON_RUSH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_PIN_MISSILE",
@@ -67236,6 +67806,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_GIGA_IMPACT",
@@ -67351,6 +67922,7 @@
         "Move": "MOVE_MIND_BLOWN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_PUNCH",
       "MOVE_HYPER_BEAM",
@@ -67471,6 +68043,7 @@
         "Move": "MOVE_CLOSE_COMBAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -67564,6 +68137,7 @@
         "Move": "MOVE_FLASH_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -67651,6 +68225,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -67742,6 +68317,7 @@
         "Move": "MOVE_ENDEAVOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -67845,6 +68421,7 @@
         "Move": "MOVE_ENDEAVOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -67964,6 +68541,7 @@
         "Move": "MOVE_BOOMBURST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -68082,6 +68660,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_REST",
@@ -68175,6 +68754,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_REST",
@@ -68286,6 +68866,7 @@
         "Move": "MOVE_COURT_CHANGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_FIRE_PUNCH",
@@ -68395,6 +68976,7 @@
         "Move": "MOVE_RAIN_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_REFLECT",
@@ -68482,6 +69064,7 @@
         "Move": "MOVE_RAIN_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_LIGHT_SCREEN",
       "MOVE_REFLECT",
@@ -68586,6 +69169,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -68702,6 +69286,7 @@
         "Move": "MOVE_BELCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REST",
@@ -68801,6 +69386,7 @@
         "Move": "MOVE_BELCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -68896,6 +69482,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_REST",
@@ -68985,6 +69572,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_REST",
@@ -69090,6 +69678,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -69154,6 +69743,7 @@
         "Move": "MOVE_STRUGGLE_BUG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [
       "MOVE_INFESTATION",
@@ -69194,6 +69784,7 @@
         "Move": "MOVE_STRUGGLE_BUG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BEAM",
       "MOVE_LIGHT_SCREEN",
@@ -69310,6 +69901,7 @@
         "Move": "MOVE_PSYCHIC_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -69413,6 +70005,7 @@
         "Move": "MOVE_FOUL_PLAY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -69509,6 +70102,7 @@
         "Move": "MOVE_PARTING_SHOT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -69607,6 +70201,7 @@
         "Move": "MOVE_LEAF_STORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_SOLAR_BEAM",
@@ -69703,6 +70298,7 @@
         "Move": "MOVE_COTTON_GUARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -69795,6 +70391,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -69877,6 +70474,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_HYPER_BEAM",
@@ -69953,6 +70551,7 @@
         "Move": "MOVE_BODY_SLAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -70049,6 +70648,7 @@
         "Move": "MOVE_HEAD_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -70163,6 +70763,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_DIG",
@@ -70256,6 +70857,7 @@
         "Move": "MOVE_ELECTRIC_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -70346,6 +70948,7 @@
         "Move": "MOVE_ROCK_BLAST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_REFLECT",
@@ -70437,6 +71040,7 @@
         "Move": "MOVE_BURN_UP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_SPIN",
       "MOVE_DIG",
@@ -70543,6 +71147,7 @@
         "Move": "MOVE_BURN_UP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -70611,6 +71216,7 @@
         "Move": "MOVE_ASTONISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ATTRACT"
     ],
@@ -70700,6 +71306,7 @@
         "Move": "MOVE_DRAGON_RUSH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -70818,6 +71425,7 @@
         "Move": "MOVE_ENERGY_BALL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -70916,6 +71524,7 @@
         "Move": "MOVE_SAND_TOMB"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -71005,6 +71614,7 @@
         "Move": "MOVE_SAND_TOMB"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -71109,6 +71719,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -71200,6 +71811,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -71287,6 +71899,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -71360,6 +71973,7 @@
         "Move": "MOVE_ACID"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -71486,6 +72100,7 @@
         "Move": "MOVE_SHIFT_GEAR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -71593,6 +72208,7 @@
         "Move": "MOVE_BURN_UP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FIRE_SPIN",
       "MOVE_REST",
@@ -71685,6 +72301,7 @@
         "Move": "MOVE_BURN_UP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -71777,6 +72394,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -71883,6 +72501,7 @@
         "Move": "MOVE_TOPSY_TURVY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -71988,6 +72607,7 @@
         "Move": "MOVE_SHELL_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -72088,6 +72708,7 @@
         "Move": "MOVE_CURSE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -72173,6 +72794,7 @@
         "Move": "MOVE_HEALING_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_THUNDER_WAVE",
@@ -72268,6 +72890,7 @@
         "Move": "MOVE_HEALING_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MAGICAL_LEAF",
       "MOVE_THUNDER_WAVE",
@@ -72372,6 +72995,7 @@
         "Move": "MOVE_MAGIC_POWDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -72482,6 +73106,7 @@
         "Move": "MOVE_FOUL_PLAY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -72583,6 +73208,7 @@
         "Move": "MOVE_FOUL_PLAY"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -72704,6 +73330,7 @@
         "Move": "MOVE_HAMMER_ARM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -72857,6 +73484,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -73003,6 +73631,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -73125,6 +73754,7 @@
         "Move": "MOVE_MIRROR_COAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -73274,6 +73904,7 @@
         "Move": "MOVE_METEOR_ASSAULT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BLADE",
       "MOVE_REST",
@@ -73447,6 +74078,7 @@
         "Move": "MOVE_TEETER_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -73608,6 +74240,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -73723,6 +74356,7 @@
         "Move": "MOVE_ENTRAINMENT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -73806,6 +74440,7 @@
         "Move": "MOVE_ENTRAINMENT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -73912,6 +74547,7 @@
         "Move": "MOVE_COUNTER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -74014,6 +74650,7 @@
         "Move": "MOVE_DISCHARGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_THUNDER_WAVE",
@@ -74067,6 +74704,7 @@
         "Move": "MOVE_STRUGGLE_BUG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -74169,6 +74807,7 @@
         "Move": "MOVE_QUIVER_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -74270,6 +74909,7 @@
         "Move": "MOVE_MEGA_KICK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_HYPER_BEAM",
@@ -74366,6 +75006,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ICE_PUNCH",
       "MOVE_REFLECT",
@@ -74464,6 +75105,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_MAGICAL_LEAF",
@@ -74573,6 +75215,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_PUNCH",
       "MOVE_THUNDER_WAVE",
@@ -74688,6 +75331,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_DIG",
@@ -74801,6 +75445,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_HYPER_BEAM",
@@ -74919,6 +75564,7 @@
         "Move": "MOVE_DRAGON_RUSH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -75026,6 +75672,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -75130,6 +75777,7 @@
         "Move": "MOVE_DRAGON_RUSH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_HYPER_BEAM",
@@ -75232,6 +75880,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -75329,6 +75978,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -75401,6 +76051,7 @@
         "Move": "MOVE_BITE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -75504,6 +76155,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -75641,6 +76293,7 @@
         "Move": "MOVE_LAST_RESORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -75763,6 +76416,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -75872,6 +76526,7 @@
         "Move": "MOVE_GIGA_IMPACT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -75988,6 +76643,7 @@
         "Move": "MOVE_ETERNABEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -76093,6 +76749,7 @@
         "Move": "MOVE_FOCUS_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -76208,6 +76865,7 @@
         "Move": "MOVE_FOCUS_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -76343,6 +77001,7 @@
         "Move": "MOVE_JUNGLE_HEALING"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -76469,6 +77128,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -76569,6 +77229,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -76660,6 +77321,7 @@
         "Move": "MOVE_SWORDS_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -76764,6 +77426,7 @@
         "Move": "MOVE_NASTY_PLOT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -76866,6 +77529,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -77015,6 +77679,7 @@
         "Move": "MOVE_QUICK_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -77153,6 +77818,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ICE_PUNCH",
       "MOVE_DIG",
@@ -77294,6 +77960,7 @@
         "Move": "MOVE_POWDER_SNOW"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_ICE_PUNCH",
       "MOVE_PIN_MISSILE",
@@ -77422,6 +78089,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SAFEGUARD",
@@ -77546,6 +78214,7 @@
         "Move": "MOVE_ICE_SHARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -77658,6 +78327,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -77777,6 +78447,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -77887,6 +78558,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_DIG",
@@ -78010,6 +78682,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -78147,6 +78820,7 @@
         "Move": "MOVE_LEECH_SEED"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -78294,6 +78968,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -78425,6 +79100,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_DIG",
@@ -78537,6 +79213,7 @@
         "Move": "MOVE_HEALING_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_REST",
       "MOVE_SNORE",
@@ -78650,6 +79327,7 @@
         "Move": "MOVE_HEALING_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -78778,6 +79456,7 @@
         "Move": "MOVE_HEAL_PULSE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_THUNDER_WAVE",
@@ -78926,6 +79605,7 @@
         "Move": "MOVE_HEAL_PULSE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -79073,6 +79753,7 @@
         "Move": "MOVE_BRAVE_BIRD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SOLAR_BLADE",
       "MOVE_REST",
@@ -79219,6 +79900,7 @@
         "Move": "MOVE_MISTY_TERRAIN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HYPER_BEAM",
       "MOVE_GIGA_IMPACT",
@@ -79383,6 +80065,7 @@
         "Move": "MOVE_TEETER_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -79531,6 +80214,7 @@
         "Move": "MOVE_TRICK_ROOM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -79641,6 +80325,7 @@
         "Move": "MOVE_REVERSAL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_KICK",
       "MOVE_FLY",
@@ -79755,6 +80440,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -79885,6 +80571,7 @@
         "Move": "MOVE_HEAL_PULSE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -80025,6 +80712,7 @@
         "Move": "MOVE_MIRROR_COAT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_DIG",
       "MOVE_SCREECH",
@@ -80147,6 +80835,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_THUNDER_WAVE",
@@ -80280,6 +80969,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PIN_MISSILE",
       "MOVE_HYPER_BEAM",
@@ -80399,6 +81089,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLAMETHROWER",
       "MOVE_ICE_BEAM",
@@ -80499,6 +81190,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_BODY_SLAM",
       "MOVE_FLAMETHROWER",
@@ -80612,6 +81304,7 @@
         "Move": "MOVE_DESTINY_BOND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_EARTHQUAKE",
       "MOVE_PSYCHIC",
@@ -80701,6 +81394,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_SURF",
       "MOVE_EARTHQUAKE",
@@ -80791,6 +81485,7 @@
         "Move": "MOVE_UPROAR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -80888,6 +81583,7 @@
         "Move": "MOVE_UPROAR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -80985,6 +81681,7 @@
         "Move": "MOVE_UPROAR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -81082,6 +81779,7 @@
         "Move": "MOVE_UPROAR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -81179,6 +81877,7 @@
         "Move": "MOVE_UPROAR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_THUNDER_WAVE",
       "MOVE_LIGHT_SCREEN",
@@ -81284,6 +81983,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -81404,6 +82104,7 @@
         "Move": "MOVE_SHEER_COLD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_FLY",
       "MOVE_HYPER_BEAM",
@@ -81540,6 +82241,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -81676,6 +82378,7 @@
         "Move": "MOVE_STONE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -81833,6 +82536,7 @@
         "Move": "MOVE_STONE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_GIGA_IMPACT",
       "MOVE_REST",
@@ -81990,6 +82694,7 @@
         "Move": "MOVE_MAGNETIC_FLUX"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -82097,6 +82802,7 @@
         "Move": "MOVE_HEALING_WISH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_MAGICAL_LEAF",
@@ -82222,6 +82928,7 @@
         "Move": "MOVE_FOCUS_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -82405,6 +83112,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",
@@ -82615,6 +83323,7 @@
         "Move": "MOVE_FUTURE_SIGHT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_PAY_DAY",
       "MOVE_HYPER_BEAM",

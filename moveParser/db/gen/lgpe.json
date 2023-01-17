@@ -42,6 +42,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -114,6 +115,7 @@
         "Move": "MOVE_SOLAR_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -202,6 +204,7 @@
         "Move": "MOVE_SOLAR_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -260,6 +263,7 @@
         "Move": "MOVE_FLAMETHROWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -335,6 +339,7 @@
         "Move": "MOVE_FLAMETHROWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -438,6 +443,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -515,6 +521,7 @@
         "Move": "MOVE_SKULL_BASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -599,6 +606,7 @@
         "Move": "MOVE_SKULL_BASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -695,6 +703,7 @@
         "Move": "MOVE_SKULL_BASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -736,6 +745,7 @@
         "Move": "MOVE_STRING_SHOT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
@@ -751,6 +761,7 @@
         "Move": "MOVE_HARDEN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
@@ -806,6 +817,7 @@
         "Move": "MOVE_BUG_BUZZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -838,6 +850,7 @@
         "Move": "MOVE_STRING_SHOT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
@@ -853,6 +866,7 @@
         "Move": "MOVE_HARDEN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
@@ -900,6 +914,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -970,6 +985,7 @@
         "Move": "MOVE_RAZOR_WIND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -1044,6 +1060,7 @@
         "Move": "MOVE_RAZOR_WIND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -1126,6 +1143,7 @@
         "Move": "MOVE_RAZOR_WIND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -1185,6 +1203,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -1273,6 +1292,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -1334,6 +1354,7 @@
         "Move": "MOVE_DRILL_PECK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -1413,6 +1434,7 @@
         "Move": "MOVE_DRILL_PECK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -1477,6 +1499,7 @@
         "Move": "MOVE_TOXIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -1563,6 +1586,7 @@
         "Move": "MOVE_TOXIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -1635,6 +1659,7 @@
         "Move": "MOVE_THUNDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -1694,6 +1719,7 @@
         "Move": "MOVE_QUICK_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -1766,6 +1792,7 @@
         "Move": "MOVE_EARTHQUAKE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -1845,6 +1872,7 @@
         "Move": "MOVE_EARTHQUAKE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -1914,6 +1942,7 @@
         "Move": "MOVE_SUPER_FANG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -1990,6 +2019,7 @@
         "Move": "MOVE_SUPER_FANG"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -2050,6 +2080,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -2138,6 +2169,7 @@
         "Move": "MOVE_HORN_DRILL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -2215,6 +2247,7 @@
         "Move": "MOVE_HORN_DRILL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -2276,6 +2309,7 @@
         "Move": "MOVE_MEGAHORN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -2365,6 +2399,7 @@
         "Move": "MOVE_MOONBLAST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -2430,6 +2465,7 @@
         "Move": "MOVE_SING"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -2512,6 +2548,7 @@
         "Move": "MOVE_FIRE_BLAST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -2558,6 +2595,7 @@
         "Move": "MOVE_QUICK_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -2624,6 +2662,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -2679,6 +2718,7 @@
         "Move": "MOVE_BIDE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -2759,6 +2799,7 @@
         "Move": "MOVE_AIR_SLASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -2844,6 +2885,7 @@
         "Move": "MOVE_AIR_SLASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -2906,6 +2948,7 @@
         "Move": "MOVE_MOONBLAST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -2977,6 +3020,7 @@
         "Move": "MOVE_MOONBLAST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -3020,6 +3064,7 @@
         "Move": "MOVE_PETAL_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -3084,6 +3129,7 @@
         "Move": "MOVE_X_SCISSOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -3170,6 +3216,7 @@
         "Move": "MOVE_X_SCISSOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -3233,6 +3280,7 @@
         "Move": "MOVE_PSYCHIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -3328,6 +3376,7 @@
         "Move": "MOVE_QUIVER_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -3392,6 +3441,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -3475,6 +3525,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -3552,6 +3603,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -3650,6 +3702,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -3721,6 +3774,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -3813,6 +3867,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -3890,6 +3945,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -3994,6 +4050,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -4079,6 +4136,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -4122,6 +4180,7 @@
         "Move": "MOVE_LEER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -4186,6 +4245,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -4256,6 +4316,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -4322,6 +4383,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -4357,6 +4419,7 @@
         "Move": "MOVE_TELEPORT"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -4448,6 +4511,7 @@
         "Move": "MOVE_PSYCHIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -4548,6 +4612,7 @@
         "Move": "MOVE_PSYCHIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -4621,6 +4686,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -4698,6 +4764,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -4791,6 +4858,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -4861,6 +4929,7 @@
         "Move": "MOVE_SLAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -4932,6 +5001,7 @@
         "Move": "MOVE_SLAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -4991,6 +5061,7 @@
         "Move": "MOVE_POWER_WHIP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -5055,6 +5126,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -5143,6 +5215,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -5216,6 +5289,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -5298,6 +5372,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -5384,6 +5459,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -5459,6 +5535,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -5555,6 +5632,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -5619,6 +5697,7 @@
         "Move": "MOVE_AMNESIA"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -5712,6 +5791,7 @@
         "Move": "MOVE_AMNESIA"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -5790,6 +5870,7 @@
         "Move": "MOVE_THUNDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -5867,6 +5948,7 @@
         "Move": "MOVE_THUNDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -5954,6 +6036,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -6015,6 +6098,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -6096,6 +6180,7 @@
         "Move": "MOVE_THRASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -6160,6 +6245,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -6247,6 +6333,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -6311,6 +6398,7 @@
         "Move": "MOVE_SLUDGE_BOMB"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -6397,6 +6485,7 @@
         "Move": "MOVE_SLUDGE_BOMB"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -6478,6 +6567,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -6531,6 +6621,7 @@
         "Move": "MOVE_LEER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -6602,6 +6693,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -6684,6 +6776,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -6775,6 +6868,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -6861,6 +6955,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -6929,6 +7024,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -7016,6 +7112,7 @@
         "Move": "MOVE_DREAM_EATER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -7088,6 +7185,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -7171,6 +7269,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -7235,6 +7334,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -7310,6 +7410,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -7374,6 +7475,7 @@
         "Move": "MOVE_SOLAR_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -7429,6 +7531,7 @@
         "Move": "MOVE_STUN_SPORE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -7493,6 +7596,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -7584,6 +7688,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -7653,6 +7758,7 @@
         "Move": "MOVE_HI_JUMP_KICK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -7723,6 +7829,7 @@
         "Move": "MOVE_COUNTER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -7786,6 +7893,7 @@
         "Move": "MOVE_POWER_WHIP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -7862,6 +7970,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -7942,6 +8051,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -8015,6 +8125,7 @@
         "Move": "MOVE_HORN_DRILL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -8105,6 +8216,7 @@
         "Move": "MOVE_HORN_DRILL"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -8194,6 +8306,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -8292,6 +8405,7 @@
         "Move": "MOVE_POWER_WHIP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -8355,6 +8469,7 @@
         "Move": "MOVE_SUCKER_PUNCH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -8430,6 +8545,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -8512,6 +8628,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -8575,6 +8692,7 @@
         "Move": "MOVE_MEGAHORN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -8653,6 +8771,7 @@
         "Move": "MOVE_MEGAHORN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -8724,6 +8843,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -8769,6 +8889,7 @@
         "Move": "MOVE_WATER_GUN"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -8852,6 +8973,7 @@
         "Move": "MOVE_PSYCHIC"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -8935,6 +9057,7 @@
         "Move": "MOVE_X_SCISSOR"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -8995,6 +9118,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -9068,6 +9192,7 @@
         "Move": "MOVE_THUNDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -9142,6 +9267,7 @@
         "Move": "MOVE_FIRE_BLAST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -9217,6 +9343,7 @@
         "Move": "MOVE_GUILLOTINE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -9287,6 +9414,7 @@
         "Move": "MOVE_OUTRAGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -9323,6 +9451,7 @@
         "Move": "MOVE_TACKLE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
@@ -9394,6 +9523,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -9475,6 +9605,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -9509,6 +9640,7 @@
         "Move": "MOVE_TRANSFORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
@@ -9560,6 +9692,7 @@
         "Move": "MOVE_HELPING_HAND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -9644,6 +9777,7 @@
         "Move": "MOVE_HYDRO_PUMP"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -9734,6 +9868,7 @@
         "Move": "MOVE_THUNDER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -9823,6 +9958,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -9888,6 +10024,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -9957,6 +10094,7 @@
         "Move": "MOVE_SHELL_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10047,6 +10185,7 @@
         "Move": "MOVE_SHELL_SMASH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10107,6 +10246,7 @@
         "Move": "MOVE_LEECH_LIFE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10203,6 +10343,7 @@
         "Move": "MOVE_SWORDS_DANCE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10276,6 +10417,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -10346,6 +10488,7 @@
         "Move": "MOVE_SUPERPOWER"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10427,6 +10570,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10492,6 +10636,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10559,6 +10704,7 @@
         "Move": "MOVE_SKY_ATTACK"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10618,6 +10764,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10692,6 +10839,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10794,6 +10942,7 @@
         "Move": "MOVE_ROOST"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -10889,6 +11038,7 @@
         "Move": "MOVE_CALM_MIND"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -10983,6 +11133,7 @@
         "Move": "MOVE_TRANSFORM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -11079,6 +11230,7 @@
         "Move": "MOVE_FLASH_CANNON"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -11159,6 +11311,7 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -11227,6 +11380,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -11314,6 +11468,7 @@
         "Move": "MOVE_DOUBLE_EDGE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -11371,6 +11526,7 @@
         "Move": "MOVE_DOUBLE_TEAM"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_HELPING_HAND",
@@ -11445,6 +11601,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -11491,6 +11648,7 @@
         "Move": "MOVE_ICE_SHARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -11559,6 +11717,7 @@
         "Move": "MOVE_BLIZZARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -11605,6 +11764,7 @@
         "Move": "MOVE_ICE_SHARD"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -11670,6 +11830,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -11754,6 +11915,7 @@
         "Move": "MOVE_FISSURE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -11832,6 +11994,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -11929,6 +12092,7 @@
         "Move": "MOVE_PLAY_ROUGH"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -12003,6 +12167,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -12088,6 +12253,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -12177,6 +12343,7 @@
         "Move": "MOVE_EXPLOSION"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
@@ -12247,6 +12414,7 @@
         "Move": "MOVE_SLUDGE_BOMB"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -12331,6 +12499,7 @@
         "Move": "MOVE_SLUDGE_BOMB"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TAUNT",
@@ -12395,6 +12564,7 @@
         "Move": "MOVE_STUN_SPORE"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_TELEPORT",
@@ -12491,6 +12661,7 @@
         "Move": "MOVE_FLARE_BLITZ"
       }
     ],
+    "PreEvoMoves": [],
     "TMMoves": [
       "MOVE_HEADBUTT",
       "MOVE_REST",
