@@ -2576,483 +2576,831 @@
     "defineName": "HYPERSPACE_FURY"
   },
   "Shore Up": {
-    "moveId": 659,
+    "moveId": 622,
     "defineName": "SHORE_UP"
   },
   "First Impression": {
-    "moveId": 660,
+    "moveId": 623,
     "defineName": "FIRST_IMPRESSION"
   },
   "Baneful Bunker": {
-    "moveId": 661,
+    "moveId": 624,
     "defineName": "BANEFUL_BUNKER"
   },
   "Spirit Shackle": {
-    "moveId": 662,
+    "moveId": 625,
     "defineName": "SPIRIT_SHACKLE"
   },
   "Darkest Lariat": {
-    "moveId": 663,
+    "moveId": 626,
     "defineName": "DARKEST_LARIAT"
   },
   "Sparkling Aria": {
-    "moveId": 664,
+    "moveId": 627,
     "defineName": "SPARKLING_ARIA"
   },
   "Ice Hammer": {
-    "moveId": 665,
+    "moveId": 628,
     "defineName": "ICE_HAMMER"
   },
   "Floral Healing": {
-    "moveId": 666,
+    "moveId": 629,
     "defineName": "FLORAL_HEALING"
   },
   "High Horsepower": {
-    "moveId": 667,
+    "moveId": 630,
     "defineName": "HIGH_HORSEPOWER"
   },
   "Strength Sap": {
-    "moveId": 668,
+    "moveId": 631,
     "defineName": "STRENGTH_SAP"
   },
   "Solar Blade": {
-    "moveId": 669,
+    "moveId": 632,
     "defineName": "SOLAR_BLADE"
   },
   "Leafage": {
-    "moveId": 670,
+    "moveId": 633,
     "defineName": "LEAFAGE"
   },
   "Spotlight": {
-    "moveId": 671,
+    "moveId": 634,
     "defineName": "SPOTLIGHT"
   },
   "Toxic Thread": {
-    "moveId": 672,
+    "moveId": 635,
     "defineName": "TOXIC_THREAD"
   },
   "Laser Focus": {
-    "moveId": 673,
+    "moveId": 636,
     "defineName": "LASER_FOCUS"
   },
   "Gear Up": {
-    "moveId": 674,
+    "moveId": 637,
     "defineName": "GEAR_UP"
   },
   "Throat Chop": {
-    "moveId": 675,
+    "moveId": 638,
     "defineName": "THROAT_CHOP"
   },
   "Pollen Puff": {
-    "moveId": 676,
+    "moveId": 639,
     "defineName": "POLLEN_PUFF"
   },
   "Anchor Shot": {
-    "moveId": 677,
+    "moveId": 640,
     "defineName": "ANCHOR_SHOT"
   },
   "Psychic Terrain": {
-    "moveId": 678,
+    "moveId": 641,
     "defineName": "PSYCHIC_TERRAIN"
   },
   "Lunge": {
-    "moveId": 679,
+    "moveId": 642,
     "defineName": "LUNGE"
   },
   "Fire Lash": {
-    "moveId": 680,
+    "moveId": 643,
     "defineName": "FIRE_LASH"
   },
   "Power Trip": {
-    "moveId": 681,
+    "moveId": 644,
     "defineName": "POWER_TRIP"
   },
   "Burn Up": {
-    "moveId": 682,
+    "moveId": 645,
     "defineName": "BURN_UP"
   },
   "Speed Swap": {
-    "moveId": 683,
+    "moveId": 646,
     "defineName": "SPEED_SWAP"
   },
   "Smart Strike": {
-    "moveId": 684,
+    "moveId": 647,
     "defineName": "SMART_STRIKE"
   },
   "Purify": {
-    "moveId": 685,
+    "moveId": 648,
     "defineName": "PURIFY"
   },
   "Revelation Dance": {
-    "moveId": 686,
+    "moveId": 649,
     "defineName": "REVELATION_DANCE"
   },
   "Core Enforcer": {
-    "moveId": 687,
+    "moveId": 650,
     "defineName": "CORE_ENFORCER"
   },
   "Trop Kick": {
-    "moveId": 688,
+    "moveId": 651,
     "defineName": "TROP_KICK"
   },
   "Instruct": {
-    "moveId": 689,
+    "moveId": 652,
     "defineName": "INSTRUCT"
   },
   "Beak Blast": {
-    "moveId": 690,
+    "moveId": 653,
     "defineName": "BEAK_BLAST"
   },
   "Clanging Scales": {
-    "moveId": 691,
+    "moveId": 654,
     "defineName": "CLANGING_SCALES"
   },
   "Dragon Hammer": {
-    "moveId": 692,
+    "moveId": 655,
     "defineName": "DRAGON_HAMMER"
   },
   "Brutal Swing": {
-    "moveId": 693,
+    "moveId": 656,
     "defineName": "BRUTAL_SWING"
   },
   "Aurora Veil": {
-    "moveId": 694,
+    "moveId": 657,
     "defineName": "AURORA_VEIL"
   },
   "Shell Trap": {
-    "moveId": 704,
+    "moveId": 658,
     "defineName": "SHELL_TRAP"
   },
   "Fleur Cannon": {
-    "moveId": 705,
+    "moveId": 659,
     "defineName": "FLEUR_CANNON"
   },
   "Psychic Fangs": {
-    "moveId": 706,
+    "moveId": 660,
     "defineName": "PSYCHIC_FANGS"
   },
   "Stomping Tantrum": {
-    "moveId": 707,
+    "moveId": 661,
     "defineName": "STOMPING_TANTRUM"
   },
   "Shadow Bone": {
-    "moveId": 708,
+    "moveId": 662,
     "defineName": "SHADOW_BONE"
   },
   "Accelerock": {
-    "moveId": 709,
+    "moveId": 663,
     "defineName": "ACCELEROCK"
   },
   "Liquidation": {
-    "moveId": 710,
+    "moveId": 664,
     "defineName": "LIQUIDATION"
   },
   "Prismatic Laser": {
-    "moveId": 711,
+    "moveId": 665,
     "defineName": "PRISMATIC_LASER"
   },
   "Spectral Thief": {
-    "moveId": 712,
+    "moveId": 666,
     "defineName": "SPECTRAL_THIEF"
   },
   "Sunsteel Strike": {
-    "moveId": 713,
+    "moveId": 667,
     "defineName": "SUNSTEEL_STRIKE"
   },
   "Moongeist Beam": {
-    "moveId": 714,
+    "moveId": 668,
     "defineName": "MOONGEIST_BEAM"
   },
   "Tearful Look": {
-    "moveId": 715,
+    "moveId": 669,
     "defineName": "TEARFUL_LOOK"
   },
   "Zing Zap": {
-    "moveId": 716,
+    "moveId": 670,
     "defineName": "ZING_ZAP"
   },
   "Nature's Madness": {
-    "moveId": 717,
+    "moveId": 671,
     "defineName": "NATURES_MADNESS"
   },
   "Multi-Attack": {
-    "moveId": 718,
+    "moveId": 672,
     "defineName": "MULTI_ATTACK"
   },
   "Mind Blown": {
-    "moveId": 720,
+    "moveId": 673,
     "defineName": "MIND_BLOWN"
   },
   "Plasma Fists": {
-    "moveId": 721,
+    "moveId": 674,
     "defineName": "PLASMA_FISTS"
   },
   "Photon Geyser": {
-    "moveId": 722,
+    "moveId": 675,
     "defineName": "PHOTON_GEYSER"
   },
+  "Zippy Zap": {
+    "moveId": 676,
+    "defineName": "ZIPPY_ZAP"
+  },
+  "Splishy Splash": {
+    "moveId": 677,
+    "defineName": "SPLISHY_SPLASH"
+  },
+  "Floaty Fall": {
+    "moveId": 678,
+    "defineName": "FLOATY_FALL"
+  },
+  "Pika Papow": {
+    "moveId": 679,
+    "defineName": "PIKA_PAPOW"
+  },
+  "Bouncy Bubble": {
+    "moveId": 680,
+    "defineName": "BOUNCY_BUBBLE"
+  },
+  "Buzzy Buzz": {
+    "moveId": 681,
+    "defineName": "BUZZY_BUZZ"
+  },
+  "Sizzly Slide": {
+    "moveId": 682,
+    "defineName": "SIZZLY_SLIDE"
+  },
+  "Glitzy Glow": {
+    "moveId": 683,
+    "defineName": "GLITZY_GLOW"
+  },
+  "Baddy Bad": {
+    "moveId": 684,
+    "defineName": "BADDY_BAD"
+  },
+  "Sappy Seed": {
+    "moveId": 685,
+    "defineName": "SAPPY_SEED"
+  },
+  "Freezy Frost": {
+    "moveId": 686,
+    "defineName": "FREEZY_FROST"
+  },
+  "Sparkly Swirl": {
+    "moveId": 687,
+    "defineName": "SPARKLY_SWIRL"
+  },
+  "Veevee Volley": {
+    "moveId": 688,
+    "defineName": "VEEVEE_VOLLEY"
+  },
   "Double Iron Bash": {
-    "moveId": 742,
+    "moveId": 689,
     "defineName": "DOUBLE_IRON_BASH"
   },
   "Dynamax Cannon": {
-    "moveId": 744,
+    "moveId": 690,
     "defineName": "DYNAMAX_CANNON"
   },
   "Snipe Shot": {
-    "moveId": 745,
+    "moveId": 691,
     "defineName": "SNIPE_SHOT"
   },
   "Jaw Lock": {
-    "moveId": 746,
+    "moveId": 692,
     "defineName": "JAW_LOCK"
   },
   "Stuff Cheeks": {
-    "moveId": 747,
+    "moveId": 693,
     "defineName": "STUFF_CHEEKS"
   },
   "No Retreat": {
-    "moveId": 748,
+    "moveId": 694,
     "defineName": "NO_RETREAT"
   },
   "Tar Shot": {
-    "moveId": 749,
+    "moveId": 695,
     "defineName": "TAR_SHOT"
   },
   "Magic Powder": {
-    "moveId": 750,
+    "moveId": 696,
     "defineName": "MAGIC_POWDER"
   },
   "Dragon Darts": {
-    "moveId": 751,
+    "moveId": 697,
     "defineName": "DRAGON_DARTS"
   },
   "Teatime": {
-    "moveId": 752,
+    "moveId": 698,
     "defineName": "TEATIME"
   },
   "Octolock": {
-    "moveId": 753,
+    "moveId": 699,
     "defineName": "OCTOLOCK"
   },
   "Bolt Beak": {
-    "moveId": 754,
+    "moveId": 700,
     "defineName": "BOLT_BEAK"
   },
   "Fishious Rend": {
-    "moveId": 755,
+    "moveId": 701,
     "defineName": "FISHIOUS_REND"
   },
   "Court Change": {
-    "moveId": 756,
+    "moveId": 702,
     "defineName": "COURT_CHANGE"
   },
   "Clangorous Soul": {
-    "moveId": 775,
+    "moveId": 703,
     "defineName": "CLANGOROUS_SOUL"
   },
   "Body Press": {
-    "moveId": 776,
+    "moveId": 704,
     "defineName": "BODY_PRESS"
   },
   "Decorate": {
-    "moveId": 777,
+    "moveId": 705,
     "defineName": "DECORATE"
   },
   "Drum Beating": {
-    "moveId": 778,
+    "moveId": 706,
     "defineName": "DRUM_BEATING"
   },
   "Snap Trap": {
-    "moveId": 779,
+    "moveId": 707,
     "defineName": "SNAP_TRAP"
   },
   "Pyro Ball": {
-    "moveId": 780,
+    "moveId": 708,
     "defineName": "PYRO_BALL"
   },
   "Behemoth Blade": {
-    "moveId": 781,
+    "moveId": 709,
     "defineName": "BEHEMOTH_BLADE"
   },
   "Behemoth Bash": {
-    "moveId": 782,
+    "moveId": 710,
     "defineName": "BEHEMOTH_BASH"
   },
   "Aura Wheel": {
-    "moveId": 783,
+    "moveId": 711,
     "defineName": "AURA_WHEEL"
   },
   "Breaking Swipe": {
-    "moveId": 784,
+    "moveId": 712,
     "defineName": "BREAKING_SWIPE"
   },
   "Branch Poke": {
-    "moveId": 785,
+    "moveId": 713,
     "defineName": "BRANCH_POKE"
   },
   "Overdrive": {
-    "moveId": 786,
+    "moveId": 714,
     "defineName": "OVERDRIVE"
   },
   "Apple Acid": {
-    "moveId": 787,
+    "moveId": 715,
     "defineName": "APPLE_ACID"
   },
   "Grav Apple": {
-    "moveId": 788,
+    "moveId": 716,
     "defineName": "GRAV_APPLE"
   },
   "Spirit Break": {
-    "moveId": 789,
+    "moveId": 717,
     "defineName": "SPIRIT_BREAK"
   },
   "Strange Steam": {
-    "moveId": 790,
+    "moveId": 718,
     "defineName": "STRANGE_STEAM"
   },
   "Life Dew": {
-    "moveId": 791,
+    "moveId": 719,
     "defineName": "LIFE_DEW"
   },
   "Obstruct": {
-    "moveId": 792,
+    "moveId": 720,
     "defineName": "OBSTRUCT"
   },
   "False Surrender": {
-    "moveId": 793,
+    "moveId": 721,
     "defineName": "FALSE_SURRENDER"
   },
   "Meteor Assault": {
-    "moveId": 794,
+    "moveId": 722,
     "defineName": "METEOR_ASSAULT"
   },
   "Eternabeam": {
-    "moveId": 795,
+    "moveId": 723,
     "defineName": "ETERNABEAM"
   },
   "Steel Beam": {
-    "moveId": 796,
+    "moveId": 724,
     "defineName": "STEEL_BEAM"
   },
   "Expanding Force": {
-    "moveId": 797,
+    "moveId": 725,
     "defineName": "EXPANDING_FORCE"
   },
   "Steel Roller": {
-    "moveId": 798,
+    "moveId": 726,
     "defineName": "STEEL_ROLLER"
   },
   "Scale Shot": {
-    "moveId": 799,
+    "moveId": 727,
     "defineName": "SCALE_SHOT"
   },
   "Meteor Beam": {
-    "moveId": 800,
+    "moveId": 728,
     "defineName": "METEOR_BEAM"
   },
   "Shell Side Arm": {
-    "moveId": 801,
+    "moveId": 729,
     "defineName": "SHELL_SIDE_ARM"
   },
   "Misty Explosion": {
-    "moveId": 802,
+    "moveId": 730,
     "defineName": "MISTY_EXPLOSION"
   },
   "Grassy Glide": {
-    "moveId": 803,
+    "moveId": 731,
     "defineName": "GRASSY_GLIDE"
   },
   "Rising Voltage": {
-    "moveId": 804,
+    "moveId": 732,
     "defineName": "RISING_VOLTAGE"
   },
   "Terrain Pulse": {
-    "moveId": 805,
+    "moveId": 733,
     "defineName": "TERRAIN_PULSE"
   },
   "Skitter Smack": {
-    "moveId": 806,
+    "moveId": 734,
     "defineName": "SKITTER_SMACK"
   },
   "Burning Jealousy": {
-    "moveId": 807,
+    "moveId": 735,
     "defineName": "BURNING_JEALOUSY"
   },
   "Lash Out": {
-    "moveId": 808,
+    "moveId": 736,
     "defineName": "LASH_OUT"
   },
   "Poltergeist": {
-    "moveId": 809,
+    "moveId": 737,
     "defineName": "POLTERGEIST"
   },
   "Corrosive Gas": {
-    "moveId": 810,
+    "moveId": 738,
     "defineName": "CORROSIVE_GAS"
   },
   "Coaching": {
-    "moveId": 811,
+    "moveId": 739,
     "defineName": "COACHING"
   },
   "Flip Turn": {
-    "moveId": 812,
+    "moveId": 740,
     "defineName": "FLIP_TURN"
   },
   "Triple Axel": {
-    "moveId": 813,
+    "moveId": 741,
     "defineName": "TRIPLE_AXEL"
   },
   "Dual Wingbeat": {
-    "moveId": 814,
+    "moveId": 742,
     "defineName": "DUAL_WINGBEAT"
   },
   "Scorching Sands": {
-    "moveId": 815,
+    "moveId": 743,
     "defineName": "SCORCHING_SANDS"
   },
   "Jungle Healing": {
-    "moveId": 816,
+    "moveId": 744,
     "defineName": "JUNGLE_HEALING"
   },
   "Wicked Blow": {
-    "moveId": 817,
+    "moveId": 745,
     "defineName": "WICKED_BLOW"
   },
   "Surging Strikes": {
-    "moveId": 818,
+    "moveId": 746,
     "defineName": "SURGING_STRIKES"
   },
   "Thunder Cage": {
-    "moveId": 819,
+    "moveId": 747,
     "defineName": "THUNDER_CAGE"
   },
   "Dragon Energy": {
-    "moveId": 820,
+    "moveId": 748,
     "defineName": "DRAGON_ENERGY"
   },
   "Freezing Glare": {
-    "moveId": 821,
+    "moveId": 749,
     "defineName": "FREEZING_GLARE"
   },
   "Fiery Wrath": {
-    "moveId": 822,
+    "moveId": 750,
     "defineName": "FIERY_WRATH"
   },
   "Thunderous Kick": {
-    "moveId": 823,
+    "moveId": 751,
     "defineName": "THUNDEROUS_KICK"
   },
   "Glacial Lance": {
-    "moveId": 824,
+    "moveId": 752,
     "defineName": "GLACIAL_LANCE"
   },
   "Astral Barrage": {
-    "moveId": 825,
+    "moveId": 753,
     "defineName": "ASTRAL_BARRAGE"
   },
   "Eerie Spell": {
-    "moveId": 826,
+    "moveId": 754,
     "defineName": "EERIE_SPELL"
+  },
+  "Dire Claw": {
+    "moveId": 755,
+    "defineName": "DIRE_CLAW"
+  },
+  "Psyshield Bash": {
+    "moveId": 756,
+    "defineName": "PSYSHIELD_BASH"
+  },
+  "Power Shift": {
+    "moveId": 757,
+    "defineName": "POWER_SHIFT"
+  },
+  "Stone Axe": {
+    "moveId": 758,
+    "defineName": "STONE_AXE"
+  },
+  "Springtide Storm": {
+    "moveId": 759,
+    "defineName": "SPRINGTIDE_STORM"
+  },
+  "Mystical Power": {
+    "moveId": 760,
+    "defineName": "MYSTICAL_POWER"
+  },
+  "Raging Fury": {
+    "moveId": 761,
+    "defineName": "RAGING_FURY"
+  },
+  "Wave Crash": {
+    "moveId": 762,
+    "defineName": "WAVE_CRASH"
+  },
+  "Chloroblast": {
+    "moveId": 763,
+    "defineName": "CHLOROBLAST"
+  },
+  "Mountain Gale": {
+    "moveId": 764,
+    "defineName": "MOUNTAIN_GALE"
+  },
+  "Victory Dance": {
+    "moveId": 765,
+    "defineName": "VICTORY_DANCE"
+  },
+  "Headlong Rush": {
+    "moveId": 766,
+    "defineName": "HEADLONG_RUSH"
+  },
+  "Barb Barrage": {
+    "moveId": 767,
+    "defineName": "BARB_BARRAGE"
+  },
+  "Esper Wing": {
+    "moveId": 768,
+    "defineName": "ESPER_WING"
+  },
+  "Bitter Malice": {
+    "moveId": 769,
+    "defineName": "BITTER_MALICE"
+  },
+  "Shelter": {
+    "moveId": 770,
+    "defineName": "SHELTER"
+  },
+  "Triple Arrows": {
+    "moveId": 771,
+    "defineName": "TRIPLE_ARROWS"
+  },
+  "Infernal Parade": {
+    "moveId": 772,
+    "defineName": "INFERNAL_PARADE"
+  },
+  "Ceaseless Edge": {
+    "moveId": 773,
+    "defineName": "CEASELESS_EDGE"
+  },
+  "Bleakwind Storm": {
+    "moveId": 774,
+    "defineName": "BLEAKWIND_STORM"
+  },
+  "Wildbolt Storm": {
+    "moveId": 775,
+    "defineName": "WILDBOLT_STORM"
+  },
+  "Sandsear Storm": {
+    "moveId": 776,
+    "defineName": "SANDSEAR_STORM"
+  },
+  "Lunar Blessing": {
+    "moveId": 777,
+    "defineName": "LUNAR_BLESSING"
+  },
+  "Take Heart": {
+    "moveId": 778,
+    "defineName": "TAKE_HEART"
+  },
+  "Tera Blast": {
+    "moveId": 779,
+    "defineName": "TERA_BLAST"
+  },
+  "Silk Trap": {
+    "moveId": 780,
+    "defineName": "SILK_TRAP"
+  },
+  "Axe Kick": {
+    "moveId": 781,
+    "defineName": "AXE_KICK"
+  },
+  "Last Respects": {
+    "moveId": 782,
+    "defineName": "LAST_RESPECTS"
+  },
+  "Lumina Crash": {
+    "moveId": 783,
+    "defineName": "LUMINA_CRASH"
+  },
+  "Order Up": {
+    "moveId": 784,
+    "defineName": "ORDER_UP"
+  },
+  "Jet Punch": {
+    "moveId": 785,
+    "defineName": "JET_PUNCH"
+  },
+  "Spicy Extract": {
+    "moveId": 786,
+    "defineName": "SPICY_EXTRACT"
+  },
+  "Spin Out": {
+    "moveId": 787,
+    "defineName": "SPIN_OUT"
+  },
+  "Population Bomb": {
+    "moveId": 788,
+    "defineName": "POPULATION_BOMB"
+  },
+  "Ice Spinner": {
+    "moveId": 789,
+    "defineName": "ICE_SPINNER"
+  },
+  "Glaive Rush": {
+    "moveId": 790,
+    "defineName": "GLAIVE_RUSH"
+  },
+  "Revival Blessing": {
+    "moveId": 791,
+    "defineName": "REVIVAL_BLESSING"
+  },
+  "Salt Cure": {
+    "moveId": 792,
+    "defineName": "SALT_CURE"
+  },
+  "Triple Dive": {
+    "moveId": 793,
+    "defineName": "TRIPLE_DIVE"
+  },
+  "Mortal Spin": {
+    "moveId": 794,
+    "defineName": "MORTAL_SPIN"
+  },
+  "Doodle": {
+    "moveId": 795,
+    "defineName": "DOODLE"
+  },
+  "Fillet Away": {
+    "moveId": 796,
+    "defineName": "FILLET_AWAY"
+  },
+  "Kowtow Cleave": {
+    "moveId": 797,
+    "defineName": "KOWTOW_CLEAVE"
+  },
+  "Flower Trick": {
+    "moveId": 798,
+    "defineName": "FLOWER_TRICK"
+  },
+  "Torch Song": {
+    "moveId": 799,
+    "defineName": "TORCH_SONG"
+  },
+  "Aqua Step": {
+    "moveId": 800,
+    "defineName": "AQUA_STEP"
+  },
+  "Raging Bull": {
+    "moveId": 801,
+    "defineName": "RAGING_BULL"
+  },
+  "Make It Rain": {
+    "moveId": 802,
+    "defineName": "MAKE_IT_RAIN"
+  },
+  "Pound": {
+    "moveId": 803,
+    "defineName": "POUND"
+  },
+  "Pound": {
+    "moveId": 804,
+    "defineName": "POUND"
+  },
+  "Ruination": {
+    "moveId": 805,
+    "defineName": "RUINATION"
+  },
+  "Collision Course": {
+    "moveId": 806,
+    "defineName": "COLLISION_COURSE"
+  },
+  "Electro Drift": {
+    "moveId": 807,
+    "defineName": "ELECTRO_DRIFT"
+  },
+  "Shed Tail": {
+    "moveId": 808,
+    "defineName": "SHED_TAIL"
+  },
+  "Chilly Reception": {
+    "moveId": 809,
+    "defineName": "CHILLY_RECEPTION"
+  },
+  "Tidy Up": {
+    "moveId": 810,
+    "defineName": "TIDY_UP"
+  },
+  "Snowscape": {
+    "moveId": 811,
+    "defineName": "SNOWSCAPE"
+  },
+  "Pounce": {
+    "moveId": 812,
+    "defineName": "POUNCE"
+  },
+  "Trailblaze": {
+    "moveId": 813,
+    "defineName": "TRAILBLAZE"
+  },
+  "Chilling Water": {
+    "moveId": 814,
+    "defineName": "CHILLING_WATER"
+  },
+  "Hyper Drill": {
+    "moveId": 815,
+    "defineName": "HYPER_DRILL"
+  },
+  "Twin Beam": {
+    "moveId": 816,
+    "defineName": "TWIN_BEAM"
+  },
+  "Rage Fist": {
+    "moveId": 817,
+    "defineName": "RAGE_FIST"
+  },
+  "Armor Cannon": {
+    "moveId": 818,
+    "defineName": "ARMOR_CANNON"
+  },
+  "Bitter Blade": {
+    "moveId": 819,
+    "defineName": "BITTER_BLADE"
+  },
+  "Double Shock": {
+    "moveId": 820,
+    "defineName": "DOUBLE_SHOCK"
+  },
+  "Gigaton Hammer": {
+    "moveId": 821,
+    "defineName": "GIGATON_HAMMER"
+  },
+  "Comeuppance": {
+    "moveId": 822,
+    "defineName": "COMEUPPANCE"
+  },
+  "Aqua Cutter": {
+    "moveId": 823,
+    "defineName": "AQUA_CUTTER"
+  },
+  "Blazing Torque": {
+    "moveId": 824,
+    "defineName": "BLAZING_TORQUE"
+  },
+  "Wicked Torque": {
+    "moveId": 825,
+    "defineName": "WICKED_TORQUE"
+  },
+  "Noxious Torque": {
+    "moveId": 826,
+    "defineName": "NOXIOUS_TORQUE"
+  },
+  "Combat Torque": {
+    "moveId": 827,
+    "defineName": "COMBAT_TORQUE"
+  },
+  "Magical Torque": {
+    "moveId": 828,
+    "defineName": "MAGICAL_TORQUE"
   }
 }

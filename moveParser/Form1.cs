@@ -188,28 +188,39 @@ namespace moveParser
                 GenerationData generation = GenData[(string)e.Argument];
 
                 int namecount = nameList.Count;
-
+#if DEBUG
+                Dictionary<string, MonData> existingMonData = PokemonData.GetMonDataFromFile("../../db/gen/" + generation.dbFilename + ".json");
+#else
+                Dictionary<string, MonData> existingMonData = PokemonData.GetMonDataFromFile("db/gen/" + generation.dbFilename + ".json");
+#endif
                 int i = 1;
-                foreach (MonName item in nameList)
+                foreach (MonName monName in nameList)
                 {
-                    current = item.DefName;
+                    current = monName.DefName;
                     //if (i < 31)
                     {
                         MonData mon = null;
+                        MonData currentData = null;
+                        if (existingMonData != null && existingMonData.ContainsKey(current))
+                            currentData = existingMonData[current];
+
+                        mon = PokemonData.DownloadMonData_PokemonDB(monName, generation, MoveData, currentData);
+                        /*
                         if (generation.genNumber > 7)
-                            mon = PokemonData.LoadMonDataSerebii(item, generation, MoveData);
+                            mon = PokemonData.DownloadMonData_Serebii(item, generation, MoveData);
                         else
-                            mon = PokemonData.LoadMonDataBulbapedia(item, generation, MoveData);
+                            mon = PokemonData.DownloadMonData_Bulbapedia(item, generation, MoveData);
+                        //*/
 
                         if (mon != null)
                         {
                             try
                             {
-                                Database.Add(item.DefName, mon);
+                                Database.Add(monName.DefName, mon);
                             }
                             catch (ArgumentException ex)
                             {
-                                File.AppendAllText("errorLog.txt", "[" + DateTime.Now.ToString() + "] Error adding " + item.DefName + ": " + ex.Message);
+                                File.AppendAllText("errorLog.txt", "[" + DateTime.Now.ToString() + "] Error adding " + monName.DefName + ": " + ex.Message);
                             }
                         }
                     }
@@ -329,6 +340,7 @@ namespace moveParser
                 chkEgg_IncludeTutor.Enabled = value;
 
                 chkNewDefines.Enabled = value;
+                chkGeneral_MewExclusiveTutor.Enabled = value;
             });
         }
 
@@ -819,7 +831,7 @@ namespace moveParser
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            MessageBox.Show("Loading from Bulbapedia complete!", "Success!", MessageBoxButtons.OK);
+            MessageBox.Show("Loading from the Internet complete!", "Success!", MessageBoxButtons.OK);
         }
 
         private void btnLvl_All_Click(object sender, EventArgs e)
