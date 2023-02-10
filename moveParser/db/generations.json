@@ -1,11 +1,12 @@
 {
   "SV": {
+    "gameId": 20,
     "genNumber": 9,
     "genNumberRoman": "IX",
     "isLatestGen": true,
     "dbFilename": "sv",
     "gameFullName": "Pokémon Scarlet and Violet",
-    "gameAvailableName": "Scarlet and Violet",
+    "gameAvailableName": "Scarlet/Violet",
     "gameNameAlt1": null,
     "lvlUpColumn": "SV",
     "moveTutorColumn": 0,
@@ -17,6 +18,7 @@
     "serebiiLocationsName": null
   },
   "LA": {
+    "gameId": 19,
     "genNumber": 8,
     "genNumberRoman": "VIII",
     "isLatestGen": false,
@@ -26,7 +28,7 @@
     "gameNameAlt1": null,
     "lvlUpColumn": "LA",
     "moveTutorColumn": 0,
-    "maxDexNum": 898,
+    "maxDexNum": 905,
     "serebiiDexURL": "-swsh",
     "serebiiLevelUpTitle": null,
     "serebiiMoveTutorTitle": null,
@@ -34,12 +36,13 @@
     "serebiiLocationsName": null
   },
   "BDSP": {
+    "gameId": 18,
     "genNumber": 8,
     "genNumberRoman": "VIII",
     "isLatestGen": false,
     "dbFilename": "bdsp",
     "gameFullName": "Pokémon Brilliant Diamond and Shining Pearl",
-    "gameAvailableName": "Brilliant Diamond",
+    "gameAvailableName": "Brilliant Diamond/Shining Pearl",
     "gameNameAlt1": null,
     "lvlUpColumn": "BDSP",
     "moveTutorColumn": 3,
@@ -51,12 +54,13 @@
     "serebiiLocationsName": null
   },
   "SWSH": {
+    "gameId": 17,
     "genNumber": 8,
     "genNumberRoman": "VIII",
     "isLatestGen": false,
     "dbFilename": "swsh",
     "gameFullName": "Pokémon Sword and Shield",
-    "gameAvailableName": "Sword and Shield",
+    "gameAvailableName": "Sword/Shield",
     "gameNameAlt1": "Sword & Shield",
     "lvlUpColumn": "SwSh",
     "moveTutorColumn": 1,
@@ -68,12 +72,13 @@
     "serebiiLocationsName": "Sword"
   },
   "LGPE": {
+    "gameId": 16,
     "genNumber": 7,
     "genNumberRoman": "VII",
     "isLatestGen": false,
     "dbFilename": "lgpe",
     "gameFullName": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",
-    "gameAvailableName": null,
+    "gameAvailableName": "Let's Go Pikachu/Let's Go Eevee",
     "gameNameAlt1": null,
     "lvlUpColumn": "LGPE",
     "moveTutorColumn": 2,
@@ -85,12 +90,13 @@
     "serebiiLocationsName": null
   },
   "USUM": {
+    "gameId": 15,
     "genNumber": 7,
     "genNumberRoman": "VII",
     "isLatestGen": false,
     "dbFilename": "usum",
     "gameFullName": "Pokémon Ultra Sun and Ultra Moon",
-    "gameAvailableName": null,
+    "gameAvailableName": "Ultra Sun/Ultra Moon",
     "gameNameAlt1": null,
     "lvlUpColumn": "USUM",
     "moveTutorColumn": 2,
@@ -102,12 +108,13 @@
     "serebiiLocationsName": null
   },
   "SM": {
+    "gameId": 14,
     "genNumber": 7,
     "genNumberRoman": "VII",
     "isLatestGen": false,
     "dbFilename": "sm",
     "gameFullName": "Pokémon Sun and Moon",
-    "gameAvailableName": null,
+    "gameAvailableName": "Sun/Moon",
     "gameNameAlt1": null,
     "lvlUpColumn": "SM",
     "moveTutorColumn": 1,
@@ -119,12 +126,13 @@
     "serebiiLocationsName": null
   },
   "ORAS": {
+    "gameId": 13,
     "genNumber": 6,
     "genNumberRoman": "VI",
     "isLatestGen": false,
     "dbFilename": "oras",
     "gameFullName": "Pokémon Omega Ruby and Alpha Sapphire",
-    "gameAvailableName": null,
+    "gameAvailableName": "Omega Ruby/Alpha Sapphire",
     "gameNameAlt1": null,
     "lvlUpColumn": "ORAS",
     "moveTutorColumn": 2,
@@ -136,12 +144,13 @@
     "serebiiLocationsName": null
   },
   "XY": {
+    "gameId": 12,
     "genNumber": 6,
     "genNumberRoman": "VI",
     "isLatestGen": false,
     "dbFilename": "xy",
     "gameFullName": "Pokémon X and Y",
-    "gameAvailableName": null,
+    "gameAvailableName": "X/Y",
     "gameNameAlt1": null,
     "lvlUpColumn": "XY",
     "moveTutorColumn": 1,
@@ -153,12 +162,13 @@
     "serebiiLocationsName": null
   },
   "B2W2": {
+    "gameId": 11,
     "genNumber": 5,
     "genNumberRoman": "V",
     "isLatestGen": false,
     "dbFilename": "b2w2",
     "gameFullName": "Pokémon Black 2 and White 2",
-    "gameAvailableName": null,
+    "gameAvailableName": "Black 2/White 2",
     "gameNameAlt1": null,
     "lvlUpColumn": "B2W2",
     "moveTutorColumn": 2,
@@ -170,12 +180,13 @@
     "serebiiLocationsName": null
   },
   "BW": {
+    "gameId": 10,
     "genNumber": 5,
     "genNumberRoman": "V",
     "isLatestGen": false,
     "dbFilename": "bw",
     "gameFullName": "Pokémon Black and White",
-    "gameAvailableName": null,
+    "gameAvailableName": "Black/White",
     "gameNameAlt1": null,
     "lvlUpColumn": "BW",
     "moveTutorColumn": 1,
@@ -187,12 +198,13 @@
     "serebiiLocationsName": null
   },
   "HGSS": {
+    "gameId": 9,
     "genNumber": 4,
     "genNumberRoman": "IV",
     "isLatestGen": false,
     "dbFilename": "hgss",
     "gameFullName": "Pokémon HeartGold and SoulSilver",
-    "gameAvailableName": null,
+    "gameAvailableName": "HeartGold/SoulSilver",
     "gameNameAlt1": null,
     "lvlUpColumn": "PtHGSS",
     "moveTutorColumn": 3,
@@ -204,12 +216,13 @@
     "serebiiLocationsName": null
   },
   "PT": {
+    "gameId": 8,
     "genNumber": 4,
     "genNumberRoman": "IV",
     "isLatestGen": false,
     "dbFilename": "pt",
     "gameFullName": "Pokémon Platinum",
-    "gameAvailableName": null,
+    "gameAvailableName": "Platinum",
     "gameNameAlt1": null,
     "lvlUpColumn": "PtHGSS",
     "moveTutorColumn": 2,
@@ -221,6 +234,7 @@
     "serebiiLocationsName": null
   },
   "DP": {
+    "gameId": 7,
     "genNumber": 4,
     "genNumberRoman": "IV",
     "isLatestGen": false,
@@ -238,6 +252,7 @@
     "serebiiLocationsName": null
   },
   "FRLG": {
+    "gameId": 6,
     "genNumber": 3,
     "genNumberRoman": "III",
     "isLatestGen": false,
@@ -255,6 +270,7 @@
     "serebiiLocationsName": null
   },
   "RSE": {
+    "gameId": 5,
     "genNumber": 3,
     "genNumberRoman": "III",
     "isLatestGen": false,
@@ -272,6 +288,7 @@
     "serebiiLocationsName": null
   },
   "C": {
+    "gameId": 4,
     "genNumber": 2,
     "genNumberRoman": "II",
     "isLatestGen": false,
@@ -289,6 +306,7 @@
     "serebiiLocationsName": null
   },
   "GS": {
+    "gameId": 3,
     "genNumber": 2,
     "genNumberRoman": "II",
     "isLatestGen": false,
@@ -306,6 +324,7 @@
     "serebiiLocationsName": null
   },
   "Y": {
+    "gameId": 2,
     "genNumber": 1,
     "genNumberRoman": "I",
     "isLatestGen": false,
@@ -323,6 +342,7 @@
     "serebiiLocationsName": null
   },
   "RGB": {
+    "gameId": 1,
     "genNumber": 1,
     "genNumberRoman": "I",
     "isLatestGen": false,

@@ -28,6 +28,8 @@ namespace moveParser.data
         public string FormName;
         public string VarName;
         public string DefName;
+        public int? minGameId;
+        public int? maxGameId;
         public string SerebiiFormName;
         public string SerebiiFormNameAlt;
         public string SerebiiURL;
@@ -35,6 +37,7 @@ namespace moveParser.data
         public string SerebiiTMTableName;
 
         public string PokemonDBURL;
+        public string PokemonDBFormName;
 
         public bool usesBaseFormLearnset;
         public bool ignoresNearUniversalTMs;
@@ -101,11 +104,19 @@ namespace moveParser.data
             TRANSFER
         }
 
+        public static bool ShouldSkipMon(MonName name, GenerationData gen)
+        {
+            if (name.minGameId != null && gen.gameId < name.minGameId)
+                return true;
+            else if (name.maxGameId != null && gen.gameId > name.maxGameId)
+                return true;
+            else if (gen.maxDexNum < name.NatDexNum)
+                return true;
+            return false;
+        }
+
         public static MonData DownloadMonData_PokemonDB(MonName name, GenerationData gen, Dictionary<string, Move> MoveData, MonData existingMonData)
         {
-            if (gen.dbFilename.Equals("lgpe") && (name.NatDexNum > 151 && (name.NatDexNum != 808 && name.NatDexNum != 809)))
-                return null;
-
             MonData mon = new MonData();
 
             List<LevelUpMove> lvlMoves = new List<LevelUpMove>();
@@ -115,14 +126,7 @@ namespace moveParser.data
             List<Move> EggMoves = new List<Move>();
             List<Move> TutorMoves = new List<Move>();
 
-            if (gen.genNumber < 7 && name.FormName.Contains("Alola"))
-                return null;
-            if (gen.genNumber < 8 && (name.FormName.Contains("Galarian") || (name.FormName.Contains("Hisuian"))))
-                return null;
-            if (gen.genNumber < 9 && name.FormName.Contains("Paldea"))
-                return null;
-
-            if (gen.maxDexNum < name.NatDexNum)
+            if (ShouldSkipMon(name, gen))
                 return null;
 
             string html;
@@ -242,6 +246,10 @@ namespace moveParser.data
                                                         movename = tableRow.ChildNodes[0].InnerText;
                                                         PreEvoMoves.Add(MoveData[movename]);
                                                         break;
+                                                    case readingModePokemonDB.EVO:
+                                                        movename = tableRow.ChildNodes[0].InnerText;
+                                                        evoMovesId.Add(MoveData[movename]);
+                                                        break;
                                                 }
                                             }
                                             readMode = readingModePokemonDB.NONE;
@@ -252,7 +260,7 @@ namespace moveParser.data
                                             int idTab = 0;
                                             foreach (hap.HtmlNode formTabs in nodo5.ChildNodes[0].ChildNodes)
                                             {
-                                                if (formTabs.InnerText.Equals(name.FormName))
+                                                if (formTabs.InnerText.Equals(name.PokemonDBFormName) || formTabs.InnerText.Equals(name.FormName))
                                                     break;
                                                 idTab++;
                                             }
@@ -264,10 +272,17 @@ namespace moveParser.data
                                                     switch (readMode)
                                                     {
                                                         case readingModePokemonDB.LEVEL:
-                                                            int lvl = int.Parse(tableRow.ChildNodes[0].InnerText);
                                                             movename = tableRow.ChildNodes[1].InnerText;
                                                             Move mo = MoveData[movename];
-                                                            lvlMoves.Add(new LevelUpMove(lvl, "MOVE_" + mo.defineName));
+                                                            if (tableRow.ChildNodes[0].InnerText.Equals("?"))
+                                                            {
+                                                                evoMovesId.Add(mo);
+                                                            }
+                                                            else
+                                                            {
+                                                                int lvl = int.Parse(tableRow.ChildNodes[0].InnerText);
+                                                                lvlMoves.Add(new LevelUpMove(lvl, "MOVE_" + mo.defineName));
+                                                            }
                                                             break;
                                                         case readingModePokemonDB.TM:
                                                             movename = tableRow.ChildNodes[1].InnerText;
@@ -288,6 +303,10 @@ namespace moveParser.data
                                                         case readingModePokemonDB.PREEVO:
                                                             movename = tableRow.ChildNodes[0].InnerText;
                                                             PreEvoMoves.Add(MoveData[movename]);
+                                                            break;
+                                                        case readingModePokemonDB.EVO:
+                                                            movename = tableRow.ChildNodes[0].InnerText;
+                                                            evoMovesId.Add(MoveData[movename]);
                                                             break;
                                                     }
                                                 }
@@ -314,12 +333,14 @@ namespace moveParser.data
             }
             bool iguales = true;
 
-            List<LevelUpMove> test1 = lvlMoves.OrderBy(x => x.Move).ToList();
+            List<LevelUpMove> test1 = lvlMoves;
             List<LevelUpMove> test2;
             
             if (existingMonData != null)
             {
-                test2 = existingMonData.LevelMoves.OrderBy(x => x.Move).ToList();
+                test2 = existingMonData.LevelMoves;
+                test1.OrderBy(x => x.Level).ThenBy(x => x.Move).ToList();
+                test2.OrderBy(x => x.Level).ThenBy(x => x.Move).ToList();
 
                 if (test1.Count == test2.Count)
                 {

@@ -10,6 +10,7 @@ namespace moveParser.data
 {
     public class GenerationData
     {
+        public int? gameId;
         public int genNumber;
         public string genNumberRoman;
         public bool isLatestGen;

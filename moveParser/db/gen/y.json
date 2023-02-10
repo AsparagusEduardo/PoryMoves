@@ -640,7 +640,10 @@
         "Move": "MOVE_HARDEN"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_STRING_SHOT",
+      "MOVE_TACKLE"
+    ],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
@@ -684,7 +687,11 @@
         "Move": "MOVE_PSYBEAM"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_HARDEN",
+      "MOVE_STRING_SHOT",
+      "MOVE_TACKLE"
+    ],
     "TMMoves": [
       "MOVE_RAZOR_WIND",
       "MOVE_WHIRLWIND",
@@ -733,7 +740,10 @@
         "Move": "MOVE_HARDEN"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_POISON_STING",
+      "MOVE_STRING_SHOT"
+    ],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
@@ -769,7 +779,11 @@
         "Move": "MOVE_AGILITY"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_HARDEN",
+      "MOVE_POISON_STING",
+      "MOVE_STRING_SHOT"
+    ],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
       "MOVE_TOXIC",
@@ -1361,9 +1375,7 @@
       "MOVE_FLASH"
     ],
     "EggMoves": [],
-    "TutorMoves": [
-      "MOVE_SURF"
-    ]
+    "TutorMoves": []
   },
   "RAICHU": {
     "LevelMoves": [
@@ -1380,7 +1392,16 @@
         "Move": "MOVE_THUNDER_WAVE"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_AGILITY",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_QUICK_ATTACK",
+      "MOVE_SLAM",
+      "MOVE_TAIL_WHIP",
+      "MOVE_THUNDER",
+      "MOVE_THUNDERBOLT"
+    ],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -1673,7 +1694,12 @@
         "Move": "MOVE_BODY_SLAM"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_BITE",
+      "MOVE_FURY_SWIPES",
+      "MOVE_GROWL",
+      "MOVE_POISON_STING"
+    ],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -1863,7 +1889,12 @@
         "Move": "MOVE_THRASH"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_FOCUS_ENERGY",
+      "MOVE_FURY_ATTACK",
+      "MOVE_HORN_DRILL",
+      "MOVE_LEER"
+    ],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -1994,7 +2025,12 @@
         "Move": "MOVE_METRONOME"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_DEFENSE_CURL",
+      "MOVE_GROWL",
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_POUND"
+    ],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -2105,7 +2141,11 @@
         "Move": "MOVE_ROAR"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_CONFUSE_RAY",
+      "MOVE_FIRE_SPIN",
+      "MOVE_FLAMETHROWER"
+    ],
     "TMMoves": [
       "MOVE_TOXIC",
       "MOVE_BODY_SLAM",
@@ -2219,7 +2259,12 @@
         "Move": "MOVE_DOUBLE_SLAP"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_BODY_SLAM",
+      "MOVE_DOUBLE_EDGE",
+      "MOVE_POUND",
+      "MOVE_REST"
+    ],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -2500,7 +2545,10 @@
         "Move": "MOVE_SLEEP_POWDER"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_ABSORB",
+      "MOVE_SOLAR_BEAM"
+    ],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
       "MOVE_TOXIC",
@@ -3334,7 +3382,11 @@
         "Move": "MOVE_TAKE_DOWN"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_AGILITY",
+      "MOVE_BITE",
+      "MOVE_FLAMETHROWER"
+    ],
     "TMMoves": [
       "MOVE_TOXIC",
       "MOVE_BODY_SLAM",
@@ -3512,7 +3564,11 @@
         "Move": "MOVE_WATER_GUN"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_AMNESIA",
+      "MOVE_BUBBLE",
+      "MOVE_HYDRO_PUMP"
+    ],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -4054,7 +4110,11 @@
         "Move": "MOVE_SLEEP_POWDER"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_GROWTH",
+      "MOVE_SLAM",
+      "MOVE_VINE_WHIP"
+    ],
     "TMMoves": [
       "MOVE_SWORDS_DANCE",
       "MOVE_TOXIC",
@@ -5265,7 +5325,11 @@
         "Move": "MOVE_SPIKE_CANNON"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_ICE_BEAM",
+      "MOVE_LEER",
+      "MOVE_TACKLE"
+    ],
     "TMMoves": [
       "MOVE_TOXIC",
       "MOVE_TAKE_DOWN",
@@ -5933,7 +5997,14 @@
         "Move": "MOVE_STOMP"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_LEECH_SEED",
+      "MOVE_POISON_POWDER",
+      "MOVE_REFLECT",
+      "MOVE_SLEEP_POWDER",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_STUN_SPORE"
+    ],
     "TMMoves": [
       "MOVE_TOXIC",
       "MOVE_TAKE_DOWN",
@@ -6072,7 +6143,9 @@
         "Move": "MOVE_RAGE"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_GROWL"
+    ],
     "TMMoves": [
       "MOVE_MEGA_PUNCH",
       "MOVE_MEGA_KICK",
@@ -6390,7 +6463,19 @@
     "LevelMoves": [
       {
         "Level": 1,
+        "Move": "MOVE_FURY_ATTACK"
+      },
+      {
+        "Level": 1,
         "Move": "MOVE_HORN_ATTACK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_STOMP"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_TAIL_WHIP"
       },
       {
         "Level": 30,
@@ -6448,18 +6533,6 @@
       {
         "Level": 1,
         "Move": "MOVE_HORN_ATTACK"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_STOMP"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_TAIL_WHIP"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_FURY_ATTACK"
       },
       {
         "Level": 30,
@@ -7037,7 +7110,13 @@
         "Move": "MOVE_HARDEN"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_HYDRO_PUMP",
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_MINIMIZE",
+      "MOVE_RECOVER",
+      "MOVE_SWIFT"
+    ],
     "TMMoves": [
       "MOVE_TOXIC",
       "MOVE_TAKE_DOWN",
@@ -7534,7 +7613,9 @@
         "Move": "MOVE_HYPER_BEAM"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_SPLASH"
+    ],
     "TMMoves": [
       "MOVE_TOXIC",
       "MOVE_BODY_SLAM",
@@ -7751,7 +7832,11 @@
         "Move": "MOVE_MIST"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_FOCUS_ENERGY",
+      "MOVE_GROWL",
+      "MOVE_TAKE_DOWN"
+    ],
     "TMMoves": [
       "MOVE_TOXIC",
       "MOVE_BODY_SLAM",
@@ -7827,7 +7912,12 @@
         "Move": "MOVE_THUNDER"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_BITE",
+      "MOVE_FOCUS_ENERGY",
+      "MOVE_GROWL",
+      "MOVE_TAKE_DOWN"
+    ],
     "TMMoves": [
       "MOVE_TOXIC",
       "MOVE_BODY_SLAM",
@@ -7902,7 +7992,11 @@
         "Move": "MOVE_FLAMETHROWER"
       }
     ],
-    "PreEvoMoves": [],
+    "PreEvoMoves": [
+      "MOVE_FOCUS_ENERGY",
+      "MOVE_GROWL",
+      "MOVE_TAKE_DOWN"
+    ],
     "TMMoves": [
       "MOVE_TOXIC",
       "MOVE_BODY_SLAM",
@@ -8717,7 +8811,6 @@
       "MOVE_ICE_BEAM",
       "MOVE_BLIZZARD",
       "MOVE_HYPER_BEAM",
-      "MOVE_PAY_DAY",
       "MOVE_SUBMISSION",
       "MOVE_COUNTER",
       "MOVE_SEISMIC_TOSS",

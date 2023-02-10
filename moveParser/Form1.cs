@@ -22,6 +22,11 @@ namespace moveParser
 {
     public partial class Form1 : Form
     {
+#if DEBUG
+        private static string dbpath = "../../db";
+#else
+        private static string dbpath = "db";
+#endif
 
         private Dictionary<string, Dictionary<string, MonData>> allGensData = new Dictionary<string, Dictionary<string, MonData>>();
         Dictionary<string, MonData> customGenData = new Dictionary<string, MonData>();
@@ -49,7 +54,7 @@ namespace moveParser
             btnLoadFromSerebii.Visible = true;
 #endif
 
-            MoveData = MovesData.GetMoveDataFromFile("db/moveNames.json");
+            MoveData = MovesData.GetMoveDataFromFile(dbpath + "/moveNames.json");
         }
 
         protected void LoadExportModes()
@@ -67,9 +72,9 @@ namespace moveParser
 
         protected void LoadGenerationData()
         {
-            GenData = GenerationsData.GetGenDataFromFile("db/generations.json");
+            GenData = GenerationsData.GetGenDataFromFile(dbpath + "/generations.json");
 #if DEBUG
-            File.WriteAllText("../../db/generations.json", JsonConvert.SerializeObject(GenData, Formatting.Indented));
+            File.WriteAllText("db/generations.json", JsonConvert.SerializeObject(GenData, Formatting.Indented));
 #endif
 
             cmbGeneration.Items.Clear();
@@ -85,36 +90,12 @@ namespace moveParser
                 cListEggMoves.Items.Add(item.Key);
                 cListTutorMoves.Items.Add(item.Key);
 
-                Dictionary<string, MonData> gen = PokemonData.GetMonDataFromFile("db/gen/" + item.Value.dbFilename + ".json");
+                Dictionary<string, MonData> gen = PokemonData.GetMonDataFromFile(dbpath + "/gen/" + item.Value.dbFilename + ".json");
 
                 allGensData.Add(item.Key, gen);
             }
             //cListLevelUp.SetItemChecked(0, true);
         }
-
-        protected void LoadPkmnNameListFromSerebii()
-        {
-            List<MonName> lista = new List<MonName>();
-            string html = "https://www.serebii.net/pokemon/nationalpokedex.shtml";
-
-            hap.HtmlWeb web = new hap.HtmlWeb();
-            hap.HtmlDocument htmlDoc = web.Load(html);
-            hap.HtmlNodeCollection nodes = htmlDoc.DocumentNode.SelectNodes("//table[@class='dextable']/tr");
-
-            for (int i = 2; i < nodes.Count; i++)
-            {
-                hap.HtmlNode nodo = nodes[i];
-                string number = nodo.ChildNodes[1].InnerHtml.Trim().Replace("#", "");
-                string species = nodo.ChildNodes[5].ChildNodes[1].InnerHtml.Trim().Replace("&eacute", "é").Replace("&#9792;", "♀").Replace("&#9794;", "♂");
-
-                lista.Add(new MonName(int.Parse(number), species, true, species, NameToVarFormat(species), NameToDefineFormat(species)));
-            }
-
-            if (!Directory.Exists("db"))
-                Directory.CreateDirectory("db");
-            File.WriteAllText("db/monNames.json", JsonConvert.SerializeObject(lista, Formatting.Indented));
-        }
-
         private string NameToDefineFormat(string oldname)
         {
 
@@ -174,26 +155,29 @@ namespace moveParser
             {
                 List<MonName> nameList = new List<MonName>();
                 Dictionary<string, MonData> Database = new Dictionary<string, MonData>();
-                string namesFile = "db/monNames.json";
+                string namesFile = dbpath + "/monNames.json";
+#if DEBUG
+                File.WriteAllText("db/monNames.json", JsonConvert.SerializeObject(nameList, Formatting.Indented));
+#endif
 
                 UpdateLoadingMessage("Loading species...");
 
-                if (!File.Exists(namesFile))
-                    LoadPkmnNameListFromSerebii();
                 nameList = PokemonData.GetMonNamesFromFile(namesFile);
-#if DEBUG
-                File.WriteAllText("../../db/monNames.json", JsonConvert.SerializeObject(nameList, Formatting.Indented));
-#endif
 
                 GenerationData generation = GenData[(string)e.Argument];
 
-                int namecount = nameList.Count;
-#if DEBUG
-                Dictionary<string, MonData> existingMonData = PokemonData.GetMonDataFromFile("../../db/gen/" + generation.dbFilename + ".json");
-#else
-                Dictionary<string, MonData> existingMonData = PokemonData.GetMonDataFromFile("db/gen/" + generation.dbFilename + ".json");
-#endif
-                int i = 1;
+
+
+                int namecount = 0;
+
+                foreach (MonName monName in nameList)
+                {
+                    if (!PokemonData.ShouldSkipMon(monName, generation))
+                        namecount++;
+                }
+
+                Dictionary<string, MonData> existingMonData = PokemonData.GetMonDataFromFile(dbpath + "/gen/" + generation.dbFilename + ".json");
+                int i = 0;
                 foreach (MonName monName in nameList)
                 {
                     current = monName.DefName;
@@ -222,25 +206,26 @@ namespace moveParser
                             {
                                 File.AppendAllText("errorLog.txt", "[" + DateTime.Now.ToString() + "] Error adding " + monName.DefName + ": " + ex.Message);
                             }
+                            i++;
                         }
                     }
+
                     backgroundWorker1.ReportProgress(i * 100 / namecount);
                     // Set the text.
-                    UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Pokémon loaded.");
-                    i++;
+                    UpdateLoadingMessage(i.ToString() + " out of " + namecount + " loaded. (Skipped " + (nameList.Count - namecount) + ")");
                 }
-                if (!Directory.Exists("db"))
-                    Directory.CreateDirectory("db");
-                if (!Directory.Exists("db/gen"))
-                    Directory.CreateDirectory("db/gen");
+                if (!Directory.Exists(dbpath))
+                    Directory.CreateDirectory(dbpath);
+                if (!Directory.Exists(dbpath + "/gen"))
+                    Directory.CreateDirectory(dbpath + "/gen");
 
-                File.WriteAllText("db/gen/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
+                File.WriteAllText(dbpath + "/gen/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
 #if DEBUG
-                File.WriteAllText("../../db/gen/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
+                File.WriteAllText("db/gen/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
 #endif
 
                 allGensData.Remove(generation.dbFilename.ToUpper());
-                allGensData.Add(generation.dbFilename.ToUpper(), PokemonData.GetMonDataFromFile("db/gen/" + generation.dbFilename + ".json"));
+                allGensData.Add(generation.dbFilename.ToUpper(), PokemonData.GetMonDataFromFile(dbpath + "/gen/" + generation.dbFilename + ".json"));
 
                 UpdateLoadingMessage("Pokémon data loaded.");
             }
@@ -363,7 +348,8 @@ namespace moveParser
         private void bwrkExportLvl_DoWork(object sender, DoWorkEventArgs e)
         {
             UpdateLoadingMessage("Grouping movesets...");
-            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
+            string namesFile = dbpath + "/monNames.json";
+            List<MonName> nameList = PokemonData.GetMonNamesFromFile(namesFile);
 
             customGenData.Clear();
 
@@ -522,7 +508,8 @@ namespace moveParser
             });
 
             UpdateLoadingMessage("Grouping movesets...");
-            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
+            string namesFile = dbpath + "/monNames.json";
+            List<MonName> nameList = PokemonData.GetMonNamesFromFile(namesFile);
 
             Dictionary<string, List<string>> lvlMoves = new Dictionary<string, List<string>>();
 
@@ -907,7 +894,8 @@ namespace moveParser
             });
 
             UpdateLoadingMessage("Grouping movesets...");
-            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
+            string namesFile = dbpath + "/monNames.json";
+            List<MonName> nameList = PokemonData.GetMonNamesFromFile(namesFile);
 
             Dictionary<string, List<string>> lvlMoves = new Dictionary<string, List<string>>();
 
@@ -1214,7 +1202,8 @@ namespace moveParser
         private void bwrkExportEgg_DoWork(object sender, DoWorkEventArgs e)
         {
             UpdateLoadingMessage("Grouping movesets...");
-            List<MonName> nameList = PokemonData.GetMonNamesFromFile("db/monNames.json");
+            string namesFile = dbpath + "/monNames.json";
+            List<MonName> nameList = PokemonData.GetMonNamesFromFile(namesFile);
 
             Dictionary<string, List<string>> lvlMoves = new Dictionary<string, List<string>>();
 
