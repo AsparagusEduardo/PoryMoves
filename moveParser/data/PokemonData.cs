@@ -71,7 +71,9 @@ namespace moveParser.data
 
         public static List<MonName> GetMonNamesFromFile(string filedir)
         {
-            List<MonName> list;
+            List<MonName> list = new List<MonName>();
+            if (!File.Exists(filedir))
+                return list;
             string text = File.ReadAllText(filedir);
 
             list = JsonConvert.DeserializeObject<List<MonName>>(text);

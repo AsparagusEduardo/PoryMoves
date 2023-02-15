@@ -33,7 +33,9 @@ namespace moveParser.data
     {
         public static Dictionary<string, GenerationData> GetGenDataFromFile(string filedir)
         {
-            Dictionary<string, GenerationData> dict;
+            Dictionary<string, GenerationData> dict = new Dictionary<string, GenerationData>();
+            if (!File.Exists(filedir))
+                return dict;
             string text = File.ReadAllText(filedir);
 
             dict = JsonConvert.DeserializeObject<Dictionary<string, GenerationData>>(text);

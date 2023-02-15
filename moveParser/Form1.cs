@@ -47,7 +47,8 @@ namespace moveParser
             this.Text = "PoryMoves " + typeof(Form1).Assembly.GetName().Version.ToString(3);
 
             LoadGenerationData();
-            cmbGeneration.SelectedIndex = 0;
+            if (cmbGeneration.Items.Count > 0)
+                cmbGeneration.SelectedIndex = 0;
             LoadExportModes();
 #if DEBUG
             cmbGeneration.Visible = true;
@@ -74,6 +75,8 @@ namespace moveParser
         {
             GenData = GenerationsData.GetGenDataFromFile(dbpath + "/generations.json");
 #if DEBUG
+            if (!Directory.Exists("db"))
+                Directory.CreateDirectory("db");
             File.WriteAllText("db/generations.json", JsonConvert.SerializeObject(GenData, Formatting.Indented));
 #endif
 
@@ -157,6 +160,8 @@ namespace moveParser
                 Dictionary<string, MonData> Database = new Dictionary<string, MonData>();
                 string namesFile = dbpath + "/monNames.json";
 #if DEBUG
+                if (!Directory.Exists("db"))
+                    Directory.CreateDirectory("db");
                 File.WriteAllText("db/monNames.json", JsonConvert.SerializeObject(nameList, Formatting.Indented));
 #endif
 
@@ -221,6 +226,8 @@ namespace moveParser
 
                 File.WriteAllText(dbpath + "/gen/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
 #if DEBUG
+                if (!Directory.Exists("db"))
+                    Directory.CreateDirectory("db");
                 File.WriteAllText("db/gen/" + generation.dbFilename + ".json", JsonConvert.SerializeObject(Database, Formatting.Indented));
 #endif
 
@@ -565,7 +572,9 @@ namespace moveParser
             }
 
             // load specified TM list
-            List<string> tmMovesTemp = File.ReadAllLines("input/tm.txt").ToList();
+            List<string> tmMovesTemp = new List<string>();
+            if (Directory.Exists("input") && File.Exists("input/tm.txt"))
+                tmMovesTemp = File.ReadAllLines("input/tm.txt").ToList();
             List<string> tmMoves = new List<string>();
             string writeText = "";
             foreach (string str in tmMovesTemp)
@@ -574,7 +583,9 @@ namespace moveParser
                 if (!str.Trim().Equals("") && !str.Trim().StartsWith("//"))
                     tmMoves.Add(str);
             }
-            List<string> tutorMovesTemp = File.ReadAllLines("input/tutor.txt").ToList();
+            List<string> tutorMovesTemp = new List<string>();
+            if (Directory.Exists("input") && File.Exists("input/tutor.txt"))
+                tutorMovesTemp = File.ReadAllLines("input/tutor.txt").ToList();
             List<string> tutorMoves = new List<string>();
 
             foreach (string str in tutorMovesTemp)
@@ -614,23 +625,26 @@ namespace moveParser
 
             // file header
             string sets = "";
-            if (mode == ExportModes.Vanilla)
+            if (tmMoves.Count > 0)
             {
-                sets = $"#define TMHM_LEARNSET(moves) {{(u32)(moves), ((u64)(moves) >> 32)}}\n" +
-                    $"#define TMHM(tmhm) ((u64)1 << (ITEM_##tmhm - ITEM_{tmMoves[0]}))\n\n" +
-                    "// This table determines which TMs and HMs a species is capable of learning.\n" +
-                    "// Each entry is a 64-bit bit array spread across two 32-bit values, with\n" +
-                    "// each bit corresponding to a TM or HM.\n" +
-                    "const u32 gTMHMLearnsets[][2] =\n{\n" +
-                    $"    [SPECIES_NONE]        = TMHM_LEARNSET(0),\n";
-            }
-            else if (mode == ExportModes.SBirdRefactor)
-            {
-                sets = $"#define TMHM(tmhm) ((u8) ((ITEM_##tmhm) - ITEM_{tmMoves[0]}))\n\nstatic const u8 sNoneTMHMLearnset[] =\n{{\n    0xFF,\n}};\n";
-            }
-            else if (mode == ExportModes.RHH_1_0_0)
-            {
-                //Do nothing.
+                if (mode == ExportModes.Vanilla)
+                {
+                    sets = $"#define TMHM_LEARNSET(moves) {{(u32)(moves), ((u64)(moves) >> 32)}}\n" +
+                        $"#define TMHM(tmhm) ((u64)1 << (ITEM_##tmhm - ITEM_{tmMoves[0]}))\n\n" +
+                        "// This table determines which TMs and HMs a species is capable of learning.\n" +
+                        "// Each entry is a 64-bit bit array spread across two 32-bit values, with\n" +
+                        "// each bit corresponding to a TM or HM.\n" +
+                        "const u32 gTMHMLearnsets[][2] =\n{\n" +
+                        $"    [SPECIES_NONE]        = TMHM_LEARNSET(0),\n";
+                }
+                else if (mode == ExportModes.SBirdRefactor)
+                {
+                    sets = $"#define TMHM(tmhm) ((u8) ((ITEM_##tmhm) - ITEM_{tmMoves[0]}))\n\nstatic const u8 sNoneTMHMLearnset[] =\n{{\n    0xFF,\n}};\n";
+                }
+                else if (mode == ExportModes.RHH_1_0_0)
+                {
+                    //Do nothing.
+                }
             }
 
             i = 1;
@@ -951,7 +965,9 @@ namespace moveParser
             }
 
             // load specified tutor list
-            List<string> tutorMovesTemp = File.ReadAllLines("input/tutor.txt").ToList();
+            List<string> tutorMovesTemp = new List<string>();
+            if (Directory.Exists("input") && File.Exists("input/tutor.txt"))
+                tutorMovesTemp = File.ReadAllLines("input/tutor.txt").ToList();
             List<string> tutorMoves = new List<string>();
             
             string writeText = "";
@@ -962,7 +978,9 @@ namespace moveParser
                     tutorMoves.Add(str);
             }
 
-            List<string> tmMovesTemp = File.ReadAllLines("input/tm.txt").ToList();
+            List<string> tmMovesTemp = new List<string>();
+            if (Directory.Exists("input") && File.Exists("input/tm.txt"))
+                tmMovesTemp = File.ReadAllLines("input/tm.txt").ToList();
             List<string> tmMoves = new List<string>();
 
             foreach (string str in tmMovesTemp)

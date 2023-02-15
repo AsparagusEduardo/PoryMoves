@@ -34,7 +34,9 @@ namespace moveParser.data
     {
         public static Dictionary<string, Move> GetMoveDataFromFile(string filedir)
         {
-            Dictionary<string, Move> dict;
+            Dictionary<string, Move> dict = new Dictionary<string, Move>();
+            if (!File.Exists(filedir))
+                return dict;
             string text = File.ReadAllText(filedir);
 
             dict = JsonConvert.DeserializeObject<Dictionary<string, Move>>(text);
