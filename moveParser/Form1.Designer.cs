@@ -76,6 +76,7 @@
             this.btnOpenOutputFolder = new System.Windows.Forms.Button();
             this.btnOpenInputFolder = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.chkLvl_PreEvo = new System.Windows.Forms.CheckBox();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -267,6 +268,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkLvl_PreEvo);
             this.groupBox1.Controls.Add(this.btnLvl_All);
             this.groupBox1.Controls.Add(this.chkLvl_LevelUpEnd);
             this.groupBox1.Controls.Add(this.cListLevelUp);
@@ -624,6 +626,18 @@
             this.btnOpenInputFolder.UseVisualStyleBackColor = true;
             this.btnOpenInputFolder.Click += new System.EventHandler(this.btnOpenInputFolder_Click);
             // 
+            // chkLvl_PreEvo
+            // 
+            this.chkLvl_PreEvo.AutoSize = true;
+            this.chkLvl_PreEvo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLvl_PreEvo.Location = new System.Drawing.Point(13, 313);
+            this.chkLvl_PreEvo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkLvl_PreEvo.Name = "chkLvl_PreEvo";
+            this.chkLvl_PreEvo.Size = new System.Drawing.Size(175, 21);
+            this.chkLvl_PreEvo.TabIndex = 19;
+            this.chkLvl_PreEvo.Text = "Include Pre-Evo moves";
+            this.chkLvl_PreEvo.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -643,7 +657,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
-            this.Text = "PoryMoves 1.2.1";
+            this.Text = "PoryMoves 1.x.x";
             this.gBoxOptionsTM.ResumeLayout(false);
             this.gBoxOptionsTM.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -706,6 +720,7 @@
         private System.Windows.Forms.ComboBox cmbTutor_ExportMode;
         private System.Windows.Forms.CheckBox chkGeneral_MewExclusiveTutor;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.CheckBox chkLvl_PreEvo;
     }
 }
 

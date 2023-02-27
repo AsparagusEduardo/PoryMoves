@@ -315,6 +315,7 @@ namespace moveParser
             this.Invoke((MethodInvoker)delegate
             {
                 chkLvl_LevelUpEnd.Enabled = value;
+                chkLvl_PreEvo.Enabled = value;
 
                 chkTM_IncludeEgg.Enabled = value;
                 chkTM_IncludeLvl.Enabled = value;
@@ -367,12 +368,11 @@ namespace moveParser
                 MonData monToAdd = new MonData();
                 monToAdd.LevelMoves = new List<LevelUpMove>();
 
+                List<string> preEvoMoves = new List<string>();
                 List<LevelUpMove> evoMoves = new List<LevelUpMove>();
                 List<LevelUpMove> lvl1Moves = new List<LevelUpMove>();
 
                 Dictionary<string, List<Tuple<int, int>>> OtherLvlMoves = new Dictionary<string, List<Tuple<int, int>>>();
-                List<LevelUpMove> oLvlMoves = new List<LevelUpMove>();
-
 
                 foreach (string item in cListLevelUp.CheckedItems)
                 {
@@ -400,13 +400,29 @@ namespace moveParser
                                 OtherLvlMoves[move.Move].Add(new Tuple<int, int>(gen.genNumber, move.Level));
                         }
                     }
+                    foreach(string pem in mon.PreEvoMoves)
+                    {
+                        if (!preEvoMoves.Contains(pem))
+                            preEvoMoves.Add(pem);
+                    }
 
                 }
+
                 evoMoves = evoMoves.GroupBy(elem => elem.Move).Select(group => group.First()).ToList();
+                lvl1Moves = lvl1Moves.GroupBy(elem => elem.Move).Select(group => group.First()).ToList();
+
                 foreach (LevelUpMove move in evoMoves)
                     monToAdd.LevelMoves.Add(move);
 
-                lvl1Moves = lvl1Moves.GroupBy(elem => elem.Move).Select(group => group.First()).ToList();
+                if (chkLvl_PreEvo.Checked)
+                {
+                    foreach (string move in preEvoMoves)
+                    {
+                        if (!evoMoves.Select(x => x.Move).Contains(move) && !lvl1Moves.Select(x => x.Move).Contains(move))
+                            monToAdd.LevelMoves.Add(new LevelUpMove(1, move));
+                    }
+                }
+
                 foreach (LevelUpMove move in lvl1Moves)
                     monToAdd.LevelMoves.Add(move);
 
