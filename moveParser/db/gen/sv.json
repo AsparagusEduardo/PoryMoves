@@ -62927,5 +62927,225 @@
     ],
     "EggMoves": [],
     "TutorMoves": []
+  },
+  "WALKING_WAKE": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_SUNNY_DAY"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_HONE_CLAWS"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_ROAR"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_LEER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_TWISTER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_AQUA_JET"
+      },
+      {
+        "Level": 7,
+        "Move": "MOVE_BITE"
+      },
+      {
+        "Level": 14,
+        "Move": "MOVE_WATER_PULSE"
+      },
+      {
+        "Level": 21,
+        "Move": "MOVE_NOBLE_ROAR"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_DRAGON_BREATH"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_BREAKING_SWIPE"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_DRAGON_RUSH"
+      },
+      {
+        "Level": 56,
+        "Move": "MOVE_HYDRO_STEAM"
+      },
+      {
+        "Level": 63,
+        "Move": "MOVE_DRAGON_PULSE"
+      },
+      {
+        "Level": 70,
+        "Move": "MOVE_OUTRAGE"
+      },
+      {
+        "Level": 77,
+        "Move": "MOVE_FLAMETHROWER"
+      },
+      {
+        "Level": 84,
+        "Move": "MOVE_HYDRO_PUMP"
+      }
+    ],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_TAKE_DOWN",
+      "MOVE_AGILITY",
+      "MOVE_SCARY_FACE",
+      "MOVE_PROTECT",
+      "MOVE_FIRE_FANG",
+      "MOVE_WATER_PULSE",
+      "MOVE_LOW_KICK",
+      "MOVE_CHILLING_WATER",
+      "MOVE_FACADE",
+      "MOVE_SNARL",
+      "MOVE_SWIFT",
+      "MOVE_MUD_SHOT",
+      "MOVE_DRAGON_TAIL",
+      "MOVE_ENDURE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_RAIN_DANCE",
+      "MOVE_BODY_SLAM",
+      "MOVE_SLEEP_TALK",
+      "MOVE_WATERFALL",
+      "MOVE_DRAGON_CLAW",
+      "MOVE_REST",
+      "MOVE_DRAGON_DANCE",
+      "MOVE_SURF",
+      "MOVE_FLAMETHROWER",
+      "MOVE_HYDRO_PUMP",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_OUTRAGE",
+      "MOVE_HURRICANE",
+      "MOVE_HYPER_BEAM",
+      "MOVE_DRACO_METEOR",
+      "MOVE_TERA_BLAST"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "IRON_LEAVES": {
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_ELECTRIC_TERRAIN"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_QUASH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_QUICK_ATTACK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_LEER"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_HELPING_HAND"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_WORK_UP"
+      },
+      {
+        "Level": 7,
+        "Move": "MOVE_MAGICAL_LEAF"
+      },
+      {
+        "Level": 14,
+        "Move": "MOVE_RETALIATE"
+      },
+      {
+        "Level": 21,
+        "Move": "MOVE_QUICK_GUARD"
+      },
+      {
+        "Level": 28,
+        "Move": "MOVE_NIGHT_SLASH"
+      },
+      {
+        "Level": 35,
+        "Move": "MOVE_SWORDS_DANCE"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_SACRED_SWORD"
+      },
+      {
+        "Level": 56,
+        "Move": "MOVE_LEAF_BLADE"
+      },
+      {
+        "Level": 63,
+        "Move": "MOVE_PSYBLADE"
+      },
+      {
+        "Level": 70,
+        "Move": "MOVE_IMPRISON"
+      },
+      {
+        "Level": 77,
+        "Move": "MOVE_MEGAHORN"
+      },
+      {
+        "Level": 84,
+        "Move": "MOVE_ALLY_SWITCH"
+      },
+      {
+        "Level": 91,
+        "Move": "MOVE_SOLAR_BLADE"
+      }
+    ],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_TAKE_DOWN",
+      "MOVE_AGILITY",
+      "MOVE_SCARY_FACE",
+      "MOVE_PROTECT",
+      "MOVE_FIRE_FANG",
+      "MOVE_WATER_PULSE",
+      "MOVE_LOW_KICK",
+      "MOVE_CHILLING_WATER",
+      "MOVE_FACADE",
+      "MOVE_SNARL",
+      "MOVE_SWIFT",
+      "MOVE_MUD_SHOT",
+      "MOVE_DRAGON_TAIL",
+      "MOVE_ENDURE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_RAIN_DANCE",
+      "MOVE_BODY_SLAM",
+      "MOVE_SLEEP_TALK",
+      "MOVE_WATERFALL",
+      "MOVE_DRAGON_CLAW",
+      "MOVE_REST",
+      "MOVE_DRAGON_DANCE",
+      "MOVE_SURF",
+      "MOVE_FLAMETHROWER",
+      "MOVE_HYDRO_PUMP",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_OUTRAGE",
+      "MOVE_HURRICANE",
+      "MOVE_HYPER_BEAM",
+      "MOVE_DRACO_METEOR",
+      "MOVE_TERA_BLAST"
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
   }
 }
