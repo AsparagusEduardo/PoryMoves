@@ -341,8 +341,8 @@ namespace moveParser.data
             if (existingMonData != null)
             {
                 test2 = existingMonData.LevelMoves;
-                test1.OrderBy(x => x.Level).ThenBy(x => x.Move).ToList();
-                test2.OrderBy(x => x.Level).ThenBy(x => x.Move).ToList();
+                test1 = test1.OrderBy(x => x.Level).ThenBy(x => x.Move).ToList();
+                test2 = test2.OrderBy(x => x.Level).ThenBy(x => x.Move).ToList();
 
                 if (test1.Count == test2.Count)
                 {
