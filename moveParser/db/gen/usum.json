@@ -14201,14 +14201,6 @@
         "Move": "MOVE_TAIL_WHIP"
       },
       {
-        "Level": 1,
-        "Move": "MOVE_FURY_ATTACK"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_SCARY_FACE"
-      },
-      {
         "Level": 5,
         "Move": "MOVE_FURY_ATTACK"
       },
@@ -14648,7 +14640,8 @@
       "MOVE_MUD_BOMB",
       "MOVE_NATURAL_GIFT",
       "MOVE_PRESENT",
-      "MOVE_SEISMIC_TOSS"
+      "MOVE_SEISMIC_TOSS",
+      "MOVE_LAST_RESORT"
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
@@ -15804,9 +15797,12 @@
       "MOVE_MIMIC",
       "MOVE_NASTY_PLOT",
       "MOVE_POWER_SPLIT",
+      "MOVE_PSYCHIC_TERRAIN",
       "MOVE_TEETER_DANCE",
       "MOVE_TRICK",
-      "MOVE_WAKE_UP_SLAP"
+      "MOVE_WAKE_UP_SLAP",
+      "MOVE_CHARM",
+      "MOVE_HEALING_WISH"
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
@@ -18367,7 +18363,9 @@
       "MOVE_NATURAL_GIFT",
       "MOVE_POWER_UP_PUNCH",
       "MOVE_PURSUIT",
-      "MOVE_WHIRLWIND"
+      "MOVE_WHIRLWIND",
+      "MOVE_SELF_DESTRUCT",
+      "MOVE_ZEN_HEADBUTT"
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
@@ -23841,7 +23839,14 @@
       "MOVE_REFRESH",
       "MOVE_SUPERPOWER",
       "MOVE_SUPERSONIC",
-      "MOVE_WATER_SPORT"
+      "MOVE_WATER_SPORT",
+      "MOVE_COPYCAT",
+      "MOVE_ENCORE",
+      "MOVE_FAKE_TEARS",
+      "MOVE_SING",
+      "MOVE_SLAM",
+      "MOVE_SOAK",
+      "MOVE_TICKLE"
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
@@ -23979,13 +23984,20 @@
       "MOVE_BELLY_DRUM",
       "MOVE_BODY_SLAM",
       "MOVE_CAMOUFLAGE",
+      "MOVE_COPYCAT",
+      "MOVE_ENCORE",
+      "MOVE_FAKE_TEARS",
       "MOVE_FUTURE_SIGHT",
       "MOVE_MUDDY_WATER",
       "MOVE_PERISH_SONG",
       "MOVE_PRESENT",
       "MOVE_REFRESH",
+      "MOVE_SING",
+      "MOVE_SLAM",
+      "MOVE_SOAK",
       "MOVE_SUPERPOWER",
       "MOVE_SUPERSONIC",
+      "MOVE_TICKLE",
       "MOVE_WATER_SPORT"
     ],
     "TutorMoves": [
@@ -29565,7 +29577,9 @@
       "MOVE_SPLASH",
       "MOVE_TWISTER",
       "MOVE_WATER_SPORT",
-      "MOVE_WIDE_GUARD"
+      "MOVE_WIDE_GUARD",
+      "MOVE_SIGNAL_BEAM",
+      "MOVE_TAILWIND"
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
@@ -31553,6 +31567,7 @@
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
+      "MOVE_LAST_RESORT",
       "MOVE_METRONOME",
       "MOVE_MUD_BOMB",
       "MOVE_NATURAL_GIFT",
@@ -41063,7 +41078,8 @@
       "MOVE_SEED_BOMB",
       "MOVE_SLEEP_POWDER",
       "MOVE_SPIKES",
-      "MOVE_SYNTHESIS"
+      "MOVE_SYNTHESIS",
+      "MOVE_EXTRASENSORY"
     ],
     "TutorMoves": [
       "MOVE_COVET",
@@ -50283,7 +50299,7 @@
       "MOVE_ZEN_HEADBUTT"
     ]
   },
-  "DEOXYS": {
+  "DEOXYS_NORMAL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -52891,6 +52907,7 @@
     "EggMoves": [
       "MOVE_BULLET_SEED",
       "MOVE_COTTON_SPORE",
+      "MOVE_EXTRASENSORY",
       "MOVE_GIGA_DRAIN",
       "MOVE_GRASS_WHISTLE",
       "MOVE_LEAF_STORM",
@@ -57710,7 +57727,6 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_LICK",
       "MOVE_NATURAL_GIFT",
-      "MOVE_POWER_UP_PUNCH",
       "MOVE_PURSUIT",
       "MOVE_SELF_DESTRUCT",
       "MOVE_WHIRLWIND",
@@ -71385,15 +71401,138 @@
       "MOVE_WORRY_SEED"
     ]
   },
-  "BASCULIN": {
+  "BASCULIN_RED_STRIPED": {
     "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TACKLE"
+      },
       {
         "Level": 1,
         "Move": "MOVE_TAIL_WHIP"
       },
       {
         "Level": 1,
+        "Move": "MOVE_WATER_GUN"
+      },
+      {
+        "Level": 3,
+        "Move": "MOVE_UPROAR"
+      },
+      {
+        "Level": 5,
+        "Move": "MOVE_HEADBUTT"
+      },
+      {
+        "Level": 7,
+        "Move": "MOVE_BITE"
+      },
+      {
+        "Level": 9,
+        "Move": "MOVE_AQUA_JET"
+      },
+      {
+        "Level": 11,
+        "Move": "MOVE_CHIP_AWAY"
+      },
+      {
+        "Level": 14,
+        "Move": "MOVE_TAKE_DOWN"
+      },
+      {
+        "Level": 17,
+        "Move": "MOVE_CRUNCH"
+      },
+      {
+        "Level": 20,
+        "Move": "MOVE_AQUA_TAIL"
+      },
+      {
+        "Level": 23,
+        "Move": "MOVE_SOAK"
+      },
+      {
+        "Level": 26,
+        "Move": "MOVE_DOUBLE_EDGE"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_SCARY_FACE"
+      },
+      {
+        "Level": 34,
+        "Move": "MOVE_FLAIL"
+      },
+      {
+        "Level": 38,
+        "Move": "MOVE_FINAL_GAMBIT"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_THRASH"
+      },
+      {
+        "Level": 46,
+        "Move": "MOVE_HEAD_SMASH"
+      }
+    ],
+    "PreEvoMoves": [],
+    "TMMoves": [
+      "MOVE_TOXIC",
+      "MOVE_HAIL",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_TAUNT",
+      "MOVE_ICE_BEAM",
+      "MOVE_PROTECT",
+      "MOVE_RAIN_DANCE",
+      "MOVE_FRUSTRATION",
+      "MOVE_RETURN",
+      "MOVE_DOUBLE_TEAM",
+      "MOVE_FACADE",
+      "MOVE_REST",
+      "MOVE_ATTRACT",
+      "MOVE_ROUND",
+      "MOVE_SCALD",
+      "MOVE_SWAGGER",
+      "MOVE_SLEEP_TALK",
+      "MOVE_SUBSTITUTE",
+      "MOVE_SURF",
+      "MOVE_WATERFALL",
+      "MOVE_CONFIDE"
+    ],
+    "EggMoves": [
+      "MOVE_AGILITY",
+      "MOVE_BRINE",
+      "MOVE_BUBBLE_BEAM",
+      "MOVE_HEAD_SMASH",
+      "MOVE_MUD_SHOT",
+      "MOVE_MUDDY_WATER",
+      "MOVE_RAGE",
+      "MOVE_REVENGE",
+      "MOVE_SWIFT",
+      "MOVE_WHIRLPOOL"
+    ],
+    "TutorMoves": [
+      "MOVE_AQUA_TAIL",
+      "MOVE_BOUNCE",
+      "MOVE_ENDEAVOR",
+      "MOVE_ICY_WIND",
+      "MOVE_LIQUIDATION",
+      "MOVE_SNORE",
+      "MOVE_SUPERPOWER",
+      "MOVE_UPROAR",
+      "MOVE_ZEN_HEADBUTT"
+    ]
+  },
+  "BASCULIN_BLUE_STRIPED": {
+    "LevelMoves": [
+      {
+        "Level": 1,
         "Move": "MOVE_TACKLE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_TAIL_WHIP"
       },
       {
         "Level": 1,
@@ -95377,10 +95516,6 @@
         "Move": "MOVE_FURY_ATTACK"
       },
       {
-        "Level": 28,
-        "Move": "MOVE_BEAK_BLAST"
-      },
-      {
         "Level": 30,
         "Move": "MOVE_SCREECH"
       },
@@ -108757,12 +108892,7 @@
       "MOVE_DARK_PULSE",
       "MOVE_CONFIDE"
     ],
-    "EggMoves": [
-      "MOVE_ASSIST",
-      "MOVE_BARRIER",
-      "MOVE_TRICK",
-      "MOVE_YAWN"
-    ],
+    "EggMoves": [],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_COVET",
