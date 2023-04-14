@@ -4359,16 +4359,16 @@
       "MOVE_CAPTIVATE",
       "MOVE_DISABLE",
       "MOVE_EXTRASENSORY",
-      "MOVE_FLAIL",
       "MOVE_FAINT_ATTACK",
+      "MOVE_FLAIL",
       "MOVE_FLARE_BLITZ",
       "MOVE_HEAT_WAVE",
       "MOVE_HEX",
       "MOVE_HOWL",
       "MOVE_HYPNOSIS",
       "MOVE_POWER_SWAP",
-      "MOVE_SPITE",
       "MOVE_SECRET_POWER",
+      "MOVE_SPITE",
       "MOVE_TAIL_SLAP"
     ],
     "TutorMoves": [
@@ -4473,8 +4473,8 @@
       "MOVE_HOWL",
       "MOVE_HYPNOSIS",
       "MOVE_POWER_SWAP",
-      "MOVE_SPITE",
       "MOVE_SECRET_POWER",
+      "MOVE_SPITE",
       "MOVE_TAIL_SLAP"
     ],
     "TutorMoves": [
@@ -6258,9 +6258,9 @@
       "MOVE_FLAIL",
       "MOVE_FOUL_PLAY",
       "MOVE_HYPNOSIS",
+      "MOVE_IRON_TAIL",
       "MOVE_LAST_RESORT",
       "MOVE_ODOR_SLEUTH",
-      "MOVE_IRON_TAIL",
       "MOVE_PUNISHMENT",
       "MOVE_SNATCH",
       "MOVE_SPITE",
@@ -6419,9 +6419,9 @@
       "MOVE_FLAIL",
       "MOVE_FOUL_PLAY",
       "MOVE_HYPNOSIS",
+      "MOVE_IRON_TAIL",
       "MOVE_LAST_RESORT",
       "MOVE_ODOR_SLEUTH",
-      "MOVE_IRON_TAIL",
       "MOVE_PUNISHMENT",
       "MOVE_SNATCH",
       "MOVE_SPITE",
@@ -7689,8 +7689,8 @@
       "MOVE_GUARD_SWAP",
       "MOVE_ICE_PUNCH",
       "MOVE_KNOCK_OFF",
-      "MOVE_PSYCHIC_TERRAIN",
       "MOVE_POWER_TRICK",
+      "MOVE_PSYCHIC_TERRAIN",
       "MOVE_PSYCHO_SHIFT",
       "MOVE_SKILL_SWAP",
       "MOVE_THUNDER_PUNCH"
@@ -7840,8 +7840,8 @@
       "MOVE_GUARD_SWAP",
       "MOVE_ICE_PUNCH",
       "MOVE_KNOCK_OFF",
-      "MOVE_PSYCHIC_TERRAIN",
       "MOVE_POWER_TRICK",
+      "MOVE_PSYCHIC_TERRAIN",
       "MOVE_PSYCHO_SHIFT",
       "MOVE_SKILL_SWAP",
       "MOVE_THUNDER_PUNCH"
@@ -7996,8 +7996,8 @@
       "MOVE_GUARD_SWAP",
       "MOVE_ICE_PUNCH",
       "MOVE_KNOCK_OFF",
-      "MOVE_PSYCHIC_TERRAIN",
       "MOVE_POWER_TRICK",
+      "MOVE_PSYCHIC_TERRAIN",
       "MOVE_PSYCHO_SHIFT",
       "MOVE_SKILL_SWAP",
       "MOVE_THUNDER_PUNCH"
@@ -33619,8 +33619,8 @@
       "MOVE_SMELLING_SALT"
     ],
     "TutorMoves": [
-      "MOVE_BOUNCE",
       "MOVE_BLAST_BURN",
+      "MOVE_BOUNCE",
       "MOVE_DEFOG",
       "MOVE_DUAL_CHOP",
       "MOVE_FIRE_PLEDGE",
@@ -46099,8 +46099,8 @@
       "MOVE_FAKE_OUT",
       "MOVE_FOUL_PLAY",
       "MOVE_MAGIC_COAT",
-      "MOVE_POWER_UP_PUNCH",
       "MOVE_NASTY_PLOT",
+      "MOVE_POWER_UP_PUNCH",
       "MOVE_RECOVER",
       "MOVE_SKILL_SWAP",
       "MOVE_SNATCH",
@@ -100220,7 +100220,6 @@
     "TutorMoves": [
       "MOVE_DEFOG",
       "MOVE_DRACO_METEOR",
-      "MOVE_WATER_PLEDGE",
       "MOVE_FIRE_PLEDGE",
       "MOVE_GRASS_PLEDGE",
       "MOVE_HEAT_WAVE",
@@ -100235,6 +100234,7 @@
       "MOVE_SIGNAL_BEAM",
       "MOVE_SNORE",
       "MOVE_TAILWIND",
+      "MOVE_WATER_PLEDGE",
       "MOVE_ZEN_HEADBUTT"
     ]
   },
@@ -105184,8 +105184,8 @@
       "MOVE_HYPNOSIS",
       "MOVE_MOONBLAST",
       "MOVE_POWER_SWAP",
-      "MOVE_SPITE",
       "MOVE_SECRET_POWER",
+      "MOVE_SPITE",
       "MOVE_TAIL_SLAP"
     ],
     "TutorMoves": [
@@ -105299,8 +105299,8 @@
       "MOVE_HYPNOSIS",
       "MOVE_MOONBLAST",
       "MOVE_POWER_SWAP",
-      "MOVE_SPITE",
       "MOVE_SECRET_POWER",
+      "MOVE_SPITE",
       "MOVE_TAIL_SLAP"
     ],
     "TutorMoves": [
@@ -106425,8 +106425,8 @@
       "MOVE_PURSUIT",
       "MOVE_SCARY_FACE",
       "MOVE_SHADOW_SNEAK",
-      "MOVE_SPITE",
       "MOVE_SPIT_UP",
+      "MOVE_SPITE",
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW"
     ],
@@ -106583,8 +106583,8 @@
       "MOVE_PURSUIT",
       "MOVE_SCARY_FACE",
       "MOVE_SHADOW_SNEAK",
-      "MOVE_SPITE",
       "MOVE_SPIT_UP",
+      "MOVE_SPITE",
       "MOVE_STOCKPILE",
       "MOVE_SWALLOW"
     ],
