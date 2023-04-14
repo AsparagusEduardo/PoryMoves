@@ -4,7 +4,9 @@ All changes to this project will be documented in this section. The format is ba
 
 # Unreleased
 
-- Nothing!
+- Fixed USUM's JSON missing its PreEvoMoves data.
+- Fixed move order in USUM's JSON.
+- Other USUM fixes.
 
 **Full Changelog**: https://github.com/AsparagusEduardo/PoryMoves/compare/v1.4.0...master
 
