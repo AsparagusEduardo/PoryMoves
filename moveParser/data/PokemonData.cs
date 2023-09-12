@@ -18,6 +18,10 @@ namespace moveParser.data
         public List<string> TMMoves = new List<string>();
         public List<string> EggMoves = new List<string>();
         public List<string> TutorMoves = new List<string>();
+        public int TotalMoveCount()
+        {
+            return LevelMoves.Count + PreEvoMoves.Count + TMMoves.Count + EggMoves.Count + TutorMoves.Count;
+        }
     }
     public class MonName
     {

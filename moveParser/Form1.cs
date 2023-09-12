@@ -33,6 +33,12 @@ namespace moveParser
         protected Dictionary<string, GenerationData> GenData;
         protected Dictionary<string, Move> MoveData;
 
+        enum MoveCombination
+        {
+            UseLatest,
+            Combine,
+        }
+
         enum ExportModes
         {
             Vanilla,
@@ -60,9 +66,13 @@ namespace moveParser
 
         protected void LoadExportModes()
         {
-            cmbTM_ExportMode.Items.Insert(((int)ExportModes.Vanilla), "Vanilla Mode");
-            cmbTM_ExportMode.Items.Insert(((int)ExportModes.SBirdRefactor), "SBird's TM Refactor");
-            cmbTM_ExportMode.Items.Insert(((int)ExportModes.RHH_1_0_0), "RHH 1.0.0");
+            cmbLvl_Combine.Items.Insert((int)MoveCombination.UseLatest, "Use Latest Moveset");
+            cmbLvl_Combine.Items.Insert((int)MoveCombination.Combine, "Combine Movesets");
+            cmbLvl_Combine.SelectedIndex = 0;
+
+            cmbTM_ExportMode.Items.Insert((int)ExportModes.Vanilla, "Vanilla Mode");
+            cmbTM_ExportMode.Items.Insert((int)ExportModes.SBirdRefactor, "SBird's TM Refactor");
+            cmbTM_ExportMode.Items.Insert((int)ExportModes.RHH_1_0_0, "RHH 1.0.0");
             cmbTM_ExportMode.SelectedIndex = 0;
 
             cmbTutor_ExportMode.Items.Insert(((int)ExportModes.Vanilla), "Vanilla Mode");
@@ -316,6 +326,7 @@ namespace moveParser
             {
                 chkLvl_LevelUpEnd.Enabled = value;
                 chkLvl_PreEvo.Enabled = value;
+                cmbLvl_Combine.Enabled = value;
 
                 chkTM_IncludeEgg.Enabled = value;
                 chkTM_IncludeLvl.Enabled = value;
@@ -355,6 +366,12 @@ namespace moveParser
         }
         private void bwrkExportLvl_DoWork(object sender, DoWorkEventArgs e)
         {
+            MoveCombination mode = MoveCombination.UseLatest;
+            this.Invoke((MethodInvoker)delegate
+            {
+                mode = (MoveCombination)this.cmbLvl_Combine.SelectedIndex;
+            });
+
             UpdateLoadingMessage("Grouping movesets...");
             string namesFile = dbpath + "/monNames.json";
             List<MonName> nameList = PokemonData.GetMonNamesFromFile(namesFile);
@@ -374,18 +391,25 @@ namespace moveParser
 
                 Dictionary<string, List<Tuple<int, int>>> OtherLvlMoves = new Dictionary<string, List<Tuple<int, int>>>();
 
+                bool stopReading = false;
                 foreach (string item in cListLevelUp.CheckedItems)
                 {
                     GenerationData gen = GenData[item];
-                    MonData mon;
+                    MonData mon = new MonData();
                     try
                     {
                         mon = allGensData[item][name.DefName];
+                        if (mode == (int)MoveCombination.UseLatest
+                            && allGensData[item][name.DefName].TotalMoveCount() != 0
+                            && gen.gameId != 19) // Exclude PLA movesets from "Latest Moveset Only" config
+                        {
+                            stopReading = true;
+                        }
                     }
                     catch (KeyNotFoundException)
                     {
-                        mon = new MonData();
                     }
+
                     foreach (LevelUpMove move in mon.LevelMoves)
                     {
                         if (move.Level == 0)
@@ -405,7 +429,8 @@ namespace moveParser
                         if (!preEvoMoves.Contains(pem))
                             preEvoMoves.Add(pem);
                     }
-
+                    if (stopReading)
+                        break;
                 }
 
                 evoMoves = evoMoves.GroupBy(elem => elem.Move).Select(group => group.First()).ToList();
@@ -426,7 +451,19 @@ namespace moveParser
                 foreach (LevelUpMove move in lvl1Moves)
                     monToAdd.LevelMoves.Add(move);
 
-                if (!name.SpeciesName.Equals("Smeargle"))
+                if (name.SpeciesName.Equals("Smeargle"))
+                {
+                    monToAdd.LevelMoves.Add(new LevelUpMove(11, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(21, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(31, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(41, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(51, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(61, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(71, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(81, "MOVE_SKETCH"));
+                    monToAdd.LevelMoves.Add(new LevelUpMove(91, "MOVE_SKETCH"));
+                }
+                else
                 {
                     foreach (KeyValuePair<string, List<Tuple<int, int>>> item in OtherLvlMoves)
                     {
@@ -440,18 +477,6 @@ namespace moveParser
                         }
                         monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max((int)(weightedSum / sum), 2), item.Key));
                     }
-                }
-                else
-                {
-                    monToAdd.LevelMoves.Add(new LevelUpMove(11, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(21, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(31, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(41, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(51, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(61, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(71, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(81, "MOVE_SKETCH"));
-                    monToAdd.LevelMoves.Add(new LevelUpMove(91, "MOVE_SKETCH"));
                 }
                 monToAdd.LevelMoves = monToAdd.LevelMoves.OrderBy(o => o.Level).ToList();
 
@@ -1443,6 +1468,11 @@ namespace moveParser
                 }
             }
             return true;
+        }
+
+        private void cmbLvl_Combine_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -47,6 +47,7 @@
             this.btnExportTM = new System.Windows.Forms.Button();
             this.chkTM_IncludeLvl = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkLvl_PreEvo = new System.Windows.Forms.CheckBox();
             this.btnLvl_All = new System.Windows.Forms.Button();
             this.chkLvl_LevelUpEnd = new System.Windows.Forms.CheckBox();
             this.cListLevelUp = new System.Windows.Forms.CheckedListBox();
@@ -76,7 +77,7 @@
             this.btnOpenOutputFolder = new System.Windows.Forms.Button();
             this.btnOpenInputFolder = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.chkLvl_PreEvo = new System.Windows.Forms.CheckBox();
+            this.cmbLvl_Combine = new System.Windows.Forms.ComboBox();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -268,6 +269,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbLvl_Combine);
             this.groupBox1.Controls.Add(this.chkLvl_PreEvo);
             this.groupBox1.Controls.Add(this.btnLvl_All);
             this.groupBox1.Controls.Add(this.chkLvl_LevelUpEnd);
@@ -282,6 +284,18 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Level Up Moves";
+            // 
+            // chkLvl_PreEvo
+            // 
+            this.chkLvl_PreEvo.AutoSize = true;
+            this.chkLvl_PreEvo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLvl_PreEvo.Location = new System.Drawing.Point(13, 313);
+            this.chkLvl_PreEvo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkLvl_PreEvo.Name = "chkLvl_PreEvo";
+            this.chkLvl_PreEvo.Size = new System.Drawing.Size(175, 21);
+            this.chkLvl_PreEvo.TabIndex = 19;
+            this.chkLvl_PreEvo.Text = "Include Pre-Evo moves";
+            this.chkLvl_PreEvo.UseVisualStyleBackColor = true;
             // 
             // btnLvl_All
             // 
@@ -626,17 +640,17 @@
             this.btnOpenInputFolder.UseVisualStyleBackColor = true;
             this.btnOpenInputFolder.Click += new System.EventHandler(this.btnOpenInputFolder_Click);
             // 
-            // chkLvl_PreEvo
+            // cmbLvl_Combine
             // 
-            this.chkLvl_PreEvo.AutoSize = true;
-            this.chkLvl_PreEvo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkLvl_PreEvo.Location = new System.Drawing.Point(13, 313);
-            this.chkLvl_PreEvo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chkLvl_PreEvo.Name = "chkLvl_PreEvo";
-            this.chkLvl_PreEvo.Size = new System.Drawing.Size(175, 21);
-            this.chkLvl_PreEvo.TabIndex = 19;
-            this.chkLvl_PreEvo.Text = "Include Pre-Evo moves";
-            this.chkLvl_PreEvo.UseVisualStyleBackColor = true;
+            this.cmbLvl_Combine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLvl_Combine.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLvl_Combine.FormattingEnabled = true;
+            this.cmbLvl_Combine.Location = new System.Drawing.Point(5, 338);
+            this.cmbLvl_Combine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbLvl_Combine.Name = "cmbLvl_Combine";
+            this.cmbLvl_Combine.Size = new System.Drawing.Size(180, 25);
+            this.cmbLvl_Combine.TabIndex = 23;
+            this.cmbLvl_Combine.SelectedIndexChanged += new System.EventHandler(this.cmbLvl_Combine_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -721,6 +735,7 @@
         private System.Windows.Forms.CheckBox chkGeneral_MewExclusiveTutor;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.CheckBox chkLvl_PreEvo;
+        private System.Windows.Forms.ComboBox cmbLvl_Combine;
     }
 }
 
