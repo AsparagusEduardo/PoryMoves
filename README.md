@@ -98,8 +98,11 @@ There are two options here that impact how all moves are exported for a develope
 
 
 #### Include Pre-Evo Moves
-
 In Generation 8+, moves learned by previous evolutions but not by future evolutions were prepended to the future evolution’s learnset at Level 1. This option adds this functionality regardless of Generation. One such example is Nidoking’s Horn Drill in Generation 3.
+
+#### Use Latest Moveset vs Combine Movesets
+The option "Use Latest Moveset" will export the latest moveset available of each Pokémon. For example, if Generation 1-9 are selected, Arctozolt will get the moveset from SwSh, which was the latest game it was available in.
+The option "Combine Movesets" will combine all movesets selected into a single one, averaging their levels. This averaging doesn't include evolution, pre-evo or level 1 moves, which are added at the beginning of the list. This was always active for versions 1.0.0-1.4.0.
 
 #### Align moves to name
 

@@ -4,27 +4,23 @@ All changes to this project will be documented in this section. The format is ba
 
 # Unreleased
 
-- Fixed USUM's JSON missing its PreEvoMoves data.
-- Fixed move order in USUM's JSON.
-- Other USUM fixes.
+- Nothing!
 
-**Full Changelog**: https://github.com/AsparagusEduardo/PoryMoves/compare/v1.4.0...master
+**Full Changelog**: https://github.com/AsparagusEduardo/PoryMoves/compare/v1.5.0...master
 
 ***
 
-# 1.4.0 - 2023/03/28
+# 1.5.0 - 2023/09/12
 
 ### Added
-- Added Moves data from
-  - Brilliant Diamond and Shining Pearl
-  - Legends: Arceus
-  - Scarlet and Violet
-- Added the option to add Pre-Evolution-only moves to new level-up learnsets as Level 1 moves like in Gen 8+ for previous generations
+- Option to only use the latest moveset available for a species. 
 
 ### Fixed
-- Fixed variable names for Hisuian regional forms for Pokémon
+- Fixed USUM's JSON missing its PreEvoMoves data.
+- Fixed move order in USUM's JSON.
+- Other USUM data corrections.
 
-**Full Changelog**: https://github.com/AsparagusEduardo/PoryMoves/compare/v1.3.0...v1.4.0
+**Full Changelog**: https://github.com/AsparagusEduardo/PoryMoves/compare/v1.4.0...v1.5.0
 
 ***
 
