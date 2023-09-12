@@ -37,6 +37,7 @@ namespace moveParser
         {
             UseLatest,
             Combine,
+            NotInGen3,
         }
 
         enum ExportModes
@@ -68,6 +69,7 @@ namespace moveParser
         {
             cmbLvl_Combine.Items.Insert((int)MoveCombination.UseLatest, "Use Latest Moveset");
             cmbLvl_Combine.Items.Insert((int)MoveCombination.Combine, "Combine Movesets");
+            cmbLvl_Combine.Items.Insert((int)MoveCombination.NotInGen3, "Not in Gen3");
             cmbLvl_Combine.SelectedIndex = 0;
 
             cmbTM_ExportMode.Items.Insert((int)ExportModes.Vanilla, "Vanilla Mode");
@@ -422,10 +424,31 @@ namespace moveParser
 
                     foreach (LevelUpMove move in mon.LevelMoves)
                     {
+                        if (mode == MoveCombination.NotInGen3)
+                        {
+                            if (item.Equals("RSE") || item.Equals("FRLG"))
+                            {
+                                Dictionary<string, List<Tuple<int, int>>> temp = new Dictionary<string, List<Tuple<int, int>>>();
+                                evoMoves = evoMoves.Where(x => !x.Move.Contains(move.Move)).ToList();
+                                lvl1Moves = lvl1Moves.Where(x => !x.Move.Contains(move.Move)).ToList();
+                                foreach (KeyValuePair<string, List<Tuple<int, int>>> lvlmove in OtherLvlMoves)
+                                {
+                                    if (!lvlmove.Key.Equals(move.Move))
+                                        temp.Add(lvlmove.Key, lvlmove.Value);
+                                }
+                                OtherLvlMoves = temp;
+
+                                continue;
+                            }
+                        }
                         if (move.Level == 0)
+                        {
                             evoMoves.Add(move);
+                        }
                         else if (move.Level == 1)
+                        {
                             lvl1Moves.Add(move);
+                        }
                         else
                         {
                             if (!OtherLvlMoves.ContainsKey(move.Move))
