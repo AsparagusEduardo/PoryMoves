@@ -343,7 +343,7 @@ namespace moveParser
                 chkEgg_IncludeTM.Enabled = value;
                 chkEgg_IncludeTutor.Enabled = value;
 
-                chkNewDefines.Enabled = value;
+                chkVanillaMode.Enabled = value;
                 chkGeneral_MewExclusiveTutor.Enabled = value;
             });
         }
@@ -375,6 +375,16 @@ namespace moveParser
             UpdateLoadingMessage("Grouping movesets...");
             string namesFile = dbpath + "/monNames.json";
             List<MonName> nameList = PokemonData.GetMonNamesFromFile(namesFile);
+            if (chkVanillaMode.Checked)
+            {
+                int number = 252;
+                for (char c = 'A'; c <= 'Z'; c++)
+                {
+                    nameList.Add(new MonName(0, "OldUnown", false, "Old", "Species" + number, "SPECIES_OLD_UNOWN_" + c));
+                    number++;
+                    //do something with letter 
+                }
+            }
 
             customGenData.Clear();
 
@@ -491,7 +501,11 @@ namespace moveParser
                 Directory.CreateDirectory("output");
 
             // file header
-            string sets = "#define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}\n";
+            string sets = "";
+            if (!chkVanillaMode.Checked)
+                sets += "#define LEVEL_UP_MOVE(lvl, moveLearned) {.move = moveLearned, .level = lvl}\n";
+            else
+                sets += "#define LEVEL_UP_MOVE(lvl, move) ((lvl << 9) | move)\n";
             if (chkLvl_LevelUpEnd.Checked)
                 sets += "#define LEVEL_UP_END (0xffff)\n";
 
@@ -507,10 +521,23 @@ namespace moveParser
                 }
                 catch (KeyNotFoundException) { }
 
+                if (chkVanillaMode.Checked)
+                {
+                    switch (name.DefName)
+                    {
+                        case "DEOXYS_NORMAL":
+                            name.DefName = "DEOXYS";
+                            name.VarName = "Deoxys";
+                            break;
+                    }
+                }
                 // begin learnset
                 if (!name.usesBaseFormLearnset)
                 {
-                    sets += $"\nstatic const struct LevelUpMove s{name.VarName}LevelUpLearnset[] = {{\n";
+                    if (!chkVanillaMode.Checked)
+                        sets += $"\nstatic const struct LevelUpMove s{name.VarName}LevelUpLearnset[] = {{\n";
+                    else
+                        sets += $"\nstatic const u16 s{name.VarName}LevelUpLearnset[] = {{\n";
 
                     if (mon.LevelMoves.Count == 0)
                         sets += "    LEVEL_UP_MOVE( 1, MOVE_POUND),\n";
@@ -528,7 +555,7 @@ namespace moveParser
                 UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Level Up movesets exported.");
                 i++;
             }
-            if (chkNewDefines.Checked)
+            if (!chkVanillaMode.Checked)
                 sets = replaceOldDefines(sets);
 
             // write to file
@@ -692,6 +719,16 @@ namespace moveParser
             // iterate over mons
             foreach (MonName entry in nameList)
             {
+                if (chkVanillaMode.Checked)
+                {
+                    switch (entry.DefName)
+                    {
+                        case "DEOXYS_NORMAL":
+                            entry.DefName = "DEOXYS";
+                            entry.VarName = "Deoxys";
+                            break;
+                    }
+                }
                 MonData data = customGenData[entry.DefName];
                 // begin learnset
                 if (mode == ExportModes.Vanilla)
@@ -835,7 +872,7 @@ namespace moveParser
                 }
                 pointers += "};\n";
             }
-            if (chkNewDefines.Checked)
+            if (!chkVanillaMode.Checked)
             {
                 sets = replaceOldDefines(sets);
                 pointers = replaceOldDefines(pointers);
@@ -1082,6 +1119,16 @@ namespace moveParser
 
             foreach (MonName entry in nameList)
             {
+                if (chkVanillaMode.Checked)
+                {
+                    switch (entry.DefName)
+                    {
+                        case "DEOXYS_NORMAL":
+                            entry.DefName = "DEOXYS";
+                            entry.VarName = "Deoxys";
+                            break;
+                    }
+                }
                 MonData data = customGenData[entry.DefName];
                 // begin learnset
                 if (mode == ExportModes.Vanilla)
@@ -1222,7 +1269,7 @@ namespace moveParser
                 }
                 pointers += "};\n";
             }
-            if (chkNewDefines.Checked)
+            if (!chkVanillaMode.Checked)
                 sets = replaceOldDefines(sets);
 
             // write to file
@@ -1328,6 +1375,16 @@ namespace moveParser
             i = 1;
             foreach (MonName entry in nameList)
             {
+                if (chkVanillaMode.Checked)
+                {
+                    switch (entry.DefName)
+                    {
+                        case "DEOXYS_NORMAL":
+                            entry.DefName = "DEOXYS";
+                            entry.VarName = "Deoxys";
+                            break;
+                    }
+                }
                 MonData data = customGenData[entry.DefName];
                 if (entry.CanHatchFromEgg && data.EggMoves.Count > 0)
                 {
@@ -1365,7 +1422,7 @@ namespace moveParser
 
             sets += "    EGG_MOVES_TERMINATOR\n};\n";
 
-            if (chkNewDefines.Checked)
+            if (!chkVanillaMode.Checked)
                 sets = replaceOldDefines(sets);
 
             // write to file

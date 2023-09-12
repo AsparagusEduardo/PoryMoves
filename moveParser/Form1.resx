@@ -144,7 +144,7 @@ Checking this setting, will allow Mew to learn those exclusive moves.
 
 </value>
   </data>
-  <data name="chkNewDefines.ToolTip" xml:space="preserve">
+  <data name="chkVanillaMode.ToolTip" xml:space="preserve">
     <value>In pokeemerald-expansion, certain move defines were updated
 to match their current names, such as VICE_GRIP -&gt; VISE_GRIP
 or FAINT_ATTACK -&gt; FEINT_ATTACK .

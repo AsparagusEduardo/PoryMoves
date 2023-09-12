@@ -47,14 +47,14 @@ namespace moveParser.data
         public bool ignoresNearUniversalTMs;
         public bool isGenderless;
 
-        public MonName(int nat, string og, bool isfrm, string formtm, string var, string def)
+        public MonName(int NatDexNum, string SpeciesName, bool IsBaseForm, string FormName, string VarName, string DefName)
         {
-            NatDexNum = nat;
-            SpeciesName = og;
-            IsBaseForm = isfrm;
-            FormName = formtm;
-            VarName = var;
-            DefName = def;
+            this.NatDexNum = NatDexNum;
+            this.SpeciesName = SpeciesName;
+            this.IsBaseForm = IsBaseForm;
+            this.FormName = FormName;
+            this.VarName = VarName;
+            this.DefName = DefName;
         }
     }
 

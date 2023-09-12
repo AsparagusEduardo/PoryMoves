@@ -97,6 +97,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="db\generations.json" />
+    <None Include="db\gen\b2w2.json" />
+    <None Include="db\gen\bdsp.json" />
+    <None Include="db\gen\bw.json" />
+    <None Include="db\gen\c.json" />
+    <None Include="db\gen\dp.json" />
+    <None Include="db\gen\frlg.json" />
+    <None Include="db\gen\gs.json" />
+    <None Include="db\gen\hgss.json" />
+    <None Include="db\gen\la.json" />
+    <None Include="db\gen\lgpe.json" />
+    <None Include="db\gen\oras.json" />
+    <None Include="db\gen\pt.json" />
+    <None Include="db\gen\rgb.json" />
+    <None Include="db\gen\rse.json" />
+    <None Include="db\gen\sm.json" />
+    <None Include="db\gen\sv.json" />
+    <None Include="db\gen\swsh.json" />
+    <None Include="db\gen\usum.json" />
+    <None Include="db\gen\xy.json" />
+    <None Include="db\gen\y.json" />
+    <None Include="db\monNames.json" />
+    <None Include="db\moveNames.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -47,6 +47,7 @@
             this.btnExportTM = new System.Windows.Forms.Button();
             this.chkTM_IncludeLvl = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbLvl_Combine = new System.Windows.Forms.ComboBox();
             this.chkLvl_PreEvo = new System.Windows.Forms.CheckBox();
             this.btnLvl_All = new System.Windows.Forms.Button();
             this.chkLvl_LevelUpEnd = new System.Windows.Forms.CheckBox();
@@ -73,11 +74,10 @@
             this.bwrkExportEgg = new System.ComponentModel.BackgroundWorker();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.chkGeneral_MewExclusiveTutor = new System.Windows.Forms.CheckBox();
-            this.chkNewDefines = new System.Windows.Forms.CheckBox();
+            this.chkVanillaMode = new System.Windows.Forms.CheckBox();
             this.btnOpenOutputFolder = new System.Windows.Forms.Button();
             this.btnOpenInputFolder = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.cmbLvl_Combine = new System.Windows.Forms.ComboBox();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -284,6 +284,18 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Level Up Moves";
+            // 
+            // cmbLvl_Combine
+            // 
+            this.cmbLvl_Combine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLvl_Combine.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLvl_Combine.FormattingEnabled = true;
+            this.cmbLvl_Combine.Location = new System.Drawing.Point(5, 338);
+            this.cmbLvl_Combine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbLvl_Combine.Name = "cmbLvl_Combine";
+            this.cmbLvl_Combine.Size = new System.Drawing.Size(180, 25);
+            this.cmbLvl_Combine.TabIndex = 23;
+            this.cmbLvl_Combine.SelectedIndexChanged += new System.EventHandler(this.cmbLvl_Combine_SelectedIndexChanged);
             // 
             // chkLvl_PreEvo
             // 
@@ -579,7 +591,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.chkGeneral_MewExclusiveTutor);
-            this.groupBox4.Controls.Add(this.chkNewDefines);
+            this.groupBox4.Controls.Add(this.chkVanillaMode);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(16, 86);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
@@ -594,7 +606,7 @@
             // 
             this.chkGeneral_MewExclusiveTutor.AutoSize = true;
             this.chkGeneral_MewExclusiveTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkGeneral_MewExclusiveTutor.Location = new System.Drawing.Point(256, 22);
+            this.chkGeneral_MewExclusiveTutor.Location = new System.Drawing.Point(124, 22);
             this.chkGeneral_MewExclusiveTutor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkGeneral_MewExclusiveTutor.Name = "chkGeneral_MewExclusiveTutor";
             this.chkGeneral_MewExclusiveTutor.Size = new System.Drawing.Size(265, 21);
@@ -603,20 +615,18 @@
             this.toolTip1.SetToolTip(this.chkGeneral_MewExclusiveTutor, resources.GetString("chkGeneral_MewExclusiveTutor.ToolTip"));
             this.chkGeneral_MewExclusiveTutor.UseVisualStyleBackColor = true;
             // 
-            // chkNewDefines
+            // chkVanillaMode
             // 
-            this.chkNewDefines.AutoSize = true;
-            this.chkNewDefines.Checked = true;
-            this.chkNewDefines.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkNewDefines.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkNewDefines.Location = new System.Drawing.Point(7, 22);
-            this.chkNewDefines.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chkNewDefines.Name = "chkNewDefines";
-            this.chkNewDefines.Size = new System.Drawing.Size(243, 21);
-            this.chkNewDefines.TabIndex = 18;
-            this.chkNewDefines.Text = "Use updated move defines (RHH)";
-            this.toolTip1.SetToolTip(this.chkNewDefines, resources.GetString("chkNewDefines.ToolTip"));
-            this.chkNewDefines.UseVisualStyleBackColor = true;
+            this.chkVanillaMode.AutoSize = true;
+            this.chkVanillaMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkVanillaMode.Location = new System.Drawing.Point(7, 22);
+            this.chkVanillaMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkVanillaMode.Name = "chkVanillaMode";
+            this.chkVanillaMode.Size = new System.Drawing.Size(111, 21);
+            this.chkVanillaMode.TabIndex = 18;
+            this.chkVanillaMode.Text = "Vanilla Mode";
+            this.toolTip1.SetToolTip(this.chkVanillaMode, resources.GetString("chkVanillaMode.ToolTip"));
+            this.chkVanillaMode.UseVisualStyleBackColor = true;
             // 
             // btnOpenOutputFolder
             // 
@@ -639,18 +649,6 @@
             this.btnOpenInputFolder.Text = "Open input folder";
             this.btnOpenInputFolder.UseVisualStyleBackColor = true;
             this.btnOpenInputFolder.Click += new System.EventHandler(this.btnOpenInputFolder_Click);
-            // 
-            // cmbLvl_Combine
-            // 
-            this.cmbLvl_Combine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLvl_Combine.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbLvl_Combine.FormattingEnabled = true;
-            this.cmbLvl_Combine.Location = new System.Drawing.Point(5, 338);
-            this.cmbLvl_Combine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbLvl_Combine.Name = "cmbLvl_Combine";
-            this.cmbLvl_Combine.Size = new System.Drawing.Size(180, 25);
-            this.cmbLvl_Combine.TabIndex = 23;
-            this.cmbLvl_Combine.SelectedIndexChanged += new System.EventHandler(this.cmbLvl_Combine_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -725,7 +723,7 @@
         private System.ComponentModel.BackgroundWorker bwrkExportEgg;
         private System.Windows.Forms.CheckBox chkEgg_Extended;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.CheckBox chkNewDefines;
+        private System.Windows.Forms.CheckBox chkVanillaMode;
         private System.Windows.Forms.Button btnOpenOutputFolder;
         private System.Windows.Forms.Button btnOpenInputFolder;
         private System.Windows.Forms.Label label1;
