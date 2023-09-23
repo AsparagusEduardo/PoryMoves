@@ -77719,11 +77719,11 @@
       "MOVE_PSYBEAM",
       "MOVE_TRAILBLAZE",
       "MOVE_FACADE",
-      "MOVE_BULLDOZE"
+      "MOVE_BULLDOZE",
       "MOVE_SNARL",
       "MOVE_SWIFT",
       "MOVE_MAGICAL_LEAF",
-      "MOVE_ICY_WIND"
+      "MOVE_ICY_WIND",
       "MOVE_MUD_SHOT",
       "MOVE_DRAINING_KISS",
       "MOVE_STORED_POWER",
