@@ -196,7 +196,7 @@ namespace moveParser.data
                                             readMode = readingModePokemonDB.LEVEL;
                                         else if (nodo5.InnerText.Equals("Moves learnt on evolution"))
                                             readMode = readingModePokemonDB.EVO;
-                                        else if (nodo5.InnerText.Equals("Pre-evolution moves"))
+                                        else if (nodo5.InnerText.Equals("Pre-evolution moves") || nodo5.InnerText.Contains("Moves learnt by reminder"))
                                             readMode = readingModePokemonDB.PREEVO;
                                         else if (nodo5.InnerText.Equals("Moves learnt by TM"))
                                             readMode = readingModePokemonDB.TM;
