@@ -3299,13 +3299,13 @@
     "moveId": 802,
     "defineName": "MAKE_IT_RAIN"
   },
-  "Pound": {
+  "Psyblade": {
     "moveId": 803,
-    "defineName": "POUND"
+    "defineName": "PSYBLADE"
   },
-  "Pound": {
+  "Hydro Steam": {
     "moveId": 804,
-    "defineName": "POUND"
+    "defineName": "HYDRO_STEAM"
   },
   "Ruination": {
     "moveId": 805,
@@ -3402,5 +3402,21 @@
   "Magical Torque": {
     "moveId": 828,
     "defineName": "MAGICAL_TORQUE"
+  },
+  "Blood Moon": {
+    "moveId": 829,
+    "defineName": "BLOOD_MOON"
+  },
+  "Matcha Gotcha": {
+    "moveId": 830,
+    "defineName": "MATCHA_GOTCHA"
+  },
+  "Syrup Bomb": {
+    "moveId": 831,
+    "defineName": "SYRUP_BOMB"
+  },
+  "Ivy Cudgel": {
+    "moveId": 832,
+    "defineName": "IVY_CUDGEL"
   }
 }
