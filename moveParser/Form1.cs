@@ -368,6 +368,8 @@ namespace moveParser
         }
         private void bwrkExportLvl_DoWork(object sender, DoWorkEventArgs e)
         {
+            bool maxmode = true;
+
             MoveCombination mode = MoveCombination.UseLatest;
             this.Invoke((MethodInvoker)delegate
             {
@@ -500,15 +502,29 @@ namespace moveParser
                 {
                     foreach (KeyValuePair<string, List<Tuple<int, int>>> item in OtherLvlMoves)
                     {
-                        int weightedSum = 0;
-                        int sum = 0;
-
-                        foreach (Tuple<int, int> l in item.Value)
+                        if (maxmode)
                         {
-                            weightedSum += l.Item1 * l.Item2;
-                            sum += l.Item1;
+							int max = 0;
+
+							foreach (Tuple<int, int> l in item.Value)
+							{
+								max = Math.Max(max, l.Item2);
+							}
+							monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max(max, 2), item.Key));
+						}
+                        else
+                        {
+
+                            int weightedSum = 0;
+                            int sum = 0;
+
+                            foreach (Tuple<int, int> l in item.Value)
+                            {
+                                weightedSum += l.Item1 * l.Item2;
+                                sum += l.Item1;
+                            }
+                            monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max((int)(weightedSum / sum), 2), item.Key));
                         }
-                        monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max((int)(weightedSum / sum), 2), item.Key));
                     }
                 }
                 monToAdd.LevelMoves = monToAdd.LevelMoves.OrderBy(o => o.Level).ToList();
