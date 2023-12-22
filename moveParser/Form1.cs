@@ -38,6 +38,7 @@ namespace moveParser
             UseLatest,
             Combine,
             NotInGen3,
+            CombineMax,
         }
 
         enum ExportModes
@@ -68,8 +69,9 @@ namespace moveParser
         protected void LoadExportModes()
         {
             cmbLvl_Combine.Items.Insert((int)MoveCombination.UseLatest, "Use Latest Moveset");
-            cmbLvl_Combine.Items.Insert((int)MoveCombination.Combine, "Combine Movesets");
+            cmbLvl_Combine.Items.Insert((int)MoveCombination.Combine, "Combine Movesets(Avg)");
             cmbLvl_Combine.Items.Insert((int)MoveCombination.NotInGen3, "Not in Gen3");
+            cmbLvl_Combine.Items.Insert((int)MoveCombination.CombineMax, "Combine Movesets(Max)");
             cmbLvl_Combine.SelectedIndex = 0;
 
             cmbTM_ExportMode.Items.Insert((int)ExportModes.Vanilla, "Vanilla Mode");
@@ -368,8 +370,6 @@ namespace moveParser
         }
         private void bwrkExportLvl_DoWork(object sender, DoWorkEventArgs e)
         {
-            bool maxmode = true;
-
             MoveCombination mode = MoveCombination.UseLatest;
             this.Invoke((MethodInvoker)delegate
             {
@@ -502,7 +502,7 @@ namespace moveParser
                 {
                     foreach (KeyValuePair<string, List<Tuple<int, int>>> item in OtherLvlMoves)
                     {
-                        if (maxmode)
+                        if (mode == MoveCombination.CombineMax)
                         {
 							int max = 0;
 
