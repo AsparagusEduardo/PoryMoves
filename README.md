@@ -1,5 +1,8 @@
+
+
 # PoryMoves
 
+## Important: As of Jan 1st 2024, PoryMoves development has stopped. You may fork/use the code found in this repository to create a new implementation of the features present here.
 
 PoryMoves is a program that allows Pokémon decompilation developers to quickly and easily generate the moves that a Pokémon can learn, based on their learnsets across the different [core series games](https://bulbapedia.bulbagarden.net/wiki/Core_series). As of right now, this tool is designed for use with the Pokémon Generation 3 decompilation projects.
 
