@@ -504,14 +504,14 @@ namespace moveParser
                     {
                         if (mode == MoveCombination.CombineMax)
                         {
-							int max = 0;
+                            int max = 0;
 
-							foreach (Tuple<int, int> l in item.Value)
-							{
-								max = Math.Max(max, l.Item2);
-							}
-							monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max(max, 2), item.Key));
-						}
+                            foreach (Tuple<int, int> l in item.Value)
+                            {
+                                max = Math.Max(max, l.Item2);
+                            }
+                            monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max(max, 2), item.Key));
+                        }
                         else
                         {
 
