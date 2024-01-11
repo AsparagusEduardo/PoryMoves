@@ -103,7 +103,8 @@ In Generation 8+, moves learned by previous evolutions but not by future evoluti
 
 #### Use Latest Moveset vs Combine Movesets
 The option "Use Latest Moveset" will export the latest moveset available of each Pokémon. For example, if Generation 1-9 are selected, Arctozolt will get the moveset from SwSh, which was the latest game it was available in.
-The option "Combine Movesets" will combine all movesets selected into a single one, averaging their levels. This averaging doesn't include evolution, pre-evo or level 1 moves, which are added at the beginning of the list. This was always active for versions 1.0.0-1.4.0.
+The option "Combine Movesets(Avg)" will combine all movesets selected into a single one, averaging their levels. This averaging doesn't include evolution, pre-evo or level 1 moves, which are added at the beginning of the list. This was always active for versions 1.0.0-1.4.0.
+The option "Combine Movesets(Max)" will also combine all movesets selected into a single one, with each move added on their highest level among the selected generations. This also doesn't include evolution, pre-evo or level 1 moves, which are added at the beginning of the list.
 
 #### Align moves to name
 

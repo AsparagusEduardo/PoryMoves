@@ -38,6 +38,7 @@ namespace moveParser
             UseLatest,
             Combine,
             NotInGen3,
+            CombineMax,
         }
 
         enum ExportModes
@@ -68,8 +69,9 @@ namespace moveParser
         protected void LoadExportModes()
         {
             cmbLvl_Combine.Items.Insert((int)MoveCombination.UseLatest, "Use Latest Moveset");
-            cmbLvl_Combine.Items.Insert((int)MoveCombination.Combine, "Combine Movesets");
+            cmbLvl_Combine.Items.Insert((int)MoveCombination.Combine, "Combine Movesets(Avg)");
             cmbLvl_Combine.Items.Insert((int)MoveCombination.NotInGen3, "Not in Gen3");
+            cmbLvl_Combine.Items.Insert((int)MoveCombination.CombineMax, "Combine Movesets(Max)");
             cmbLvl_Combine.SelectedIndex = 0;
 
             cmbTM_ExportMode.Items.Insert((int)ExportModes.Vanilla, "Vanilla Mode");
@@ -500,15 +502,29 @@ namespace moveParser
                 {
                     foreach (KeyValuePair<string, List<Tuple<int, int>>> item in OtherLvlMoves)
                     {
-                        int weightedSum = 0;
-                        int sum = 0;
-
-                        foreach (Tuple<int, int> l in item.Value)
+                        if (mode == MoveCombination.CombineMax)
                         {
-                            weightedSum += l.Item1 * l.Item2;
-                            sum += l.Item1;
+                            int max = 0;
+
+                            foreach (Tuple<int, int> l in item.Value)
+                            {
+                                max = Math.Max(max, l.Item2);
+                            }
+                            monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max(max, 2), item.Key));
                         }
-                        monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max((int)(weightedSum / sum), 2), item.Key));
+                        else
+                        {
+
+                            int weightedSum = 0;
+                            int sum = 0;
+
+                            foreach (Tuple<int, int> l in item.Value)
+                            {
+                                weightedSum += l.Item1 * l.Item2;
+                                sum += l.Item1;
+                            }
+                            monToAdd.LevelMoves.Add(new LevelUpMove(Math.Max((int)(weightedSum / sum), 2), item.Key));
+                        }
                     }
                 }
                 monToAdd.LevelMoves = monToAdd.LevelMoves.OrderBy(o => o.Level).ToList();
