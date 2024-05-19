@@ -48,6 +48,13 @@ namespace moveParser
             RHH_1_0_0,
         }
 
+        enum ExportEggModes
+        {
+            Vanilla,
+            VanillaAligned,
+            RHH_1_9_0,
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -83,6 +90,11 @@ namespace moveParser
             cmbTutor_ExportMode.Items.Insert(((int)ExportModes.SBirdRefactor), "SBird's Tutor Refactor");
             cmbTutor_ExportMode.Items.Insert(((int)ExportModes.RHH_1_0_0), "RHH 1.0.0");
             cmbTutor_ExportMode.SelectedIndex = 0;
+
+            cmbEgg_ExportMode.Items.Insert(((int)ExportEggModes.Vanilla), "Vanilla Mode");
+            cmbEgg_ExportMode.Items.Insert(((int)ExportEggModes.VanillaAligned), "Vanilla Mode (Aligned)");
+            cmbEgg_ExportMode.Items.Insert(((int)ExportEggModes.RHH_1_9_0), "RHH 1.9.0");
+            cmbEgg_ExportMode.SelectedIndex = 0;
         }
 
         protected void LoadGenerationData()
@@ -342,10 +354,10 @@ namespace moveParser
                 chkTutor_IncludeTM.Enabled = value;
                 cmbTutor_ExportMode.Enabled = value;
 
-                chkEgg_Extended.Enabled = value;
                 chkEgg_IncludeLvl.Enabled = value;
                 chkEgg_IncludeTM.Enabled = value;
                 chkEgg_IncludeTutor.Enabled = value;
+                cmbEgg_ExportMode.Enabled = value;
 
                 chkVanillaMode.Enabled = value;
                 chkGeneral_MewExclusiveTutor.Enabled = value;
@@ -1346,6 +1358,12 @@ namespace moveParser
 
         private void bwrkExportEgg_DoWork(object sender, DoWorkEventArgs e)
         {
+            ExportEggModes mode = ExportEggModes.Vanilla;
+            this.Invoke((MethodInvoker)delegate
+            {
+                mode = (ExportEggModes)this.cmbEgg_ExportMode.SelectedIndex;
+            });
+
             UpdateLoadingMessage("Grouping movesets...");
             string namesFile = dbpath + "/monNames.json";
             List<MonName> nameList = PokemonData.GetMonNamesFromFile(namesFile);
@@ -1402,64 +1420,112 @@ namespace moveParser
                 int percent = i * 100 / namecount;
                 bwrkExportEgg.ReportProgress(percent);
             }
-            bool oldStyle = chkEgg_Extended.Checked;
 
-            // file header
-            string sets = "#define EGG_MOVES_SPECIES_OFFSET 20000\n" +
-                            "#define EGG_MOVES_TERMINATOR 0xFFFF\n" +
-                            "#define egg_moves(species, moves...) (SPECIES_##species + EGG_MOVES_SPECIES_OFFSET), moves\n\n" +
-                            "const u16 gEggMoves[] = {\n";
+            string sets = "";
 
-            // iterate over mons
-            i = 1;
-            foreach (MonName entry in nameList)
+            if (mode != ExportEggModes.RHH_1_9_0)
             {
-                if (chkVanillaMode.Checked)
+                // generate pokeemerald(pre-expansion 1.9.0 egg move array)
+                bool oldStyle = (mode == ExportEggModes.VanillaAligned);
+
+                // file header
+                sets += "#define EGG_MOVES_SPECIES_OFFSET 20000\n" +
+                        "#define EGG_MOVES_TERMINATOR 0xFFFF\n" +
+                        "#define egg_moves(species, moves...) (SPECIES_##species + EGG_MOVES_SPECIES_OFFSET), moves\n\n" +
+                        "const u16 gEggMoves[] = {\n";
+
+                // iterate over mons
+                i = 1;
+                foreach (MonName entry in nameList)
                 {
-                    switch (entry.DefName)
+                    if (chkVanillaMode.Checked)
                     {
-                        case "DEOXYS_NORMAL":
-                            entry.DefName = "DEOXYS";
-                            entry.VarName = "Deoxys";
-                            break;
+                        switch (entry.DefName)
+                        {
+                            case "DEOXYS_NORMAL":
+                                entry.DefName = "DEOXYS";
+                                entry.VarName = "Deoxys";
+                                break;
+                        }
                     }
-                }
-                MonData data = customGenData[entry.DefName];
-                if (entry.CanHatchFromEgg && data.EggMoves.Count > 0)
-                {
-                    // begin learnset
-                    if (oldStyle)
-                        sets += $"    egg_moves({entry.DefName},\n";
-                    else
-                        sets += $"\tegg_moves({entry.DefName},\n";
-                    // hacky workaround for first move being on the same line
-                    int eggm = 1;
-                    foreach (string move in data.EggMoves)
+                    MonData data = customGenData[entry.DefName];
+                    if (entry.CanHatchFromEgg && data.EggMoves.Count > 0)
                     {
+                        // begin learnset
                         if (oldStyle)
-                        {
-                            sets += $"              {move}";
-                        }
+                            sets += $"    egg_moves({entry.DefName},\n";
                         else
+                            sets += $"\tegg_moves({entry.DefName},\n";
+                        // hacky workaround for first move being on the same line
+                        int eggm = 1;
+                        foreach (string move in data.EggMoves)
                         {
-                            sets += $"\t\t{move}";
+                            if (oldStyle)
+                            {
+                                sets += $"              {move}";
+                            }
+                            else
+                            {
+                                sets += $"\t\t{move}";
+                            }
+                            if (eggm == data.EggMoves.Count)
+                                sets += ")";
+                            sets += ",\n";
+                            eggm++;
                         }
-                        if (eggm == data.EggMoves.Count)
-                            sets += ")";
-                        sets += ",\n";
-                        eggm++;
+                        sets += "\n";
                     }
-                    sets += "\n";
+
+                    int percent = i * 100 / namecount;
+                    bwrkExportEgg.ReportProgress(percent);
+                    // Set the text.
+                    UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Egg movesets exported.");
+                    i++;
                 }
 
-                int percent = i * 100 / namecount;
-                bwrkExportEgg.ReportProgress(percent);
-                // Set the text.
-                UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Egg movesets exported.");
-                i++;
+                sets += "    EGG_MOVES_TERMINATOR\n};\n";
             }
+            else
+            {
+                // file header
+                sets += "#include \"constants/moves.h\"\n\n";
 
-            sets += "    EGG_MOVES_TERMINATOR\n};\n";
+                // iterate over mons
+                i = 1;
+                foreach (MonName entry in nameList)
+                {
+                    if (chkVanillaMode.Checked)
+                    {
+                        switch (entry.DefName)
+                        {
+                            case "DEOXYS_NORMAL":
+                                entry.DefName = "DEOXYS";
+                                entry.VarName = "Deoxys";
+                                break;
+                        }
+                    }
+                    MonData data = customGenData[entry.DefName];
+                    if (entry.CanHatchFromEgg && data.EggMoves.Count > 0)
+                    {
+                        // begin learnset
+                        sets += $"\nstatic const u16 s{entry.VarName}EggMoveLearnset[] = {{\n";
+
+                        foreach (string move in data.EggMoves)
+                        {
+                            sets += $"    {move},\n";
+                        }
+
+                        sets += "    MOVE_UNAVAILABLE,\n};\n";
+                    }
+
+                    int percent = i * 100 / namecount;
+                    bwrkExportEgg.ReportProgress(percent);
+                    // Set the text.
+                    UpdateLoadingMessage(i.ToString() + " out of " + namecount + " Egg movesets exported.");
+                    i++;
+                }
+
+            }
 
             if (!chkVanillaMode.Checked)
                 sets = replaceOldDefines(sets);
