@@ -53,7 +53,6 @@
             this.chkLvl_LevelUpEnd = new System.Windows.Forms.CheckBox();
             this.cListLevelUp = new System.Windows.Forms.CheckedListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chkEgg_Extended = new System.Windows.Forms.CheckBox();
             this.btnEgg_All = new System.Windows.Forms.Button();
             this.chkEgg_IncludeTutor = new System.Windows.Forms.CheckBox();
             this.chkEgg_IncludeTM = new System.Windows.Forms.CheckBox();
@@ -78,6 +77,8 @@
             this.btnOpenOutputFolder = new System.Windows.Forms.Button();
             this.btnOpenInputFolder = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.cmbEgg_ExportMode = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.gBoxOptionsTM.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -349,13 +350,14 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.chkEgg_Extended);
             this.groupBox2.Controls.Add(this.btnEgg_All);
             this.groupBox2.Controls.Add(this.chkEgg_IncludeTutor);
             this.groupBox2.Controls.Add(this.chkEgg_IncludeTM);
             this.groupBox2.Controls.Add(this.btnExportEgg);
             this.groupBox2.Controls.Add(this.chkEgg_IncludeLvl);
             this.groupBox2.Controls.Add(this.cListEggMoves);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.cmbEgg_ExportMode);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(427, 153);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -365,18 +367,6 @@
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Egg Moves";
-            // 
-            // chkEgg_Extended
-            // 
-            this.chkEgg_Extended.AutoSize = true;
-            this.chkEgg_Extended.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkEgg_Extended.Location = new System.Drawing.Point(5, 309);
-            this.chkEgg_Extended.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chkEgg_Extended.Name = "chkEgg_Extended";
-            this.chkEgg_Extended.Size = new System.Drawing.Size(161, 21);
-            this.chkEgg_Extended.TabIndex = 20;
-            this.chkEgg_Extended.Text = "Align moves to name";
-            this.chkEgg_Extended.UseVisualStyleBackColor = true;
             // 
             // btnEgg_All
             // 
@@ -650,6 +640,27 @@
             this.btnOpenInputFolder.UseVisualStyleBackColor = true;
             this.btnOpenInputFolder.Click += new System.EventHandler(this.btnOpenInputFolder_Click);
             // 
+            // cmbEgg_ExportMode
+            // 
+            this.cmbEgg_ExportMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEgg_ExportMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEgg_ExportMode.FormattingEnabled = true;
+            this.cmbEgg_ExportMode.Location = new System.Drawing.Point(5, 307);
+            this.cmbEgg_ExportMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbEgg_ExportMode.Name = "cmbEgg_ExportMode";
+            this.cmbEgg_ExportMode.Size = new System.Drawing.Size(180, 25);
+            this.cmbEgg_ExportMode.TabIndex = 22;
+            this.cmbEgg_ExportMode.SelectedIndexChanged += new System.EventHandler(this.cmbTM_ExportMode_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 288);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 17);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Export Mode";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -721,7 +732,6 @@
         private System.Windows.Forms.Button btnTutor_All;
         private System.ComponentModel.BackgroundWorker bwrkExportTutor;
         private System.ComponentModel.BackgroundWorker bwrkExportEgg;
-        private System.Windows.Forms.CheckBox chkEgg_Extended;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.CheckBox chkVanillaMode;
         private System.Windows.Forms.Button btnOpenOutputFolder;
@@ -734,6 +744,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.CheckBox chkLvl_PreEvo;
         private System.Windows.Forms.ComboBox cmbLvl_Combine;
+        private System.Windows.Forms.ComboBox cmbEgg_ExportMode;
+        private System.Windows.Forms.Label label3;
     }
 }
 
