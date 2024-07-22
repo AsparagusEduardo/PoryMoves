@@ -53477,7 +53477,7 @@
       "MOVE_SNORE"
     ]
   },
-  "WORMADAM": {
+  "WORMADAM_PLANT_CLOAK": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -64002,7 +64002,7 @@
       "MOVE_WONDER_ROOM"
     ]
   },
-  "SHAYMIN": {
+  "SHAYMIN_LAND": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -71401,130 +71401,7 @@
       "MOVE_WORRY_SEED"
     ]
   },
-  "BASCULIN_RED_STRIPED": {
-    "LevelMoves": [
-      {
-        "Level": 1,
-        "Move": "MOVE_TACKLE"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_TAIL_WHIP"
-      },
-      {
-        "Level": 1,
-        "Move": "MOVE_WATER_GUN"
-      },
-      {
-        "Level": 3,
-        "Move": "MOVE_UPROAR"
-      },
-      {
-        "Level": 5,
-        "Move": "MOVE_HEADBUTT"
-      },
-      {
-        "Level": 7,
-        "Move": "MOVE_BITE"
-      },
-      {
-        "Level": 9,
-        "Move": "MOVE_AQUA_JET"
-      },
-      {
-        "Level": 11,
-        "Move": "MOVE_CHIP_AWAY"
-      },
-      {
-        "Level": 14,
-        "Move": "MOVE_TAKE_DOWN"
-      },
-      {
-        "Level": 17,
-        "Move": "MOVE_CRUNCH"
-      },
-      {
-        "Level": 20,
-        "Move": "MOVE_AQUA_TAIL"
-      },
-      {
-        "Level": 23,
-        "Move": "MOVE_SOAK"
-      },
-      {
-        "Level": 26,
-        "Move": "MOVE_DOUBLE_EDGE"
-      },
-      {
-        "Level": 30,
-        "Move": "MOVE_SCARY_FACE"
-      },
-      {
-        "Level": 34,
-        "Move": "MOVE_FLAIL"
-      },
-      {
-        "Level": 38,
-        "Move": "MOVE_FINAL_GAMBIT"
-      },
-      {
-        "Level": 42,
-        "Move": "MOVE_THRASH"
-      },
-      {
-        "Level": 46,
-        "Move": "MOVE_HEAD_SMASH"
-      }
-    ],
-    "PreEvoMoves": [],
-    "TMMoves": [
-      "MOVE_TOXIC",
-      "MOVE_HAIL",
-      "MOVE_HIDDEN_POWER",
-      "MOVE_TAUNT",
-      "MOVE_ICE_BEAM",
-      "MOVE_PROTECT",
-      "MOVE_RAIN_DANCE",
-      "MOVE_FRUSTRATION",
-      "MOVE_RETURN",
-      "MOVE_DOUBLE_TEAM",
-      "MOVE_FACADE",
-      "MOVE_REST",
-      "MOVE_ATTRACT",
-      "MOVE_ROUND",
-      "MOVE_SCALD",
-      "MOVE_SWAGGER",
-      "MOVE_SLEEP_TALK",
-      "MOVE_SUBSTITUTE",
-      "MOVE_SURF",
-      "MOVE_WATERFALL",
-      "MOVE_CONFIDE"
-    ],
-    "EggMoves": [
-      "MOVE_AGILITY",
-      "MOVE_BRINE",
-      "MOVE_BUBBLE_BEAM",
-      "MOVE_HEAD_SMASH",
-      "MOVE_MUD_SHOT",
-      "MOVE_MUDDY_WATER",
-      "MOVE_RAGE",
-      "MOVE_REVENGE",
-      "MOVE_SWIFT",
-      "MOVE_WHIRLPOOL"
-    ],
-    "TutorMoves": [
-      "MOVE_AQUA_TAIL",
-      "MOVE_BOUNCE",
-      "MOVE_ENDEAVOR",
-      "MOVE_ICY_WIND",
-      "MOVE_LIQUIDATION",
-      "MOVE_SNORE",
-      "MOVE_SUPERPOWER",
-      "MOVE_UPROAR",
-      "MOVE_ZEN_HEADBUTT"
-    ]
-  },
-  "BASCULIN_BLUE_STRIPED": {
+  "BASCULIN": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -88319,7 +88196,7 @@
       "MOVE_ZEN_HEADBUTT"
     ]
   },
-  "MEOWSTIC": {
+  "MEOWSTIC_MALE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -93749,7 +93626,7 @@
       "MOVE_WONDER_ROOM"
     ]
   },
-  "HOOPA": {
+  "HOOPA_CONFINED": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -96877,7 +96754,7 @@
       "MOVE_ZEN_HEADBUTT"
     ]
   },
-  "LYCANROC": {
+  "LYCANROC_MIDDAY": {
     "LevelMoves": [
       {
         "Level": 0,

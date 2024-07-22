@@ -54679,7 +54679,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "MEOWSTIC": {
+  "MEOWSTIC_MALE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -61394,7 +61394,7 @@
     ],
     "TutorMoves": []
   },
-  "LYCANROC": {
+  "LYCANROC_MIDDAY": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -71993,7 +71993,7 @@
     ],
     "TutorMoves": []
   },
-  "TOXTRICITY": {
+  "TOXTRICITY_AMPED": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -75050,7 +75050,7 @@
     ],
     "TutorMoves": []
   },
-  "INDEEDEE": {
+  "INDEEDEE_MALE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -76790,7 +76790,7 @@
       "MOVE_COACHING"
     ]
   },
-  "URSHIFU": {
+  "URSHIFU_SINGLE_STRIKE_STYLE": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -81091,6 +81091,30 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
+      "MOVE_MEGA_PUNCH",
+      "MOVE_MEGA_KICK",
+      "MOVE_FIRE_PUNCH",
+      "MOVE_ICE_PUNCH",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_FIRE_SPIN",
+      "MOVE_DIG",
+      "MOVE_REST",
+      "MOVE_ROCK_SLIDE",
+      "MOVE_THIEF",
+      "MOVE_SNORE",
+      "MOVE_PROTECT",
+      "MOVE_ATTRACT",
+      "MOVE_SUNNY_DAY",
+      "MOVE_WILL_O_WISP",
+      "MOVE_FACADE",
+      "MOVE_BRICK_BREAK",
+      "MOVE_ROCK_TOMB",
+      "MOVE_U_TURN",
+      "MOVE_FLING",
+      "MOVE_AVALANCHE",
+      "MOVE_ICE_FANG",
+      "MOVE_FIRE_FANG",
+      "MOVE_ROUND",
       "MOVE_FLAMETHROWER",
       "MOVE_ICE_BEAM",
       "MOVE_BLIZZARD",
@@ -81192,6 +81216,34 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
+      "MOVE_MEGA_PUNCH",
+      "MOVE_MEGA_KICK",
+      "MOVE_FIRE_PUNCH",
+      "MOVE_ICE_PUNCH",
+      "MOVE_HYPER_BEAM",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_FIRE_SPIN",
+      "MOVE_DIG",
+      "MOVE_REST",
+      "MOVE_ROCK_SLIDE",
+      "MOVE_THIEF",
+      "MOVE_SNORE",
+      "MOVE_PROTECT",
+      "MOVE_ATTRACT",
+      "MOVE_SUNNY_DAY",
+      "MOVE_WILL_O_WISP",
+      "MOVE_FACADE",
+      "MOVE_BRICK_BREAK",
+      "MOVE_ROCK_TOMB",
+      "MOVE_U_TURN",
+      "MOVE_PAYBACK",
+      "MOVE_FLING",
+      "MOVE_AVALANCHE",
+      "MOVE_ICE_FANG",
+      "MOVE_FIRE_FANG",
+      "MOVE_ROUND",
+      "MOVE_BULLDOZE",
       "MOVE_BODY_SLAM",
       "MOVE_FLAMETHROWER",
       "MOVE_ICE_BEAM",
@@ -81306,6 +81358,26 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
+      "MOVE_SAFEGUARD",
+      "MOVE_REST",
+      "MOVE_ROCK_SLIDE",
+      "MOVE_THIEF",
+      "MOVE_SNORE",
+      "MOVE_PROTECT",
+      "MOVE_ATTRACT",
+      "MOVE_SANDSTORM",
+      "MOVE_RAIN_DANCE",
+      "MOVE_WILL_O_WISP",
+      "MOVE_FACADE",
+      "MOVE_IMPRISON",
+      "MOVE_FAKE_TEARS",
+      "MOVE_ROCK_TOMB",
+      "MOVE_PAYBACK",
+      "MOVE_TRICK_ROOM",
+      "MOVE_WONDER_ROOM",
+      "MOVE_ROUND",
+      "MOVE_HEX",
+      "MOVE_BRUTAL_SWING",
       "MOVE_EARTHQUAKE",
       "MOVE_PSYCHIC",
       "MOVE_SUBSTITUTE",
@@ -81396,6 +81468,26 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
+      "MOVE_THUNDER_WAVE",
+      "MOVE_DIG",
+      "MOVE_SCREECH",
+      "MOVE_REST",
+      "MOVE_ROCK_SLIDE",
+      "MOVE_SNORE",
+      "MOVE_PROTECT",
+      "MOVE_ATTRACT",
+      "MOVE_SANDSTORM",
+      "MOVE_RAIN_DANCE",
+      "MOVE_FACADE",
+      "MOVE_REVENGE",
+      "MOVE_ROCK_TOMB",
+      "MOVE_BOUNCE",
+      "MOVE_MUD_SHOT",
+      "MOVE_PAYBACK",
+      "MOVE_ICE_FANG",
+      "MOVE_ROUND",
+      "MOVE_BULLDOZE",
+      "MOVE_STOMPING_TANTRUM",
       "MOVE_SURF",
       "MOVE_EARTHQUAKE",
       "MOVE_SUBSTITUTE",
