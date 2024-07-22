@@ -3418,5 +3418,65 @@
   "Ivy Cudgel": {
     "moveId": 832,
     "defineName": "IVY_CUDGEL"
+  },
+  "Electro Shot": {
+    "moveId": 833,
+    "defineName": "ELECTRO_SHOT"
+  },
+  "Tera Starstorm": {
+    "moveId": 834,
+    "defineName": "TERA_STARSTORM"
+  },
+  "Fickle Beam": {
+    "moveId": 835,
+    "defineName": "FICKLE_BEAM"
+  },
+  "Burning Bulwark": {
+    "moveId": 836,
+    "defineName": "BURNING_BULWARK"
+  },
+  "Thunderclap": {
+    "moveId": 837,
+    "defineName": "THUNDERCLAP"
+  },
+  "Mighty Cleave": {
+    "moveId": 838,
+    "defineName": "MIGHTY_CLEAVE"
+  },
+  "Tachyon Cutter": {
+    "moveId": 839,
+    "defineName": "TACHYON_CUTTER"
+  },
+  "Hard Press": {
+    "moveId": 840,
+    "defineName": "HARD_PRESS"
+  },
+  "Dragon Cheer": {
+    "moveId": 841,
+    "defineName": "DRAGON_CHEER"
+  },
+  "Alluring Voice": {
+    "moveId": 842,
+    "defineName": "ALLURING_VOICE"
+  },
+  "Temper Flare": {
+    "moveId": 843,
+    "defineName": "TEMPER_FLARE"
+  },
+  "Supercell Slam": {
+    "moveId": 844,
+    "defineName": "SUPERCELL_SLAM"
+  },
+  "Psychic Noise": {
+    "moveId": 845,
+    "defineName": "PSYCHIC_NOISE"
+  },
+  "Upper Hand": {
+    "moveId": 846,
+    "defineName": "UPPER_HAND"
+  },
+  "Malignant Chain": {
+    "moveId": 847,
+    "defineName": "MALIGNANT_CHAIN"
   }
 }

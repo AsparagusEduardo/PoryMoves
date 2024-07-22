@@ -46223,7 +46223,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "WORMADAM": {
+  "WORMADAM_PLANT_CLOAK": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -55330,7 +55330,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "SHAYMIN": {
+  "SHAYMIN_LAND": {
     "LevelMoves": [
       {
         "Level": 1,

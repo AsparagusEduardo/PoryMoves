@@ -49305,7 +49305,7 @@
       "MOVE_STRING_SHOT"
     ]
   },
-  "WORMADAM": {
+  "WORMADAM_PLANT_CLOAK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -58965,7 +58965,7 @@
       "MOVE_TRICK"
     ]
   },
-  "SHAYMIN": {
+  "SHAYMIN_LAND": {
     "LevelMoves": [
       {
         "Level": 1,
